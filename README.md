@@ -9,3 +9,6 @@ https://github.com/conix-center/ARENA-py
 https://github.com/conix-center/ATLAS
 ## Posefusion
 https://github.com/conix-center/posefusion
+## April Tag Decoding w. AR.js
+https://github.com/conix-center/AR.js/blob/master/README.md#apriltag-detection 
+
