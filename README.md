@@ -1,6 +1,8 @@
 # ARENA
-top level ARENA repository
+Top-level ARENA repository.
 
+## ARENA Documentation Site
+This repo holds the jekyll-built documentation site in [docs](docs).
 ## ARENA-core
 https://github.com/conix-center/ARENA-core
 ## ARENA-py python examples
