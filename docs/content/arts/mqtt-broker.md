@@ -2,7 +2,7 @@
 title: MQTT Broker
 nav_order: 5
 layout: default
-parent: Agent Runtime Manager
+parent: ARENA Runtime Supervisor
 ---
 
 # MQTT Broker

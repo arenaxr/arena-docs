@@ -2,7 +2,7 @@
 title: Runtime
 nav_order: 8
 layout: default
-parent: Agent Runtime Manager
+parent: ARENA Runtime Supervisor
 ---
 
 # Runtime
