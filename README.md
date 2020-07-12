@@ -4,7 +4,6 @@ This is the ARENA Documentation website giving architecture, APIs, and step-by-s
 
 - TODO: Write the docs.
 - TODO: Configure html-proofer correctly.
-- TODO: Deploy site on a host with each commit.
 
 ## Local Development
 * [Install Jekyll](https://jekyllrb.com/docs/installation)
