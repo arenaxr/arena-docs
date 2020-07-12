@@ -8,9 +8,9 @@ This is the ARENA Documentation website giving architecture, APIs, and step-by-s
 
 ## Local Development
 * [Install Jekyll](https://jekyllrb.com/docs/installation)
-* Install any new ruby packages: `bundle install`
-* Dependencies: `gem install --user-install html-proofer`
-* Build and test: `bundle exec jekyll serve`
+* Install any new ruby packages: `make install`
+* Dependencies: `make update`
+* Build and test: `make serve`
 * Preview site at [http://localhost:4000](http://localhost:4000).
 
 ## Content
@@ -22,7 +22,7 @@ Each `.md` file inside `content` must have [YAML Front Matter](https://jekyllrb.
 ## Test 
 
 ```shell
-bundle exec jekyll serve
+make serve
 ```
 
 This will create a watcher that will update and regenerate the localhost test site and allow you to immediately preview changes formatted to HTML.
@@ -31,10 +31,10 @@ The newly generated website will be placed in the `_site` directory.
 
 ## Check HTML and Links
 
-Look for broken links and correct HTML with `Rakefile` using [html-proofer](https://github.com/gjtorikian/html-proofer):
+Look for broken links and correct HTML using [html-proofer](https://github.com/gjtorikian/html-proofer):
 
 ```shell
-rake test
+make check
 ```
 
 # ARENA-Related Repositories
