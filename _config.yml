@@ -17,8 +17,8 @@ title: ARENA Documentation
 email: "info@conix.io"
 github_username: conix-center
 description: Tutorials and Reference for the ARENA project.
-baseurl: ""
-url: https://conix.io/arena/
+baseurl: "/ARENA"
+url: https://conix-center.github.io
 aux_links:
   "The ARENA":
     - "https://xr.andrew.cmu.edu/"
@@ -34,15 +34,18 @@ kramdown:
   toc_levels: 1..3
 logo: /favicon.ico
 
-theme: just-the-docs
+#theme: just-the-docs
 # after github-pages, change to:
-# remote_theme: pmarsceill/just-the-docs
+remote_theme: pmarsceill/just-the-docs
 
 defaults:
   - scope: {path: "content"}
     values:
       layout: default
 
+include:
+ - assets
+ 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
