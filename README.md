@@ -54,5 +54,12 @@ make check
   - https://github.com/conix-center/posefusion
 
 - **April Tag Decoding w. AR.js**
-​  - https://github.com/conix-center/AR.js/blob/master/README.md#apriltag-detection 
+  - https://github.com/conix-center/AR.js/blob/master/README.md#apriltag-detection 
 
+- **[Original Design Notes slides](https://docs.google.com/presentation/d/1dc1RdlGROBYj1zIoPR8HX_RBIKn8-KRmNZscXVrdIs0/edit?ts=5dbc423f#slide=id.g606e93cce1_1_14)** (some out of date?)
+  - JSON message format
+  - PubSub topics
+  - Runtime notes
+  - Refactor
+  - Capability-based Access Control
+  - Cantrips (pre-ATLAS?)
