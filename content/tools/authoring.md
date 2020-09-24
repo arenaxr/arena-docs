@@ -58,7 +58,7 @@ You can import a json-formatted manifest of GLTF models using the command argume
 python arb.py hello -m arb-manifest.json
 ```
 
-Scale varies widly between individual models, so experiemnt with the best scale to start with.
+Scale varies widely between individual models, so experiment with the best scale to start with.
 
 `arb-manifest.json`
 ```json
