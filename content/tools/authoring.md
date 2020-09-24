@@ -6,15 +6,19 @@ parent: Tools
 ---
 
 # ARENA AR Builder
-An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top-level python documentation for [requirements](https://github.com/conix-center/ARENA-py). This tool uses the [ARENA Persistence Database](https://github.com/conix-center/arena-persist), so all changes are persisted.
+An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top-level Python documentation for [requirements](https://github.com/conix-center/ARENA-py). This tool uses the [ARENA Persistence Database](https://github.com/conix-center/arena-persist), so all changes are persisted.
 
 ## Quick Start
-Usage: `arb` takes at minimum one argument, the first one, a scene name (`hello` in this example).
-```
-cd demos
-python arb.py hello
-```
-Interact with the tool at [https://arena.andrew.cmu.edu?scene=hello](https://arena.andrew.cmu.edu?scene=hello) 
+1. Clone our Python repo [https://github.com/conix-center/ARENA-py](https://github.com/conix-center/ARENA-py).
+1. Usage: `arb` takes at minimum one argument, the first one, a scene name (`hello` in this example).
+    ```
+    cd ARENA-py/demos/arb
+    python arb.py hello
+    ```
+1. Interact with the tool at [https://arena.andrew.cmu.edu?scene=hello](https://arena.andrew.cmu.edu?scene=hello) 
+
+## Clickable Objects ONLY
+The current version of ARB is only able to interact with existing persisted objects if they have click-handlers implemented (`object.update(clickable=true)`). Clickable objects will turn your cursor from an arrow to a finger pointing as you hover over them. For the time being, anything you create with ARB will have click-handlers implemented automatically.
 
 ## Control Panel
 ![AR Builder Panel](../../assets/img/arb-panel.png)
@@ -56,6 +60,46 @@ There is a small temporary object resting on position 0,0,0 in the shape of a co
 You can import a json-formatted manifest of GLTF models using the command argument **-m** to use on the **model** control panel option. You can write your own, or use the example, [arb-manifest.json](https://github.com/conix-center/ARENA-py/blob/master/demos/arb-manifest.json).
 ```
 python arb.py hello -m arb-manifest.json
+```
+
+Scale varies widely between individual models, so experiment with the best scale to start with.
+
+`arb-manifest.json`
+```json
+{
+    "models": [
+        {
+            "name": "avocado",
+            "url_gltf": "models/Avocado.glb",
+            "scale": 5
+        },
+        {
+            "name": "shuttle",
+            "url_gltf": "models/Shuttle.glb",
+            "scale": 5
+        },
+        {
+            "name": "duck",
+            "url_gltf": "models/Duck.glb",
+            "scale": 0.2
+        },
+        {
+            "name": "earth",
+            "url_gltf": "models/Earth.glb",
+            "scale": 2
+        },
+        {
+            "name": "lantern",
+            "url_gltf": "models/Lantern.glb",
+            "scale": 0.015
+        },
+        {
+            "name": "camera",
+            "url_gltf": "models/AntiqueCamera.glb",
+            "scale": 0.05
+        }
+    ]
+}
 ```
 
 ### MQTT Host and Realm
