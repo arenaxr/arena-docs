@@ -16,6 +16,9 @@ python arb.py hello
 ```
 Interact with the tool at [https://arena.andrew.cmu.edu?scene=hello](https://arena.andrew.cmu.edu?scene=hello) 
 
+## Clickable Objects ONLY
+The current version of ARB is only able to interact with existing persisted objects if they have click-handlers implemented (`object.update(clickable=true)`). Clickable objects will turn your cursor from an arrow to a finger pointing as you hover over them. For the time being, anything you create with ARB will have click-handlers implemented automatically.
+
 ## Control Panel
 ![AR Builder Panel](../../assets/img/arb-panel.png)
 
