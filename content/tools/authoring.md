@@ -58,6 +58,46 @@ You can import a json-formatted manifest of GLTF models using the command argume
 python arb.py hello -m arb-manifest.json
 ```
 
+Scale varies widly between individual models, so experiemnt with the best scale to start with.
+
+`arb-manifest.json`
+```json
+{
+    "models": [
+        {
+            "name": "avocado",
+            "url_gltf": "models/Avocado.glb",
+            "scale": 5
+        },
+        {
+            "name": "shuttle",
+            "url_gltf": "models/Shuttle.glb",
+            "scale": 5
+        },
+        {
+            "name": "duck",
+            "url_gltf": "models/Duck.glb",
+            "scale": 0.2
+        },
+        {
+            "name": "earth",
+            "url_gltf": "models/Earth.glb",
+            "scale": 2
+        },
+        {
+            "name": "lantern",
+            "url_gltf": "models/Lantern.glb",
+            "scale": 0.015
+        },
+        {
+            "name": "camera",
+            "url_gltf": "models/AntiqueCamera.glb",
+            "scale": 0.05
+        }
+    ]
+}
+```
+
 ### MQTT Host and Realm
 By default all `arb` MQTT messages are published to the default message broker and topic (realm and scene you specify) using this scheme: 
 
