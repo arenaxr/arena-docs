@@ -50,6 +50,9 @@ make check
 - **ARENA persist**
   - https://github.com/conix-center/arena-persist
 
+- **ARENA Authentication backend**
+  - https://github.com/conix-center/ARENA-auth
+
 - **Posefusion**
   - https://github.com/conix-center/posefusion
 
