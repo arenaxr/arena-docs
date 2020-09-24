@@ -42,7 +42,7 @@ Accepted arguments are:
   - _torus_
   - _torusKnot_
   - _triangle_
-  - _gltf-model_ (see https://github.com/conix-center/ARENA-core#models for more details on GLTF format 3D models)
+  - _gltf-model_ (see [models](https://github.com/conix-center/ARENA-core#models) for more details on GLTF format 3D models)
   - _line_
   - _thickline_
   - _text_
@@ -66,9 +66,9 @@ Accepted arguments are:
   - _mouseenter_
   - _mouseleave_
 - **url** - some objects use this parameter to refer to, e.g. a bitmap image, GLTF model, or web URL. See:
-  - https://github.com/conix-center/ARENA-core#images
-  - https://github.com/conix-center/ARENA-core#models
-  - https://github.com/conix-center/ARENA-core#load-scene
+  - [images](https://github.com/conix-center/ARENA-core#images)
+  - [models](https://github.com/conix-center/ARENA-core#models)
+  - [load-scene](https://github.com/conix-center/ARENA-core#load-scene)
 - **data** - accepts arbitrary JSON data to specify additional attribute-value pairs not specified above to be added to the object's A-Frame entity; see A-Frame and ARENA-core documentation for more detail. An example of a somewhat fancy data message would look like
 
 ```
@@ -111,7 +111,7 @@ Empty out the buffer of sent/received network events; call this from main thread
 
 ### callback
 
-The data passed to the ARENA callback function is a JSON string best interpreted with `json.loads()` which turns it into a dictionary. These messages are the full contents of all MQTT messages pertaining to the scene, as specified in https://github.com/conix-center/ARENA-core. Most of them may not be of interest, and should be filtered to just events, with code like:
+The data passed to the ARENA callback function is a JSON string best interpreted with `json.loads()` which turns it into a dictionary. These messages are the full contents of all MQTT messages pertaining to the scene, as specified in [ARENA-core](https://github.com/conix-center/ARENA-core). Most of them may not be of interest, and should be filtered to just events, with code like:
 
 ```
 def callback(msg)
