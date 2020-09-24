@@ -26,7 +26,7 @@ arena.handle_events()
 
 ## Say Hello in the ARENA
 
-1. Open the ARENA in your browser first: [https://xr.andrew.cmu.edu?scene=hello](https://xr.andrew.cmu.edu?scene=hello)
+1. Open the ARENA in your browser first: [https://arena.andrew.cmu.edu?scene=hello](https://arena.andrew.cmu.edu?scene=hello)
 1. Install our package using pip:
     ```
     pip3 install arena-py

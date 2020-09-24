@@ -21,7 +21,7 @@ baseurl: "/ARENA"
 url: https://conix-center.github.io
 aux_links:
   "The ARENA":
-    - "https://xr.andrew.cmu.edu/"
+    - "https://arena.andrew.cmu.edu/"
   "CONIX Research Center":
     - "https://conix.io/"
   "Our GitHub":
