@@ -9,11 +9,12 @@ layout: default
 ## ARENA Usage Links
 
 Our demonstration sample server runs at https://arena.andrew.cmu.edu
-- [ARENA Scene "render"](https://arena.andrew.cmu.edu/?scene=render)
+- [ARENA Sample Scene "render"](https://arena.andrew.cmu.edu/?scene=render)
+- [ARENA Scene Builder](https://arena.andrew.cmu.edu/build/)
 - [ARENA Network Graph](https://arena.andrew.cmu.edu/network/)
-- [ARENA Builder Page](https://arena.andrew.cmu.edu/build/)
 - [ARENA Runtime Supervisor](https://arena.andrew.cmu.edu/arts/)
-- [ARENA Go ](https://arena.andrew.cmu.edu/go/) (deprecating...)
+- [ARENA File Store](https://arena.andrew.cmu.edu/storemng/)
+- [ARENA Go Page](https://arena.andrew.cmu.edu/go/) (deprecating...)
 - [ATLAS - ARENA Scene Locator](https://atlas.conix.io/)
 
 ## ARENA Source
