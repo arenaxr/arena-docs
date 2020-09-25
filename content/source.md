@@ -18,7 +18,9 @@ Our demonstration sample server runs at https://arena.andrew.cmu.edu
 - [ATLAS - ARENA Scene Locator](https://atlas.conix.io/)
 
 ## ARENA Source
+https://github.com/conix-center/arena-services-docker
 
+- [**ARENA Documentation**](https://github.com/conix-center/ARENA)
 - [**ARENA-core**](https://github.com/conix-center/ARENA-core)
 - [**ARENA-py python examples**](https://github.com/conix-center/ARENA-py)
 - [**ATLAS**](https://github.com/conix-center/ATLAS)
