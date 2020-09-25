@@ -7,6 +7,8 @@ parent: Architecture
 
 # MQTT PubSub Topic Tree
 
+{% include alert type="danger" title="OUT OF DATE" content="These topics have been expanded, and could use an update" %}
+
 ## Graphic elements
 
 - `<realm>/s/<scene-id>/<object>`

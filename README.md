@@ -38,8 +38,22 @@ make check
 
 ## Comments
 If you really need to comment out your text, it's not supported, but you can hack it this way:
+```markdown
+[//]: # (comment)
+```
 
-`[//]: # (comment)`
+## Alerts/Callouts
+Callout alerts are available. Use this syntax: 
+```markdown
+{% include alert type="warning" title="TODO" content="Write me." %}
+```
+- heading
+- info
+- tip
+- warning
+- danger
+
+
 
 # ARENA-Related Repositories
 

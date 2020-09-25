@@ -1,0 +1,4 @@
+<div class="alert-box alert-{{ include.type | downcase }}" role="alert">
+    <h4 class="alert-heading">{{ include.title | default: include.type }}</h4>
+    {{ include.content | markdownify }}
+</div>
