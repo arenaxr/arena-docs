@@ -36,6 +36,11 @@ Look for broken links and correct HTML using [html-proofer](https://github.com/g
 make check
 ```
 
+## Comments
+If you really need to comment out your text, it's not supported, but you can hack it this way:
+
+`[//]: # (comment)`
+
 # ARENA-Related Repositories
 
 - **ARENA-core**
