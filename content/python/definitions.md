@@ -7,7 +7,8 @@ parent: Python Library
 
 # Python Function Definitions
 
-Here is a breakdown of the currently available arena.py functions
+Here is a breakdown of the currently available arena.py functions.
+- [**ARENA-py**](https://github.com/conix-center/ARENA-py) Python repository
 
 ### init
 
@@ -113,7 +114,7 @@ Empty out the buffer of sent/received network events; call this from main thread
 
 The data passed to the ARENA callback function is a JSON string best interpreted with `json.loads()` which turns it into a dictionary. These messages are the full contents of all MQTT messages pertaining to the scene, as specified in [ARENA-core](https://github.com/conix-center/ARENA-core). Most of them may not be of interest, and should be filtered to just events, with code like:
 
-```
+```python
 def callback(msg)
     jsonMsg = json.loads(msg)
     # filter non-event messages

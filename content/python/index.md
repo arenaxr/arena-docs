@@ -8,6 +8,7 @@ has_children: true
 # Python Library Overview
 
 Draw objects in the ARENA using our Python library.
+- [**ARENA-py**](https://github.com/conix-center/ARENA-py) Python repository
 
 This library sits above the ARENA pub/sub MQTT message protocol. JSON messages are used by a our [ARENA web client](https://github.com/conix-center/ARENA-core) running in a browser, and is and described in more detail in our [Messaging Format](../messaging/index.md). That forms a layer, in turn, on top of the [A-Frame](https://aframe.io/) and [THREE.js](http://threejs.org/) javascript libraries.
 
@@ -17,7 +18,7 @@ This is the simplest example of an ARENA Python program.
 
 `hello.py`
 
-```
+```python
 import arena
 arena.init("arena.andrew.cmu.edu", "realm", "hello")
 arena.Object(arena.Shape.cube)
@@ -28,7 +29,7 @@ arena.handle_events()
 
 1. Open the ARENA in your browser first: [https://arena.andrew.cmu.edu?scene=hello](https://arena.andrew.cmu.edu?scene=hello)
 1. Install our package using pip:
-    ```
+    ```shell
     pip3 install arena-py
     cd examples
     python hello.py

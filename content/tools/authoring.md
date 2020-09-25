@@ -11,7 +11,7 @@ An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top
 ## Quick Start
 1. Clone our Python repo [https://github.com/conix-center/ARENA-py](https://github.com/conix-center/ARENA-py).
 1. Usage: `arb` takes at minimum one argument, the first one, a scene name (`hello` in this example).
-    ```
+    ```shell
     cd ARENA-py/demos/arb
     python arb.py hello
     ```
@@ -58,7 +58,7 @@ There is a small temporary object resting on position 0,0,0 in the shape of a co
 
 ### Importing Models
 You can import a json-formatted manifest of GLTF models using the command argument **-m** to use on the **model** control panel option. You can write your own, or use the example, [arb-manifest.json](https://github.com/conix-center/ARENA-py/blob/master/demos/arb-manifest.json).
-```
+```shell
 python arb.py hello -m arb-manifest.json
 ```
 
@@ -112,6 +112,6 @@ To use your own MQTT message broker (**-b**) and/or realm (**-r**):
 
 - *custom broker*: `arena-west1.conix.io`
 - *custom topic*: `foo/s/hello`
-```
+```shell
 python arb.py hello -b arena-west1.conix.io -r foo
 ```

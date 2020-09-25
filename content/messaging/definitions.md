@@ -7,6 +7,8 @@ parent: Messaging Format
 
 # Messaging Format Function Definitions
 
+- [**ARENA-core**](https://github.com/conix-center/ARENA-core) webserver repository
+
 ## Camera
 (from A-Frame documentation)
 

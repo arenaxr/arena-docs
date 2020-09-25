@@ -7,6 +7,7 @@ has_children: true
 
 # Messaging Format Overview
 Render 3d content in AFrame from MQTT messages
+- [**ARENA-core**](https://github.com/conix-center/ARENA-core) webserver repository
 
 ## General Purpose AFrame using Subtopics
 Most of ARENA's MQTT messages take JSON data where x,y,z (location in meters), x,y,z,w (rotation in quaternions), x,y,z (scale factor where 1=100%).
