@@ -5,18 +5,9 @@ layout: default
 parent: Tools
 ---
 
-# Persistence DB
-
-# Arena Persistence service
-
-Listens on MQTT for ARENA objects to save to mongodb store
-
-## Install
-
-- Install nodejs
-- `npm install`
-
-## Usage
+# ARENA Persistence Service
+Listens on MQTT for ARENA objects to save to mongodb store.
+- [ARENA-persist](https://github.com/conix-center/arena-persist) repository
 
 ### Persistence
 Simply adding `persist: true` to the top level MQTT message for any `create` action and the object will be saved.
@@ -27,7 +18,7 @@ If an `update` message contains an explicit `persist: false`, then the `data` th
 
 ### TTL
 Adding a `ttl` (int seconds) to the top level MQTT message for any `create` action signals that the object
-will be automatically deleted from peristence after set duration, as well as a correspdoning `delete` action message
+will be automatically deleted from persistence after set duration, as well as a corresponding `delete` action message
 sent over pubsub. `ttl` implies that `persist` is `true`.
 
 ### Templates
@@ -39,9 +30,9 @@ exactly same as any other scene with C(R)UD actions on pubsub, with exception th
 enforced. That is to say, the objects do not expire inside @template scenes, but rather activated upon instantiation.
 
 When a template is loaded, a parent container is first created in the target scene. This parent container follows the
-object id naming sceme: ``templateId::instanceId``, e.g. `myTemplate::instance_0`.
+object id naming scene: ``templateId::instanceId``, e.g. `myTemplate::instance_0`.
  
-Then every object inside the designated @template scene is replicated as descendents of the parent container. In this
+Then every object inside the designated @template scene is replicated as descendants of the parent container. In this
 way, the parent can be repositioned, rotated, or scaled to adjust the template all at once.  The objects within
 the template follow the naming scheme ``templateId::instanceId::objectId``, e.g. `myTemplate::instance_0::cube1`.
 
@@ -55,8 +46,6 @@ object in the target scene.
 
 After the template load, all objects behave as typical in any scene.
 
-*Notes:*
-
-- If a template scene is empty with no objects, or an instanceid already exists within a target scene, the template
-load will fail silently. 
-
+{% include alert type="info" title="NOTES" content="
+If a template scene is empty with no objects, or an instance id already exists within a target scene, the template load will fail silently. 
+" %}
