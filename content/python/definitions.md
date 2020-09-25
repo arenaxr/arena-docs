@@ -72,7 +72,7 @@ Accepted arguments are:
   - [load-scene](https://github.com/conix-center/ARENA-core#load-scene)
 - **data** - accepts arbitrary JSON data to specify additional attribute-value pairs not specified above to be added to the object's A-Frame entity; see A-Frame and ARENA-core documentation for more detail. An example of a somewhat fancy data message would look like
 
-```
+```python
     data='{"impulse": {"on": "mouseup","force":"0 40 0","position":"10 1 1"},"material": {"color":"(0, 255, 0)", "transparent": false, "opacity": 1}}'
 ```
 

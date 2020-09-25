@@ -9,7 +9,7 @@ parent: 3D Content
 
 ##### Getting models from Sketchfab
 Sketchfab GLTF models don't always come in convenient single .glb files. Sometimes they consist of a main .gltf file that refers to several textures and other files in a textures/ folder and .glb file. And to make matters worse, the default name is scene.gltf. But if you put everything from the download into a folder of it's own, you can keep it separate from other scene.gltf files, and they will find the right files through relative paths. For example
-```
+```shell
 ls /var/www/html/models/nara
 scene.bin  scene.gltf  textures
 ```
@@ -19,7 +19,7 @@ scene.bin  scene.gltf  textures
 ### 3D models
 
 Here are some ready-to-use models `on the andrew.andrew.cmu.edu` server, accessible with the `models/modelname.glb` path:
-```
+```shell
 2CylinderEngine.glb            Cameras.gltf              MultiUVTest.glb               TriangleWithoutIndices.gltf  hat2.glb
 2CylinderEngine.gltf           CesiumMan.glb             MultiUVTest.gltf              TwoSidedPlane.gltf           helios
 AlphaBlendModeTest.glb         CesiumMan.gltf            NormalTangentMirrorTest.glb   UnlitTest.glb                hololens.glb

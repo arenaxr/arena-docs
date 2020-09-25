@@ -36,7 +36,7 @@ logo: /favicon.ico
 
 #theme: just-the-docs
 # after github-pages, change to:
-remote_theme: pmarsceill/just-the-docs
+remote_theme: conix-center/just-the-docs
 
 defaults:
   - scope: {path: "content"}
