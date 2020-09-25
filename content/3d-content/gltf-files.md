@@ -19,40 +19,40 @@ scene.bin  scene.gltf  textures
 ### 3D models
 
 Here are some ready-to-use models `on the andrew.andrew.cmu.edu` server, accessible with the `models/modelname.glb` path:
-```shell
-2CylinderEngine.glb            Cameras.gltf              MultiUVTest.glb               TriangleWithoutIndices.gltf  hat2.glb
-2CylinderEngine.gltf           CesiumMan.glb             MultiUVTest.gltf              TwoSidedPlane.gltf           helios
-AlphaBlendModeTest.glb         CesiumMan.gltf            NormalTangentMirrorTest.glb   UnlitTest.glb                hololens.glb
-AlphaBlendModeTest.gltf        CesiumMilkTruck.glb       NormalTangentMirrorTest.gltf  UnlitTest.gltf               izzy
-AnimatedCube.gltf              CesiumMilkTruck.gltf      NormalTangentTest.glb         VC.glb                       marcus2.glb
-AnimatedMorphCube.glb          Corset.glb                NormalTangentTest.gltf        VC.gltf                      marcus3.glb
-AnimatedMorphCube.gltf         Corset.gltf               OrientationTest.glb           VertexColorTest.glb          monkey
-AnimatedMorphSphere.glb        Court.glb                 OrientationTest.gltf          VertexColorTest.gltf         nara
-AnimatedMorphSphere.gltf       Cube.gltf                 Plane.mtl                     WaterBottle.glb              nuno.glb
-AnimatedTriangle.gltf          Cube.mtl                  Plane.obj                     WaterBottle.gltf             palm
-AntiqueCamera.glb              Cube.obj                  ReciprocatingSaw.glb          anthony.glb                  peacock
-AntiqueCamera.gltf             DamagedHelmet.glb         ReciprocatingSaw.gltf         avocadoman                   rearbody.mtl
-Avocado.glb                    DamagedHelmet.gltf        RiggedFigure.glb              baby_yoda                    rearbody.obj
-Avocado.gltf                   Drone.glb                 RiggedFigure.gltf             body.mtl                     rhetoritician
-BarramundiFish.glb             Duck.glb                  RiggedSimple.glb              body.obj                     scene.bin
-BarramundiFish.gltf            Duck.gltf                 RiggedSimple.gltf             cat                          skull
-BoomBox.glb                    Earth.glb                 Scene.bin                     chicken                      sphere_clicktest.gltf
-BoomBox.gltf                   EnvironmentTest.gltf      SciFiHelmet.gltf              chickenmove                  tail.mtl
-BoomBoxWithAxes.gltf           Flags.glb                 Shuttle.glb                   cow                          tail.obj
-Box.glb                        FlightHelmet.gltf         SimpleMeshes.gltf             cow2                         throne
-Box.gltf                       GearboxAssy.glb           SimpleMorph.gltf              crown                        tiles.mtl
-BoxAnimated.glb                GearboxAssy.gltf          SimpleSparseAccessor.gltf     cybertruck                   tiles.obj
-BoxAnimated.gltf               Head.gltf                 SmilingFace.glb               drone-small.glb              toni.glb
-BoxInterleaved.glb             Head2.glb                 Snoop.glb                     drone.gltf                   tri_prism.glb
-BoxInterleaved.gltf            InterpolationTest.glb     SpecGlossVsMetalRough.glb     enginside.mtl                valve_index_left.gltf
-BoxTextured.glb                InterpolationTest.gltf    SpecGlossVsMetalRough.gltf    enginside.obj                valve_index_right.gltf
-BoxTextured.gltf               Lantern.glb               Sponza.gltf                   engmount.mtl                 vr_controller_vive.mtl
-BoxTexturedNonPowerOfTwo.glb   Lantern.gltf              Stringlights.glb              engmount.obj                 vr_controller_vive.obj
-BoxTexturedNonPowerOfTwo.gltf  MetalRoughSpheres.glb     Suzanne.gltf                  engout.mtl                   windows.mtl
-BoxVertexColors.glb            MetalRoughSpheres.gltf    TextureCoordinateTest.glb     engout.obj                   windows.obj
-BoxVertexColors.gltf           Monster.glb               TextureCoordinateTest.gltf    engrim.mtl                   wings.mtl
-BrainStem.glb                  Monster.gltf              TextureSettingsTest.glb       engrim.obj                   wings.obj
-BrainStem.gltf                 Moon.glb                  TextureSettingsTest.gltf      er1k.glb
-Buggy.glb                      MorphPrimitivesTest.glb   TextureTransformTest.gltf     frog
-Buggy.gltf                     MorphPrimitivesTest.gltf  Triangle.gltf                 goose
-```
+
+|------------------------------:|-------------------------:|-----------------------------:|----------------------------:|---------------:|
+|2CylinderEngine.glb            |Cameras.gltf              |MultiUVTest.glb               |TriangleWithoutIndices.gltf  |hat2.glb|
+|2CylinderEngine.gltf           |CesiumMan.glb             |MultiUVTest.gltf              |TwoSidedPlane.gltf           |helios|
+|AlphaBlendModeTest.glb         |CesiumMan.gltf            |NormalTangentMirrorTest.glb   |UnlitTest.glb                |hololens.glb|
+|AlphaBlendModeTest.gltf        |CesiumMilkTruck.glb       |NormalTangentMirrorTest.gltf  |UnlitTest.gltf               |izzy|
+|AnimatedCube.gltf              |CesiumMilkTruck.gltf      |NormalTangentTest.glb         |VC.glb                       |marcus2.glb|
+|AnimatedMorphCube.glb          |Corset.glb                |NormalTangentTest.gltf        |VC.gltf                      |marcus3.glb|
+|AnimatedMorphCube.gltf         |Corset.gltf               |OrientationTest.glb           |VertexColorTest.glb          |monkey|
+|AnimatedMorphSphere.glb        |Court.glb                 |OrientationTest.gltf          |VertexColorTest.gltf         |nara|
+|AnimatedMorphSphere.gltf       |Cube.gltf                 |Plane.mtl                     |WaterBottle.glb              |nuno.glb|
+|AnimatedTriangle.gltf          |Cube.mtl                  |Plane.obj                     |WaterBottle.gltf             |palm|
+|AntiqueCamera.glb              |Cube.obj                  |ReciprocatingSaw.glb          |anthony.glb                  |peacock|
+|AntiqueCamera.gltf             |DamagedHelmet.glb         |ReciprocatingSaw.gltf         |avocadoman                   |rearbody.mtl|
+|Avocado.glb                    |DamagedHelmet.gltf        |RiggedFigure.glb              |baby_yoda                    |rearbody.obj|
+|Avocado.gltf                   |Drone.glb                 |RiggedFigure.gltf             |body.mtl                     |rhetoritician|
+|BarramundiFish.glb             |Duck.glb                  |RiggedSimple.glb              |body.obj                     |scene.bin|
+|BarramundiFish.gltf            |Duck.gltf                 |RiggedSimple.gltf             |cat                          |skull|
+|BoomBox.glb                    |Earth.glb                 |Scene.bin                     |chicken                      |sphere_clicktest.gltf|
+|BoomBox.gltf                   |EnvironmentTest.gltf      |SciFiHelmet.gltf              |chickenmove                  |tail.mtl|
+|BoomBoxWithAxes.gltf           |Flags.glb                 |Shuttle.glb                   |cow                          |tail.obj|
+|Box.glb                        |FlightHelmet.gltf         |SimpleMeshes.gltf             |cow2                         |throne|
+|Box.gltf                       |GearboxAssy.glb           |SimpleMorph.gltf              |crown                        |tiles.mtl|
+|BoxAnimated.glb                |GearboxAssy.gltf          |SimpleSparseAccessor.gltf     |cybertruck                   |tiles.obj|
+|BoxAnimated.gltf               |Head.gltf                 |SmilingFace.glb               |drone-small.glb              |toni.glb|
+|BoxInterleaved.glb             |Head2.glb                 |Snoop.glb                     |drone.gltf                   |tri_prism.glb|
+|BoxInterleaved.gltf            |InterpolationTest.glb     |SpecGlossVsMetalRough.glb     |enginside.mtl                |valve_index_left.gltf|
+|BoxTextured.glb                |InterpolationTest.gltf    |SpecGlossVsMetalRough.gltf    |enginside.obj                |valve_index_right.gltf|
+|BoxTextured.gltf               |Lantern.glb               |Sponza.gltf                   |engmount.mtl                 |vr_controller_vive.mtl|
+|BoxTexturedNonPowerOfTwo.glb   |Lantern.gltf              |Stringlights.glb              |engmount.obj                 |vr_controller_vive.obj|
+|BoxTexturedNonPowerOfTwo.gltf  |MetalRoughSpheres.glb     |Suzanne.gltf                  |engout.mtl                   |windows.mtl|
+|BoxVertexColors.glb            |MetalRoughSpheres.gltf    |TextureCoordinateTest.glb     |engout.obj                   |windows.obj|
+|BoxVertexColors.gltf           |Monster.glb               |TextureCoordinateTest.gltf    |engrim.mtl                   |wings.mtl|
+|BrainStem.glb                  |Monster.gltf              |TextureSettingsTest.glb       |engrim.obj                   |wings.obj|
+|BrainStem.gltf                 |Moon.glb                  |TextureSettingsTest.gltf      |er1k.glb||
+|Buggy.glb                      |MorphPrimitivesTest.glb   |TextureTransformTest.gltf     |frog|||
+|Buggy.gltf                     |MorphPrimitivesTest.gltf  |Triangle.gltf                 |goose|||
