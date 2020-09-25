@@ -9,6 +9,7 @@ layout: default
 ## ARENA Usage Links
 
 Our demonstration sample server runs at https://arena.andrew.cmu.edu
+
 - [ARENA Sample Scene "render"](https://arena.andrew.cmu.edu/?scene=render)
 - [ARENA Scene Builder](https://arena.andrew.cmu.edu/build/)
 - [ARENA Network Graph](https://arena.andrew.cmu.edu/network/)
@@ -18,6 +19,7 @@ Our demonstration sample server runs at https://arena.andrew.cmu.edu
 - [ATLAS - ARENA Scene Locator](https://atlas.conix.io/)
 
 ## ARENA Source
+
 https://github.com/conix-center/arena-services-docker
 
 - [**ARENA Documentation**](https://github.com/conix-center/ARENA)
@@ -29,11 +31,14 @@ https://github.com/conix-center/arena-services-docker
 - [**Posefusion**](https://github.com/conix-center/posefusion)
 - [**April Tag Decoding w. AR.js**](https://github.com/conix-center/AR.js/blob/master/README.md#apriltag-detection)
 
-[//]: # (https://docs.google.com/presentation/d/1dc1RdlGROBYj1zIoPR8HX_RBIKn8-KRmNZscXVrdIs0/edit?ts=5dbc423f#slide=id.g606e93cce1_1_14)
-[//]: # (some out of date?)
-[//]: # (JSON message format)
-[//]: # (PubSub topics)
-[//]: # (Runtime notes)
-[//]: # (Refactor)
-[//]: # (Capability-based Access Control)
-[//]: # (Cantrips (pre-ATLAS?)
+## Design Doc (WIP)
+
+- [ARENA Refactor Design](https://docs.google.com/presentation/d/1dc1RdlGROBYj1zIoPR8HX_RBIKn8-KRmNZscXVrdIs0/edit?ts=5dbc423f#slide=id.g606e93cce1_1_14)
+
+[//]: # "some out of date?"
+[//]: # "JSON message format"
+[//]: # "PubSub topics"
+[//]: # "Runtime notes"
+[//]: # "Refactor"
+[//]: # "Capability-based Access Control"
+[//]: # "Cantrips (pre-ATLAS?"
