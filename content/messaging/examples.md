@@ -35,28 +35,25 @@ MQTT messages that define the scene:
 
 ### Create models
 ```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Earth {"object_id": "gltf-model_Earth", "action": "create", "data": {"object_type": "gltf-model", "position": {"x":0, "y": 0.1, "z": 0}, "url": "models/Earth.glb", "scale": {"x": 5, "y": 5, "z": 5}}}
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Moon {"object_id": "gltf-model_Moon", "action": "create", "data": {"object_type": "gltf-model", "position": {"x":0.4, "y": 0.8, "z": -2}, "url": "models/Moon.glb" }}
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Earth_child {"object_id" : "gltf-model_Earth", "action": "update", "type": "setChild", "data": {"child": "gltf-model_Moon"}}
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Moon_scale {"object_id" : "gltf-model_Moon", "action": "update", "type": "object", "data": {"scale": {"x":0.03, "y":0.03, "z":0.03}}}
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Moon_position {"object_id" : "gltf-model_Moon", "action": "update", "type": "object", "data": {"position": {"x":0.3, "y":0.07, "z":0}}}
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Earth -m '{"object_id": "gltf-model_Earth", "action": "create", "data": {"object_type": "gltf-model", "position": {"x":0, "y": 0.1, "z": 0}, "url": "models/Earth.glb", "scale": {"x": 5, "y": 5, "z": 5}}}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Moon -m '{"object_id": "gltf-model_Moon", "action": "create", "data": {"parent": "gltf-model_Earth", "object_type": "gltf-model", "position": {"x":0, "y": 0.05, "z": 0.6}, "scale": {"x":0.05, "y": 0.05, "z": 0.05}, "url": "models/Moon.glb" }}'
 ```
 ### Define animation and movement
  ```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Earth_position {"object_id" : "gltf-model_Earth", "action": "update", "type": "object", "data": {"animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 20000, "easing": "linear"}} }
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Earth_inflate {"object_id" : "gltf-model_Earth", "action": "update", "type": "object", "data": {"startEvents": "click", "property": "scale", "dur": 1000, "from": "10 10 10", "to": "5 5 5", "easing": "easeInOutCirc", "loop": 5, "dir": "alternate"} }
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Earth -m '{"object_id" : "gltf-model_Earth", "action": "update", "type": "object", "data": {"animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 20000, "easing": "linear"}} }'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Earth -m '{"object_id" : "gltf-model_Earth", "action": "update", "type": "object", "data": {"startEvents": "click", "property": "scale", "dur": 1000, "from": "10 10 10", "to": "5 5 5", "easing": "easeInOutCirc", "loop": 5, "dir": "alternate"} }'
 ```
 ### Add a click-listener
 ```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Earth_listener {"object_id" : "gltf-model_Earth", "action": "update", "type": "object", "data": {"click-listener": ""}}
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/gltf-model_Earth -m '{"object_id" : "gltf-model_Earth", "action": "update", "type": "object", "data": {"click-listener": ""}}'
 ```
 ### Create marker objects
 ```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/box0 {"object_id" : "box0", "action": "create", "data": {"color": "blue", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": 0, "y": 0, "z": 0} }}
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/box1 {"object_id" : "box1", "action": "create", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -0.7, "y": 1.67, "z": 2.11} }}
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/box2 {"object_id" : "box2", "action": "create", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -2.88, "y": 2.80, "z": -2.12} }}
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/box3 {"object_id" : "box3", "action": "create", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -0.09, "y": 1.30, "z": -3.66} }}
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/box4 {"object_id" : "box4", "action": "create", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": 3.31, "y": 2.00, "z": -0.97} }}
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/box0 -m '{"object_id" : "box0", "action": "create", "data": {"color": "blue", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": 0, "y": 0, "z": 0} }}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/box1 -m '{"object_id" : "box1", "action": "create", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -0.7, "y": 1.67, "z": 2.11} }}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/box2 -m '{"object_id" : "box2", "action": "create", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -2.88, "y": 2.80, "z": -2.12} }}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/box3 -m '{"object_id" : "box3", "action": "create", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -0.09, "y": 1.30, "z": -3.66} }}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/earth/box4 -m '{"object_id" : "box4", "action": "create", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": 3.31, "y": 2.00, "z": -0.97} }}'
 ```
 ### Results
 {% include alert type="warning" title="TODO" content="Include awesome demo result from design doc." %}
