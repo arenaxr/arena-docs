@@ -11,7 +11,7 @@ parent: Messaging Format
 
 ## Draw a Cube
 
-Instantiate, persist a cube and set all it's basic parameters
+Instantiate a cube and set all it's basic parameters
 
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/cube_1 -m '{"object_id" : "cube_1", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 1, "y": 1, "z": -1}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}, "color": "#FF0000"}}'
@@ -91,7 +91,7 @@ mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/image_2 -m '{"object_id
 Use the `multisrc` A-Frame Component to specify different bitmaps for sides of a cube or other primitive shape, e.g:
 
 ```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/die1 -m '{"object_id":"die1", "action":"create", "type":"object", "persist":true, "data":{"object_type":"cube", "position":{"x":0, "y":0.5, "z":-2}, "rotation":{"x":0, "y":0, "z":0, "w":1}, "scale":{"x":1, "y":1, "z":1}, "color":"#ffffff", "dynamic-body":{"type":"dynamic"}, "multisrc":{"srcspath":"images/dice/", "srcs":"side1.png, side2.png, side3.png, side4.png, side5.png, side6.png"}}}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/die1 -m '{"object_id":"die1", "action":"create", "type":"object", "data":{"object_type":"cube", "position":{"x":0, "y":0.5, "z":-2}, "rotation":{"x":0, "y":0, "z":0, "w":1}, "scale":{"x":1, "y":1, "z":1}, "color":"#ffffff", "dynamic-body":{"type":"dynamic"}, "multisrc":{"srcspath":"images/dice/", "srcs":"side1.png, side2.png, side3.png, side4.png, side5.png, side6.png"}}}'
 ```
 
 ## Other Primitives: TorusKnot
@@ -148,7 +148,7 @@ mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/text_3 -m '{"object_id"
 
 ## Lights
 
-Persist a red light to the scene
+Create a red light in the scene
 
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/light_3 -m '{"object_id" : "light_3", "action": "create", "data": {"object_type": "light", "position": {"x": 1, "y": 1, "z": 1}, "rotation": {"x": 0.25, "y": 0.25, "z": 0, "w": 1}, "color": "#FF0000"}}'
@@ -211,13 +211,19 @@ Add the "click-listener" event to a scene object; click-listener is a Component 
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/cube_1 -m '{"object_id" : "cube_1", "action": "update", "type": "object", "data": {"click-listener": "enable"}}'
 ```
+## Persisted Objects
+
+If we want our objects to return to the scene when we next open or reload our browser, we can commit them on creation to the ARENA Persistance DB by setting `"persist": true`.
+
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/Ball2 -m '{"object_id": "Ball2", "action": "create", "persist": true, "data": {"position": {"x": -1, "y": 1, "z": -1}, "color": "blue", "object_type": "sphere"}}'
+
 
 ## Temporary Objects: ttl
 
-It's desirable to have objects that don't last forever and pile up. For that there is the 'ttl' parameter that gives objects a lifetime, in seconds. Example usage for a sphere that disappears after 5 seconds (must also use `persist=true`):
+It's desirable to have objects that don't last forever and pile up. For that there is the 'ttl' parameter that gives objects a lifetime, in seconds. Example usage for a sphere that disappears after 5 seconds:
 
 ```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/Ball2 -m '{"object_id": "Ball2", "action": "create", "ttl": 5, "persist": true, "data": {"position": {"x": -1, "y": 1, "z": -1}, "color": "blue", "object_type": "sphere"}}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/Ball2 -m '{"object_id": "Ball2", "action": "create", "ttl": 5, "data": {"position": {"x": -1, "y": 1, "z": -1}, "color": "blue", "object_type": "sphere"}}'
 ```
 
 ## Transparent Occlusion
