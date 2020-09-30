@@ -117,7 +117,7 @@ mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/gltf-model_1 -m '{"obje
 To animate a GLTF model (see above for how to find animation names), set the animation-mixer parameter, e.g:
 
 ```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/gltf-model_3-animation -h arena.andrew.cmu.edu -m '{"object_id": "gltf-model_3", "action": "update", "type": "object", "data": {"animation-mixer": {"clip": "*"}}}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/gltf-model_3 -m '{"object_id": "gltf-model_3", "action": "update", "type": "object", "data": {"animation-mixer": {"clip": "*"}}}'
 ```
 
 The asterisk means play all animations, and works better in some situations, where other times the name of a specific animation in the GLTF file works (or maybe several in sequence).
@@ -352,7 +352,7 @@ Click events are generated as part of the laser-controls A-Frame entity; you get
   The MQTT topic name for viewing these events can be the standard prefix (e.g. realm/s/example/) concatenated with a string made up of object ID that generated the event. An example event MQTT:
 
 ```json
-realm/s/example/fallBox2 '{"object_id":"fallBox2", "action":"clientEvent", "type":"mousedown", "data":{"position":{"x":-0.993, "y":0.342, "z":-1.797}, "source":"camera_8715_er"}}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/fallBox2 '{"object_id":"fallBox2", "action":"clientEvent", "type":"mousedown", "data":{"position":{"x":-0.993, "y":0.342, "z":-1.797}, "source":"camera_8715_er"}}'
 ```
 
 Note the message itself will contain the originator of the event as a camera/"user" ID and other data like where the object was clicked (in world coordinates[?])
