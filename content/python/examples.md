@@ -30,19 +30,22 @@ arena.handle_events()
 ## Debug Messages
 
 ```python
-
+arena.debug()
 ```
 
 ## Add Subtopic
 
 ```python
+def secondary_callback(msg):
+    print(msg.payload)
 
+arena.add_topic("$SYS/#", secondary_callback)
 ```
 
 ## Remove Subtopic
 
 ```python
-
+arena.remove_topic("$SYS/#")
 ```
 
 ## Create a cube
@@ -67,12 +70,6 @@ arena.handle_events()
 ```
 
 ## Observe name collisions
-
-```python
-
-```
-
-## Update
 
 ```python
 
