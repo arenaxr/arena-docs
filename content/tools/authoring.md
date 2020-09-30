@@ -12,7 +12,7 @@ An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top
 1. Clone our Python repo [https://github.com/conix-center/ARENA-py](https://github.com/conix-center/ARENA-py).
 1. Usage: `arb` takes at minimum one argument, the first one, a scene name (`hello` in this example).
     ```shell
-    cd ARENA-py/demos/arb
+    cd ARENA-py/tools/arb
     python arb.py hello
     ```
 1. Interact with the tool at [https://arena.andrew.cmu.edu?scene=hello](https://arena.andrew.cmu.edu?scene=hello) 
