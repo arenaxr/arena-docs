@@ -7,18 +7,29 @@ parent: 3D Content
 
 # GLTF Files
 
-##### Getting models from Sketchfab
-Sketchfab GLTF models don't always come in convenient single .glb files. Sometimes they consist of a main .gltf file that refers to several textures and other files in a textures/ folder and .glb file. And to make matters worse, the default name is scene.gltf. But if you put everything from the download into a folder of it's own, you can keep it separate from other scene.gltf files, and they will find the right files through relative paths. For example
+Here are some notes to help you convert GLTF models used in the ARENA.
+
+## Sketchfab
+[Sketchfab](https://sketchfab.com/3d-models) GLTF models don't always come in convenient single .glb files. Sometimes they consist of a main .gltf file that refers to several textures and other files in a textures/ folder and .glb file. And to make matters worse, the default name is scene.gltf. But if you put everything from the download into a folder of it's own, you can keep it separate from other scene.gltf files, and they will find the right files through relative paths. For example
 ```shell
 ls /var/www/html/models/nara
 scene.bin  scene.gltf  textures
 ```
-##### Animated GLTF models
-(See below for syntax for playing animations) Models with .gltf extension are text files that can be edited. If you search for 'animation' then search for 'name' you can see the names of animations available to use as arguments.
 
-### 3D models
+## SketchUp
+Getting from [SketchUp](https://www.sketchup.com/) to GLTF is a bit of an adventure:
+- The online converters don’t generate valid GLTFs.
+- The SketchUp GLTF export plugin was written for SketchUp 2016 and seems to hang SketchUp 2020 — these models were created in SketchUp 2017, so the 2016 version refuses to open them.
+- What worked was installing Adobe Dimension, opening the SketchUp file there, and exporting it.
 
-Here are some ready-to-use models `on the andrew.andrew.cmu.edu` server, accessible with the `models/modelname.glb` path:
+Dimension doesn’t seem to edit these models well, so if you want to patch up some textures, it's recommended to do that in SketchUp first, then saving a copy, using Dimension to convert to GLTF.
+
+## GLTF Viewer
+Drag-and-drop preview tool for glTF 2.0 3D models: [https://gltf-viewer.donmccurdy.com/](https://gltf-viewer.donmccurdy.com/).
+
+## ARENA 3D models
+
+Here are some ready-to-use models on the `andrew.andrew.cmu.edu` server, accessible with the `models/modelname.glb` path:
 
 |------------------------------:|-------------------------:|-----------------------------:|----------------------------:|---------------:|
 |2CylinderEngine.glb            |Cameras.gltf              |MultiUVTest.glb               |TriangleWithoutIndices.gltf  |hat2.glb|
