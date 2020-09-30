@@ -108,7 +108,7 @@ Scale varies widely between individual models, so experiment with the best scale
 ### MQTT Host and Realm
 By default all `arb` MQTT messages are published to the default message broker and topic (realm and scene you specify) using this scheme: 
 
-- *default broker*: `arena.andrew.cmu.edu`
+- *default broker*: `oz.andrew.cmu.edu`
 - *default topic*: `realm/s/hello`
 
 To use your own MQTT message broker (**-b**) and/or realm (**-r**):
