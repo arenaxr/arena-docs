@@ -10,7 +10,7 @@ This is the ARENA Documentation website giving architecture, APIs, and step-by-s
 * Install any new ruby packages: `make install`
 * Dependencies: `make update`
 * Build and test: `make serve`
-* Preview site at [http://localhost:4000](http://localhost:4000).
+* Preview site at [http://localhost:4000/ARENA/](http://localhost:4000/ARENA/).
 
 ## Content
 
