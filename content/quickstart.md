@@ -8,7 +8,7 @@ layout: default
 
 {% include alert type="warning" title="TODO" content="Write me." %}
 
-## Open a browser, scene=hello
+## Open a browser, scene=example
 
 ![](../assets/img/tutorial/scene.png)
 
@@ -31,7 +31,7 @@ layout: default
 ## Install arena python library
 - [python](python/)
 
-## Run hello world cube, hello.py
+## Create cube and observe
 
 ```python
 import arena
@@ -42,7 +42,7 @@ arena.handle_events()
 
 ![](../assets/img/tutorial/cube.png)
 
-## Run hello world scene callback, too many msgs
+## Run scene callback, too many msgs
 
 ```python
 def scene_callback(msg):
@@ -54,7 +54,7 @@ arena.init("arena.andrew.cmu.edu", "realm", "example", scene_callback)
 ## Monitor some network connections
 - [Network graph](https://arena.andrew.cmu.edu/network/)
 
-## Run hello world click listener callback
+## Run click listener callback
 
 ```python
 def cube_callback(msg):
@@ -63,7 +63,7 @@ def cube_callback(msg):
 arena.Object(objType=arena.Shape.cube, clickable=True, callback=cube_callback)
 ```
 
-## Animate the cube, hello3.py
+## Animate the cube
 - [3d-content](3d-content/)
 - [gltf-files](3d-content/gltf-files.html)
 - [animated-models](3d-content/animated-models.html)
@@ -107,6 +107,7 @@ arena.handle_events()
 ## Debug your program in ARTS
 - [ARTS GUI](https://arena.andrew.cmu.edu/arts/)
 - [arts](arts/)
+![](../assets/img/tutorial/arts.png)
 
 ## Debug your scene with A-Frame Scene Inspector
 ![](../assets/img/tutorial/inspector.png)
