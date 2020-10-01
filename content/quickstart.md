@@ -25,16 +25,16 @@ When you first enter the ARENA, your perspective position in the scene will be a
 
 | Button | Action | Description |
 | ------ | ------ | ----------- |
-| ![](../assets/img/icons/more.png){:height="32px" width="32px"} ![](../assets/img/icons/less.png){:height="32px" width="32px"} | **Settings** | Expand/Collapse  |
-| ![](../assets/img/icons/audio-on.png){:height="32px" width="32px"} ![](../assets/img/icons/audio-off.png){:height="32px" width="32px"} | **Microphone** | Enable/Disable |
-| ![](../assets/img/icons/video-on.png){:height="32px" width="32px"} ![](../assets/img/icons/video-off.png){:height="32px" width="32px"} | **Camera** | Enable/Disable |
-| ![](../assets/img/icons/avatar3-on.png){:height="32px" width="32px"} ![](../assets/img/icons/avatar3-off.png){:height="32px" width="32px"} | **Facial Avatar** | Enable/Disable |
-| ![](../assets/img/icons/flying-on.png){:height="32px" width="32px"} ![](../assets/img/icons/flying-off.png){:height="32px" width="32px"} | **Flight** | Enable/Disable |
-| ![](../assets/img/icons/speed-slow.png){:height="32px" width="32px"} ![](../assets/img/icons/speed-medium.png){:height="32px" width="32px"} ![](../assets/img/icons/speed-fast.png){:height="32px" width="32px"} | **Movement Speed** | Slow/Medium/Fast |
-| ![](../assets/img/icons/screen-on.png){:height="32px" width="32px"} ![](../assets/img/icons/screen-off.png){:height="32px" width="32px"} | **Screenshare** | Enable/Disable |
-| ![](../assets/img/icons/chat.png){:height="24px" width="24px"} | **Chat Messages** | Open chat messaging |
-| ![](../assets/img/icons/user-list.png){:height="24px" width="24px"} | **User List** | Open list of present users |
-| ![](../assets/img/icons/logout.png){:height="32px" width="32px"} | **Sign Out** | Exit the ARENA |
+| ![](../assets/img/icons/more.png){:height="32px" width="32px"} ![](../assets/img/icons/less.png){:height="32px" width="32px"} | **Settings** | Expand/Collapse settings along the right. |
+| ![](../assets/img/icons/audio-on.png){:height="32px" width="32px"} ![](../assets/img/icons/audio-off.png){:height="32px" width="32px"} | **Microphone** | Speak into the ARENA, or remain silent. |
+| ![](../assets/img/icons/video-on.png){:height="32px" width="32px"} ![](../assets/img/icons/video-off.png){:height="32px" width="32px"} | **Camera** | Let your camera show you as a moving box with your camera image on it.  |
+| ![](../assets/img/icons/avatar3-on.png){:height="32px" width="32px"} ![](../assets/img/icons/avatar3-off.png){:height="32px" width="32px"} | **Facial Avatar** | Let your camera recognize your facial features, and you will appear an animated head matching your facial movement. |
+| ![](../assets/img/icons/flying-on.png){:height="32px" width="32px"} ![](../assets/img/icons/flying-off.png){:height="32px" width="32px"} | **Flight** | Movement defaults to walking along the ground, this will enable you to fly up or even down through the ground. |
+| ![](../assets/img/icons/speed-slow.png){:height="32px" width="32px"} ![](../assets/img/icons/speed-medium.png){:height="32px" width="32px"} ![](../assets/img/icons/speed-fast.png){:height="32px" width="32px"} | **Movement Speed** | Slow/Medium/Fast, defaults to Medium. |
+| ![](../assets/img/icons/screen-on.png){:height="32px" width="32px"} | **Screenshare** | Share your screen as a large panel in the ARENA. |
+| ![](../assets/img/icons/chat.png){:height="24px" width="24px"} | **Chat Messages** | Open chat messaging. |
+| ![](../assets/img/icons/user-list.png){:height="24px" width="24px"} | **User List** | Open list of present users. |
+| ![](../assets/img/icons/logout.png){:height="32px" width="32px"} | **Sign Out** | Exit the ARENA. |
 
 
 ## Install arena python library
