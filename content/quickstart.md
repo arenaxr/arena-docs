@@ -6,13 +6,22 @@ layout: default
 
 # Quick Start Tutorial
 
-{% include alert type="warning" title="TODO" content="Write me." %}
+## View the ARENA
+To start, open your browser to the scene we will be using in this tutorial. This link will open in a new tab: [https://arena.andrew.cmu.edu/?scene=example](https://arena.andrew.cmu.edu/?scene=example){:target="_blank"}. Since ARENA is a collaborative, multi-user environment, you may see other tutorial learners there. Say Hi! 
 
-## Open a browser, scene=example
+
+
+{% include alert type="tip" content="
+Feel free to use your own scene name if you want to save your work later.
+"%}
 
 ![](../assets/img/tutorial/scene.png)
 
-## Move your camera
+## Move around
+
+When you first enter the ARENA, your perspective position in the scene will be att x, y, z coordinates (0, 1.6, 0) which is at the center of the ground plane at about 1.6 meters in the air. Take some time to familiarize yourself with the movement and other controls, some of which are listed below. Most importantly:
+- **Rotate**: Click and drag the screen.
+- **Move**: Arrow keys, or W-A-S-D keys.
 
 | Button | Action | Description |
 | ------ | ------ | ----------- |
@@ -30,6 +39,8 @@ layout: default
 
 ## Install arena python library
 - [python](python/)
+
+{% include alert type="warning" title="Warning" content="Writing in progress...." %}
 
 ## Create cube and observe
 
