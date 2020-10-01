@@ -11,7 +11,7 @@ Listens on MQTT for ARENA objects to save to mongodb store.
 
 ### Persistence
 Simply adding `persist: true` to the top level MQTT message for any `create` action and the object will be saved.
-A client then can make a HTTP request to the URL the server this service is running on the retrieve a list of 
+A client then can make a HTTP request to the URL the server this service is running on to retrieve a list of 
 initially loaded objects upon entering any scene. 
 
 If an `update` message contains an explicit `persist: false`, then the `data` therein will not be saved in persistence.

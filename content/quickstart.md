@@ -19,7 +19,7 @@ Feel free to use your own scene name if you want to save your work later.
 
 ## Move around
 
-When you first enter the ARENA, your perspective position in the scene will be att x, y, z coordinates (0, 1.6, 0) which is at the center of the ground plane at about 1.6 meters in the air. Take some time to familiarize yourself with the movement and other controls, some of which are listed below. Most importantly:
+When you first enter the ARENA, your perspective position in the scene will be at x, y, z coordinates (0, 1.6, 0) which is at the center of the ground plane at about 1.6 meters in the air. Take some time to familiarize yourself with movement and other controls, some of which are listed below. Most importantly:
 - **Rotate**: Click and drag the screen.
 - **Move**: Arrow keys, or W-A-S-D keys.
 
