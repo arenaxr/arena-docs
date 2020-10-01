@@ -74,10 +74,24 @@ def cube_callback(msg):
 arena.Object(objType=arena.Shape.cube, clickable=True, callback=cube_callback)
 ```
 
-## Animate the cube
+## Animate a GLTF model
 - [3d-content](3d-content/)
 - [gltf-files](3d-content/gltf-files.html)
 - [animated-models](3d-content/animated-models.html)
+
+```python
+import arena
+arena.init("arena.andrew.cmu.edu", "realm", [a scene name of your own])
+arena.Object(objType=arena.Shape.gltf_model,
+             objName="duck_1",
+             location=(-1, 1, -3),
+             clickable=True,
+             data='{"animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000}}',
+             url="models/Duck.glb")
+arena.handle_events()
+```
+
+Be sure to replace `[a scene name of your own]`.
 
 ![](../assets/img/tutorial/animate.png)
 
@@ -86,17 +100,15 @@ arena.Object(objType=arena.Shape.cube, clickable=True, callback=cube_callback)
 - [python/examples](python/examples.html)
 - [python/definitions](python/definitions.html)
 
-```python
-import arena
-arena.init("arena.andrew.cmu.edu", "realm", [ a scene name of your own])
-arena.Object(objType=arena.Shape.gltf_model,
-             location=(-1, 1, -3),
-             clickable=True,
-             data='{"animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000}}',
-             url="models/Duck.glb",
-             persist=True)
-arena.handle_events()
+```json
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/[a scene name of your own]/duck_1 -m '{ "object_id" : "duck_1", "action": "update", "type": "object", "data": { "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000 } }, "persist": true }'
 ```
+
+Be sure to replace `[a scene name of your own]`.
+
+Make note of the structure of the `data` element in the above JSON. There are ways to support almost [any A-Frame feature](developer/aframe.html) using arbitrary JSON.
+
+## Try MQTT Messaging Format
 
 ## Edit in Scene Builder page, change something
 - [Scene builder](https://arena.andrew.cmu.edu/build/)
