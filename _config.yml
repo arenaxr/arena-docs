@@ -17,8 +17,7 @@ title: ARENA Documentation
 email: "info@conix.io"
 github_username: conix-center
 description: Tutorials and Reference for the ARENA project.
-baseurl: "/ARENA"
-url: https://conix-center.github.io
+url: https://arena.conix.io
 aux_links:
   "The ARENA":
     - "https://arena.andrew.cmu.edu/"
