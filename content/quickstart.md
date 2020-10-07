@@ -132,6 +132,8 @@ Up until now, everything you have created has been non-persistent. That is, obje
 
 This is a more raw method of generating messages from the the Mosquitto Publish client command line. Let's save this rotating duck into a scene name that you will come up with on your own.
 
+{% include alert type="warning" title="Warning" content="Writing in progress...." %}
+
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/[a scene name of your own]/duck_1 -m '{ "object_id" : "duck_1", "action": "update", "type": "object", "data": { "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000 } }, "persist": true }'
 ```
@@ -141,8 +143,6 @@ Be sure to replace `[a scene name of your own]`.
 {% include alert type="tip" content="
 Make note of the structure of the `data` element in the above JSON. There are ways to support almost [any A-Frame feature](developer/aframe.html) using arbitrary JSON.
 "%}
-
-{% include alert type="warning" title="Warning" content="Writing in progress...." %}
 
 ## Edit in Scene Builder page, change something
 
