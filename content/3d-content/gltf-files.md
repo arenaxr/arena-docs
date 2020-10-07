@@ -24,6 +24,15 @@ Getting from [SketchUp](https://www.sketchup.com/) to GLTF is a bit of an advent
 
 Dimension doesn’t seem to edit these models well, so if you want to patch up some textures, it's recommended to do that in SketchUp first, then saving a copy, using Dimension to convert to GLTF.
 
+## Adobe Dimension
+For [Adobe Dimension](https://www.adobe.com/products/dimension.html), the general conversion steps are:
+- Open a new file in Dimension
+- Import the file
+- Double click the Google Earth terrain in the view
+- Select terrain in the scene hierarchy, delete it
+- Select the top level folder in the scene for the model
+- File>Export the file to glb
+
 ## GLTF Viewer
 Drag-and-drop preview tool for glTF 2.0 3D models: [https://gltf-viewer.donmccurdy.com/](https://gltf-viewer.donmccurdy.com/).
 
