@@ -132,7 +132,6 @@ Up until now, everything you have created has been non-persistent. That is, obje
 
 This is a more raw method of generating messages from the the Mosquitto Publish client command line. Let's save this rotating duck into a scene name that you will come up with on your own.
 
-
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/[a scene name of your own]/duck_1 -m '{ "object_id" : "duck_1", "action": "update", "type": "object", "data": { "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000 } }, "persist": true }'
 ```
