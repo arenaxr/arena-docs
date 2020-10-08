@@ -143,18 +143,18 @@ Be sure to replace `[a scene name of your own]`.
 Make note of the structure of the `data` element in the above JSON. There are ways to support almost [any A-Frame feature](developer/aframe.html) using arbitrary JSON.
 "%}
 
-## Edit in Scene Builder
-Let's take a look at what we've just saved in our [Scene Builder](https://arena.andrew.cmu.edu/build/) tool. 
+## Link your scene to the physical world
+You can make a scene you create linkable to the physical world by adding its coordinates to the [ATLAS tool](https://atlas.conix.io) (requires write permission to list coordinates). This will allow users in Augmented Reality (AR) to [discover your ARENA scene](tools/atlas.html) when they are in physical range of it.
 
-  ![](../assets/img/tutorial/builder.png)
+  ![](../assets/img/tutorial/atlas.png)
 
 {% include alert type="warning" title="Warning" content="Writing in progress...." %}
 
-## Link your scene to the physical world
 
-- [atlas](tools/atlas.html)
-- [atlas](https://atlas.conix.io) (requires write permission)
-  ![](../assets/img/tutorial/atlas.png)
+## Edit in Scene Builder
+Let's take a look at what we've just saved in our [Scene Builder](https://arena.andrew.cmu.edu/build/) tool. From here, you can also create/update/delete ARENA objects. 
+
+  ![](../assets/img/tutorial/builder.png)
 
 ## Upload python to file store
 
