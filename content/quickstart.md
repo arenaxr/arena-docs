@@ -129,23 +129,23 @@ Up until now, everything you have created has been non-persistent. That is, obje
 
 ## MQTT Messaging Format
 
-This is a more raw method of generating messages from the the Mosquitto Publish client command line. Let's save this rotating duck into a scene name that you will come up with on your own. This message is a duplicate of the of the previous Python example in raw JSON form, but with one added attribute: `"persist": true`. Now, refresh your browser after this command and our duck comes back!
+This is a more raw method of generating messages from the the Mosquitto Publish client command line. The structure of our [messaging format](messaging/), [examples](messaging/examples.html), and [definitions](messaging/definitions.html) are available in more detail. For now, let's save this rotating duck into a scene name that you will come up with. This message is a duplicate of the of the previous Python example in raw JSON form, but with one added attribute: `"persist": true`. Now, refresh your browser after this command and our duck comes back!
 
 ```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/duck_1 -m '{ "object_id" : "duck_1", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x":-1, "y": 1, "z": -3}, "url": "models/Duck.glb", "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000} }, "persist": true }'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/[a scene name of your own]/duck_1 -m '{ "object_id" : "duck_1", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x":-1, "y": 1, "z": -3}, "url": "models/Duck.glb", "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000} }, "persist": true }'
 ```
 
+{% include alert type="danger" content="
 Be sure to replace `[a scene name of your own]`.
+"%}
 
 {% include alert type="tip" content="
 Make note of the structure of the `data` element in the above JSON. There are ways to support almost [any A-Frame feature](developer/aframe.html) using arbitrary JSON.
 "%}
 
 ## Edit in Scene Builder
-Let's take a look at what we've just saved in our [Scene Builder](https://arena.andrew.cmu.edu/build/) tool.
-- [messaging](messaging/)
-- [messaging/examples](messaging/examples.html)
-- [messaging/definitions](messaging/definitions.html)
+Let's take a look at what we've just saved in our [Scene Builder](https://arena.andrew.cmu.edu/build/) tool. 
+
   ![](../assets/img/tutorial/builder.png)
 
 {% include alert type="warning" title="Warning" content="Writing in progress...." %}
