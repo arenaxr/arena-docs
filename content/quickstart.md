@@ -76,7 +76,7 @@ Move yourself around in the browser view and notice all the camera updates and p
 
 ## Monitor network connections
 
-Take a minute to view the ARENA network's connections as you move around in the ARENA on our [Network graph](https://arena.andrew.cmu.edu/network/). Clients connected (orange square), client subnets (gray box), MQTT topics (blue circle), and their current relationships and throughput (arrow) can be visualized.
+Take a minute to view the ARENA network's connections as you move around in the ARENA on our [Network graph](https://arena.andrew.cmu.edu/network/). Clients connected <span style="background-color: black; color: orange;">(orange square)</span>, client subnets <span style="background-color: black; color: gray;">(gray box)</span>, MQTT topics <span style="background-color: black; color: DeepSkyBlue;">(blue circle)</span>, and their current relationships and throughput <span style="background-color: black; color: white;">(white arrow)</span> can be visualized.
 
 Controls:
 
@@ -114,7 +114,6 @@ arena.init("arena.andrew.cmu.edu", "realm", "example")
 arena.Object(objType=arena.Shape.gltf_model,
              objName="duck_1",
              location=(-1, 1, -3),
-             clickable=True,
              data='{"animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000}}',
              url="models/Duck.glb")
 arena.handle_events()
@@ -130,13 +129,10 @@ Up until now, everything you have created has been non-persistent. That is, obje
 
 ## MQTT Messaging Format
 
-This is a more raw method of generating messages from the the Mosquitto Publish client command line. Let's save this rotating duck into a scene name that you will come up with on your own.
+This is a more raw method of generating messages from the the Mosquitto Publish client command line. Let's save this rotating duck into a scene name that you will come up with on your own. This message is a duplicate of the of the previous Python example in raw JSON form, but with one added attribute: `"persist": true`. Now, refresh your browser after this command and our duck comes back!
 
-{% include alert type="warning" title="Warning" content="Writing in progress...." %}
-
-s
 ```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/[a scene name of your own]/duck_1 -m '{ "object_id" : "duck_1", "action": "update", "type": "object", "data": { "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000 } }, "persist": true }'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/duck_1 -m '{ "object_id" : "duck_1", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x":-1, "y": 1, "z": -3}, "url": "models/Duck.glb", "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000} }, "persist": true }'
 ```
 
 Be sure to replace `[a scene name of your own]`.
@@ -145,13 +141,14 @@ Be sure to replace `[a scene name of your own]`.
 Make note of the structure of the `data` element in the above JSON. There are ways to support almost [any A-Frame feature](developer/aframe.html) using arbitrary JSON.
 "%}
 
-## Edit in Scene Builder page, change something
-
-- [Scene builder](https://arena.andrew.cmu.edu/build/)
+## Edit in Scene Builder
+Let's take a look at what we've just saved in our [Scene Builder](https://arena.andrew.cmu.edu/build/) tool.
 - [messaging](messaging/)
 - [messaging/examples](messaging/examples.html)
 - [messaging/definitions](messaging/definitions.html)
   ![](../assets/img/tutorial/builder.png)
+
+{% include alert type="warning" title="Warning" content="Writing in progress...." %}
 
 ## Link your scene to the physical world
 

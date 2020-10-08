@@ -10,7 +10,7 @@ layout: default
 
 Our demonstration sample server runs at https://arena.andrew.cmu.edu
 
-- [ARENA Sample Scene "render"](https://arena.andrew.cmu.edu/?scene=render)
+- [ARENA Default Scene](https://arena.andrew.cmu.edu/)
 - [ARENA Scene Builder](https://arena.andrew.cmu.edu/build/)
 - [ARENA Network Graph](https://arena.andrew.cmu.edu/network/)
 - [ARENA Runtime Supervisor - ARTS](https://arena.andrew.cmu.edu/arts/)
