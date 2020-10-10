@@ -5,6 +5,6 @@ layout: default
 parent: Presence
 ---
 
-# Localizer
+# Camera Objects
 
 {% include alert type="warning" title="TODO" content="Write me." %}
