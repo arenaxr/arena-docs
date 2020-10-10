@@ -22,8 +22,8 @@ Feel free to use your own scene name if you want to save your work later.
 
 When you first enter the ARENA, your perspective position in the scene will be at x, y, z coordinates (0, 1.6, 0) which is at the center of the ground plane at about 1.6 meters in the air. Take some time to familiarize yourself with movement and other controls, some of which are listed below. Most importantly:
 
-- **Rotate**: Click and drag the screen.
-- **Move**: Arrow keys, or W-A-S-D keys.
+- **Rotate**: Left-Right arrow keys, or click and hold to drag the screen.
+- **Move**: Forward-Back arrow keys, or W-A-S-D keys.
 
 | Button                                                                                                                                                                                                           | Action             | Description                                                                                                         |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -148,9 +148,12 @@ You can make a scene you create linkable to the physical world by adding its coo
 
   ![](../assets/img/tutorial/atlas.png)
 
-
 ## Edit in Scene Builder
 Let's take a look at what we've just saved in our [Scene Builder](https://arena.andrew.cmu.edu/build/) tool. From here, you can also create/update/delete ARENA objects. 
+
+Select the `example` scene in the scene list and you will see that the `duck_1` object we used with persistence has been pulled out of the persistence DB to be listed here. Now, click on the edit button icon to the right of the `duck_1` model in the Scene Objects list. Notice that the Object JSON section in the right column has the full JSON you originally submitted. 
+
+Here you can change the position of the Duck model, for example, easily to anything you wish
 
   ![](../assets/img/tutorial/builder.png)
 

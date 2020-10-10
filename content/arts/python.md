@@ -8,6 +8,10 @@ parent: ARENA Runtime Supervisor
 Scene Edit/Program Launch Example
 =================================
 
+{% include alert type="warning" title="Warning" content="
+This example needs to be updated for a new user.
+" %}
+
 Quick Reference
 ---------------
 
@@ -19,7 +23,7 @@ Quick Reference
 Step by Step Example
 --------------------
 
-How to launch a program (e.g. **boxes/boxes.py**) in an [file store](https://arena.andrew.cmu.edu/storemng).
+How to launch a program (e.g. **boxes/boxes.py**) in a [file store](https://arena.andrew.cmu.edu/storemng).
 
 1\. Edit Scene: [https://arena.andrew.cmu.edu/build/](https://arena.andrew.cmu.edu/build/)
 
@@ -56,7 +60,7 @@ By convention, we pass programs environment variables that indicate the scene, r
 
 ![](../../assets/img/arts-program/image3.png){:width="80%"}
 
-7\. Goto to the folder of the program in the [file store](https://arena.andrew.cmu.edu/storemng) and add your files there. These can be wasm programs or python programs that use the **arena.py** library. See an example in **[username/boxes](https://arena.andrew.cmu.edu/storemng/share/1KoiGaWq)**.
+7\. Goto to the folder of the program in the [file store](https://arena.andrew.cmu.edu/storemng) and add your files there. These can be wasm programs or python programs that use the **arena.py** library. See an example in **[wiselab/boxes](https://arena.andrew.cmu.edu/storemng/share/1KoiGaWq)**.
 
 8\. Open the Scene using ![](../../assets/img/arts-program/image9.png){:width="200px"}at the top of the build page (the link should be something like https://arena.andrew.cmu.edu/?scene=\[scene-name\])
 

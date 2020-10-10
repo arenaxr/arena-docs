@@ -19,8 +19,6 @@ Our demonstration sample server runs at https://arena.andrew.cmu.edu
 
 ## ARENA Source
 
-https://github.com/conix-center/arena-services-docker
-
 - [**ARENA Documentation**](https://github.com/conix-center/ARENA)
 - [**ARENA-core**](https://github.com/conix-center/ARENA-core)
 - [**ARENA-py python examples**](https://github.com/conix-center/ARENA-py)
@@ -29,6 +27,7 @@ https://github.com/conix-center/arena-services-docker
 - [**ARENA Authentication backend**](https://github.com/conix-center/ARENA-auth)
 - [**Posefusion**](https://github.com/conix-center/posefusion)
 - [**April Tag Decoding w. AR.js**](https://github.com/conix-center/AR.js/blob/master/README.md#apriltag-detection)
+- [**ARENA Deployment Docker**](https://github.com/conix-center/arena-services-docker)
 
 ## Design Doc (WIP)
 
