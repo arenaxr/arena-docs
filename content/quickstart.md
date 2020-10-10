@@ -25,6 +25,8 @@ When you first enter the ARENA, your perspective position in the scene will be a
 - **Rotate**: Left-Right arrow keys, or click and hold to drag the screen.
 - **Move**: Forward-Back arrow keys, or W-A-S-D keys.
 
+There are several choices here to hold [video conferences and screensharing](presence) in the ARENA.
+
 | Button                                                                                                                                                                                                           | Action             | Description                                                                                                         |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
 | ![](../assets/img/icons/more.png){:height="32px" width="32px"} ![](../assets/img/icons/less.png){:height="32px" width="32px"}                                                                                    | **Settings**       | Expand/Collapse settings along the right.                                                                           |
