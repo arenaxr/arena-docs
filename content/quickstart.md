@@ -148,13 +148,13 @@ You can make a scene you create linkable to the physical world by adding its coo
 
   ![](../assets/img/tutorial/atlas.png)
 
-{% include alert type="warning" title="Warning" content="Writing in progress...." %}
-
 
 ## Edit in Scene Builder
 Let's take a look at what we've just saved in our [Scene Builder](https://arena.andrew.cmu.edu/build/) tool. From here, you can also create/update/delete ARENA objects. 
 
   ![](../assets/img/tutorial/builder.png)
+
+{% include alert type="warning" title="Warning" content="Writing in progress...." %}
 
 ## Upload python to file store
 
@@ -163,7 +163,7 @@ Let's take a look at what we've just saved in our [Scene Builder](https://arena.
 ## Use Builder to add your program runtime
 
 ## Debug your program in ARTS
-
+- [Scene Edit/Program Launch Example](arts/python.html)
 - [ARTS GUI](https://arena.andrew.cmu.edu/arts/)
 - [arts](arts/)
   ![](../assets/img/tutorial/arts.png)
