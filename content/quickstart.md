@@ -131,7 +131,7 @@ Up until now, everything you have created has been non-persistent. That is, obje
 
 ## MQTT Messaging Format
 
-This is a more raw method of generating messages from the the Mosquitto Publish client command line. The structure of our [messaging format](messaging/), [examples](messaging/examples.html), and [definitions](messaging/definitions.html) are available in more detail. For now, let's save this rotating duck into a scene name that you will come up with. This message is a duplicate of the of the previous Python example in raw JSON form, but with one added attribute: `"persist": true`. Now, refresh your browser after this command and our duck comes back!
+This is a more raw method of generating messages from the the Mosquitto Publish client command line. The structure of our [messaging format](messaging/), [examples](messaging/examples.html), and [definitions](messaging/definitions.html) are available in more detail. For now, let's save this rotating duck into a scene name that you will come up with. This message is a duplicate of the of the previous Python example in raw JSON form, but with one added attribute: `"persist": true`. Now, refresh your browser after this command and our duck comes back! You may need to install the Mosquitto client on your system: [https://mosquitto.org/](https://mosquitto.org/).
 
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/[a scene name of your own]/duck_1 -m '{ "object_id" : "duck_1", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x":-1, "y": 1, "z": -3}, "url": "models/Duck.glb", "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000} }, "persist": true }'
