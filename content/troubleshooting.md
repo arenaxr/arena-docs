@@ -5,7 +5,7 @@ layout: default
 ---
 
 # Troubleshooting
-Here are some common situations which can help when programming in the ARENA.
+Here are some common situations which can help when programming and collaborating in the ARENA.
 
 ## Where is my Object?
 - Is the object's position below the ground? The "y" position will negative below the default visible floor.
@@ -16,6 +16,7 @@ Here are some common situations which can help when programming in the ARENA.
 - Audio/video setups vary a lot between web browsers so this can be common.
 - Don't forget to make sure your computer speakers are not Muted or have your Volume set too low.
 - For **Chrome**, test your permissions and try different cameras/microphones: **chrome://settings/content/camera** and **chrome://settings/content/microphone**.
+- For **Edge**, test your permissions and try different cameras/microphones: **edge://settings/content/camera** and **edge://settings/content/microphone**.
 - For **Firefox**, test your permissions **about:preferences#privacy**, scroll down to *Permissions*, then *Camera/Microphone* and try different cameras/microphones: 
 - For **Safari**, navigate your menus to *Menu > Safari > Preferences... > Websites > Camera/Microphones* and try different cameras/microphones.
 - Since we use WebRTC, try your browser at a third-party WebRTC test site [https://test.webrtc.org/](https://test.webrtc.org/).

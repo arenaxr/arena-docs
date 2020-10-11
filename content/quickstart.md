@@ -6,7 +6,7 @@ layout: default
 
 # Quick Start Tutorial
 
-Most of the ARENA utilities and tools mentioned here are also listed on a set of quick links on the left side bar as [Source and Links](source.html).
+Most of the ARENA utilities and tools mentioned here are also listed on a set of quick links on the left side bar as [Source and Links](source).
 
 ## View the ARENA
 
@@ -25,7 +25,7 @@ When you first enter the ARENA, your perspective position in the scene will be a
 - **Rotate**: Left-Right arrow keys, or click and hold to drag the screen.
 - **Move**: Forward-Back arrow keys, or W-A-S-D keys.
 
-There are several choices here to hold [video conferences and screensharing](presence) in the ARENA.
+There are several choices here to hold [video conferences and screensharing](presence/conferencing) in the ARENA.
 
 | Button                                                                                                                                                                                                           | Action             | Description                                                                                                         |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -46,7 +46,7 @@ The easiest way to begin programming in the ARENA is to install the [Python libr
 
 ## Create a cube and observe
 
-Now, create the simplest Python program you can below, which will generate a 1-meter cube. By default, objects are generated in white (#FFFFFF), with no rotation, at scene x, y, z position (0, 0, 0), and with no other properties applied. Some of the other properties you can add to objects are detailed in our [Python Examples](python/examples.html). Notice that cube seems stuck in the ground, which is due to the cube's origin at its center positioned at scene coordinates (0, 0, 0). If you enable Flying mode (see above), you can move below the ground plane and view the other half of the cube. Type Ctrl-C to end the program.
+Now, create the simplest Python program you can below, which will generate a 1-meter cube. By default, objects are generated in white (#FFFFFF), with no rotation, at scene x, y, z position (0, 0, 0), and with no other properties applied. Some of the other properties you can add to objects are detailed in our [Python Examples](python/examples). Notice that cube seems stuck in the ground, which is due to the cube's origin at its center positioned at scene coordinates (0, 0, 0). If you enable Flying mode (see above), you can move below the ground plane and view the other half of the cube. Type Ctrl-C to end the program.
 
 {% include alert type="tip" content="
 Use the **Search ARENA Documentation** bar at the very top of every page on this site to find examples and information on anything you need.
@@ -104,11 +104,11 @@ Now, in your scene use your mouse to click on the cube and notice the messages y
 
 - What should `mousedown` do for this object? Change its color?
 - What should `mouseenter` or `mouseleave` do? Change its opacity?
-- Many more ideas are available in our [examples](python/examples.html).
+- Many more ideas are available in our [examples](python/examples).
 
 ## Animate a GLTF model
 
-A more advanced manipulation of objects in the ARENA is using 3d models as [GLTF](3d-content/gltf-files.html). Here we are going to use a GLTF model of a duck and some animation rules to make it rotate.
+A more advanced manipulation of objects in the ARENA is using 3d models as [GLTF](3d-content/gltf-files). Here we are going to use a GLTF model of a duck and some animation rules to make it rotate.
 
 ```python
 import arena
@@ -121,17 +121,17 @@ arena.Object(objType=arena.Shape.gltf_model,
 arena.handle_events()
 ```
 
-At your leisure, read more about methods to generate [3d content](3d-content/) and [animate](3d-content/animated-models.html) objects and models.
+At your leisure, read more about methods to generate [3d content](3d-content/) and [animate](3d-content/animated-models) objects and models.
 
 ![](../assets/img/tutorial/animate.png)
 
 ## Use persistance, reload browser
 
-Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. Now, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistance database](tools/persistance.html) you will have to specify `persist=True` in [Python definitions](python/definitions.html#persist), or `"persist": true` in the raw JSON formatted messages. Let's try an example of persisting object properties into our database in the next example.
+Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. Now, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistance database](tools/persistance) you will have to specify `persist=True` in [Python definitions](python/definitions#persist), or `"persist": true` in the raw JSON formatted messages. Let's try an example of persisting object properties into our database in the next example.
 
 ## MQTT Messaging Format
 
-This is a more raw method of generating messages from the the Mosquitto Publish client command line. The structure of our [messaging format](messaging/), [examples](messaging/examples.html), and [definitions](messaging/definitions.html) are available in more detail. For now, let's save this rotating duck into a scene name that you will come up with. This message is a duplicate of the of the previous Python example in raw JSON form, but with one added attribute: `"persist": true`. Now, refresh your browser after this command and our duck comes back! You may need to install the Mosquitto client on your system: [https://mosquitto.org/](https://mosquitto.org/).
+This is a more raw method of generating messages from the the Mosquitto Publish client command line. The structure of our [messaging format](messaging/), [examples](messaging/examples), and [definitions](messaging/definitions) are available in more detail. For now, let's save this rotating duck into a scene name that you will come up with. This message is a duplicate of the of the previous Python example in raw JSON form, but with one added attribute: `"persist": true`. Now, refresh your browser after this command and our duck comes back! You may need to install the Mosquitto client on your system: [https://mosquitto.org/](https://mosquitto.org/).
 
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/[a scene name of your own]/duck_1 -m '{ "object_id" : "duck_1", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x":-1, "y": 1, "z": -3}, "url": "models/Duck.glb", "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000} }, "persist": true }'
@@ -142,11 +142,11 @@ Be sure to replace `[a scene name of your own]`.
 "%}
 
 {% include alert type="tip" content="
-Make note of the structure of the `data` element in the above JSON. There are ways to support almost [any A-Frame feature](developer/aframe.html) using arbitrary JSON.
+Make note of the structure of the `data` element in the above JSON. There are ways to support almost [any A-Frame feature](developer/aframe) using arbitrary JSON.
 "%}
 
 ## Link your scene to the physical world
-You can make a scene you create linkable to the physical world by adding its coordinates to the [ATLAS tool](https://atlas.conix.io) (requires write permission to list coordinates). This will allow users in Augmented Reality (AR) to [discover your ARENA scene](tools/atlas.html) when they are in physical range of it.
+You can make a scene you create linkable to the physical world by adding its coordinates to the [ATLAS tool](https://atlas.conix.io) (requires write permission to list coordinates). This will allow users in Augmented Reality (AR) to [discover your ARENA scene](tools/atlas) when they are in physical range of it.
 
   ![](../assets/img/tutorial/atlas.png)
 
@@ -168,7 +168,7 @@ Here you can change the position of the Duck model, for example, easily to anyth
 ## Use Builder to add your program runtime
 
 ## Debug your program in ARTS
-- [Scene Edit/Program Launch Example](arts/python.html)
+- [Scene Edit/Program Launch Example](arts/python)
 - [ARTS GUI](https://arena.andrew.cmu.edu/arts/)
 - [arts](arts/)
   ![](../assets/img/tutorial/arts.png)
@@ -179,4 +179,4 @@ Here you can change the position of the Duck model, for example, easily to anyth
 
 ## Visual edit/create content with ARB
 
-- [authoring](tools/authoring.html)
+- [authoring](tools/authoring)
