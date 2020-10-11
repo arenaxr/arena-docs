@@ -28,4 +28,6 @@ The ARENA is a network transparent multi-user environment that simplifies the de
 The ARENA currently includes a set of demonstrator agents to handle concurrent physics, easy-to-use localization, 3D skeleton capture, and interfaces with a number of commercially available IoT devices. We recently added support for audio and video streaming from laptop cameras and microphones.
 
 ## Video
-[![ARENA Demo](https://img.youtube.com/vi/zNLL9AbruKQ/0.jpg)](https://www.youtube.com/watch?v=zNLL9AbruKQ "Play ARENA Demo Video")
+<figure class="video_container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/zNLL9AbruKQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>

@@ -21,7 +21,7 @@ Our demonstration sample server runs at https://arena.andrew.cmu.edu
 
 - [**ARENA Documentation**](https://github.com/conix-center/ARENA)
 - [**ARENA-core**](https://github.com/conix-center/ARENA-core)
-- [**ARENA-py python examples**](https://github.com/conix-center/ARENA-py)
+- [**ARENA-py Python examples**](https://github.com/conix-center/ARENA-py)
 - [**ATLAS**](https://github.com/conix-center/ATLAS)
 - [**ARENA persist**](https://github.com/conix-center/arena-persist)
 - [**ARENA Authentication backend**](https://github.com/conix-center/ARENA-auth)

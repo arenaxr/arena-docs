@@ -18,7 +18,9 @@ An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top
 1. Interact with the tool at [https://arena.andrew.cmu.edu?scene=hello](https://arena.andrew.cmu.edu?scene=hello) 
 
 ## Demo Video
-[![ARB Demo](https://img.youtube.com/vi/bYantKzkTFk/0.jpg)](https://www.youtube.com/watch?v=bYantKzkTFk "Play ARB Demo Video")
+<figure class="video_container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/bYantKzkTFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 ## Clickable Objects ONLY
 The current version of ARB is only able to interact with existing persisted objects if they have click-handlers implemented (`object.update(clickable=True)`). Clickable objects will turn your cursor from an arrow to a finger pointing as you hover over them. For the time being, anything you create with ARB will have click-handlers implemented automatically.

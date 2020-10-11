@@ -45,7 +45,7 @@ If you really need to comment out your text, it's not supported, but you can hac
 ## Alerts/Callouts
 Callout alerts are available. Use this syntax: 
 ```markdown
-{% include alert type="warning" title="TODO" content="Write me." %}
+{% include alert type="warning" title="TODO" content="Writing in progress...." %}
 ```
 - heading
 - info
@@ -60,7 +60,7 @@ Callout alerts are available. Use this syntax:
 - **ARENA-core**
   - https://github.com/conix-center/ARENA-core
 
-- **ARENA-py python examples**
+- **ARENA-py Python examples**
   - https://github.com/conix-center/ARENA-py
 
 - **ATLAS**

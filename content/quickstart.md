@@ -155,20 +155,21 @@ Let's take a look at what we've just saved in our [Scene Builder](https://arena.
 
 Select the `example` scene in the scene list and you will see that the `duck_1` object we used with persistence has been pulled out of the persistence DB to be listed here. Now, click on the edit button icon to the right of the `duck_1` model in the Scene Objects list. Notice that the Object JSON section in the right column has the full JSON you originally submitted. 
 
-Here you can change the position of the Duck model, for example, easily to anything you wish
+Here you can change the position of the Duck model, for example, easily to anything you wish.
 
   ![](../assets/img/tutorial/builder.png)
 
-{% include alert type="warning" title="Warning" content="Writing in progress...." %}
+## Store Your Program in the ARENA
+You can use the ARENA RunTime Supervisor, [ARTS](arts), to run your Python program in a scene without using the Python command-line. The general steps are:
+* Upload a Python program to the [File Store](https://arena.andrew.cmu.edu/storemng).
+* Edit your scene in the [Scene Builder](https://arena.andrew.cmu.edu/build/), to add your program object from the File Store. 
 
-## Upload python to file store
-
-- [File store](https://arena.andrew.cmu.edu/storemng/) (requires read/write permission)
-
-## Use Builder to add your program runtime
+In more detail, there are step by step instructions to run your Python program like this in the [Scene Edit/Program Launch Example](arts/python).
 
 ## Debug your program in ARTS
-- [Scene Edit/Program Launch Example](arts/python)
+
+{% include alert type="warning" title="Warning" content="Writing in progress...." %}
+
 - [ARTS GUI](https://arena.andrew.cmu.edu/arts/)
 - [arts](arts/)
   ![](../assets/img/tutorial/arts.png)
