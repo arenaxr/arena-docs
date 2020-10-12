@@ -163,18 +163,20 @@ Here you can change the position of the Duck model, for example, easily to anyth
 You can use the ARENA RunTime Supervisor, [ARTS](arts), to run your Python program in a scene without using the Python command-line. The general steps are:
 * Upload a Python program to the [File Store](https://arena.andrew.cmu.edu/storemng).
 * Edit your scene in the [Scene Builder](https://arena.andrew.cmu.edu/build/), to add your program object from the File Store. 
+* Monitor your program's runtime in the [ARTS GUI](https://arena.andrew.cmu.edu/arts/).
 
-In more detail, there are step by step instructions to run your Python program like this in the [Scene Edit/Program Launch Example](arts/python).
+In more detail, there are step by step instructions to run your Python program like this in the [Scene Edit/Program Launch Example](arts/python). 
 
 ## Debug your program in ARTS
+Once your program is running, use the [ARTS GUI](https://arena.andrew.cmu.edu/arts/). You can select your program from all the [ARTS Modules](arts/) in the tree graph. After selecting your program, on the right side, you can monitor the WASM or Python module's `stdout` logging, migrate the module to another scene, remove the module completely, and perform other maintenance.
 
-{% include alert type="warning" title="Warning" content="Writing in progress...." %}
-
-- [ARTS GUI](https://arena.andrew.cmu.edu/arts/)
-- [arts](arts/)
   ![](../assets/img/tutorial/arts.png)
 
 ## Debug your scene with A-Frame Scene Inspector
+
+{% include alert type="warning" title="Warning" content="Writing in progress...." %}
+
+- [A-Frame Scene Inspector](https://aframe.io/docs/1.0.0/introduction/visual-inspector-and-dev-tools.html)?
 
 ![](../assets/img/tutorial/inspector.png)
 
