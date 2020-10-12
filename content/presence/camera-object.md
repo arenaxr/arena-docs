@@ -7,4 +7,4 @@ parent: Presence
 
 # Camera Objects
 
-{% include alert type="warning" title="TODO" content="Writing in progress...." %}
+{% include alert type="warning" title="Warning" content="Writing in progress...." %}
