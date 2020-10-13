@@ -7,7 +7,7 @@ parent: 3D Content
 
 # Animated Models
 
-## Animate (rotation, position)
+## Animate (rotation)
 
 Animate rotation of the already drawn cube.
 

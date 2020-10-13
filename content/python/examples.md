@@ -117,7 +117,7 @@ The quaternion (native) representation of rotation is a bit more tricky. The 4 p
 - `0, 0.7, 0, 0.7`: rotate 90 degrees around Y axis
 - `0, 0, -0.7, 0.7`: rotate -90 degrees around Z axis
 
-## Animate (rotation, position)
+## Animate
 
 Animate rotation of the already drawn cube.
 

@@ -11,21 +11,19 @@ parent: Messaging Format
 
 {% include alert type="warning" title="Coming Soon" content="Writing in progress..."%}
 
+## Examples
+
+The following example shows the current full suite of object parameters possible:
+
 ```json
 {
-    "object_id": "cube_1",          | str  | unique name within the scene (required)
-    "action": "create",             | str  | create, delete, update, clientEvent (required)
-    "type": "object",               | str  | object, rig, mousedown, mouseup, mouseenter, 
-                                             mouseleave, triggerdown, triggerup, gripdown, 
-                                             gripup, menudown, menuup, systemdown, systemup, 
-                                             trackpaddown, trackpadup
-    "persist": false,               | bool | true = save to persistance database
-    "ttl": 5,                       | num  | ttl seconds to persist and automatically delete
+    "object_id": "cube_1",
+    "action": "create",
+    "type": "object",
+    "persist": false,
+    "ttl": 5,
     "data": {
-        "object_type": "cube",      | str  | cube, sphere, circle, cone, cylinder, dodecahedron,
-                                             icosahedron, tetrahedron, octahedron, plane, ring,
-                                             torus, torusKnot, triangle, gltf_model, image,
-                                             particle, text, line, light, thickline
+        "object_type": "cube",
         "position": {
             "x": 0,                    
             "y": 0,
@@ -48,6 +46,10 @@ parent: Messaging Format
         "url": "https://arena.andrew.cmu.edu/models/Duck.glb",
         "material": {
             "src": "images/360falls.mp4",
+            "transparent": true, 
+            "opacity": 0.5,
+            "colorWrite": false, 
+            "render-order": "0",
             "side": "back",
             "color": "blue",
             "repeat": {
@@ -115,3 +117,195 @@ parent: Messaging Format
     }
 }
 ```
+
+## Object Message
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+| object_id          | string  | A unique name within the scene (**required**). |
+| action             | string  | An action to perform: `create, delete, update, clientEvent` (**required**). |
+| type               | string  | Message type: `object, rig, mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown,  gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup`. |
+| [persist](examples#persisted-objects) | boolean | Save to persistance database (*default: false*). |
+| [ttl](examples#temporary-objects-ttl) | integer | Time-to-live seconds to persist the object and automatically delete (*default: 0*). |
+| data               | [`Data`](#data-element) | The detailed properties of the object. | 
+
+## "Data" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+| object_type | string  | An object type: `cube, sphere, circle, cone, cylinder, dodecahedron, icosahedron, tetrahedron, octahedron, plane, ring, torus, torusKnot, triangle, gltf_model, image, particle, text, line, light, thickline`. |
+| [position](examples#move) | [`Position` element](#position-element) |  |
+| [rotation](examples#rotate) | [`Rotation` element](#rotation-element) |  |
+| scale | [`scale` element](#scale-element) |  |
+| [color](examples#color) | string | A hexadecimal color or [CSS/HTML color](https://htmlcolorcodes.com/color-names) name (*default: "#ffffff"*). |
+| [text](examples#text) | string | Any string of [ASCII characters](https://aframe.io/docs/1.0.0/components/text.html#non-ascii-characters). |
+| [click-listener](examples#events) | string | "" |
+| [url](examples#images) | string | URI, relative or full path. |  
+| material | [`material` element](#material-element) |  |
+| multisrc | [`multisrc` element](#multisrc-element) |  |
+| [light](examples#lights) | [`light` element](#light-element) |  |
+| [animation](examples#animate) | [`animation` element](#animation-element) |  |
+| [animation-mixer](examples#animating-gltf-models) | [`animation-mixer` element](#animation-mixer-element) |  |
+| [start](examples#lines) | [`start` element](#start-element) | Used by `object_type`: `line`.  |
+| [end](examples#lines) | [`end` element](#end-element) | Used by `object_type`: `line`.  |
+| [meshline](examples#meshline) | [`meshline` element](#meshline-element) | Used by `object_type`: `thickline`. |
+| [sound](examples#sound) | [`sound` element](#sound-element) |  |
+| [dynamic-body](examples#physics) | [`dynamic-body` element](#dynamic-body-element) |  |
+| [impulse](examples#physics) | [`impulse` element](#impulse-element) |  |
+| [spe-particles](examples#particles) | [`spe-particles` element](#spe-particles-element) |  |
+
+## "position" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "rotation" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "scale" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "color" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "text" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "click-listener" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "url" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "material" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "multisrc" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "light" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "animation" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "animation-mixer" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "start" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "end" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "meshline" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "sound" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "dynamic-body" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "impulse" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
+
+## "spe-particles" element
+
+### properties
+
+|name/example|JSON type|description|
+|--|--|--|
+||||
