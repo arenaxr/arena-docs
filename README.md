@@ -45,7 +45,7 @@ If you really need to comment out your text, it's not supported, but you can hac
 ## Alerts/Callouts
 Callout alerts are available. Use this syntax: 
 ```markdown
-{% include alert type="warning" title="Warning" content="Writing in progress...." %}
+{% include alert type="warning" title="Coming Soon" content="Stay tuned for more details..." %}
 ```
 - heading
 - info

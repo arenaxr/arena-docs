@@ -9,7 +9,7 @@ parent: Messaging Format
 
 - [**ARENA-core**](https://github.com/conix-center/ARENA-core) webserver repository
 
-{% include alert type="warning" content="Writing in progress...."%}
+{% include alert type="warning" title="Coming Soon" content="Stay tuned for more details..."%}
 
 ```json
 {

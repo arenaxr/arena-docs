@@ -7,4 +7,4 @@ parent: Architecture
 
 # Coordinate Frame
 
-{% include alert type="warning" title="Warning" content="Writing in progress...." %}
+{% include alert type="warning" title="Coming Soon" content="Stay tuned for more details..." %}

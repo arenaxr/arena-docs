@@ -8,4 +8,4 @@ parent: Developers
 # Three.js
 - [https://threejs.org/](https://threejs.org/)
 
-{% include alert type="warning" title="Warning" content="Writing in progress...." %}
+{% include alert type="warning" title="Coming Soon" content="Stay tuned for more details..." %}

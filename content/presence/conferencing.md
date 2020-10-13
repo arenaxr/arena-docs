@@ -7,7 +7,7 @@ parent: Presence
 
 # Conferencing
 
-{% include alert type="warning" content="Writing in progress...."%}
+{% include alert type="warning" title="Coming Soon" content="Stay tuned for more details..."%}
 
 ## Audio
 

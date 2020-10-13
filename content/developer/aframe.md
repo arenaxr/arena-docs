@@ -31,4 +31,4 @@ Example:
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/duck_1 -m '{ "object_id" : "duck_1", "action": "update", "type": "object", "data": { "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000 } } }'
 ```
 
-{% include alert type="warning" title="Warning" content="Writing in progress...." %}
+{% include alert type="warning" title="Coming Soon" content="Stay tuned for more details..." %}
