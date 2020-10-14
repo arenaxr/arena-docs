@@ -33,6 +33,10 @@ parent: Messaging Format
 { "object_id": "6aafedf3-e313-4785-a456-939de8677f07", "action": "update", "persist": true, "type": "program", "data": { "name": "wiselab/arb", "instantiate": "single", "filename": "arb.py", "filetype": "PY", "args": [ "${scene}", "-b", " ${mqtth}" ] }}
 ```
 
+{% include alert type="warning" title="Arbitrary A-Frame Components" content="
+Some A-Frame attributes and components we don't officially include in our JSON may be usable by following certain [patterns of use](../developer/aframe). We make no promises!
+"%}
+
 ## ARENA MQTT Message Payload JSON Specification
 
 ### properties
