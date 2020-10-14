@@ -103,21 +103,24 @@ Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.
 | scale | [`scale` object](#scale-object)
 | [color](examples#color) | string | A hexadecimal color or [CSS/HTML color](https://htmlcolorcodes.com/color-names) name (*default: "#FFFFFF"*).
 | [text](examples#text) | string | Any string of [ASCII characters](https://aframe.io/docs/1.0.0/components/text.html#non-ascii-characters). e.g. "Hello world!"
-| [click-listener](examples#events) | string | "
+| [click-listener](examples#events) | string
 | [url](examples#images) | string | URI, relative or full path of a file. e.g. "https://arena.andrew.cmu.edu/models/Duck.glb"
 | material | [`Material` object](#material-object)
 | multisrc | [`Multisrc` object](#multisrc-object)
-| [light](examples#lights) | [`Light` object](#light-object)
+| [light](examples#lights) | [`Light` object](#light-object) | Used by `object_type`: `light`.
 | [animation](examples#animate) | [`Animation` object](#animation-object)
 | [animation-mixer](examples#animating-gltf-models) | [`Animation-Mixer` object](#animation-mixer-object)
 | [start](examples#lines) | [`Position` object](#position-object) | Used by `object_type`: `line`.
 | [end](examples#lines) | [`Position` object](#position-object) | Used by `object_type`: `line`.
 | [meshline](examples#thicklines) | [`Meshline` object](#meshline-object) | Used by `object_type`: `thickline`.
-| [sound](examples#sound) | [`Sound` object](#sound-object)
+| [sound](examples#sound) | [`Sound` object](#sound-object) | Requires `click-listener`
 | [dynamic-body](examples#physics) | [`Dynamic-Body` object](#dynamic-body-object)
-| [impulse](examples#physics) | [`Impulse` object](#impulse-object)
+| [impulse](examples#physics) | [`Impulse` object](#impulse-object) | Requires `click-listener`
 | [spe-particles](examples#particles) | [`SPE-Particles` object](#spe-particles-object)
 | [environment](examples#background-themes) | [`Environment` object](#environment-object)
+| [collision-listener](examples#events) | string
+| [parent](examples#parentchild-linking) | string | `object_id` of the object which is the parent.
+| [goto-url](examples#goto-url) | [`Goto URL` object](#goto-url-object) | Requires `click-listener`
 
 ## "position" object
 Follows A-Frame [position](https://aframe.io/docs/1.0.0/components/position.html).
@@ -195,7 +198,7 @@ Follows A-Frame [light](https://aframe.io/docs/1.0.0/components/light.html).
 
 |name/example|JSON type|description
 |--|--|--
-| type | string | e.g. "directional" (**required**).
+| type | string | `ambient, directional, hemisphere, point, spot` e.g. "directional" (**required**).
 
 ## "animation" object
 Follows A-Frame [animation](https://aframe.io/docs/1.0.0/components/animation.html).
@@ -284,5 +287,14 @@ Follows [aframe-spe-particles-component](https://github.com/harlyq/aframe-spe-pa
 
 |name/example|JSON type|description
 |--|--|--
-| preset | string | e.g. `none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris`
+| preset | string | e.g. `none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris`  (**required**).
 
+## "goto-url" object
+
+### properties
+
+|name/example|JSON type|description
+|--|--|--
+| dest | string | `popup, newtab, sametab` e.g. "sametab" (**required**).
+| on | string | e.g. "mousedown" (**required**).
+| url | string | e.g. "http:www.formula1.com" (**required**).
