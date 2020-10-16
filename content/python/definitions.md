@@ -69,7 +69,6 @@ Accepted arguments are:
 - **url** - some objects use this parameter to refer to, e.g. a bitmap image, GLTF model, or web URL. See:
   - [images](https://github.com/conix-center/ARENA-core#images)
   - [models](https://github.com/conix-center/ARENA-core#models)
-  - [load-scene](https://github.com/conix-center/ARENA-core#load-scene)
 - **data** - accepts arbitrary JSON data to specify additional attribute-value pairs not specified above to be added to the object's A-Frame entity; see A-Frame and ARENA-core documentation for more detail. An example of a somewhat fancy data message would look like
 
 ```python

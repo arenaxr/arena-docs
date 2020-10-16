@@ -5,40 +5,43 @@ layout: default
 parent: Messaging Format
 ---
 
-# Messaging Format Definitions
-
+## ARENA MQTT Message Payload JSON Specification
+Each ARENA message is JSON formatted and is structured for its general use and persistance within the ARENA environment. Each message begins with a [`Message object`](#message-object) of general properties, paired with a more granular detailed `data` sub-object which varies in form and follow the examples below.
 - [**ARENA-core**](https://github.com/conix-center/ARENA-core) webserver repository
-
-{% include alert type="warning" title="Coming Soon" content="Writing in progress..."%}
 
 ## Examples
 
 ### Object Message
+[`Message object`](#message-object) with a `data` property of the [`Object Data` object](#object-data-object).
 ```json
 {"object_id": "cube_1", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 1, "y": 1, "z": -1}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}, "color": "#FF0000"}}
 ```
 
 ### Event Message
+[`Message object`](#message-object) with a `data` property of the [`Event Data` object](#event-data-object).
 ```json
 {"object_id": "fallBox2", "action": "clientEvent", "type": "mousedown", "data": {"position": {"x": -0.993, "y": 0.342, "z": -1.797}, "source": "camera_8715_er"}}
 ```
 
 ### Program Message
+[`Message object`](#message-object) with a `data` property of the [`Program Data` object](#program-data-object).
 ```json
 {"object_id": "6aafedf3-e313-4785-a456-939de8677f07", "action": "update", "persist": true, "type": "program", "data": {"name": "wiselab/arb", "instantiate": "single", "filename": "arb.py", "filetype": "PY", "args": ["${scene}", "-b", " ${mqtth}"]}}
 ```
 
 ### Scene Options Message
+[`Message object`](#message-object) with a `data` property of the [`Scene Options Data` object](#scene-options-data-object).
 ```json
 {"object_id": "e9a16478-2606-4cd0-bb9f-b03879bc8baa", "action": "update", "persist": true, "type": "scene-options", "data": {"env-presets": {"active": true, "lighting": "distant", "lightPosition": {"x": 0, "y": 1, "z": -10}, "ground": "hills", "groundTexture": "squares", "groundColor": "#444241", "groundYScale": 0.5}, "scene-options": {"jitsiServer": "jitsi1.andrew.cmu.edu", "clickableOnlyEvents": true, "privateScene": true}}}
 ```
 
 ### Landmarks Message
+[`Message object`](#message-object) with a `data` property of the [`Landmarks Data` object](#landmarks-data-object).
 ```json
 {"object_id": "af4cef99-2700-4986-b44c-c4ce7fddfc88", "action": "update", "persist": true, "type": "landmarks", "data": {"landmarks": [{"object_id": "controls_sign_img1", "label": "Sign: How to Move"}, {"object_id": "controls_sign_img2", "label": "Sign: Buttons"}, {"object_id": "controls_sign_img3", "label": "Sign: Video Capabilities"}, {"object_id": "controls_sign_img4", "label": "Sign: Chat, Find People and Landmarks"}]}}
 ```
 
-## ARENA MQTT Message Payload JSON Specification
+## "Message" object
 
 ### properties
 
@@ -65,8 +68,9 @@ Some A-Frame attributes and components we don't officially include in our JSON m
 
 |name/example|JSON type|description
 |--|--|--
-| object_type | `string` | An primitive type: `cube, sphere, circle, cone, cylinder, dodecahedron, icosahedron, tetrahedron, octahedron, plane, ring, torus, torusKnot, triangle`
-| | | Also: `gltf_model, image, particle, text, line, light, thickline`
+| object_type | `string` | A primitive object type: `cube, sphere, circle, cone, cylinder, dodecahedron, icosahedron, tetrahedron, octahedron, plane, ring, torus, torusKnot, triangle`
+| | | ...or, A complex object type: `gltf_model, image, particle, text, line, light, thickline`
+| | | ...or, A presence object type : `camera, viveLeft, viveRight` (`camera` is used by web browsers and VIO cameras)
 | [position](examples#move) | [`Position` object](#position-object)
 | [rotation](examples#rotate) | [`Rotation` object](#rotation-object)
 | scale | [`scale` object](#scale-object)
@@ -188,7 +192,7 @@ Follows Don McCurdy’s [animation-mixer](https://github.com/n5ro/aframe-extras/
 
 |name/example|JSON type|description
 |--|--|--
-| clip | `string` | e.g. "*"
+| clip | `string` | Name of the clip sequence in the GLTF "scene". e.g. "Take 001"
 
 ## "meshline" object
 
@@ -209,6 +213,8 @@ Follows A-Frame [sound](https://aframe.io/docs/1.0.0/components/sound.html).
 |--|--|--
 | src | `string` | URI, relative or full path of a directory containing a sound file, e.g. "url(https://arena.andrew.cmu.edu/audio/toypiano/Asharp1.wav)" (**required**).
 | on | `string` | `mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup` (**required**).
+| positional | `boolean` | e.g. true
+| poolSize | number | e.g. 8
 
 ## "dynamic-body" object
 Follows [aframe-physics-system](https://github.com/n5ro/aframe-physics-system#dynamic-body-and-static-body).
@@ -313,9 +319,9 @@ Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.
 
 |name/example|JSON type|description
 |--|--|--
-| position | [`Position` object](#position-object) | The event destination position.
-| click_pos | [`Position` object](#position-object) | The event origination position.
-| source | `string` | `object_id` of event origination. e.g  "camera_8715_er1k"
+| position | [`Position` object](#position-object) | The event destination position. (**required**)
+| clickPos | [`Position` object](#position-object) | The event origination position. (**required**)
+| source | `string` | `object_id` of event origination. e.g  "camera_8715_er1k" (**required**)
 
 ## "Scene Options Data" object
 Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-scene-options.json)

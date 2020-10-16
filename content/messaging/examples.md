@@ -282,20 +282,6 @@ mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/gltf-model_Moon -m '{"o
 
 Child objects inherit attributes of their parent, for example scale. Scale the parent, the child scales with it. If the parent is already scaled, the child scale will be reflected right away. Child position values are relative to the parent and also scaled.
 
-## Load Scene
-
-Loads the contents of another ARENA scene at a coordinate within the current scene (requires `click-listener`).
-
-  as MQTT
-
-  `attribute "load-scene" value "on: mousedown; url://arena.andrew.cmu.edu/drone; position: 0 0 0"`
-
-  as html
-
-  ```html
-  <a-entity load-scene="on: mousedown; url://arena.andrew.cmu.edu/drone; position: 0 0 0" ...other stuff...></a-entity>
-  ```
-
 ## Goto URL
 
 Navigates to entirely new page into browser when clicked, or other event (requires `click-listener`).
