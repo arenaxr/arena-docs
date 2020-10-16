@@ -79,27 +79,27 @@ Some A-Frame attributes and components we don't officially include in our JSON m
 | object_type | `string` | A primitive object type: `cube, sphere, circle, cone, cylinder, dodecahedron, icosahedron, tetrahedron, octahedron, plane, ring, torus, torusKnot, triangle`
 | | | ...or, A complex object type: `gltf_model, image, particle, text, line, light, thickline`
 | | | ...or, A presence object type : `camera, viveLeft, viveRight` (`camera` is used by web browsers and VIO cameras)
-| [position](examples#move) | [`Position` object](#position-object)
-| [rotation](examples#rotate) | [`Rotation` object](#rotation-object)
-| scale | [`scale` object](#scale-object)
+| [position](examples#move) | [`Position` object](#position-object) | Position of the object's origin in 3d, relative to world-origin.
+| [rotation](examples#rotate) | [`Rotation` object](#rotation-object) | Quaternion rotation of the object.
+| scale | [`scale` object](#scale-object) | Scale factor of the object in 3d.
 | [color](examples#color) | `string` | A hexadecimal color or [CSS/HTML color](https://htmlcolorcodes.com/color-names) name (*default: "#FFFFFF"*).
 | [text](examples#text) | `string` | Any `string` of [ASCII characters](https://aframe.io/docs/1.0.0/components/text.html#non-ascii-characters). e.g. "Hello world!"
-| [click-listener](examples#events) | string
+| [click-listener](examples#events) | `string` | Name of the click-listener, default can be empty string. e.g. ""
 | [url](examples#images) | `string` | URI, relative or full path of a file. e.g. "https://arena.andrew.cmu.edu/models/Duck.glb"
-| material | [`Material` object](#material-object)
-| multisrc | [`Multisrc` object](#multisrc-object)
-| [light](examples#lights) | [`Light` object](#light-object) | Used by `object_type`: `light`.
-| [animation](examples#animate) | [`Animation` object](#animation-object)
-| [animation-mixer](examples#animating-gltf-models) | [`Animation-Mixer` object](#animation-mixer-object)
-| [start](examples#lines) | [`Position` object](#position-object) | Used by `object_type`: `line`.
-| [end](examples#lines) | [`Position` object](#position-object) | Used by `object_type`: `line`.
-| [meshline](examples#thicklines) | [`Meshline` object](#meshline-object) | Used by `object_type`: `thickline`.
-| [sound](examples#sound) | [`Sound` object](#sound-object) | Requires `click-listener`
-| [dynamic-body](examples#physics) | [`Dynamic-Body` object](#dynamic-body-object)
-| [impulse](examples#physics) | [`Impulse` object](#impulse-object) | Requires `click-listener`
-| [spe-particles](examples#particles) | [`SPE-Particles` object](#spe-particles-object)
-| [environment](examples#background-themes) | [`Environment` object](#environment-object)
-| [collision-listener](examples#events) | string
+| [material](examples#360-video) | [`Material` object](#material-object) | The material properties of the object's surface.
+| [multisrc](examples#images-on-objects) | [`Multisrc` object](#multisrc-object) | Define multiple visual sources applied to an object.
+| [light](examples#lights) | [`Light` object](#light-object) | Properties of a light source. Used by `object_type`: `light`.
+| [animation](examples#animate) | [`Animation` object](#animation-object) | Animation rules of an object.
+| [animation-mixer](examples#animating-gltf-models) | [`Animation-Mixer` object](#animation-mixer-object) | Animation sequence rules.
+| [start](examples#lines) | [`Position` object](#position-object) | Starting position of a line. Used by `object_type`: `line`.
+| [end](examples#lines) | [`Position` object](#position-object) | Ending position of a line. Used by `object_type`: `line`.
+| [meshline](examples#thicklines) | [`Meshline` object](#meshline-object) | A line type with multiple way-points. Used by `object_type`: `thickline`.
+| [sound](examples#sound) | [`Sound` object](#sound-object) | The sound properties of an object. Requires `click-listener`
+| [dynamic-body](examples#physics) | [`Dynamic-Body` object](#dynamic-body-object) | The physics rules an object should obey.
+| [impulse](examples#physics) | [`Impulse` object](#impulse-object) | The force applied using physics. Requires `click-listener`
+| [spe-particles](examples#particles) | [`SPE-Particles` object](#spe-particles-object) | Properties of the particles effects component and its animations.
+| ~~[environment](examples#background-themes)~~ | ~~[`Environment` object](#environment-object)~~ | ~~Environment options.~~ May be deprecated due to the new [`env-presets` object](#env-presets-object).
+| [collision-listener](examples#events) | `string` | Name of the collision-listener, default can be empty string. e.g. ""
 | [parent](examples#parentchild-linking) | `string` | `object_id` of the object which is the parent.
 | [goto-url](examples#goto-url) | [`Goto URL` object](#goto-url-object) | Requires `click-listener`
 
@@ -209,7 +209,7 @@ Follows Don McCurdy’s [animation-mixer](https://github.com/n5ro/aframe-extras/
 |name/example|JSON type|description
 |--|--|--
 | lineWidth | `number` | e.g. 11 (**required**).
-| color | `string` | A hexadecimal color or [CSS/HTML color](https://htmlcolorcodes.com/color-names) name (*default: "#FFFFFF"*) (**required**).
+| color | `string` | A hexadecimal color or [CSS/HTML color](https://htmlcolorcodes.com/color-names) name (*default: "#FFFFFF"*, **required**).
 | path | `string` | e.g. "0 0 0, 0 0 1" (**required**).
 
 ## "sound" object
@@ -222,7 +222,7 @@ Follows A-Frame [sound](https://aframe.io/docs/1.0.0/components/sound.html).
 | src | `string` | URI, relative or full path of a directory containing a sound file, e.g. "url(https://arena.andrew.cmu.edu/audio/toypiano/Asharp1.wav)" (**required**).
 | on | `string` | `mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup` (**required**).
 | positional | `boolean` | e.g. true
-| poolSize | number | e.g. 8
+| poolSize | `number` | e.g. 8
 
 ## "dynamic-body" object
 Follows [aframe-physics-system](https://github.com/n5ro/aframe-physics-system#dynamic-body-and-static-body).
@@ -280,7 +280,7 @@ Follows [aframe-spe-particles-component](https://github.com/harlyq/aframe-spe-pa
 |--|--|--
 | dest | `string` | `popup, newtab, sametab` e.g. "sametab" (**required**).
 | on | `string` | e.g. "mousedown" (**required**).
-| url | `string` | e.g. "http:www.formula1.com" (**required**).
+| url | `string` | e.g. "http://www.formula1.com" (**required**).
 
 -------------------------
 
@@ -332,8 +332,8 @@ Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.
 |name/example|JSON type|description
 |--|--|--
 | topic | `string` | Pubsub topic (pubsub) (*default: "realm/s/${scene}"*)
-| host | `string` | Destination host address (client socket; ignored for now*)
-| port | `number` | Destination port (client socket; ignored for now*)
+| host | `string` | Destination host address (client socket; ignored for now)
+| port | `number` | Destination port (client socket; ignored for now)
 
 -------------------------
 
@@ -354,34 +354,34 @@ Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-sc
 
 |name/example|JSON type|description
 |--|--|--
-| active | `boolean` | Show/hides the environment presets component. Use this instead of using the visible attribute. (*default:true*, **required**)
-| preset | `string` | `none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, arches, threetowers, poison, tron, japan, dream, volcano, starry, osiris`; An A-frame preset environment. (*default:"default"*, **required**)
-| seed | `number` | Seed for randomization. If you don't like the layout of the elements, try another value for the seed. (*default:1*)
-| skyType | `string` | `none, color, gradient, atmosphere`; a sky type. (*default:"color"*)
+| active | `boolean` | Show/hides the environment presets component. Use this instead of using the visible attribute. (*default: true*, **required**)
+| preset | `string` | `none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, arches, threetowers, poison, tron, japan, dream, volcano, starry, osiris`; An A-frame preset environment. (*default: "default"*, **required**)
+| seed | `number` | Seed for randomization. If you don't like the layout of the elements, try another value for the seed. (*default: 1*)
+| skyType | `string` | `none, color, gradient, atmosphere`; a sky type. (*default: "color"*)
 | skyColor | `string` | Sky color. (*default: "#ffa500"*)
 | horizonColor | `string` | Horizon color. (*default: "#ffa500"*)
-| lighting | `string` | `none, distant, point`; A hemisphere light and a key light (directional or point) are added to the scene automatically when using the component. Use none if you don't want this automatic lighting set being added. The color and intensity are estimated automatically. (*default:"distant"*)
-| shadow | `boolean` | Shadows on/off. Sky light casts shadows on the ground of all those objects with shadow component applied. (*default:false*)
+| lighting | `string` | `none, distant, point`; A hemisphere light and a key light (directional or point) are added to the scene automatically when using the component. Use none if you don't want this automatic lighting set being added. The color and intensity are estimated automatically. (*default: "distant"*)
+| shadow | `boolean` | Shadows on/off. Sky light casts shadows on the ground of all those objects with shadow component applied. (*default: false*)
 | shadowSize | `number` | Size of the shadow, if applied. (*default: 10*)
-| lightPosition | [`Position` object](#position-object) | Position of the main light. If skyType is atmospheric, only the orientation matters (is a directional light) and it can turn the scene into night when lowered towards the horizon. (*default:{"x":0, "y":1, "z":-0.2}*)
-| fog | `number` | Amount of fog (0 = none, 1 = full fog). The color is estimated automatically. (*default:0*)
-| flatShading | `boolean` | Whether to show everything smoothed (false) or polygonal (true). (*default:false*)
-| playArea | `number` | Radius of the area in the center reserved for the player and the game play. The ground is flat in there and no objects are placed inside. (*default:1*)
-| ground | `string` | `none, flat, hills, canyon, spikes, noise`; Orography style. (*default:"hills"*)
-| groundScale | [`scale` object](#scale-object) | Ground dimensions (in meters). (*default:{"x":1, "y":1, "z":1}*)
-| groundYScale | `number` | Maximum height (in meters) of ground's features (hills, mountains, peaks..). (*default:3*)
-| groundTexture | `string` | `none, checkerboard, squares, walkernoise`; Texture applied to the ground. (*default:"none"*)
-| groundColor | `string` | Main color of the ground. (*default:"#553e35"*)
-| groundColor2 | `string` | Secondary color of the ground. Used for textures, ignored if groundTexture is none. (*default:"#694439"*)
-| dressing | `string` | none, cubes, pyramids, cylinders, hexagons, stones, trees, mushrooms, towers, apparatus, arches, torii; Dressing is the term we use here for the set of additional objects that are put on the ground for decoration. (*default:"none"*)
-| dressingAmount | `number` | Number of objects used for dressing. (*default:10*)
-| dressingColor | `string` | Base color of dressing objects. (*default:"#795449"*)
-| dressingScale | `number` | Height (in meters) of dressing objects. (*default:5*)
-| dressingVariance | [`Scale` object](#scale-object) | Maximum x,y,z meters to randomize the size and rotation of each dressing object. Use 0 0 0 for no variation in size nor rotation. (*default:{"x":1, "y":1, "z":1}*)
-| dressingUniformScale | `boolean` | If false, a different value is used for each coordinate x, y, z in the random variance of size. (*default:true*)
-| dressingOnPlayArea | `number` | Amount of dressing on play area. (*default:0*)
-| grid | `string` | `none, 1x1, 2x2, crosses, dots, xlines, ylines`; Grid, 1x1 and 2x2 are rectangular grids of 1 and 2 meters side, respectively. (*default:"none"*)
-| gridColor | `string` | Color of the grid. (*default:"#ccc"*)
+| lightPosition | [`Position` object](#position-object) | Position of the main light. If skyType is atmospheric, only the orientation matters (is a directional light) and it can turn the scene into night when lowered towards the horizon. (*default: {"x": 0, "y": 1, "z": -0.2}*)
+| fog | `number` | Amount of fog (0 = none, 1 = full fog). The color is estimated automatically. (*default: 0*)
+| flatShading | `boolean` | Whether to show everything smoothed (false) or polygonal (true). (*default: false*)
+| playArea | `number` | Radius of the area in the center reserved for the player and the game play. The ground is flat in there and no objects are placed inside. (*default: 1*)
+| ground | `string` | `none, flat, hills, canyon, spikes, noise`; Orography style. (*default: "hills"*)
+| groundScale | [`scale` object](#scale-object) | Ground dimensions (in meters). (*default: {"x": 1, "y": 1, "z": 1}*)
+| groundYScale | `number` | Maximum height (in meters) of ground's features (hills, mountains, peaks..). (*default: 3*)
+| groundTexture | `string` | `none, checkerboard, squares, walkernoise`; Texture applied to the ground. (*default: "none"*)
+| groundColor | `string` | Main color of the ground. (*default: "#553e35"*)
+| groundColor2 | `string` | Secondary color of the ground. Used for textures, ignored if groundTexture is none. (*default: "#694439"*)
+| dressing | `string` | none, cubes, pyramids, cylinders, hexagons, stones, trees, mushrooms, towers, apparatus, arches, torii; Dressing is the term we use here for the set of additional objects that are put on the ground for decoration. (*default: "none"*)
+| dressingAmount | `number` | `number` of objects used for dressing. (*default: 10*)
+| dressingColor | `string` | Base color of dressing objects. (*default: "#795449"*)
+| dressingScale | `number` | Height (in meters) of dressing objects. (*default: 5*)
+| dressingVariance | [`Scale` object](#scale-object) | Maximum x,y,z meters to randomize the size and rotation of each dressing object. Use 0 0 0 for no variation in size nor rotation. (*default: {"x": 1, "y": 1, "z": 1}*)
+| dressingUniformScale | `boolean` | If false, a different value is used for each coordinate x, y, z in the random variance of size. (*default: true*)
+| dressingOnPlayArea | `number` | Amount of dressing on play area. (*default: 0*)
+| grid | `string` | `none, 1x1, 2x2, crosses, dots, xlines, ylines`; Grid, 1x1 and 2x2 are rectangular grids of 1 and 2 meters side, respectively. (*default: "none"*)
+| gridColor | `string` | Color of the grid. (*default: "#ccc"*)
 
 ## "scene-options" object
 Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-scene-options.json)
@@ -390,10 +390,10 @@ Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-sc
 
 |name/example|JSON type|description
 |--|--|--
-| jitsiServer | `string` | Jitsi host used for this scene. (*default:"mr.andrew.cmu.edu"*)
-| bigscreen | `string` | Name of the 3D object used as a big screen when sharing desktop. (*default:"bigscreen"*)
-| clickableOnlyEvents | `boolean` | true = publish only mouse events for objects with click-listeners; false = all objects publish mouse events. (*default:"true"*)
-| privateScene | `boolean` | false = scene will be visible; true = scene will not show in listings. (*default:"false"*)
+| jitsiServer | `string` | Jitsi host used for this scene. (*default: "mr.andrew.cmu.edu"*)
+| bigscreen | `string` | Name of the 3D object used as a big screen when sharing desktop. (*default: "bigscreen"*)
+| clickableOnlyEvents | `boolean` | true = publish only mouse events for objects with click-listeners; false = all objects publish mouse events. (*default: "true"*)
+| privateScene | `boolean` | false = scene will be visible; true = scene will not show in listings. (*default: "false"*)
 
 -------------------------
 
@@ -415,4 +415,3 @@ Follows [ARENA Landmarks Schema](https://arena.andrew.cmu.edu/build/arena-landma
 |--|--|--
 | object_id | `string` | Identifier of the scene object to be used as the position of the landmark. The position and orientation of this object is used to place the user. (**required**)
 | label | `string` | Description used in the landmark list. (**required**)
-

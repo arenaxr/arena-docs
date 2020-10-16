@@ -275,7 +275,7 @@ Draw a sphere, set the texture src to be an equirectangular video, on the 'back'
 
 ## Lines
 
-Draw a purple line from (2, 2, 2) to (3, 3, 3),
+Draw a purple line from (2, 2, 2) to (3, 3, 3).
 
 ```python
 arena.Object(
@@ -390,7 +390,13 @@ Child objects inherit attributes of their parent, for example scale. Scale the p
 Navigates to entirely new page into browser when clicked, or other event (requires `click-listener`).
 
 ```python
-# TODO
+newtab = arena.Object(
+    objType=arena.Shape.cube,
+    location=( 0, 0, -5),
+    color=(0,255,0),
+    clickable=True,
+    data='{"goto-url": { "dest":"newtab", "on": "mousedown", "url": "http:www.eet.com"} } ',
+)
 ```
 
 ## Particles
@@ -443,4 +449,3 @@ Full list of Vive controller event names:
   - `systemup`
   - `trackpaddown`
   - `trackpadup`
-
