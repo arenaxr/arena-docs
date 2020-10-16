@@ -9,6 +9,10 @@ parent: Messaging Format
 Each ARENA message is JSON formatted and is structured for its general use and persistance within the ARENA environment. Each message begins with a [`Message object`](#message-object) of general properties, paired with a more granular detailed `data` sub-object which varies in form and follow the examples below.
 - [**ARENA-core**](https://github.com/conix-center/ARENA-core) webserver repository
 
+{% include alert type="warning" title="Coming soon" content="
+Another column can be added which defines which properties are ARENA-format JSON, and which are Arbitrary A-Frame JSON properties which are applied in HTML as attributes.
+"%}
+
 ## Examples
 
 ### Object Message
@@ -41,6 +45,8 @@ Each ARENA message is JSON formatted and is structured for its general use and p
 {"object_id": "af4cef99-2700-4986-b44c-c4ce7fddfc88", "action": "update", "persist": true, "type": "landmarks", "data": {"landmarks": [{"object_id": "controls_sign_img1", "label": "Sign: How to Move"}, {"object_id": "controls_sign_img2", "label": "Sign: Buttons"}, {"object_id": "controls_sign_img3", "label": "Sign: Video Capabilities"}, {"object_id": "controls_sign_img4", "label": "Sign: Chat, Find People and Landmarks"}]}}
 ```
 
+-------------------------
+
 ## "Message" object
 
 ### properties
@@ -53,10 +59,12 @@ Each ARENA message is JSON formatted and is structured for its general use and p
 | [persist](examples#persisted-objects) | `boolean` | Save to persistance database (*default: false*).
 | [ttl](examples#temporary-objects-ttl) | `number` | Time-to-live seconds to persist the object and automatically delete (*default: 0*).
 | data | [`Object Data` object](#object-data-object) | The detailed properties of a program. Used by Message Type `object`.
-| data | [`Event Data` object](#event-data-object) | The detailed properties of a program. Used by  by Event Type `mousedown (and others)`, Action: `clientEvent`.
+| data | [`Event Data` object](#event-data-object) | The detailed properties of a program. Used by Event Type `mousedown (and others)`, Action: `clientEvent`.
 | data | [`Program Data` object](#program-data-object) | The detailed properties of the object. Used by Message Type `program`.
 | data | [`Scene Options Data` object](#scene-options-data-object) | The detailed properties of the scene environment. Used by Message Type `scene-options`.
 | data | [`Landmarks Data` object](#landmarks-data-object) | The detailed properties of scene landmarks. Used by Message Type `landmarks`.
+
+-------------------------
 
 ## "Object Data" object
 
@@ -274,6 +282,20 @@ Follows [aframe-spe-particles-component](https://github.com/harlyq/aframe-spe-pa
 | on | `string` | e.g. "mousedown" (**required**).
 | url | `string` | e.g. "http:www.formula1.com" (**required**).
 
+-------------------------
+
+## "Event Data" object
+
+### properties
+
+|name/example|JSON type|description
+|--|--|--
+| position | [`Position` object](#position-object) | The event destination position. (**required**)
+| clickPos | [`Position` object](#position-object) | The event origination position. (**required**)
+| source | `string` | `object_id` of event origination. e.g "camera_8715_er1k" (**required**)
+
+-------------------------
+
 ## "Program Data" object
 Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.json)
 
@@ -310,18 +332,10 @@ Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.
 |name/example|JSON type|description
 |--|--|--
 | topic | `string` | Pubsub topic (pubsub) (*default: "realm/s/${scene}"*)
-| host | `string` | Destination host address (client socket; ignored for now)
-| port | `number` | Destination port (client socket; ignored for now)
+| host | `string` | Destination host address (client socket; ignored for now*)
+| port | `number` | Destination port (client socket; ignored for now*)
 
-## "Event Data" object
-
-### properties
-
-|name/example|JSON type|description
-|--|--|--
-| position | [`Position` object](#position-object) | The event destination position. (**required**)
-| clickPos | [`Position` object](#position-object) | The event origination position. (**required**)
-| source | `string` | `object_id` of event origination. e.g  "camera_8715_er1k" (**required**)
+-------------------------
 
 ## "Scene Options Data" object
 Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-scene-options.json)
@@ -340,35 +354,34 @@ Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-sc
 
 |name/example|JSON type|description
 |--|--|--
-| active | `boolean` | Show/hides the environment presets component. Use this instead of using the visible attribute. (**required**)
-| preset | `string` | An A-frame preset environment. (**required**)
-| seed | `number` | Seed for randomization. If you don't like the layout of the elements, try another value for the seed.
-| skyType | `string` | `none, color, gradient, atmosphere`; a sky type.
-| skyColor | `string` | `none, distant, point`; sky color. (*default: "#ffa500"*)
+| active | `boolean` | Show/hides the environment presets component. Use this instead of using the visible attribute. (*default:true*, **required**)
+| preset | `string` | `none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, arches, threetowers, poison, tron, japan, dream, volcano, starry, osiris`; An A-frame preset environment. (*default:"default"*, **required**)
+| seed | `number` | Seed for randomization. If you don't like the layout of the elements, try another value for the seed. (*default:1*)
+| skyType | `string` | `none, color, gradient, atmosphere`; a sky type. (*default:"color"*)
+| skyColor | `string` | Sky color. (*default: "#ffa500"*)
 | horizonColor | `string` | Horizon color. (*default: "#ffa500"*)
-| lighting | `string` | A hemisphere light and a key light (directional or point) are added to the scene automatically when using the component. Use none if you don't want this automatic lighting set being added. The color and intensity are estimated automatically.
-| shadow | `boolean` | Shadows on/off. Sky light casts shadows on the ground of all those objects with shadow component applied.
+| lighting | `string` | `none, distant, point`; A hemisphere light and a key light (directional or point) are added to the scene automatically when using the component. Use none if you don't want this automatic lighting set being added. The color and intensity are estimated automatically. (*default:"distant"*)
+| shadow | `boolean` | Shadows on/off. Sky light casts shadows on the ground of all those objects with shadow component applied. (*default:false*)
 | shadowSize | `number` | Size of the shadow, if applied. (*default: 10*)
-| lightPosition | [`Position` object](#position-object) | Position of the main light. If skyType is atmospheric, only the orientation matters (is a directional light) and it can turn the scene into night when lowered towards the horizon.
-| fog | `number` | Amount of fog (0 = none, 1 = full fog). The color is estimated automatically.
-| flatShading | `boolean` | Whether to show everything smoothed (false) or polygonal (true).
-| playArea | `number` | Radius of the area in the center reserved for the player and the game play. The ground is flat in there and no objects are placed inside.
-| ground | `string` | `none, flat, hills, canyon, spikes, noise`; Orography style.
-| groundScale | [`scale` object](#scale-object) | Ground dimensions (in meters).
-| groundYScale | `number` | Maximum height (in meters) of ground's features (hills, mountains, peaks..).
-| groundTexture | `string` | `none, checkerboard, squares, walkernoise`; Texture applied to the ground.
-| groundColor | `string` | Main color of the ground.
-| groundColor2 | `string` | Secondary color of the ground. Used for textures, ignored if groundTexture is none.
-| dressing | `string` | Dressing is the term we use here for the set of additional objects that are put on the ground for decoration.
-| dressingAmount | `number` | Number of objects used for dressing.
-| dressingColor | `string` | Base color of dressing objects.
-| dressingScale | `number` | Height (in meters) of dressing objects.
-| dressingVariance | [`Scale` object](#scale-object) | Maximum x,y,z meters to randomize the size and rotation of each dressing object. Use 0 0 0 for no variation in size nor rotation.
-| dressingUniformScale | `boolean` | If false, a different value is used for each coordinate x, y, z in the random variance of size.
-| dressingOnPlayArea | `number` | Amount of dressing on play area.
-| grid | `string` | Grid, 1x1 and 2x2 are rectangular grids of 1 and 2 meters side, respectively.
-| gridColor | `string` | Color of the grid.
-
+| lightPosition | [`Position` object](#position-object) | Position of the main light. If skyType is atmospheric, only the orientation matters (is a directional light) and it can turn the scene into night when lowered towards the horizon. (*default:{"x":0, "y":1, "z":-0.2}*)
+| fog | `number` | Amount of fog (0 = none, 1 = full fog). The color is estimated automatically. (*default:0*)
+| flatShading | `boolean` | Whether to show everything smoothed (false) or polygonal (true). (*default:false*)
+| playArea | `number` | Radius of the area in the center reserved for the player and the game play. The ground is flat in there and no objects are placed inside. (*default:1*)
+| ground | `string` | `none, flat, hills, canyon, spikes, noise`; Orography style. (*default:"hills"*)
+| groundScale | [`scale` object](#scale-object) | Ground dimensions (in meters). (*default:{"x":1, "y":1, "z":1}*)
+| groundYScale | `number` | Maximum height (in meters) of ground's features (hills, mountains, peaks..). (*default:3*)
+| groundTexture | `string` | `none, checkerboard, squares, walkernoise`; Texture applied to the ground. (*default:"none"*)
+| groundColor | `string` | Main color of the ground. (*default:"#553e35"*)
+| groundColor2 | `string` | Secondary color of the ground. Used for textures, ignored if groundTexture is none. (*default:"#694439"*)
+| dressing | `string` | none, cubes, pyramids, cylinders, hexagons, stones, trees, mushrooms, towers, apparatus, arches, torii; Dressing is the term we use here for the set of additional objects that are put on the ground for decoration. (*default:"none"*)
+| dressingAmount | `number` | Number of objects used for dressing. (*default:10*)
+| dressingColor | `string` | Base color of dressing objects. (*default:"#795449"*)
+| dressingScale | `number` | Height (in meters) of dressing objects. (*default:5*)
+| dressingVariance | [`Scale` object](#scale-object) | Maximum x,y,z meters to randomize the size and rotation of each dressing object. Use 0 0 0 for no variation in size nor rotation. (*default:{"x":1, "y":1, "z":1}*)
+| dressingUniformScale | `boolean` | If false, a different value is used for each coordinate x, y, z in the random variance of size. (*default:true*)
+| dressingOnPlayArea | `number` | Amount of dressing on play area. (*default:0*)
+| grid | `string` | `none, 1x1, 2x2, crosses, dots, xlines, ylines`; Grid, 1x1 and 2x2 are rectangular grids of 1 and 2 meters side, respectively. (*default:"none"*)
+| gridColor | `string` | Color of the grid. (*default:"#ccc"*)
 
 ## "scene-options" object
 Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-scene-options.json)
@@ -377,10 +390,12 @@ Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-sc
 
 |name/example|JSON type|description
 |--|--|--
-| jitsiServer | `string` | Jitsi host used for this scene.
-| bigscreen | `string` | Name of the 3D object used as a big screen when sharing desktop.
-| clickableOnlyEvents | `boolean` | true = publish only mouse events for objects with click-listeners; false = all objects publish mouse events.
-| privateScene | `boolean` | false = scene will be visible; true = scene will not show in listings.
+| jitsiServer | `string` | Jitsi host used for this scene. (*default:"mr.andrew.cmu.edu"*)
+| bigscreen | `string` | Name of the 3D object used as a big screen when sharing desktop. (*default:"bigscreen"*)
+| clickableOnlyEvents | `boolean` | true = publish only mouse events for objects with click-listeners; false = all objects publish mouse events. (*default:"true"*)
+| privateScene | `boolean` | false = scene will be visible; true = scene will not show in listings. (*default:"false"*)
+
+-------------------------
 
 ## "Landmarks Data" object
 Follows [ARENA Landmarks Schema](https://arena.andrew.cmu.edu/build/arena-landmarks.json)
