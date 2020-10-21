@@ -182,7 +182,7 @@ mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/sphere_vid -m '{"object
 
 ## Lines
 
-Draw a purple line from (2, 2, 2) to (3, 3, 3), 
+Draw a purple line from (2, 2, 2) to (3, 3, 3).
 
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/line_1 -m '{"object_id": "line_1", "action": "create", "data": {"object_type": "line", "start": {"x": 2, "y": 2, "z": 2}, "end": {"x": 3, "y": 3, "z": 3}, "color": "#CE00FF"}}'
