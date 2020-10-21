@@ -6,7 +6,7 @@ parent: Messaging Format
 ---
 
 ## ARENA MQTT Message Payload JSON Specification
-Each ARENA message is JSON formatted and is structured for its general use and persistance within the ARENA environment. Each message begins with a [`Scene Message object`](#message-object) of general properties, paired with a more granular detailed `data` sub-object which varies in form and follow the examples below.
+Each ARENA message is JSON formatted and is structured for its general use and persistance within the ARENA environment. Each message begins with a [`Scene Message object`](#scene-message-object) of general properties, paired with a more granular detailed `data` sub-object which varies in form and follow the examples below.
 - [**ARENA-core**](https://github.com/conix-center/ARENA-core) webserver repository
 
 {% include alert type="warning" title="Coming soon" content="
@@ -16,31 +16,31 @@ Another column can be added which defines which properties are ARENA-format JSON
 ## Examples
 
 ### Object Message
-[`Scene Message object`](#message-object) with a `data` property of the [`Object Data` object](#object-data-object).
+[`Scene Message object`](#scene-message-object) with a `data` property of the [`Object Data` object](#object-data-object).
 ```json
 {"object_id": "cube_1", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 1, "y": 1, "z": -1}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}, "color": "#FF0000"}}
 ```
 
 ### Event Message
-[`Scene Message object`](#message-object) with a `data` property of the [`Event Data` object](#event-data-object).
+[`Scene Message object`](#scene-message-object) with a `data` property of the [`Event Data` object](#event-data-object).
 ```json
 {"object_id": "fallBox2", "action": "clientEvent", "type": "mousedown", "data": {"position": {"x": -0.993, "y": 0.342, "z": -1.797}, "source": "camera_8715_er"}}
 ```
 
 ### Program Message
-[`Scene Message object`](#message-object) with a `data` property of the [`Program Data` object](#program-data-object).
+[`Scene Message object`](#scene-message-object) with a `data` property of the [`Program Data` object](#program-data-object).
 ```json
 {"object_id": "6aafedf3-e313-4785-a456-939de8677f07", "action": "update", "persist": true, "type": "program", "data": {"name": "wiselab/arb", "instantiate": "single", "filename": "arb.py", "filetype": "PY", "args": ["${scene}", "-b", " ${mqtth}"]}}
 ```
 
 ### Scene Options Message
-[`Scene Message object`](#message-object) with a `data` property of the [`Scene Options Data` object](#scene-options-data-object).
+[`Scene Message object`](#scene-message-object) with a `data` property of the [`Scene Options Data` object](#scene-options-data-object).
 ```json
 {"object_id": "e9a16478-2606-4cd0-bb9f-b03879bc8baa", "action": "update", "persist": true, "type": "scene-options", "data": {"env-presets": {"active": true, "lighting": "distant", "lightPosition": {"x": 0, "y": 1, "z": -10}, "ground": "hills", "groundTexture": "squares", "groundColor": "#444241", "groundYScale": 0.5}, "scene-options": {"jitsiServer": "jitsi1.andrew.cmu.edu", "clickableOnlyEvents": true, "privateScene": true}}}
 ```
 
 ### Landmarks Message
-[`Scene Message object`](#message-object) with a `data` property of the [`Landmarks Data` object](#landmarks-data-object).
+[`Scene Message object`](#scene-message-object) with a `data` property of the [`Landmarks Data` object](#landmarks-data-object).
 ```json
 {"object_id": "af4cef99-2700-4986-b44c-c4ce7fddfc88", "action": "update", "persist": true, "type": "landmarks", "data": {"landmarks": [{"object_id": "controls_sign_img1", "label": "Sign: How to Move"}, {"object_id": "controls_sign_img2", "label": "Sign: Buttons"}, {"object_id": "controls_sign_img3", "label": "Sign: Video Capabilities"}, {"object_id": "controls_sign_img4", "label": "Sign: Chat, Find People and Landmarks"}]}}
 ```
@@ -95,7 +95,7 @@ Some A-Frame attributes and components we don't officially include in our JSON m
 | [color](examples#color) | *A/P* | `string` | A hexadecimal color or [CSS/HTML color](https://htmlcolorcodes.com/color-names) name (*default: "#FFFFFF"*).
 | [text](examples#text) | *A/P* | `string` | Any `string` of [ASCII characters](https://aframe.io/docs/1.0.0/components/text.html#non-ascii-characters). e.g. "Hello world!"
 | [click-listener](examples#events) | *A/P* | `string` | Name of the click-listener, default can be empty string. e.g. ""
-| [url](examples#images) | *A/P* | `string` | URI, relative or full path of a file. e.g. "https://arena.andrew.cmu.edu/models/Duck.glb"
+| [url](examples#images) | *A/P* | `string` | URI, relative or full path of a file. e.g. "models/Duck.glb"
 | [material](examples#360-video) | *A/P* | [`Material` object](#material-object) | The material properties of the object's surface.
 | [multisrc](examples#images-on-objects) | *A* | [`Multisrc` object](#multisrc-object) | Define multiple visual sources applied to an object.
 | [light](examples#lights) | *A* | [`Light` object](#light-object) | Properties of a light source. Used by `object_type`: `light`.
@@ -348,7 +348,7 @@ Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.
 -------------------------
 
 ## "Scene Options Data" object
-Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-scene-options.json) from the [aframe-environment-component](https://github.com/supermedium/aframe-environment-component).
+Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-scene-options.json)
 
 ### properties
 
@@ -358,7 +358,7 @@ Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-sc
 | scene-options | *A* | [`scene-options` object](#scene-options-object) | Scene Options.
 
 ## "env-presets" object
-Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-scene-options.json)
+Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-scene-options.json) from the [aframe-environment-component](https://github.com/supermedium/aframe-environment-component).
 
 ### properties
 
@@ -383,7 +383,7 @@ Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-sc
 | groundTexture | *A* | `string` | `none, checkerboard, squares, walkernoise`; Texture applied to the ground. (*default: "none"*)
 | groundColor | *A* | `string` | Main color of the ground. (*default: "#553e35"*)
 | groundColor2 | *A* | `string` | Secondary color of the ground. Used for textures, ignored if groundTexture is none. (*default: "#694439"*)
-| dressing | *A* | `string` | none, cubes, pyramids, cylinders, hexagons, stones, trees, mushrooms, towers, apparatus, arches, torii; Dressing is the term we use here for the set of additional objects that are put on the ground for decoration. (*default: "none"*)
+| dressing | *A* | `string` | `none, cubes, pyramids, cylinders, hexagons, stones, trees, mushrooms, towers, apparatus, arches, torii`; Dressing is the term we use here for the set of additional objects that are put on the ground for decoration. (*default: "none"*)
 | dressingAmount | *A* | `number` | `number` of objects used for dressing. (*default: 10*)
 | dressingColor | *A* | `string` | Base color of dressing objects. (*default: "#795449"*)
 | dressingScale | *A* | `number` | Height (in meters) of dressing objects. (*default: 5*)
