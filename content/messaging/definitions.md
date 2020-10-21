@@ -68,9 +68,9 @@ This is the main payload body of every MQTT scene topic in the ARENA.
 | type | *A/P* | `string` | Message type: `object, program, scene-options, landmarks, rig, mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup`.
 | [persist](examples#persisted-objects) | *A/P* | `boolean` | Save to persistance database (*default: false*).
 | [ttl](examples#temporary-objects-ttl) | *A/P* | `number` | Time-to-live seconds to persist the object and automatically delete (*default: 0*).
-| data | *A/P* | [`Object Data` object](#object-data-object) | The detailed properties of a program. Used by Message Type `object`.
-| data | *A/P* | [`Event Data` object](#event-data-object) | The detailed properties of a program. Used by Event Type `mousedown (and others)`, Action: `clientEvent`.
-| data | *A* | [`Program Data` object](#program-data-object) | The detailed properties of the object. Used by Message Type `program`.
+| data | *A/P* | [`Object Data` object](#object-data-object) | The detailed properties of a a 3d object in the scene. Used by Message Type `object`.
+| data | *A/P* | [`Event Data` object](#event-data-object) | The detailed properties of an event in the scene. Used by Event Type `mousedown (and others)`, Action: `clientEvent`.
+| data | *A* | [`Program Data` object](#program-data-object) | The detailed properties of a program managed by the [runtime manager](../arts) in the scene. Used by Message Type `program`.
 | data | *A* | [`Scene Options Data` object](#scene-options-data-object) | The detailed properties of the scene environment. Used by Message Type `scene-options`.
 | data | *A* | [`Landmarks Data` object](#landmarks-data-object) | The detailed properties of scene landmarks. Used by Message Type `landmarks`.
 
