@@ -2,6 +2,7 @@
 title: Quick Start
 nav_order: 1
 layout: default
+has_children: true
 ---
 
 # Quick Start Tutorial
@@ -16,7 +17,7 @@ To start, open your browser to the scene we will be using in this tutorial. This
 Feel free to use your own scene name if you want to save your work later.
 "%}
 
-![](../assets/img/tutorial/scene.png)
+![](../../assets/img/tutorial/scene.png)
 
 ## Move around
 
@@ -29,16 +30,16 @@ There are several choices here to hold [video conferences and screensharing](pre
 
 | Button                                                                                                                                                                                                           | Action             | Description                                                                                                         |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| ![](../assets/img/icons/more.png){:height="32px" width="32px"} ![](../assets/img/icons/less.png){:height="32px" width="32px"}                                                                                    | **Settings**       | Expand/Collapse settings along the right.                                                                           |
-| ![](../assets/img/icons/audio-on.png){:height="32px" width="32px"} ![](../assets/img/icons/audio-off.png){:height="32px" width="32px"}                                                                           | **Microphone**     | Speak into the ARENA, or remain silent.                                                                             |
-| ![](../assets/img/icons/video-on.png){:height="32px" width="32px"} ![](../assets/img/icons/video-off.png){:height="32px" width="32px"}                                                                           | **Camera**         | Let your camera show you as a moving box with your camera image on it.                                              |
-| ![](../assets/img/icons/avatar3-on.png){:height="32px" width="32px"} ![](../assets/img/icons/avatar3-off.png){:height="32px" width="32px"}                                                                       | **Facial Avatar**  | Let your camera recognize your facial features, and you will appear an animated head matching your facial movement. |
-| ![](../assets/img/icons/flying-on.png){:height="32px" width="32px"} ![](../assets/img/icons/flying-off.png){:height="32px" width="32px"}                                                                         | **Flight**         | Movement defaults to walking along the ground, this will enable you to fly up or even down through the ground.      |
-| ![](../assets/img/icons/speed-slow.png){:height="32px" width="32px"} ![](../assets/img/icons/speed-medium.png){:height="32px" width="32px"} ![](../assets/img/icons/speed-fast.png){:height="32px" width="32px"} | **Movement Speed** | Slow/Medium/Fast, defaults to Medium.                                                                               |
-| ![](../assets/img/icons/screen-on.png){:height="32px" width="32px"}                                                                                                                                              | **Screenshare**    | Share your screen as a large panel in the ARENA.                                                                    |
-| ![](../assets/img/icons/chat.png){:height="24px" width="24px"}                                                                                                                                                   | **Chat Messages**  | Open chat messaging.                                                                                                |
-| ![](../assets/img/icons/user-list.png){:height="24px" width="24px"}                                                                                                                                              | **User List**      | Open list of present users.                                                                                         |
-| ![](../assets/img/icons/logout.png){:height="32px" width="32px"}                                                                                                                                                 | **Sign Out**       | Exit the ARENA.                                                                                                     |
+| ![](../../assets/img/icons/more.png){:height="32px" width="32px"} ![](../../assets/img/icons/less.png){:height="32px" width="32px"}                                                                                    | **Settings**       | Expand/Collapse settings along the right.                                                                           |
+| ![](../../assets/img/icons/audio-on.png){:height="32px" width="32px"} ![](../../assets/img/icons/audio-off.png){:height="32px" width="32px"}                                                                           | **Microphone**     | Speak into the ARENA, or remain silent.                                                                             |
+| ![](../../assets/img/icons/video-on.png){:height="32px" width="32px"} ![](../../assets/img/icons/video-off.png){:height="32px" width="32px"}                                                                           | **Camera**         | Let your camera show you as a moving box with your camera image on it.                                              |
+| ![](../../assets/img/icons/avatar3-on.png){:height="32px" width="32px"} ![](../../assets/img/icons/avatar3-off.png){:height="32px" width="32px"}                                                                       | **Facial Avatar**  | Let your camera recognize your facial features, and you will appear an animated head matching your facial movement. |
+| ![](../../assets/img/icons/flying-on.png){:height="32px" width="32px"} ![](../../assets/img/icons/flying-off.png){:height="32px" width="32px"}                                                                         | **Flight**         | Movement defaults to walking along the ground, this will enable you to fly up or even down through the ground.      |
+| ![](../../assets/img/icons/speed-slow.png){:height="32px" width="32px"} ![](../../assets/img/icons/speed-medium.png){:height="32px" width="32px"} ![](../../assets/img/icons/speed-fast.png){:height="32px" width="32px"} | **Movement Speed** | Slow/Medium/Fast, defaults to Medium.                                                                               |
+| ![](../../assets/img/icons/screen-on.png){:height="32px" width="32px"}                                                                                                                                              | **Screenshare**    | Share your screen as a large panel in the ARENA.                                                                    |
+| ![](../../assets/img/icons/chat.png){:height="24px" width="24px"}                                                                                                                                                   | **Chat Messages**  | Open chat messaging.                                                                                                |
+| ![](../../assets/img/icons/user-list.png){:height="24px" width="24px"}                                                                                                                                              | **User List**      | Open list of present users.                                                                                         |
+| ![](../../assets/img/icons/logout.png){:height="32px" width="32px"}                                                                                                                                                 | **Sign Out**       | Exit the ARENA.                                                                                                     |
 
 ## Install the ARENA Python library
 
@@ -59,7 +60,7 @@ arena.Object(objType=arena.Shape.cube)
 arena.handle_events()
 ```
 
-![](../assets/img/tutorial/cube.png)
+![](../../assets/img/tutorial/cube.png)
 
 ## Clients and Scene Callbacks
 
@@ -123,7 +124,7 @@ arena.handle_events()
 
 At your leisure, read more about methods to generate [3d content](3d-content/) and [animate](3d-content/animated-models) objects and models.
 
-![](../assets/img/tutorial/animate.png)
+![](../../assets/img/tutorial/animate.png)
 
 ## Use persistance, reload browser
 
@@ -148,7 +149,7 @@ Make note of the structure of the `data` element in the above JSON. There are wa
 ## Link your scene to the physical world
 You can make a scene you create linkable to the physical world by adding its coordinates to the [ATLAS tool](https://atlas.conix.io) (requires write permission to list coordinates). This will allow users in Augmented Reality (AR) to [discover your ARENA scene](tools/atlas) when they are in physical range of it.
 
-  ![](../assets/img/tutorial/atlas.png)
+  ![](../../assets/img/tutorial/atlas.png)
 
 ## Edit in Scene Builder
 Let's take a look at what we've just saved in our [Scene Builder](https://arena.andrew.cmu.edu/build/) tool. From here, you can also create/update/delete ARENA objects. 
@@ -157,7 +158,7 @@ Select the `example` scene in the scene list and you will see that the `duck_1` 
 
 Here you can change the position of the Duck model, for example, easily to anything you wish.
 
-  ![](../assets/img/tutorial/builder.png)
+  ![](../../assets/img/tutorial/builder.png)
 
 ## Store Your Program in the ARENA
 You can use the ARENA RunTime Supervisor, [ARTS](arts), to run your Python program in a scene without using the Python command-line. The general steps are:
@@ -170,14 +171,14 @@ In more detail, there are step by step instructions to run your Python program l
 ## Debug your program in ARTS
 Once your program is running, use the [ARTS GUI](https://arena.andrew.cmu.edu/arts/). You can select your program from all the [ARTS Modules](arts/) in the tree graph. After selecting your program, on the right side, you can monitor the WASM or Python module's `stdout` logging, migrate the module to another scene, remove the module completely, and perform other maintenance.
 
-  ![](../assets/img/tutorial/arts.png)
+  ![](../../assets/img/tutorial/arts.png)
 
 ## Debug your scene with A-Frame Scene Inspector
 Since the ARENA's rendering uses the A-Frame web 3D rendering engine, you can open the [A-Frame Scene Inspector](https://aframe.io/docs/1.0.0/introduction/visual-inspector-and-dev-tools.html) on any scene to examine and manipulate any of the A-Frame elements in your scene.  Try this now from your example scene by typing `<ctrl> + <alt> + i` on most systems.
 
 Examine the list of elements on the left side. Each element or object you select will show it's details and attributes on the right side. You may edit any attributes here you wish, however, remember that the A-Frame Scene Inspector will not persist any changes to the persistance database. We do have a way to visually manipulate objects and save changes that we will share next.
 
-![](../assets/img/tutorial/inspector.png)
+![](../../assets/img/tutorial/inspector.png)
 
 ## AR Builder, visual content authoring
 We also have a Python program, [AR Builder (ARB)](tools/authoring), which you can use to create and edit objects for your scene. You can use it in VR (virtual reality) as a way to edit your scene and save changes to the persistance database. Importantly, you can use it in AR (augmented reality) in combination with [AR-supported browsers](https://createwebxr.com/webAR.html) and [localization techniques](localization/) to anchor scene objects in physical space.
