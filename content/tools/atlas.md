@@ -17,7 +17,7 @@ ATLAS is a Sails web app. See `README.md` in `atlas-web-app/` for some more info
 
 ### Populate test data
 
-Currently, I am still populating my own test data each time. Please see [Record.js](https://github.com/conix-center/ATLAS/blob/master/atlas-web-app/api/models/Record.js) for the structure of an ATLAS record. Sails auto-gens a RESTful API from that `Record.js` file. The default routes work fine for us right now, but could use more syntactic suggestions.
+Currently, we are still populating my own test data each time. Please see [Record.js](https://github.com/conix-center/ATLAS/blob/master/atlas-web-app/api/models/Record.js) for the structure of an ATLAS record. Sails auto-gens a RESTful API from that `Record.js` file. The default routes work fine for us right now, but could use more syntactic suggestions.
 
 - [Sails blueprint-routes](https://sailsjs.com/documentation/concepts/blueprints?blueprint-routes)
 
@@ -51,6 +51,6 @@ ATLAS is to ARENA as DNS is to the Internet
 These conclusions we have reached by collaboration and consensus, but are not quite "written in stone" yet.
 
 - ATLAS server will implement a RESTful API (viz. pass documents, not rely on saved server or client state, etc.)
-- Luke will write server in Node.js
-  - I (Luke) like learning new languages
+- Server will be written in Node.js
+  - We like learning new languages
   - Node.js comes with very handy modules for web server sorts of things
