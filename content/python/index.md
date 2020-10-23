@@ -37,3 +37,8 @@ arena.handle_events()
 1. Watch your 3d cube arrive in the ARENA.
 1. Use your mouse and arrow keys to move around.
 1. Create more awesomeness! And show us what you made!
+
+## Python Interactive Robot Demo
+<figure class="video_container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/E7YkqZ5Hkas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
