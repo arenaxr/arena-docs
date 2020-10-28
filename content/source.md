@@ -17,17 +17,22 @@ Our demonstration sample server runs at https://arena.andrew.cmu.edu
 - [ARENA File Store](https://arena.andrew.cmu.edu/storemng/)
 - [ARENA Scene Locator - ATLAS](https://atlas.conix.io/)
 
-## ARENA Source
+## ARENA Sources
 
-- [**ARENA Documentation**](https://github.com/conix-center/ARENA)
-- [**ARENA-core**](https://github.com/conix-center/ARENA-core)
-- [**ARENA-py Python examples**](https://github.com/conix-center/ARENA-py)
+- [**Documentation**](https://github.com/conix-center/ARENA)
+- [**Deployment Docker**](https://github.com/conix-center/arena-services-docker)
+- [**Webserver**](https://github.com/conix-center/ARENA-core)
+- [**Python Examples**](https://github.com/conix-center/ARENA-py)
 - [**ATLAS**](https://github.com/conix-center/ATLAS)
-- [**ARENA persist**](https://github.com/conix-center/arena-persist)
-- [**ARENA Authentication backend**](https://github.com/conix-center/ARENA-auth)
+- [**Persistence Database**](https://github.com/conix-center/arena-persist)
+- [**Authentication Backend**](https://github.com/conix-center/ARENA-auth)
+- [**Runtime Manager**](https://github.com/conix-center/arena-runtime-browser)
+- [**File Store**](https://github.com/conix-center/arena-store)
+- [**Mosquitto Broker**](https://github.com/conix-center/ARENA-broker)
 - [**Posefusion**](https://github.com/conix-center/posefusion)
-- [**April Tag Decoding w. AR.js**](https://github.com/conix-center/AR.js/blob/master/README.md#apriltag-detection)
-- [**ARENA Deployment Docker**](https://github.com/conix-center/arena-services-docker)
+- [**AprilTag Decoding for AR.js**](https://github.com/conix-center/AR.js/blob/master/README.md#apriltag-detection)
+- [**AprilTag WASM Detector**](https://github.com/conix-center/apriltag-js-standalone)
+- [**AprilTag 36h11 Generator**](https://github.com/conix-center/apriltag-gen)
 
 ## Design Doc (WIP)
 
