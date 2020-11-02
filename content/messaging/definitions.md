@@ -78,7 +78,7 @@ This is the main payload body of every MQTT scene topic in the ARENA.
 
 ## Actions
 
-The `create`, `update`, and `delete` action* are similar to typical C(R)UD operations.
+The `create`, `update`, and `delete` actions are similar to typical C(R)UD operations.
 
 - `create` - *Upserts* an object. If the object already does exist, `data` fields will be *merged*.
 - `update` - Merges the `data` attributes with a currently existing object. To **remove** an attribute, set the value
