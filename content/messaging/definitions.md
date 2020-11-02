@@ -66,9 +66,9 @@ This is the main payload body of every MQTT scene topic in the ARENA.
 | object_id | *A/P* | `string` | A unique name within the scene (**required**).
 | action | *A/P* | `string` | An action to perform: `create, delete, update, clientEvent` (**required**).
 | type | *A/P* | `string` | Message type: `object, program, scene-options, landmarks, rig, mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup`.
-| [persist](examples#persisted-objects) | *A/P* | `boolean` | Save to persistance database (*default: false*).
-| [ttl](examples#temporary-objects-ttl) | *A/P* | `number` | Time-to-live seconds to persist the object and automatically delete (*default: 0*).
-| data | *A/P* | [`Object Data` object](#object-data-object) | The detailed properties of a a 3d object in the scene. Used by Message Type `object`.
+| [persist](examples#persisted-objects) | *A/P* | `boolean` | Save to persistence database (*default: false*).
+| [ttl](examples#temporary-objects-ttl) | *A/P* | `number` | Time-to-live seconds to create the object and automatically delete (*default: 0*).
+| data | *A/P* | [`Object Data` object](#object-data-object) | The detailed properties of a 3d object in the scene. Used by Message Type `object`.
 | data | *A/P* | [`Event Data` object](#event-data-object) | The detailed properties of an event in the scene. Used by Event Type `mousedown (and others)`, Action: `clientEvent`.
 | data | *A* | [`Program Data` object](#program-data-object) | The detailed properties of a program managed by the [runtime manager](../arts) in the scene. Used by Message Type `program`.
 | data | *A* | [`Scene Options Data` object](#scene-options-data-object) | The detailed properties of the scene environment. Used by Message Type `scene-options`.
@@ -76,6 +76,16 @@ This is the main payload body of every MQTT scene topic in the ARENA.
 
 -------------------------
 
+## Actions
+
+The `create`, `update`, and `delete` action* are similar to typical C(R)UD operations.
+
+- `create` - *Upserts* an object. If the object already does exist, `data` fields will be *merged*.
+- `update` - Merges the `data` attributes with a currently existing object. To **remove** an attribute, set the value
+             to `null`.
+- `delete` - Delete an object. No data field required.
+
+-------------------------
 ## "Object Data" object
 
 {% include alert type="warning" title="Arbitrary A-Frame Components" content="
