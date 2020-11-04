@@ -4,31 +4,31 @@
 
 When you first enter the ARENA, there will be a screen asking you to sign in. You can use your Google account, which will automatically set your name to the name used in your Google account (you can change this later). You can also choose to anonymously sign in; you'll have to enter a name to use in the ARENA. 
 
-![](../../../assets/img/tutorials/userguide/a1.jpg)
+![](../../assets/img/tutorial/userguide/a1.jpg)
 
-![](../../assets/img/tutorials/userguide/a2.jpg)
+![](../../assets/img/tutorial/userguide/a2.jpg)
 
 ## Permissions
 
 You'll be asked to give location, microphone, and camera access to the ARENA site. If you do not select "yes", you won't be able to use voice, video, or the face tracking avatar. 
 
-![](../../assets/img/tutorials/userguide/a3.jpg)
+![](../../assets/img/tutorial/userguide/a3.jpg)
 
-![](../../assets/img/tutorials/userguide/a4.jpg)
+![](../../assets/img/tutorial/userguide/a4.jpg)
 
 ## Messaging and Users
 
 On the bottom left of the screen, there are two icons. 
 
-![](../../assets/img/tutorials/userguide/a5.png)
+![](../../assets/img/tutorial/userguide/a5.png)
 
 The message icon allows you to send messages to others who are currently online in the ARENA. There is a drop down arrow to choose which scene/user you send the message to. You can send  a message to all scenes, or direct message a user active in the ARENA. 
 
-![](../../assets/img/tutorials/userguide/a6.png)
+![](../../assets/img/tutorial/userguide/a6.png)
 
 The users icon to the right of the message icon shows the users active, as well as which scene they are in. The top right icon in the users menu allows you to mute all users. The icons next to the users' names allows you to warp to the location of that user. 
 
-![](../../assets/img/tutorials/userguide/a8.png)
+![](../../assets/img/tutorial/userguide/a8.png)
 
 
 ## User Settings
