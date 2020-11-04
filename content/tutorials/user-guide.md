@@ -41,6 +41,7 @@ When you first enter the ARENA, your perspective position in the scene will be a
 - **Move**: Forward-Back arrow keys, or W-A-S-D keys.
 
 
+
 | Button                                                                                                                                                                                                           | Action             | Description                                                                                                         |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
 | ![](../../assets/img/icons/more.png){:height="32px" width="32px"} ![](../../assets/img/icons/less.png){:height="32px" width="32px"}                                                                                    | **Settings**       | Expand/Collapse settings along the right.                                                                           |
@@ -53,8 +54,6 @@ When you first enter the ARENA, your perspective position in the scene will be a
 | ![](../../assets/img/icons/chat.png){:height="24px" width="24px"}                                                                                                                                                   | **Chat Messages**  | Open chat messaging.                                                                                                |
 | ![](../../assets/img/icons/user-list.png){:height="24px" width="24px"}                                                                                                                                              | **User List**      | Open list of present users.                                                                                         |
 | ![](../../assets/img/icons/logout.png){:height="32px" width="32px"}                                                                                                                                                 | **Sign Out**       | Exit the ARENA.                                                                                                     |
-
-
 
 ### Audio and Video
 
