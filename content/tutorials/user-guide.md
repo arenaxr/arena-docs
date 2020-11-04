@@ -4,7 +4,7 @@
 
 When you first enter the ARENA, there will be a screen asking you to sign in. You can use your Google account, which will automatically set your name to the name used in your Google account (you can change this later). You can also choose to anonymously sign in; you'll have to enter a name to use in the ARENA. 
 
-![](../../assets/img/tutorials/userguide/a1.jpg)
+![](../../../assets/img/tutorials/userguide/a1.jpg)
 
 ![](../../assets/img/tutorials/userguide/a2.jpg)
 
