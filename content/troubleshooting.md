@@ -28,6 +28,6 @@ We have a place for submitting issues and asking questions in most of our code r
 - [ARENA Website/Webserver issues](https://github.com/conix-center/ARENA-core/issues)
 - [ARENA Python issues](https://github.com/conix-center/ARENA-py/issues)
 - [ATLAS Scene Locator issues](https://github.com/conix-center/ATLAS/issues)
-- [ARENA Persistance issues](https://github.com/conix-center/arena-persist/issues)
+- [ARENA Persistence issues](https://github.com/conix-center/arena-persist/issues)
 - [ARENA Authentication issues](https://github.com/conix-center/ARENA-auth/issues)
 - [ARENA Deployment Docker issues](https://github.com/conix-center/arena-services-docker/issues)

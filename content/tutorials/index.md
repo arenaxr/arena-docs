@@ -126,9 +126,9 @@ At your leisure, read more about methods to generate [3d content](3d-content/) a
 
 ![](../../assets/img/tutorial/animate.png)
 
-## Use persistance, reload browser
+## Use persistence, reload browser
 
-Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. Now, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistance database](tools/persistance) you will have to specify `persist=True` in [Python definitions](python/definitions#persist), or `"persist": true` in the raw JSON formatted messages. Let's try an example of persisting object properties into our database in the next example.
+Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. Now, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistence database](tools/persistence) you will have to specify `persist=True` in [Python definitions](python/definitions#persist), or `"persist": true` in the raw JSON formatted messages. Let's try an example of persisting object properties into our database in the next example.
 
 ## MQTT Messaging Format
 
@@ -176,12 +176,12 @@ Once your program is running, use the [ARTS GUI](https://arena.andrew.cmu.edu/ar
 ## Debug your scene with A-Frame Scene Inspector
 Since the ARENA's rendering uses the A-Frame web 3D rendering engine, you can open the [A-Frame Scene Inspector](https://aframe.io/docs/1.0.0/introduction/visual-inspector-and-dev-tools.html) on any scene to examine and manipulate any of the A-Frame elements in your scene.  Try this now from your example scene by typing `<ctrl> + <alt> + i` on most systems.
 
-Examine the list of elements on the left side. Each element or object you select will show it's details and attributes on the right side. You may edit any attributes here you wish, however, remember that the A-Frame Scene Inspector will not persist any changes to the persistance database. We do have a way to visually manipulate objects and save changes that we will share next.
+Examine the list of elements on the left side. Each element or object you select will show it's details and attributes on the right side. You may edit any attributes here you wish, however, remember that the A-Frame Scene Inspector will not persist any changes to the persistence database. We do have a way to visually manipulate objects and save changes that we will share next.
 
 ![](../../assets/img/tutorial/inspector.png)
 
 ## AR Builder, visual content authoring
-We also have a Python program, [AR Builder (ARB)](tools/authoring), which you can use to create and edit objects for your scene. You can use it in VR (virtual reality) as a way to edit your scene and save changes to the persistance database. Importantly, you can use it in AR (augmented reality) in combination with [AR-supported browsers](https://createwebxr.com/webAR.html) and [localization techniques](localization/) to anchor scene objects in physical space.
+We also have a Python program, [AR Builder (ARB)](tools/authoring), which you can use to create and edit objects for your scene. You can use it in VR (virtual reality) as a way to edit your scene and save changes to the persistence database. Importantly, you can use it in AR (augmented reality) in combination with [AR-supported browsers](https://createwebxr.com/webAR.html) and [localization techniques](localization/) to anchor scene objects in physical space.
 
 {% include alert type="note" title="note" content="
 AR-supported browsers still need customization from our lab to support visual localization tags.

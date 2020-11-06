@@ -320,7 +320,7 @@ Add the "click-listener" event to a scene object; click-listener is a Component 
 
 ## Persisted Objects
 
-If we want our objects to return to the scene when we next open or reload our browser, we can commit them on creation to the ARENA Persistance DB by setting `"persist": true`.
+If we want our objects to return to the scene when we next open or reload our browser, we can commit them on creation to the ARENA Persistence DB by setting `"persist": true`.
 
 ```python
 # TODO
