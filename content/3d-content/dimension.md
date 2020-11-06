@@ -1,3 +1,11 @@
+---
+title: Converting Sketchup Files
+nav_order: 5
+layout: default
+parent: 3D Content
+---
+
+
 ## Converting Models
 
 Models in the ARENA need to be in the *.GLTF or *.GLB format. Most models on Sketchfab can be downloaded as GLTF models, however there are a lot of models in the SketchUp format. 

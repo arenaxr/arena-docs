@@ -1,3 +1,11 @@
+---
+title: User Guide
+nav_order: 5
+layout: default
+parent: Quick Start
+---
+
+
 # Entering ARENA for the first time
 
 ## Signing In
