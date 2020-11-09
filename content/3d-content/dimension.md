@@ -1,5 +1,5 @@
 ---
-title: Converting Sketchup Files
+title: Converting SketchUp Files
 nav_order: 5
 layout: default
 parent: 3D Content
@@ -12,7 +12,7 @@ Models in the ARENA need to be in the *.GLTF or *.GLB format. Most models on Ske
 
 # Using Adobe Dimension
 
-To convert a model from SktechUp to GLB using [Adobe Dimension](https://www.adobe.com/products/dimension.html) (in this case, I'm using Adobe Dimension 2020), first click on "Create New" in the menu. 
+To convert a model from SketchUp to GLB using [Adobe Dimension](https://www.adobe.com/products/dimension.html) (in this case, we're using Adobe Dimension 2020), first click on "Create New" in the menu.
 
 ![](../../assets/img/dimension/d1.jpg)
 
