@@ -7,7 +7,7 @@ has_children: true
 
 # Quick Start Tutorial
 
-Most of the ARENA utilities and tools mentioned here are also listed on a set of quick links on the left side bar as [Source and Links](source).
+Most of the ARENA utilities and tools mentioned here are also listed on a set of quick links on the left side bar as [Source and Links](../source).
 
 ## View the ARENA
 
@@ -19,27 +19,8 @@ Feel free to use your own scene name if you want to save your work later.
 
 ![](../../assets/img/tutorial/scene.png)
 
-## Move around
-
-When you first enter the ARENA, your perspective position in the scene will be at x, y, z coordinates (0, 1.6, 0) which is at the center of the ground plane at about 1.6 meters in the air. Take some time to familiarize yourself with movement and other controls, some of which are listed below. Most importantly:
-
-- **Rotate**: Left-Right arrow keys, or click and hold to drag the screen.
-- **Move**: Forward-Back arrow keys, or W-A-S-D keys.
-
-There are several choices here to hold [video conferences and screensharing](presence/conferencing) in the ARENA.
-
-| Button                                                                                                                                                                                                           | Action             | Description                                                                                                         |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| ![](../../assets/img/icons/more.png){:height="32px" width="32px"} ![](../../assets/img/icons/less.png){:height="32px" width="32px"}                                                                                    | **Settings**       | Expand/Collapse settings along the right.                                                                           |
-| ![](../../assets/img/icons/audio-on.png){:height="32px" width="32px"} ![](../../assets/img/icons/audio-off.png){:height="32px" width="32px"}                                                                           | **Microphone**     | Speak into the ARENA, or remain silent.                                                                             |
-| ![](../../assets/img/icons/video-on.png){:height="32px" width="32px"} ![](../../assets/img/icons/video-off.png){:height="32px" width="32px"}                                                                           | **Camera**         | Let your camera show you as a moving box with your camera image on it.                                              |
-| ![](../../assets/img/icons/avatar3-on.png){:height="32px" width="32px"} ![](../../assets/img/icons/avatar3-off.png){:height="32px" width="32px"}                                                                       | **Facial Avatar**  | Let your camera recognize your facial features, and you will appear an animated head matching your facial movement. |
-| ![](../../assets/img/icons/flying-on.png){:height="32px" width="32px"} ![](../../assets/img/icons/flying-off.png){:height="32px" width="32px"}                                                                         | **Flight**         | Movement defaults to walking along the ground, this will enable you to fly up or even down through the ground.      |
-| ![](../../assets/img/icons/speed-slow.png){:height="32px" width="32px"} ![](../../assets/img/icons/speed-medium.png){:height="32px" width="32px"} ![](../../assets/img/icons/speed-fast.png){:height="32px" width="32px"} | **Movement Speed** | Slow/Medium/Fast, defaults to Medium.                                                                               |
-| ![](../../assets/img/icons/screen-on.png){:height="32px" width="32px"}                                                                                                                                              | **Screenshare**    | Share your screen as a large panel in the ARENA.                                                                    |
-| ![](../../assets/img/icons/chat.png){:height="24px" width="24px"}                                                                                                                                                   | **Chat Messages**  | Open chat messaging.                                                                                                |
-| ![](../../assets/img/icons/user-list.png){:height="24px" width="24px"}                                                                                                                                              | **User List**      | Open list of present users.                                                                                         |
-| ![](../../assets/img/icons/logout.png){:height="32px" width="32px"}                                                                                                                                                 | **Sign Out**       | Exit the ARENA.                                                                                                     |
+## Navigating
+Our [User Guide](./user-guide) will give you some pointers for navigation and video conferencing, but to start with, just using the arrows keys on your keyboard will get you started.
 
 ## Install the ARENA Python library
 
@@ -152,9 +133,9 @@ You can make a scene you create linkable to the physical world by adding its coo
   ![](../../assets/img/tutorial/atlas.png)
 
 ## Edit in Scene Builder
-Let's take a look at what we've just saved in our [Scene Builder](https://arena.andrew.cmu.edu/build/) tool. From here, you can also create/update/delete ARENA objects. 
+Let's take a look at what we've just saved in our [Scene Builder](https://arena.andrew.cmu.edu/build/) tool. From here, you can also create/update/delete ARENA objects.
 
-Select the `example` scene in the scene list and you will see that the `duck_1` object we used with persistence has been pulled out of the persistence DB to be listed here. Now, click on the edit button icon to the right of the `duck_1` model in the Scene Objects list. Notice that the Object JSON section in the right column has the full JSON you originally submitted. 
+Select the `example` scene in the scene list and you will see that the `duck_1` object we used with persistence has been pulled out of the persistence DB to be listed here. Now, click on the edit button icon to the right of the `duck_1` model in the Scene Objects list. Notice that the Object JSON section in the right column has the full JSON you originally submitted.
 
 Here you can change the position of the Duck model, for example, easily to anything you wish.
 
@@ -163,10 +144,10 @@ Here you can change the position of the Duck model, for example, easily to anyth
 ## Store Your Program in the ARENA
 You can use the ARENA RunTime Supervisor, [ARTS](arts), to run your Python program in a scene without using the Python command-line. The general steps are:
 * Upload a Python program to the [File Store](https://arena.andrew.cmu.edu/storemng).
-* Edit your scene in the [Scene Builder](https://arena.andrew.cmu.edu/build/), to add your program object from the File Store. 
+* Edit your scene in the [Scene Builder](https://arena.andrew.cmu.edu/build/), to add your program object from the File Store.
 * Monitor your program's runtime in the [ARTS GUI](https://arena.andrew.cmu.edu/arts/).
 
-In more detail, there are step by step instructions to run your Python program like this in the [Scene Edit/Program Launch Example](arts/python). 
+In more detail, there are step by step instructions to run your Python program like this in the [Scene Edit/Program Launch Example](arts/python).
 
 ## Debug your program in ARTS
 Once your program is running, use the [ARTS GUI](https://arena.andrew.cmu.edu/arts/). You can select your program from all the [ARTS Modules](arts/) in the tree graph. After selecting your program, on the right side, you can monitor the WASM or Python module's `stdout` logging, migrate the module to another scene, remove the module completely, and perform other maintenance.
