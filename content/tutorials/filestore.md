@@ -9,7 +9,7 @@ parent: Quick Start
 
 {% include alert type="warning" title="Coming Soon" content="Writing in progress..." %}
 
-To add models or programs to the ARENA, they will have to be stored somewhere. The [file store](arena.andrew.cmu.edu/storemng/) is where most of these files are currently located, and can easily be accessed.
+To add models or programs to the ARENA, they will have to be stored somewhere. The [file store](https://arena.andrew.cmu.edu/storemng/) is where most of these files are currently located, and can easily be accessed.
 
 ![](../../assets/img/tutorial/filestore/fs1.png)
 

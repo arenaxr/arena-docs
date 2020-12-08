@@ -74,16 +74,14 @@ The settings menu is collapsed by default; clicking the arrow underneath the fac
 
 The icon under the face tracking icon (a person with movement lines behind) allows you to change your movement speed. By default, the speed is set to medium. Clicking the speed button once more sets it to fast (running person), and once more will set it to slow (person with no movement lines walking). You can toggle the speed at any time. The icon under the movement speed is the flying icon. By default, it is disabled. If enabled, you can fly around, through the floor or upwards using the WASD or arrow keys. If you disable flying, it will snap you back to the default elevation.
 
-## Screen Sharing
+### Screen Sharing
 
-There are several choices here to hold [video conferences and screensharing](presence/conferencing) in the ARENA. Below the flying icon, there is a monitor icon that allows you to share your screen. This will create a popup asking if you want to continue, and warning that it will open a new tab.
+There are several choices here to hold [video conferences and screensharing](../presence/conferencing) in the ARENA. Below the flying icon, there is a monitor icon that allows you to share your screen. This will create a popup asking if you want to continue, and warning that it will open a new tab.
 
 ### Sign Out
 
 The icon under the screen share is to sign out of the ARENA. The bottom icon is an arrow to collapse the settings icons.
 
-## VR capabilities
+### VR capabilities
 
 The VR icon in the bottom right will make the ARENA full screen, and can work on a VR headset connected to the computer. Without a headset, it will just show the ARENA in full screen.
-
-

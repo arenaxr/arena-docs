@@ -15,7 +15,7 @@ An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top
     cd ARENA-py/tools/arb
     python arb.py hello
     ```
-1. Interact with the tool at [https://arena.andrew.cmu.edu?scene=hello](https://arena.andrew.cmu.edu?scene=hello) 
+1. Interact with the tool at [https://arena.andrew.cmu.edu?scene=hello](https://arena.andrew.cmu.edu?scene=hello)
 
 ## Demo Video
 <figure class="video_container">
@@ -28,7 +28,7 @@ The current version of ARB is only able to interact with existing persisted obje
 ## Control Panel
 ![AR Builder Panel](../../assets/img/arb-panel.png)
 
-- **VR Mode**: Click and hold your mouse to move your camera relative to the panel. 
+- **VR Mode**: Click and hold your mouse to move your camera relative to the panel.
 - **AR Mode**: Move your AR device to move your camera relative to the panel.
 - **All Modes**: Use the **lock** button to reposition the panel relative to your camera's rotation. *(in development)*
 
@@ -53,7 +53,7 @@ The current version of ARB is only able to interact with existing persisted obje
 
 ## Clipboard
 
-The clipboard is a temporary see-through object floating in front of the user used to show the relative position of placing a future object. It's also used in AR to have something to fire an event at where no object currently exists. 
+The clipboard is a temporary see-through object floating in front of the user used to show the relative position of placing a future object. It's also used in AR to have something to fire an event at where no object currently exists.
 
 ## Construction Cone
 
@@ -62,7 +62,7 @@ There is a small temporary object resting on position 0,0,0 in the shape of a co
 ## Run Options
 
 ### Importing Models
-You can import a json-formatted manifest of GLTF models using the command argument **-m** to use on the **model** control panel option. You can write your own, or use the example, [arb-manifest.json](https://github.com/conix-center/ARENA-py/blob/master/demos/arb-manifest.json).
+You can import a json-formatted manifest of GLTF models using the command argument **-m** to use on the **model** control panel option. You can write your own, or use the example, [arb-manifest.json](https://github.com/conix-center/ARENA-py/blob/master/tools/arb/arb-manifest.json).
 ```shell
 python arb.py hello -m arb-manifest.json
 ```
@@ -108,7 +108,7 @@ Scale varies widely between individual models, so experiment with the best scale
 ```
 
 ### MQTT Host and Realm
-By default all `arb` MQTT messages are published to the default message broker and topic (realm and scene you specify) using this scheme: 
+By default all `arb` MQTT messages are published to the default message broker and topic (realm and scene you specify) using this scheme:
 
 - *default broker*: `oz.andrew.cmu.edu`
 - *default topic*: `realm/s/hello`
