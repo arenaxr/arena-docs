@@ -2,7 +2,7 @@
 title: Scene Builder
 nav_order: 3
 layout: default
-parent: Quick Start
+parent: ARENA Quick Start
 ---
 
 # ARENA Build Page
