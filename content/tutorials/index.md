@@ -38,7 +38,7 @@ You can also choose to sign in anonymously; you'll have to enter a name to use i
 
 You'll be asked to give location, microphone, and camera access to the ARENA site. If you do not select "yes", you won't be able to use voice, video, or the face tracking avatar.
 
-![](../../assets/img/tutorial/userguide/a3.png)  
+![](../../assets/img/tutorial/userguide/a3.png)
 
 ## Moving Around
 
@@ -49,6 +49,10 @@ Once inside the ARENA, you should see the lobby scene. You might have to wait fo
 To move, use the arrow keys. More advanced movement can be done by a combination of ‘W’, ‘A’, ‘S’, ‘D’ (to go forward/back and stride) and the mouse (to look around/change direction).  You can also mix and match any combination of these motions.  Definitely try clicking and dragging with the mouse.
 
 ![](../../assets/img/tutorial/userguide/m1.png)
+
+<figure class="video_container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/sDR-I1XVN1A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 ## Buttons
 
