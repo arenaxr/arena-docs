@@ -50,10 +50,6 @@ To move, use the arrow keys. More advanced movement can be done by a combination
 
 ![](../../assets/img/tutorial/userguide/m1.png)
 
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/sDR-I1XVN1A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
-
 ## Buttons
 
 The buttons around the screen give access to several options, such as: your sound and video settings, you display name, chat, or find other people and places. **Note that everyone starts with audio and video off**.
