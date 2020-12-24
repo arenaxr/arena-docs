@@ -65,7 +65,7 @@ This is the main payload body of every MQTT scene topic in the ARENA.
 |--|--|--
 | object_id | *A/P* | `string` | A unique name within the scene (**required**).
 | action | *A/P* | `string` | An action to perform: `create, delete, update, clientEvent` (**required**).
-| type | *A/P* | `string` | Message type: `object, program, scene-options, landmarks, rig, mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup`.
+| type | *A/P* | `string` | Message type: `object, program, scene-options, landmarks, rig, camera-override, look-at, mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup`.
 | [persist](examples#persisted-objects) | *A/P* | `boolean` | Save to persistence database (*default: false*).
 | [ttl](examples#temporary-objects-ttl) | *A/P* | `number` | Time-to-live seconds to create the object and automatically delete (*default: 0*).
 | data | *A/P* | [`Object Data` object](#object-data-object) | The detailed properties of a 3d object in the scene. Used by Message Type `object`.
@@ -330,7 +330,7 @@ Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.
 | filetype | *A* | `string` | Type of the program (WA=WASM or PY=Python) (*default: "PY"*, **required**)
 | args | *A* | `string` array | Command-line arguments (passed in argv). Supports variables: ${scene}, ${mqtth}, ${cameraid}, ${username}, ${runtimeid}, ${moduleid}, ${query-string-key} e.g. [ "${scene}", "-b", " ${mqtth}" ]
 | env | *A* | `string` array | Environment variables. Supports variables: ${scene}, ${mqtth}, ${cameraid}, ${username}, ${runtimeid}, ${moduleid}, ${query-string-key} (*default: [ "MID=${moduleid}", "SCENE=${scene}", "MQTTH=${mqtth}", "REALM=realm" ]*, **required**)
-| channels | *A* | [`Channel` object](#channel-object) array | Channels describe files representing access to IO from pubsub and client sockets (possibly more in the future; currently only supported for WASM programs). 
+| channels | *A* | [`Channel` object](#channel-object) array | Channels describe files representing access to IO from pubsub and client sockets (possibly more in the future; currently only supported for WASM programs).
 
 ## "channel" object
 Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.json)

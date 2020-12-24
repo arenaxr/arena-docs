@@ -51,7 +51,7 @@ Rotate the already drawn cube; these are in quaternions, not A-Frame degrees.
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/cube_1 -m '{"object_id": "cube_1", "action": "update", "type": "object", "data": {"rotation": {"x": 60, "y": 2, "z": 3}}}'
 ```
 
-The quaternion (native) representation of rotation is a bit more tricky. The 4 parameters are X, Y, Z, W. Here are some simple examples: 
+The quaternion (native) representation of rotation is a bit more tricky. The 4 parameters are X, Y, Z, W. Here are some simple examples:
 
 - `1, 0, 0, 0`: rotate 180 degrees around X axis
 - `0, 0.7, 0, 0.7`: rotate 90 degrees around Y axis
@@ -135,6 +135,29 @@ mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/camera_1234_er1k -m '{"
 ```
 
 This assumes we know our camera ID was assigned as `1234`. One way to find out your camera ID is, automatically assigned ones get printed on web browsers' Developer Tools Console in a message like `my-camera name camera_1329_X`. That might not be easily knowable without snooping MQTT messages, so the `&fixedCamera=er1k` URL parameter lets us choose manually the unique ID. If used in the URL, the `&name=` parameter is ignored, and the derived camera/user ID is based on fixedCamera, so would be in this case `camera_er1k_er1k`
+
+## Move Camera
+
+Move the camera with ID camera_7825_NunoPereira to a new position. Values are x, y, z, (meters) x, y, z, w (quaternions).
+
+```json
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/camera_7825_NunoPereira -m '{"object_id":"camera_9550_NunoPereira","action":"create","type":"camera-override","data":{"object_type":"camera","position":{"x":1.692,"y":1.6,"z":4.371},"rotation":{"x":0.003,"y":-0.003,"z":0,"w":1}}}'
+```
+
+This assumes we know our camera ID. One way to find out your camera ID is, automatically assigned ones get printed on web browsers' Developer Tools Console in a message like `my-camera name camera_1329_X`.
+
+## Camera Look At
+
+Make the camera with ID camera_7825_NunoPereira look at an object or coordinate. Target can be given as x, y, z coordinate object (e.g. ```{"x":1.692,"y":1.6,"z":4.371}```), or as a string with an object ID (e.g. ```"cone_587431"```)
+
+```json
+
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/camera_7825_NunoPereira -m '{"object_id":"camera_7825_NunoPereira","action":"create","type":"look-at","data":{"object_type":"camera","target":"cone_587431"}}'
+
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/camera_7825_NunoPereira -m '{"object_id":"camera_7825_NunoPereira","action":"create","type":"look-at","data":{"object_type":"camera","target":{"x": 0.467, "y": 2.066, "z": -1.027}}}'
+```
+
+This assumes we know our camera ID. One way to find out your camera ID is, automatically assigned ones get printed on web browsers' Developer Tools Console in a message like `my-camera name camera_1329_X`.
 
 ## Text
 
@@ -240,7 +263,7 @@ To draw a shape that is transparent, but occludes other virtual objects behind i
 {"material": {"colorWrite": false}, "render-order": "0"}
 ```
 
-`colorWrite` is an attribute of the THREE.js Shader Material that, by exposing it, we make accessible like others belonging to the Material A-Frame Component, and is an alternative way of controlling visibility. `render-order` is a custom Component that controls which objects are drawn first (not necessarily the same as which are "in front of" others). All other ARENA objects are drawn with render-order of 1. 
+`colorWrite` is an attribute of the THREE.js Shader Material that, by exposing it, we make accessible like others belonging to the Material A-Frame Component, and is an alternative way of controlling visibility. `render-order` is a custom Component that controls which objects are drawn first (not necessarily the same as which are "in front of" others). All other ARENA objects are drawn with render-order of 1.
 
 {% include alert type="note" title="Note" content="
 This does not occlude the far background A-Frame layer (like environment component stars) but, in AR, that layer is not drawn anyway.
@@ -272,7 +295,7 @@ mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/fallBox '{"object_id": 
 
 ## Parent/Child Linking
 
-There is support to attach a child to an already-existing parent scene objects. When creating a child object, set the `"parent": "parent_object_id"` value in the JSON data. For example if parent object is gltf-model_Earth and child object is gltf-model_Moon, the commands would look like: 
+There is support to attach a child to an already-existing parent scene objects. When creating a child object, set the `"parent": "parent_object_id"` value in the JSON data. For example if parent object is gltf-model_Earth and child object is gltf-model_Moon, the commands would look like:
 
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/gltf-model_Earth -m '{"object_id": "gltf-model_Earth", "action": "create", "data": {"object_type": "gltf-model", "position": {"x": 0, "y": 0.1, "z": 0}, "url": "models/Earth.glb", "scale": {"x": 5, "y": 5, "z": 5}}}'
@@ -316,7 +339,7 @@ Click events are generated as part of the laser-controls A-Frame entity; you get
 * `mouseup`
 - `triggerdown` / `triggerup` for left and right hand controllers  
 
-The MQTT topic name for viewing these events can be the standard prefix (e.g. realm/s/example/) concatenated with a string made up of object ID that generated the event. An example event MQTT: 
+The MQTT topic name for viewing these events can be the standard prefix (e.g. realm/s/example/) concatenated with a string made up of object ID that generated the event. An example event MQTT:
 
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/fallBox2 '{"object_id": "fallBox2", "action": "clientEvent", "type": "mousedown", "data": {"position": {"x": -0.993, "y": 0.342, "z": -1.797}, "source": "camera_8715_er"}}'
@@ -326,7 +349,7 @@ mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/fallBox2 '{"object_id":
 The message itself will contain the originator of the event as a camera/user ID and other data like where the object was clicked.
 " %}
 
-Full list of Vive controller event names: 
+Full list of Vive controller event names:
   - `triggerdown`
   - `triggerup`
   - `gripdown`
@@ -340,19 +363,19 @@ Full list of Vive controller event names:
 
 ## Scene Settings
 
-Some settings are available by setting attributes of the Scene element (see [A-Frame Scene](https://aframe.io/docs/0.9.0/core/scene.html)) for example, turn on statistics: 
+Some settings are available by setting attributes of the Scene element (see [A-Frame Scene](https://aframe.io/docs/0.9.0/core/scene.html)) for example, turn on statistics:
 
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example -m '{"object_id": "scene", "action": "update", "type": "object", "data": {"stats": true}}'
 ```
 
-Customize the fog (notice 3 character hexadecimal color representation): 
+Customize the fog (notice 3 character hexadecimal color representation):
 
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example -m '{"object_id": "scene", "action": "update", "type": "object", "data": {"fog": {"type": "linear", "color": "#F00"}}}'
 ```
 
-Remove the "enter VR" icon: 
+Remove the "enter VR" icon:
 
 ```json
 mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example -m '{"object_id": "scene", "action": "update", "type": "object", "data": {"vr-mode-ui": {"enabled": false}}}'
