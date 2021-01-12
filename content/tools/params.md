@@ -1,4 +1,3 @@
-
 ---
 title: URL Parameters
 nav_order: 6
