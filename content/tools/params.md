@@ -18,8 +18,8 @@ The following URL parameters are accepted.
 | builder (bool)            | *Apriltag location solver parameter*. Will localize origin tag from a networked solver. All other tags found will be updated or created in the ATLAS (e.g ```builder=true```)     |
 | cvRate (int)              | *Apriltag location solver parameter*. Throttle rate between 1 and 60 of frame processing. DEPRECATED - cvRate will auto adjust based on avg speed (e.g ```cvRate=1```)            |
 | fixedCamera (string)      | Sets the camera name to the given value; ```fixedCamera=iPhone``` will set the camera name **exactly** to the given value (not add any prefix/suffix)                             |
-| lat                       | Override device location; (e.g. ```lat=40.4427```)                                                                                                                                |
-| long                      | Override device location; (e.g. ```long=79.9430```)                                                                                                                               |
+| lat (float)               | Override device location; (e.g. ```lat=40.4427```)                                                                                                                                |
+| long (float)              | Override device location; (e.g. ```long=79.9430```)                                                                                                                               |
 | mqttServer (string)       | Override mqqt server address (e.g. ```mqttServer=arena.andrew.cmu.edu```)                                                                                                         |
 | name (string)             | Set user name (e.g. ```name=MyName```)                                                                                                                                            |
 | networkedTagSolver (bool) | *Apriltag location solver parameter*. When true, publishes tag detections and defers all tag solving of client camera to a solver sitting on pubsub                               |
