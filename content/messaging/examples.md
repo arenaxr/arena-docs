@@ -152,9 +152,9 @@ Make the camera with ID camera_7825_NunoPereira look at an object or coordinate.
 
 ```json
 
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/camera_7825_NunoPereira -m '{"object_id":"camera_7825_NunoPereira","action":"create","type":"look-at","data":{"object_type":"camera","target":"cone_587431"}}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/camera_7825_NunoPereira -m '{"object_id":"camera_7825_NunoPereira","action":"create","type":"camera-override","data":{"object_type":"look-at","target":"cone_587431"}}'
 
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/camera_7825_NunoPereira -m '{"object_id":"camera_7825_NunoPereira","action":"create","type":"look-at","data":{"object_type":"camera","target":{"x": 0.467, "y": 2.066, "z": -1.027}}}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/example/camera_7825_NunoPereira -m '{"object_id":"camera_7825_NunoPereira","action":"create","type":"camera-override","data":{"object_type":"look-at","target":{"x": 0.467, "y": 2.066, "z": -1.027}}}'
 ```
 
 This assumes we know our camera ID. One way to find out your camera ID is, automatically assigned ones get printed on web browsers' Developer Tools Console in a message like `my-camera name camera_1329_X`.

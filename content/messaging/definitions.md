@@ -65,7 +65,7 @@ This is the main payload body of every MQTT scene topic in the ARENA.
 |--|--|--
 | object_id | *A/P* | `string` | A unique name within the scene (**required**).
 | action | *A/P* | `string` | An action to perform: `create, delete, update, clientEvent` (**required**).
-| type | *A/P* | `string` | Message type: `object, program, scene-options, landmarks, rig, camera-override, look-at, mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup`.
+| type | *A/P* | `string` | Message type: `object, program, scene-options, landmarks, rig, camera-override, mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup`.
 | [persist](examples#persisted-objects) | *A/P* | `boolean` | Save to persistence database (*default: false*).
 | [ttl](examples#temporary-objects-ttl) | *A/P* | `number` | Time-to-live seconds to create the object and automatically delete (*default: 0*).
 | data | *A/P* | [`Object Data` object](#object-data-object) | The detailed properties of a 3d object in the scene. Used by Message Type `object`.
