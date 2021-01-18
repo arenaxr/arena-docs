@@ -148,7 +148,7 @@ This assumes we know our camera ID. One way to find out your camera ID is, autom
 
 ## Camera Look At
 
-Make the camera with ID camera_7825_NunoPereira look at an object or coordinate. Target can be given as x, y, z coordinate object (e.g. ```{"x":1.692,"y":1.6,"z":4.371}```), or as a string with an object ID (e.g. ```"cone_587431"```)
+Make the camera with ID ```camera_7825_NunoPereira``` look at an object or coordinate. Target can be given as x, y, z coordinate object (e.g. ```{"x":1.692,"y":1.6,"z":4.371}```), or as a string with an object ID (e.g. ```"cone_587431"```)
 
 ```json
 
