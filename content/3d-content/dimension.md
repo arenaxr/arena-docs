@@ -8,7 +8,7 @@ parent: 3D Content
 
 ## Converting Models
 
-Models in the ARENA need to be in the *.GLTF or *.GLB format. Most models on Sketchfab can be downloaded as GLTF models, however there are a lot of models in the SketchUp format. 
+Models in the ARENA need to be in the *.GLTF or *.GLB format. Most models on Sketchfab can be downloaded as GLTF models, however there are a lot of models in the SketchUp format.
 
 # Using Adobe Dimension
 
@@ -16,7 +16,7 @@ To convert a model from SketchUp to GLB using [Adobe Dimension](https://www.adob
 
 ![](../../assets/img/dimension/d1.jpg)
 
-In Dimension, there should be a blank file open now. Go to the top left to File > Import > 3D Model. Find your SketchUp model and select it. 
+In Dimension, there should be a blank file open now. Go to the top left to File > Import > 3D Model. Find your SketchUp model and select it.
 
 ![](../../assets/img/dimension/d2.jpg)
 
@@ -28,6 +28,6 @@ Move the model or resize it however you desire. Then, in the scene list on the r
 
 ![](../../assets/img/dimension/d4.jpg)
 
-When selecting the format, select GLB, not GLTF. For some reason, the exported GLTF files from dimension don't seem to work on GLTFViewer/ARENA. You can change the name of the file and export location in "Save To". Click Export, and you're done! Now you can upload to [the filestore](https://arena.andrew.cmu.edu/storemng/) and add to the ARENA. 
+When selecting the format, select GLB, not GLTF. For some reason, the exported GLTF files from dimension don't seem to work on GLTFViewer/ARENA. You can change the name of the file and export location in "Save To". Click Export, and you're done! Now you can upload to [the filestore](https://arena.andrew.cmu.edu/storemng/) and add to the ARENA.
 
 ![](../../assets/img/dimension/d5.jpg)
