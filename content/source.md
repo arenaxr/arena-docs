@@ -25,7 +25,7 @@ Our demonstration sample server runs at https://arena.andrew.cmu.edu
 - [**Python Library**](https://github.com/conix-center/ARENA-py)
 - [**ATLAS**](https://github.com/conix-center/ATLAS)
 - [**Persistence Database**](https://github.com/conix-center/arena-persist)
-- [**Authentication Backend**](https://github.com/conix-center/ARENA-auth)
+- [**Authentication Backend**](https://github.com/conix-center/arena-account)
 - [**Runtime Manager**](https://github.com/conix-center/arena-runtime-browser)
 - [**File Store**](https://github.com/conix-center/arena-store)
 - [**Mosquitto Broker**](https://github.com/conix-center/ARENA-broker)

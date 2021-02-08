@@ -18,7 +18,7 @@ ARENA Documentation pages are written in markdown and placed in the `content` di
 
 Each `.md` file inside `content` must have [YAML Front Matter](https://jekyllrb.com/docs/front-matter) for navigation. The navigation details are determined by our theme. See the ARENA-modified [just-the-docs](https://github.com/conix-center/just-the-docs/docs/navigation-structure) theme for more details about site navigation.
 
-## Test 
+## Test
 
 ```shell
 make serve
@@ -43,7 +43,7 @@ If you really need to comment out your text, it's not supported, but you can hac
 ```
 
 ## Alerts/Callouts
-Callout alerts are available. Use this syntax: 
+Callout alerts are available. Use this syntax:
 ```markdown
 {% include alert type="warning" title="Coming Soon" content="Stay tuned for more details..." %}
 ```
@@ -73,13 +73,13 @@ Callout alerts are available. Use this syntax:
   - https://github.com/conix-center/arena-persist
 
 - **ARENA Authentication backend**
-  - https://github.com/conix-center/ARENA-auth
+  - https://github.com/conix-center/arena-account
 
 - **Posefusion**
   - https://github.com/conix-center/posefusion
 
 - **April Tag Decoding w. AR.js**
-  - https://github.com/conix-center/AR.js/blob/master/README.md#apriltag-detection 
+  - https://github.com/conix-center/AR.js/blob/master/README.md#apriltag-detection
 
 - **[Original Design Notes slides](https://docs.google.com/presentation/d/1dc1RdlGROBYj1zIoPR8HX_RBIKn8-KRmNZscXVrdIs0/edit?ts=5dbc423f#slide=id.g606e93cce1_1_14)** (some out of date?)
   - JSON message format

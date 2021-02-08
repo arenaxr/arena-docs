@@ -12,7 +12,7 @@ Here are some common situations which can help when programming and collaboratin
 - Don't forget to make sure your computer speakers are not Muted or have your Volume set too low.
 - For **Chrome**, test your permissions and try different cameras/microphones: **chrome://settings/content/camera** and **chrome://settings/content/microphone**.
 - For **Edge**, in Windows *Start > Settings > Privacy > Camera*, and toggle the switch. Try the *Microphone* setting here as well.
-- For **Firefox**, test your permissions **about:preferences#privacy**, scroll down to *Permissions*, then *Camera/Microphone* and try different cameras/microphones: 
+- For **Firefox**, test your permissions **about:preferences#privacy**, scroll down to *Permissions*, then *Camera/Microphone* and try different cameras/microphones:
 - For **Safari**, navigate your menus to *Menu > Safari > Preferences... > Websites > Camera/Microphones* and try different cameras/microphones.
 - Since we use WebRTC, try your browser at a third-party WebRTC test site [https://test.webrtc.org/](https://test.webrtc.org/).
 
@@ -29,5 +29,5 @@ We have a place for submitting issues and asking questions in most of our code r
 - [ARENA Python issues](https://github.com/conix-center/ARENA-py/issues)
 - [ATLAS Scene Locator issues](https://github.com/conix-center/ATLAS/issues)
 - [ARENA Persistence issues](https://github.com/conix-center/arena-persist/issues)
-- [ARENA Authentication issues](https://github.com/conix-center/ARENA-auth/issues)
+- [ARENA Authentication issues](https://github.com/conix-center/arena-account/issues)
 - [ARENA Deployment Docker issues](https://github.com/conix-center/arena-services-docker/issues)
