@@ -85,10 +85,11 @@ def hello():
     x += 1
     print(x)
 
-# below will not work as intended
+# below might not work as intended
 @arena.run_after_interval(interval_ms=2000)
 def hello1():
     # note the lack of "global"
+    x += 1
     print(x)
 ```
 

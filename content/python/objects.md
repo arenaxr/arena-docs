@@ -9,7 +9,7 @@ parent: Python Library
 
 Objects are the main interface for placing content into the ARENA.
 
-See [messaging](https://arena.conix.io/content/messaging/examples.html)
+See [messaging](https://arena.conix.io/content/messaging/examples.html).
 
 ## Creating an Object and Adding Attributes
 See Appendix for all types of Objects.

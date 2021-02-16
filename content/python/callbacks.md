@@ -1,5 +1,5 @@
 ---
-title: Library Callbacks
+title: Message Callbacks
 nav_order: 6
 layout: default
 parent: Python Library
