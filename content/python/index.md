@@ -6,37 +6,54 @@ has_children: true
 ---
 
 # Python Library Overview
-
-Draw objects in the ARENA using our Python library.
+Draw objects and run programs in the ARENA using Python!
 - [**ARENA-py**](https://github.com/conix-center/ARENA-py) Python repository
 
-This library sits above the ARENA pub/sub MQTT message protocol. JSON messages are used by a our [ARENA web client](https://github.com/conix-center/ARENA-core) running in a browser, and is and described in more detail in our [Messaging Format](../messaging/index.md). That forms a layer, in turn, on top of the [A-Frame](https://aframe.io/) and [THREE.js](http://threejs.org/) javascript libraries.
+## ARENA-py Library
+The above is the simplest example of an ARENA Python program. This library sits above the ARENA pub/sub MQTT
+message protocol: JSON messages described in more detail [here](https://github.com/conix-center/ARENA-core) which runs in a browser.
+That forms a layer, in turn, on top of [A-Frame](https://aframe.io/) and [THREE.js](http://threejs.org/) javascript libraries.
 
-## Hello ARENA
-
-This is the simplest example of an ARENA Python program.
-
-`hello.py`
-
-```python
-import arena
-arena.init("arena.andrew.cmu.edu", "realm", "hello")
-arena.Object(objType=arena.Shape.cube)
-arena.handle_events()
+## Setup
+Install package using pip:
+```shell
+pip3 install arena-py
 ```
 
-## Say Hello in the ARENA
+## Hello ARENA
+1. Run the `hello.py` example:
+```shell
+cd examples
+python hello.py
+```
 
-1. Open the ARENA in your browser first: [https://arena.andrew.cmu.edu?scene=hello](https://arena.andrew.cmu.edu?scene=hello)
-1. Install our package using pip:
-    ```shell
-    pip3 install arena-py
-    cd examples
-    python hello.py
-    ```
-1. Watch your 3d cube arrive in the ARENA.
-1. Use your mouse and arrow keys to move around.
-1. Create more awesomeness! And show us what you made!
+`hello.py`
+```python
+from arena import *
+
+arena = Arena(host="arena.andrew.cmu.edu", realm="realm", scene="example")
+
+@arena.run_once
+def make_box():
+    arena.add_object(Box())
+
+arena.run_tasks()
+```
+
+## Authentication
+We are adding protection to the ARENA MQTT broker, eventually to host an ACL list to limit access to change your scenes. As a first step, we are requiring Python programs to supply authentication through a Google account.
+### Sign-In Desktop OS
+If you have a web browser available, the ARENA library `Arena(host="myhost.com")` will launch a web browser the first time and ask you for an account to authenticate you with, before opening a client MQTT connection.
+### Sign-In Server/Headless OS
+For headless environments, the ARENA library `Arena(host="myhost.com")` will provide you with a url to cut and paste in a browser anywhere, ask you for an account to authenticate you with, and show you a code you can enter on the command line, before opening a client MQTT connection.
+### Sign-Out
+```bash
+python3 -c "from arena import auth; auth.signout()"
+```
+### Show Permissions
+```bash
+python3 -c "from arena import auth; auth.permissions()"
+```
 
 ## Python Interactive Robot Demo
 <figure class="video_container">
