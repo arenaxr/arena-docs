@@ -36,15 +36,16 @@ You can find PDF files using the correct size in [this repository](https://githu
 ### WebXRViewer
 The Apriltag detection requires that the browser supports computer vision while in AR mode using [WebXR](https://immersiveweb.dev/). Currently, the only browser with such support is the experimental browser from Mozilla [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056).
 
-After installing WebXRViewer, go to 'Settings -> XRViewer' and change the following settings:
+After installing WebXRViewer, go to 'Settings -> XRViewer' and change:
 
 **WebXR Polyfill URL**: ```https://arena.andrew.cmu.edu/vendor/webxr-webxrviewer-ios.js```
+
 **Always Allow World Sensing**:```Yes```
 
 ![img](../../assets/img/localization/webxrviewer-settings.png)
 
 ### Use the device in portrait orientation
 
-The ARENA relocalization solver assumes that the device is in portrait orientation, and **we recommend locking the device to portrait orientation**. The picture below shows a scene with a blue box at the origin; while not visible, the blue box is overlayed on an Apriltag with ID 0.
+The ARENA localization solver assumes that the device is in portrait orientation, and **we recommend locking the device to portrait orientation**. The picture below shows a scene with a blue box at the origin; while not visible, the blue box is overlayed on an Apriltag with ID 0.
 
 ![img](../../assets/img/localization/portrait.png)
