@@ -48,7 +48,7 @@ rotation=Rotation(x, y, z)
 # or
 rotation=(x, y, z)
 ```
-Note: All units for quaternion rotation are in **radians** and euler rotation is in **degrees**.
+**Note:** All units for quaternion rotation are in **radians** and euler rotation is in **degrees**.
 
 ## Scale
 The scale of an object can be specified by:
@@ -124,5 +124,4 @@ ttl=30  # seconds
 clickable=True
 # click_listener=True works too
 # etc.
-# see https://arena.conix.io/content/messaging/examples.html
 ```

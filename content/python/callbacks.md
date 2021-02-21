@@ -1,5 +1,5 @@
 ---
-title: Message Callbacks
+title: Scene Callbacks
 nav_order: 6
 layout: default
 parent: Python Library
@@ -7,38 +7,45 @@ parent: Python Library
 
 # Arena Library Message Callbacks
 
-There are three types of message callback functions you can specify:
+Library supported callback functions.
 
-## on_msg_callback
+## Scene callbacks
+
+### on_msg_callback
 This is called whenever there is a new message sent to the client. Use this whenever you want to sniff out all incoming messages.
 
-### Usage:
+#### Usage:
 ```python
 def on_msg_callback(msg):
     # msg will be a python dictionary not an ARENA-py object (for now)
     # do stuff with msg here
     # msg["object_id"], msg["data"], etc
 
-arena.on_msg_callback = on_msg_callback
+scene.on_msg_callback = on_msg_callback
 ```
 
-## new_obj_callback
-This is called whenever there is a new object that has been created in the scene, one that the user does not have a reference to. Use this to make references to any new objects that may appear during a programs lifetime. Also a good way to find camera ID's.
+### new_obj_callback
+This is called whenever there is a new object that has been created in the scene,
+one that the user does not have a reference to. Use this to make references to any
+new objects that may appear during a programs lifetime. Also a good way to find camera ID's.
 
-### Usage:
+#### Usage:
 ```python
 def new_obj_callback(msg):
     # msg will be a python dictionary not an ARENA-py object (for now)
     # do stuff with msg here
     # msg["object_id"], msg["data"], etc
 
-arena.new_obj_callback = new_obj_callback
+scene.new_obj_callback = new_obj_callback
 ```
 
-## delete_obj_callback
-This is called whenever there is an object has been deleted in the scene. ARENA-py will look for all "action" = "delete" messages and call this callback. Use this to delete references and to be notified when an object is removed by another user or program.
+### delete_obj_callback
+This is called whenever there is an object has been deleted in the scene.
+ARENA-py will look for all "action" = "delete" messages and call this callback.
+Use this to delete references and to be notified when an object is removed by
+another user or program.
 
-### Usage:
+#### Usage:
 ```python
 def delete_obj_callback(msg):
     # msg will be a python dictionary not an ARENA-py object (for now)
@@ -51,10 +58,40 @@ def delete_obj_callback(msg):
     #   "action": "delete"
     # }
 
-arena.delete_obj_callback = delete_obj_callback
+scene.delete_obj_callback = delete_obj_callback
 ```
 
-## Adding callbacks when you instantiate the class
+## User callbacks
+
+### user_join_callback
+This is called whenever the library detects/finds a new user that it hasn't seen before in a scene.
+
+#### Usage:
+```python
+def user_join_callback(camera):
+    # camera is a Camera class instance (see Objects)
+    # camera.object_id
+    # camera.displayName
+    # etc.
+
+scene.user_join_callback = user_join_callback
+```
+
+### user_left_callback
+This is called whenever a user leaves a scene/sends a delete message.
+
+#### Usage:
+```python
+def user_left_callback(camera):
+    # camera is a Camera class instance (see Objects)
+    # camera.object_id
+    # camera.displayName
+    # etc.
+
+scene.user_left_callback = user_left_callback
+```
+
+### Adding callbacks when you instantiate the class
 You can also add callbacks like so:
 ```python
 from arena import *
@@ -68,5 +105,5 @@ def new_obj_callback(msg):
 def delete_obj_callback(msg):
     pass
 
-arena = Arena(..., on_msg_callback=on_msg_callback, new_obj_callback=new_obj_callback, delete_obj_callback=delete_obj_callback)
+scene = Scene(..., on_msg_callback=on_msg_callback, new_obj_callback=new_obj_callback, delete_obj_callback=delete_obj_callback)
 ```

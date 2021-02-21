@@ -65,7 +65,7 @@ By convention, we pass programs environment variables that indicate the scene, r
 {% include alert type="warning" title="Authentication" content="
 You also need to include a `requirements.txt` with your `.py` files providing the authentication version of the ARENA Python library that has at least the line:
 ```
-arena-py~=0.0.5
+arena-py
 ```
 "%}
 

@@ -14,7 +14,7 @@ See [messaging](https://arena.conix.io/content/messaging/examples.html).
 ## Creating an Object and Adding Attributes
 See Appendix for all types of Objects.
 
-Attributes can be added upon Object creation in the three ways used below (special attributes like position, rotation, scale, color, etc. can be added with tuples, lists, or dictionaries).
+Attributes can be added upon `Object` creation in the three ways used below (special attributes like position, rotation, scale, color, etc. can be added with tuples, lists, or dictionaries).
 ```python
 box = Box(
     object_id="my_box",
@@ -23,7 +23,7 @@ box = Box(
     scale={"x":2,"y":2,"z":2}
 )
 
-arena.add_object(box)
+scene.add_object(box)
 ```
 
 ## Adding Attributes
@@ -31,8 +31,8 @@ arena.add_object(box)
 # use update_attributes with kwargs to add attributes
 box.update_attributes(physics=Physics(type="dynamic"))
 
-# don't forget to call arena.update_object to see your chnages in the ARENA!
-arena.update_object(box)
+# don't forget to call scene.update_object to see your chnages in the ARENA!
+scene.update_object(box)
 ```
 
 ## Updating Attributes
@@ -40,7 +40,7 @@ Most attributes (except object_id, persist, ttl, and parent) are under the "data
 ```python
 box.data.position.x = 2
 # box.update_attributes(position=Position(2,4,-2)) works too
-arena.update_object(box)
+scene.update_object(box)
 ```
 
 ## Removing Object Attributes

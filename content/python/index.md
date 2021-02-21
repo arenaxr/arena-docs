@@ -31,23 +31,23 @@ python hello.py
 ```python
 from arena import *
 
-arena = Arena(host="arena.andrew.cmu.edu", realm="realm", scene="example")
+scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
 
-@arena.run_once
+@scene.run_once
 def make_box():
-    arena.add_object(Box())
+    scene.add_object(Box())
 
-arena.run_tasks()
+scene.run_tasks()
 ```
 
 ## Authentication
 We are adding protection to the ARENA MQTT broker, eventually to host an ACL list to limit access to change your scenes. As a first step, we are requiring Python programs to supply authentication through a Google account.
 
 ### Sign-In Desktop OS
-If you have a web browser available, the ARENA library `Arena(host="myhost.com")` will launch a web browser the first time and ask you for an account to authenticate you with, before opening a client MQTT connection.
+If you have a web browser available, the ARENA library `Scene(host="myhost.com")` will launch a web browser the first time and ask you for an account to authenticate you with, before opening a client MQTT connection.
 
 ### Sign-In Server/Headless OS
-For headless environments, the ARENA library `Arena(host="myhost.com")` will provide you with a url to cut and paste in a browser anywhere, ask you for an account to authenticate you with, and show you a code you can enter on the command line, before opening a client MQTT connection.
+For headless environments, the ARENA library `Scene(host="myhost.com")` will provide you with a url to cut and paste in a browser anywhere, ask you for an account to authenticate you with, and show you a code you can enter on the command line, before opening a client MQTT connection.
 
 ### Sign-Out
 ```bash
@@ -61,5 +61,5 @@ python3 -c "from arena import auth; auth.permissions()"
 
 ## Python Interactive Robot Demo
 <figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/E7YkqZ5Hkas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/E7YkqZ5Hkas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>

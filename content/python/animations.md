@@ -1,15 +1,17 @@
 ---
-title: Animations
+title: Animations and Morphs
 nav_order: 5
 layout: default
 parent: Python Library
 ---
 
-# Animations in ARENA-py
+# Animations and GLTF Morphs in ARENA-py
 
-Dispatching and running animations.
+Dispatching and running animations and GLTF 3D Morphs.
 
-## Dispatching Animations
+##  Animations
+
+### Dispatching Animations
 You can add animations to objects that will run when `run_animations` is called
 ```python
 obj = Box()
@@ -22,7 +24,7 @@ obj.dispatch_animation(
             dur=1000
         )
     )
-arena.run_animations(obj) # this will cause the animation to be run
+scene.run_animations(obj) # this will cause the animation to be run
 ```
 You can also dispatch multiple animations
 ```python
@@ -45,20 +47,20 @@ obj.dispatch_animation(
             )
         ]
     )
-arena.run_animations(obj) # this will cause all the dispatched animations to be run
+scene.run_animations(obj) # this will cause all the dispatched animations to be run
 ```
 
-## Animation vs AnimationMixer
-AnimationMixer are special animations specific to a 3D model. These can be run the same way as regular animations. See [here](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation).
+### Animation vs AnimationMixer
+AnimationMixer are special animations specific to a 3D model. These can be run the same way as regular animations. See [here](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation)
 ```python
 xr_logo.dispatch_animation(
     AnimationMixer(clip="*", loop="repeat")
 )
-arena.run_animations(xr_logo) # this will cause the 3D model to play its animations
+scene.run_animations(xr_logo) # this will cause the 3D model to play its animations
 ```
 
-## Permanent Animations
-Sometimes you want animations to be associated with the object. You can do this by adding the animation as an attribute to the object.
+### Permanent Animations
+Sometimes you want animations to be associated with the object. You can do this by adding the animation as an attribute to the object
 ```python
 # this makes it such that xr_logo will ALWAYS play the animation when someone joins
 # your ARENA scene, since the animation is now associated with that object:
@@ -67,4 +69,15 @@ xr_logo.update_attributes(
             clip="*", loop="repeat"
         )
 )
+```
+
+## GLTF Morphs
+
+### Morph and update_morph
+GLTF morphs can be created with the `Morph` class, and can be added to an object with the `update_morph` method
+```python
+# create list of Morphs
+open_eye_morph = [Morph(morphtarget="eyeTop",value=0.0), Morph(morphtarget="eyeBottom",value=0.0)]
+
+xr_logo.update_morph(open_eye_morph) # accepts Morphs and lists of Morph
 ```

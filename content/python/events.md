@@ -9,7 +9,7 @@ parent: Python Library
 
 Events are ways to interact with user input in the ARENA.
 
-See [messaging](https://arena.conix.io/content/messaging/examples.html).
+See [messaging](https://scene.conix.io/content/messaging/examples.html).
 
 ## Event handlers
 To handle events in ARENA-py, you must set a function to the `evt_handler` parameter.
@@ -36,12 +36,12 @@ box = Box(..., evt_handler=click_handler) # note the use of "evt_handler=click_h
 ### Click Events
 There are several types of click events that you can generate ("mousedown", "mouseup", "mouseenter", "mouseleave", "triggerdown", "triggerup"):
 ```python
-arena.generate_click_event(obj, type, ...)
+scene.generate_click_event(obj, type, ...)
 
 # add a click listener to an object to be able to click it
 obj.update_attributes(clickable=True)
 # generate a "fake" click event from ARENA-py
-arena.generate_click_event(
+scene.generate_click_event(
     obj,
     type="mouseup"
 )
@@ -51,17 +51,17 @@ arena.generate_click_event(
 ### Camera Manipulation Events
 You can also move a user's camera and/or make it look at a specific location or object:
 ```python
-arena.manipulate_camera(obj, type, ...)
+scene.manipulate_camera(obj, type, ...)
 
 # move camera:
-arena.manipulate_camera(
+scene.manipulate_camera(
     camera,
     position=(rando(),1.6,rando()),
     rotation=(0,0,0,1)
 )
 
 # make camera look at something/some position:
-arena.look_at(
+scene.look_at(
     camera,
     target=box # can also do a position: (0,0,0)
 )
@@ -73,7 +73,7 @@ If there is an event that does not exist yet, you can use this to have more free
 # define custom event
 evt = Event(type="my_custom_event", position=(3,4,5), target=sphere)
 # generate custom event with ARENA-py client
-arena.generate_custom_event(evt, action="clientEvent")
+scene.generate_custom_event(evt, action="clientEvent")
 ```
 
 # Appendix
