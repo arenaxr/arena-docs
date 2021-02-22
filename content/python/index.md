@@ -9,11 +9,6 @@ has_children: true
 Draw objects and run programs in the ARENA using Python!
 - [**ARENA-py**](https://github.com/conix-center/ARENA-py) Python repository
 
-## ARENA-py Library
-The above is the simplest example of an ARENA Python program. This library sits above the ARENA pub/sub MQTT
-message protocol: JSON messages described in more detail [here](https://github.com/conix-center/ARENA-core) which runs in a browser.
-That forms a layer, in turn, on top of [A-Frame](https://aframe.io/) and [THREE.js](http://threejs.org/) javascript libraries.
-
 ## Setup
 Install package using pip:
 ```shell
@@ -21,7 +16,7 @@ pip3 install arena-py
 ```
 
 ## Hello ARENA
-1. Run the `hello.py` example:
+Run the `hello.py` example:
 ```shell
 cd examples
 python hello.py
@@ -39,6 +34,11 @@ def make_box():
 
 scene.run_tasks()
 ```
+
+## ARENA-py Library
+The above is the simplest example of an ARENA Python program. This library sits above the ARENA pub/sub MQTT
+message protocol: JSON messages described in more detail [here](https://github.com/conix-center/ARENA-core) which runs in a browser.
+That forms a layer, in turn, on top of [A-Frame](https://aframe.io/) and [THREE.js](http://threejs.org/) javascript libraries.
 
 ## Authentication
 We are adding protection to the ARENA MQTT broker, eventually to host an ACL list to limit access to change your scenes. As a first step, we are requiring Python programs to supply authentication through a Google account.
