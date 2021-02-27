@@ -10,11 +10,11 @@ parent: Python Library
 Scenes give ARENA-py access to an ARENA scene. Provides an interface to add/update objects, run animations, and many more!
 
 ## Scene Access
-To get access to a scene on the ARENA, create a `Scene` object. Make sure you have proper permissions to access it!
+To get access to a scene in the ARENA, create a `Scene` object. Make sure you have proper permissions to access it!
 ```python
 scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
 ```
-Note: `Scene` can also be called `Arena`, if you perfer that.
+Note: `Scene` can also be called `Arena`, if you prefer that.
 
 ## Callbacks
 See [Scene Callbacks](callbacks.md).

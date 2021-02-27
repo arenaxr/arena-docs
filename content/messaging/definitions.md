@@ -1,5 +1,5 @@
 ---
-title: Function Definitions
+title: JSON Spec
 nav_order: 3
 layout: default
 parent: Messaging Format

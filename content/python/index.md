@@ -37,7 +37,7 @@ scene.run_tasks()
 
 ## ARENA-py Library
 The above is the simplest example of an ARENA Python program. This library sits above the ARENA pub/sub MQTT
-message protocol: JSON messages described in more detail [here](https://github.com/conix-center/ARENA-core) which runs in a browser.
+message protocol: JSON messages described in more detail [here](https://arena.conix.io/content/messaging/definitions.html) which runs in a browser.
 That forms a layer, in turn, on top of [A-Frame](https://aframe.io/) and [THREE.js](http://threejs.org/) javascript libraries.
 
 ## Authentication
