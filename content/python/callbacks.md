@@ -19,7 +19,10 @@ This is called whenever there is a new message sent to the client. Use this when
 def on_msg_callback(obj):
     # obj will be an Object instance
     # do stuff with obj here
-    # obj.object_id, obj.data, etc.
+    obj.object_id
+    obj.data.position.x
+    obj.data.scale.y
+    # etc.
     # could also do obj["object_id"]
 
 scene.on_msg_callback = on_msg_callback
@@ -35,7 +38,10 @@ new objects that may appear during a programs lifetime. Also a good way to find 
 def new_obj_callback(obj):
     # obj will be an Object instance
     # do stuff with obj here
-    # obj.object_id, obj.data, etc.
+    obj.object_id
+    obj.data.position.x
+    obj.data.scale.y
+    # etc.
     # could also do obj["object_id"]
 
 scene.new_obj_callback = new_obj_callback
@@ -52,7 +58,10 @@ another user or program.
 def delete_obj_callback(obj):
     # obj will be an Object instance
     # do stuff with obj here
-    # obj.object_id, etc
+    obj.object_id
+    obj.data.position.x
+    obj.data.scale.y
+    # etc.
     # could also do obj["object_id"]
 
 scene.delete_obj_callback = delete_obj_callback
@@ -66,9 +75,12 @@ This is called whenever the library detects/finds a new user that it hasn't seen
 #### Usage:
 ```python
 def user_join_callback(camera):
+    ## Get access to user state
     # camera is a Camera class instance (see Objects)
-    # camera.object_id
-    # camera.displayName
+    camera.object_id
+    camera.displayName
+    camera.hasVideo
+    camera.displayName
     # etc.
 
 scene.user_join_callback = user_join_callback
@@ -80,9 +92,12 @@ This is called whenever a user leaves a scene/sends a delete message.
 #### Usage:
 ```python
 def user_left_callback(camera):
+    ## Get access to user state
     # camera is a Camera class instance (see Objects)
-    # camera.object_id
-    # camera.displayName
+    camera.object_id
+    camera.displayName
+    camera.hasVideo
+    camera.displayName
     # etc.
 
 scene.user_left_callback = user_left_callback

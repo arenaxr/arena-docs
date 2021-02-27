@@ -7,6 +7,8 @@ parent: Python Library
 
 # Scenes in ARENA-py
 
+Scenes give ARENA-py access to an ARENA scene. Provides an interface to add/update objects, run animations, and many more!
+
 ## Scene Access
 To get access to a scene on the ARENA, create a `Scene` object. Make sure you have proper permissions to access it!
 ```python
@@ -25,5 +27,3 @@ def main():
     obj = scene.get_persisted_obj(object_id)
     print(obj) # obj will be an object in persist with persist=True
 ```
-
-

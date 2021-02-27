@@ -27,9 +27,11 @@ def click_handler(evt): # evt = Event(...)
     evt.data.clickPos
     evt.data.position
     evt.data.source
-    # etc etc
+    # etc.
 
 box = Box(..., evt_handler=click_handler) # note the use of "evt_handler=click_handler"
+# could also do box.evt_handler = click_handler
+# or box.update_attributes(evt_handler=click_handler)
 ```
 
 ## Generating events with ARENA-py
