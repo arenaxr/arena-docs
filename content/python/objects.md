@@ -1,6 +1,6 @@
 ---
 title: Objects
-nav_order: 1
+nav_order: 2
 layout: default
 parent: Python Library
 ---
@@ -14,7 +14,7 @@ See [messaging](https://arena.conix.io/content/messaging/examples.html).
 ## Creating an Object and Adding Attributes
 See Appendix for all types of Objects.
 
-Attributes can be added upon `Object` creation in the three ways used below (special attributes like position, rotation, scale, color, etc. can be added with tuples, lists, or dictionaries).
+Attributes can be added upon `Object` creation in the three ways used below (special attributes like `position`, `rotation`, `scale`, `color`, etc. can be added with tuples, lists, or dictionaries).
 ```python
 box = Box(
     object_id="my_box",
@@ -23,6 +23,7 @@ box = Box(
     scale={"x":2,"y":2,"z":2}
 )
 
+# objects can be added to a scene with the add_object method
 scene.add_object(box)
 ```
 
@@ -36,7 +37,7 @@ scene.update_object(box)
 ```
 
 ## Updating Attributes
-Most attributes (except object_id, persist, ttl, and parent) are under the "data" field. Access these by using ```obj.data```.
+Most attributes (except `object_id`, `persist`, `ttl`, and `parent`) are under the "data" field. Access these by using ```obj.data```.
 ```python
 box.data.position.x = 2
 # box.update_attributes(position=Position(2,4,-2)) works too
@@ -58,6 +59,17 @@ def update(obj):
 obj.update_handler = update
 # obj.update_attributes(update_handler=update) works too
 ```
+
+# Automatic Updates
+ARENA-py will keep track of internal states of active objects in a scene, so the library user doesn't have to.
+This means if you create an Object in a Scene, the Scene instance will listen to incoming messages and update
+your Object instance's attributes automatically!
+
+This allows ARENA-py programs to interact with the build page, with users, and even with other ARENA-py programs.
+As long as your program is running, you do not need to manually keep track of your Objects' current state in the scene.
+
+For instance, if you create an Object in ARENA-py and you update its position with the build page or with another program,
+that Object's position in the original ARENA-py program will automatically be updated for you!
 
 # Appendix
 

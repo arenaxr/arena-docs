@@ -1,6 +1,6 @@
 ---
 title: Attributes
-nav_order: 2
+nav_order: 3
 layout: default
 parent: Python Library
 ---
@@ -14,7 +14,7 @@ See [messaging](https://arena.conix.io/content/messaging/examples.html).
 ## Accessing Object Attributes
 See Appendix for all types of Attributes.
 
-Usually, attributes (except for object_id, persist, ttl, and parent) are under the data field:
+Usually, attributes (except for `object_id`, `persist`, `ttl`, and `parent`) are under the `data` field:
 ```python
 obj.object_id
 obj.persist

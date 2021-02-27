@@ -1,6 +1,6 @@
 ---
 title: Animations and Morphs
-nav_order: 5
+nav_order: 7
 layout: default
 parent: Python Library
 ---

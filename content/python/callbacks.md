@@ -5,7 +5,7 @@ layout: default
 parent: Python Library
 ---
 
-# Arena Library Message Callbacks
+# Arena Library Scene Callbacks
 
 Library supported callback functions.
 
@@ -16,10 +16,11 @@ This is called whenever there is a new message sent to the client. Use this when
 
 #### Usage:
 ```python
-def on_msg_callback(msg):
-    # msg will be a python dictionary not an ARENA-py object (for now)
-    # do stuff with msg here
-    # msg["object_id"], msg["data"], etc
+def on_msg_callback(obj):
+    # obj will be an Object instance
+    # do stuff with obj here
+    # obj.object_id, obj.data, etc.
+    # could also do obj["object_id"]
 
 scene.on_msg_callback = on_msg_callback
 ```
@@ -31,10 +32,11 @@ new objects that may appear during a programs lifetime. Also a good way to find 
 
 #### Usage:
 ```python
-def new_obj_callback(msg):
-    # msg will be a python dictionary not an ARENA-py object (for now)
-    # do stuff with msg here
-    # msg["object_id"], msg["data"], etc
+def new_obj_callback(obj):
+    # obj will be an Object instance
+    # do stuff with obj here
+    # obj.object_id, obj.data, etc.
+    # could also do obj["object_id"]
 
 scene.new_obj_callback = new_obj_callback
 ```
@@ -47,16 +49,11 @@ another user or program.
 
 #### Usage:
 ```python
-def delete_obj_callback(msg):
-    # msg will be a python dictionary not an ARENA-py object (for now)
-    # do stuff with msg here
-    # msg["object_id"], etc
-    #
-    # usually, msg will be:
-    # {
-    #   "object_id": "[deleted object id here]",
-    #   "action": "delete"
-    # }
+def delete_obj_callback(obj):
+    # obj will be an Object instance
+    # do stuff with obj here
+    # obj.object_id, etc
+    # could also do obj["object_id"]
 
 scene.delete_obj_callback = delete_obj_callback
 ```
@@ -96,14 +93,23 @@ You can also add callbacks like so:
 ```python
 from arena import *
 
-def on_msg_callback(msg):
+def on_msg_callback(obj):
     pass
 
-def new_obj_callback(msg):
+def new_obj_callback(obj):
     pass
 
-def delete_obj_callback(msg):
+def delete_obj_callback(obj):
     pass
 
 scene = Scene(..., on_msg_callback=on_msg_callback, new_obj_callback=new_obj_callback, delete_obj_callback=delete_obj_callback)
 ```
+
+<!-- ## Custom Message Callbacks
+If you need to use an MQTT client, the `Scene` object exposes a way to subcribe to custom topics.
+```python
+def led_toggle():
+    gpio_led.toggle()
+
+scene.message_callback_add("custom/control/light", led_toggle)
+``` -->
