@@ -41,12 +41,13 @@ The rotation (in euler coordinates) of an object can be specified by:
 rotation=Rotation(x, y, z)
 # or
 rotation=(x, y, z)
+```
+
 The rotation (in quaternions) of an object can be specified by:
 ```python
-rotation=Rotation(x, y, z, w)
+rotation=Rotation(x, y, z, w) # note the additional "w" field
 # or
 rotation=(x, y, z, w)
-```
 ```
 {% include alert type="warning" title="Warning" content="All units for euler rotation are in **degrees** and quaternion rotation are in **radians**!" %}
 
