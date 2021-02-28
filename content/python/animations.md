@@ -12,7 +12,7 @@ Dispatching and running animations and GLTF 3D Morphs.
 ##  Animations
 
 ### Dispatching Animations
-You can add animations to objects that will run when `run_animations` is called
+You can add animations to objects that will run when `run_animations` is called:
 ```python
 obj = Box()
 obj.dispatch_animation(
@@ -26,7 +26,7 @@ obj.dispatch_animation(
     )
 scene.run_animations(obj) # this will cause the animation to be run
 ```
-You can also dispatch multiple animations
+You can also dispatch multiple animations:
 ```python
 obj = Box()
 obj.dispatch_animation(
@@ -51,7 +51,8 @@ scene.run_animations(obj) # this will cause all the dispatched animations to be 
 ```
 
 ### Animation vs AnimationMixer
-AnimationMixer are special animations specific to a 3D model. These can be run the same way as regular animations. See [here](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation)
+AnimationMixer are special animations specific to a 3D model. These can be run the same way as regular animations.
+See [here](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation).
 ```python
 xr_logo.dispatch_animation(
     AnimationMixer(clip="*", loop="repeat")

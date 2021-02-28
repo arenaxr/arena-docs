@@ -120,11 +120,11 @@ def delete_obj_callback(obj):
 scene = Scene(..., on_msg_callback=on_msg_callback, new_obj_callback=new_obj_callback, delete_obj_callback=delete_obj_callback)
 ```
 
-<!-- ## Custom Message Callbacks
-If you need to use an MQTT client, the `Scene` object exposes a way to subcribe to custom topics.
+## Custom Message Callbacks
+If you need to use an MQTT client, the `Scene` object exposes a way to use its MQTT client to subscribe to custom topics.
 ```python
-def led_toggle():
-    gpio_led.toggle()
+def led_toggle(client, userdata, msg):
+    # do stuff here
 
 scene.message_callback_add("custom/control/light", led_toggle)
-``` -->
+```

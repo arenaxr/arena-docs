@@ -36,26 +36,32 @@ position=(x, y, z)
 ```
 
 ## Rotation
+The rotation (in euler coordinates) of an object can be specified by:
+```python
+rotation=Rotation(x, y, z)
+# or
+rotation=(x, y, z)
 The rotation (in quaternions) of an object can be specified by:
 ```python
 rotation=Rotation(x, y, z, w)
 # or
 rotation=(x, y, z, w)
 ```
-The rotation (in euler coordinates) of an object can be specified by:
-```python
-rotation=Rotation(x, y, z)
-# or
-rotation=(x, y, z)
 ```
-**Note:** All units for quaternion rotation are in **radians** and euler rotation is in **degrees**.
+{% include alert type="warning" title="Warning" content="All units for euler rotation are in **degrees** and quaternion rotation are in **radians**!" %}
 
 ## Scale
 The scale of an object can be specified by:
 ```python
-scale=Scale(x, z, y)
+scale=Scale(x, y, z)
 # or
 scale=(x, y, z)
+```
+
+## Material
+The color and transparency of an object can be set by:
+```python
+material=Material(color, transparent, opacity, ...)
 ```
 
 ## Color
@@ -65,23 +71,10 @@ color=Color(red, green, blue)
 # or
 color=(red, green, blue)
 ```
-Note: as of 0.1.8, color should be specified in Material!
-
-## Material
-The color and transparency of an object can be set by:
-```python
-material=Material(color, transparent, opacity, ...)
-```
+{% include alert type="warning" title="Warning" content="As of version 0.1.8, color should be specified in Material!" %}
 
 ## Animation
-An animation can be added by:
-```python
-animation=Animation(...) or animation_mixer=Animation(...) for GLTF animations
-```
-Note: please use "start" and "end" as arguments for fields "from" and "to" in json (done to prevent using the python reserved word "from"):
-```python
-Animation(start="something", end="something else ") == Animation(to="something", from="something else ")
-```
+See [Animations and Morphs](animations.md).
 
 ## Sound
 A sound can be added to an object using:
@@ -90,10 +83,11 @@ sound=Sound(positional, poolSize, autoplay, src, ...)
 ```
 
 ## GotoUrl
-Goes to a url on click. Note: click-listener must be True for this to work:
+Goes to a url on click.
 ```python
 goto_url=GotoUrl(dest, on, url)
 ```
+{% include alert type="warning" title="Warning" content="click-listener must be True for this to work!" %}
 
 ## Impulse
 An impulse can be added by:
