@@ -8,6 +8,8 @@ parent: Developers
 # A-Frame
 - [https://aframe.io/](https://aframe.io/)
 
+{% include alert type="warning" title="Warning" content="The code examples below are currently out of date and are being updated..." %}
+
 ## Adding Arbitrary A-Frame to the ARENA
 
 The `data` payload we send in MQTT messages is _both_ a part of A-Frame and used especially by the ARENA. When the ARENA generates an A-frame `<a-entity>` we parse known ARENA-specific parts of the payload first, then what remains goes into attributes.

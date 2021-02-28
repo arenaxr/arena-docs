@@ -7,6 +7,8 @@ parent: Messaging Format
 
 # Messaging Format Examples
 
+{% include alert type="warning" title="Warning" content="The code examples below are currently out of date and are being updated..." %}
+
 - [**ARENA-core**](https://github.com/conix-center/ARENA-core) webserver repository
 
 The structure of our MQTT messaging format is standardized into JSON. To run some of the commands below, you may need to install the Mosquitto client on your system: [https://mosquitto.org/](https://mosquitto.org/).
@@ -337,7 +339,7 @@ Click events are generated as part of the laser-controls A-Frame entity; you get
 * `mouseleave`
 * `mousedown`
 * `mouseup`
-- `triggerdown` / `triggerup` for left and right hand controllers  
+- `triggerdown` / `triggerup` for left and right hand controllers
 
 The MQTT topic name for viewing these events can be the standard prefix (e.g. realm/s/public/example/) concatenated with a string made up of object ID that generated the event. An example event MQTT:
 

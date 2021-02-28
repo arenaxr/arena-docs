@@ -6,6 +6,9 @@ has_children: true
 ---
 
 # Messaging Format Overview
+
+{% include alert type="warning" title="Warning" content="The code examples below are currently out of date and are being updated..." %}
+
 Render 3d content in AFrame from MQTT messages
 - [**ARENA-core**](https://github.com/conix-center/ARENA-core) webserver repository
 

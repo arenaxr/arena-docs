@@ -7,6 +7,8 @@ parent: 3D Content
 
 # Animated Models
 
+{% include alert type="warning" title="Warning" content="The code examples below are currently out of date and are being updated..." %}
+
 ## Animate (rotation)
 
 Animate rotation of the already drawn cube.
