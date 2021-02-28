@@ -30,7 +30,7 @@ The easiest way to begin programming in the ARENA is to install the [Python libr
 
 ## Create a cube and observe
 
-Now, create the simplest Python program you can below, which will generate a 1-meter cube. By default, objects are generated in white (#FFFFFF), with no rotation, at scene x, y, z position (0, 0, 0), and with no other properties applied. Some of the other properties you can add to objects are detailed in our [Python Examples](../python/examples). Notice that cube seems stuck in the ground, which is due to the cube's origin at its center positioned at scene coordinates (0, 0, 0). If you enable Flying mode (see above), you can move below the ground plane and view the other half of the cube. Type Ctrl-C to end the program.
+Now, create the simplest Python program you can below, which will generate a 1-meter cube. By default, objects are generated in white (#FFFFFF), with no rotation, at scene x, y, z position (0, 0, 0), and with no other properties applied. Some of the other properties you can add to objects are detailed in our [Python Examples](../python/objects). Notice that cube seems stuck in the ground, which is due to the cube's origin at its center positioned at scene coordinates (0, 0, 0). If you enable Flying mode (see above), you can move below the ground plane and view the other half of the cube. Type Ctrl-C to end the program.
 
 {% include alert type="tip" content="
 Use the **Search ARENA Documentation** bar at the very top of every page on this site to find examples and information on anything you need.
@@ -88,7 +88,7 @@ Now, in your scene use your mouse to click on the cube and notice the messages y
 
 - What should `mousedown` do for this object? Change its color?
 - What should `mouseenter` or `mouseleave` do? Change its opacity?
-- Many more ideas are available in our [examples](../python/examples).
+- Many more ideas are available in our [examples](../python/events).
 
 ## Animate a GLTF model
 
@@ -111,7 +111,7 @@ At your leisure, read more about methods to generate [3d content](../3d-content)
 
 ## Use persistence, reload browser
 
-Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. Now, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistence database](../tools/persistence) you will have to specify `persist=True` in [Python definitions](../python/definitions), or `"persist": true` in the raw [JSON formatted messages](../messaging/examples#persisted-objects). Let's try an example of persisting object properties into our database in the next example.
+Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. Now, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistence database](../tools/persistence) you will have to specify `persist=True` in [Python definitions](../python/attributes), or `"persist": true` in the raw [JSON formatted messages](../messaging/examples#persisted-objects). Let's try an example of persisting object properties into our database in the next example.
 
 ## MQTT Messaging Format
 
