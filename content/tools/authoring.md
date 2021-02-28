@@ -6,6 +6,9 @@ parent: Tools
 ---
 
 # ARENA AR Builder
+
+{% include alert type="warning" title="Warning" content="The code examples below are currently out of date and are being updated..." %}
+
 An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top-level Python documentation for [requirements](https://github.com/conix-center/ARENA-py). This tool uses the [ARENA Persistence Database](https://github.com/conix-center/arena-persist), so all changes are persisted.
 
 ## Quick Start
