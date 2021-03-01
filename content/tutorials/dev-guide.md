@@ -79,7 +79,7 @@ def on_msg_callback(obj):
 def box_callback(evt):
     print("box_callback: ", evt)
 
-box = Box(evt_handler=box_callback)
+box = Box(clickable=True, evt_handler=box_callback)
 ```
 
 Now, in your scene use your mouse to click on the box and notice the messages you receive just from the box. You have useful information like: what type of event - mouse up/down/enter/leave, the owner of the event, the position of the owner, the position of the click. You can use this information to programmatically decide how to respond and begin creating a rich, interactive, 3d experience for your users.
