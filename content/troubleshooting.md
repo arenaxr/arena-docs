@@ -19,7 +19,7 @@ Here are some common situations which can help when programming and collaboratin
 ## Where is my Object?
 - Is the object's position below the ground? The "y" position will negative below the default visible floor.
 - Is the object's scale too big/small? Models especially have wild differences in scale, try increasing/decreasing the order of magnitude of the scale. Try scale of 10, 1, 0.1, or 0.01.
-- Does the scene name in the URL match the scene name/topic where the object was created? e.g. URL is `https://arena.andrew.cmu.edu/?scene=example` and MQTT topic published to is `realm/s/example/some_object_1`.
+- Does the scene name in the URL match the scene name/topic where the object was created? e.g. URL is `https://arena.andrew.cmu.edu/[your username]/example` and MQTT topic published to is `realm/s/[your username]/example/some_object_1`.
 - Does the object appear in the left column of the [A-Frame Scene Inspector](https://aframe.io/docs/1.0.0/introduction/visual-inspector-and-dev-tools.html)?
 
 ## I have different problem, where can I get help?

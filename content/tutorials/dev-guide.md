@@ -6,18 +6,11 @@ parent: ARENA Quick Start
 ---
 
 # Quick Start for Developers
-
-{% include alert type="warning" title="Warning" content="The code examples below are currently out of date and are being updated..." %}
-
 Most of the ARENA utilities and tools mentioned here are also listed on a set of quick links on the left side bar as [Source and Links](../source).
 
 ## View the ARENA
 
-To start, open your browser to the scene we will be using in this tutorial. This link will open in a new tab: [https://arena.andrew.cmu.edu/?scene=example](https://arena.andrew.cmu.edu/?scene=example){:target="\_blank"}. Since ARENA is a collaborative, multi-user environment, you may see other tutorial learners there. Say Hi!
-
-{% include alert type="tip" content="
-Feel free to use your own scene name if you want to save your work later.
-"%}
+To start, open your browser to the scene we will be using in this tutorial. Open this address in a new tab: **https://arena.andrew.cmu.edu/[your username]/example**. Our developer tools require use of an authenticated Google account, so be sure to complete the sign in process.
 
 ![](../../../assets/img/tutorial/scene.png)
 
@@ -28,37 +21,42 @@ Our [User Guide](user-guide) will give you some pointers for navigation and vide
 
 The easiest way to begin programming in the ARENA is to install the [Python library](../python) and create your first Python program. ARENA communications are a series of MQTT messages which govern all objects and their properties. This library is a wrapper which will allow you to easily send and receive those messages.
 
-## Create a cube and observe
+## Create a box and observe
 
-Now, create the simplest Python program you can below, which will generate a 1-meter cube. By default, objects are generated in white (#FFFFFF), with no rotation, at scene x, y, z position (0, 0, 0), and with no other properties applied. Some of the other properties you can add to objects are detailed in our [Python Examples](../python/objects). Notice that cube seems stuck in the ground, which is due to the cube's origin at its center positioned at scene coordinates (0, 0, 0). If you enable Flying mode (see above), you can move below the ground plane and view the other half of the cube. Type Ctrl-C to end the program.
+Now, create the simplest Python program you can below, which will generate a 1-meter box. By default, objects are generated in a gray color, with no rotation, at scene x, y, z position (0, 0, 0), and with no other properties applied. Some of the other properties you can add to objects are detailed in our [Python Examples](../python/objects). Notice that the box seems stuck in the ground, which is due to the box's origin at its center positioned at scene coordinates (0, 0, 0). If you enable Flying mode (see [User Guide](user-guide)), you can move below the ground plane and view the other half of the box. Type Ctrl-C to end the program.
 
 {% include alert type="tip" content="
 Use the **Search ARENA Documentation** bar at the very top of every page on this site to find examples and information on anything you need.
 "%}
 
 ```python
-import arena
-arena.init("arena.andrew.cmu.edu", "realm", "example")
-arena.Object(objType=arena.Shape.cube)
-arena.handle_events()
+from arena import *
+
+scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
+
+@scene.run_once
+def make_box():
+    scene.add_object(Box())
+
+scene.run_tasks()
 ```
 
 ![](../../../assets/img/tutorial/cube.png)
 
 ## Clients and Scene Callbacks
 
-As a web browser user of the ARENA, you are connecting to the ARENA MQTT broker as a one client connection, in which you are publishing your "camera" perspective as you move, and subscribing to changes in other objects and other users' "camera" moves. Everything time you run a Python program you are also connecting to the broker as another client connection, in which the above program published a message creating a cube, and also subscribes you other users "camera" moves, and objects.
+As a web browser user of the ARENA, you are connecting to the ARENA MQTT broker as one client connection, in which you are publishing your "camera" perspective as you move, and subscribing to changes in other objects and other users' "camera" moves. Every time you run a Python program you are also connecting to the broker as another client connection, in which the above program published a message creating a box, and also subscribes you other users "camera" moves, and objects.
 
 Let's try observing some of those other messages but adding the following code to your Python program. Add the `scene_callback` function, and also alter your `arena.init()` call, to accept the new callback and allow you to observe all the messages you have subscribed to in this scene.
 
 ```python
-def scene_callback(msg):
-    print("scene_callback: ", msg)
+def on_msg_callback(obj):
+    print("scene_callback: ", obj)
 
-arena.init("arena.andrew.cmu.edu", "realm", "example", scene_callback)
+scene.on_msg_callback = on_msg_callback
 ```
 
-Move yourself around in the browser view and notice all the camera updates and positions and rotation changes as you move. This is way too much information to be human readable! However, you can filter out these messages for what you need, or even better, if you only need feedback for a specific object, like our cube, we'll cover that soon.
+Move yourself around in the browser view and notice all the camera updates and positions and rotation changes as you move. This is way too much information to be human readable! However, you can filter out these messages for what you need, or even better, if you only need feedback for a specific object, like our box, we'll cover that soon.
 
 ## Monitor network connections
 
@@ -72,19 +70,19 @@ Controls:
 
 ## Object callbacks
 
-One way to reduce the flood of messages for your Python program is to define a callback specifically for one object, our cube for example. Update your program to comment out all messages subscribed in the scene, add a callback just for your cube object, and update the creation of your cube object with a click-listener (`clickable=True`) and the new `cube_callback`.
+One way to reduce the flood of messages for your Python program is to define a callback specifically for one object, our box for example. Update your program to comment out all messages subscribed in the scene, add a callback just for your box object, and update the creation of your box object with a click-listener and the new `box_callback`.
 
 ```python
-def scene_callback(msg):
-#    print("scene_callback: ", msg)
+def on_msg_callback(obj):
+#    print("scene_callback: ", obj)
 
-def cube_callback(msg):
-    print("cube_callback: ", msg)
+def box_callback(evt):
+    print("box_callback: ", evt)
 
-arena.Object(objType=arena.Shape.cube, clickable=True, callback=cube_callback)
+box = Box(evt_handler=box_callback)
 ```
 
-Now, in your scene use your mouse to click on the cube and notice the messages you receive just from the cube. You have useful information like: what type of event - mouse up/down/enter/leave, the owner of the event, the position of the owner, the position of the click. You can use this information to programmatically decide how to respond and begin creating a rich, interactive, 3d experience for your users.
+Now, in your scene use your mouse to click on the box and notice the messages you receive just from the box. You have useful information like: what type of event - mouse up/down/enter/leave, the owner of the event, the position of the owner, the position of the click. You can use this information to programmatically decide how to respond and begin creating a rich, interactive, 3d experience for your users.
 
 - What should `mousedown` do for this object? Change its color?
 - What should `mouseenter` or `mouseleave` do? Change its opacity?
@@ -95,14 +93,24 @@ Now, in your scene use your mouse to click on the cube and notice the messages y
 A more advanced manipulation of objects in the ARENA is using 3d models as [GLTF](../3d-content/gltf-files). Here we are going to use a GLTF model of a duck and some animation rules to make it rotate.
 
 ```python
-import arena
-arena.init("arena.andrew.cmu.edu", "realm", "example")
-arena.Object(objType=arena.Shape.gltf_model,
-             objName="duck_1",
-             location=(-1, 1, -3),
-             data='{"animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000}}',
-             url="models/Duck.glb")
-arena.handle_events()
+from arena import *
+
+scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
+
+obj = Model(objName="duck_1",
+            location=(-1, 1, -3),
+            url="models/Duck.glb")
+obj.dispatch_animation(
+        Animation(
+            property="rotation",
+            start=(0,0,0),
+            end=(0,180,0),
+            easing="linear",
+            dur=1000
+        )
+    )
+scene.run_animations(obj)
+scene.run_tasks()
 ```
 
 At your leisure, read more about methods to generate [3d content](../3d-content) and [animate](../3d-content/animated-models) objects and models.
@@ -117,13 +125,11 @@ Up until now, everything you have created has been non-persistent. That is, obje
 
 This is a more raw method of generating messages from the the Mosquitto Publish client command line. The structure of our [messaging format](../messaging), [examples](../messaging/examples), and [definitions](../messaging/definitions) are available in more detail. For now, let's save this rotating duck into a scene name that you will come up with. This message is a duplicate of the of the previous Python example in raw JSON form, but with one added attribute: `"persist": true`. Now, refresh your browser after this command and our duck comes back! You may need to install the Mosquitto client on your system: [https://mosquitto.org/](https://mosquitto.org).
 
-```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/[a scene name of your own]/duck_1 -m '{ "object_id" : "duck_1", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x":-1, "y": 1, "z": -3}, "url": "models/Duck.glb", "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000} }, "persist": true }'
-```
+{% include alert type="warning" title="Warning" content="The mosquitto_pub examples below are currently out of date and are being updated..." %}
 
-{% include alert type="danger" content="
-Be sure to replace `[a scene name of your own]`.
-"%}
+```json
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/[your username]/example/duck_1 -m '{ "object_id" : "duck_1", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x":-1, "y": 1, "z": -3}, "url": "models/Duck.glb", "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000} }, "persist": true }'
+```
 
 {% include alert type="tip" content="
 Make note of the structure of the `data` element in the above JSON. There are ways to support almost [any A-Frame feature](../developer/aframe) using arbitrary JSON.
