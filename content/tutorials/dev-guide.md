@@ -23,7 +23,7 @@ The easiest way to begin programming in the ARENA is to install the [Python libr
 
 ## Create a box and observe
 
-Now, create the simplest Python program you can below, which will generate a 1-meter box. By default, objects are generated in a gray color, with no rotation, at scene x, y, z position (0, 0, 0), and with no other properties applied. Some of the other properties you can add to objects are detailed in our [Python Examples](../python/objects). Notice that the box seems stuck in the ground, which is due to the box's origin at its center positioned at scene coordinates (0, 0, 0). If you enable Flying mode (see [User Guide](user-guide)), you can move below the ground plane and view the other half of the box. Type Ctrl-C to end the program.
+Now, create the simplest Python program you can below, which will generate a 1-meter box. By default, objects are generated in a random color, with no rotation, at scene x, y, z position (0, 0, 0), and with no other properties applied. Some of the other properties you can add to objects are detailed in our [Python Examples](../python/objects). Notice that the box seems stuck in the ground, which is due to the box's origin at its center positioned at scene coordinates (0, 0, 0). If you enable Flying mode (see [User Guide](user-guide)), you can move below the ground plane and view the other half of the box. Type Ctrl-C to end the program.
 
 {% include alert type="tip" content="
 Use the **Search ARENA Documentation** bar at the very top of every page on this site to find examples and information on anything you need.
@@ -97,8 +97,8 @@ from arena import *
 
 scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
 
-obj = Model(objName="duck_1",
-            location=(-1, 1, -3),
+obj = Model(object_id="duck_1",
+            position=(-1, 1, -3),
             url="models/Duck.glb")
 obj.dispatch_animation(
         Animation(
