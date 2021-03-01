@@ -15,7 +15,7 @@ This example needs to be updated for a new user.
 Quick Reference
 ---------------
 
-* Scene [pytest](https://arena.andrew.cmu.edu/?scene=pytest) loads a Python program stored at the [file store](https://arena.andrew.cmu.edu/storemng), under folder boxes for user **wiselab**.
+* Scene [https://arena.andrew.cmu.edu/public/pytest](https://arena.andrew.cmu.edu/public/pytest) loads a Python program stored at the [file store](https://arena.andrew.cmu.edu/storemng), under folder boxes for user **wiselab**.
 * Go to the [file store](https://arena.andrew.cmu.edu/storemng) and edit **boxes/boxes.py** to see the program code.
 * Edit this scene in the [builder](https://arena.andrew.cmu.edu/build/), to see the program object stored.
 * See the [ARTS gui](https://arena.andrew.cmu.edu/arts/) to see the runtimes and modules running.
@@ -69,6 +69,6 @@ arena-py
 ```
 "%}
 
-8\. Open the Scene using ![](../../assets/img/arts-program/image9.png){:width="200px"}at the top of the build page (the link should be something like https://arena.andrew.cmu.edu/?scene=\[scene-name\])
+8\. Open the Scene using ![](../../assets/img/arts-program/image9.png){:width="200px"}at the top of the build page (the link should be something like https://arena.andrew.cmu.edu/[your username]/\[scene-name\])
 
 9\. See ARTS GUI: [https://arena.andrew.cmu.edu/arts/](https://arena.andrew.cmu.edu/arts/)
