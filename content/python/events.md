@@ -17,7 +17,10 @@ When you attach an `evt_handler` to an `Object`, you will receive `Event` object
 Below is how you access attributes of the `Event` object.
 
 ```python
-def click_handler(evt): # evt = Event(...)
+# [scene] is the Scene that called the callback
+# [evt] will be an Event instance
+# [msg] is the raw JSON message as a dict
+def click_handler(scene, evt, obj):
     print(evt)
 
     ## Get Event type

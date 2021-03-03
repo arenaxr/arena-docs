@@ -16,14 +16,16 @@ This is called whenever there is a new message sent to the client. Use this when
 
 #### Usage:
 ```python
-def on_msg_callback(obj):
-    # obj will be an Object instance
-    # do stuff with obj here
+# [scene] is the Scene that called the callback
+# [obj] will be an Object instance
+# [msg] is the raw JSON message as a dict
+def on_msg_callback(scene, obj, msg):
+    ## do stuff with obj here
     obj.object_id
     obj.data.position.x
     obj.data.scale.y
     # etc.
-    # could also do obj["object_id"]
+    # could also do obj["object_id"] or msg["object_id"]
 
 scene.on_msg_callback = on_msg_callback
 ```
@@ -35,14 +37,16 @@ new objects that may appear during a programs lifetime. Also a good way to find 
 
 #### Usage:
 ```python
-def new_obj_callback(obj):
-    # obj will be an Object instance
-    # do stuff with obj here
+# [scene] is the Scene that called the callback
+# [obj] will be an Object instance
+# [msg] is the raw JSON message as a dict
+def new_obj_callback(scene, obj, msg):
+    ## do stuff with obj here
     obj.object_id
     obj.data.position.x
     obj.data.scale.y
     # etc.
-    # could also do obj["object_id"]
+    # could also do obj["object_id"] or msg["object_id"]
 
 scene.new_obj_callback = new_obj_callback
 ```
@@ -55,14 +59,16 @@ another user or program.
 
 #### Usage:
 ```python
-def delete_obj_callback(obj):
-    # obj will be an Object instance
-    # do stuff with obj here
+# [scene] is the Scene that called the callback
+# [obj] will be an Object instance
+# [msg] is the raw JSON message as a dict
+def delete_obj_callback(scene, obj, msg):
+    ## do stuff with obj here
     obj.object_id
     obj.data.position.x
     obj.data.scale.y
     # etc.
-    # could also do obj["object_id"]
+    # could also do obj["object_id"] or msg["object_id"]
 
 scene.delete_obj_callback = delete_obj_callback
 ```
@@ -108,13 +114,13 @@ You can also add callbacks like so:
 ```python
 from arena import *
 
-def on_msg_callback(obj):
+def on_msg_callback(scene, obj, msg):
     pass
 
-def new_obj_callback(obj):
+def new_obj_callback(scene, obj, msg):
     pass
 
-def delete_obj_callback(obj):
+def delete_obj_callback(scene, obj, msg):
     pass
 
 scene = Scene(..., on_msg_callback=on_msg_callback, new_obj_callback=new_obj_callback, delete_obj_callback=delete_obj_callback)
