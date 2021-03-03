@@ -12,7 +12,7 @@ Dispatching and running animations and GLTF 3D Morphs.
 ##  Animations
 
 ### Dispatching Animations
-You can add animations to objects that will run when `run_animations` is called:
+You can add animations to objects that will run when `scene.run_animations(...)` is called:
 ```python
 obj = Box()
 obj.dispatch_animation(
@@ -26,7 +26,7 @@ obj.dispatch_animation(
     )
 scene.run_animations(obj) # this will cause the animation to be run
 ```
-You can also dispatch multiple animations:
+You can also dispatch multiple `Animation`s:
 ```python
 obj = Box()
 obj.dispatch_animation(
@@ -51,7 +51,7 @@ scene.run_animations(obj) # this will cause all the dispatched animations to be 
 ```
 
 ### Animation vs AnimationMixer
-AnimationMixer are special animations specific to a 3D model. These can be run the same way as regular animations.
+`AnimationMixer`s are special animations specific to a 3D model. These can be run the same way as regular `Animation`s.
 See [here](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation).
 ```python
 xr_logo.dispatch_animation(
@@ -61,7 +61,7 @@ scene.run_animations(xr_logo) # this will cause the 3D model to play its animati
 ```
 
 ### Permanent Animations
-Sometimes you want animations to be associated with the object. You can do this by adding the animation as an attribute to the object
+Sometimes you want `Animation`s to be associated with the object. You can do this by adding the `Animation` as an `Attribute` to the `Object`:
 ```python
 # this makes it such that xr_logo will ALWAYS play the animation when someone joins
 # your ARENA scene, since the animation is now associated with that object:
@@ -75,7 +75,7 @@ xr_logo.update_attributes(
 ## GLTF Morphs
 
 ### Morph and update_morph
-GLTF morphs can be created with the `Morph` class, and can be added to an object with the `update_morph` method
+GLTF morphs can be created with the `Morph` class, and can be added to an object with the `update_morph` method:
 ```python
 # create list of Morphs
 open_eye_morph = [Morph(morphtarget="eyeTop",value=0.0), Morph(morphtarget="eyeBottom",value=0.0)]

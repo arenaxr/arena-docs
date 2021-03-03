@@ -20,9 +20,7 @@ Below is how you access attributes of the `Event` object.
 # [scene] is the Scene that called the callback
 # [evt] will be an Event instance
 # [msg] is the raw JSON message as a dict
-def click_handler(scene, evt, obj):
-    print(evt)
-
+def click_handler(scene, evt, msg):
     ## Get Event type
     evt.type # == "mousedown", "mouseup", "mouseenter", "mouseleave", etc.
 
@@ -37,7 +35,7 @@ box = Box(..., evt_handler=click_handler) # note the use of "evt_handler=click_h
 # or box.update_attributes(evt_handler=click_handler)
 ```
 
-## Generating events with ARENA-py
+## Generating events with ARENA-py Scenes
 ### Click Events
 There are several types of click events that you can generate (`mousedown`, `mouseup`, `mouseenter`, `mouseleave`, `triggerdown`, `triggerup`):
 ```python

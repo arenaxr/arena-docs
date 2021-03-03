@@ -32,6 +32,9 @@ scene.add_object(box)
 # use update_attributes with kwargs to add attributes
 box.update_attributes(physics=Physics(type="dynamic"))
 
+# shorthand way:
+box.data.physics = Physics(type="dynamic")
+
 # don't forget to call scene.update_object to see your chnages in the ARENA!
 scene.update_object(box)
 ```
@@ -46,13 +49,14 @@ scene.update_object(box)
 
 ## Removing Object Attributes
 ```python
-obj.data.click_listener = None
+obj.data.click_listener = None # or, obj.data.clickable = None
 # obj.update_attributes(click_listener=None) works too
 ```
 
 ## Update Handler
 The update_handler will be called whenever the object is updated by the library of by some external program
 ```python
+# [obj] is the Object that called the update handler
 def update(obj):
     print(obj)
 
