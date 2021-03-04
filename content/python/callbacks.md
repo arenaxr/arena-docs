@@ -12,7 +12,7 @@ Library supported callback functions.
 ## Scene callbacks
 
 ### on_msg_callback
-This is called whenever there is a new message sent to the client. Use this whenever you want to sniff out all incoming messages.
+This is called whenever there is a new message sent to the client. Use this whenever you want to sniff out __all__ incoming messages.
 
 #### Usage:
 ```python
@@ -77,6 +77,7 @@ scene.delete_obj_callback = delete_obj_callback
 
 ### user_join_callback
 This is called whenever the library detects/finds a new user that it hasn't seen before in a scene.
+Note: this is not neccesarily called when a user "joins" a scene, rather, it is called when the library first sees a `Camera` object/receives an "update" message from a user.
 
 #### Usage:
 ```python

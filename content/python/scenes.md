@@ -16,6 +16,21 @@ scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
 # scene = Arena(host="arena.andrew.cmu.edu", realm="realm", scene="example") works too
 ```
 
+## Arguments
+`host`: Base ARENA URL.
+
+`realm`: ARENA realm name.
+
+`scene`: ARENA scene name.
+
+`namespace`: ARENA namespace. Default value is ARENA username.
+
+`network_loop_interval`: Interval (in ms) to run/throttle a scene's MQTT client loop. Default value is 10 (10 ms).
+
+`debug`: If True, print authentication debug information and every published message. Ignore this parameter.
+
+`network_latency_interval`: Interval (in ms) to run network graph latency update. Default value is 10000 (10 secs). Ignore this parameter.
+
 ## Callbacks
 See [Scene Callbacks](callbacks.md).
 
