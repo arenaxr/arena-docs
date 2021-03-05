@@ -32,26 +32,34 @@ See the [ARENA Overview](/content/overview/#arena-scene) to learn more.
 
 When you first enter the ARENA, there will be a screen asking you to sign in. You can use your Google account, which will automatically set your name to the name used in your Google account (you can change this later).
 
-![](../../assets/img/tutorial/userguide/a1.jpg)
+![](../../assets/img/overview/userguide/a1.jpg)
 
 {% include alert type="tip" content="
 You can also choose to sign in anonymously; you'll have to enter a name to use in the ARENA."%}
+
+### ARENA Username
+
+If you choose to login using your google account, you will be asked to signup and define your arena username:
+
+<img src="/assets/img/overview/signup.png" width="500"/>
+
+This will create a namespace under which you can have your own scenes. For example, ```user1```, will have his scenes under ```http://arena.andrew.cmu.edu/user1/```.
 
 ## Permissions
 
 You'll be asked to give location, microphone, and camera access to the ARENA site. If you do not select "yes", you won't be able to use voice, video, or the face tracking avatar.
 
-![](../../assets/img/tutorial/userguide/a3.png)
+![](../../assets/img/overview/userguide/a3.png)
 
 ## Moving Around
 
 Once inside the ARENA, you should see the lobby scene. You might have to wait for all the scene to load until it looks something like this:
 
-![](../../assets/img/tutorial/userguide/a4.png)
+![](../../assets/img/overview/userguide/a4.png)
 
 To move, use the arrow keys. More advanced movement can be done by a combination of ‘W’, ‘A’, ‘S’, ‘D’ (to go forward/back and stride) and the mouse (to look around/change direction).  You can also mix and match any combination of these motions.  Definitely try clicking and dragging with the mouse.
 
-![](../../assets/img/tutorial/userguide/m1.png)
+![](../../assets/img/overview/userguide/m1.png)
 
 ## Buttons
 
@@ -73,12 +81,12 @@ The buttons around the screen give access to several options, such as: your soun
 ## Audio/Video Capabilities
 The ARENA experience includes audio and video capabilities. Users can share their video and see other users as floating cubes. One interesting feature is that sound is spatial in the ARENA (will fade as users get further away and comes from the direction where the user is).
 
-![](../../assets/img/tutorial/userguide/a6.png)
+![](../../assets/img/overview/userguide/a6.png)
 
 ## Chat, Find People and Places
 You can send messages to other users, find users (and place yourself in front of them) and find places, such as meeting points and posters (and place yourself in front of them), using the buttons at the bottom of the screen.
 
-![](../../assets/img/tutorial/userguide/a5.png)
+![](../../assets/img/overview/userguide/a5.png)
 
 {% include alert type="note" content="
 The landmarks button only appears in scenes that have landmarks.

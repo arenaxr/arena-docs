@@ -5,29 +5,61 @@ layout: default
 parent: Overview
 ---
 
-# Quick Start for Developers
-Most of the ARENA utilities and tools mentioned here are also listed on a set of quick links on the left side bar as [Source and Links](../source).
+# Introduction to ARENA Python Program Development
 
-## View the ARENA
+{% include alert type="note" content="
+We recommend the [ARENA Overview](/content/overview) to learn the about the main concepts of the ARENA.
+"%}
 
-To start, open your browser to the scene we will be using in this tutorial. Open this address in a new tab: **https://arena.andrew.cmu.edu/[your username]/example**. Our developer tools require use of an authenticated Google account, so be sure to complete the sign in process.
+You can define the appearance and behavior of objects in a scene using python programs, which take advantage of the fact that all objects in a scene are networked via a MQTT Publish-Subscribe (PubSub) messaging bus:
 
-![](../../../assets/img/tutorial/scene.png)
+<img src="/assets/img/overview/python-mqtt.png" width="500"/>
 
-## Navigating
-Our [User Guide](user-guide) will give you some pointers for navigation and video conferencing, but to start with, just using the arrows keys on your keyboard will get you started.
+Note that the python program can be hosted anywhere with access to the MQTT bus. For simplicity, we will assume that your program is running on your local machine. However, the execution and hosting of programs can be handled by the ARENA itself, using ARTS.
+
+[//]: # TODO: Link to ARTS.
+
 
 ## Install the ARENA Python library
 
-The easiest way to begin programming in the ARENA is to install the [Python library](../python) and create your first Python program. ARENA communications are a series of MQTT messages which govern all objects and their properties. This library is a wrapper which will allow you to easily send and receive those messages.
-
-## Create a box and observe
-
-Now, create the simplest Python program you can below, which will generate a 1-meter box. By default, objects are generated in a random color, with no rotation, at scene x, y, z position (0, 0, 0), and with no other properties applied. Some of the other properties you can add to objects are detailed in our [Python Examples](../python/objects). Notice that the box seems stuck in the ground, which is due to the box's origin at its center positioned at scene coordinates (0, 0, 0). If you enable Flying mode (see [User Guide](user-guide)), you can move below the ground plane and view the other half of the box. Type Ctrl-C to end the program.
+The easiest way to begin programming in the ARENA is to install the [Python library](../python) and create your first Python program. ARENA programs communicate over MQTT messages which govern all objects and their properties. This library is a wrapper which will allow you to easily send and receive those messages.
 
 {% include alert type="tip" content="
 Use the **Search ARENA Documentation** bar at the very top of every page on this site to find examples and information on anything you need.
 "%}
+
+## Create a box and observe
+
+Now, let us create a very simple Python program in the scene <b>example</b>, under the [username you defined the first time you entered the arena](/content/overview/user-guide.html#arena-username). Start by opening the scene in your browser and notice it is empty, with default environment settings.
+
+{% include alert type="note" content="
+Open the <b>example</b> scene under your arena username by entering the following URL in your browser: ```http://arena.andrew.cmu.edu/<your-username>/example```
+"%}
+
+Copy the python script below, and paste it into a ```box.py``` file. After saving the file, execute the script (e.g. ```python3 box.py```; make sure you installed the [python library](/content/python/) first).
+
+```python
+from arena import *
+
+# this creates an object for scenen 'example' at the given arena host and realm
+scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
+
+# define a task that will add a box to the scene
+@scene.run_once
+def make_box():
+    scene.add_object(Box())
+
+# run the tasks defined for this scene
+scene.run_tasks()
+```
+
+Looking at the scene in your browser will let you see the box. Watch out, if you are at the origin, the box will be underneath you.
+
+![](../../../assets/img/overview/devguide/box.png)
+
+By default, objects are generated in a random color, with no rotation, at x, y, z position (0, 0, 0), and with no other properties applied. Some of the other properties you can add to objects are detailed in our [Python Examples](../python/objects). Notice that the box seems stuck in the ground, which is due to the box's origin at its center positioned at scene coordinates (0, 0, 0). If you enable Flying mode (see [User Guide](user-guide)), you can move below the ground plane and view the other half of the box. Type Ctrl-C to end the program.
+
+Now, go back to your browser and <b>refresh</b> the page. You will notice that the box disappeared. We will explain what is up with that in [a moment](#use-persistence-reload-browser). Now, let us create two boxes, one at x, y, z (1, 1, 1) and another at x, y, z (2, 2, 2).
 
 ```python
 from arena import *
@@ -36,12 +68,19 @@ scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
 
 @scene.run_once
 def make_box():
-    scene.add_object(Box())
+    # red box at (1, 1, -3)
+    box1 = Box(position=Position(1,1,-3), material=Material(color=(255,0,0)))
+    scene.add_object(box1)
+    # green box at (2, 2, -3)
+    box2 = Box(position=Position(2,2,-3), material=Material(color=(0,255,0)))
+    scene.add_object(box2)
 
 scene.run_tasks()
 ```
 
-![](../../../assets/img/tutorial/cube.png)
+Once you run the script above, you can go back to the scene <b>example</b> in your browser to see the two boxes:
+
+![](../../../assets/img/overview/devguide/two-boxes.png)
 
 ## Clients and Scene Callbacks
 
@@ -56,17 +95,7 @@ def on_msg_callback(obj):
 scene.on_msg_callback = on_msg_callback
 ```
 
-Move yourself around in the browser view and notice all the camera updates and positions and rotation changes as you move. This is way too much information to be human readable! However, you can filter out these messages for what you need, or even better, if you only need feedback for a specific object, like our box, we'll cover that soon.
-
-## Monitor network connections
-
-Take a minute to view the ARENA network's connections as you move around in the ARENA on our [Network graph](https://arena.andrew.cmu.edu/network). Clients connected <span style="background-color: black; color: orange;">(orange square)</span>, client subnets <span style="background-color: black; color: gray;">(gray box)</span>, MQTT topics <span style="background-color: black; color: DeepSkyBlue;">(blue circle)</span>, and their current relationships and throughput <span style="background-color: black; color: white;">(white arrow)</span> can be visualized.
-
-Controls:
-
-- **Pause/Play**: Stop or resume fetching graphs.
-- **Forward/Back**: Step forward one or step back one previously fetched graph.
-- **Scroll**: Zoom in and out of detail.
+Move yourself around in the browser view and notice all the camera updates and positions and rotation changes as you move. This is way too much information to be human readable! However, you can filter out these messages for what you need, or even better, if you only need feedback for a specific object, like our box, as we cover next.
 
 ## Object callbacks
 
@@ -115,59 +144,28 @@ scene.run_tasks()
 
 At your leisure, read more about methods to generate [3d content](../3d-content) and [animate](../3d-content/animated-models) objects and models.
 
-![](../../../assets/img/tutorial/animate.png)
+![](../../../assets/img/overview/animate.png)
 
 ## Use persistence, reload browser
 
-Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. Now, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistence database](../tools/persistence) you will have to specify `persist=True` in [Python definitions](../python/attributes), or `"persist": true` in the raw [JSON formatted messages](../messaging/examples#persisted-objects). Let's try an example of persisting object properties into our database in the next example.
+Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. So, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistence database](../tools/persistence) you will have to specify `persist=True` in [Python definitions](../python/attributes). This is also true to when ARENA objects are created in other. The underlying message needs to specify if the object state is to be persisted or not.
 
-## MQTT Messaging Format
-
-This is a more raw method of generating messages from the the Mosquitto Publish client command line. The structure of our [messaging format](../messaging), [examples](../messaging/examples), and [definitions](../messaging/definitions) are available in more detail. For now, let's save this rotating duck into a scene name that you will come up with. This message is a duplicate of the of the previous Python example in raw JSON form, but with one added attribute: `"persist": true`. Now, refresh your browser after this command and our duck comes back! You may need to install the Mosquitto client on your system: [https://mosquitto.org/](https://mosquitto.org).
-
-{% include alert type="warning" title="Warning" content="The mosquitto_pub examples below are currently out of date and are being updated..." %}
-
-```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/[your username]/example/duck_1 -m '{ "object_id" : "duck_1", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x":-1, "y": 1, "z": -3}, "url": "models/Duck.glb", "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000} }, "persist": true }'
+Go back to the previous python code and try to add `persist=True` to the duck object:
 ```
+obj = Model(object_id="duck_1",      
+            position=(-1, 1, -3),
+            url="models/Duck.glb"
+            persit=True)
+```          
 
-{% include alert type="tip" content="
-Make note of the structure of the `data` element in the above JSON. There are ways to support almost [any A-Frame feature](../developer/aframe) using arbitrary JSON.
-"%}
-
-## Link your scene to the physical world
-You can make a scene you create linkable to the physical world by adding its coordinates to the [ATLAS tool](https://atlas.conix.io) (requires write permission to list coordinates). This will allow users in Augmented Reality (AR) to [discover your ARENA scene](../tools/atlas) when they are in physical range of it.
-
-  ![](../../../assets/img/tutorial/atlas.png)
-
-## Edit in Scene Builder
-Let's take a look at what we've just saved in our [Scene Builder](https://arena.andrew.cmu.edu/build) tool. From here, you can also create/update/delete ARENA objects.
-
-Select the `example` scene in the scene list and you will see that the `duck_1` object we used with persistence has been pulled out of the persistence DB to be listed here. Now, click on the edit button icon to the right of the `duck_1` model in the Scene Objects list. Notice that the Object JSON section in the right column has the full JSON you originally submitted.
-
-Here you can change the position of the Duck model, for example, easily to anything you wish.
-
-  ![](../../../assets/img/tutorial/builder.png)
-
-## Store Your Program in the ARENA
-You can use the ARENA RunTime Supervisor, [ARTS](../arts), to run your Python program in a scene without using the Python command-line. The general steps are:
-* Upload a Python program to the [File Store](https://arena.andrew.cmu.edu/storemng).
-* Edit your scene in the [Scene Builder](https://arena.andrew.cmu.edu/build), to add your program object from the File Store.
-* Monitor your program's runtime in the [ARTS GUI](https://arena.andrew.cmu.edu/arts).
-
-In more detail, there are step by step instructions to run your Python program like this in the [Scene Edit/Program Launch Example](../arts/python).
-
-## Debug your program in ARTS
-Once your program is running, use the [ARTS GUI](https://arena.andrew.cmu.edu/arts). You can select your program from all the [ARTS Modules](../arts) in the tree graph. After selecting your program, on the right side, you can monitor the WASM or Python module's `stdout` logging, migrate the module to another scene, remove the module completely, and perform other maintenance.
-
-  ![](../../../assets/img/tutorial/arts.png)
+If you run the program again, you will notice that the duck remains in the scene, even across a refresh.
 
 ## Debug your scene with A-Frame Scene Inspector
 Since the ARENA's rendering uses the A-Frame web 3D rendering engine, you can open the [A-Frame Scene Inspector](https://aframe.io/docs/1.0.0/introduction/visual-inspector-and-dev-tools.html) on any scene to examine and manipulate any of the A-Frame elements in your scene.  Try this now from your example scene by typing `<ctrl> + <alt> + i` on most systems.
 
 Examine the list of elements on the left side. Each element or object you select will show it's details and attributes on the right side. You may edit any attributes here you wish, however, remember that the A-Frame Scene Inspector will not persist any changes to the persistence database. We do have a way to visually manipulate objects and save changes that we will share next.
 
-![](../../../assets/img/tutorial/inspector.png)
+![](../../../assets/img/overview/inspector.png)
 
 ## AR Builder, visual content authoring
 We also have a Python program, [AR Builder (ARB)](../tools/authoring), which you can use to create and edit objects for your scene. You can use it in VR (virtual reality) as a way to edit your scene and save changes to the persistence database. Importantly, you can use it in AR (augmented reality) in combination with [AR-supported browsers](https://createwebxr.com/webAR.html) and [localization techniques](../localization) to anchor scene objects in physical space.
