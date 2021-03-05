@@ -13,9 +13,9 @@ ARENA: a multi-user and multi-application environment to simplify the developmen
 The <u>A</u>ugmented <u>R</u>eality <u>E</u>dge <u>N</u>etwork <u>A</u>rchitecture (<b>ARENA</b>) is a platform designed to allow interactions with and within the physical world, with locality and pervasive sensing as first-class citizens. ARENA makes it easy to create and host multiple applications that interact with users and other agents in an immersive 3D environment created inside a browser.
 
 | ![img](assets/img/intro/robot-arm.png){: style="float: left"} | ![img](assets/img/intro/path-markers.png){: style="float: left"} |
-| Industrial robot training | Path markers |
+| Industrial digital twins | Path markers |
 | ![img](assets/img/intro/vr-conference.png){: style="float: left"} | ![img](assets/img/intro/pvr.png){: style="float: left"} |
-| VR video conferencing | Overlay of tracked objects |
+| VR video conferencing | Outside-in tracking |
 
 ## Key Features
 
@@ -28,7 +28,7 @@ Seamless support for a spectrum of experiences, from completely immersing the us
 Host 3D applications that users can interact with from a number of platforms including tablets, phones, headsets and desktop browsers.  
 
 ### Geographic content lookup
-The [ATLAS](content/tools/atlas.html) allows to perform geographic queries for content, assets (such as location markers) and compute resources.
+Perform geographic queries for content, assets (such as location markers) and compute resources.
 
 ### Accurate relocalization
 Built-in support for a number of different types of systems (such as UWB, OptiTrack, AprilTags).
@@ -45,19 +45,19 @@ Fine-grained access control allowing users to share and manage control over cont
 ## Next Steps
 
 <br/>
-Get started by following our [ARENA Overview]() to learn the main concepts.
+Get started by following our [ARENA Overview](/content/overview) to learn the main concepts.
 {: .fs-5 .fw-300 }
 
-[ <img src="assets/img/icons/report.svg" width="40"/> <br/>ARENA Overview ](http://example.com/){: .btn .mr-4  .intro-button}
+[ <img src="/assets/img/icons/report.svg" width="40"/> <br/>ARENA Overview ](/content/overview){: .btn .mr-4  .intro-button}
 
 <br/>
-Then, you can learn the basics of the interface and [enter ARENA scene for the first time](). Also learn about [creating new scenes](), and how to create [python programs] to define the behavior of your scenes. You can also go for a [system architecture]() deep dive.
+Then, you can learn the basics of the interface and [enter an ARENA scene](/content/overview/user-guide.html). Also learn about [building scenes](/content/overview/build.html), and how to develop [python programs](/content/overview/dev-guide.html) to define the behavior of your scenes.
+[//]: # You can also go for a [system architecture]() deep dive.
 
-[ <img src="assets/img/icons/first-time.svg" width="40"/> <br/>First Time in the ARENA ](http://example.com/){: .btn .mr-4  .intro-button}
-[ <img src="assets/img/icons/scene.svg" width="40"/> <br/>Build a Scene ](http://example.com/){: .btn .mr-4 .intro-button}
+[ <img src="/assets/img/icons/first-time.svg" width="40"/> <br/>First Time in the ARENA ](/content/overview/user-guide.html){: .btn .mr-4  .intro-button}
+[ <img src="/assets/img/icons/scene.svg" width="40"/> <br/>Build a Scene ](/content/overview/build.html){: .btn .mr-4 .intro-button}
 <br/><br/>
-[ <img src="assets/img/icons/code.svg" width="40"/> <br/>Python Programs ](http://example.com/){: .btn .mr-4  .intro-button}
-[ <img src="assets/img/icons/sketch.svg" width="40"/> <br/>Architecture ](http://example.com/){: .btn .mr-4 .intro-button}
+[ <img src="/assets/img/icons/code.svg" width="40"/> <br/>Develop Python Programs ](/content/overview/dev-guide.html){: .btn .mr-4  .intro-button}
 
 The navigation bar on the left side will take you to much more content about the ARENA, which you can browse. Don't forget the search input at the top.
 
@@ -67,4 +67,5 @@ The navigation bar on the left side will take you to much more content about the
 [//]: # </figure>
 
 
-<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+{: .fs-1 }

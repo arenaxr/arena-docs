@@ -1,11 +1,11 @@
 ---
-title: Scene Builder
+title: Build Scenes
 nav_order: 3
 layout: default
-parent: ARENA Quick Start
+parent: Overview
 ---
 
-# ARENA Build Page
+# Build ARENA Build Page
 
 {% include alert type="warning" title="Coming Soon" content="Writing in progress..." %}
 

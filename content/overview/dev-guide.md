@@ -1,8 +1,8 @@
 ---
-title: Development Quick Start
-nav_order: 2
+title: Develop Python Programs
+nav_order: 4
 layout: default
-parent: ARENA Quick Start
+parent: Overview
 ---
 
 # Quick Start for Developers

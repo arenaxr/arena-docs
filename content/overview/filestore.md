@@ -1,8 +1,8 @@
 ---
 title: File Store
-nav_order: 4
+nav_order: 5
 layout: default
-parent: ARENA Quick Start
+parent: Overview
 ---
 
 # ARENA File Store
