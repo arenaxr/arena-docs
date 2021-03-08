@@ -7,23 +7,43 @@ parent: Tools
 
 # ARENA AR Builder
 
-{% include alert type="warning" title="Warning" content="The code examples below are currently out of date and are being updated..." %}
-
 An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top-level Python documentation for [requirements](https://github.com/conix-center/ARENA-py). This tool uses the [ARENA Persistence Database](https://github.com/conix-center/arena-persist), so all changes are persisted.
 
 ## Quick Start
 1. Clone our Python repo [https://github.com/conix-center/ARENA-py](https://github.com/conix-center/ARENA-py).
 1. Usage: `arb` takes at minimum one argument, the first one, a scene name (`hello` in this example).
     ```shell
-    cd ARENA-py/tools/arb
-    python arb.py hello
+    python3 tools/arb/arb.py hello
     ```
-1. Interact with the tool at [https://arena.andrew.cmu.edu?scene=hello](https://arena.andrew.cmu.edu?scene=hello)
+1. Interact with the tool at https://arena.andrew.cmu.edu/[your username]/hello
 
 ## Demo Video
 <figure class="video_container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/bYantKzkTFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
+
+## Usage
+```
+usage: arb.py [-h] [-n NAMESPACE] [-b BROKER] [-p PORT] [-r REALM] [-m MODELS] [-d] scene
+
+ARENA AR Builder.
+
+positional arguments:
+  scene                 ARENA scene name
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -n NAMESPACE, --namespace NAMESPACE
+                        ARENA namespace
+  -b BROKER, --broker BROKER
+                        MQTT message broker hostname
+  -p PORT, --port PORT  MQTT message broker port
+  -r REALM, --realm REALM
+                        ARENA realm name
+  -m MODELS, --models MODELS
+                        JSON GLTF manifest
+  -d, --debug           Debug mode.
+  ```
 
 ## Clickable Objects ONLY
 The current version of ARB is only able to interact with existing persisted objects if they have click-handlers implemented (`object.update(clickable=True)`). Clickable objects will turn your cursor from an arrow to a finger pointing as you hover over them. For the time being, anything you create with ARB will have click-handlers implemented automatically.
@@ -67,7 +87,7 @@ There is a small temporary object resting on position 0,0,0 in the shape of a co
 ### Importing Models
 You can import a json-formatted manifest of GLTF models using the command argument **-m** to use on the **model** control panel option. You can write your own, or use the example, [arb-manifest.json](https://github.com/conix-center/ARENA-py/blob/master/tools/arb/arb-manifest.json).
 ```shell
-python arb.py hello -m arb-manifest.json
+python3 tools/arb/arb.py hello -m arb-manifest.json
 ```
 
 Scale varies widely between individual models, so experiment with the best scale to start with.
@@ -114,12 +134,12 @@ Scale varies widely between individual models, so experiment with the best scale
 By default all `arb` MQTT messages are published to the default message broker and topic (realm and scene you specify) using this scheme:
 
 - *default broker*: `oz.andrew.cmu.edu`
-- *default topic*: `realm/s/hello`
+- *default topic*: `realm/s/[your namespace]/hello`
 
 To use your own MQTT message broker (**-b**) and/or realm (**-r**):
 
 - *custom broker*: `arena-west1.conix.io`
-- *custom topic*: `foo/s/hello`
+- *custom topic*: `foo/s/[your namespace]/hello`
 ```shell
-python arb.py hello -b arena-west1.conix.io -r foo
+python tools/arb/arb.py hello -b arena-west1.conix.io -r foo
 ```
