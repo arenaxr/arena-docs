@@ -72,7 +72,6 @@ color=Color(red, green, blue)
 # or
 color=(red, green, blue)
 ```
-{% include alert type="warning" title="Warning" content="As of version 0.1.8, color should be specified in Material!" %}
 
 ## Animation
 See [Animations and Morphs](animations.md).
