@@ -126,7 +126,7 @@ from arena import *
 
 scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
 
-obj = Model(object_id="duck_1",
+obj = GLTF(object_id="duck_1",
             position=(-1, 1, -3),
             url="models/Duck.glb")
 obj.dispatch_animation(
