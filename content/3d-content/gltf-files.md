@@ -38,7 +38,7 @@ Drag-and-drop preview tool for glTF 2.0 3D models: [https://gltf-viewer.donmccur
 
 ## GLTF Attribution
 
-ARENA automatically collects GLTF model metadata to be displayed in the scene credits, accessible from **Settings->Scene Credits**. Checkout the credits for a scene created with these [Spinosaurus](https://sketchfab.com/models/2135501583704537907645bf723685e7) and [Jurassic Park Gate](https://sketchfab.com/3d-models/jurassic-park-gate-3b7728e476544f6c99c99da5a34bhttps://sketchfab.com/3d-models/jurassic-park-gate-3b7728e476544f6c99c99da5a34bea1d) models:
+ARENA automatically collects GLTF model metadata to be displayed in the scene credits, accessible from **Settings->Scene Credits**. Checkout the credits for a scene created with these [Spinosaurus](https://sketchfab.com/models/2135501583704537907645bf723685e7) and [Jurassic Park Gate](https://sketchfab.com/3d-models/jurassic-park-gate-3b7728e476544f6c99c99da5a34b) models:
 
 | ![img](/assets/img/3dcontent/settings.png){: style="float: left"} | ![img](/assets/img/3dcontent/credits.png){: style="float: left"}
 
@@ -70,6 +70,8 @@ If creating models in **Blender**, you can add this metadata as Scene custom pro
 When exporting the GLTF model in Blender (File->Export), check 'Custom Properties' in the data to include in the export:
 
 <img src="/assets/img/3dcontent/blender-gltf-export.png" width="200"/>
+
+Metadata exported from blender will be included in the GLTF file in the `scene.extras` property. Don't worry; ARENA will look for its existence and use it.
 
 ## Chronos GLTF sample models
 
