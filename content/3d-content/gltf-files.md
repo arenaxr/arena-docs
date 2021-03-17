@@ -36,9 +36,44 @@ For [Adobe Dimension](https://www.adobe.com/products/dimension.html), the genera
 ## GLTF Viewer
 Drag-and-drop preview tool for glTF 2.0 3D models: [https://gltf-viewer.donmccurdy.com/](https://gltf-viewer.donmccurdy.com/).
 
-## ARENA 3D models
+## GLTF Attribution
 
-Here are some ready-to-use models on the `andrew.andrew.cmu.edu` server, accessible with the `models/modelname.glb` path:
+ARENA automatically collects GLTF model metadata to be displayed in the scene credits, accessible from **Settings->Scene Credits**. Checkout the credits for a scene created with these [Spinosaurus](https://sketchfab.com/models/2135501583704537907645bf723685e7) and [Jurassic Park Gate](https://sketchfab.com/3d-models/jurassic-park-gate-3b7728e476544f6c99c99da5a34bhttps://sketchfab.com/3d-models/jurassic-park-gate-3b7728e476544f6c99c99da5a34bea1d) models:
+
+| ![img](/assets/img/3dcontent/settings.png){: style="float: left"} | ![img](/assets/img/3dcontent/credits.png){: style="float: left"}
+
+{% include alert type="Important" content="
+Please make sure your GLTF files contain metadata to credit authors as explained below.
+"%}
+
+### Attribution Metadata
+
+The ARENA looks for authorship metadata in the format used by [Sketchfab](https://sketchfab.com/3d-models), and models downloaded from Sketchfab will have such metadata. For example:
+```
+"asset": {
+  "extras": {
+    "author": "Vaptor-Studio (https://sketchfab.com/VapTor)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/models/2135501583704537907645bf723685e7",
+    "title": "Spinosaurus"
+  },
+  "generator": "Sketchfab-5.74.0",
+  "version": "2.0"
+}
+```
+You can always use a text editor to open your GLTF file and search/add the above metadata. It must be inside the `asset` mandatory property.
+
+If creating models in **Blender**, you can add this metadata as Scene custom properties:
+
+<img src="/assets/img/3dcontent/blender-scene-properties.png" width="400"/>
+
+When exporting the GLTF model in Blender (File->Export), check 'Custom Properties' in the data to include in the export:
+
+<img src="/assets/img/3dcontent/blender-gltf-export.png" width="200"/>
+
+## Chronos GLTF sample models
+
+The [Chronos GLTF sample models](https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0) are available on the ARENA main (`andrew.andrew.cmu.edu`) server, accessible from the `store/models/<model-filename.glb>` path:
 
 |------------------------------:|-------------------------:|-----------------------------:|----------------------------:|---------------:|
 |2CylinderEngine.glb            |Cameras.gltf              |MultiUVTest.glb               |TriangleWithoutIndices.gltf  |hat2.glb|

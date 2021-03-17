@@ -13,9 +13,9 @@ ARENA: a multi-user and multi-application environment to simplify the developmen
 The <u>A</u>ugmented <u>R</u>eality <u>E</u>dge <u>N</u>etwork <u>A</u>rchitecture (<b>ARENA</b>) is a platform designed to allow interactions with and within the physical world, with locality and pervasive sensing as first-class citizens. ARENA makes it easy to create and host multiple applications that interact with users and other agents in an immersive 3D environment created inside a browser.
 
 | ![img](assets/img/intro/robot-arm.png){: style="float: left"} | ![img](assets/img/intro/path-markers.png){: style="float: left"} |
-| Industrial digital twins | Path markers |
+| Industrial digital twins | Wide-area tracking and localization |
 | ![img](assets/img/intro/vr-conference.png){: style="float: left"} | ![img](assets/img/intro/pvr.png){: style="float: left"} |
-| VR video conferencing | Outside-in tracking |
+| VR telepresence | Outside-in tracking |
 
 ## Key Features
 
@@ -54,12 +54,16 @@ Get started by following our [ARENA Overview](/content/overview) to learn the ma
 Then, you can learn the basics of the interface and [enter an ARENA scene](/content/overview/user-guide.html). Also learn about [building scenes](/content/overview/build.html), and how to develop [python programs](/content/overview/dev-guide.html) to define the behavior of your scenes.
 [//]: # You can also go for a [system architecture]() deep dive.
 
-[ <img src="/assets/img/icons/first-time.svg" width="40"/> <br/>First Time in the ARENA ](/content/overview/user-guide.html){: .btn .mr-4  .intro-button}
+[ <img src="/assets/img/icons/first-time.svg" width="40"/> <br/>First Time in the ARENA ](/content/overview/user-guide.html){: .btn .mr-4 .intro-button}
 [ <img src="/assets/img/icons/scene.svg" width="40"/> <br/>Build a Scene ](/content/overview/build.html){: .btn .mr-4 .intro-button}
 <br/><br/>
-[ <img src="/assets/img/icons/code.svg" width="40"/> <br/>Develop Python Programs ](/content/overview/dev-guide.html){: .btn .mr-4  .intro-button}
+[ <img src="/assets/img/icons/code.svg" width="40"/> <br/>Develop Python Programs ](/content/overview/dev-guide.html){: .btn .mr-4 .intro-button}
 
-The navigation bar on the left side will take you to much more content about the ARENA, which you can browse. Don't forget the search input at the top.
+The navigation bar on the left side will take you to much more content about the ARENA, which you can browse.
+
+{% include alert type="tip" content="
+Use the **Search ARENA Documentation** bar at the very top of every page on this site to find examples and information on anything you need.
+"%}
 
 [//]: # ## Video
 [//]: # <figure class="video_container">
