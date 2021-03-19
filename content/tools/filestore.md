@@ -2,7 +2,7 @@
 title: File Store
 nav_order: 5
 layout: default
-parent: Overview
+parent: Tools
 ---
 
 # ARENA File Store

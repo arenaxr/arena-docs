@@ -15,7 +15,7 @@ We will now do a quick tour of a simple interface to edit ARENA scenes. We will 
 
 ## Add a Scene
 
-Head to the [build page (in a new tab)](https://arena.andrew.cmu.edu/build){:target="\_blank"}. If you never created a scene, it will look to this:
+Head to the [build page (in a new tab)](https://arena.andrew.cmu.edu/build){:target="\_blank"}. If you never created a scene, it will look similar to this:
 
 ![](/assets/img/overview/build/build-empty.png)
 
