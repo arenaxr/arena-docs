@@ -65,10 +65,10 @@ The navigation bar on the left side will take you to much more content about the
 Use the **Search ARENA Documentation** bar at the very top of every page on this site to find examples and information on anything you need.
 "%}
 
-[//]: # ## Video
-[//]: # <figure class="video_container">
-[//]: #   <iframe width="560" height="315" src="https://www.youtube.com/embed/zNLL9AbruKQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-[//]: # </figure>
+<!-- ## Video
+<figure class="video_container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zNLL9AbruKQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure> -->
 
 
 Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
