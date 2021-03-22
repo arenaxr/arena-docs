@@ -61,7 +61,7 @@ Once loaded, each of the 3D assets in a scene are then updated in real-time over
 
 Scenes and Realms can be registered and discovered with a geographic database system called ATLAS. ATLAS operates in a hierarchical manner much like the Internet’s Domain Name Service (DNS), but using GPS coordinates and UUID markers instead of domain names. UUID markers can be embedded into QR codes, BLE beacons or other digital markers (WiFi, light anchors, etc). The ATLAS can also provide absolute and/or local coordinates for markers that are associated with scenes. For example, a user could scan a QR code or read a BLE beacon that provides a UUID that maps to a GPS coordinate along with any Scenes that contain that GPS coordinate. The ATLAS stores a GPS location for each Scene along with a 3D bounding polygon. The GPS location is typically assigned to the origin of the Scene’s local coordinate system. A user can then query the ATLAS for assets that fall within each Scene. For example, a Scene might contain a number of April Tags (low bit-density tracking markers) that have GPS coordinates as well as local coordinates referenced from the Scene’s origin that can be used for relocalization. ATLAS supports a mixture of Scene, GPS and UUID lookups to help find content.
 
-It is worth noting that a Scene’s address can be used to form a URL for virtual environments that have no physical location without the need for ATLAS.   
+It is worth noting that a Scene’s address can be used to form a URL for virtual environments that have no physical location without the need for ATLAS.
 
 ### Runtime Management (ARTS)
 

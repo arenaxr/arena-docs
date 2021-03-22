@@ -152,11 +152,11 @@ Up until now, everything you have created has been non-persistent. That is, obje
 
 Go back to the previous python code and try to add `persist=True` to the duck object:
 ```
-obj = Model(object_id="duck_1",      
+obj = Model(object_id="duck_1",
             position=(-1, 1, -3),
             url="models/Duck.glb"
             persit=True)
-```          
+```
 
 If you run the program again, you will notice that the duck remains in the scene, even across a refresh.
 

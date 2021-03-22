@@ -37,4 +37,4 @@ To upload a Python or WASM program to the ARENA, follow the same steps as upload
 
 ## Additional Notes
 
-Keep in mind the locations of your files, as you will need to know them when trying to add them to the ARENA using [the build page](build).
+Keep in mind the locations of your files, as you will need to know them when trying to add them to the ARENA using [the build page](../overview/build).

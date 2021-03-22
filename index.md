@@ -25,7 +25,7 @@ ARENA simplifies a number of common development tasks for multi-user cross-platf
 Seamless support for a spectrum of experiences, from completely immersing the user in a digital world (Virtual Reality) to enhancing the real world with interactive digital content (Augmented Reality). A spectrum currently identified as miXed Reality (XR).
 
 ### Multi-platform
-Host 3D applications that users can interact with from a number of platforms including tablets, phones, headsets and desktop browsers.  
+Host 3D applications that users can interact with from a number of platforms including tablets, phones, headsets and desktop browsers.
 
 ### Geographic content lookup
 Perform geographic queries for content, assets (such as location markers) and compute resources.
@@ -34,10 +34,10 @@ Perform geographic queries for content, assets (such as location markers) and co
 Built-in support for a number of different types of systems (such as UWB, OptiTrack, AprilTags).
 
 ### Multiuser Experience
-Users in the physical space can see the same 3D content anchored to the physical world in AR, and properties of all objects (and state of users) are networked to provide a consistent real-time view from any device or platform.  
+Users in the physical space can see the same 3D content anchored to the physical world in AR, and properties of all objects (and state of users) are networked to provide a consistent real-time view from any device or platform.
 
 ### User Applications
-Runtime environment that can host any number of user programs on any network connected device.  
+Runtime environment that can host any number of user programs on any network connected device.
 
 ### Security
 Fine-grained access control allowing users to share and manage control over content, with user applications hosted by a sandboxed environment.
