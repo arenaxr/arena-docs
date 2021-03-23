@@ -14,6 +14,15 @@ parent: Users & Security
 ## User database
 
 ## User Roles
+- **admin**: Admin user, local username/password authenticated
+- **staff**: Elevated/Admin Oauth authenticated user
+- **user**: Regular Oauth authenticated user
+- **anon**: Unauthenticated user
+
+## Scene Permissions
+- **public_write**: Open permission to subscribe to the entire scene (default: True).
+- **public_read**: Open permission to publish to the entire scene (default: False).
+- **editors**: List of usernames namespace owner has added as editor (default: None).
 
 ## Authentication
 
@@ -28,6 +37,8 @@ This means that ACL scenes can only be stored in the user database, since the sc
 ## User IDs
 
 ARENA visitors are uniquely identified by their camera name, which is also their user name. As all 3D objects in the ARENA are identified by names, camera IDs have 3 underscore separated components, e.g: `camera_1234_er1k`. The last part is what appears above your head (representation in the 3D view), the middle part is a unique ID. If you want to override the random unique ID, you can specify on the URL parameter e.g. `&fixedCamera=er1k` which will ignore the `&name=` and so `er1k` will appear above your head and the camera ID will be `camera_er1k_er1k`.
+
+If you want to change this, it is available in the scene addressable by an object_id based on your (camera) name, e.g `head-model_camera_1234_er1k` or if you set your name manually in the URL parameter `&fixedCamera=name` as `head-model_camera_name_name`. You can also change the text above your head, which defaults to the last part of your automatically assigned or fixedCamera name (after the underscore). So by default it would appear as `er1k` in the examples above, but can be modified by MQTT message addressed to object_id `head-text_camera_er1k_er1k`.
 
 ## User database access
 
