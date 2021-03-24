@@ -130,33 +130,33 @@ The asterisk means "play all animations", and works better in some situations, w
 
 ## Relocalize Camera Rig
 
-Move the camera rig (parent object of the camera) with ID camera_1234_er1k to a new coordinate (system). Values are x, y, z, (meters) x, y, z, w (quaternions).
+Move the camera rig (parent object of the camera) with ID camera_1234567890_er1k to a new coordinate (system). Values are x, y, z, (meters) x, y, z, w (quaternions).
 
 ```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/public/example/camera_1234_er1k -m '{"object_id": "camera_1234_er1k", "action": "update", "type": "rig", "data": {"position": {"x": 1, "y": 1, "z": 1}, "rotation": {"x": 0.1, "y": 0, "z": 0, "w": 1} }}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/public/example/camera_1234567890_er1k -m '{"object_id": "camera_1234567890_er1k", "action": "update", "type": "rig", "data": {"position": {"x": 1, "y": 1, "z": 1}, "rotation": {"x": 0.1, "y": 0, "z": 0, "w": 1} }}'
 ```
 
-This assumes we know our camera ID was assigned as `1234`. One way to find out your camera ID is, automatically assigned ones get printed on web browsers' Developer Tools Console in a message like `my-camera name camera_1329_X`. That might not be easily knowable without snooping MQTT messages, so the `&fixedCamera=er1k` URL parameter lets us choose manually the unique ID. If used in the URL, the `&name=` parameter is ignored, and the derived camera/user ID is based on fixedCamera, so would be in this case `camera_er1k_er1k`
+This assumes we know our camera ID was assigned as `1234567890`. One way to find out your camera ID is, automatically assigned ones get printed on web browsers' Developer Tools Console in a message like `my-camera name camera_1234567890_X`. That might not be easily knowable without snooping MQTT messages, so the `&fixedCamera=er1k` URL parameter lets us choose manually the unique ID. If used in the URL, the `&name=` parameter is ignored, and the derived camera/user ID is based on fixedCamera, so would be in this case `camera_er1k_er1k`
 
 ## Move Camera
 
-Move the camera with ID ```camera_1234_er1k``` to a new position. Values are x, y, z, (meters) x, y, z, w (quaternions). Action must be ```update```.
+Move the camera with ID `camera_1234567890_er1k` to a new position. Values are x, y, z, (meters) x, y, z, w (quaternions). Action must be `update`.
 
 ```json
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/public/example/camera_1234_er1k -m '{"object_id":"camera_1234_er1k","action":"update","type":"camera-override","data":{"object_type":"camera","position":{"x":1.692,"y":1.6,"z":4.371},"rotation":{"x":0.003,"y":-0.003,"z":0,"w":1}}}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/public/example/camera_1234567890_er1k -m '{"object_id":"camera_1234567890_er1k","action":"update","type":"camera-override","data":{"object_type":"camera","position":{"x":1.692,"y":1.6,"z":4.371},"rotation":{"x":0.003,"y":-0.003,"z":0,"w":1}}}'
 ```
 
 This assumes we know our camera ID. One way to find out your camera ID is, automatically assigned ones get printed on web browsers' Developer Tools Console.
 
 ## Camera Look At
 
-Make the camera with ID ```camera_1234_er1k``` look at an object or coordinate. Target can be given as x, y, z coordinate object (e.g. ```{"x":1.692,"y":1.6,"z":4.371}```), or as a string with an object ID (e.g. ```"cone_587431"```).  Action must be ```update```.
+Make the camera with ID `camera_1234567890_er1k` look at an object or coordinate. Target can be given as x, y, z coordinate object (e.g. `{"x":1.692,"y":1.6,"z":4.371}`), or as a string with an object ID (e.g. `"cone_587431"`).  Action must be `update`.
 
 ```json
 
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/public/example/camera_1234_er1k -m '{"object_id":"camera_1234_er1k","action":"update","type":"camera-override","data":{"object_type":"look-at","target":"cone_587431"}}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/public/example/camera_1234567890_er1k -m '{"object_id":"camera_1234567890_er1k","action":"update","type":"camera-override","data":{"object_type":"look-at","target":"cone_587431"}}'
 
-mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/public/example/camera_1234_er1k -m '{"object_id":"camera_1234_er1k","action":"update","type":"camera-override","data":{"object_type":"look-at","target":{"x": 0.467, "y": 2.066, "z": -1.027}}}'
+mosquitto_pub -h arena.andrew.cmu.edu -t realm/s/public/example/camera_1234567890_er1k -m '{"object_id":"camera_1234567890_er1k","action":"update","type":"camera-override","data":{"object_type":"look-at","target":{"x": 0.467, "y": 2.066, "z": -1.027}}}'
 ```
 
 This assumes we know our camera ID. One way to find out your camera ID is, automatically assigned ones get printed on web browsers' Developer Tools Console.

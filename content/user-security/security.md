@@ -27,17 +27,19 @@ The root of trust for MQTT messages derives from the ACL permissions stored in t
 1. A user supplies their login credentials on the ARENA web client by visiting the web host in a browser or when launching a ARENA Python application.
 2. Login credentials are checked in the ARENA User database and a ACL-appropriate ARENA JWT (jwt1) is returned. The jwt1 will include a specific list of topics the user is allowed to **publish** and **subscribe** to.
 3. (Web only) A Jitsi server connection is established using jwt1 which includes authority for this scene as a meeting room.
-4. Any static graphical object data for the scene is loaded from the object persistance database if the jwt1 permits subscribing to this scene.
+4. Any static graphical object data for the scene is loaded from the object persistence database if the jwt1 permits subscribing to this scene.
 5. A MQTT broker connection is established with a subscription to messages for scene graphics updates, user text chat, and runtime management topics. Now the user can **publish** MQTT messages to change scene graphics, which is generally only permitted by the scene creator via jwt1.
-6. If MQTT messages for the scene requested to be [**persistent**]() and not **ephemeral** in the scene, the persistance database has **subscribed** to the MQTT broker with an all-scene subscription JWT (jwt2) so it may save those **published** message payloads.
+6. If MQTT messages for the scene requested to be [**persistent**](/content/tools/persistence) and not **ephemeral** in the scene, the persistence database has **subscribed** to the MQTT broker with an all-scene subscription JWT (jwt2) so it may save those **published** message payloads.
 7. The user is **subscribed** via MQTT to all graphical updates to the scene, user text chats, and app updates, creating a real-time 3d-experience for all.
-8. step
+8. Optionally, a user may add/delete scenes from the persistence database, requiring the appropriate topic level permission from jwt1.
 
 ## User IDs
 
-ARENA visitors are uniquely identified by their camera name, which is also their user name. As all 3D objects in the ARENA are identified by names, camera IDs have 3 underscore separated components, e.g: `camera_1234_er1k`. The last part is what appears above your head (representation in the 3D view), the middle part is a unique ID. If you want to override the random unique ID, you can specify on the URL parameter e.g. `&fixedCamera=er1k` which will ignore the `&name=` and so `er1k` will appear above your head and the camera ID will be `camera_er1k_er1k`.
+ARENA web visitors are uniquely identified by their camera object-id, which includes their username and a server-issued session-id.
 
-If you want to change this, it is available in the scene addressable by an object_id based on your (camera) name, e.g `head-model_camera_1234_er1k` or if you set your name manually in the URL parameter `&fixedCamera=name` as `head-model_camera_name_name`. You can also change the text above your head, which defaults to the last part of your automatically assigned or fixedCamera name (after the underscore). So by default it would appear as `er1k` in the examples above, but can be modified by MQTT message addressed to object_id `head-text_camera_er1k_er1k`.
+As all 3D objects in the ARENA are identified by names, camera IDs have 3 underscore separated components, e.g: `camera_1234567890_er1k`. The last part is what appears above your head (representation in the 3D view), the middle part is a unique ID. If you want to override the random unique ID, you can specify on the URL parameter e.g. `&fixedCamera=er1k` which will ignore the `&name=` and so `er1k` will appear above your head and the camera ID will be `camera_er1k_er1k`.
+
+If you want to change this, it is available in the scene addressable by an object_id based on your (camera) name, e.g `head-model_camera_1234567890_er1k` or if you set your name manually in the URL parameter `&fixedCamera=name` as `head-model_camera_name_name`. You can also change the text above your head, which defaults to the last part of your automatically assigned or fixedCamera name (after the underscore). So by default it would appear as `er1k` in the examples above, but can be modified by MQTT message addressed to object_id `head-text_camera_er1k_er1k`.
 
 ## Anonymous or Authenticated
 
@@ -68,6 +70,6 @@ The ARENA JWT is required to connect to the broker and the custom claims of the 
 
 The ARENA JWT is required to allow any client to publish video conferencing data to our Jitsi servers. The ARENA JWT includes fields denoting the Jitsi room representing the scene.
 
-## Persistance database access
+## Persistence database access
 
 The ARENA JWT is required to save any scene objects or other settings. The topic structure which allows permissions for push listing to a scene is used to determine if commands to delete a scene should succeed or fail. It is also used to determine if a user can publish commands to the mqtt bus and In turn any this the personage database is subscribed to.

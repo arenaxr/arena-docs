@@ -7,8 +7,6 @@ parent: Users & Security
 
 # ARENA User Presence
 
-{% include alert type="warning" title="warning" content="Writing in progress..." %}
-
 Users in the ARENA are represented to each other in a 3d scene with an avatar. Your default user avatar looks like a static 3d floating head model with your chosen display name above the head, and a muted microphone icon. Wherever you choose to move or look within a scene is where other users will see your avatar move or look.
 
 ## Audio/Video Setup
