@@ -41,11 +41,16 @@ ARENA visitors are uniquely identified by their camera name, which is also their
 If you want to change this, it is available in the scene addressable by an object_id based on your (camera) name, e.g `head-model_camera_1234_er1k` or if you set your name manually in the URL parameter `&fixedCamera=name` as `head-model_camera_name_name`. You can also change the text above your head, which defaults to the last part of your automatically assigned or fixedCamera name (after the underscore). So by default it would appear as `er1k` in the examples above, but can be modified by MQTT message addressed to object_id `head-text_camera_er1k_er1k`.
 
 ## User database access
+User database access is controlled by use of third party Oauth2 from Google at the moment. However. 
 
 ## Persistance database access
+The ARENA JWT is required to save any scene objects or other settings. The topic structure which allows permissions for push listing to a scene is used to determine if commands to delete a scene should succeed or fail. It is also used to determine if a user can publish commands to the mqtt bus and In turn any this the personage database is subscribed to.
 
 ## MQTT Broker access
+The ARENA JWT is required to connect to the broker and the custom claims of the JWT describe exactly which topics any user can publish or subscribe to. 
+
 
 ## Permissions granted per page
 
 ## Jitsi Server access
+The ARENA JWT is required to allow any client to publish video conferencing data to our Jitsi servers. The ARENA JWT includes fields denoting the Jitsi room representing the scene.
