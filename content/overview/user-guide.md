@@ -39,7 +39,7 @@ You can also choose to sign in anonymously; you'll have to enter a name to use i
 
 ### ARENA Username
 
-If you choose to login using your google account, you will be asked to signup and define your arena username:
+If you choose to login using your Google account, you will be asked to signup and define your arena username:
 
 <img src="/assets/img/overview/signup.png" width="500"/>
 
@@ -47,7 +47,7 @@ This will create a namespace under which you can have your own scenes. For examp
 
 ## Permissions
 
-You'll be asked to give location, microphone, and camera access to the ARENA site. If you do not select "yes", you won't be able to use voice, video, or the face tracking avatar.
+You'll be asked to give location, microphone, and camera access to the ARENA site. If you do not select "yes", you won't be able to connect to the scene location [ATLAS](/content/tools/atlas), use voice, video, or the face tracking avatar.
 
 ![](../../assets/img/overview/userguide/a3.png)
 
