@@ -7,14 +7,16 @@ parent: Users & Security
 
 # ARENA User Account Options
 
+{% include alert type="warning" title="warning" content="Writing in progress..." %}
+
 ## User Profile
 Each authenticated user has a profile page to manage their user account options.
 Your profile page will show you a list of scenes that you have rights to edit.
 
 ## Scene Permissions, defaults
-Each scene has a number of default options to manage security and access to the scene. 
+Each scene has a number of default options to manage security and access to the scene.
 Each scene you create will be published under your user namespace with the following rights.
-- public Read: enabled 
+- public Read: enabled
 - public write: disabled
 - allow anonymous: enabled
 

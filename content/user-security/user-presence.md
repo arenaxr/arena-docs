@@ -7,6 +7,8 @@ parent: Users & Security
 
 # ARENA User Presence
 
+{% include alert type="warning" title="warning" content="Writing in progress..." %}
+
 Users in the ARENA are represented to each other in a 3d scene with an avatar. Your default user avatar looks like a static 3d floating head model with your chosen display name above the head, and a muted microphone icon. Wherever you choose to move or look within a scene is where other users will see your avatar move or look.
 
 ## Audio/Video Setup
@@ -93,7 +95,7 @@ We've noticed the controllers don't show up in the scene unless they both **and 
 
 By default we use A-Frame `laser-controls` which default to showing Valve Index controller 3D models (gray, circular), even if we are using (equivalent) Vive controllers (black, paddle shaped, not included in the list of controllers known to A-Frame).
 
-## Camera
+## Camera Perspective
 
 (from [A-Frame documentation](https://aframe.io/docs/1.0.0/components/camera.html))
 
