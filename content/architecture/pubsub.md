@@ -9,7 +9,7 @@ parent: Architecture
 
 The ARENA's MQTT topics are organized with a design toward security to create a list of permissable channels for users to publish and subscribe to. The topics are written into an [ARENA JWT](/content/user-security/security) each user will request when launching an ARENA web client in a browser or an ARENA Python client application.
 
-A few example topics are include below for context, as well as a list of topic elements used, and which topics are added to the ARENA JWT based upon user and system defined access control list (ACL) settings.
+A few example topics are included below for context, as well as a list of topic elements used, and which topics are added to the ARENA JWT based upon user and system defined access control list (ACL) settings.
 
 ## Example Topics
 
@@ -43,7 +43,7 @@ Runtime Stdout
 : Storage area for **general use**
 
 `o`
-: Storage area for public or **open user to user** payload topics
+: Storage area for public or **open user** payload topics
 
 `s`
 : Storage area for **scene graphic objects**
@@ -84,7 +84,7 @@ Runtime Stdout
 `{username}`
 : the ARENA account username for the user
 
-- \*Names in `{}` are dynamic
+\*Names in `{}` are dynamic
 
 ## Scene Allowed
 
