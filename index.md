@@ -52,7 +52,7 @@ Get started by following our [ARENA Overview](/content/overview) to learn the ma
 
 <br/>
 Then, you can learn the basics of the interface and [enter an ARENA scene](/content/overview/user-guide.html). Also learn about [building scenes](/content/overview/build.html), and how to develop [python programs](/content/overview/dev-guide.html) to define the behavior of your scenes.
-[//]: # You can also go for a [system architecture]() deep dive.
+
 
 [ <img src="/assets/img/icons/first-time.svg" width="40"/> <br/>First Time in the ARENA ](/content/overview/user-guide.html){: .btn .mr-4 .intro-button}
 [ <img src="/assets/img/icons/scene.svg" width="40"/> <br/>Build a Scene ](/content/overview/build.html){: .btn .mr-4 .intro-button}
