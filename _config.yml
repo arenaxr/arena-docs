@@ -25,7 +25,7 @@ aux_links:
     - "https://conix.io/arena"
   "Our GitHub":
     - "https://github.com/conix-center/"
-footer_content: "Copyright &copy; 2020, CONIX Research Center"
+footer_content: "Copyright &copy; 2020-2021, CONIX Research Center"
 
 # Build settings
 markdown: kramdown
