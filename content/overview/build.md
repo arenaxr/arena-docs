@@ -78,7 +78,7 @@ A `scene options` object allows to set options for a [preset environment in the 
 
 <img src="/assets/img/overview/build/scene-options-obj.png" width="500"/>
 
-The checkboxes allow to hide/show those sub-sections (in reality, these are objects themselves) of the top-level object (`scene options`). Notice that each sub-section has its own <button type="button" name="button" class="btn fs-3">Properties</button> button. For example, the environment presets:
+The checkboxes allow to hide/show those sub-sections (in reality, these are objects themselves) of the top-level object (`scene options`). Notice that each sub-section has it's own <button type="button" name="button" class="btn fs-3">Properties</button> button. For example, the environment presets:
 
 <img src="/assets/img/overview/build/env-presets.png" width="500"/>
 

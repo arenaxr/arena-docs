@@ -22,7 +22,7 @@ User 3D Object
 Chat Message
 : `realm/c/er1k/p/1234567890_er1k/MTIzNDU2Nzg5MF9lcjFr`
 
-Apriltag Detection
+AprilTag Detection
 : `realm/g/a/camera_1234567890_er1k`
 
 VIO Update
@@ -34,7 +34,7 @@ Runtime Stdout
 ## Topic Elements
 
 `a`
-: Storage area for **apriltag detection** data
+: Storage area for **AprilTag detection** data
 
 `c`
 : Storage area for user text **chat messages**
@@ -61,28 +61,28 @@ Runtime Stdout
 : Storage area for **network performance** metrics
 
 `{namespace}`
-: namespace for a particular user within the scene
+: Namespace for a particular user within the scene
 
 `{object-id}`
-: a-frame object name; object topic should receive mostly a-frame content
+: A-Frame object name; object topic should receive mostly A-Frame content
 
 `{realm}`
-: future use; a namespace we expect to be useful for peer mqtt brokers; probably geographic-based
+: Future use; a namespace we expect to be useful for peer MQTT brokers; probably geographic-based
 
 `{process-id}`
-: namespace for a particular application within the scene
+: Namespace for a particular application within the scene
 
 `{session-id}`
-: A server generated id to establish a unique user connection
+: A server-generated ID to establish a unique user connection
 
 `{scene-id}`
-: name of particular scene, could be captured from the atlas
+: Name of particular scene, could be captured from the ATLAS
 
 `{userhandle}`
-: appended to control origin of the chat messages: `b64encode('{session-id}_{username}')`
+: Appended to control origin of the chat messages: `b64encode('{session-id}_{username}')`
 
 `{username}`
-: the ARENA account username for the user
+: The ARENA account username for the user
 
 \*Names in `{}` are dynamic
 
@@ -114,26 +114,26 @@ Runtime Stdout
 
 - User-presence objects: scene owners have rights to their scene objects only.
 - **Subscribe**: `public_read`=True
-- **Publish**: specific Anonymous/User, issued id and username from authentication service.
+- **Publish**: specific Anonymous/User, issued ID and username from authentication service.
 
-{% include alert type="note" title="Note" content="Since anonymous usernames are not authenticated, there is a risk of spoofing their user-presence, and as such, all users are issues a session-id for their camera objects to prevent this." %}
+{% include alert type="note" title="Note" content="Since anonymous usernames are not authenticated, there is a risk of spoofing their user-presence, and as such, all users are issued a `session-id` for their camera objects to prevent this." %}
 
 ## Sensor Allowed
 
 ### `{realm}/g/a/#`
 
-- All apriltag sensors
+- All AprilTag sensors
 - **Subscribe**: Staff, User, Anonymous
 - **Publish**: Staff, User, Anonymous
 
 ### `{realm}/vio/{namespace}/{scene-id}/#`
 
-- VIO or test cameras to student experiments
+- VIO or test cameras for student experiments
 - **Publish**: Staff
 
 ## Chat Allowed
 
-A user handle is appended to control origin of the chat messages in the topic and payload to prevent spoofing. Where `userhandle = b64encode({session-id}\_{username})`.
+A user handle is appended to control the origin of the chat messages in the topic and payload to prevent spoofing. Where `userhandle = b64encode({session-id}\_{username})`.
 
 ### `{realm}/c/{namespace}/p/{session-id}_{username}/#`
 

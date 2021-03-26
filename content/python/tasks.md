@@ -68,7 +68,7 @@ scene.run_async(f, 1000)
 
 ## Sharing global variables
 Like with threads, global variables in ARENA-py must be used with the "global" keyword.
-Note: If global variables are pointing to something allocated in memory (like a class or list), "global" may not be needed, but its always best to use "global" just to be safe.
+Note: If global variables are pointing to something allocated in memory (like a class or list), "global" may not be needed, but it's always best to use "global" just to be safe.
 
 ```python
 x = 0

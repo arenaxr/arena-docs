@@ -45,7 +45,7 @@ Disabling public read will prevent all other users from viewing your scene: exce
 
 This is disabled by default, preventing all other users from altering your scene: except those who have the **Admin** or **Staff** roles, and those users you whitelist as **Editor** in the scene.
 
-{% include alert type="warning" title="Warning" content="Enabling this denotes that all users may write to the scene and create change or delete content." %}
+{% include alert type="warning" title="Warning" content="Enabling this denotes that all users may write to the scene and create, change, or delete content." %}
 
 ### Allow Anonymous
 
@@ -61,11 +61,11 @@ By default, scenes published under the `public` namespace are always considered 
 
 ## ACL Default For New Users
 
-Our approach is we want all users to have the ability to view and move in scenes easily. For this, we use a default viewer closed model:
+We want all users to have the ability to view and move in scenes easily. For this, we use a default Viewer-Closed model:
 
-- User gets read access to all.
-- User gets write access to personal objects (camera, hand controllers, avatar) only.
-- User must apply for writing other scene objects through the ACL website, awaiting scene owner's permission.
+- A user gets read access to all.
+- A user gets write access to personal objects (camera, hand controllers, avatar) only.
+- A user must apply for write access for other scene objects through the ACL website, awaiting scene owner's permission.
 
 ## Administrator Functions
 

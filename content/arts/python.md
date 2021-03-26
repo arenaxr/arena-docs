@@ -27,7 +27,7 @@ How to launch a program (e.g. **boxes/boxes.py**) in a [file store](https://aren
 
 1\. Edit Scene: [https://arena.andrew.cmu.edu/build/](https://arena.andrew.cmu.edu/build/)
 
-2\. Make sure the arena and mqtt host are **https://arena.andrew.cmu.edu/** and **arena.andrew.cmu.edu:8083**:
+2\. Make sure the ARENA and MQTT host are **https://arena.andrew.cmu.edu/** and **arena.andrew.cmu.edu:8083**:
 
 ![](../../assets/img/arts-program/image4.png){:width="300px"}
 
@@ -40,18 +40,18 @@ How to launch a program (e.g. **boxes/boxes.py**) in a [file store](https://aren
 4\. Add a program. By selecting type “program” in the Add/Edit Object select:
 ![](../../assets/img/arts-program/image7.png){:width="200px"}
 
-5\. Edit the program attributes. Make sure to assign a unique object id (use ![](../../assets/img/arts-program/image8.png){:width="100px"}), and:
+5\. Edit the program attributes. Make sure to assign a unique object ID (use ![](../../assets/img/arts-program/image8.png){:width="100px"}), and:
 
 - **action** is “create”,
 - **type** is “program” and
-- **name** is in the form **<username in the arena store>/<folder in the arena store>** (e.g. **wiselab/boxes** for a program under folder **boxes** of the home folder for user **wiselab** in the arena store)
+- **name** is in the form **<username in the arena store>/<folder in the ARENA store>** (e.g. **wiselab/boxes** for a program under folder **boxes** of the home folder for user **wiselab** in the ARENA store)
 - **instantiate** indicates if a program instance is started for each viewer (browser) or single instance per scene
 - **filename** is the program entry file (e.g. boxes.py)
 - **filetype** is either Python or wasm, depending on your program
 - Add environment variables and arguments as needed by the program (for example, the program might read environment variable SCENE to know its scene, then add an environment variable: SCENE=${scene}, where ${scene} will be replaced by the scene name)
 
 {% include alert type="tip" title="note" content="
-By convention, we pass programs environment variables that indicate the scene, realm and mqtt host. These are reflected in the default values of the form.
+By convention, we pass programs environment variables that indicate the scene, realm and MQTT host. These are reflected in the default values of the form.
 "%}
 
 ![](../../assets/img/arts-program/image6.png){:width="80%"}

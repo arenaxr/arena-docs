@@ -15,12 +15,12 @@ The ARENA can use [Apriltags](https://april.eecs.umich.edu/software/apriltag) to
 
 {% include alert type="warning" title="Soon" content="Image clarifying coordinate system..." %}
 
-## Using Apriltag with ID 0 as a reference to the scene origin
+## Using AprilTag with ID 0 as a reference to the scene origin
 
-We have a few requirements for the Apriltag relocalization to work. Please print an Apriltag with the correct ID (0) and size, and also make sure you are using an [ARKit-capable](https://www.apple.com/augmented-reality/) device with XRViewer properly configured. We are working on support for other devices, including Android. We detail these requirements next.
+We have a few requirements for the AprilTag relocalization to work. Please print an AprilTag with the correct ID (0) and size, and also make sure you are using an [ARKit-capable](https://www.apple.com/augmented-reality/) device with XRViewer properly configured. We are working on support for other devices, including Android. We detail these requirements next.
 
-### Apriltag size
-Apriltags used for relocalization in the ARENA must have a well-known size as the ARENA pose solver assumes the tag size from tag id, as shown in the table.
+### AprilTag size
+Apriltags used for relocalization in the ARENA must have a well-known size as the ARENA pose solver assumes the tag size from tag ID, as shown in the table.
 
 | Tag ID Range | Tag Size (mm) |
 | ------------ | ------------- |
@@ -34,7 +34,7 @@ You can find PDF files using the correct size in [this repository](https://githu
 ![img](../../assets/img/localization/apriltag-0.png)
 
 ### WebXRViewer
-The Apriltag detection requires that the browser supports computer vision while in AR mode using [WebXR](https://immersiveweb.dev/). Currently, the only browser with such support is the experimental browser from Mozilla [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056).
+The AprilTag detection requires that the browser supports computer vision while in AR mode using [WebXR](https://immersiveweb.dev/). Currently, the only browser with such support is the experimental browser from Mozilla [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056).
 
 After installing WebXRViewer, go to 'Settings -> XRViewer' and change:
 
@@ -46,6 +46,6 @@ After installing WebXRViewer, go to 'Settings -> XRViewer' and change:
 
 ### Use the device in portrait orientation
 
-The ARENA localization solver assumes that the device is in portrait orientation, and **we recommend locking the device to portrait orientation**. The picture below shows a scene with a blue box at the origin; while not visible, the blue box is overlayed on an Apriltag with ID 0.
+The ARENA localization solver assumes that the device is in portrait orientation, and **we recommend locking the device to portrait orientation**. The picture below shows a scene with a blue box at the origin; while not visible, the blue box is overlayed on an AprilTag with ID 0.
 
 ![img](../../assets/img/localization/portrait.png)

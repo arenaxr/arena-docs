@@ -20,7 +20,7 @@ Upon entering a scene you will see a panel for audio and video setup. Here you c
 ## User Display Name
 
 ![](../../assets/img/icons/more.png){:height="32px" width="32px"}
-The display name you choose, will be displayed in random colored text above your user avatar. In an ARENA Scene, you can change your display text by clicking the last right-hand arrow icon to show the `Settings` panel, which provides a `Display Name` input box you can change to what you wish.
+The display name you choose, will be displayed in random colored text above your user avatar. In an ARENA Scene, you can change your display text by clicking the last right-hand arrow "V" icon to show the `Settings` panel, which provides a `Display Name` input box you can change to what you wish.
 
 <!-- TODO: image display name setting -->
 
@@ -77,19 +77,19 @@ Your ARENA scene may have the capability to use facial recognition to recognize 
 ## Screen Sharing
 
 ![](../../assets/img/icons/screen-on.png){:height="32px" width="32px"}
-When you click and accept the screenshare icon and popup, it will ask for the object name/id of the object you want to screen share on (defaulted to an object with object_id: `screenshare`, which is dynamically created if it doesn't exist already).
+When you click and accept the screenshare icon and popup, it will ask for the object name/ID of the object you want to screen share on (defaulted to an object with `object_id`: `screenshare`, which is dynamically created if it doesn't exist already).
 
-- If you choose the name/id of an already existing object in a scene, it will set the texture of that existing object to be your screen.
-- If you choose an object that does not exist in a scene, it will spawn a new screen sharing plane with your chosen object_id. This object is not sent through MQTT bus but is still created for all clients.
-- Once you have selected your object name, it will open a new tab that allows you to choose which screen you want to share, and ARENA will automatically place that screen onto the object with an object_id you specified.
-- You can do whatever you want the object you’re screen sharing on as if it were a normal arena object (change size, shape, attach children, etc). This also applies to the object `screenshare`; its just a standard ARENA object with object_id: `screenshare`!
+- If you choose the name/ID of an already existing object in a scene, it will set the texture of that existing object to be your screen.
+- If you choose an object that does not exist in a scene, it will spawn a new screen sharing plane with your chosen `object_id`. This object is not sent through the MQTT bus but is still created for all clients.
+- Once you have selected your object name, it will open a new tab that allows you to choose which screen you want to share, and ARENA will automatically place that screen onto the object with an `object_id` you specified.
+- You can do whatever you want the object you’re screen sharing on as if it were a normal arena object (change size, shape, attach children, etc). This also applies to the object `screenshare`; it's just a standard ARENA object with `object_id`: `screenshare`!
 - When an object is dynamically created with the screen share button, it won't go away after you stop screen sharing. It will only go away if you refresh the page.
 
 ## Vive (laser) controls
 
 {% include alert type="danger" title="Out of Date" content="We have some support for VR Vive hand controls in the ARENA, but these instructions may be out of date." %}
 
-We've noticed the controllers don't show up in the scene unless they both **and EVERYTHING else for SteamVR** are all working (headset, lighthouses). And sometimes you have to restart SteamVR for hand controllers to show up in the scene; even though SteamVR shows them as being working/on/available/etc., it's possible to open VR mode in an Arena scene and be missing the hand controls.
+We've noticed the controllers don't show up in the scene unless they both **and EVERYTHING else for SteamVR** are all working (headset, lighthouses). And sometimes you have to restart SteamVR for hand controllers to show up in the scene; even though SteamVR shows them as being working/on/available/etc. It's possible to open VR mode in an ARENA scene and be missing the hand controls.
 
 By default we use A-Frame `laser-controls` which default to showing Valve Index controller 3D models (gray, circular), even if we are using (equivalent) Vive controllers (black, paddle shaped, not included in the list of controllers known to A-Frame).
 
@@ -105,7 +105,7 @@ By default we use A-Frame `laser-controls` which default to showing Valve Index 
 <a-entity camera look-controls position="0 1.6 0"></a-entity>
 ```
 
-The above example puts the camera at a position in the scene, but sure enough, when we use a tablet + WebXRViewer or a VR or AR headset, these values are overwritten. IN FACT it turns out that from a desktop browser, at the start of our A-Frame session, regardless of the values set in the HTML above, the start position is set to (0, 1.6, 0). It was misleading that the HTML definition just happened to match. Our code sets it to (0,0,0) in the declaration. It gets more interesting: on a tablet or phone, the start position again gets overridden **by (0,0,0) this time!**
+The above example puts the camera at a position in the scene, but sure enough, when we use a tablet with WebXRViewer or a VR or AR headset, these values are overwritten. **In fact**, it turns out that from a desktop browser, at the start of our A-Frame session, regardless of the values set in the HTML above, the start position is set to (0, 1.6, 0). It was misleading that the HTML definition just happened to match. Our code sets it to (0,0,0) in the declaration. It gets more interesting: on a tablet or phone, the start position again gets overridden **by (0,0,0) this time!**
 
 | When moving or rotating the camera relative to the scene, use a camera rig. By doing so, the camera’s height offset can be updated by room-scale devices, while still allowing the tracked area to be moved independently around the scene.
 

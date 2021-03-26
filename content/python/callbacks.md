@@ -5,7 +5,7 @@ layout: default
 parent: Python Library
 ---
 
-# Arena Library Scene Callbacks
+# ARENA Library Scene Callbacks
 
 Library supported callback functions.
 

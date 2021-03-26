@@ -375,7 +375,7 @@ Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-sc
 |property|support|type|description
 |--|--|--
 | active | *A* | `boolean` | Show/hides the environment presets component. Use this instead of using the visible attribute. (*default: true*, **required**)
-| preset | *A* | `string` | `none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, arches, threetowers, poison, tron, japan, dream, volcano, starry, osiris`; An A-frame preset environment. (*default: "default"*, **required**)
+| preset | *A* | `string` | `none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, arches, threetowers, poison, tron, japan, dream, volcano, starry, osiris`; An A-Frame preset environment. (*default: "default"*, **required**)
 | seed | *A* | `number` | Seed for randomization. If you don't like the layout of the elements, try another value for the seed. (*default: 1*)
 | skyType | *A* | `string` | `none, color, gradient, atmosphere`; a sky type. (*default: "color"*)
 | skyColor | *A* | `string` | Sky color. (*default: "#ffa500"*)

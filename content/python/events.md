@@ -48,7 +48,7 @@ scene.generate_click_event(
     obj,
     type="mouseup"
 )
-# ARENA-py will "click" obj with mouseup. In JSON, "source" will be defined as "arena_lib_[some random id here]".
+# ARENA-py will "click" obj with mouseup. In JSON, "source" will be defined as "arena_lib_[some random ID here]".
 ```
 
 ### Camera Manipulation Events

@@ -1,5 +1,5 @@
 ---
-title: A-frame
+title: A-Frame
 nav_order: 5
 layout: default
 parent: Developers
@@ -12,7 +12,7 @@ parent: Developers
 
 ## Adding Arbitrary A-Frame to the ARENA
 
-The `data` payload we send in MQTT messages is _both_ a part of A-Frame and used especially by the ARENA. When the ARENA generates an A-frame `<a-entity>` we parse known ARENA-specific parts of the payload first, then what remains goes into attributes.
+The `data` payload we send in MQTT messages is _both_ a part of A-Frame and used especially by the ARENA. When the ARENA generates an A-Frame `<a-entity>` we parse known ARENA-specific parts of the payload first, then what remains goes into attributes.
 
 In ARENA-core `mqtt.js` ~line 984:
 

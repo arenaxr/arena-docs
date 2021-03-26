@@ -44,7 +44,7 @@ ATLAS is to ARENA as DNS is to the Internet
 **Uncaptured** points with the ATLAS-DNS analogy:
 
 - DNS adds 1 layer of abstraction for usability (textual domain name mapped to IP address)
-- However, ATLAS is probably going to do much more than a simple 1-to-1 mapping (talk of generating id's, even just performing geospatial calculations to find MQTT servers within _n_ miles is astronomically more compute than DNS)
+- However, ATLAS is probably going to do much more than a simple 1-to-1 mapping (talk of generating ID's, even just performing geospatial calculations to find MQTT servers within _n_ miles is astronomically more compute than DNS)
 
 ## Design Decisions
 
