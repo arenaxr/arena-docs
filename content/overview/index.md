@@ -24,16 +24,16 @@ Below is an overview of the ARENA architecture that we will describe. We will st
 
 ### Edge Devices
 
-We distinguish two main types of devices at the edge: (i) <b>viewer devices</b> and (ii) and <b>other (headless) devices</b>.
+We distinguish two main types of devices at the edge: (i) <b>viewer devices</b> and (ii) and <b>other (headless) devices</b>. All types of devices in an ARENA realm  execute a WebAssembly (WASM) common runtime. Viewer devices leverage the browser infrastructure to run WASM programs, whereas other compute elements run a standalone WASM runtime. Our common runtime accepts requests to execute programs, provides sanboxed execution with access to (sanboxed) networked resources and manages the WASM programs lifetime (see [Runtime Management (ARTS)](#runtime-management-arts)).
 
 #### Viewer (Edge) devices
 
-Devices with capability to display content to a user (phones, tablets, AR/VR headsets) are assumed to run a WebXR-capable browser that and runs a web application application-based stack as detailed below. This is an important aspect of our architecture to support very different platforms and interaction modalities.
+Devices with capability to display content to a user (phones, tablets, AR/VR headsets) are assumed to run a WebXR-capable browser that and runs a web application application-based stack as detailed below. This is an important aspect of our architecture to support very different platforms and interaction modalities. 
 
 <img src="/assets/img/overview/browser-stack.png" width="500"/>
 
 #### (Non-Viewer) Edge Devices
-Non-viewer devices are assumed to be capable of executing sandboxed ARENA programs (more details XXXXX).
+Non-viewer devices are devices with no display capabilities, but capable of runnning ARENA programs by supporting a common runtime.
 
 ### ARENA Realm
 
@@ -67,7 +67,7 @@ It is worth noting that a Scene’s address can be used to form a URL for virtua
 
 Execution of applications in a Scene is managed by a local resource manager (ARTS) that is also part of the Realm. ARTS is responsible for dispatching, monitoring and migrating for execution of programs to available runtimes.
 
-In the future, we imagine ARTS will intelligently respond to available networking and compute resources, quality-of-service, and security policies. Currently, ARENA applications are compiled into WebAssembly. WebAssembly is an open standard that defines a portable binary-code format for executable programs similar to Assembly code, but currently supported by all major web browsers.  WebAssembly is gaining traction outside of the browser as a lightweight, safe and secure option for serverless style computing with applications that need to retain state. There are compilers for many languages that target WebAssembly platforms including C, C++, Rust, Go and even Python interpreters. Within ARENA, we provide a WebAssembly runtime hosted in any connected browser device that can support safely running arbitrary code launched from any other connected target. We have stand-alone runtimes for Linux-capable devices and can even dispatch Ahead-of-Time (AOT) compiled WebAssembly to microcontrollers. ARENA applications can span cloud, edge and device platforms in a totally network transparent manner with support for live migration (i.e. context swap across devices). This provides a powerful basis for extremely agile programs that operate in the dynamic distributed computing contexts we imagine in the future Spatial Web.
+In the future, we imagine ARTS will intelligently respond to available networking and compute resources, quality-of-service, and security policies. Currently, ARENA applications are compiled into WASM. WASM is an open standard that defines a portable binary-code format for executable programs similar to Assembly code, but currently supported by all major web browsers. WASM is gaining traction outside of the browser as a lightweight, safe and secure option for serverless style computing with applications that need to retain state. There are compilers for many languages that target WASM platforms including C, C++, Rust, Go and even Python interpreters. Within ARENA, we provide a WASM runtime hosted in any connected browser device that can support safely running arbitrary code launched from any other connected target. We have stand-alone runtimes for Linux-capable devices and can even dispatch Ahead-of-Time (AOT) compiled WASM to microcontrollers. ARENA applications can span cloud, edge and device platforms in a totally network transparent manner with support for live migration (i.e. context swap across devices). This provides a powerful basis for extremely agile programs that operate in the dynamic distributed computing contexts we imagine in the future Spatial Web.
 
 # Next Steps
 You can learn the basics of the interface and [enter an ARENA scene](/content/overview/user-guide.html). Also learn about [building scenes](/content/overview/build.html), and how to develop [python programs](/content/overview/dev-guide.html) to define the behavior of your scenes.
