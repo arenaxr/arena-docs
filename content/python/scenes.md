@@ -25,8 +25,6 @@ scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
 
 `namespace`: ARENA namespace. Default value is ARENA username.
 
-`network_loop_interval`: Interval (in ms) to run/throttle a scene's MQTT client loop. Default value is 10 (10 ms).
-
 `debug`: If True, print authentication debug information and every published message. Ignore this parameter.
 
 `network_latency_interval`: Interval (in ms) to run network graph latency update. Default value is 10000 (10 secs). Ignore this parameter.
@@ -35,10 +33,18 @@ scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
 See [Scene Callbacks](callbacks.md).
 
 ## Access to Persisted Objects
-To get access to objects in the persist database, you can use `get_persisted_obj`.
+To get access to Objects in the persist database, you can use `get_persisted_obj`.
 ```python
 @scene.run_once
 def main():
     obj = scene.get_persisted_obj(object_id)
-    print(obj) # obj will be an object in persist with persist=True
+    print(obj) # obj should be an object in persist with persist=True
+```
+
+You can also just do:
+```python
+@scene.run_once
+def main():
+    obj = scene.all_objects(object_id)
+    print(obj) # obj should be an object in persist with persist=True
 ```
