@@ -11,7 +11,7 @@ parent: Localization & Tracking
   <iframe width="560" height="315" src="https://www.youtube.com/embed/rU6E3LHg0aQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
-The ARENA can use [Apriltags](https://april.eecs.umich.edu/software/apriltag) to relocalize the device. To perform relocalization, the ARENA solver must know the pose of the tag detected, and thus tags must be registered in [ATLAS](https://arena.conix.io/content/tools/atlas.html). The exception are tags with ID 0, which are assumed to mark the origin: 0, 0, 0 (x, y, z), which we detail next.
+The ARENA can use [Apriltags](https://april.eecs.umich.edu/software/apriltag) to relocalize the device. To perform relocalization, the ARENA solver must know the pose of the tag detected, and thus tags must be registered in [ATLAS](/content/tools/atlas.html). The exception are tags with ID 0, which are assumed to mark the origin: 0, 0, 0 (x, y, z), which we detail next.
 
 {% include alert type="warning" title="Soon" content="Image clarifying coordinate system..." %}
 
