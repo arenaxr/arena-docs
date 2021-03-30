@@ -21,7 +21,7 @@ The <u>A</u>ugmented <u>R</u>eality <u>E</u>dge <u>N</u>etwork <u>A</u>rchitectu
 
 ARENA simplifies a number of common development tasks for multi-user cross-platform mixed reality programming as follows.
 
-### AR, VR, MR
+### AR, VR, XR
 Seamless support for a spectrum of experiences, from completely immersing the user in a digital world (Virtual Reality) to enhancing the real world with interactive digital content (Augmented Reality). A spectrum currently identified as miXed Reality (XR).
 
 ### Multi-platform
