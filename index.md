@@ -25,7 +25,7 @@ ARENA simplifies a number of common development tasks for multi-user cross-platf
 Seamless support for a spectrum of experiences, from completely immersing the user in a digital world (Virtual Reality; VR) to enhancing the real world with interactive digital content (Augmented Reality; AR). A spectrum currently identified as miXed Reality (XR).
 
 ### Multi-platform
-Host 3D applications that users can interact with from a number of platforms including tablets, phones, headsets and desktop browsers.
+3D applications that users can interact with from a number of platforms including tablets, phones, headsets and desktop browsers.
 
 ### Multiuser Experience
 Users in the physical space can see the same 3D content anchored to the physical world in AR, and properties of all objects (and state of users) are networked to provide a consistent real-time view from any device or platform.
