@@ -131,8 +131,8 @@ clickable=True
 [url]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/goto_url.py
 [material]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/material.py
 [morph]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/morph.py
-[physics]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/physics.py
-[impulse]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/impulse.py
+[physics]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/physics_impulse.py
+[impulse]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/physics_impulse.py
 [position]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/position.py
 [rotation]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/rotation.py
 [scale]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/scale.py

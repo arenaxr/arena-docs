@@ -77,107 +77,128 @@ that `Object`'s position in the original ARENA-py program will automatically be 
 
 # All Objects
 
-## [Box]
+## Box
+Create a [box]:
 ```python
 Box(...)
 ```
 
-## [Circle]
+## Circle
+Create a flat [circle]:
 ```python
 Circle(...)
 ```
 
-## [Cone]
+## Cone
+Create a [cone]:
 ```python
 Cone(...)
 ```
 
-## [Cylinder]
+## Cylinder
+Create a [cylinder]:
 ```python
 Cylinder(...)
 ```
 
-## [Dodecahedron]
+## Dodecahedron
+Create a [dodecahedron]:
 ```python
 Dodecahedron(...)
 ```
 
-## [GLTF]
+## GLTF
+Create a [gltf] model:
 ```python
 GLTF(url, ...)
 ```
 
-## [Icosahedron]
+## Icosahedron
+Create an [icosahedron]:
 ```python
 Icosahedron(...)
 ```
 
-## [Image]
+## Image
+Create a flat [image]:
 ```python
 Image(url, ...)
 ```
 
-## [Light]
+## Light
+Create a [light]:
 ```python
 Light(...)
 ```
 
-## [Line]
+## Line
+Create a thin [line]:
 ```python
 Line(path, ...)
 ```
 
-## [Octahedron]
+## Octahedron
+Create an [octahedron]:
 ```python
 Octahedron(...)
 ```
 
-## [Plane]
+## Plane
+Create a flat [plane]:
 ```python
 Plane(...)
 ```
 
-## [Ring]
+## Ring
+Create a flat [ring]:
 ```python
 Ring(...)
 ```
 
-## [Sphere]
+## Sphere
+Create a [sphere]:
 ```python
 Sphere(...)
 ```
 
-## [Tetrahedron]
+## Tetrahedron
+Create a [tetrahedron]:
 ```python
 Tetrahedron(...)
 ```
 
-## [Text]
+## Text
+Write a [text]:
 ```python
 Text(...)
 ```
 
-## [ThickLine]
+## ThickLine
+Create a [thickline]:
 ```python
 ThickLine(path, lineWidth, ...)
 ```
 
-## [Torus]
+## Torus
+Create a [torus]:
 ```python
 Torus(...)
 ```
 
-## [TorusKnot]
+## TorusKnot
+Create a [torus-knot]:
 ```python
 TorusKnot(...)
 ```
 
-## [Triangle]
+## Triangle
+Create a [triangle]:
 ```python
 Triangle(...)
 ```
 
-## [Landmarks]
+## Landmarks
+Add [landmarks]:
 ```python
 scene.add_landmark(...)
 ```
@@ -217,5 +238,5 @@ Object(object_type, ...)
 [text]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/text.py
 [thickline]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/thickline.py
 [torus]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/torus.py
-[torusknot]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/torus_knot.py
+[torus-knot]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/torus_knot.py
 [triangle]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/triangle.py
