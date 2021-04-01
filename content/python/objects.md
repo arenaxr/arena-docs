@@ -108,7 +108,7 @@ Dodecahedron(...)
 ```
 
 ## GLTF
-Create a [gltf] model:
+Create a [gltf] 3D model:
 ```python
 GLTF(url, ...)
 ```
@@ -168,7 +168,7 @@ Tetrahedron(...)
 ```
 
 ## Text
-Write a [text]:
+Write 3D [text]:
 ```python
 Text(...)
 ```
@@ -192,25 +192,26 @@ TorusKnot(...)
 ```
 
 ## Triangle
-Create a [triangle]:
+Create a flat [triangle]:
 ```python
 Triangle(...)
 ```
 
 ## Landmarks
-Add [landmarks]:
+Make an object a [landmark]:
 ```python
 scene.add_landmark(...)
+```
+
+## Particle
+Add a particle effect (may be unsupported):
+```python
+Particle(...)
 ```
 
 ## Camera
 ```python
 Camera(object_id, ...)
-```
-
-## Particle
-```python
-Particle(...)
 ```
 
 ## Generic Object
@@ -227,7 +228,7 @@ Object(object_type, ...)
 [gltf]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/gltf.py
 [icosahedron]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/icosahedron.py
 [image]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/image.py
-[landmarks]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/landmarks.py
+[landmark]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/landmarks.py
 [light]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/light.py
 [line]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/line.py
 [octahedron]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/octahedron.py
