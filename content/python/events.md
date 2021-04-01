@@ -83,26 +83,3 @@ scene.generate_custom_event(evt, action="clientEvent")
 ```python
 Event(object_id, action, type, ...)
 ```
-
-## ARENA Event JSON example
-```json
-{
-    "object_id": "my_box",
-    "action": "clientEvent",
-    "type": "mousedown",
-    "data": {
-        "clickPos": {
-            "x": -1.525,
-            "y": 1.6,
-            "z": 12.171
-        },
-        "position": {
-            "x": 0.318,
-            "y": 4.02,
-            "z": -1
-        },
-        "source": "[source goes here here]"
-    },
-    "timestamp": "[time goes here]"
-}
-```
