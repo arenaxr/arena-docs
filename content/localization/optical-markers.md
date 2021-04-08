@@ -38,7 +38,7 @@ The AprilTag detection requires that the browser supports computer vision while 
 
 After installing WebXRViewer, go to 'Settings -> XRViewer' and change:
 
-**WebXR Polyfill URL**: ```https://arena.andrew.cmu.edu/vendor/webxr-webxrviewer-ios.js```
+**WebXR Polyfill URL**: ```https://arenaxr.org/vendor/webxr-webxrviewer-ios.js```
 
 **Always Allow World Sensing**:```Yes```
 
