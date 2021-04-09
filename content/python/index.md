@@ -51,10 +51,10 @@ Examples of ARENA-py programs can be found [here](https://github.com/conix-cente
 We are adding protection to the ARENA MQTT broker, eventually to host an ACL list to limit access to change your scenes. As a first step, we are requiring Python programs to supply authentication through a Google account.
 
 ### Sign-In Desktop OS
-If you have a web browser available, the ARENA library `Scene(host="myhost.com")` will launch a web browser the first time and ask you for an account to authenticate you with, before opening a client MQTT connection.
+If you have a web browser available, the ARENA-py library `Scene(host="myhost.com")` will launch a web browser the first time and ask you for an account to authenticate you with, before opening a client MQTT connection.
 
 ### Sign-In Server/Headless OS
-For headless environments, the ARENA library `Scene(host="myhost.com")` will provide you with a url to cut and paste in a browser anywhere, ask you for an account to authenticate you with, and show you a code you can enter on the command line, before opening a client MQTT connection.
+For headless environments, the ARENA-py library `Scene(host="myhost.com")` will provide you with a url to cut and paste in a browser anywhere, ask you for an account to authenticate you with, and show you a code you can enter on the command line, before opening a client MQTT connection.
 
 ### Sign-Out
 ```bash

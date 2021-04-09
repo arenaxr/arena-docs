@@ -111,7 +111,7 @@ dynamic_body=Physics(type)
 ## Text Input
 [Text input] can be added with:
 ```python
-physics=TextInput(on, title, label, placeholder)
+text_input=TextInput(on, title, label, placeholder)
 ```
 
 ## Generic attribute
