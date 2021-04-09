@@ -45,6 +45,6 @@ You can also just do:
 ```python
 @scene.run_once
 def main():
-    obj = scene.all_objects(object_id)
+    obj = scene.all_objects[object_id]
     print(obj) # obj should be an object in persist with persist=True
 ```

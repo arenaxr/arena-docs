@@ -108,6 +108,12 @@ or
 dynamic_body=Physics(type)
 ```
 
+## Text Input
+[Text input] can be added with:
+```python
+physics=TextInput(on, title, label, placeholder)
+```
+
 ## Generic attribute
 For attributes that are not specified by the library, you can use this (put anything you want in the "...")! Inherit from this class to create custom attributes.
 ```python
@@ -137,3 +143,4 @@ clickable=True
 [rotation]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/rotation.py
 [scale]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/scale.py
 [sound]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/sound.py
+[text input]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/text_input.py
