@@ -12,7 +12,7 @@ This walkthrough of the ARENA interface will show the main features of the ARENA
 ## Before you Start
 
 For the best ARENA performance, you need a couple of things:
-- **Chrome Web Browser** (FireFox also works, but sometimes FireFox doesn’t send video)
+- **Chrome or Edge Web Browser** (FireFox also works, but sometimes FireFox doesn’t send video)
 - No ad blockers (some blockers are okay, others cause issues)
 - **Headphones highly recommended**. They provide directional sound and stop echo. Please stay on mute when not speaking if you don’t have headphones.
 - A fast machine to handle all the processing and 3D graphics is also recommended
