@@ -105,7 +105,7 @@ Contrary to most objects in the ARENA, most `scene options` require a scene relo
 Let us try to add a new object to our scene. We will add a GLTF model of the [Mammuthus primigenius (Blumbach)](https://3d.si.edu/object/3d/mammuthus-primigenius-blumbach:341c96cd-f967-4540-8ed1-d3fc56d31f12). In order to use it in the ARENA, we uploaded a .glb copy to dropbox and shared it publicly: [https://www.dropbox.com/s/pgytn552kzukm8f/blumbach.glb?dl=0](https://www.dropbox.com/s/pgytn552kzukm8f/blumbach.glb?dl=0).
 
 {% include alert type="note" content="
-**Why Dropbox?** ARENA internally converts dropbox **share** links into a `dl.dropboxusercontent.com` link which currently allows other websites (that are not dropbox.com) to use the content hosted at dropbox. Models in your own scenes can be hosted at any website that allows this [Cross-origin Resource Sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing).
+**Why Dropbox?** ARENA internally converts dropbox **share** links into `dl.dropboxusercontent.com`, which currently allows the ARENA to use the content hosted at dropbox due to [Cross-origin Resource Sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing).
 "%}
 
 {% include alert type="warning" content="
