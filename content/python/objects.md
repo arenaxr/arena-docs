@@ -75,106 +75,138 @@ As long as your program is running, you do not need to manually keep track of yo
 For instance, if you create an `Object` in ARENA-py and you update its position with the build page or with another program,
 that `Object`'s position in the original ARENA-py program will automatically be updated for you!
 
-# Appendix
+# All Objects
 
 ## Box
+Create a [box]:
 ```python
 Box(...)
 ```
 
-## Sphere
-```python
-Sphere(...)
-```
-
 ## Circle
+Create a flat [circle]:
 ```python
 Circle(...)
 ```
 
 ## Cone
+Create a [cone]:
 ```python
 Cone(...)
 ```
 
 ## Cylinder
+Create a [cylinder]:
 ```python
 Cylinder(...)
 ```
 
 ## Dodecahedron
+Create a [dodecahedron]:
 ```python
 Dodecahedron(...)
 ```
 
-## Icosahedron
-```python
-Icosahedron(...)
-```
-
-## Tetrahedron
-```python
-Tetrahedron(...)
-```
-
-## Octahedron
-```python
-Octahedron(...)
-```
-
-## Plane
-```python
-Plane(...)
-```
-
-## Ring
-```python
-Ring(...)
-```
-
-## Torus
-```python
-Torus(...)
-```
-
-## Triangle
-```python
-Triangle(...)
-```
-
 ## GLTF
+Create a [gltf] 3D model:
 ```python
 GLTF(url, ...)
 ```
 
+## Icosahedron
+Create an [icosahedron]:
+```python
+Icosahedron(...)
+```
+
 ## Image
+Create a flat [image]:
 ```python
 Image(url, ...)
 ```
 
-## Particle
-```python
-Particle(...)
-```
-
-## Text
-```python
-Text(...)
-```
-
 ## Light
+Create a [light]:
 ```python
 Light(...)
 ```
 
 ## Line
+Create a thin [line]:
 ```python
-Line(start, end, ...)
+Line(path, ...)
+```
+
+## Octahedron
+Create an [octahedron]:
+```python
+Octahedron(...)
+```
+
+## Plane
+Create a flat [plane]:
+```python
+Plane(...)
+```
+
+## Ring
+Create a flat [ring]:
+```python
+Ring(...)
+```
+
+## Sphere
+Create a [sphere]:
+```python
+Sphere(...)
+```
+
+## Tetrahedron
+Create a [tetrahedron]:
+```python
+Tetrahedron(...)
+```
+
+## Text
+Write 3D [text]:
+```python
+Text(...)
 ```
 
 ## ThickLine
+Create a [thickline]:
 ```python
 ThickLine(path, lineWidth, ...)
+```
+
+## Torus
+Create a [torus]:
+```python
+Torus(...)
+```
+
+## TorusKnot
+Create a [torus-knot]:
+```python
+TorusKnot(...)
+```
+
+## Triangle
+Create a flat [triangle]:
+```python
+Triangle(...)
+```
+
+## Landmarks
+Make an object a [landmark]:
+```python
+scene.add_landmark(...)
+```
+
+## Particle
+Add a particle effect (may be unsupported):
+```python
+Particle(...)
 ```
 
 ## Camera
@@ -183,31 +215,29 @@ Camera(object_id, ...)
 ```
 
 ## Generic Object
-For objects that might not exist yet. Inherit from this class to create custom objects.
+For objects that might not exist yet (but may exist in AFRAME). Inherit from this class to create custom objects.
 ```python
 Object(object_type, ...)
 ```
 
-## ARENA Object JSON example
-```json
-{
-    "object_id": "my_box",
-    "type": "object",
-    "persist": false,
-    "data": {
-        "object_type": "box",
-        "position": {
-            "x": 0,
-            "y": 4,
-            "z": -2
-        },
-        "scale": {
-            "x": 2,
-            "y": 2,
-            "z": 2
-        },
-        # more attributes here
-    },
-    "timestamp" : "[time goes here]"
-}
-```
+[box]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/box.py
+[circle]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/circle.py
+[cone]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/cone.py
+[cylinder]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/cylinder.py
+[dodecahedron]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/dodecahedron.py
+[gltf]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/gltf.py
+[icosahedron]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/icosahedron.py
+[image]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/image.py
+[landmark]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/landmarks.py
+[light]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/light.py
+[line]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/line.py
+[octahedron]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/octahedron.py
+[plane]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/plane.py
+[ring]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/ring.py
+[sphere]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/sphere.py
+[tetrahedron]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/tetrahedron.py
+[text]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/text.py
+[thickline]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/thickline.py
+[torus]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/torus.py
+[torus-knot]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/torus_knot.py
+[triangle]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/triangle.py
