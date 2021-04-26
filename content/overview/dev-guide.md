@@ -82,6 +82,25 @@ Once you run the script above, you can go back to the scene <b>example</b> in yo
 
 ![](../../../assets/img/overview/devguide/two-boxes.png)
 
+## Running from the Command Line
+The target of which server, user and scene are set by the `Scene(host="...",realm="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using shell environmental variables at the command line as shown below.  This allows a simple way to retarget applications for your own environment without having to change the parameters manually in the code.
+```shell
+export MQTTH=arenaxr.org
+export REALM=realm
+export SCENE=scene
+export NAMESPACE=namespace
+python3 box.py
+...
+=====
+Loading: https://arenaxr.org/namespace/scene, realm=realm
+Connecting to the ARENA...
+Connected!
+=====
+...
+```
+If not specified the namespace is your current logged in user-id. The most common use-case is to simply update `SCENE` and `MQTTH`.
+
+
 ## Clients and Scene Callbacks
 
 As a web browser user of the ARENA, you are connecting to the ARENA MQTT broker as one client connection, in which you are publishing your "camera" perspective as you move, and subscribing to changes in other objects and other users' "camera" moves. Every time you run a Python program you are also connecting to the broker as another client connection, in which the above program published a message creating a box, and also subscribes you other users "camera" moves, and objects.
