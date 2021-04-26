@@ -61,7 +61,7 @@ Connected!
 =====
 ...
 ```
-If not specified the namespace is your current logged in user-id. 
+If not specified the namespace is your current logged in user-id. The most common use-case is to simply update `SCENE` and `MQTTH`. 
 
 
 ## Authentication
