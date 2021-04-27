@@ -30,7 +30,7 @@ Edit the plane to model the surface which should confine users.  It is often bes
 
 ![](../../assets/img/nav-mesh/nav-2.png)
 
-Make sure to nave the nav-mesh and vertex set the same thing (i.e. nav-mesh).  Once the model is complete, convert it to global coordinates by pressing Ctrl-A and selecting "All Transforms".
+Make sure to name the nav-mesh and vertex set the same thing (i.e. nav-mesh).  Once the model is complete, convert it to global coordinates by pressing Ctrl-A and selecting "All Transforms".
 
 ![](../../assets/img/nav-mesh/nav-3.png)
 
