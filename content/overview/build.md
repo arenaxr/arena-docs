@@ -34,7 +34,7 @@ Once you are done, press the <button type="button" name="button" class="btn btn-
 ![](/assets/img/overview/build/build-sections.png)
 
 {% include alert type="note" content="
-Because we let the '*Add Objects From Default Scene*' option checked when creating the scene, it has two objects already: a `scene options` and a `landmarks` object. We will play with these in a bit.
+Because we let the '*Add Objects From Default Scene*' option checked when creating the scene, it has an objects already: a `scene options` object. We will play with this in a bit.
 "%}
 
 In the figure above, we numbered (orange boxes) the following sections of the page:
@@ -58,7 +58,7 @@ This will trigger a popup in the upper left corner indicating that the object pr
 
 You can now edit the object properties. When we are done editing the object, we can press the <button type="button" name="button" class="btn btn-blue fs-3">**+** Add/Update Object</button> button to trigger an update.
 
-Below you have an example of how the entire **Add/Edit Object** section might look like after loading the `scene options` object. The **Type** select shows the type of the object being displayed. The ARENA has many object types as you can observe by opening the select. Most of the object types are 3D Objects, such as spheres, boxes, or GLTF models. There are also a few other object types to, for example, configure scenes (`scene options`), to add landmarks and to add programs to scene.
+Below you have an example of how the entire **Add/Edit Object** section might look like after loading the `scene options` object. The **Type** select shows the type of the object being displayed. The ARENA has many object types as you can observe by opening the select. Most of the object types are 3D Objects, such as spheres, boxes, or GLTF models. There are also a few other object types to, for example, configure scenes (`scene options`) and to add programs to scene.
 
 Under the **Type** select you have some buttons to <button type="button" name="button" class="btn fs-3">Clear form</button> (for example, if you want to add a new object), to create an object identifier <button type="button" name="button" class="btn fs-3">Gen object_id</button> (some objects, such as programs, require long, unique identifiers), and the <button type="button" name="button" class="btn btn-blue fs-3">**+** Add/Update Object</button> button to trigger an update of the object.
 
@@ -154,27 +154,13 @@ Landmarks allow to jump to certain places on interest in a scene. If you copied 
 
 <img src="/assets/img/overview/build/landmark-list.png" width="300"/>
 
-This landmark does not make much sense in this scene. After all, [Blumbach](https://3d.si.edu/object/3d/mammuthus-primigenius-blumbach:341c96cd-f967-4540-8ed1-d3fc56d31f12) does not like screen sharing! Let us delete the landmark object. Go back to the [build page (new tab)](https://arenaxr.org/build){:target="\_blank"} and find the `landmarks` object in the object list. Click on the object name to select it (the line will become dark gray):
+Let us add a landmark to Mammuthus primigenius (Blumbach) model. This way, wherever we are in the scene, we can quickly jump to be near it. Start by selecting existing the Mammuthus object from the list.
 
-<img src="/assets/img/overview/build/object-list-landmarks-selected.png" width="500"/>
+(TODO: ADD LANDMARK ATTRIBUTE AFTER BUILDER IS UPDATED)
 
-Now click the **Delete Selected** button to delete the selected landmarks object.
+Update the object by pressing the <button type="button" name="button" class="btn btn-blue fs-3">**+** Add/Update Object</button> button. The landmarks list will automatically update once this is added.
 
-Let us add a landmark to Mammuthus primigenius (Blumbach) model. This way, wherever we are in the scene, we can quickly jump to be near it. Start by selecting the Scene Landmarks object type from the *Type* select at the top of the **Add/Edit Object** section:
-
-<img src="/assets/img/overview/build/landmarks-obj.png" width="500"/>
-
-The Scene Landmarks Object is a list of landmarks (points of interest) in the scene. To add a new landmark press the <button type="button" name="button" class="btn fs-3">+Landmark</button> button in the form. Then, enter the **object_id** of the model (this is the **object_id** we entered when adding the Mammuthus primigenius model; `blumbach` as suggested) and a description of the landmark.
-
-<img src="/assets/img/overview/build/add-landmark.png" width="500"/>
-
-Update the object by pressing the <button type="button" name="button" class="btn btn-blue fs-3">**+** Add/Update Object</button> button. You will need to refresh the scene to see the landmarks list updated.
-
-{% include alert type="warning" content="
-Contrary to most objects in the ARENA, Landmarks require a scene reload to take effect.
-"%}
-
-After reloading the scene, open the landmarks list and press the 'Mammuthus primigenius (Blumbach)' entry. **Watch Out!** you will be placed right in front of it!
+Now in the landmarks list and press the 'Mammuthus primigenius (Blumbach)' entry. **Watch Out!** you will be placed right in front of it!
 
 {% include alert type="tip" content="
 You can control the distance you are placed from a landmark in the `scene options`. Edit that object and find the `Landmark Teleport Distance` in the **Scene Options** section.

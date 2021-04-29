@@ -222,7 +222,6 @@ Object(object_type, ...)
 [gltf]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/gltf.py
 [icosahedron]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/icosahedron.py
 [image]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/image.py
-[landmark]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/landmarks.py
 [light]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/light.py
 [line]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/line.py
 [octahedron]: https://github.com/conix-center/ARENA-py/blob/master/examples/objects/octahedron.py
