@@ -27,4 +27,6 @@ The following URL parameters are accepted.
 | publishDetections (bool)     | *AprilTag location solver parameter*. Ignored if ```networkedTagSolver=true```. When true, publishes tag detections (to ```realm/g/a/camera-name```); **still processes the tag and relocalizes accordingly**|
 | scene (string)               | Set scene name (e.g. ```scene=AScene```)                                                                                                                                          |
 | startCoords (string)         | User starting x, y, z coordinates in the 3D environment (e.g. ```startCoords=0,1.6,0```)                                                                                          |
+| skipav (bool)                | Skips the webcam, speaker, microphone setup modal. Attempts to use previously selected devices, or system defaults                                                                |
+| startLastPos (bool)          | Uer starts at the last position recorded on this browser (saved per heartbeat in localStorage)                                                                                    |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
