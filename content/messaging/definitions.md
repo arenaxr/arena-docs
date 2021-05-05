@@ -415,6 +415,7 @@ Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-sc
 | bigscreen | *A* | `string` | Name of the 3D object used as a big screen when sharing desktop. (*default: "bigscreen"*)
 | clickableOnlyEvents | *A* | `boolean` | true = publish only mouse events for objects with click-listeners; false = all objects publish mouse events. (*default: "true"*)
 | privateScene | *A* | `boolean` | false = scene will be visible; true = scene will not show in listings. (*default: "false"*)
+| speedModifier | *A* | `number` | Movement speed mulitiplier to base `30`. (e.g. `speedModifier: 2` results in `60` speed)
 
 -------------------------
 
@@ -424,7 +425,7 @@ Follows [ARENA Landmarks Schema](https://arena.andrew.cmu.edu/build/arena-landma
 ### properties
 
 |property|support|type|description
-|--|--|--
+|--|--|--|--
 | landmarks | *A* | [`Landmark` object](#landmark-object) array | List of landmarks of the scene. (**required**)
 
 ## "landmark" object
