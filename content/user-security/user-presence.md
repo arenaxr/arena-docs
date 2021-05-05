@@ -22,7 +22,7 @@ Upon entering a scene you will see a panel for audio and video setup. Here you c
 ![](../../assets/img/icons/more.png){:height="32px" width="32px"}
 The display name you choose, will be displayed in random colored text above your user avatar. In an ARENA Scene, you can change your display text by clicking the last right-hand arrow "V" icon to show the `Settings` panel, which provides a `Display Name` input box you can change to what you wish.
 
-<!-- TODO: image display name setting -->
+<img src="/assets/img/overview/userguide/name.png" width="50%"/>
 
 ## User Video
 
