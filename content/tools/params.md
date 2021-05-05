@@ -29,4 +29,5 @@ The following URL parameters are accepted.
 | startCoords (string)         | User starting x, y, z coordinates in the 3D environment (e.g. ```startCoords=0,1.6,0```)                                                                                          |
 | skipav (bool)                | Skips the webcam, speaker, microphone setup modal. Attempts to use previously selected devices, or system defaults                                                                |
 | startLastPos (bool)          | Uer starts at the last position recorded on this browser (saved per heartbeat in localStorage)                                                                                    |
+| noname (bool)                | Handles display of user name on the screen. False: (default) display the user name. True: Do not display the user name. |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
