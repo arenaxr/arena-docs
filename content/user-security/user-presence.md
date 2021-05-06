@@ -84,6 +84,7 @@ When you click and accept the screenshare icon and popup, it will ask for the ob
 - Once you have selected your object name, it will open a new tab that allows you to choose which screen you want to share, and ARENA will automatically place that screen onto the object with an `object_id` you specified.
 - You can do whatever you want the object you’re screen sharing on as if it were a normal arena object (change size, shape, attach children, etc). This also applies to the object `screenshare`; it's just a standard ARENA object with `object_id`: `screenshare`!
 - When an object is dynamically created with the screen share button, it won't go away after you stop screen sharing. It will only go away if you refresh the page.
+- See our [Screenshare Walkthrough](/content/overview/screenshare) for more detail.
 
 ## Vive (laser) controls
 
