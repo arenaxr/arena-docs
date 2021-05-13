@@ -123,8 +123,8 @@ Another user's camera in the ARENA. Handles Jitsi and display name updates.
 | [headModelPath] | <code>string</code> | <code>&quot;/store/models/robobit.glb&quot;</code> | Path to user head model |
 | [jitsiId] | <code>string</code> |  | User jitsi id. |
 | [displayName] | <code>string</code> |  | User display name. |
-| [hasAudio] | <code>boolean</code> | <code>false</code> | Weather the user has audio on. |
-| [hasVideo] | <code>boolean</code> | <code>false</code> | Weather the user has video on. |
+| [hasAudio] | <code>boolean</code> | <code>false</code> | Whether the user has audio on. |
+| [hasVideo] | <code>boolean</code> | <code>false</code> | Whether the user has video on. |
 
 <a name="module_arena-vive"></a>
 
