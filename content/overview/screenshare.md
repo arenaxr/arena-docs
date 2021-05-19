@@ -22,6 +22,7 @@ There are a few hints to help you establish objects to screenshare on.
 <!-- TODO: integrate this guidance...
 - you can no longer screenshare to every and any object. only objects with attribute screenshareable=True can be screen share’d on.
 - screen share button now gives a list of objects with screenshareable=True and lets you select from them. you are allowed to select multiple.
+- an object with id screenshare will be created like before iff there are no screenshareble objects in a scene.
 -->
 
 ## Screenshare Walkthrough
