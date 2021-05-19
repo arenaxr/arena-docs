@@ -19,6 +19,11 @@ There are a few hints to help you establish objects to screenshare on.
 - You can do whatever you want the object you’re screen sharing on as if it were a normal arena object (change size, shape, attach children, etc). This also applies to the object `screenshare`; it's just a standard ARENA object with `object_id`: `screenshare`!
 - When an object is dynamically created with the screen share button, it won't go away after you stop screen sharing. It will only go away if you refresh the page.
 
+<!-- TODO: integrate this guidance...
+- you can no longer screenshare to every and any object. only objects with attribute screenshareable=True can be screen share’d on.
+- screen share button now gives a list of objects with screenshareable=True and lets you select from them. you are allowed to select multiple.
+-->
+
 ## Screenshare Walkthrough
 
 <!-- TODO: add setup to click Landmarks to see Screens as Landmarks -->
