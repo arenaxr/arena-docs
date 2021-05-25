@@ -41,7 +41,7 @@ Copy the python script below, and paste it into a ```box.py``` file. After savin
 ```python
 from arena import *
 
-# this creates an object for scenen 'example' at the given arena host and realm
+# this creates an object for scene 'example' at the given arena host
 scene = Scene(host="arenaxr.org", scene="example")
 
 # define a task that will add a box to the scene
@@ -83,7 +83,7 @@ Once you run the script above, you can go back to the scene <b>example</b> in yo
 ![](../../../assets/img/overview/devguide/two-boxes.png)
 
 ## Running from the Command Line
-The target of which server, user and scene are set by the `Scene(host="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using shell environmental variables at the command line as shown below.  This allows a simple way to retarget applications for your own environment without having to change the parameters manually in the code.
+The target of which server, user and scene are set by the `Scene(host="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using shell environmental variables at the command line as shown below.  This allows a simple way to re-target applications for your own environment without having to change the parameters manually in the code.
 ```shell
 export MQTTH=arenaxr.org
 export REALM=realm

@@ -46,7 +46,7 @@ That forms a layer, in turn, on top of [A-Frame](https://aframe.io/) and [THREE.
 Examples of ARENA-py programs can be found [here](https://github.com/conix-center/ARENA-py/tree/master/examples) and [here](https://github.com/conix-center/ARENA-py/tree/master/system-tests).
 
 ## Running from the Command Line
-The target of which server, user and scene are set by the `Scene(host="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using environmental variables at the command line as shown below.  This allows a simple way to retarget applications for your own environment without having to change the parameters manually in the code.
+The target of which server, user and scene are set by the `Scene(host="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using environmental variables at the command line as shown below.  This allows a simple way to re-target applications for your own environment without having to change the parameters manually in the code.
 ```shell
 export MQTTH=arenaxr.org
 export REALM=realm
