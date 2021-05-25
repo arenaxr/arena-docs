@@ -156,14 +156,20 @@ Landmarks allow to jump to certain places on interest in a scene. If you copied 
 
 Let us add a landmark to Mammuthus primigenius (Blumbach) model. This way, wherever we are in the scene, we can quickly jump to be near it. Start by selecting existing the Mammuthus object from the list.
 
-(TODO: ADD LANDMARK ATTRIBUTE AFTER BUILDER IS UPDATED)
+Update the object by pressing the <button type="button" name="button" class="btn btn-blue fs-3">**+** Add/Update Object</button> button. 
 
-Update the object by pressing the <button type="button" name="button" class="btn btn-blue fs-3">**+** Add/Update Object</button> button. The landmarks list will automatically update once this is added.
+Under the **GLTF Model Data** section, click on the <button type="button" name="button" class="btn btn-blue fs-3">Properties</button>, and check/add
+the [`Landmark` property](../messaging/definitions#landmark-object). Add the `label` "Mammuthus primigenius (Blumbach)".
 
-Now in the landmarks list and press the 'Mammuthus primigenius (Blumbach)' entry. **Watch Out!** you will be placed right in front of it!
+![](/assets/img/overview/build/landmarks-obj.png)
+
+The landmarks list will automatically update once this is property is added.
+
+Now in the landmarks list and press the 'Mammuthus primigenius (Blumbach)' entry. 
 
 {% include alert type="tip" content="
-You can control the distance you are placed from a landmark in the `scene options`. Edit that object and find the `Landmark Teleport Distance` in the **Scene Options** section.
+You can control the distance and/or position you are placed from a landmark in the `landmark` properties either with a `randomRadiusMin` and `randomRadiusMax`,
+or an `offsetPosition`. Otherwise, you may be placed in the middle of the object!
 "%}
 
 ![](/assets/img/overview/build/mammuthus-primigenius-scene-landmark.png)
