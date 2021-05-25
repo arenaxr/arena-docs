@@ -15,7 +15,7 @@ An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top
     ```shell
     python3 tools/arb/arb.py hello
     ```
-1. Interact with the tool at https://arena.andrew.cmu.edu/[your username]/hello
+1. Interact with the tool at https://arenaxr.org/[your username]/hello
 
 ## Demo Video
 <figure class="video_container">

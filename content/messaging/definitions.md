@@ -312,7 +312,7 @@ Follows [aframe-spe-particles-component](https://github.com/harlyq/aframe-spe-pa
 -------------------------
 
 ## "Program Data" object
-Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.json)
+Follows [ARENA Program Schema](https://arenaxr.org/build/arena-program.json)
 
 ### properties
 
@@ -328,7 +328,7 @@ Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.
 | channels | *A* | [`Channel` object](#channel-object) array | Channels describe files representing access to IO from pubsub and client sockets (possibly more in the future; currently only supported for WASM programs).
 
 ## "channel" object
-Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.json)
+Follows [ARENA Program Schema](https://arenaxr.org/build/arena-program.json)
 
 ### properties
 
@@ -340,7 +340,7 @@ Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.
 | params | *A* | [`Params` object](#params-object) | Type (i.e. pubsub/client)-specific parameters.
 
 ## "params" object
-Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.json)
+Follows [ARENA Program Schema](https://arenaxr.org/build/arena-program.json)
 
 ### properties
 
@@ -353,7 +353,7 @@ Follows [ARENA Program Schema](https://arena.andrew.cmu.edu/build/arena-program.
 -------------------------
 
 ## "Scene Options Data" object
-Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-scene-options.json)
+Follows [ARENA Scene Options Schema](https://arenaxr.org/build/arena-scene-options.json)
 
 ### properties
 
@@ -363,7 +363,7 @@ Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-sc
 | scene-options | *A* | [`scene-options` object](#scene-options-object) | Scene Options.
 
 ## "env-presets" object
-Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-scene-options.json) from the [aframe-environment-component](https://github.com/supermedium/aframe-environment-component).
+Follows [ARENA Scene Options Schema](https://arenaxr.org/build/arena-scene-options.json) from the [aframe-environment-component](https://github.com/supermedium/aframe-environment-component).
 
 ### properties
 
@@ -399,7 +399,7 @@ Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-sc
 | gridColor | *A* | `string` | Color of the grid. (*default: "#ccc"*)
 
 ## "scene-options" object
-Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-scene-options.json)
+Follows [ARENA Scene Options Schema](https://arenaxr.org/build/arena-scene-options.json)
 
 ### properties
 

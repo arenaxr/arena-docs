@@ -15,19 +15,19 @@ This example needs to be updated for a new user.
 Quick Reference
 ---------------
 
-* Scene [https://arena.andrew.cmu.edu/public/pytest](https://arena.andrew.cmu.edu/public/pytest) loads a Python program stored at the [file store](https://arena.andrew.cmu.edu/storemng), under folder boxes for user **wiselab**.
-* Go to the [file store](https://arena.andrew.cmu.edu/storemng) and edit **boxes/boxes.py** to see the program code.
-* Edit this scene in the [builder](https://arena.andrew.cmu.edu/build/), to see the program object stored.
-* See the [ARTS gui](https://arena.andrew.cmu.edu/arts/) to see the runtimes and modules running.
+* Scene [https://arenaxr.org/public/pytest](https://arenaxr.org/public/pytest) loads a Python program stored at the [file store](https://arenaxr.org/storemng), under folder boxes for user **wiselab**.
+* Go to the [file store](https://arenaxr.org/storemng) and edit **boxes/boxes.py** to see the program code.
+* Edit this scene in the [builder](https://arenaxr.org/build/), to see the program object stored.
+* See the [ARTS gui](https://arenaxr.org/arts/) to see the runtimes and modules running.
 
 Step by Step Example
 --------------------
 
-How to launch a program (e.g. **boxes/boxes.py**) in a [file store](https://arena.andrew.cmu.edu/storemng).
+How to launch a program (e.g. **boxes/boxes.py**) in a [file store](https://arenaxr.org/storemng).
 
-1\. Edit Scene: [https://arena.andrew.cmu.edu/build/](https://arena.andrew.cmu.edu/build/)
+1\. Edit Scene: [https://arenaxr.org/build/](https://arenaxr.org/build/)
 
-2\. Make sure the ARENA and MQTT host are **https://arena.andrew.cmu.edu/** and **arena.andrew.cmu.edu:8083**:
+2\. Make sure the ARENA and MQTT host are **https://arenaxr.org/** and **arenaxr.org:8083**:
 
 ![](../../assets/img/arts-program/image4.png){:width="300px"}
 
@@ -60,7 +60,7 @@ By convention, we pass programs environment variables that indicate the scene, r
 
 ![](../../assets/img/arts-program/image3.png){:width="80%"}
 
-7\. Goto to the folder of the program in the [file store](https://arena.andrew.cmu.edu/storemng) and add your files there. These can be wasm programs or Python programs that use the **arena.py** library. See an example in **[wiselab/boxes](https://arena.andrew.cmu.edu/storemng/share/1KoiGaWq)**.
+7\. Goto to the folder of the program in the [file store](https://arenaxr.org/storemng) and add your files there. These can be wasm programs or Python programs that use the **arena.py** library. See an example in **[wiselab/boxes](https://arenaxr.org/storemng/share/1KoiGaWq)**.
 
 {% include alert type="warning" title="Authentication" content="
 You also need to include a `requirements.txt` with your `.py` files providing the authentication version of the ARENA Python library that has at least the line:
@@ -69,6 +69,6 @@ arena-py
 ```
 "%}
 
-8\. Open the Scene using ![](../../assets/img/arts-program/image9.png){:width="200px"}at the top of the build page (the link should be something like https://arena.andrew.cmu.edu/[your username]/\[scene-name\])
+8\. Open the Scene using ![](../../assets/img/arts-program/image9.png){:width="200px"}at the top of the build page (the link should be something like https://arenaxr.org/[your username]/\[scene-name\])
 
-9\. See ARTS GUI: [https://arena.andrew.cmu.edu/arts/](https://arena.andrew.cmu.edu/arts/)
+9\. See ARTS GUI: [https://arenaxr.org/arts/](https://arenaxr.org/arts/)

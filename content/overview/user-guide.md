@@ -19,7 +19,7 @@ For the best ARENA performance, you need a couple of things:
 
 ## Opening a Scene
 
-Let us have a look at the **lobby** scene: [https://arena.andrew.cmu.edu/public/lobby](https://arena.andrew.cmu.edu/public/lobby){:target="\_blank"}.
+Let us have a look at the **lobby** scene: [https://arenaxr.org/public/lobby](https://arenaxr.org/public/lobby){:target="\_blank"}.
 
 The link above will open in a new tab. Since ARENA is a collaborative, multi-user environment, you may see other people there. Say Hi!
 
@@ -43,7 +43,7 @@ If you choose to login using your Google account, you will be asked to signup an
 
 <img src="/assets/img/overview/signup.png" width="500"/>
 
-This will create a namespace under which you can have your own scenes. For example, ```user1```, will have his scenes under ```http://arena.andrew.cmu.edu/user1/```.
+This will create a namespace under which you can have your own scenes. For example, ```user1```, will have his scenes under ```http://arenaxr.org/user1/```.
 
 ## Permissions
 
