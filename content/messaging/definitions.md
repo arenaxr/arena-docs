@@ -410,3 +410,4 @@ Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-sc
 | clickableOnlyEvents | *A* | `boolean` | true = publish only mouse events for objects with click-listeners; false = all objects publish mouse events. (*default: "true"*)
 | privateScene | *A* | `boolean` | false = scene will be visible; true = scene will not show in listings. (*default: "false"*)
 | speedModifier | *A* | `number` | Movement speed mulitiplier to base `30`. (e.g. `speedModifier: 2` results in `60` speed)
+| navMesh | *A* | `string` | URL of gltf model to preload as nav-mesh
