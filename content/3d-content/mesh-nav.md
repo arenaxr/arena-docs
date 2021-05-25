@@ -38,7 +38,7 @@ Confirm that after applying all transforms, that the model is located at 0,0,0, 
 
 ![](../../assets/img/nav-mesh/nav-4.png)
 
-Add the navigation mesh in the ARENA builder as a GLTF file.  Set the nav-mesh property to true.  This will either be an option in the GLTF Model Data Properties button or you can add the `"nav-mes": true ` parameter directly to the json.
+Add the navigation mesh in the ARENA builder in the `scene-options` object as a URL to the file. 
 
 ![](../../assets/img/nav-mesh/nav-5.png)
 
