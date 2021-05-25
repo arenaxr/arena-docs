@@ -1,4 +1,3 @@
-
 ---
 title: JSON Spec
 nav_order: 3
@@ -57,17 +56,16 @@ This is the main payload body of every MQTT scene topic in the ARENA.
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | object_id | *A/P* | `string` | A unique name within the scene (**required**).
 | action | *A/P* | `string` | An action to perform: `create, delete, update, clientEvent` (**required**).
-| type | *A/P* | `string` | Message type: `object, program, scene-options, landmarks, rig, camera-override, mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup`.
+| type | *A/P* | `string` | Message type: `object, program, scene-options, rig, camera-override, mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup`.
 | [persist](examples#persisted-objects) | *A/P* | `boolean` | Save to persistence database (*default: false*).
 | [ttl](examples#temporary-objects-ttl) | *A/P* | `number` | Time-to-live seconds to create the object and automatically delete (*default: 0*).
 | data | *A/P* | [`Object Data` object](#object-data-object) | The detailed properties of a 3d object in the scene. Used by Message Type `object`.
 | data | *A/P* | [`Event Data` object](#event-data-object) | The detailed properties of an event in the scene. Used by Event Type `mousedown (and others)`, Action: `clientEvent`.
 | data | *A* | [`Program Data` object](#program-data-object) | The detailed properties of a program managed by the [runtime manager](../arts) in the scene. Used by Message Type `program`.
 | data | *A* | [`Scene Options Data` object](#scene-options-data-object) | The detailed properties of the scene environment. Used by Message Type `scene-options`.
-| data | *A* | [`Landmarks Data` object](#landmarks-data-object) | The detailed properties of scene landmarks. Used by Message Type `landmarks`.
 
 -------------------------
 
@@ -90,7 +88,7 @@ Some A-Frame attributes and components we don't officially include in our JSON m
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | object_type | *A/P* | `string` | A primitive object type: `cube, sphere, circle, cone, cylinder, dodecahedron, icosahedron, tetrahedron, octahedron, plane, ring, torus, torusKnot, triangle`
 | | *A/P* | | ...or, A complex object type: `gltf_model, image, particle, text, line, light, thickline`
 | | *A* | | ...or, A presence object type : `camera, viveLeft, viveRight` (`camera` is used by web browsers and VIO cameras)
@@ -117,6 +115,8 @@ Some A-Frame attributes and components we don't officially include in our JSON m
 | [collision-listener](examples#events) | *A/P* | `string` | Name of the collision-listener, default can be empty string. e.g. ""
 | [parent](examples#parentchild-linking) | *A/P* | `string` | `object_id` of the object which is the parent.
 | [goto-url](examples#goto-url) | *A* | [`Goto URL` object](#goto-url-object) | Requires `click-listener`
+| [landmark](examples#landmark) | *P* | [`Landmark` object](#landmark-object) | A landmark either as teleport destination or starting point
+
 
 ## "position" object
 Follows A-Frame [position](https://aframe.io/docs/1.0.0/components/position.html).
@@ -124,7 +124,7 @@ Follows A-Frame [position](https://aframe.io/docs/1.0.0/components/position.html
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | x | *A/P* | `number` | X-axis distance from origin, in meters (*default: 0*, **required**).
 | y | *A/P* | `number` | Y-axis distance from origin, in meters (*default: 0*, **required**).
 | z | *A/P* | `number` | Z-axis distance from origin, in meters (*default: 0*, **required**).
@@ -135,7 +135,7 @@ Follows A-Frame [rotation](https://aframe.io/docs/1.0.0/components/rotation.html
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | x | *A/P* | `number` | Quaternion rotation around the X-axis (*default: 0*, **required**).
 | y | *A/P* | `number` | Quaternion rotation around the Y-axis (*default: 0*, **required**).
 | z | *A/P* | `number` | Quaternion rotation around the Z-axis (*default: 0*, **required**).
@@ -147,7 +147,7 @@ Follows A-Frame [scale](https://aframe.io/docs/1.0.0/components/scale.html).
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | x | *A/P* | `number` | X-axis length of object, in meters (*default: 1*, **required**).
 | y | *A/P* | `number` | Y-axis length of object, in meters (*default: 1*, **required**).
 | z | *A/P* | `number` | Z-axis length of object, in meters (*default: 1*, **required**).
@@ -158,7 +158,7 @@ Follows A-Frame [material](https://aframe.io/docs/1.0.0/components/material.html
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | src | *A* | `string` | URI, relative or full path of an image/video file. e.g. "images/360falls.mp4"
 | transparent | *A/P* | `boolean` | e.g. true
 | opacity | *A/P* | `number` | e.g. 0.5
@@ -174,7 +174,7 @@ Follows A-Frame [repeating-textures](https://aframe.io/docs/1.0.0/components/mat
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | x | *A* | `number` | e.g. 4 (**required**).
 | y | *A* | `number` | e.g. 4 (**required**).
 
@@ -183,7 +183,7 @@ Follows A-Frame [repeating-textures](https://aframe.io/docs/1.0.0/components/mat
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | srcspath | *A* | `string` | URI, relative or full path of a directory containing `srcs`, e.g. "images/dice/" (**required**).
 | srcs | *A* | `string` | A comma-delimited list if URIs, e.g. "side1.png, side2.png, side3.png, side4.png, side5.png, side6.png" (**required**).
 
@@ -193,7 +193,7 @@ Follows A-Frame [light](https://aframe.io/docs/1.0.0/components/light.html).
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | type | *A* | `string` | `ambient, directional, hemisphere, point, spot` e.g. "directional" (**required**).
 
 ## "animation" object
@@ -202,7 +202,7 @@ Follows A-Frame [animation](https://aframe.io/docs/1.0.0/components/animation.ht
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | property | *A* | `string` | e.g. "rotation"
 | to | *A* | `string` | e.g. "0 360 0"
 | loop | *A* | `boolean` | e.g. true
@@ -214,7 +214,7 @@ Follows Don McCurdy’s [animation-mixer](https://github.com/n5ro/aframe-extras/
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | clip | *A/P* | `string` | Name of the clip sequence in the GLTF "scene". e.g. "Take 001"
 
 ## "meshline" object
@@ -222,7 +222,7 @@ Follows Don McCurdy’s [animation-mixer](https://github.com/n5ro/aframe-extras/
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | lineWidth | *A/P* | `number` | e.g. 11 (**required**).
 | color | *A/P* | `string` | A hexadecimal color or [CSS/HTML color](https://htmlcolorcodes.com/color-names) name (*default: "#FFFFFF"*, **required**).
 | path | *A/P* | `string` | e.g. "0 0 0, 0 0 1" (**required**).
@@ -233,7 +233,7 @@ Follows A-Frame [sound](https://aframe.io/docs/1.0.0/components/sound.html).
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | src | *A* | `string` | URI, relative or full path of a directory containing a sound file, e.g. "audio/toypiano/asharp1.wav" (**required**).
 | on | *A* | `string` | `mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup` (**required**).
 | positional | *A* | `boolean` | e.g. true
@@ -245,7 +245,7 @@ Follows [aframe-physics-system](https://github.com/n5ro/aframe-physics-system#dy
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | type | *A/P* | `string` | `none, static, dynamic` (**required**).
 
 ## "impulse" object
@@ -254,7 +254,7 @@ Follows [aframe-physics-system](https://github.com/n5ro/aframe-physics-system).
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | on | *A/P* | `string` | `mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup` (**required**).
 | force | *A/P* | `string` | e.g. "1 50 1" (**required**).
 | position | *A/P* | `string` | e.g. "1 1 1" (**required**).
@@ -265,7 +265,7 @@ Follows [aframe-spe-particles-component](https://github.com/harlyq/aframe-spe-pa
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | texture | *A* | `string` | e.g. "textures/square.png"
 | color | *A* | `string` | e.g. "yellow, red"
 | particleCount | *A* | `number` | e.g. 3
@@ -284,7 +284,7 @@ Follows [aframe-spe-particles-component](https://github.com/harlyq/aframe-spe-pa
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | preset | *A/P* | `string` | e.g. `none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris` (**required**).
 
 ## "goto-url" object
@@ -292,10 +292,23 @@ Follows [aframe-spe-particles-component](https://github.com/harlyq/aframe-spe-pa
 ### properties
 
 |property|support|type|description
-|--|--|--
+|---|---|---|---
 | dest | *A* | `string` | `popup, newtab, sametab` e.g. "sametab" (**required**).
 | on | *A* | `string` | e.g. "mousedown" (**required**).
 | url | *A* | `string` | e.g. "http://www.formula1.com" (**required**).
+
+## "landmark" object
+
+### properties
+|property|support|type|description
+|---|---|---|---
+| label | *A* | `string` | Label that shows up in landmarks list on bottom left of UI
+| randomRadiusMin | *A* | `number` | Random radius min distance to teleport
+| randomRadiusMax | *A* | `number` | Random radius max distance to teleport. Can be equal value as radius min, to enforce a circle of particular radius.
+| lookAtLandmark | *A* | `boolean` | When used with an offsetPosition or randomRadius, whether to rotate user camera to look at the landmark base position.
+| startingPosition | *A* | `boolean` | Whether to use this as a random starting position. Does *not* show up on landmarks list regardless of `label`
+| offsetPosition | *A* | [`Position` object](#position-object) | Additive offset from object base position to teleport to e.g. `{ x: 3, y: 0, z: -1 }`
+| constrainToNavMesh | *A* | `string` | One of `false`, `any` or `coplanar` to describe how a teleport should forcibly behave relative to a navigation mesh. `false` implies no forced constraint, `any` snaps to nearest navMesh, and `coplanar` only snaps to nearest navMeshes on *same* Y-plane
 
 -------------------------
 
@@ -304,7 +317,7 @@ Follows [aframe-spe-particles-component](https://github.com/harlyq/aframe-spe-pa
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | position | *A* | [`Position` object](#position-object) | The event destination position. (**required**)
 | clickPos | *A* | [`Position` object](#position-object) | The event origination position. (**required**)
 | source | *A* | `string` | `object_id` of event origination. e.g "camera_8715_er1k" (**required**)
@@ -317,7 +330,7 @@ Follows [ARENA Program Schema](https://arenaxr.org/build/arena-program.json)
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | name | *A* | `string` | Name of the program in the format namespace/program-name. e.g. "wiselab/arb" (**required**)
 | affinity | *A* | `string` | Indicates the module affinity (client=client's runtime; none or empty=any suitable/available runtime) (*default: "client"*)
 | instantiate | *A* | `string` | Single instance of the program (=single), or let every client create a program instance (=client). Per client instance will create new uuid for each program. (*default: "client"*, **required**)
@@ -333,7 +346,7 @@ Follows [ARENA Program Schema](https://arenaxr.org/build/arena-program.json)
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | path | *A* | `string` | Folder visible by the program. (*default: "/ch/${scene}"*, **required**)
 | type | *A* | `string` | Pubsub or client socket. [ "pubsub", "client" ] (*default: "pubsub"*, **required**)
 | mode | *A* | `string` | Access mode. [ "r", "w", "rw" ] (*default: "rw"*, **required**)
@@ -345,7 +358,7 @@ Follows [ARENA Program Schema](https://arenaxr.org/build/arena-program.json)
 ### properties
 
 |property|support|type|description
-|--|--|--
+|---|---|---
 | topic | *A* | `string` | Pubsub topic (pubsub) (*default: "realm/s/${scene}"*)
 | host | *A* | `string` | Destination host address (client socket; ignored for now)
 | port | *A* | `number` | Destination port (client socket; ignored for now)
@@ -358,7 +371,7 @@ Follows [ARENA Scene Options Schema](https://arenaxr.org/build/arena-scene-optio
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | env-presets | *A* | [`env-presets` object](#env-presets-object) | Environment presets.
 | scene-options | *A* | [`scene-options` object](#scene-options-object) | Scene Options.
 
@@ -368,7 +381,7 @@ Follows [ARENA Scene Options Schema](https://arenaxr.org/build/arena-scene-optio
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | active | *A* | `boolean` | Show/hides the environment presets component. Use this instead of using the visible attribute. (*default: true*, **required**)
 | preset | *A* | `string` | `none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, arches, threetowers, poison, tron, japan, dream, volcano, starry, osiris`; An A-Frame preset environment. (*default: "default"*, **required**)
 | seed | *A* | `number` | Seed for randomization. If you don't like the layout of the elements, try another value for the seed. (*default: 1*)
@@ -404,7 +417,7 @@ Follows [ARENA Scene Options Schema](https://arenaxr.org/build/arena-scene-optio
 ### properties
 
 |property|support|type|description
-|--|--|--|--
+|---|---|---|---
 | jitsiServer | *A* | `string` | Jitsi host used for this scene. (*default: "mr.andrew.cmu.edu"*)
 | bigscreen | *A* | `string` | Name of the 3D object used as a big screen when sharing desktop. (*default: "bigscreen"*)
 | clickableOnlyEvents | *A* | `boolean` | true = publish only mouse events for objects with click-listeners; false = all objects publish mouse events. (*default: "true"*)

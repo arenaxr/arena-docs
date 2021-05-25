@@ -38,7 +38,15 @@ Confirm that after applying all transforms, that the model is located at 0,0,0, 
 
 ![](../../assets/img/nav-mesh/nav-4.png)
 
-Add the navigation mesh in the ARENA builder as a GLTF file.  Set the nav-mesh property to true.  This will either be an option in the GLTF Model Data Properties button or you can add the `"nav-mes": true ` parameter directly to the json.
+Add the navigation mesh in the ARENA builder in the `scene-options` object as a URL to the file. 
 
 ![](../../assets/img/nav-mesh/nav-5.png)
+
+## Navmesh snapping via landmark teleports or starting positions
+
+If a navigation mesh is properly created with the default origin in mind (0,0,0 coordinates), a user will load in to that
+starting position already constrained to the navmesh. If there **is** a vertical offset, however, then the navigation constraint may
+not apply unless specified with a [starting position landmark](../messaging/definitions#landmark-object). With a `landmark`
+property `constrainToNavMesh` set, a teleport to landmark or starting random position can forcibly snap a user to the nearest
+position on the navigation mesh.
 

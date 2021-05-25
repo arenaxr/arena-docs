@@ -56,7 +56,7 @@ The current version of ARB is only able to interact with existing persisted obje
 - **All Modes**: Use the **lock** button to reposition the panel relative to your camera's rotation. *(in development)*
 
 |Button|Type|Description|
-|--|--|--|
+|---|---|---|
 |**color**|*action*|Allows color select; tap object to color it *(default=#ffffff)*.|
 |**create**|*action*|Allows shape select; tap clipboard object to create it in place *(default=sphere)*.|
 |**delete**|*action*|Tap object to delete it.|
