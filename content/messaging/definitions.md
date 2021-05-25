@@ -40,12 +40,6 @@ Another column can be added which defines which properties are ARENA-format JSON
 {"object_id": "e9a16478-2606-4cd0-bb9f-b03879bc8baa", "action": "update", "persist": true, "type": "scene-options", "data": {"env-presets": {"active": true, "lighting": "distant", "lightPosition": {"x": 0, "y": 1, "z": -10}, "ground": "hills", "groundTexture": "squares", "groundColor": "#444241", "groundYScale": 0.5}, "scene-options": {"jitsiServer": "jitsi1.andrew.cmu.edu", "clickableOnlyEvents": true, "privateScene": true}}}
 ```
 
-### Landmarks Message
-[`Scene Message object`](#scene-message-object) with a `data` property of the [`Landmarks Data` object](#landmarks-data-object).
-```json
-{"object_id": "af4cef99-2700-4986-b44c-c4ce7fddfc88", "action": "update", "persist": true, "type": "landmarks", "data": {"landmarks": [{"object_id": "controls_sign_img1", "label": "Sign: How to Move"}, {"object_id": "controls_sign_img2", "label": "Sign: Buttons"}, {"object_id": "controls_sign_img3", "label": "Sign: Video Capabilities"}, {"object_id": "controls_sign_img4", "label": "Sign: Chat, Find People and Landmarks"}]}}
-```
-
 -------------------------
 
 ## How to Read These Tables
@@ -416,24 +410,3 @@ Follows [ARENA Scene Options Schema](https://arena.andrew.cmu.edu/build/arena-sc
 | clickableOnlyEvents | *A* | `boolean` | true = publish only mouse events for objects with click-listeners; false = all objects publish mouse events. (*default: "true"*)
 | privateScene | *A* | `boolean` | false = scene will be visible; true = scene will not show in listings. (*default: "false"*)
 | speedModifier | *A* | `number` | Movement speed mulitiplier to base `30`. (e.g. `speedModifier: 2` results in `60` speed)
-
--------------------------
-
-## "Landmarks Data" object
-Follows [ARENA Landmarks Schema](https://arena.andrew.cmu.edu/build/arena-landmarks.json)
-
-### properties
-
-|property|support|type|description
-|--|--|--|--
-| landmarks | *A* | [`Landmark` object](#landmark-object) array | List of landmarks of the scene. (**required**)
-
-## "landmark" object
-Follows [ARENA Landmarks Schema](https://arena.andrew.cmu.edu/build/arena-landmarks.json)
-
-### properties
-
-|property|support|type|description
-|--|--|--|--
-| object_id | *A* | `string` | Identifier of the scene object to be used as the position of the landmark. The position and orientation of this object is used to place the user. (**required**)
-| label | *A* | `string` | Description used in the landmark list. (**required**)
