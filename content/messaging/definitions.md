@@ -300,6 +300,7 @@ Follows [aframe-spe-particles-component](https://github.com/harlyq/aframe-spe-pa
 ## "landmark" object
 
 ### properties
+
 |property|support|type|description
 |---|---|---|---
 | label | *A* | `string` | Label that shows up in landmarks list on bottom left of UI
