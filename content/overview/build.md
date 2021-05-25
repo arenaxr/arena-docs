@@ -15,7 +15,7 @@ We will now do a quick tour of a simple interface to edit ARENA scenes. We will 
 
 ## Add a Scene
 
-Head to the [build page (in a new tab)](https://arena.andrew.cmu.edu/build){:target="\_blank"}. If you never created a scene, it will look similar to this:
+Head to the [build page (in a new tab)](https://arenaxr.org/build){:target="\_blank"}. If you never created a scene, it will look similar to this:
 
 ![](/assets/img/overview/build/build-empty.png)
 
@@ -154,7 +154,7 @@ Landmarks allow to jump to certain places on interest in a scene. If you copied 
 
 <img src="/assets/img/overview/build/landmark-list.png" width="300"/>
 
-This landmark does not make much sense in this scene. After all, [Blumbach](https://3d.si.edu/object/3d/mammuthus-primigenius-blumbach:341c96cd-f967-4540-8ed1-d3fc56d31f12) does not like screen sharing! Let us delete the landmark object. Go back to the [build page (new tab)](https://arena.andrew.cmu.edu/build){:target="\_blank"} and find the `landmarks` object in the object list. Click on the object name to select it (the line will become dark gray):
+This landmark does not make much sense in this scene. After all, [Blumbach](https://3d.si.edu/object/3d/mammuthus-primigenius-blumbach:341c96cd-f967-4540-8ed1-d3fc56d31f12) does not like screen sharing! Let us delete the landmark object. Go back to the [build page (new tab)](https://arenaxr.org/build){:target="\_blank"} and find the `landmarks` object in the object list. Click on the object name to select it (the line will become dark gray):
 
 <img src="/assets/img/overview/build/object-list-landmarks-selected.png" width="500"/>
 

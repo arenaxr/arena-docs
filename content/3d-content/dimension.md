@@ -28,6 +28,6 @@ Move the model or resize it however you desire. Then, in the scene list on the r
 
 ![](../../assets/img/dimension/d4.jpg)
 
-When selecting the format, select GLB, not GLTF. For some reason, the exported GLTF files from dimension don't seem to work on GLTFViewer/ARENA. You can change the name of the file and export location in "Save To". Click Export, and you're done! Now you can upload to [the filestore](https://arena.andrew.cmu.edu/storemng/) and add to the ARENA.
+When selecting the format, select GLB, not GLTF. For some reason, the exported GLTF files from dimension don't seem to work on GLTFViewer/ARENA. You can change the name of the file and export location in "Save To". Click Export, and you're done! Now you can upload to [the filestore](https://arenaxr.org/storemng/) and add to the ARENA.
 
 ![](../../assets/img/dimension/d5.jpg)

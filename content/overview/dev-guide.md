@@ -33,7 +33,7 @@ Use the **Search ARENA Documentation** bar at the very top of every page on this
 Now, let us create a very simple Python program in the scene <b>example</b>, under the [username you defined the first time you entered the arena](/content/overview/user-guide.html#arena-username). Start by opening the scene in your browser and notice it is empty, with default environment settings.
 
 {% include alert type="note" content="
-Open the <b>example</b> scene under your arena username by entering the following URL in your browser: ```http://arena.andrew.cmu.edu/<your-username>/example```
+Open the <b>example</b> scene under your arena username by entering the following URL in your browser: ```http://arenaxr.org/<your-username>/example```
 "%}
 
 Copy the python script below, and paste it into a ```box.py``` file. After saving the file, execute the script (e.g. ```python3 box.py```; make sure you installed the [python library](/content/python/) first).
@@ -42,7 +42,7 @@ Copy the python script below, and paste it into a ```box.py``` file. After savin
 from arena import *
 
 # this creates an object for scenen 'example' at the given arena host and realm
-scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
+scene = Scene(host="arenaxr.org", scene="example")
 
 # define a task that will add a box to the scene
 @scene.run_once
@@ -64,7 +64,7 @@ Now, go back to your browser and <b>refresh</b> the page. You will notice that t
 ```python
 from arena import *
 
-scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
+scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
 def make_box():
@@ -83,7 +83,7 @@ Once you run the script above, you can go back to the scene <b>example</b> in yo
 ![](../../../assets/img/overview/devguide/two-boxes.png)
 
 ## Running from the Command Line
-The target of which server, user and scene are set by the `Scene(host="...",realm="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using shell environmental variables at the command line as shown below.  This allows a simple way to retarget applications for your own environment without having to change the parameters manually in the code.
+The target of which server, user and scene are set by the `Scene(host="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using shell environmental variables at the command line as shown below.  This allows a simple way to retarget applications for your own environment without having to change the parameters manually in the code.
 ```shell
 export MQTTH=arenaxr.org
 export REALM=realm
@@ -143,7 +143,7 @@ A more advanced manipulation of objects in the ARENA is using 3d models as [GLTF
 ```python
 from arena import *
 
-scene = Scene(host="arena.andrew.cmu.edu", realm="realm", scene="example")
+scene = Scene(host="arenaxr.org", scene="example")
 
 obj = GLTF(object_id="duck_1",
             position=(-1, 1, -3),

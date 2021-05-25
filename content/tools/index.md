@@ -15,7 +15,7 @@ has_children: true
 
 ## Monitor network connections
 
-Take a minute to view the ARENA network's connections as you move around in the ARENA on our [Network graph](https://arena.andrew.cmu.edu/network). Clients connected <span style="background-color: black; color: orange;">(orange square)</span>, client subnets <span style="background-color: black; color: gray;">(gray box)</span>, MQTT topics <span style="background-color: black; color: DeepSkyBlue;">(blue circle)</span>, and their current relationships and throughput <span style="background-color: black; color: white;">(white arrow)</span> can be visualized.
+Take a minute to view the ARENA network's connections as you move around in the ARENA on our [Network graph](https://arenaxr.org/network). Clients connected <span style="background-color: black; color: orange;">(orange square)</span>, client subnets <span style="background-color: black; color: gray;">(gray box)</span>, MQTT topics <span style="background-color: black; color: DeepSkyBlue;">(blue circle)</span>, and their current relationships and throughput <span style="background-color: black; color: white;">(white arrow)</span> can be visualized.
 
 Controls:
 
