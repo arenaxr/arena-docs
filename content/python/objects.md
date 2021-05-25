@@ -197,12 +197,6 @@ Create a flat [triangle]:
 Triangle(...)
 ```
 
-## Landmarks
-Make an object a [landmark]:
-```python
-scene.add_landmark(...)
-```
-
 ## Particle
 Add a particle effect (may be unsupported):
 ```python
