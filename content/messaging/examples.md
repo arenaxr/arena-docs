@@ -315,6 +315,14 @@ Navigates to entirely new page into browser when clicked, or other event (requir
 mosquitto_pub -h arenaxr.org -t realm/s/public/example/cube_1 -m '{"object_id" "cube_1", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 1, "y": 1, "z": -1}, "click-listener": "", "goto-url": { "dest": "newtab", "on": "mousedown", "url": "http: www.eet.com"}}}'
 ```
 
+## Landmark
+
+Creates a landmark that can be teleported to from the UI list, or is one of the random starting positions for the scene
+
+```json
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/cube_1 -m '{"object_id" "cube_1", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 1, "y": 1, "z": -1}, "landmark": { "label": "Cube 1", "randomRadiusMin": 1, "randomRadiusMax": 2, "lookAtLandmark": true }}}'
+```
+
 ## Particles
 
 Particles are based on [aframe-spe-particles-component](https://github.com/harlyq/aframe-spe-particles-component), javascript loaded from [aframe-spe-particles-component.min.js](https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js).
