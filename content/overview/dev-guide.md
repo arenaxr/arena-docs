@@ -147,7 +147,7 @@ scene = Scene(host="arenaxr.org", scene="example")
 
 obj = GLTF(object_id="duck_1",
             position=(-1, 1, -3),
-            url="models/Duck.glb")
+            url="store/models/Duck.glb")
 obj.dispatch_animation(
         Animation(
             property="rotation",
@@ -173,7 +173,7 @@ Go back to the previous python code and try to add `persist=True` to the duck ob
 ```
 obj = Model(object_id="duck_1",
             position=(-1, 1, -3),
-            url="models/Duck.glb"
+            url="store/models/Duck.glb"
             persit=True)
 ```
 

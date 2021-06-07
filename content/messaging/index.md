@@ -23,8 +23,8 @@ MQTT messages that define the scene:
 
 ### Create models
 ```json
-mosquitto_pub -h arenaxr.org -t realm/s/example/gltf-model_Earth -m '{"object_id": "gltf-model_Earth", "action": "create", "data": {"object_type": "gltf-model", "position": {"x":0, "y": 0.1, "z": 0}, "url": "models/Earth.glb", "scale": {"x": 5, "y": 5, "z": 5}}}'
-mosquitto_pub -h arenaxr.org -t realm/s/example/gltf-model_Moon -m '{"object_id": "gltf-model_Moon", "action": "create", "data": {"parent": "gltf-model_Earth", "object_type": "gltf-model", "position": {"x":0, "y": 0.05, "z": 0.6}, "scale": {"x":0.05, "y": 0.05, "z": 0.05}, "url": "models/Moon.glb" }}'
+mosquitto_pub -h arenaxr.org -t realm/s/example/gltf-model_Earth -m '{"object_id": "gltf-model_Earth", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x":0, "y": 0.1, "z": 0}, "url": "store/models/Earth.glb", "scale": {"x": 5, "y": 5, "z": 5}}}'
+mosquitto_pub -h arenaxr.org -t realm/s/example/gltf-model_Moon -m '{"object_id": "gltf-model_Moon", "action": "create", "type": "object", "data": {"parent": "gltf-model_Earth", "object_type": "gltf-model", "position": {"x":0, "y": 0.05, "z": 0.6}, "scale": {"x":0.05, "y": 0.05, "z": 0.05}, "url": "store/models/Moon.glb" }}'
 ```
 ### Define animation and movement
  ```json
@@ -37,11 +37,11 @@ mosquitto_pub -h arenaxr.org -t realm/s/example/gltf-model_Earth -m '{"object_id
 ```
 ### Create marker objects
 ```json
-mosquitto_pub -h arenaxr.org -t realm/s/example/box0 -m '{"object_id" : "box0", "action": "create", "data": {"color": "blue", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": 0, "y": 0, "z": 0} }}'
-mosquitto_pub -h arenaxr.org -t realm/s/example/box1 -m '{"object_id" : "box1", "action": "create", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -0.7, "y": 1.67, "z": 2.11} }}'
-mosquitto_pub -h arenaxr.org -t realm/s/example/box2 -m '{"object_id" : "box2", "action": "create", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -2.88, "y": 2.80, "z": -2.12} }}'
-mosquitto_pub -h arenaxr.org -t realm/s/example/box3 -m '{"object_id" : "box3", "action": "create", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -0.09, "y": 1.30, "z": -3.66} }}'
-mosquitto_pub -h arenaxr.org -t realm/s/example/box4 -m '{"object_id" : "box4", "action": "create", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": 3.31, "y": 2.00, "z": -0.97} }}'
+mosquitto_pub -h arenaxr.org -t realm/s/example/box0 -m '{"object_id" : "box0", "action": "create", "type": "object", "data": {"color": "blue", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": 0, "y": 0, "z": 0} }}'
+mosquitto_pub -h arenaxr.org -t realm/s/example/box1 -m '{"object_id" : "box1", "action": "create", "type": "object", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -0.7, "y": 1.67, "z": 2.11} }}'
+mosquitto_pub -h arenaxr.org -t realm/s/example/box2 -m '{"object_id" : "box2", "action": "create", "type": "object", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -2.88, "y": 2.80, "z": -2.12} }}'
+mosquitto_pub -h arenaxr.org -t realm/s/example/box3 -m '{"object_id" : "box3", "action": "create", "type": "object", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -0.09, "y": 1.30, "z": -3.66} }}'
+mosquitto_pub -h arenaxr.org -t realm/s/example/box4 -m '{"object_id" : "box4", "action": "create", "type": "object", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": 3.31, "y": 2.00, "z": -0.97} }}'
 ```
 ### Results
 {% include alert type="warning" title="TODO" content="Include awesome demo result from design doc." %}

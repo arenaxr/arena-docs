@@ -82,7 +82,7 @@ mosquitto_pub -h arenaxr.org -t realm/s/public/example/cube_1 -m '{"object_id": 
 Create an image on the floor.
 
 ```json
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/image_floor -m '{"object_id": "image_floor", "action": "create", "data": {"object_type": "image", "position": {"x": 0, "y": 0, "z": 0.4}, "rotation": {"x": -0.7, "y": 0, "z": 0, "w": 0.7}, "url": "images/floor.png", "scale": {"x": 12, "y": 12, "z": 2}, "material": {"repeat": {"x": 4, "y": 4}}}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/image_floor -m '{"object_id": "image_floor", "action": "create", "type": "object", "data": {"object_type": "image", "position": {"x": 0, "y": 0, "z": 0.4}, "rotation": {"x": -0.7, "y": 0, "z": 0, "w": 0.7}, "url": "images/floor.png", "scale": {"x": 12, "y": 12, "z": 2}, "material": {"repeat": {"x": 4, "y": 4}}}}'
 ```
 
 URLs work in the URL parameter slot. Instead of `images/2.png` it would be e.g. `url(http://arenaxr.org/images/foo.jpg)`.
@@ -105,7 +105,7 @@ mosquitto_pub -h arenaxr.org -t realm/s/public/example/die1 -m '{"object_id": "d
 Instantiate a wacky torusKnot, then turn it blue. Other primitive types are available in the in [A-Frame docs](https://aframe.io/docs/1.0.0/components/geometry.html#built-in-geometries). Here is a brief list: **box circle cone cylinder dodecahedron icosahedron tetrahedron octahedron plane ring sphere torus torusKnot triangle**.
 
 ```json
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/torusKnot_1 -m '{"object_id": "torusKnot_1", "action": "create", "data": {"object_type": "torusKnot", "color": "red", "position": {"x": 0, "y": 1, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/torusKnot_1 -m '{"object_id": "torusKnot_1", "action": "create", "type": "object", "data": {"object_type": "torusKnot", "color": "red", "position": {"x": 0, "y": 1, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}'
 
 mosquitto_pub -h arenaxr.org -t realm/s/public/example/torusKnot_1 -m '{"object_id": "torusKnot_1", "action": "update", "type": "object", "data": {"material": {"color": "blue"}}}'
 ```
@@ -115,7 +115,7 @@ mosquitto_pub -h arenaxr.org -t realm/s/public/example/torusKnot_1 -m '{"object_
 Instantiate a glTF v2.0 binary model (file extension .glb) from a URL.
 
 ```json
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/gltf-model_1 -m '{"object_id": "gltf-model_1", "action": "create", "data": {"object_type": "gltf-model", "url": "https://arenaxr.org/models/Duck.glb", "position": {"x": 0, "y": 1, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/gltf-model_1 -m '{"object_id": "gltf-model_1", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "url": "https://arenaxr.org/models/Duck.glb", "position": {"x": 0, "y": 1, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}'
 ```
 
 ## Animating GLTF Models
@@ -166,7 +166,7 @@ This assumes we know our camera ID. One way to find out your camera ID is, autom
 Add some red text that says "Hello World".
 
 ```json
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/text_3 -m '{"object_id": "text_3", "action": "create", "data": {"color": "red", "text": "Hello world!", "object_type": "text", "position": {"x": 0, "y": 3, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/text_3 -m '{"object_id": "text_3", "action": "create", "type": "object", "data": {"color": "red", "text": "Hello world!", "object_type": "text", "position": {"x": 0, "y": 3, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}'
 ```
 
 Change text color properties [A-Frame Text](https://aframe.io/docs/0.9.0/components/text.html#properties).
@@ -180,7 +180,7 @@ mosquitto_pub -h arenaxr.org -t realm/s/public/example/text_3 -m '{"object_id": 
 Create a red light in the scene.
 
 ```json
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/light_3 -m '{"object_id": "light_3", "action": "create", "data": {"object_type": "light", "position": {"x": 1, "y": 1, "z": 1}, "rotation": {"x": 0.25, "y": 0.25, "z": 0, "w": 1}, "color": "#FF0000"}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/light_3 -m '{"object_id": "light_3", "action": "create", "type": "object", "data": {"object_type": "light", "position": {"x": 1, "y": 1, "z": 1}, "rotation": {"x": 0.25, "y": 0.25, "z": 0, "w": 1}, "color": "#FF0000"}}'
 ```
 
 Default is ambient light. To change type, or other light [A-Frame Light](https://aframe.io/docs/0.9.0/components/light.html) parameters, example: change to **directional**. Options: **ambient, directional, hemisphere, point, spot**.
@@ -194,7 +194,7 @@ mosquitto_pub -h arenaxr.org -t realm/s/public/example/light_3 -m '{"object_id":
 Play toy piano sound from a URL when you click a cube. Sets click-listener Component, waveform URL, and sound attribute.
 
 ```json
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/box_asharp -m '{"object_id": "box_asharp", "action": "create", "data": {"object_type": "cube", "position": {"x": 2.5, "y": 0.25, "z": -5}, "scale": {"x": 0.8, "y": 1, "z": 1}, "color": "#000000", "sound": {"src": "url(https://arenaxr.org/audio/toypiano/Asharp1.wav)", "on": "mousedown"}, "click-listener": ""}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/box_asharp -m '{"object_id": "box_asharp", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 2.5, "y": 0.25, "z": -5}, "scale": {"x": 0.8, "y": 1, "z": 1}, "color": "#000000", "sound": {"src": "url(https://arenaxr.org/audio/toypiano/Asharp1.wav)", "on": "mousedown"}, "click-listener": ""}}'
 ```
 
 ## 360 Video
@@ -210,7 +210,7 @@ mosquitto_pub -h arenaxr.org -t realm/s/public/example/sphere_vid -m '{"object_i
 Draw a purple line from (2, 2, 2) to (3, 3, 3).
 
 ```json
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/line_1 -m '{"object_id": "line_1", "action": "create", "data": {"object_type": "line", "start": {"x": 2, "y": 2, "z": 2}, "end": {"x": 3, "y": 3, "z": 3}, "color": "#CE00FF"}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/line_1 -m '{"object_id": "line_1", "action": "create", "type": "object", "data": {"object_type": "line", "start": {"x": 2, "y": 2, "z": 2}, "end": {"x": 3, "y": 3, "z": 3}, "color": "#CE00FF"}}'
 ```
 
 Extend the line with a new segment, colored green.
@@ -290,9 +290,9 @@ mosquitto_pub -h arenaxr.org -t realm/s/public/example/box_3 -m '{"object_id": "
 One physics feature is applying an impulse to an object to set it in motion. This happens in conjunction with an event. As an example, here are messages setting objects fallBox and fallBox2 to respond to `mouseup` and `mousedown` messages with an impulse with a certain force and position.
 
 ```json
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/fallBox2 '{"object_id": "fallBox2", "action": "create", "data": {"object_type": "cube", "dynamic-body": {"type": "dynamic"}, "impulse": {"on": "mousedown", "force": "1 50 1", "position": "1 1 1"}, "click-listener": "", "position": {"x": 0.1, "y": 4.5, "z": -4}, "scale": {"x": 0.5, "y": 0.5, "z": 0.5}}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/fallBox2 '{"object_id": "fallBox2", "action": "create", "type": "object", "data": {"object_type": "cube", "dynamic-body": {"type": "dynamic"}, "impulse": {"on": "mousedown", "force": "1 50 1", "position": "1 1 1"}, "click-listener": "", "position": {"x": 0.1, "y": 4.5, "z": -4}, "scale": {"x": 0.5, "y": 0.5, "z": 0.5}}}'
 
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/fallBox '{"object_id": "fallBox", "action": "create", "data": {"object_type": "cube", "dynamic-body": {"type": "dynamic"}, "impulse": {"on": "mouseup", "force": "1 50 1", "position": "1 1 1"}, "click-listener": "", "position": {"x": 0, "y": 4, "z": -4}, "scale": {"x": 0.5, "y": 0.5, "z": 0.5}}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/fallBox '{"object_id": "fallBox", "action": "create", "type": "object", "data": {"object_type": "cube", "dynamic-body": {"type": "dynamic"}, "impulse": {"on": "mouseup", "force": "1 50 1", "position": "1 1 1"}, "click-listener": "", "position": {"x": 0, "y": 4, "z": -4}, "scale": {"x": 0.5, "y": 0.5, "z": 0.5}}}'
 ```
 
 ## Parent/Child Linking
@@ -300,9 +300,9 @@ mosquitto_pub -h arenaxr.org -t realm/s/public/example/fallBox '{"object_id": "f
 There is support to attach a child to an already-existing parent scene objects. When creating a child object, set the `"parent": "parent_object_id"` value in the JSON data. For example if parent object is gltf-model_Earth and child object is gltf-model_Moon, the commands would look like:
 
 ```json
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/gltf-model_Earth -m '{"object_id": "gltf-model_Earth", "action": "create", "data": {"object_type": "gltf-model", "position": {"x": 0, "y": 0.1, "z": 0}, "url": "models/Earth.glb", "scale": {"x": 5, "y": 5, "z": 5}}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/gltf-model_Earth -m '{"object_id": "gltf-model_Earth", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x": 0, "y": 0.1, "z": 0}, "url": "store/models/Earth.glb", "scale": {"x": 5, "y": 5, "z": 5}}}'
 
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/gltf-model_Moon -m '{"object_id": "gltf-model_Moon", "action": "create", "data": {"parent": "gltf-model_Earth", "object_type": "gltf-model", "position": {"x": 0, "y": 0.05, "z": 0.6}, "scale": {"x": 0.05, "y": 0.05, "z": 0.05}, "url": "models/Moon.glb" }}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/gltf-model_Moon -m '{"object_id": "gltf-model_Moon", "action": "create", "type": "object", "data": {"parent": "gltf-model_Earth", "object_type": "gltf-model", "position": {"x": 0, "y": 0.05, "z": 0.6}, "scale": {"x": 0.05, "y": 0.05, "z": 0.05}, "url": "store/models/Moon.glb" }}'
 ```
 
 Child objects inherit attributes of their parent, for example scale. Scale the parent, the child scales with it. If the parent is already scaled, the child scale will be reflected right away. Child position values are relative to the parent and also scaled.
@@ -330,11 +330,11 @@ Particles are based on [aframe-spe-particles-component](https://github.com/harly
 For now, it's not directly supported, but rather by passing JSON inside the `data{}` element. The syntax for parameter names has been updated so instead of a name like this that is `space-separated` it becomes `spaceSeparated` (camel case). Three examples here have been created starting with the examples in [aframe-spe-particles-component examples](https://harlyq.github.io/aframe-spe-particles-component/) then reformulating to ARENA JSON syntax.
 
 ```json
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/smoke -m '{"object_id": "smoke", "action": "create", "data": {"object_type": "cube", "position": {"x": 0, "y": 1, "z": -3.9}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.01, "y": 0.01, "z": 0.01}, "color": "#ffffff", "spe-particles": {"texture": "textures/fog.png", "velocity": "1 30 0", "velocitySpread": "2 1 0.2", "particleCount": 50, "maxAge": 4, "size": "3, 8", "opacity": "0, 1, 0", "color": "#aaa, #222"}}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/smoke -m '{"object_id": "smoke", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 0, "y": 1, "z": -3.9}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.01, "y": 0.01, "z": 0.01}, "color": "#ffffff", "spe-particles": {"texture": "textures/fog.png", "velocity": "1 30 0", "velocitySpread": "2 1 0.2", "particleCount": 50, "maxAge": 4, "size": "3, 8", "opacity": "0, 1, 0", "color": "#aaa, #222"}}}'
 
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/flames -m '{"object_id": "flames", "action": "create", "data": {"object_type": "cube", "position": {"x": 0, "y": 1, "z": -3.8}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.01, "y": 0.01, "z": 0.01}, "color": "#ffffff", "spe-particles": {"texture": "textures/explosion_sheet.png", "textureFrames": "5 5", "velocity": "4 100 0", "acceleration": "0 10 0", "accelerationSpread": "0 10 0", "velocitySpread": "4 0 4", "particleCount": 15, "maxAge": 1, "size": "4, 8", "sizeSpread": 2, "opacity": "1, 0", "wiggle": "0 1 0", "blending": "additive"}}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/flames -m '{"object_id": "flames", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 0, "y": 1, "z": -3.8}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.01, "y": 0.01, "z": 0.01}, "color": "#ffffff", "spe-particles": {"texture": "textures/explosion_sheet.png", "textureFrames": "5 5", "velocity": "4 100 0", "acceleration": "0 10 0", "accelerationSpread": "0 10 0", "velocitySpread": "4 0 4", "particleCount": 15, "maxAge": 1, "size": "4, 8", "sizeSpread": 2, "opacity": "1, 0", "wiggle": "0 1 0", "blending": "additive"}}}'
 
-mosquitto_pub -h arenaxr.org -t realm/s/public/example/sparks -m '{"object_id": "sparks", "action": "create", "data": {"object_type": "cube", "position": {"x": 0, "y": 1, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.01, "y": 0.01, "z": 0.01}, "color": "#ffffff", "spe-particles": {"texture": "textures/square.png", "color": "yellow, red", "particleCount": 3, "maxAge": 0.5, "maxAgeSpread": 1, "velocity": "40 200 40", "velocitySpread": "10 3 10", "wiggle": "50 0 50", "wiggleSpread": "15 0 15", "emitterScale": 8, "sizeSpread": 10, "randomizeVelocity": true}}}'
+mosquitto_pub -h arenaxr.org -t realm/s/public/example/sparks -m '{"object_id": "sparks", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 0, "y": 1, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.01, "y": 0.01, "z": 0.01}, "color": "#ffffff", "spe-particles": {"texture": "textures/square.png", "color": "yellow, red", "particleCount": 3, "maxAge": 0.5, "maxAgeSpread": 1, "velocity": "40 200 40", "velocitySpread": "10 3 10", "wiggle": "50 0 50", "wiggleSpread": "15 0 15", "emitterScale": 8, "sizeSpread": 10, "randomizeVelocity": true}}}'
 ```
 
 Particles are very complicated and take a lot of parameters. It would not make sense to translate all of them into explicit ARENA types, thus this flexible 'raw JSON' format is used.

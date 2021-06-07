@@ -98,7 +98,7 @@ Some A-Frame attributes and components we don't officially include in our JSON m
 | [color](examples#color) | *A/P* | `string` | A hexadecimal color or [CSS/HTML color](https://htmlcolorcodes.com/color-names) name (*default: "#FFFFFF"*).
 | [text](examples#text) | *A/P* | `string` | Any `string` of [ASCII characters](https://aframe.io/docs/1.0.0/components/text.html#non-ascii-characters). e.g. "Hello world!"
 | [click-listener](examples#events) | *A/P* | `string` | Name of the click-listener, default can be empty string. e.g. ""
-| [url](examples#images) | *A/P* | `string` | URI, relative or full path of a file. e.g. "models/Duck.glb"
+| [url](examples#images) | *A/P* | `string` | URI, relative or full path of a file. e.g. "store/models/Duck.glb"
 | [material](examples#360-video) | *A/P* | [`Material` object](#material-object) | The material properties of the object's surface.
 | [multisrc](examples#images-on-objects) | *A* | [`Multisrc` object](#multisrc-object) | Define multiple visual sources applied to an object.
 | [light](examples#lights) | *A* | [`Light` object](#light-object) | Properties of a light source. Used by `object_type`: `light`.
