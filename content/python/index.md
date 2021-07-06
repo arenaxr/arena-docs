@@ -75,12 +75,12 @@ For headless environments, the ARENA-py library `Scene(host="myhost.com")` will 
 
 ### Sign-Out
 ```bash
-python3 -c "from arena import auth; auth.signout()"
+arena-py-signout
 ```
 
 ### Show Permissions
 ```bash
-python3 -c "from arena import auth; auth.permissions()"
+arena-py-permissions
 ```
 
 
