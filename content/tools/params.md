@@ -31,4 +31,5 @@ The following URL parameters are accepted.
 | startLastPos (bool)          | User starts at the last position recorded on this browser (saved per heartbeat in localStorage)                                                                                    |
 | noname (bool)                | Handles display of user name on the screen. False: (default) display the user name. True: Do not display the user name. |
 | noreticle (bool)                | In AR, changes the reticle ring to transparent when true, gray when false (default). |
+| armode (bool)                | Instantly enter AR mode. |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
