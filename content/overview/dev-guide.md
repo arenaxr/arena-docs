@@ -174,7 +174,7 @@ Go back to the previous python code and try to add `persist=True` to the duck ob
 obj = Model(object_id="duck_1",
             position=(-1, 1, -3),
             url="store/models/Duck.glb"
-            persit=True)
+            persist=True)
 ```
 
 If you run the program again, you will notice that the duck remains in the scene, even across a refresh.

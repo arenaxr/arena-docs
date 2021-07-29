@@ -71,7 +71,7 @@ Have a look at the form. We will look closer at the sections within the form bel
 The first 4 properties of the form (**object_id**, **action**, **persist**, **type**) are common to all ARENA objects.
 
 {% include alert type="warning" content="
-Note that the **persit** property defines if the object state is to be persisted, or not. In case `persist=false`, the object will **not** be added to the object list (**Scene Objects** section). The update (triggered by the **Add/Update Object** button) will only be seen by current observers of the scene, will be lost once they leave or reload and will not be seen by observers joining the scene after the update.
+Note that the **persist** property defines if the object state is to be persisted, or not. In case `persist=false`, the object will **not** be added to the object list (**Scene Objects** section). The update (triggered by the **Add/Update Object** button) will only be seen by current observers of the scene, will be lost once they leave or reload and will not be seen by observers joining the scene after the update.
 "%}
 
 A `scene options` object allows to set options for a [preset environment in the scene](https://github.com/supermedium/aframe-environment-component), set some scene options (such as audio range, publish behavior, or scene privacy) and define some renderer settings. The properties that appear on the form (and, therefore, the options that are available to be configured with the object) can be set with the <button type="button" name="button" class="btn fs-3">Properties</button> button. Notice the 3 different sections of the `scene options` object:
@@ -156,7 +156,7 @@ Landmarks allow to jump to certain places on interest in a scene. If you copied 
 
 Let us add a landmark to Mammuthus primigenius (Blumbach) model. This way, wherever we are in the scene, we can quickly jump to be near it. Start by selecting existing the Mammuthus object from the list.
 
-Update the object by pressing the <button type="button" name="button" class="btn btn-blue fs-3">**+** Add/Update Object</button> button. 
+Update the object by pressing the <button type="button" name="button" class="btn btn-blue fs-3">**+** Add/Update Object</button> button.
 
 Under the **GLTF Model Data** section, click on the <button type="button" name="button" class="btn btn-blue fs-3">Properties</button>, and check/add
 the [`Landmark` property](../messaging/definitions#landmark-object). Add the `label` "Mammuthus primigenius (Blumbach)".
@@ -165,7 +165,7 @@ the [`Landmark` property](../messaging/definitions#landmark-object). Add the `la
 
 The landmarks list will automatically update once this is property is added.
 
-Now in the landmarks list and press the 'Mammuthus primigenius (Blumbach)' entry. 
+Now in the landmarks list and press the 'Mammuthus primigenius (Blumbach)' entry.
 
 {% include alert type="tip" content="
 You can control the distance and/or position you are placed from a landmark in the `landmark` properties either with a `randomRadiusMin` and `randomRadiusMax`,

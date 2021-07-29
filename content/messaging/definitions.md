@@ -9,8 +9,8 @@ parent: Messaging Format
 Each ARENA message is JSON formatted and is structured for its general use and persistence within the ARENA environment. Each message begins with a [`Scene Message object`](#scene-message-object) of general properties, paired with a more granular detailed `data` sub-object which varies in form and follow the examples below.
 - [**ARENA-core**](https://github.com/conix-center/ARENA-core) webserver repository
 
-{% include alert type="warning" title="Coming soon" content="
-Another column can be added which defines which properties are ARENA-format JSON, and which are Arbitrary A-Frame JSON properties which are applied in HTML as attributes.
+{% include alert type="tip" title="Tip" content="
+In most cases arbitrary A-Frame properties which are applied in HTML as attributes can be submitted as JSON below.
 "%}
 
 ## Examples
