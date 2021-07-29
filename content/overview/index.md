@@ -24,16 +24,16 @@ Below is an overview of the ARENA architecture that we will describe. We will st
 
 ### Edge Devices
 
-We distinguish two main types of devices at the edge: (i) <b>viewer devices</b> and (ii) and <b>other (headless) devices</b>. All types of devices in an ARENA realm  execute a WebAssembly (WASM) common runtime. Viewer devices leverage the browser infrastructure to run WASM programs, whereas other compute elements run a standalone WASM runtime. Our common runtime accepts requests to execute programs, provides sanboxed execution with access to (sanboxed) networked resources and manages the WASM programs lifetime (see [Runtime Management (ARTS)](#runtime-management-arts)).
+We distinguish two main types of devices at the edge: (i) <b>viewer devices</b> and (ii) and <b>other (headless) devices</b>. All types of devices in an ARENA realm  execute a WebAssembly (WASM) common runtime. Viewer devices leverage the browser infrastructure to run WASM programs, whereas other compute elements run a standalone WASM runtime. Our common runtime accepts requests to execute programs, provides sandboxed execution with access to (sandboxed) networked resources and manages the WASM programs lifetime (see [Runtime Management (ARTS)](#runtime-management-arts)).
 
 #### Viewer (Edge) devices
 
-Devices with capability to display content to a user (phones, tablets, AR/VR headsets) are assumed to run a WebXR-capable browser that and runs a web application application-based stack as detailed below. This is an important aspect of our architecture to support very different platforms and interaction modalities. 
+Devices with capability to display content to a user (phones, tablets, AR/VR headsets) are assumed to run a WebXR-capable browser that and runs a web application application-based stack as detailed below. This is an important aspect of our architecture to support very different platforms and interaction modalities.
 
 <img src="/assets/img/overview/browser-stack.png" width="500"/>
 
 #### (Non-Viewer) Edge Devices
-Non-viewer devices are devices with no display capabilities, but capable of runnning ARENA programs by supporting a common runtime.
+Non-viewer devices are devices with no display capabilities, but capable of running ARENA programs by supporting a common runtime.
 
 ### ARENA Realm
 
