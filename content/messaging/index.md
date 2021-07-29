@@ -16,18 +16,20 @@ If you leave out any of these, defaults will be used: location(0,0,0), rotation(
 
 ![ARENA JSON Format](../../assets/img/messaging/arena-obj.png)
 
-## Sample scene: Earth and Moon with Markers
-MQTT messages that define the scene:
+## Sample Publish/Subscribe
 
-### Subscribe
+### Subscribe to Scene Object Messages
 ```json
 arena-py-sub -mh arenaxr.org -s example
 ```
 
-### Publish
+### Publish a Scene Object Message
 ```json
 arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "gltf-model_Earth", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x":0, "y": 0.1, "z": 0}, "url": "store/models/Earth.glb", "scale": {"x": 5, "y": 5, "z": 5}}}'
 ```
+
+## Sample scene: Earth and Moon with Markers
+MQTT messages that define the scene:
 
 ### Create models
 ```json
