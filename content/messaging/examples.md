@@ -347,7 +347,7 @@ Click events are generated as part of the laser-controls A-Frame entity; you get
 * `mouseup`
 - `triggerdown` / `triggerup` for left and right hand controllers
 
-The MQTT topic name for viewing these events can be the standard prefix (e.g. realm/s/public/example/) concatenated with a string made up of object ID that generated the event. An example event MQTT:
+The MQTT topic name for viewing these events can be the standard prefix (e.g. realm/s/<username>/example/<object_id>) ending with a string made up of object ID that generated the event. An example event MQTT:
 
 ```json
 arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "fallBox2", "action": "clientEvent", "type": "mousedown", "data": {"position": {"x": -0.993, "y": 0.342, "z": -1.797}, "source": "camera_8715_er"}}'
