@@ -9,7 +9,7 @@ parent: Messaging Format
 
 - [**ARENA-core**](https://github.com/conix-center/ARENA-core) webserver repository
 
-The structure of our MQTT messaging format is standardized into JSON. To run some of the commands below, you may need to install the Mosquitto client on your system: [https://mosquitto.org/](https://mosquitto.org/).
+The structure of our MQTT messaging format is standardized into JSON. To run the commands below, you may need to install the [ARENA Python client](../python) which includes these scripts.
 
 ## Draw a Cube
 

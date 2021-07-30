@@ -17,6 +17,7 @@ If you leave out any of these, defaults will be used: location(0,0,0), rotation(
 ![ARENA JSON Format](../../assets/img/messaging/arena-obj.png)
 
 ## Sample Publish/Subscribe
+To run the commands below, you may need to install the [ARENA Python client](../python) which includes these scripts.
 
 ### Subscribe to Scene Object Messages
 ```json
