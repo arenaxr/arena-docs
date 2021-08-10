@@ -91,7 +91,7 @@ Some A-Frame attributes and components we don't officially include in our JSON m
 |---|---|---|---
 | object_type | *A/P* | `string` | A primitive object type: `cube, sphere, circle, cone, cylinder, dodecahedron, icosahedron, tetrahedron, octahedron, plane, ring, torus, torusKnot, triangle`
 | | *A/P* | | ...or, A complex object type: `gltf_model, image, particle, text, line, light, thickline`
-| | *A* | | ...or, A presence object type : `camera, viveLeft, viveRight` (`camera` is used by web browsers and VIO cameras)
+| | *A* | | ...or, A presence object type : `camera, handLeft, handRight` (`camera` is used by web browsers and VIO cameras)
 | [position](examples#move) | *A/P* | [`Position` object](#position-object) | Position of the object's origin in 3d, relative to world-origin.
 | [rotation](examples#rotate) | *A/P* | [`Rotation` object](#rotation-object) | Quaternion rotation of the object.
 | scale | *A/P* | [`scale` object](#scale-object) | Scale factor of the object in 3d.
@@ -419,7 +419,7 @@ Follows [ARENA Scene Options Schema](https://arenaxr.org/build/arena-scene-optio
 
 |property|support|type|description
 |---|---|---|---
-| jitsiServer | *A* | `string` | Jitsi host used for this scene. (*default: "mr.andrew.cmu.edu"*)
+| jitsiServer | *A* | `string` | Jitsi host used for this scene. (*default: "jitsi0.andrew.cmu.edu:8443"*)
 | bigscreen | *A* | `string` | Name of the 3D object used as a big screen when sharing desktop. (*default: "bigscreen"*)
 | clickableOnlyEvents | *A* | `boolean` | true = publish only mouse events for objects with click-listeners; false = all objects publish mouse events. (*default: "true"*)
 | privateScene | *A* | `boolean` | false = scene will be visible; true = scene will not show in listings. (*default: "false"*)

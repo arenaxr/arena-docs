@@ -109,7 +109,7 @@ dynamic_body=Physics(type)
 ```
 
 ## Text Input
-[Text input] can be added with:
+[Text input] can be added using a keyboard with:
 ```python
 text_input=TextInput(on, title, label, placeholder)
 ```

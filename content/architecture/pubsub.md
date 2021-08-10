@@ -108,9 +108,9 @@ Runtime Stdout
 
 ### `{realm}/s/{namespace}/{scene-id}/camera_{session-id}_{username}/#`
 
-### `{realm}/s/{namespace}/{scene-id}/viveRight_{session-id}_{username}/#`
+### `{realm}/s/{namespace}/{scene-id}/handRight_{session-id}_{username}/#`
 
-### `{realm}/s/{namespace}/{scene-id}/viveLeft_{session-id}_{username}/#`
+### `{realm}/s/{namespace}/{scene-id}/handLeft_{session-id}_{username}/#`
 
 - User-presence objects: scene owners have rights to their scene objects only.
 - **Subscribe**: `public_read`=True
