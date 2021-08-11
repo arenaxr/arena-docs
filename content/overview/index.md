@@ -14,6 +14,8 @@ However, building pervasive mixed (virtual and augmented) reality applications i
 The Augmented Reality Edge Networking Architecture (ARENA) was designed to address many of the challenges of building collaborative mixed reality applications.
 {: .fs-5 .fw-300 }
 
+![img](../../assets/img/overview/app-examples.png)
+
 See a summary of the main features in the [introduction](/index.html#key-features).
 
 We also have a more detailed description of the [ARENA architecture](/content/architecture/index.html).
