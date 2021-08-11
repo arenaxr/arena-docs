@@ -5,6 +5,8 @@ layout: default
 has_children: true
 ---
 
+The Python library provides a very accessible development option for ARENA applications. Our current API allows us to create and update objects in a scene, define animations, and setup callbacks on events and timers. The library provides a scheduler and a design pattern familiar to game developers, which includes decorators to create one-shot, periodic and delayed (start after a given time) tasks.Any entity represented in Python is automatically updated upon arrival of network messages and we provide calls to load any pre-existing scene content upon startup.
+
 # Python Library Overview
 Draw objects and run programs in the ARENA using Python!
 - [**ARENA-py**](https://github.com/conix-center/ARENA-py) Python repository
@@ -46,7 +48,9 @@ That forms a layer, in turn, on top of [A-Frame](https://aframe.io/) and [THREE.
 Examples of ARENA-py programs can be found [here](https://github.com/conix-center/ARENA-py/tree/master/examples) and [here](https://github.com/conix-center/ARENA-py/tree/master/system-tests).
 
 ## Running from the Command Line
-The target of which server, user and scene are set by the `Scene(host="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using environmental variables at the command line as shown below.  This allows a simple way to re-target applications for your own environment without having to change the parameters manually in the code.
+ARENA python applications can be sandboxed in the WASM runtime (currently with limited library support due to the still immature support for Python in WASM toolchains) and managed by ARTS, or ran standalone from you computer.
+
+To run a python program from the command line in your computer, specify the target of which server, user and scene are set by the `Scene(host="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using environmental variables at the command line as shown below.  This allows a simple way to re-target applications for your own environment without having to change the parameters manually in the code.
 ```shell
 export MQTTH=arenaxr.org
 export REALM=realm
@@ -101,7 +105,6 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "gltf-model_Earth", "a
 arena-py-pub --help
 arena-py-sub --help
 ```
-
 
 ## Python Interactive Robot Demo
 <figure class="video_container">
