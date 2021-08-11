@@ -263,11 +263,19 @@ To draw a shape that is transparent, but occludes other virtual objects behind i
 {"material": {"colorWrite": false}, "render-order": "0"}
 ```
 
+...or a shortcut for the same occlusion, you can use...
+
+```json
+{"material-extras": {"transparentOccluder": true}}
+```
+
 `colorWrite` is an attribute of the THREE.js Shader Material that, by exposing it, we make accessible like others belonging to the Material A-Frame Component, and is an alternative way of controlling visibility. `render-order` is a custom Component that controls which objects are drawn first (not necessarily the same as which are "in front of" others). All other ARENA objects are drawn with render-order of 1.
 
 {% include alert type="note" title="Note" content="
 This does not occlude the far background A-Frame layer (like environment component stars) but, in AR, that layer is not drawn anyway.
+Also, this method only applies to primitive objects. `gltf-model` type models have properties associated with each sub-component, requiring us to recursively update all elements which leads to some inconsistencies.
 " %}
+<!-- TODO: maybe add the rendering order property into the GLB -->
 
 ## Background Themes
 
