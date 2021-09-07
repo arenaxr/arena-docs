@@ -10,7 +10,7 @@ layout: default
 ARENA: a multi-user and multi-application environment to simplify the development of mixed reality applications.
 {: .fs-6 .fw-300 }
 
-The <u>A</u>ugmented <u>R</u>eality <u>E</u>dge <u>N</u>etwork <u>A</u>rchitecture (<b>ARENA</b>) is a platform designed to allow interactions with and within the physical world, with locality and pervasive sensing as first-class citizens. ARENA makes it easy to create and host multiple applications that interact with users and other agents in an immersive 3D environment created inside a browser.
+The <u>A</u>ugmented <u>R</u>eality <u>E</u>dge <u>N</u>etwork <u>A</u>rchitecture (<b>ARENA</b>) is a platform designed to simplify programming where there is a mix of virtual and physical systems, with locality and pervasive sensing as first-class citizens. ARENA makes it easy to create and host multiple applications that interact with users and other agents in an immersive 3D environment created inside a browser.
 
 | ![img](assets/img/intro/robot-arm.png){: style="float: left"} | ![img](assets/img/intro/path-markers.png){: style="float: left"} |
 | Industrial digital twins | Wide-area tracking and localization |
