@@ -40,5 +40,5 @@ Details about the VR user interface in our ["First time in the ARENA"](/content/
 
 Remote participants can use VR in a browser or a VR headset to navigate the lab space and meet both remote and in-person attendees. Everyone is referenced in the real-world, so remote participants should have a sense of interacting with in-person participants in a shared space.
 
-**The experience is available in most browsers (although we recommend Chrome at this time), by following this link:
+**The experience is available in most browsers (although we recommend Chrome at this time), by following this link (we will cleanup and create a new model of the venue soon):
 [https://arenaxr.org/wiselab/ismar](https://arenaxr.org/wiselab/ismar)**
