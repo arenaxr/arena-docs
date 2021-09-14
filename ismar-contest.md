@@ -17,13 +17,13 @@ We propose using the [Augmented Reality Edge Network Architecture (ARENA)](https
 
 ## Hybrid Conference Experience
 
-We plan to host the conference experience in our lab. Some example images of the VR view of the lab below.
+We plan to prepare our lab to host the "conference venue." Some example images of the VR view of the lab below.
 ![](../../assets/img/ismar-contest/cic-annex.jpg)
 ![](../../assets/img/ismar-contest/cic-annex-1.jpg)
 
-We will have several (at least 2) in-person participants with mobile AR through WebXR browsers, and we will create a talk setup with slides visible to both AR and VR participants and a speaker using an AR headset. In-person participants will be able to interact with remote participants and we will stream the video of an AR device and of the space into surfaces visible in the VR environment.
+We will have several (2+) in-person participants with mobile AR through WebXR browsers. A speaker will also be present using an AR headset and presenting slides visible to in-person and remote participants. In-person participants will interact with remote participants through their tablets and headsets. We will stream the video of an AR device and of the actual space into surfaces in the VR environment such that these points of view are visible to remote participants.
 
-Our platform (ARENA) can scale up to a large number of users in the same scene (which would not fit in the physical space) and capture real-world interactions. To exploit this, we expand the space with a virtual area that remote users can explore and see other content, such as demo posters.
+Our platform (ARENA) can scale up to many users in the same scene, not fitting into the physical space. Thus, we expand the space with a virtual area that remote users can explore and see other content, such as demo posters.
 
 ## Instructions for Remote Participants
 
