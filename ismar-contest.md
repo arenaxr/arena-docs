@@ -13,11 +13,11 @@ ISMAR 2021 Contest Entry
 
 ## Introduction
 
-We propose using the [Augmented Reality Edge Network Architecture (ARENA)](arenaxr.org) to support an hybrid conference experience. ARENA is a platform based on web technologies that simplifies the creation of collaborative mixed reality for standard Web Browsers. See more details about the ARENA by browsing the menu items on the left.
+We propose using the [Augmented Reality Edge Network Architecture (ARENA)](https://arenaxr.org) to support a hybrid conference experience. ARENA is a platform based on web technologies that simplifies the creation of collaborative mixed reality for standard Web Browsers. See more details about the ARENA by browsing the menu items on the left.
 
 ## Hybrid Conference Experience
 
-We plan to host the conference experience in our lab. Some example images of the VR view of the lab bellow.
+We plan to host the conference experience in our lab. Some example images of the VR view of the lab below.
 ![](../../assets/img/ismar-contest/cic-annex.jpg)
 ![](../../assets/img/ismar-contest/cic-annex-1.jpg)
 
@@ -38,7 +38,7 @@ Details about the VR user interface in our ["First time in the ARENA"](/content/
 
 ### Enter the VR Environment
 
-Remote participants can use VR in a browser or a VR headset to navigate the lab space and meet both remote and in-person atendes. Everyone is referenced in the real-world, so remote participants should have some sense of interacting with in-person participants.
+Remote participants can use VR in a browser or a VR headset to navigate the lab space and meet both remote and in-person attendees. Everyone is referenced in the real-world, so remote participants should have some sense of interacting with in-person participants.
 
 **The experience is available in most browsers (although we recommend Chrome at this time), by following this link:
 [https://arenaxr.org/wiselab/ismar](https://arenaxr.org/wiselab/ismar)**
