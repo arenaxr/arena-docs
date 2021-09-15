@@ -15,15 +15,15 @@ This example needs to be updated for a new user.
 Quick Reference
 ---------------
 
-* Scene [https://arenaxr.org/public/pytest](https://arenaxr.org/public/pytest) loads a Python program stored at the [file store](https://arenaxr.org/storemng), under folder boxes for user **wiselab**.
-* Go to the [file store](https://arenaxr.org/storemng) and edit **boxes/boxes.py** to see the program code.
+* Scene [https://arenaxr.org/public/pytest](https://arenaxr.org/public/pytest) loads a Python program stored at the [file store](https://arenaxr.org/files), under folder boxes for user **wiselab**.
+* Go to the [file store](https://arenaxr.org/files) and edit **boxes/boxes.py** to see the program code.
 * Edit this scene in the [builder](https://arenaxr.org/build/), to see the program object stored.
 * See the [ARTS gui](https://arenaxr.org/arts/) to see the runtimes and modules running.
 
 Step by Step Example
 --------------------
 
-How to launch a program (e.g. **boxes/boxes.py**) in a [file store](https://arenaxr.org/storemng).
+How to launch a program (e.g. **boxes/boxes.py**) in a [file store](https://arenaxr.org/files).
 
 1\. Edit Scene: [https://arenaxr.org/build/](https://arenaxr.org/build/)
 
@@ -60,7 +60,7 @@ By convention, we pass programs environment variables that indicate the scene, r
 
 ![](../../assets/img/arts-program/image3.png){:width="80%"}
 
-7\. Goto to the folder of the program in the [file store](https://arenaxr.org/storemng) and add your files there. These can be wasm programs or Python programs that use the **arena.py** library. See an example in **[wiselab/boxes](https://arenaxr.org/storemng/share/1KoiGaWq)**.
+7\. Goto to the folder of the program in the [file store](https://arenaxr.org/files) and add your files there. These can be wasm programs or Python programs that use the **arena.py** library. See an example in **[wiselab/boxes](https://arenaxr.org/storemng/share/1KoiGaWq)**.
 
 {% include alert type="warning" title="Authentication" content="
 You also need to include a `requirements.txt` with your `.py` files providing the authentication version of the ARENA Python library that has at least the line:

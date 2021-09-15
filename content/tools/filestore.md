@@ -9,7 +9,7 @@ parent: Tools
 
 {% include alert type="warning" title="Coming Soon" content="Writing in progress..." %}
 
-To add models or programs to the ARENA, they will have to be stored somewhere. The [file store](https://arenaxr.org/storemng/) is where most of these files are currently located, and can easily be accessed.
+To add models or programs to the ARENA, they will have to be stored somewhere. The [file store](https://arenaxr.org/files/) is where most of these files are currently located, and can easily be accessed.
 
 ![](../../assets/img/overview/filestore/fs1.png)
 
