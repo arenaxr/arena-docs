@@ -45,12 +45,3 @@ ATLAS is to ARENA as DNS is to the Internet
 
 - DNS adds 1 layer of abstraction for usability (textual domain name mapped to IP address)
 - However, ATLAS is probably going to do much more than a simple 1-to-1 mapping (talk of generating ID's, even just performing geospatial calculations to find MQTT servers within _n_ miles is astronomically more compute than DNS)
-
-## Design Decisions
-
-These conclusions we have reached by collaboration and consensus, but are not quite "written in stone" yet.
-
-- ATLAS server will implement a RESTful API (viz. pass documents, not rely on saved server or client state, etc.)
-- Server will be written in Node.js
-  - We like learning new languages
-  - Node.js comes with very handy modules for web server sorts of things

@@ -15,7 +15,7 @@ Our demonstration sample server runs at https://arenaxr.org
 - [ARENA Network Graph](https://arenaxr.org/network/)
 - [ARENA Runtime Supervisor - ARTS](https://arenaxr.org/arts/)
 - [ARENA File Store](https://arenaxr.org/files/)
-- [ARENA Scene Locator - ATLAS](https://atlas.conix.io/)
+- [ARENA Scene Locator - ATLAS]()<em> - COMING SOON</em><!--https://atlas.conix.io -->
 
 ## ARENA Sources
 

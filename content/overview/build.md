@@ -175,7 +175,7 @@ or an `offsetPosition`. Otherwise, you may be placed in the middle of the object
 ![](/assets/img/overview/build/mammuthus-primigenius-scene-landmark.png)
 
 ## Link your scene to the physical world
-You can make a scene you create linkable to the physical world by adding its coordinates to the [ATLAS tool](https://atlas.conix.io) (requires write permission to list coordinates). This will allow users in Augmented Reality (AR) to [discover your ARENA scene](../tools/atlas) when they are in physical range of it.
+You can make a scene you create linkable to the physical world by adding its coordinates to the [ATLAS tool]()<em> - COMING SOON</em><!--https://atlas.conix.io --> (requires write permission to list coordinates). This will allow users in Augmented Reality (AR) to [discover your ARENA scene](../tools/atlas) when they are in physical range of it.
 
   ![](../../../assets/img/overview/atlas.png)
 
