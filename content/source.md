@@ -6,6 +6,10 @@ layout: default
 
 # ARENA Source and Links
 
+## Publications
+
+- [ARENA system paper](https://users.ece.cmu.edu/~agr/resources/publications/ARENA_ISMAR_21.pdf), ISMAR 2021
+
 ## ARENA Usage Links
 
 Our demonstration sample server runs at https://arenaxr.org
@@ -33,15 +37,3 @@ Our demonstration sample server runs at https://arenaxr.org
 - [**AprilTag Decoding for AR.js**](https://github.com/conix-center/AR.js/blob/master/README.md#apriltag-detection)
 - [**AprilTag WASM Detector**](https://github.com/conix-center/apriltag-js-standalone)
 - [**AprilTag 36h11 Generator**](https://github.com/conix-center/apriltag-gen)
-
-## Design Doc (WIP)
-
-- [ARENA Refactor Design](https://docs.google.com/presentation/d/1dc1RdlGROBYj1zIoPR8HX_RBIKn8-KRmNZscXVrdIs0/edit?ts=5dbc423f#slide=id.g606e93cce1_1_14)
-
-[//]: # "some out of date?"
-[//]: # "JSON message format"
-[//]: # "PubSub topics"
-[//]: # "Runtime notes"
-[//]: # "Refactor"
-[//]: # "Capability-based Access Control"
-[//]: # "Cantrips (pre-ATLAS?"
