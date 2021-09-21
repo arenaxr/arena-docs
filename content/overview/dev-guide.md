@@ -1,7 +1,7 @@
 ---
 title: Develop Python Programs
 nav_order: 4
-layout: default
+layout: tutorial
 parent: Overview
 ---
 

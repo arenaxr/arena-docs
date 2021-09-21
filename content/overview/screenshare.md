@@ -1,7 +1,7 @@
 ---
 title: ARENA Screenshare
 nav_order: 5
-layout: default
+layout: tutorial
 parent: Overview
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Next Steps
 nav_order: 9
-layout: default
+layout: tutorial
 parent: Overview
 ---
 

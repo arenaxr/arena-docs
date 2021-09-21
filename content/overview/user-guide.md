@@ -1,7 +1,7 @@
 ---
 title: First Time in the ARENA
 nav_order: 2
-layout: default
+layout: tutorial
 parent: Overview
 ---
 

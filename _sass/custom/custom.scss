@@ -39,3 +39,35 @@ h4 {
   margin: auto;
   text-align: center;
 }
+
+/* previous/next topic style */
+.section-nav {
+  text-align: center;
+  position: relative;
+
+  > div { width: 49.5%; }
+
+  a,
+  span {
+    padding: 8px 12px 10px;
+    border-radius: 5px;
+  }
+
+  .next,
+  .prev { position: relative; }
+
+  .next:after {
+    content: '\203A\203A';
+    right: 10px;
+  }
+
+  .prev:before {
+    content: '\2039\2039';
+    left: 10px;
+  }
+
+  .disabled {
+    opacity: .5;
+    cursor: default;
+  }
+}
