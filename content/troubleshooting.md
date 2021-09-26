@@ -35,8 +35,9 @@ You may encounter this error if some ports are blocked by a VPN, firewall, or ot
 
 ### Error: Conference server connection failed
 You may see this error if the network connection to the conferencing server has been lost. Steps to try:
+- Move your wireless computer/device closer to your access point.
 - Switch from wireless network connection to wired (or vice versa).
-- Does your network router and/or modem have power?
+- Switch to a different Wifi access point.
 
 ## I have different problem, where can I get help?
 We have a place for submitting issues and asking questions in most of our code repositories:
