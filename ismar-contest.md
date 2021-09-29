@@ -15,13 +15,24 @@ ISMAR 2021 Contest Entry
 
 We propose using the [Augmented Reality Edge Network Architecture (ARENA)](https://arenaxr.org) to support a hybrid conference experience. ARENA is a platform based on web technologies that simplifies the creation of collaborative mixed reality for standard Web Browsers. See more details about the ARENA by browsing the menu items on the left.
 
+**The link to our "conference venue." is at the end of this page. Before following it, be sure to check these intructions and requirements.**
+
 ## Hybrid Conference Experience
 
-We plan to prepare our lab to host the "conference venue." Some example images of the VR view of the lab below.
+We prepared our lab to host the "conference venue." Some example images of the VR view of the lab below.
 ![](../../assets/img/ismar-contest/cic-annex.jpg)
 ![](../../assets/img/ismar-contest/cic-annex-1.jpg)
 
-We will have several (2+) in-person participants with mobile AR through WebXR browsers. A speaker will also be present using an AR headset and presenting slides visible to in-person and remote participants. In-person participants will interact with remote participants through their tablets and headsets. We will stream the video of an AR device and of the actual space into surfaces in the VR environment such that these points of view are visible to remote participants.
+We will have several in-person attendees as described in the table. In-person participants will interact with remote participants through their devices. **Say hi, or ask us a question!**
+
+|Display Name|Device|Description|
+|------------|------|-----------|
+|Atendee1|iPad|Present in the scene as a robot head, streaming the screen to one of the VR displays on the wall.|
+|Atendee2|iPad|Present in the scene as a robot head.|
+|Atendee3|Android Phone| Present in the scene as a video cube texture-mapped with the user facing camera.|
+|Atendee4|Hololens|Present in the scene as a robot head.|
+|Portal|Portal Setup| Setup to give a perspective into the space so VR atendees can interact with local participants.|
+|Speaker|Magic Leap| Speaker will be using a Magic Leap (present in the scene as a video cube texture mapped with the video from the a camera facing the speaker) and presenting slides visible to in-person and remote participants (laptop screensharing).|
 
 Our platform (ARENA) can scale up to many users in the same scene, not fitting into the physical space. Thus, we expand the space with a virtual area that remote users can explore and see other content, such as demo posters.
 
@@ -29,8 +40,8 @@ Our platform (ARENA) can scale up to many users in the same scene, not fitting i
 
 ### Requirements
 For the best ARENA performance, you need a couple of things:
-- **Chrome or Edge Web Browser** (FireFox also works, but sometimes FireFox doesn’t send video)
-- No ad blockers (some blockers are okay, others cause issues)
+- **Browser** (we have tested ARENA with recent Chrome and FireFox)
+- No ad blockers/privacy extensions (sorry, we are working on it; some are known to cause issues)
 - **Headphones highly recommended**. They provide directional sound and stop echo. Please stay on mute when not speaking if you don’t have headphones.
 - A fast, recent machine to handle all the processing and 3D graphics is also **highly recommended**
 
@@ -40,5 +51,5 @@ Details about the VR user interface in our ["First time in the ARENA"](/content/
 
 Remote participants can use VR in a browser or a VR headset to navigate the lab space and meet both remote and in-person attendees. Everyone is referenced in the real-world, so remote participants should have a sense of interacting with in-person participants in a shared space.
 
-**The experience is available in most browsers (although we recommend Chrome at this time), by following this link (we will cleanup and create a new model of the venue soon):
+**The experience is available in most browsers by following this link:
 [https://arenaxr.org/wiselab/ismar](https://arenaxr.org/wiselab/ismar)**
