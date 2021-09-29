@@ -27,6 +27,12 @@ Here are some common situations which can help when programming and collaboratin
 ## What does this scene error mean?
 You may encounter an error condition due to limited hardware, memory, or network capacity. Some of these are detailed below with some troubleshooting steps.
 
+### Error: Network speed is too slow
+Some elements of the scene may not have loaded if at all. You may see this error if the network speed of your current connection is too slow for the ARENA to operate. Most fixes involve switching to another network connection which may have improved bandwidth or latency. Steps to try:
+- Switch to a different Wifi access point.
+- Switch from wireless network connection to wired (or vice versa).
+- Switch to another VPN or disable your VPN connection.
+
 ### Error: Conference stream failed
 You may see other users moving in 3d, but unable to see/hear their video or audio. You may encounter this error if some ports are blocked by a VPN, firewall, or other network filter. ARENA's video conferencing system is backed by Jitsi, and requires the opening of [additional ports](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart#setup-and-configure-your-firewall) to function. Our conferencing system requires the following **ports** to be open: **80, 443, 3478, 5349, 10000**. Steps to try:
 - Switch to a different Wifi access point.
