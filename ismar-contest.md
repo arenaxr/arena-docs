@@ -13,28 +13,33 @@ ISMAR 2021 Contest Entry
 
 ## Introduction
 
-We are using the [Augmented Reality Edge Network Architecture (ARENA)](https://arenaxr.org) to support a hybrid conference experience. ARENA is a platform based on web technologies that simplifies the creation of collaborative mixed reality for standard Web Browsers. See more details about the ARENA by browsing the menu items on the left.
+We present an alternative hybrid conference experience where remote attendees can interact (in VR) with attendees wearing AR headsets and tablets. By using a 3D model of the venue (obtained using an off-the-shelf laser scanner) and registering digital objects with the real world, remote attendees have a similar sense of the space as those physically present.
+
+We are using the [Augmented Reality Edge Network Architecture (ARENA)](https://arenaxr.org) to support this hybrid conference experience. ARENA is a platform that simplifies the creation of collaborative mixed reality for standard Web Browsers. See more details about the ARENA by browsing the menu items on the left.
 
 **The link to our "conference venue" is at the end of this page. Before following it, be sure to check these instructions and requirements.**
 
 ## Hybrid Conference Experience
 
-We prepared our lab to host the "conference venue." Some example images of the VR view of the lab below.
-![](../../assets/img/ismar-contest/cic-annex.jpg)
-![](../../assets/img/ismar-contest/cic-annex-1.jpg)
+We prepared our lab to host the "conference venue." The figure below shows our VR setup.
 
-We will have several in-person participants, as described in the table. In-person participants will interact with remote participants through their devices. **Say hi, or ask us a question!**
+![](/assets/img/ismar-contest/space-annotated.png)
 
-|Display Name|Device|Description|
-|------------|------|-----------|
-|AR1|iPad|Present in the scene as a robot head, streaming the screen to one of the VR displays on the wall.|
-|AR3|iPad|Present in the scene as a robot head.|
-|AR3|Android Phone| Present in the scene as a video cube texture-mapped with the user facing camera.|
-|Speaker|Magic Leap| Speaker will be using a Magic Leap (present in the scene as a video cube texture mapped with the video from the camera facing the speaker) and presenting slides visible to in-person and remote participants (laptop screen-sharing).|
+Some photos of the actual space and a similar VR view below.
+
+| ![img](/assets/img/ismar-contest/cic-annex.png){: style="float: left"} | ![img](/assets/img/ismar-contest/cic-annex-vr.jpg){: style="float: left"} |
+| Photo of the space | VR View |
+| ![img](/assets/img/ismar-contest/cic-annex-1.png){: style="float: left"} | ![img](/assets/img/ismar-contest/cic-annex-1-vr.png){: style="float: left"} |
+| Photo of the space | VR View |
+
+Several in-person participants (named AR1, AR2, AR3, ...) will be using a mix of AR devices (iPads, phones, magic leap) and interact with remote participants through their devices. **Say hi, or ask us a question!**
 
 We also have an AR/VR portal where remote participants can interact with in-person participants and see a glimpse into what is happening at the physical location. The portal is registered in the 3D scan, so the virtual and real-world geometry are aligned.
 
-Our platform (ARENA) can scale up to many users in the same scene, not fitting into the physical space. Thus, we expand the space with a virtual area that remote users can explore and see other content, such as demo posters.
+| ![img](/assets/img/ismar-contest/portal-vr.png){: style="float: left"} | ![img](/assets/img/ismar-contest/portal-1.png){: style="float: left"} | ![img](/assets/img/ismar-contest/portal-2.png){: style="float: left"}
+| AR/VR Portal (VR View) | AR/VR Portal Physical Setup | Another Perspective of the AR/VR Portal Physical Setup |
+
+Our platform (ARENA) can scale up to many users in the same scene, not fitting into the physical space. Thus, we expand the space with a virtual area that remote users can explore and see other content.
 
 ## Instructions for Remote Participants
 
