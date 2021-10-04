@@ -8,10 +8,6 @@ parent: ARENA Runtime Supervisor
 Scene Edit/Program Launch Example
 =================================
 
-{% include alert type="warning" title="Warning" content="
-This example needs to be updated for a new user.
-" %}
-
 Quick Reference
 ---------------
 

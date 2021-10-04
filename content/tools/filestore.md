@@ -7,11 +7,11 @@ parent: Tools
 
 # ARENA File Store
 
-{% include alert type="warning" title="Coming Soon" content="Writing in progress..." %}
-
 To add models or programs to the ARENA, they will have to be stored somewhere. The [file store](https://arenaxr.org/files/) is where most of these files are currently located, and can easily be accessed.
 
-![](../../assets/img/overview/filestore/fs1.png)
+## User space
+
+Every user automatically has space publicly available: http://arenaxr.org/store/users/[your username].
 
 ## Uploading Models
 
