@@ -346,6 +346,7 @@ a:hover, a:active, a:focus {
       -ms-flex-align: center;
         align-items: center;
   height: 100vh;
+  min-height: 500px;
   text-align: center;
 }
 
@@ -356,8 +357,6 @@ a:hover, a:active, a:focus {
 #home .col-md-8 {
   padding-left: 62px;
 }
-
-
 
 /*---------------------------------------
     arena Section
