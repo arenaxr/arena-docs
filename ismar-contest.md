@@ -45,7 +45,7 @@ Our platform (ARENA) can scale up to many users in the same scene, not fitting i
 
 ### Requirements
 For the best ARENA performance, you need a couple of things:
-- **Browser** (we have tested ARENA with recent Chrome and FireFox)
+- **Browser** (we have tested ARENA with recent **Chrome**, **FireFox**, and **Oculus Browser**)
 - No ad blockers/privacy extensions (sorry, we are working on it; some are known to cause issues)
 - **Headphones highly recommended**. They provide directional sound and stop echo. Please stay on mute when not speaking if you don’t have headphones.
 - A fast, recent machine to handle all the processing and 3D graphics is also **highly recommended**
@@ -54,7 +54,7 @@ Details about the VR user interface in our ["First time in the ARENA"](/content/
 
 ### Enter the VR Environment
 
-Remote participants can use VR in a browser or a VR headset to navigate the lab space and meet both remote and in-person attendees. Everyone is referenced in the real venue, so remote participants should have a sense of interacting with in-person participants in a shared space.
+Remote participants can use **VR in a desktop browser** or a **VR headset** to navigate the lab space and meet both remote and in-person attendees. Everyone is referenced in the real venue, so remote participants should have a sense of interacting with in-person participants in a shared space.
 
 **The experience is available in most browsers by following this link:**
 - **Public: [https://arenaxr.org/wiselab/ismar](https://arenaxr.org/wiselab/ismar)**
