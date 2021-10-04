@@ -39,6 +39,20 @@ $(document).ready(function() {
         });
     });
 
+    /* Home Slideshow Vegas
+     -----------------------------------------------*/
+     $(function() {
+       $('body').vegas({
+           slides: [
+               { src: 'ismar/images/slide-img1.jpg' },
+               { src: 'ismar/images/slide-img2.jpg' },
+               { src: 'ismar/images/slide-img3.jpg' }
+           ],
+           timer: false,
+           transition: [ 'zoomIn', ],
+           animation: ['kenburns']
+       });
+     });
 
     /* Back to Top
     -----------------------------------------------*/

@@ -136,14 +136,14 @@ a:hover, a:active, a:focus {
 }
 
 #arena,
-#venue,
+#venue, #video,
 #contact {
   padding-top: 120px;
   padding-bottom: 120px;
   position: relative;
 }
 
-#venue,
+#venue, #video,
 #contact, footer {
   text-align: center;
 }
@@ -457,11 +457,11 @@ a:hover, a:active, a:focus {
     Galllery section
 -----------------------------------------*/
 
-#venue {
+#venue, #video {
   background: #ffffff;
 }
 
-#venue .venue-thumb {
+#venue, #video .venue-thumb {
   background-color: #ffffff;
   box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
   cursor: pointer;
@@ -472,12 +472,12 @@ a:hover, a:active, a:focus {
   transition: all 0.4s ease-in-out;
 }
 
-#venue .venue-thumb:hover {
+#venue, #video .venue-thumb:hover {
   box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
   top: -5px;
 }
 
-#venue .venue-thumb img {
+#venue, #video .venue-thumb img {
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
   width: 100%;
@@ -656,7 +656,7 @@ footer {
   }
 
   #arena,
-  #venue,
+  #venue, #video,
   #contact {
     padding-top: 80px;
     padding-bottom: 80px;
