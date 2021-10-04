@@ -40,7 +40,7 @@ $(document).ready(function() {
     });
 
     /* Home Slideshow Vegas
-     -----------------------------------------------*/
+     -----------------------------------------------
      $(function() {
        $('body').vegas({
            slides: [
@@ -53,7 +53,7 @@ $(document).ready(function() {
            animation: ['kenburns']
        });
      });
-
+*/
     /* Back to Top
     -----------------------------------------------*/
     $(window).scroll(function() {
