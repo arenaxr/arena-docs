@@ -136,7 +136,7 @@ a:hover, a:active, a:focus {
 }
 
 #arena,
-#venue, #video,
+#venue, #video, #enter,
 #contact {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -457,27 +457,25 @@ a:hover, a:active, a:focus {
     Galllery section
 -----------------------------------------*/
 
-#venue, #video {
+#venue, #video, #enter {
   background: #ffffff;
 }
 
-#venue, #video .venue-thumb {
+#venue, #video, #enter .venue-thumb {
   background-color: #ffffff;
   box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
   cursor: pointer;
   display: block;
-  margin-bottom: 25px;
   position: relative;
   top: 0px;
   transition: all 0.4s ease-in-out;
 }
 
-#venue, #video .venue-thumb:hover {
+#venue, #video, #enter .venue-thumb:hover {
   box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
-  top: -5px;
 }
 
-#venue, #video .venue-thumb img {
+#venue, #video, #enter .venue-thumb img {
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
   width: 100%;
@@ -656,10 +654,14 @@ footer {
   }
 
   #arena,
-  #venue, #video,
+  #venue, #video, #enter,
   #contact {
     padding-top: 80px;
     padding-bottom: 80px;
   }
 
+}
+
+#enter {
+    background: #f0f0f0;
 }

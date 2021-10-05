@@ -19,7 +19,6 @@ $(document).ready(function() {
   -----------------------------------------------*/
     $(function() {
         $('.navbar-default a').bind('click', function(event) {
-            console.log("here");
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 49
@@ -30,7 +29,6 @@ $(document).ready(function() {
 
     $(function() {
         $('.container a').bind('click', function(event) {
-          console.log("here");
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 49
@@ -40,7 +38,7 @@ $(document).ready(function() {
     });
 
     /* Home Slideshow Vegas
-     -----------------------------------------------
+     -----------------------------------------------*/
      $(function() {
        $('body').vegas({
            slides: [
@@ -53,7 +51,7 @@ $(document).ready(function() {
            animation: ['kenburns']
        });
      });
-*/
+
     /* Back to Top
     -----------------------------------------------*/
     $(window).scroll(function() {
