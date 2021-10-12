@@ -45,6 +45,11 @@ Other users may have stopped moving completely. You may see this error if the ne
 - Switch from wireless network connection to wired (or vice versa).
 - Switch to a different Wifi access point.
 
+### Warning: Events Publish Behavior is too high
+This warning you may scene when using [AR Builder (ARB)](tools/authoring) or other editor tools to edit the scene in 3d. It is a reminder that the scene's `scene-options` object is set to publish mouse events for every client and object in the scene, instead of only those chosen per object. This can lead to unnecessarily high MQTT events publish rates for complex scenes with many users.
+- Scene owners, remember to restore scene options to `{"scene-options": { "clickableOnlyEvents": true }}`.
+- In this can be done by toggling the `edit` button off.
+
 ## I have different problem, where can I get help?
 We have a place for submitting issues and asking questions in most of our code repositories:
 - [ARENA Docs issues](https://github.com/conix-center/ARENA/issues)
