@@ -48,9 +48,8 @@ optional arguments:
   -d, --debug           Debug mode.
 ```
 
-## Clickable Objects ONLY
-
-The current version of ARB is only able to interact with existing persisted objects if they have click-handlers implemented (`object.update(clickable=True)`). Clickable objects will turn your cursor from an arrow to a finger pointing as you hover over them. For the time being, anything you create with ARB will have click-handlers implemented automatically.
+## EDIT Button
+The `edit` button will update all objects in the scene with click-listeners, allowing you to target ARB commands to any object. Toggling the `edit` button **on**, updates the scene `scene-options` object and will remind you to reload the page for edit mode to fully activate. You may see an orange warning in the upper left that [Events Publish Behavior is too high](https://arena.conix.io/content/troubleshooting.html#warning-events-publish-behavior-is-too-high), which in expected and a reminder to toggle the `edit` button **off**, when finished editing the scene with ARB.
 
 ## Basic Object Manipulation
 When you set the mode to None, Rotate, Nudge, Stretch, Scale, you can manipulate objects in various ways.
