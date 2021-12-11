@@ -174,11 +174,11 @@ or an `offsetPosition`. Otherwise, you may be placed in the middle of the object
 
 ![](/assets/img/overview/build/mammuthus-primigenius-scene-landmark.png)
 
-## Link your scene to the physical world
-You can make a scene you create linkable to the physical world by adding its coordinates to the [ATLAS tool]()<em> - COMING SOON</em><!--https://atlas.conix.io --> (requires write permission to list coordinates). This will allow users in Augmented Reality (AR) to [discover your ARENA scene](../tools/atlas) when they are in physical range of it.
+## See your scene in Augmented Reality (AR)
 
-  ![](../../../assets/img/overview/atlas.png)
+In an AR device (e.g, an AR headset or a tablet or mobile phone with passthrough AR capabilities), you can press the <button type="button" name="button" class="btn fs-3 ">AR</button> button at the bottom left (the AR button is not visible in devices that are not AR capable, such as a desktop). It will initiate an AR session where the background environment is hidden when entering AR (this is the default setting, but might vary depending on the configuration of your scene). 
 
+Your scene's origin will be placed relative to your device's location in the real world when the AR session starts. Usually, you will want to anchor your scene in the real world. **Check our section on [AR Experiences](/content/ar) for details on this and other aspects of creating AR experiences in ARENA.** 
 
 Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
   {: .fs-1 }
