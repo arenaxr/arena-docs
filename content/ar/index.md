@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality
+title: AR Experiences
 nav_order: 3
 layout: default
 has_children: true
