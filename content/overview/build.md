@@ -34,7 +34,7 @@ Once you are done, press the <button type="button" name="button" class="btn btn-
 ![](/assets/img/overview/build/build-sections.png)
 
 {% include alert type="note" content="
-Because we let the '*Add Objects From Default Scene*' option checked when creating the scene, it has an objects already: a `scene options` object. We will play with this in a bit.
+Because we let the '*Add Objects From Default Scene*' option checked when creating the scene, it has an object already (your current ARENA instance might have even more objects in the default scene): a `scene options` object. We will play with this in a bit.
 "%}
 
 In the figure above, we numbered (orange boxes) the following sections of the page:

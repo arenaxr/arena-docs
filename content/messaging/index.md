@@ -1,6 +1,6 @@
 ---
 title: Messaging Format
-nav_order: 3
+nav_order: 8
 layout: default
 has_children: true
 ---

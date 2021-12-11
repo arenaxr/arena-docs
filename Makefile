@@ -29,3 +29,9 @@ build:
 
 serve:
 	$(JEKYLL) serve
+
+watch:
+	$(JEKYLL) serve --watch
+
+clean:
+	$(JEKYLL) clean

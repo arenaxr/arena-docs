@@ -42,6 +42,10 @@ Built-in support for a number of different types of systems (such as UWB, OptiTr
 ### Geographic content lookup
 Perform geographic queries for content, assets (such as location markers) and compute resources.
 
+<figure class="video_container">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9HaVL-0a1e8?autoplay=1&controls=0&showinfo=0&modestbranding=1&wmode=transparent&disablekb=1&rel=0&enablejsapi=1&widgetid=1&loop=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+
 ## Next Steps
 
 <br/>
