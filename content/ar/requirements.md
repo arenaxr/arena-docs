@@ -20,7 +20,7 @@ ARENA can support different optical markers: [Apriltags](https://april.eecs.umic
 Optical Markers require support for ARENA's computer vision processing pipeline, which is supported by the custom camera access implemented in [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) and [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989), and also by [WebXR's raw camera access currently implemented in Chrome](https://chromestatus.com/feature/5759984304390144). 
 
 {% include alert type="note" content="
-As of December 2021, only Chrome Beta supports ARENA's computer vision processing pipeline. See the browser support section for details.
+As of December 2021, besides **XR Browser** and **WebXRViewer**, only Chrome Beta supports ARENA's computer vision processing pipeline. See the browser support section for details.
 "%}
 
 
