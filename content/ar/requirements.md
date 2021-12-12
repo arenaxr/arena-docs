@@ -9,7 +9,7 @@ parent: AR Experiences
 
 Mixed Reality experiences in ARENA require a WebXR-compatible browser, which currently includes Edge (desktop), Chrome (desktop and mobile), Firefox (desktop and mobile; not enabled by default), among others as shown [here](https://caniuse.com/webxr). Note that these include browsers that can run in many AR and VR headsets. For example, Oculus/Meta and Magic Leap's browsers are based on the open-source codebase of Chrome (Chromium) and include WebXR support.
 
-Additionally, and to prototype the needs for future browser platforms, we are also maintaining **[XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989)**, a custom version of Firefox for iOS (based of [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056)). Both [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) and [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) support a custom computer vision pipeline. In addition, the team used [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989)  to experiment with other features, such as [spoof-resilient AR anchors](https://wise.ece.cmu.edu/projects/glitter.html). 
+Additionally, and to prototype the needs for future browser platforms, we are also maintaining **[XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989)**, a custom version of Firefox for iOS (based of [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056)). Both [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) and [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) support ARENA's computer vision pipeline. In addition, the team used [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) to experiment with other features, such as [spoof-resilient AR anchors](https://wise.ece.cmu.edu/projects/glitter.html). 
 
 Here we will describe the requirements of different types of anchors used in ARENA and the browsers that support these.
 
@@ -17,7 +17,7 @@ Here we will describe the requirements of different types of anchors used in ARE
 
 ARENA can support different optical markers: [Apriltags](https://april.eecs.umich.edu/software/apriltag), has experimental (outside the mainline code) support for [lightanchors/flash](https://youtu.be/_P01roIG93U), and more are expected to be added.
 
-Optical Markers require support for ARENA's computer vision processing pipeline, which is supported by the custom camera access implemented in [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056)) and [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989), and [WebXR's raw camera access currently implemented in Chrome](https://chromestatus.com/feature/5759984304390144). 
+Optical Markers require support for ARENA's computer vision processing pipeline, which is supported by the custom camera access implemented in [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) and [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989), and also by [WebXR's raw camera access currently implemented in Chrome](https://chromestatus.com/feature/5759984304390144). 
 
 {% include alert type="note" content="
 As of December 2021, only Chrome Beta supports ARENA's computer vision processing pipeline. See the browser support section for details.
