@@ -4,7 +4,6 @@ nav_order: 1
 layout: tutorial
 parent: AR Experiences
 ---
-
 # Quick AR Experience Example
 
 Try the following for a quick sample of AR using ARENA by opening a pre-made scene and achoring it in the real world with an optical marker.
