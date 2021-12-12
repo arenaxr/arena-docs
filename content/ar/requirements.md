@@ -7,7 +7,7 @@ parent: AR Experiences
 
 # XR Requirements
 
-Mixed Reality experiences in ARENA require a WebXR-compatible browser, which currently includes Edge (desktop), Chrome (desktop and mobile), Firefox (desktop and mobile; not enabled by default), among others as shown [here](https://caniuse.com/webxr). Note that these include browsers that can run in many AR and VR headsets. For example, oculus and Magic Leap's browsers are based on the open-source codebase of Chrome (Chromium) and include WebXR support.
+Mixed Reality experiences in ARENA require a WebXR-compatible browser, which currently includes Edge (desktop), Chrome (desktop and mobile), Firefox (desktop and mobile; not enabled by default), among others as shown [here](https://caniuse.com/webxr). Note that these include browsers that can run in many AR and VR headsets. For example, Oculus/Meta and Magic Leap's browsers are based on the open-source codebase of Chrome (Chromium) and include WebXR support.
 
 Additionally, and to prototype the needs for future browser platforms, we are also maintaining **[XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989)**, a custom version of Firefox for iOS (based of [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056)). Both [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) and [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) support a custom computer vision pipeline. In addition, the team used [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989)  to experiment with other features, such as [spoof-resilient AR anchors](https://wise.ece.cmu.edu/projects/glitter.html). 
 
