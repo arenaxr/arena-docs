@@ -37,7 +37,7 @@ Use the QR Code to quickly open the URL. See some instructions about doing this 
 Opening the URL should display the following sequence of screens. Click “Allow” for motion and camera access and “Enter” for AR mode.  
 
 | ![img](/assets/img/ar/enter-ar-1.png){: style="float: left"} | ![img](/assets/img/ar/enter-ar-2.png){: style="float: left"} |
-| Provide access to Sensors (1) | Enter AR Mode Confirmation |
+| Provide access to sensors (1) | Enter AR mode confirmation |
 
 Finally, point the device to the Apriltag, and scene's origin should be anchored to it:
 <img src="/assets/img/ar/enter-ar-3.png" width="100%"/>
