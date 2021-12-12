@@ -13,14 +13,11 @@ Try the following for a quick sample of AR using ARENA.
 
 We will use an [Apriltag](https://april.eecs.umich.edu/software/apriltag) optical marker to anchor an ARENA scene in the real world. 
 
-Detection of optical markers requires that the browser supports ARENA's computer vision while in AR mode. Currently, there are a few options to do so. We will quickly describe how to startup this using an Android and an iOS devide. 
+Detection of optical markers requires that the browser supports ARENA's computer vision while in AR mode. Currently, there are a few options to do so. For this quick test, we can use [Chrome Beta](https://www.google.com/chrome/beta/) on Android or [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) on iOS. 
 
 {% include alert type="note" content="
 Checkout [the AR Experiences Requirements Section](/content/ar/requirements) for details on the requirements of different types of anchors that can be used in ARENA and the browsers that support these.
 "%}
-
-**Android**: [Chrome Beta](https://www.google.com/chrome/beta/).
-**iOS**: [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989).
 
 ## Open an ARENA Scene in AR
 
