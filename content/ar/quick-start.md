@@ -32,9 +32,10 @@ The above URL includes an `armode=true` flag which tells ARENA to automatically 
 For a quick test, you can also use an Apriltag on a screen. Note however that the ARENA location solver needs to know the size of the tag to accuratelly compute its location (the scene is configured for an Apriltag of size 150x150 mm, and you will have better results if it is this size).
 "%}
 
-This should display the following sequence of screens. Click “Allow” for motion and camera access and “Enter” for AR mode.  The “armode=true” URL parameter skips the normal AV setup box.  In that case, the user must select the “AR” button in the lower right to switch into AR mode.
+This should display the following sequence of screens. Click “Allow” for motion and camera access and “Enter” for AR mode.  The “armode=true” URL parameter skips the normal AV setup box. In that case, the user must select the “AR” button in the lower right to switch into AR mode.
 
 | ![img](/assets/img/ar/enter-ar-1.png){: style="float: left"} | ![img](/assets/img/ar/enter-ar-2.png){: style="float: left"} |
 | Provide access to Sensors (1) | Provide access to Sensors (2) |
-| ![img](/assets/img/ar/enter-ar-3.png){: style="float: left"} | |
-| Scene with origin (x, y, x: 0, 0, 0) anchored by the Apriltag | |
+
+Finally, point the device to the Apriltag, and scene's origin should be anchored to it:
+<img src="/assets/img/ar/enter-ar-3.png" width="100%"/>
