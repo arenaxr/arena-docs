@@ -2,7 +2,7 @@
 title: URL Parameters
 nav_order: 6
 layout: default
-parent: Tools
+parent: Web Interface
 ---
 
 ## URL Parameters
