@@ -18,7 +18,7 @@ Optical Markers require support for ARENA's computer vision processing pipeline,
 {% include alert type="warning" content="
 **IMPORTANT: Use the device in landscape orientation**
 
-The ARENA localization solver for optical markers assumes that the device is in portrait orientation, and **we recommend locking the device to landscape orientation**. For example, the picture below shows a blue box at the origin scene. While not visible, the blue box is overlaid on an AprilTag anchoring the scene. **The device is in landscape orientation**.
+The ARENA localization solver for optical markers assumes that the device is in portrait orientation, and **we recommend locking the device to landscape orientation**. For example, the picture below shows a blue box at the origin scene. While not visible, the blue box is overlaid on an AprilTag anchoring the Scene. **The device is in landscape orientation**.
 "%}
 
 <img src="/assets/img/localization/landscape.png" width="500"/>
@@ -27,7 +27,7 @@ The ARENA localization solver for optical markers assumes that the device is in 
 
 Optical markers are added to ARENA scenes by attaching **ARMarker** components to scene objects. To perform relocalization, the ARENA location solver must know the pose of the detected marker. It will first try to find objects in the Scene with ARMarkers attached to use the pose of these objects, and if no data about a marker is found in the Scene, it will query ATLAS. Markers with ID 0, however, are assumed to mark the origin: 0, 0, 0 (x, y, z). You can override the ID 0 parameters in the Scene if desired.
 
-This section will describe how this can be achieved and provide a couple of examples.
+This section will describe how this can be achieved and provide some examples.
 
 <figure class="video_container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/rU6E3LHg0aQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -69,7 +69,7 @@ In the example, we add a .gltf to the Scene that visually represents the AprilTa
 
 ### Dynamic Marker
 
-To use a dynamic marker, we need to reference the Scene in the real world first. As shown in the previous example, we can do this by adding an AprilTag at the origin.
+To use a dynamic marker, we need to first reference the Scene in the real world. As shown in the previous example, we can do this by adding an AprilTag at the origin.
 
 Let us say we want to move a geometry, say a box, in the Scene. We add the box to the Scene and attach an ARMarker that we set as **dynamic** (this must be a different id than the AprilTag used to reference the Scene's origin). The second object will move in the Scene every time an observer with **permission to change the Scene** sees the corresponding AprilTag. This last part is essential; observers who cannot change the Scene will not update the box's position.
 
@@ -77,7 +77,7 @@ Check the example here. We have an AprilTag that references the origin **and** a
 
 <img src="/assets/img/xr/scene-dynamic-marker.gif" width="500"/>
 
-The viewer device was an IPad with XRViewer, and the user was logged in ARENA so it could change the box's position once it detected the dynamic AprilTag. In the Scene [scene builder](/content/overview/build), you can edit the Scene permissions to make sure the user logged in to the viewer device can edit the Scene:
+The viewer device was an IPad with XRViewer, and the user was logged in ARENA to change the box's position once it detected the dynamic AprilTag. In the Scene [scene builder](/content/overview/build), you can edit the Scene permissions to make sure the user logged in to the viewer device can edit the Scene:
 
 <img src="/assets/img/xr/build-scene-permissions.png" width="300"/>
 
