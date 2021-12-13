@@ -2,7 +2,7 @@
 title: Requirements
 nav_order: 2
 layout: tutorial
-parent: AR Experiences
+parent: MR Experiences
 ---
 
 # XR Requirements

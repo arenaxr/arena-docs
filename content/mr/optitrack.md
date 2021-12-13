@@ -2,7 +2,7 @@
 title: Optitrack
 nav_order: 6
 layout: default
-parent: AR Experiences
+parent: MR Experiences
 ---
 
 # Optitrack

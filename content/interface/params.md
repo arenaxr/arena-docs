@@ -1,7 +1,7 @@
 ---
 title: URL Parameters
-nav_order: 6
-layout: default
+nav_order: 7
+layout: tutorial
 parent: Web Interface
 ---
 

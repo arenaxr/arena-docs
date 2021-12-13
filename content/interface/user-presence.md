@@ -1,6 +1,6 @@
 ---
 title: User Presence
-nav_order: 1
+nav_order: 3
 layout: tutorial
 parent: Web Interface
 ---

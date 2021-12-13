@@ -2,7 +2,7 @@
 title: Optical Markers
 nav_order: 3
 layout: tutorial
-parent: AR Experiences
+parent: MR Experiences
 ---
 
 # Optical Markers
