@@ -5,9 +5,10 @@ layout: default
 has_children: true
 ---
 
+# Python Library Overview
+
 The Python library provides a very accessible development option for ARENA applications. Our current API allows us to create and update objects in a scene, define animations, and setup callbacks on events and timers. The library provides a scheduler and a design pattern familiar to game developers, which includes decorators to create one-shot, periodic and delayed (start after a given time) tasks.Any entity represented in Python is automatically updated upon arrival of network messages and we provide calls to load any pre-existing scene content upon startup.
 
-# Python Library Overview
 Draw objects and run programs in the ARENA using Python!
 - [**ARENA-py**](https://github.com/conix-center/ARENA-py) Python repository
 

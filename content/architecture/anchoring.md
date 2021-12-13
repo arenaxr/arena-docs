@@ -5,6 +5,8 @@ layout: tutorial
 parent: Architecture
 ---
 
+# Anchoring to Reality
+
 ARENA provides several mechanisms to help streamline the management and sharing of anchor data as well as simplifying the process of combining multiple tracking technologies into a uniform coordinate system. ARENA scenes can be registered and discovered by the Atlas service. Atlas operates in a hierarchical manner much like the Internet’s Domain Name Service (DNS), but using a mixture of GPS coordinates, UUIDs and Scenes instead of domain names. UUID markers can be embedded into QR codes,BLE beacons or other digital markers (WiFi, LTE tower, etc). Atlas can also provide absolute and/or local coordinates for markers that are associated with scenes. For example, a user could scan a QR code or read a BLE beacon which provides a UUID that maps to a GPS coordinate along with any Scenes that contain that GPS coordinate. Atlas stores a GPS location for each Scene along with a 3D bounding polygon. The GPS location is typically assigned to the origin of the Scene’s local coordinate system.  A user can perform follow-up queries to Atlas for assets that fall within each Scene. For example, a Scene might contain a number of AprilTags(low bit-density tracking markers) that have GPS coordinates as well as local coordinates referenced from the Scene’s origin. It is worth noting that a Scene’s address can be used to form a URL for virtual environments that have no physical location.Since Atlas is a public facing entity that needs administrative management, ARENA also supports the ability to store location data within a Scene by attaching real-world properties to objects.
 
 ```json

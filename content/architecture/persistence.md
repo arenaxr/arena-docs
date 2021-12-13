@@ -5,24 +5,26 @@ layout: tutorial
 parent: Architecture
 ---
 
+# Persistence
+
 When a Scene in ARENA is loaded, its current state is fetched from a data store service that tracks the persisted state of the Scene. In this section, we detail some features this essential ARENA service.
 
 ![img](../../assets/img/overview/scene-load.png)
 **Figure 3**. Scene objects are first loaded from a data store service and then updated over PubSub.
 
-### Object Persistence
+## Object Persistence
 Simply adding `persist: true` to the top level MQTT message for any `create` action and the object will be saved.
 A client then can make a HTTP request to the URL the server this service is running on to retrieve a list of
 initially loaded objects upon entering any scene.
 
 If an `update` message contains an explicit `persist: false`, then the `data` therein will not be saved in persistence.
 
-### TTL
+## TTL
 Adding a `ttl` (int seconds) to the top level MQTT message for any `create` action with `persist:true` signals that the object
 will be automatically deleted from persistence after set duration, as well as a corresponding `delete` action message
 sent over pubsub.
 
-### Templates
+## Templates
 
 Templates are special scenes that can be instantiated in entirety in another scenes.
 

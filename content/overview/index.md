@@ -5,7 +5,7 @@ layout: tutorial
 has_children: true
 ---
 
-## Background
+# ARENA Background
 
 Many have predicted the future of the Web to be the integration of Web content with the real-world through technologies such as augmented reality. This overlay of virtual content on top of the physical world, called the Spatial Web (in different contexts might be called AR Cloud, MetaVerse, Digital Twin), holds promise for dramatically changing the Internet as we see it today, and has broad application.
 
@@ -54,7 +54,7 @@ It is worth noting that a Scene’s address can be used to form a URL for virtua
 
 Execution of applications in a Scene is managed by a local resource manager (ARTS) that is also part of the Realm. ARTS is responsible for dispatching, monitoring and migrating for execution of programs to available runtimes.
 
-# Next Steps
+## Next Steps
 
 You can learn the basics of the interface and [enter an ARENA scene](/content/overview/user-guide.html). Also learn about [building scenes](/content/overview/build.html), and how to develop [python programs](/content/overview/dev-guide.html) to define the behavior of your scenes.
 You can also see a more detailed description of the [ARENA architecture](/content/architecture/index.html).

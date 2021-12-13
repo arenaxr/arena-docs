@@ -6,11 +6,11 @@ parent: 3D Content
 ---
 
 
-## Converting Models
+# Converting Models
 
 Models in the ARENA need to be in the *.GLTF or *.GLB format. Most models on Sketchfab can be downloaded as GLTF models, however there are a lot of models in the SketchUp format.
 
-# Using Adobe Dimension
+## Using Adobe Dimension
 
 To convert a model from SketchUp to GLB using [Adobe Dimension](https://www.adobe.com/products/dimension.html) (in this case, we're using Adobe Dimension 2020), first click on "Create New" in the menu.
 

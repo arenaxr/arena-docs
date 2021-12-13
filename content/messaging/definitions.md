@@ -5,7 +5,7 @@ layout: default
 parent: Messaging Format
 ---
 
-## ARENA MQTT Message Payload JSON Specification
+# ARENA MQTT Message Payload JSON Specification
 Each ARENA message is JSON formatted and is structured for its general use and persistence within the ARENA environment. Each message begins with a [`Scene Message object`](#scene-message-object) of general properties, paired with a more granular detailed `data` sub-object which varies in form and follow the examples below.
 - [**ARENA-core**](https://github.com/conix-center/ARENA-core) webserver repository
 

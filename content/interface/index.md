@@ -27,7 +27,7 @@ In addition, we can access ARENA scenes as described below.
 We recommend the [ARENA Overview](/content/overview) as a quick introduction to ARENA and some of these areas, including on how to [access scenes](/content/overview/user-guide) and [edit/create them](/content/overview/build).
 "%}
 
-### ARENA Users and Security
+## ARENA Users and Security
 
 There are 2 basic methods of accessing the ARENA: **Authenticated** and **Anonymous**. Anonymous users are only allowed to participate in video conferencing as observers of the ARENA. Authenticated users however, also have the opportunity to create and edit ARENA 3D scenes and run programs in the ARENA.
 - **Collaborate**: [Join other users](user-presence) in a video conference.

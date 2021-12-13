@@ -5,11 +5,11 @@ layout: tutorial
 parent: AR Experiences
 ---
 
+# Optical Markers
+
 {% include alert type="note" content="
 Check out [the AR Experiences Requirements Section](/content/ar/requirements) for requirements of different types of anchors that can be used in ARENA and the browsers that support these.
 "%}
-
-# Optical Markers
 
 ARENA can support different optical markers: [Apriltags](https://april.eecs.umich.edu/software/apriltag), has experimental (outside the mainline code) support for [lightanchors/flash](https://youtu.be/_P01roIG93U), and more are expected to be added.
 

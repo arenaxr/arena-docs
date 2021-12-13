@@ -5,7 +5,7 @@ layout: default
 parent: 3D Content
 ---
 
-## Exporting from Unity
+# Exporting from Unity
 
 There are some limitations and things to keep in mind when exporting from [Unity](https://unity.com).
 

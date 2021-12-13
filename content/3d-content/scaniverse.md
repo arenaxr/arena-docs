@@ -4,7 +4,7 @@ layout: default
 parent: 3D Content
 ---
 
-## Scanning Spaces with LiDAR iPhone and Scaniverse
+# Scanning Spaces with LiDAR iPhone and Scaniverse
 
 [Scaniverse](https://scaniverse.com/) uses the lidar on your iPhone or iPad to generate a 3D model.
 
@@ -25,8 +25,8 @@ parent: 3D Content
 
 ### Using Scaniverse
 
-1. Open Scaniverse and click on "Create Scan".  
-2. Make sure the range setting is at the max (typically 5m).  
+1. Open Scaniverse and click on "Create Scan".
+2. Make sure the range setting is at the max (typically 5m).
 3. Press the "Start Scan" button and move around the space trying to fill in the entire volume.  Slow and steady motions work best.
 ![](../../assets/img/scaniverse/scaniverse-1.png)
 4. When you are done, select texture quality "High".  Experiment with different quality levels, but keep in mind that "Ultra" can lead to significantly larger model files which take longer to download and won't work as well on slower machines.
@@ -37,4 +37,3 @@ parent: 3D Content
 8. Select GLB for ARENA
 9. Use airdrop or one of the other options to transfer the model to your computer.  This can be done later offline.
 ![](../../assets/img/scaniverse/scaniverse-3.png)
-

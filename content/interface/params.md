@@ -5,7 +5,7 @@ layout: default
 parent: Web Interface
 ---
 
-## URL Parameters
+# URL Parameters
 
 For advanced users, the ARENA accepts URL parameters to override some internal defaults. These are passed in the address bar, after the scene name, e.g.:
 ```https://arenaxr.org/public/scenename/?name=MyName&scene=AScene```

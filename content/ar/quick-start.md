@@ -55,4 +55,6 @@ Finally, point the device to the AprilTag, and scene's origin should be anchored
 
 **iv)** After scanning (because the QR code is a web address), the page will open.
 
-#### Footnotes
+<!-- #### Footnotes
+
+TODO: Add footnotes -->

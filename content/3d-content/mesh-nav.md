@@ -1,12 +1,11 @@
 ---
-title: Navigation Meshes 
+title: Navigation Meshes
 nav_order: 6
 layout: default
 parent: 3D Content
 ---
 
-
-## Navigation Meshes 
+# Navigation Meshes
 
 Navigation meshes are used to confine walking users along a surface. The surface must be a single mesh in global coordinate space contained within a GLTF file.  Unlike other GLTF files, the navigation mesh can not be scaled, moved or rotated. The mesh must also have only positive Y-axis coordinates (does not go below the ground).  In the current implementation, the starting position of the user must have a Y-coordinate that matches that corresponding (X-Z coordinate) of the mesh at the location.
 
@@ -17,12 +16,12 @@ Navigation meshes are used to confine walking users along a surface. The surface
 1. Single Mesh Geometry
 2. Global Coordinate Space (apply all local coordinate transforms to flatten mesh)
 3. Mesh Y-coordinate must match user starting position Y-coordinate at X-Z location
-4. Mesh is often transparent (not required) 
+4. Mesh is often transparent (not required)
 
 
-## Blender Construction 
+## Blender Construction
 
-These instructions will walk you through manually creating a navigation mesh.  Tools and plugins exist that can help automatically generate navigation meshes for complex scenes. First, generate a new collection for your nav mesh and generate a plane for initial construction.  ARENA has Y-axis up while Blender has Z-asis up. The plane is located at Z-axis (Y in arena) of 0.  
+These instructions will walk you through manually creating a navigation mesh.  Tools and plugins exist that can help automatically generate navigation meshes for complex scenes. First, generate a new collection for your nav mesh and generate a plane for initial construction.  ARENA has Y-axis up while Blender has Z-asis up. The plane is located at Z-axis (Y in arena) of 0.
 
 ![](../../assets/img/nav-mesh/nav-1.png)
 
@@ -38,7 +37,7 @@ Confirm that after applying all transforms, that the model is located at 0,0,0, 
 
 ![](../../assets/img/nav-mesh/nav-4.png)
 
-Add the navigation mesh in the ARENA builder in the `scene-options` object as a URL to the file. 
+Add the navigation mesh in the ARENA builder in the `scene-options` object as a URL to the file.
 
 ![](../../assets/img/nav-mesh/nav-5.png)
 
@@ -49,4 +48,3 @@ starting position already constrained to the navmesh. If there **is** a vertical
 not apply unless specified with a [starting position landmark](../messaging/definitions#landmark-object). With a `landmark`
 property `constrainToNavMesh` set, a teleport to landmark or starting random position can forcibly snap a user to the nearest
 position on the navigation mesh.
-

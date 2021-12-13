@@ -5,7 +5,7 @@ layout: default
 parent: 3D Content
 ---
 
-## Scanning a Large Space with Matterport
+# Scanning a Large Space with Matterport
 
 [Matterport](https://matterport.com/).
 
