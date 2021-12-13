@@ -1,11 +1,11 @@
 ---
-title: Opititrack
+title: Optitrack
 nav_order: 6
 layout: default
 parent: AR Experiences
 ---
 
-# Opititrack
+# Optitrack
 
 The ARENA team often uses Optitrack motion capture systems for indoor tracking and to ground truth localization techniques. We integrated Optitrack with ARENA in the lab and expect to package this capability soon.
 

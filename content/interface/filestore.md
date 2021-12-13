@@ -25,7 +25,7 @@ Most of the 3D models are stored in the folder "models". To add a 3D model, make
 
 ## Uploading Programs
 
-To upload a Python or WASM program to the ARENA, follow the same steps as uploading at 3D model. Either create a new file/folder, or upload the files/folders with the programs.
+To upload a Python or WASM program to the ARENA, follow the same steps as uploading a 3D model. Either create a new file/folder, or upload the files/folders with the programs.
 
 ![](../../assets/img/overview/filestore/fs4.jpg)
 

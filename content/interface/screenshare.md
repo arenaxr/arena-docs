@@ -72,10 +72,10 @@ There are a few hints to help you establish objects to screenshare on.
 
 <img src="/assets/img/overview/screenshare/ARENA-screenshare8.png" width="100%" />
 
-## Using Power Point
+## Using PowerPoint
 
 {% include alert type="tip" content="
-**You can easily share just a screen in power point even in presenter mode.**
+**You can easily share just a screen in PowerPoint even in presenter mode.**
 "%}
 
 - **Slide Show** \-> **Setup Slide Show Options** \-> **Browsed by an individual**
