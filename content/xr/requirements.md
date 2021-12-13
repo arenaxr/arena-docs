@@ -70,7 +70,7 @@ To try ARENA in VR, you can use the Oculus Browser (*tested on the Quest 2*) and
 ##### Moving around: 
 A forward push on the left hand rocker brings up the teleportation ring. Clicking the rocker left and right rotates.
 
-<img src="/assets/img/mr/quest-2.png" width="500"/>
+<img src="/assets/img/xr/quest-2.png" width="500"/>
 
 ### Helio (Magic Leap)
 

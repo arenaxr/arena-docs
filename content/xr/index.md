@@ -1,5 +1,5 @@
 ---
-title: MR Experiences
+title: XR Experiences
 nav_order: 3
 layout: default
 has_children: true
@@ -14,5 +14,9 @@ As an illustrative example, the following video demonstrates ARENA being used in
 <figure class="video_container">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ydDAa2edIMI?autoplay=1&controls=0&showinfo=0&modestbranding=1&wmode=transparent&disablekb=1&rel=0&enablejsapi=1&widgetid=1&loop=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
+
+{% include alert type="note" content="
+We recommend the [miXed Reality (XR) Overview](/content/overview/xr) for a quick taste of XR in ARENA.
+"%}
 
 **See the following sections for details on requirements, setting up scenes for mixed reality experiences and anchoring them.**

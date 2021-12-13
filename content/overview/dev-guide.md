@@ -187,7 +187,7 @@ Examine the list of elements on the left side. Each element or object you select
 ![](../../../assets/img/overview/inspector.png)
 
 ## AR Builder, visual content authoring
-We also have a Python program, [AR Builder (ARB)](../tools/authoring), which you can use to create and edit objects for your scene. You can use it in VR (virtual reality) as a way to edit your scene and save changes to the persistence database. Importantly, you can use it in AR (augmented reality) in combination with [AR-supported browsers](https://createwebxr.com/webAR.html) and [localization techniques](../mr) to anchor scene objects in physical space.
+We also have a Python program, [AR Builder (ARB)](../tools/authoring), which you can use to create and edit objects for your scene. You can use it in VR (virtual reality) as a way to edit your scene and save changes to the persistence database. Importantly, you can use it in AR (augmented reality) in combination with [AR-supported browsers](https://createwebxr.com/webAR.html) and [localization techniques](../xr) to anchor scene objects in physical space.
 
 {% include alert type="note" title="note" content="
 AR-supported browsers still need customization from our lab to support visual localization tags.
