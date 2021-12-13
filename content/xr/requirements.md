@@ -2,7 +2,7 @@
 title: Platforms
 nav_order: 2
 layout: tutorial
-parent: MR Experiences
+parent: XR Experiences
 ---
 
 # Supported Platforms

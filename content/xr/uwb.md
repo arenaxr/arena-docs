@@ -2,7 +2,7 @@
 title: UWB
 nav_order: 5
 layout: default
-parent: MR Experiences
+parent: XR Experiences
 ---
 
 # UWB
