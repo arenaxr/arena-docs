@@ -1,6 +1,6 @@
 ---
 title: Optical Markers
-nav_order: 3
+nav_order: 4
 layout: tutorial
 parent: MR Experiences
 ---
@@ -51,7 +51,7 @@ The ARENA pose solver knows the pose of the marker by looking at the object to w
 ### Fixed Origin Marker
 To add a marker and reference the Scene's origin in the real world, we add an object (named 'origin-marker' in the example) that will visually represent the marker at coordinates 0,0,0 (x, y, z). Then, we attach an ARMarker component to it. Because the marker is laid horizontally on the ground, we have to rotate the object (that visually represents the marker) by -90° in the x-axis.
 
-Check the example [Scene in ARENA](https://mrenaxr.org/public/mrtags1). The AprilTag references the origin of the Scene in the real world. Here, we placed it near the corner of the carpet:
+Check the example [Scene in ARENA](https://arenaxr.org/public/artags1). The AprilTag references the origin of the Scene in the real world. Here, we placed it near the corner of the carpet:
 
 <img src="/assets/img/mr/scene-origin-tag.png" width="500"/>
 
