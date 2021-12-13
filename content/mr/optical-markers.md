@@ -7,24 +7,18 @@ parent: MR Experiences
 
 # Optical Markers
 
-{% include alert type="note" content="
-Check out [the AR Experiences Requirements Section](/content/mr/requirements) for requirements of different types of anchors that can be used in ARENA and the browsers that support these.
-"%}
-
 ARENA can support different optical markers: [Apriltags](https://april.eecs.umich.edu/software/apriltag), has experimental (outside the mainline code) support for [lightanchors/flash](https://youtu.be/_P01roIG93U), and more are expected to be added.
 
-# Requirements
+## Requirements
 
 Optical Markers require support for ARENA's computer vision processing pipeline, which is supported by the custom camera access implemented in [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) and [XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989), and also by [WebXR's raw camera access currently implemented in Chrome](https://chromestatus.com/feature/5759984304390144).
 
-{% include alert type="note" content="
-As of December 2021, besides XRBrowser and WebXRViewer, only Chrome Beta supports ARENA's computer vision processing pipeline. See the browser support section for details.
-"%}
+**Check out [Platforms Section](/content/mr/requirements) for details on browsers and platforms that support optical markers in ARENA.**
 
 {% include alert type="warning" content="
 **IMPORTANT: Use the device in landscape orientation**
 
-The ARENA localization solver for optical markers assumes that the device is in portrait orientation, and **we recommend locking the device to landscape orientation**. For example, the picture below shows a blue box at the origin scene. While not visible, the blue box is overlaid on an AprilTag anchoring the scene.
+The ARENA localization solver for optical markers assumes that the device is in portrait orientation, and **we recommend locking the device to landscape orientation**. For example, the picture below shows a blue box at the origin scene. While not visible, the blue box is overlaid on an AprilTag anchoring the scene. **The device is in landscape orientation**.
 "%}
 
 <img src="/assets/img/localization/landscape.png" width="500"/>

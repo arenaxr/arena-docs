@@ -13,7 +13,7 @@ Additionally, and to prototype the needs for future browser platforms, we are al
 
 ## Browser Support
 
-The following table summarizes the browsers, platforms and support for ARENA's capabilities. Where available, the [details/settings] link provides more details about the specific browser and pltaforms.
+The following table summarizes the browsers, platforms and support for ARENA's capabilities. Where available, the **details/settings** link provides more details about the specific browser and pltaforms.
 
 | Browser                                           | MR Experiences (WebXR support)                  | ARENA CV (Optical Markers)<sup>1</sup>                                        |
 | ------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------ |
@@ -21,10 +21,10 @@ The following table summarizes the browsers, platforms and support for ARENA's c
 | Mozilla WebXRViewer ([details/settings](#webxrviewer-ios)) | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>             |
 | Chrome ([details/settings](#chrome-android-and-more)) <sup>android</sup>    | Mobile/Tablet (Android) and desktop             | <span style="color:green">Supported</span><sup>2</sup>  |
 | Mozilla Firefox                                   | Mobile/Tablet (Android) and desktop<sup>3</sup> | <span style="color:red">Not supported</span>           |
-| Microsoft Edge                                    | Mobile/Tablet, desktop and HoloLens         | <span style="color:green">Supported</span>           |
+| Microsoft Edge ([details/settings](#edge))                                   | Mobile/Tablet, desktop and HoloLens         | <span style="color:green">Supported</span>           |
 | Safari                                            | Desktop<sup>3</sup>                             | <span style="color:red">Not supported</span>           |
-| Oculus Browser                                    | Oculus headsets (e.g. Quest, Quest 2)           | <span style="color:red">Not supported</span>           |
-| Helios                                            | Magic Leap                                      | <span style="color:green">Supported</span>             |
+| Oculus Browser ([details/settings](#oculus-browser-quest-quest-2-and-more))                                    | Oculus headsets (e.g. Quest, Quest 2)           | <span style="color:red">Not supported</span>           |
+| Helio ([details/settings](#oculus-browser-quest-quest-2-and-more))                                            | Magic Leap                                      | <span style="color:green">Supported</span>             |
 
 <sup>1</sup> ARENA Computer Vision pipeline support is required for optical markers, and it will default to process the default camera facing the environment in each different device (the back camera in phones/tablets and the front camera facing the environement on AR headsets).<br/>
 <sup>2</sup> Chrome Beta only.<br/>
@@ -56,7 +56,11 @@ Mozilla's WebXRViewer viewer can be installed from the [App Store](https://apps.
 
 ![img](../../assets/img/localization/webxrviewer-settings.png)
 
-### Oculus Browser 
+### Edge
+
+TBA
+
+### Oculus Browser (Quest, Quest 2 and more)
 
 To try ARENA in VR, you can use the Oculus Browser (*tested on the Quest 2*) and enter the scene URL. Be patient while the scene loads and the:
 1. click “Enter” on the normal AV dialog box
@@ -67,3 +71,18 @@ To try ARENA in VR, you can use the Oculus Browser (*tested on the Quest 2*) and
 A forward push on the left hand rocker brings up the teleportation ring. Clicking the rocker left and right rotates.
 
 <img src="/assets/img/mr/quest-2.png" width="500"/>
+
+### Helio (Magic Leap)
+
+Helio is Magic Leap’s web browser available on Magic Leap devices. Follow [these steps to open Helio and navigate to a website](https://developer.magicleap.com/en-us/learn/guides/debug-web-content), which we reproduce here for ease of access:
+
+> 1. In the Magic Leap device, hold down the Home Button on the Control to show The Launcher. A circle of icons appear in the view.
+>
+> 2. Use the Control pointer or swipe on the touchpad to navigate to the Helio app in The Launcher. Press the trigger on the Control to select it. The Helio app launches.
+>
+> 3. Use the Control or swipe on the touchpad to navigate to the URL bar at the top of the Helio window.
+> 
+> 4. Press the trigger on the Control to select the URL bar. A virtual keyboard appears that you can use to enter a URL address. You can also use Magic Leap Mobile App to enter text from your mobile device. See [Magic Leap Mobile App for more information](https://developer.magicleap.com/en-us/learn/guides/magic-leap-mobile-app).
+> 
+> 5. Enter this page’s URL and see it display on the Magic Leap device.
+
