@@ -13,6 +13,24 @@ Check out [the AR Experiences Requirements Section](/content/mr/requirements) fo
 
 ARENA can support different optical markers: [Apriltags](https://april.eecs.umich.edu/software/apriltag), has experimental (outside the mainline code) support for [lightanchors/flash](https://youtu.be/_P01roIG93U), and more are expected to be added.
 
+# Requirements
+
+Optical Markers require support for ARENA's computer vision processing pipeline, which is supported by the custom camera access implemented in [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) and [XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989), and also by [WebXR's raw camera access currently implemented in Chrome](https://chromestatus.com/feature/5759984304390144).
+
+{% include alert type="note" content="
+As of December 2021, besides XRBrowser and WebXRViewer, only Chrome Beta supports ARENA's computer vision processing pipeline. See the browser support section for details.
+"%}
+
+{% include alert type="warning" content="
+**IMPORTANT: Use the device in landscape orientation**
+
+The ARENA localization solver for optical markers assumes that the device is in portrait orientation, and **we recommend locking the device to landscape orientation**. For example, the picture below shows a blue box at the origin scene. While not visible, the blue box is overlaid on an AprilTag anchoring the scene.
+"%}
+
+<img src="/assets/img/localization/landscape.png" width="500"/>
+
+## Attaching an ARMarker Component to Scene Objects
+
 Optical markers are added to ARENA scenes by attaching **ARMarker** components to scene objects. To perform relocalization, the ARENA location solver must know the pose of the detected marker. It will first try to find objects in the Scene with ARMarkers attached to use the pose of these objects, and if no data about a marker is found in the Scene, it will query ATLAS. Markers with ID 0, however, are assumed to mark the origin: 0, 0, 0 (x, y, z). You can override the ID 0 parameters in the Scene if desired.
 
 This section will describe how this can be achieved and provide a couple of examples.
@@ -20,8 +38,6 @@ This section will describe how this can be achieved and provide a couple of exam
 <figure class="video_container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/rU6E3LHg0aQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
-
-## Attaching an ARMarker Component to Scene Objects
 
 An ARENA scene might contain several markers with GPS coordinates and local coordinates referenced from the Scene's origin. The following image exemplifies how to attach an **ARMarker** component to a geometry object in a scene (in this case, a box), using the [scene builder](/content/overview/build):
 
@@ -42,7 +58,6 @@ In ARENA's world coordinate system (shown as i. in the figure below), positive i
 The figure shows examples of markers and how their orientation aligns with ARENA's coordinate system. For example, a vertical marker along the world's z-axis (shown as ii. in the figure) does not need a rotation as this aligns with the marker's local coordinate system. However, a marker laid horizontal on the ground (iii. in the figure) is rotated by -90° in the x-axis.
 
 The ARENA pose solver knows the pose of the marker by looking at the object to which a corresponding ARMarker component is attached. To indicate the pose of markers, we enter it as the pose of an object placed in the Scene to which we link an ARMarker component that has the identifier of the marker. See the 'fixed origin maker' example below for a concrete example.
-
 
 ## Examples
 

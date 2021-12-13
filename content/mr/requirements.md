@@ -1,47 +1,36 @@
 ---
-title: Requirements
+title: Platforms
 nav_order: 2
 layout: tutorial
 parent: MR Experiences
 ---
 
-# XR Requirements
+# Supported Platforms
 
-Mixed Reality experiences in ARENA require a WebXR-compatible browser, which currently includes Edge (desktop), Chrome (desktop and mobile), Firefox (desktop and mobile; not enabled by default), among others as shown [here](https://caniuse.com/webxr). Note that these include browsers that can run in many AR and VR headsets. For example, Oculus/Meta and Magic Leap's browsers are based on the open-source codebase of Chrome (Chromium) and include WebXR support.
+Mixed Reality experiences in ARENA require a WebXR-compatible browser, which currently includes Edge (desktop), Chrome (desktop and mobile), Firefox (desktop and mobile; not enabled by default), among others as shown [here](https://caniuse.com/webxr). Note that these include browsers that can run in many AR and VR headsets. For example, Oculus/Meta and Magic Leap's browsers are based on the open-source codebase of Chrome (Chromium) and include WebXR support. See below for a summary table of supported browsers and platforms.
 
 Additionally, and to prototype the needs for future browser platforms, we are also maintaining **[XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989)**, a custom version of Firefox for iOS (based off [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056)). Both [XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989) and [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) support ARENA's computer vision pipeline. In addition, the team used [XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989) to experiment with other features, such as [spoof-resilient AR anchors](https://wise.ece.cmu.edu/projects/glitter.html).
 
-Here we will describe the requirements of different types of anchors used in ARENA and the browsers that support these.
-
-### Optical Markers
-
-ARENA can support different optical markers: [Apriltags](https://april.eecs.umich.edu/software/apriltag), has experimental (outside the mainline code) support for [lightanchors/flash](https://youtu.be/_P01roIG93U), and more are expected to be added.
-
-Optical Markers require support for ARENA's computer vision processing pipeline, which is supported by the custom camera access implemented in [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) and [XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989), and also by [WebXR's raw camera access currently implemented in Chrome](https://chromestatus.com/feature/5759984304390144).
-
-{% include alert type="note" content="
-As of December 2021, besides XRBrowser and WebXRViewer, only Chrome Beta supports ARENA's computer vision processing pipeline. See the browser support section for details.
-"%}
-
-
-{% include alert type="warning" content="
-**IMPORTANT: Use the device in landscape orientation**
-
-The ARENA localization solver for optical markers assumes that the device is in portrait orientation, and **we recommend locking the device to landscape orientation**. For example, the picture below shows a blue box at the origin scene. While not visible, the blue box is overlaid on an AprilTag anchoring the scene.
-"%}
-
-
-![img](../../assets/img/localization/landscape.png)
-
-
-### Ultra-wideband (UWB)
-
-UWB is a short-range radio technology widely used for indoor positioning.
-ARENA support for UWB is still mostly experimental and under development.
-
 ## Browser Support
 
-The following describes the browsers and settings needed to use ARENA's mixed reality capabilities.
+The following table summarizes the browsers, platforms and support for ARENA's capabilities. Where available, the [details/settings] link provides more details about the specific browser and pltaforms.
+
+| Browser                                           | MR Experiences (WebXR support)                  | ARENA CV (Optical Markers)<sup>1</sup>                                        |
+| ------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------ |
+| XRBrowser ([details/settings](#xrbrowser-ios)) <sup>ios</sup>             | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>             |
+| Mozilla WebXRViewer ([details/settings](#webxrviewer-ios)) | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>             |
+| Chrome ([details/settings](#chrome-android-and-more)) <sup>android</sup>    | Mobile/Tablet (Android) and desktop             | <span style="color:green">Supported</span><sup>2</sup>  |
+| Mozilla Firefox                                   | Mobile/Tablet (Android) and desktop<sup>3</sup> | <span style="color:red">Not supported</span>           |
+| Microsoft Edge                                    | Mobile/Tablet, desktop and HoloLens         | <span style="color:green">Supported</span>           |
+| Safari                                            | Desktop<sup>3</sup>                             | <span style="color:red">Not supported</span>           |
+| Oculus Browser                                    | Oculus headsets (e.g. Quest, Quest 2)           | <span style="color:red">Not supported</span>           |
+| Helios                                            | Magic Leap                                      | <span style="color:green">Supported</span>             |
+
+<sup>1</sup> ARENA Computer Vision pipeline support is required for optical markers, and it will default to process the default camera facing the environment in each different device (the back camera in phones/tablets and the front camera facing the environement on AR headsets).<br/>
+<sup>2</sup> Chrome Beta only.<br/>
+<sup>3</sup> Not enabled by default.<br/>
+<sup>ios</sup> Preferred iOS Browser. Our fork of Mozila's WebXRViewer.<br/>
+<sup>android</sup> Preferred Android Browser.<br/>
 
 ### XRBrowser (iOS)
 
@@ -53,16 +42,28 @@ This Browser is a fork of the experimental [Mozilla WebXRViewer (XR version of F
 
 Currently (December 2021), only [Chrome Beta](https://www.google.com/chrome/beta/) has experimental support for [WebXR's raw camera access](https://chromestatus.com/feature/5759984304390144), which is required for ARENA's computer vision processing pipeline. We expect this feature to be rolled over into the stable release soon.
 
-Make sure that the `chrome://flags/#webxr` (paste this into your URL bar) flag is enabled (by default, it should be).
+Make sure that the `chrome://flags/#webxr` (paste this into your URL bar) flag is enabled (since late 2019, Chrome v79, this should be enabled by default; please update chrome otherwise).
 
 ### WebXRViewer (iOS)
 
-While we recommend using [XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989) on iOS, for those who want to use the original Mozilla version, ** you need to apply a few setting configuration updates**.
+While we recommend using [XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989) on iOS, for those who want to use the original Mozilla version, **you need to apply a few setting configuration updates**.
 
 Mozilla's WebXRViewer viewer can be installed from the [App Store](https://apps.apple.com/us/app/webxr-viewer/id1295998056). After installing WebXRViewer, go to 'Settings -> XRViewer' and change:
 
-**WebXR Polyfill URL**:  ```https://mrenaxr.org/webxrios.js``` or ```https://mrenaxr.org/vendor/webxr-webxrviewer-ios.js```
+##### WebXR Polyfill URL:  ```https://mrenaxr.org/webxrios.js``` or ```https://mrenaxr.org/vendor/webxr-webxrviewer-ios.js```
 
-**Always Allow World Sensing**:```Yes```
+##### Always Allow World Sensing:```Yes```
 
 ![img](../../assets/img/localization/webxrviewer-settings.png)
+
+### Oculus Browser 
+
+To try ARENA in VR, you can use the Oculus Browser (*tested on the Quest 2*) and enter the scene URL. Be patient while the scene loads and the:
+1. click “Enter” on the normal AV dialog box
+2. Unmute mic BEFORE entering VR
+3. Click the <button type="button" name="button" class="btn fs-3 ">VR</button> button in the lower right to enter immersive mode
+
+##### Moving around: 
+A forward push on the left hand rocker brings up the teleportation ring. Clicking the rocker left and right rotates.
+
+<img src="/assets/img/mr/quest-2.png" width="500"/>
