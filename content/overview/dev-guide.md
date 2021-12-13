@@ -17,7 +17,7 @@ You can define the appearance and behavior of objects in a scene using python pr
 
 Note that the python program can be hosted anywhere with access to the MQTT bus. For simplicity, we will assume that your program is running on your local machine. However, the execution and hosting of programs can be handled by the ARENA itself, using ARTS.
 
-[//]: # TODO: Link to ARTS.
+<!-- TODO: Link to ARTS. -->
 
 
 ## Install the ARENA Python library
