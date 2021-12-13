@@ -1,13 +1,15 @@
 ---
-title: Quick AR Taste
-nav_order: 1
+title: Mixed Reality
+nav_order: 4
 layout: tutorial
-parent: AR Experiences
+parent: Overview
 ---
 
-# Quick AR Experience Example
+# Quick MR Experience Example
 
-Try the following for a quick sample of AR using ARENA by opening a pre-made scene and anchoring it in the real world with an optical marker.
+ARENA has seamless support for a spectrum of experiences, from completely immersing the user in a digital world (Virtual Reality; **VR**) to enhancing the real world with interactive digital content (Augmented Reality; **AR**). A spectrum often identified as **miXed Reality (XR)**. Try the following for a quick sample of AR using ARENA by opening a pre-made scene and anchoring it in the real world with an optical marker. 
+
+For simplicity, here we suggest a pass-through AR experience using the back-facing camera of a phone or tablet to capture the world and display the mix of virtual and real contents on the screen (options using Android and iOS below). In the [Augmented Reality Section](content/mr) you can find more information about using ARENA for MR, including different types of anchors, and supported devices.
 
 ## Requirements
 

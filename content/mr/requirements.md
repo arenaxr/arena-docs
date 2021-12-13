@@ -61,7 +61,7 @@ While we recommend using [XRBrowser](https://apps.apple.com/us/app/xr-browser/id
 
 Mozilla's WebXRViewer viewer can be installed from the [App Store](https://apps.apple.com/us/app/webxr-viewer/id1295998056). After installing WebXRViewer, go to 'Settings -> XRViewer' and change:
 
-**WebXR Polyfill URL**:  ```https://arenaxr.org/webxrios.js``` or ```https://arenaxr.org/vendor/webxr-webxrviewer-ios.js```
+**WebXR Polyfill URL**:  ```https://mrenaxr.org/webxrios.js``` or ```https://mrenaxr.org/vendor/webxr-webxrviewer-ios.js```
 
 **Always Allow World Sensing**:```Yes```
 
