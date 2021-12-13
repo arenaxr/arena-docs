@@ -11,7 +11,7 @@ all: install serve
 check:
 	$(JEKYLL) doctor
 	$(HTMLPROOF) --check-html \
-		--http-status-ignore 999 \
+		--http-status-ignore 999,403,429 \
 		--assume-extension \
 		--allow-hash-href \
 		--check-favicon \

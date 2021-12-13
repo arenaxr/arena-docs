@@ -82,7 +82,7 @@ The `create`, `update`, and `delete` actions are similar to typical C\(R\)UD ope
 ## "Object Data" object
 
 {% include alert type="warning" title="Arbitrary A-Frame Components" content="
-Some A-Frame attributes and components we don't officially include in our JSON may be usable by following certain [patterns of use](../developer/aframe). We make no promises!
+Some A-Frame attributes and components we don't officially include in our JSON may be usable by following certain [patterns of use](../messaging/arena-aframe-components). We make no promises!
 "%}
 
 ### properties

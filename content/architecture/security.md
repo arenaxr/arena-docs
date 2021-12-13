@@ -30,7 +30,7 @@ The user database is consulted to generate the ARENA JSON Web Token (jwt1), then
 3. (Web only) A Jitsi server connection is established using jwt1 which includes authority for this scene as a meeting room.
 4. Any static graphical object data for the scene is loaded from the object persistence database if the jwt1 permits **subscribing** to this scene.
 5. A MQTT broker connection is established with a **subscription** to messages for scene graphical updates, user text chat, and runtime management topics. Now the user can **publish** MQTT messages to change scene graphics, which is generally only permitted by the scene creator via jwt1.
-6. If MQTT messages for the scene requested to be [**persistent**](/content/tools/persistence) and not **ephemeral** in the scene, the persistence database has **subscribed** to the MQTT broker with an all-scene **subscription** JWT (jwt2) so it may save those **published** message payloads.
+6. If MQTT messages for the scene requested to be [**persistent**](/content/architecture/persistence) and not **ephemeral** in the scene, the persistence database has **subscribed** to the MQTT broker with an all-scene **subscription** JWT (jwt2) so it may save those **published** message payloads.
 7. The user is **subscribed** via MQTT to all graphical updates to the scene, user text chats, and app updates, creating a synchronized real-time 3d-experience for users.
 8. Optionally, a user may add/delete scenes from the persistence database, requiring the appropriate topic level permission from jwt1.
 

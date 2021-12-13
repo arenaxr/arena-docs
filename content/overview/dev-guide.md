@@ -167,7 +167,7 @@ At your leisure, read more about methods to generate [3d content](../3d-content)
 
 ## Use persistence, reload browser
 
-Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. So, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistence database](../tools/persistence) you will have to specify `persist=True` in [Python definitions](../python/attributes). This is also true to when ARENA objects are created in other. The underlying message needs to specify if the object state is to be persisted or not.
+Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. So, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistence database](../architecture/persistence) you will have to specify `persist=True` in [Python definitions](../python/attributes). This is also true to when ARENA objects are created in other. The underlying message needs to specify if the object state is to be persisted or not.
 
 Go back to the previous python code and try to add `persist=True` to the duck object:
 ```
@@ -187,7 +187,7 @@ Examine the list of elements on the left side. Each element or object you select
 ![](../../../assets/img/overview/inspector.png)
 
 ## AR Builder, visual content authoring
-We also have a Python program, [AR Builder (ARB)](../tools/authoring), which you can use to create and edit objects for your scene. You can use it in VR (virtual reality) as a way to edit your scene and save changes to the persistence database. Importantly, you can use it in AR (augmented reality) in combination with [AR-supported browsers](https://createwebxr.com/webAR.html) and [localization techniques](../localization) to anchor scene objects in physical space.
+We also have a Python program, [AR Builder (ARB)](../tools/authoring), which you can use to create and edit objects for your scene. You can use it in VR (virtual reality) as a way to edit your scene and save changes to the persistence database. Importantly, you can use it in AR (augmented reality) in combination with [AR-supported browsers](https://createwebxr.com/webAR.html) and [localization techniques](../ar) to anchor scene objects in physical space.
 
 {% include alert type="note" title="note" content="
 AR-supported browsers still need customization from our lab to support visual localization tags.

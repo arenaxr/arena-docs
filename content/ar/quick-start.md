@@ -11,9 +11,9 @@ Try the following for a quick sample of AR using ARENA by opening a pre-made sce
 
 ## Requirements
 
-We will use an [Apriltag](https://april.eecs.umich.edu/software/apriltag) optical marker to anchor an ARENA scene in the real world. 
+We will use an [Apriltag](https://april.eecs.umich.edu/software/apriltag) optical marker to anchor an ARENA scene in the real world.
 
-Detection of optical markers requires that the browser supports ARENA's computer vision while in AR mode. For this quick test, we suggest [Chrome Beta](https://www.google.com/chrome/beta/) on Android or [XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989) on iOS. 
+Detection of optical markers requires that the browser supports ARENA's computer vision while in AR mode. For this quick test, we suggest [Chrome Beta](https://www.google.com/chrome/beta/) on Android or [XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989) on iOS.
 
 {% include alert type="note" content="
 Check out [this](/content/ar/requirements) Requirements Section for details on the requirements of different types of anchors that can be used in ARENA and the browsers that support these.
@@ -21,20 +21,20 @@ Check out [this](/content/ar/requirements) Requirements Section for details on t
 
 ## Open an ARENA Scene in AR
 
-Print out (or display on a screen[^1]) an [AprilTag with ID 0](https://github.com/conix-center/apriltag-gen/blob/master/output/tag36_11_00000.pdf) and open the scene at the following URL[^2]: 
+Print out (or display on a screen[^1]) an [AprilTag with ID 0](https://github.com/conix-center/apriltag-gen/blob/master/output/tag36_11_00000.pdf) and open the scene at the following URL[^2]:
 
 [https://arenaxr.org/public/artest?armode=true](https://arenaxr.org/public/artest?armode=true)<br/>
 <img src="/assets/img/ar/artest-url-qr-code.svg" width="200"/>
 
 {% include alert type="note" content="
-Use the QR Code to quickly open the URL. See some instructions about doing this using **XRBrowser** [further down](#open-scene-from-qr-code-xr-viewer-only).
+Use the QR Code to quickly open the URL. See some instructions about doing this using **XRBrowser** [further down](#open-scene-from-qr-code-xrbrowser).
 "%}
 
 [^1]: For a quick test, you can also use an Apriltag on a screen. Note, however, that the ARENA location solver needs to know the size of the tag to accurately compute its location (this information comes from the ARMarker object in the scene, which, in this scene, is configured for an Apriltag of size 150x150 mm).
 
 [^2]: The URL includes an `armode=true` flag which tells ARENA to automatically enter AR by skipping some AV setup steps. If this flag is not present, the user must select the <button type="button" name="button" class="btn fs-3 ">AR</button> button in the lower right to switch into AR mode.
 
-Opening the URL should display the following sequence of screens. Click “Allow” for motion and camera access and “Enter” for AR mode.  
+Opening the URL should display the following sequence of screens. Click “Allow” for motion and camera access and “Enter” for AR mode.
 
 | ![img](/assets/img/ar/enter-ar-1.png){: style="float: left"} | ![img](/assets/img/ar/enter-ar-2.png){: style="float: left"} |
 | Provide access to sensors (1) | Enter AR mode confirmation |
@@ -44,7 +44,7 @@ Finally, point the device to the Apriltag, and scene's origin should be anchored
 
 ### Open Scene From QR Code (XRBrowser)
 
-[XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989) supports loading a URL from a QR code: 
+[XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989) supports loading a URL from a QR code:
 
 **i)** Tap the address bar. The QR code scanner button will show up on the right.
 <img src="/assets/img/ar/xrbrowser-qr-code.png" width="400"/>

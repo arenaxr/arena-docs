@@ -79,7 +79,7 @@ Your ARENA scene may have the capability to use facial recognition to recognize 
 ![](../../assets/img/icons/screen-on.png){:height="32px" width="32px"}
 When you click and accept the screenshare icon and popup, it will ask for the object name/ID of the object you want to screen share on (defaulted to an object with `object_id`: `screenshare`, which is dynamically created if it doesn't exist already).
 
-- See our [Screenshare Walkthrough](/content/overview/screenshare) for more detail.
+- See our [Screenshare Walkthrough](/content/interface/screenshare) for more detail.
 
 ## Vive (laser) controls
 
