@@ -6,3 +6,10 @@ _vendor
 .bundle
 Gemfile.lock
 .DS_Store
+.devcontainer/base.Dockerfile
+.devcontainer/devcontainer.json
+.devcontainer/Dockerfile
+.devcontainer/post-create.sh
+.vscode/settings.json
+.vscode/tasks.json
+workspace.code-workspace
