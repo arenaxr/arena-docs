@@ -1,6 +1,6 @@
 ---
 title: Build Scenes
-nav_order: 3
+nav_order: 2
 layout: tutorial
 parent: Overview
 ---
@@ -178,7 +178,8 @@ or an `offsetPosition`. Otherwise, you may be placed in the middle of the object
 
 In an AR device (e.g, an AR headset or a tablet or mobile phone with passthrough AR capabilities), you can press the <button type="button" name="button" class="btn fs-3 ">AR</button> button at the bottom left (the AR button is not visible in devices that are not AR capable, such as a desktop). It will initiate an AR session where the background environment is hidden when entering AR (this is the default setting, but might vary depending on the configuration of your scene). 
 
-Your scene's origin will be placed relative to your device's location in the real world when the AR session starts. Usually, you will want to anchor your scene in the real world. **Check our section on [Mixed Reality (MR) Experiences](/content/xr/) for details on this and other aspects of creating AR experiences in ARENA.** 
+Your scene's origin will be placed relative to your device's location in the real world when the AR session starts. Usually, you will want to anchor your scene in the real world. The [following overview section](/content/overview/xr) has quick AR example shoing how to achor a scene in the real world. **Check our section on [Mixed Reality (MR) Experiences](/content/xr/) for details on this and other aspects of creating AR experiences in ARENA.** 
+
 
 Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
   {: .fs-1 }

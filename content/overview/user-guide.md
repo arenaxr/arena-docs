@@ -1,6 +1,6 @@
 ---
 title: First Time in the ARENA
-nav_order: 2
+nav_order: 1
 layout: tutorial
 parent: Overview
 ---
