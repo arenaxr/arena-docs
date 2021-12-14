@@ -53,13 +53,9 @@ Mozilla's WebXR Viewer viewer can be installed from the [App Store](https://apps
 * **WebXR Polyfill URL:** ```https://arenaxr.org/webxrios.js``` or ```https://arenaxr.org/vendor/webxr-webxrviewer-ios.js```
 * **Always Allow World Sensing:** ```Yes```
 
-<<<<<<< HEAD
 ##### Always Allow World Sensing:```Yes` "
 
 ![img](../../assets/img/xr/webxrviewer-settings.png)
-=======
-![img](../../assets/img/localization/webxrviewer-settings.png){:width="500px"}
->>>>>>> 884ebf914263da81889e01acddea76f4cb6f8dda
 
 ### Edge
 
