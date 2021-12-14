@@ -21,7 +21,7 @@ Optical Markers require support for ARENA's computer vision processing pipeline,
 The ARENA localization solver for optical markers assumes that the device is in portrait orientation, and **we recommend locking the device to landscape orientation**. For example, the picture below shows a blue box at the origin scene. While not visible, the blue box is overlaid on an AprilTag anchoring the Scene. **The device is in landscape orientation**.
 "%}
 
-<img src="/assets/img/localization/landscape.png" width="500"/>
+<img src="/assets/img/xr/landscape.png" width="500"/>
 
 ## Attaching an ARMarker Component to Scene Objects
 

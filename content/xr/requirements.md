@@ -54,7 +54,7 @@ Mozilla's WebXRViewer viewer can be installed from the [App Store](https://apps.
 
 ##### Always Allow World Sensing:```Yes` "
 
-![img](../../assets/img/localization/webxrviewer-settings.png)
+![img](../../assets/img/xr/webxrviewer-settings.png)
 
 ### Edge
 
