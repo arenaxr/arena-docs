@@ -23,14 +23,13 @@ Check out [this](/content/xr/requirements) Requirements Section for details on t
 
 ## Open an ARENA Scene in AR
 
-Print out (or display on a screen[^1]) an [AprilTag with ID 0](https://github.com/conix-center/apriltag-gen/blob/master/output/tag36_11_00000.pdf) and open the scene at the following URL[^2]:
+Print out (or display on a screen[^1]) an [AprilTag with ID 0](https://github.com/conix-center/apriltag-gen/blob/master/output/tag36_11_00000.pdf) and open the scene by entering the following URL[^2] in the address bar of **either [Chrome Beta](https://www.google.com/chrome/beta/) on Android or [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) on iOS**:
 
-[https://arenaxr.org/public/artest?armode=true](https://arenaxr.org/public/artest?armode=true)<br/>
-<img src="/assets/img/xr/artest-url-qr-code.svg" width="200"/>
-
+**[https://arenaxr.org/public/artest?armode=true](https://arenaxr.org/public/artest?armode=true)**<br/>
 {% include alert type="note" content="
-Use the QR Code to quickly open the URL. See some instructions about doing this using **XR Browser** [further down](#open-scene-from-qr-code-xr-browser).
+See instructions on using a **QR Code to quickly open the URL on XR Browser** [further down](#open-scene-from-qr-code-xr-browser).
 "%}
+
 
 [^1]: For a quick test, you can also use an AprilTag on a screen. Note, however, that the ARENA location solver needs to know the size of the tag to accurately compute its location (this information comes from the ARMarker object in the scene, which, in this scene, is configured for an AprilTag of size 150x150 mm).
 
@@ -47,14 +46,14 @@ Finally, point the device to the AprilTag, and scene's origin should be anchored
 ### Open Scene From QR Code (XR Browser)
 
 [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) supports loading a URL from a QR code:
-
-**i)** Tap the address bar. The QR code scanner button will show up on the right.
-<img src="/assets/img/xr/xrbrowser-qr-code.png" width="400"/>
-
-**ii).** XR Browser will open your phone camera for scanning QR codes after you grant it permission.
-
-**iii)** Position the QR code to align it within the frame outlined by the four blue corners. XR Browser will automatically scan the QR code once it detects proper alignment.
-
-**iv)** After scanning (because the QR code is a web address), the page will open.
+> **i)** Tap the address bar. The QR code scanner button will show up on the right.
+> <img src="/assets/img/xr/xrbrowser-qr-code.png" width="400"/>
+> 
+> **ii).** XR Browser will open your phone camera for scanning QR codes after you grant it permission.
+> 
+> **iii)** Position the following QR code to align it within the frame outlined by the four blue corners. XR Browser will automatically scan the QR code once it detects proper alignment.
+> <img src="/assets/img/xr/artest-url-qr-code.svg" width="200"/><br/>
+> 
+> **iv)** After scanning (because the QR code is a web address), the page will open.
 
 #### Footnotes

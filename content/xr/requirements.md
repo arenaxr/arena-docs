@@ -53,13 +53,19 @@ Mozilla's WebXR Viewer viewer can be installed from the [App Store](https://apps
 * **WebXR Polyfill URL:** ```https://arenaxr.org/webxrios.js``` or ```https://arenaxr.org/vendor/webxr-webxrviewer-ios.js```
 * **Always Allow World Sensing:** ```Yes```
 
-##### Always Allow World Sensing:```Yes` "
-
 ![img](../../assets/img/xr/webxrviewer-settings.png)
 
 ### Edge
 
-TBA
+Recent versions of [Microsoft Edge adopted the Chromium open source project on the desktop, with WebXR support](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-microsoft-edge). 
+
+#### HoloLens 2
+
+These are some quick instructions to start using ARENA on HoloLens' Edge Browser:
+
+
+
+
 
 ### Oculus Browser (Quest, Quest 2 and more)
 
