@@ -8,7 +8,7 @@ parent: Overview
 # Build an ARENA Scene
 
 {% include alert type="note" content="
-We recommend the [ARENA Overview](/content/overview) to learn the about the main concepts of the ARENA.
+We recommend the [ARENA Overview](/content/overview) to learn about the main concepts of the ARENA.
 "%}
 
 We will now do a quick tour of a simple interface to edit ARENA scenes. We will see how to create a scene and add some content to it.
@@ -54,15 +54,15 @@ Press the edit <button type="button" name="button" class="btn fs-3 "><img src="/
 
 |![](/assets/img/overview/build/objects-list.png)| ![](/assets/img/overview/build/edit-popup.png)|
 
-This will trigger a popup in the upper left corner indicating that the object properties were loaded into the form show in the **Add/Edit Object** section (the popup will disappear in a few seconds).
+This will trigger a popup in the upper left corner indicating that the object properties were loaded into the form shown in the **Add/Edit Object** section (the popup will disappear in a few seconds).
 
 You can now edit the object properties. When we are done editing the object, we can press the <button type="button" name="button" class="btn btn-blue fs-3">**+** Add/Update Object</button> button to trigger an update.
 
-Below you have an example of how the entire **Add/Edit Object** section might look like after loading the `scene options` object. The **Type** select shows the type of the object being displayed. The ARENA has many object types as you can observe by opening the select. Most of the object types are 3D Objects, such as spheres, boxes, or GLTF models. There are also a few other object types to, for example, configure scenes (`scene options`) and to add programs to scene.
+Below you have an example of how the entire **Add/Edit Object** section might look like after loading the `scene options` object. The **Type** select shows the type of the object being displayed. The ARENA has many object types as you can observe by opening the select. Most of the object types are 3D Objects, such as spheres, boxes, or GLTF models. There are also a few other object types to, for example, configure scenes (`scene options`) and to add programs to scenes.
 
 Under the **Type** select you have some buttons to <button type="button" name="button" class="btn fs-3">Clear form</button> (for example, if you want to add a new object), to create an object identifier <button type="button" name="button" class="btn fs-3">Gen object_id</button> (some objects, such as programs, require long, unique identifiers), and the <button type="button" name="button" class="btn btn-blue fs-3">**+** Add/Update Object</button> button to trigger an update of the object.
 
-Notice the **Object JSON** on the right, this is a text representation of the object being edited in the form. All object in the ARENA have a [JSON](https://www.json.org/json-en.html) representation. As you edit the form, the JSON will be updated. You can also edit the JSON directly and use the <button type="button" name="button" class="btn fs-3">Update form</button> to reflect those edits back to the form. The **Validation** below will output any validation error detected in the object.
+Notice the **Object JSON** on the right, this is a text representation of the object being edited in the form. All objects in the ARENA have a [JSON](https://www.json.org/json-en.html) representation. As you edit the form, the JSON will be updated. You can also edit the JSON directly and use the <button type="button" name="button" class="btn fs-3">Update form</button> to reflect those edits back to the form. The **Validation** below will output any validation error detected in the object.
 
 Have a look at the form. We will look closer at the sections within the form below, which are mainly defined by the object type (in this case, `scene options`).
 
@@ -74,11 +74,11 @@ The first 4 properties of the form (**object_id**, **action**, **persist**, **ty
 Note that the **persist** property defines if the object state is to be persisted, or not. In case `persist=false`, the object will **not** be added to the object list (**Scene Objects** section). The update (triggered by the **Add/Update Object** button) will only be seen by current observers of the scene, will be lost once they leave or reload and will not be seen by observers joining the scene after the update.
 "%}
 
-A `scene options` object allows to set options for a [preset environment in the scene](https://github.com/supermedium/aframe-environment-component), set some scene options (such as audio range, publish behavior, or scene privacy) and define some renderer settings. The properties that appear on the form (and, therefore, the options that are available to be configured with the object) can be set with the <button type="button" name="button" class="btn fs-3">Properties</button> button. Notice the 3 different sections of the `scene options` object:
+A `scene options` object allows setting options for a [preset environment in the scene](https://github.com/supermedium/aframe-environment-component), set some scene options (such as audio range, publish behavior, or scene privacy) and define some renderer settings. The properties that appear on the form (and, therefore, the options that are available to be configured with the object) can be set with the <button type="button" name="button" class="btn fs-3">Properties</button> button. Notice the 3 different sections of the `scene options` object:
 
 <img src="/assets/img/overview/build/scene-options-obj.png" width="500"/>
 
-The checkboxes allow to hide/show those sub-sections (in reality, these are objects themselves) of the top-level object (`scene options`). Notice that each sub-section has it's own <button type="button" name="button" class="btn fs-3">Properties</button> button. For example, the environment presets:
+The checkboxes allow to hide/show those subsections (in reality, these are objects themselves) of the top-level object (`scene options`). Notice that each subsection has its own <button type="button" name="button" class="btn fs-3">Properties</button> button. For example, the environment presets:
 
 <img src="/assets/img/overview/build/env-presets.png" width="500"/>
 
@@ -150,11 +150,11 @@ You should have a magnificent Mammuthus primigenius (Blumbach) in your scene!
 A list of Landmarks is shown from the button at the bottom left corner of the screen
 [ <img src="/assets/img/overview/build/landmarks.svg" width="20"/> ](#){: .btn .mr-4}.
 
-Landmarks allow to jump to certain places on interest in a scene. If you copied the landmarks from `scene/public`, it is likely that you have a single landmark pointing to a *Screenshare*:
+Landmarks allow you to jump to certain places of interest in a scene. If you copied the landmarks from `scene/public`, it is likely that you have a single landmark pointing to a *Screenshare*:
 
 <img src="/assets/img/overview/build/landmark-list.png" width="300"/>
 
-Let us add a landmark to Mammuthus primigenius (Blumbach) model. This way, wherever we are in the scene, we can quickly jump to be near it. Start by selecting existing the Mammuthus object from the list.
+Let us add a landmark to the Mammuthus primigenius (Blumbach) model. This way, wherever we are in the scene, we can quickly jump to be near it. Start by selecting the existing Mammuthus object from the list.
 
 Update the object by pressing the <button type="button" name="button" class="btn btn-blue fs-3">**+** Add/Update Object</button> button.
 
@@ -163,7 +163,7 @@ the [`Landmark` property](../messaging/definitions#landmark-object). Add the `la
 
 ![](/assets/img/overview/build/landmarks-obj.png)
 
-The landmarks list will automatically update once this is property is added.
+The landmarks list will automatically update once this property is added.
 
 Now in the landmarks list and press the 'Mammuthus primigenius (Blumbach)' entry.
 
@@ -176,9 +176,9 @@ or an `offsetPosition`. Otherwise, you may be placed in the middle of the object
 
 ## See your scene in Augmented Reality (AR)
 
-In an AR device (e.g, an AR headset or a tablet or mobile phone with passthrough AR capabilities), you can press the <button type="button" name="button" class="btn fs-3 ">AR</button> button at the bottom left (the AR button is not visible in devices that are not AR capable, such as a desktop). It will initiate an AR session where the background environment is hidden when entering AR (this is the default setting, but might vary depending on the configuration of your scene). 
+In an AR device (e.g, an AR headset or a tablet or mobile phone with passthrough AR capabilities), you can press the <button type="button" name="button" class="btn fs-3 ">AR</button> button at the bottom left (the AR button is not visible in devices that are not AR capable, such as a desktop). It will initiate an AR session where the background environment is hidden when entering AR (this is the default setting, but might vary depending on the configuration of your scene).
 
-Your scene's origin will be placed relative to your device's location in the real world when the AR session starts. Usually, you will want to anchor your scene in the real world. The [following overview section](/content/overview/xr) has quick AR example shoing how to achor a scene in the real world. **Check our section on [Mixed Reality (MR) Experiences](/content/xr/) for details on this and other aspects of creating AR experiences in ARENA.** 
+Your scene's origin will be placed relative to your device's location in the real world when the AR session starts. Usually, you will want to anchor your scene in the real world. The [following overview section](/content/overview/xr) has a quick AR example showing how to anchor a scene in the real world. **Check our section on [miXed Reality (XR) Experiences](/content/xr/) for details on this and other aspects of creating AR experiences in ARENA.**
 
 
 Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>

@@ -79,7 +79,7 @@ The buttons around the screen give access to several options, such as: your soun
 | ![](../../assets/img/icons/logout.png){:height="32px" width="32px"}                                                                                                                                                 | **Sign Out**       | Exit the ARENA.                                                                                                     |
 
 ## Audio/Video Capabilities
-The ARENA experience includes audio and video capabilities. Users can share their video and see other users as floating cubes. One interesting feature is that sound is spatial in the ARENA (will fade as users get further away and comes from the direction where the user is).
+The ARENA experience includes audio and video capabilities. Users can share their video and see other users as floating cubes. One interesting feature is that sound is spatial in the ARENA (sound will fade as users get further away and will come from the direction where the user is).
 
 ![](../../assets/img/overview/userguide/a6.png)
 

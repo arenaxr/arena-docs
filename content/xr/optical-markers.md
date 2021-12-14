@@ -11,9 +11,9 @@ ARENA can support different optical markers: [Apriltags](https://april.eecs.umic
 
 ## Requirements
 
-Optical Markers require support for ARENA's computer vision processing pipeline, which is supported by the custom camera access implemented in [WebXRViewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) and [XRBrowser](https://apps.apple.com/us/app/xr-browser/id1588029989), and also by [WebXR's raw camera access currently implemented in Chrome](https://chromestatus.com/feature/5759984304390144).
+Optical Markers require support for ARENA's computer vision processing pipeline, which is supported by the custom camera access implemented in [WebXR Viewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) and [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989), and also by [WebXR's raw camera access currently implemented in Chrome](https://chromestatus.com/feature/5759984304390144).
 
-**Check out [Platforms Section](/content/xr/requirements) for details on browsers and platforms that support optical markers in ARENA.**
+**Check out the [Platforms Section](/content/xr/requirements) for details on browsers and platforms that support optical markers in ARENA.**
 
 {% include alert type="warning" content="
 **IMPORTANT: Use the device in landscape orientation**
@@ -64,7 +64,7 @@ Check the example [Scene in ARENA](https://arenaxr.org/public/artags1). The Apri
 
 <img src="/assets/img/xr/scene-origin-tag.png" width="500"/>
 
-In the example, we add a .gltf to the Scene that visually represents the AprilTag and the reference axis. This object is placed at 0, 0, 0 (x, y, z), and we attached an ARMarker with id 0 and size 150 mm (the id and size of the AprilTag placed on the floor), and set it as static (dynamic=false) and not buildable (buildable=false). The object (the .gltf) is rotated by -90° in the x-axis. The entire object definition that you can enter in the scene [scene builder](/content/overview/build) is [here](https://gist.github.com/nampereira/3e4cbf6748b42719ac3bd5d2f8354aad).
+In the example, we add a .gltf to the Scene that visually represents the AprilTag and the reference axis. This object is placed at 0, 0, 0 (x, y, z), and we attached an ARMarker with id 0 and size 150 mm (the id and size of the AprilTag placed on the floor), and set it as static (dynamic=false) and not buildable (buildable=false). The object (the .gltf) is rotated by -90° in the x-axis. The entire object definition that you can enter in the [scene builder](/content/overview/build) is [here](https://gist.github.com/nampereira/3e4cbf6748b42719ac3bd5d2f8354aad).
 
 
 ### Dynamic Marker
@@ -77,7 +77,7 @@ Check the example here. We have an AprilTag that references the origin **and** a
 
 <img src="/assets/img/xr/scene-dynamic-marker.gif" width="500"/>
 
-The viewer device was an IPad with XRViewer, and the user was logged in ARENA to change the box's position once it detected the dynamic AprilTag. In the Scene [scene builder](/content/overview/build), you can edit the Scene permissions to make sure the user logged in to the viewer device can edit the Scene:
+The viewer device was an IPad with XRViewer, and the user was logged in ARENA to change the box's position once it detected the dynamic AprilTag. In the [scene builder](/content/overview/build), you can edit the Scene permissions to make sure the user logged in to the viewer device can edit the Scene:
 
 <img src="/assets/img/xr/build-scene-permissions.png" width="300"/>
 

@@ -22,7 +22,7 @@ We also have a more detailed description of the [ARENA architecture](/content/ar
 
 ## Main Concepts
 
-Below is an overview some important ARENA concepts. We explain the idea of an ARENA <b>Realm</b>, <b>Scene</b>, and the geographic content lookups made by <b>ATLAS</b>. Along the way, we will also try to understand the role of some important ARENA system services, such as the <b>persistence service<b>.
+Below is an overview of some important ARENA concepts. We explain the idea of an ARENA <b>Realm</b>, <b>Scene</b>, and the geographic content lookups made by <b>ATLAS</b>. Along the way, we will also try to understand the role of some important ARENA system services, such as the <b>persistence service<b>.
 
 ### ARENA Realm
 

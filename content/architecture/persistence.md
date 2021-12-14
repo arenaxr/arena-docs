@@ -7,7 +7,7 @@ parent: Architecture
 
 # Persistence
 
-When a Scene in ARENA is loaded, its current state is fetched from a data store service that tracks the persisted state of the Scene. In this section, we detail some features this essential ARENA service.
+When a Scene in ARENA is loaded, its current state is fetched from a data store service that tracks the persisted state of the Scene. In this section, we detail some features of this essential ARENA service.
 
 ![img](../../assets/img/overview/scene-load.png)
 **Figure 3**. Scene objects are first loaded from a data store service and then updated over PubSub.
@@ -26,10 +26,10 @@ sent over pubsub.
 
 ## Templates
 
-Templates are special scenes that can be instantiated in entirety in another scenes.
+Templates are special scenes that can be instantiated in entirety in other scenes.
 
 Templates are crafted in a scene name prefixed with the `@` symbol, e.g. `@myTemplate`. The creation process is
-exactly same as any other scene with C(R)UD actions on pubsub, with exception that `ttl` values are not
+exactly the same as any other scene with C(R)UD actions on pubsub, with the exception that `ttl` values are not
 enforced. That is to say, the objects do not expire inside @template scenes, but rather activated upon instantiation.
 
 When a template is loaded, a parent container is first created in the target scene. This parent container follows the

@@ -46,7 +46,7 @@ Requires <a href="https://github.com/n5ro/aframe-physics-system">Physics for A-F
 </dd>
 <dt><a href="#module_gesture-detector">gesture-detector</a></dt>
 <dd><p>Detect multi-finger touch gestures. Publish events accordingly.
-Based off 8th Wall&#39;s <a href="https://github.com/8thwall/web/tree/master/examples/aframe">gesture-detector</a></p>
+Based of 8th Wall&#39;s <a href="https://github.com/8thwall/web/tree/master/examples/aframe">gesture-detector</a></p>
 </dd>
 <dt><a href="#module_gltf-model-progress">gltf-model-progress</a></dt>
 <dd><p>GLTF model loading progress system. Manage GLTF load messages.</p>
@@ -83,7 +83,7 @@ Implements a timeout scheme in lack of better understanding of the timing/events
 </dd>
 <dt><a href="#module_press-and-move">press-and-move</a></dt>
 <dd><p>Press and move camera; User camera movement with the mouse.
-Based off <a href="https://github.com/aframevr/aframe/blob/master/src/components/wasd-controls.js">wasd controls</a></p>
+Based of <a href="https://github.com/aframevr/aframe/blob/master/src/components/wasd-controls.js">wasd controls</a></p>
 </dd>
 <dt><a href="#module_screenshareable">screenshareable</a></dt>
 <dd><p>Screenshare-able Component. Allows an object to be screenshared upon</p>
@@ -391,7 +391,7 @@ Requires [Physics for A-Frame VR](https://github.com/n5ro/aframe-physics-system)
 
 ## gesture-detector
 Detect multi-finger touch gestures. Publish events accordingly.
-Based off 8th Wall's [gesture-detector](https://github.com/8thwall/web/tree/master/examples/aframe)
+Based of 8th Wall's [gesture-detector](https://github.com/8thwall/web/tree/master/examples/aframe)
 
 <a name="module_gltf-model-progress"></a>
 
@@ -544,7 +544,7 @@ Publish with qos of 2 for network graph to update latency
 
 ## press-and-move
 Press and move camera; User camera movement with the mouse.
-Based off [wasd controls](https://github.com/aframevr/aframe/blob/master/src/components/wasd-controls.js)
+Based of [wasd controls](https://github.com/aframevr/aframe/blob/master/src/components/wasd-controls.js)
 
 **Properties**
 
