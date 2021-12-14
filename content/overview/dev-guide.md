@@ -8,7 +8,7 @@ parent: Overview
 # Introduction to ARENA Python Program Development
 
 {% include alert type="note" content="
-We recommend the [ARENA Overview](/content/overview) to learn the about the main concepts of the ARENA.
+We recommend the [ARENA Overview](/content/overview) to learn about the main concepts of the ARENA.
 "%}
 
 You can define the appearance and behavior of objects in a scene using python programs, which take advantage of the fact that all objects in a scene are networked via a MQTT Publish-Subscribe (PubSub) messaging bus:
@@ -103,7 +103,7 @@ If not specified the namespace is your current logged in user-id. The most commo
 
 ## Clients and Scene Callbacks
 
-As a web browser user of the ARENA, you are connecting to the ARENA MQTT broker as one client connection, in which you are publishing your "camera" perspective as you move, and subscribing to changes in other objects and other users' "camera" moves. Every time you run a Python program you are also connecting to the broker as another client connection, in which the above program published a message creating a box, and also subscribes you other users "camera" moves, and objects.
+As a web browser user of the ARENA, you are connecting to the ARENA MQTT broker as one client connection, in which you are publishing your "camera" perspective as you move, and subscribing to changes in other objects and other users' "camera" moves. Every time you run a Python program you are also connecting to the broker as another client connection, in which the above program publishes a message creating a box, and also subscribes you to other users' "camera" moves, and objects.
 
 Let's try observing some of those other messages but adding the following code to your Python program. Add the `scene_callback` function, and also alter your `arena.init()` call, to accept the new callback and allow you to observe all the messages you have subscribed to in this scene.
 
@@ -167,7 +167,7 @@ At your leisure, read more about methods to generate [3d content](../3d-content)
 
 ## Use persistence, reload browser
 
-Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. So, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistence database](../architecture/persistence) you will have to specify `persist=True` in [Python definitions](../python/attributes). This is also true to when ARENA objects are created in other. The underlying message needs to specify if the object state is to be persisted or not.
+Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. So, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistence database](../architecture/persistence) you will have to specify `persist=True` in [Python definitions](../python/attributes). This is also true when ARENA objects are created in other scenes. The underlying message needs to specify if the object state is to be persisted or not.
 
 Go back to the previous python code and try to add `persist=True` to the duck object:
 ```
@@ -190,10 +190,10 @@ Examine the list of elements on the left side. Each element or object you select
 We also have a Python program, [AR Builder (ARB)](../tools/authoring), which you can use to create and edit objects for your scene. You can use it in VR (virtual reality) as a way to edit your scene and save changes to the persistence database. Importantly, you can use it in AR (augmented reality) in combination with supported browsers and localization techniques to anchor scene objects in physical space. See our [section on miXed Reality (XR)](../xr) for details.
 
 {% include alert type="note" title="note" content="
-Check out [Platforms Section](/content/xr/requirements) for details on browsers and platforms that support XR in ARENA.
+Check out the [Platforms Section](/content/xr/requirements) for details on browsers and platforms that support XR in ARENA.
 " %}
 
-In either case, ARB allows any user in the scene to edit, so it can be used collaboratively by multiple users remotely as VR, in person as AR, or as XR (mixed reality), a combination of both.
+In either case, ARB allows any user in the scene to edit, so it can be used collaboratively by multiple users remotely as VR, in person as AR, or as XR (miXed Reality), a combination of both.
 
 <figure class="video_container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/bYantKzkTFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

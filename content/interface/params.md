@@ -26,7 +26,7 @@ The following URL parameters are accepted.
 | skipav (bool)                | Skips the webcam, speaker, microphone setup modal. Attempts to use previously selected devices, or system defaults                                                                |
 | startLastPos (bool)          | User starts at the last position recorded on this browser (saved per heartbeat in localStorage)                                                                                    |
 | noname (bool)                | Handles display of user name on the screen. False: (default) display the user name. True: Do not display the user name. |
-| noreticle (bool)                | In AR, changes the reticle ring to transparent when true, gray when false (default). |
+| noreticle (bool)                | In AR, change the reticle ring to transparent when true, gray when false (default). |
 | armode (bool)                | Instantly enter AR mode. |
-| ar (bool)                | Do not load models with hide-on-enter-ar (allows to open scenes with large models that are not visible in AR). |
+| ar (bool)                | Do not load models with hide-on-enter-ar (allows opening scenes with large models that are not visible in AR). |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

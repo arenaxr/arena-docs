@@ -43,18 +43,18 @@ If you click the camera icon, you will begin to send video to other users. The v
 ## User Audio
 
 ![](../../assets/img/icons/audio-on.png){:height="32px" width="32px"}
-If you click the microphone icon, you will begin to send audio to other users. When you have your microphone turned off, other users will see a muted microphone icon over your avatar. Our audio support includes a number of features. Depending on the range between you and other users' avatars, you may experience louder sounds the closer you are to them, depending which side of you they are speaking from, and if they are far enough away from you to cutoff the audio completely.
+If you click the microphone icon, you will begin to send audio to other users. When you have your microphone turned off, other users will see a muted microphone icon over your avatar. Our audio support includes a number of features. Depending on the range between you and other users' avatars, you may experience louder sounds the closer you are to them, depending which side of you they are speaking from, and if they are far enough away from you to cut off the audio completely.
 
 | User Audio            | User Range | Microphone | Audio Sent                        |
 | --------------------- | ---------- | ---------- | --------------------------------- |
 | **Muted Head Icon**   | all        | Off        | None                              |
 | **Directional Audio** | 0-20m      | On         | Audio is in stereo by avatar pose |
 | **Spatial Audio**     | 0-20m      | On         | Audio fades with distance         |
-| **Cutoff Audio**      | > 20m      | On         | None                              |
+| **Cut Off Audio**      | > 20m      | On         | None                              |
 
 ## User Pose
 
-By default the ARENA shows your location as a 3d model of a head, with your nose at your position coordinates. The **pose** of a user is comprised of the user's **position** (location) and **rotation** (gaze) in the 3d world of the ARENA. Depending on the XR view and hardware you use, your pose may be determined by a number of differing sensors.
+By default the ARENA shows your location as a 3d model of a head, with your nose at your position coordinates. The **pose** of a user is composed of the user's **position** (location) and **rotation** (gaze) in the 3d world of the ARENA. Depending on the XR view and hardware you use, your pose may be determined by a number of differing sensors.
 
 <!-- TODO: add images of AR/VR buttons -->
 
@@ -93,7 +93,7 @@ By default we use A-Frame `laser-controls` which default to showing Valve Index 
 
 (from [A-Frame documentation](https://aframe.io/docs/1.0.0/components/camera.html))
 
-| The camera component defines from which perspective the user views the scene. The camera is commonly paired with controls components that allow input devices to move and rotate the camera.
+| The camera component defines from which perspective the user views the scene. The camera is commonly paired with control components that allow input devices to move and rotate the camera.
 
 | A camera should usually be positioned at the average height of human eye level (1.6 meters). When used with controls that receive rotation or position (e.g. from a VR device) this position will be overridden.
 

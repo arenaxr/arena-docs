@@ -15,7 +15,7 @@ Additionally, and to prototype the needs for future browser platforms, we are al
 
 The following table summarizes the browsers, platforms and support for ARENA's capabilities. Where available, the **details/settings** link provides more details about the specific Browser and platforms.
 
-| Browser                                           | MR Experiences (WebXR support)                  | ARENA CV (Optical Markers)<sup>1</sup>                                        |
+| Browser                                           | XR Experiences (WebXR support)                  | ARENA CV (Optical Markers)<sup>1</sup>                                        |
 | ------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------ |
 | XRBrowser ([details/settings](#xrbrowser-ios)) <sup>ios</sup>             | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>             |
 | Mozilla WebXRViewer ([details/settings](#webxrviewer-ios)) | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>             |
@@ -26,7 +26,7 @@ The following table summarizes the browsers, platforms and support for ARENA's c
 | Oculus Browser ([details/settings](#oculus-browser-quest-quest-2-and-more))                                    | Oculus headsets (e.g. Quest, Quest 2)           | <span style="color:red">Not supported</span>           |
 | Helio ([details/settings](#oculus-browser-quest-quest-2-and-more))                                            | Magic Leap                                      | <span style="color:green">Supported</span>             |
 
-<sup>1</sup> ARENA Computer Vision pipeline support is required for optical markers, and it will default to process the default camera facing the environment in each different device (the back camera in phones/tablets and the front camera facing the environement on headsets).<br/>
+<sup>1</sup> ARENA Computer Vision pipeline support is required for optical markers, and it will, by default, process the default camera facing the environment in each different device (the back camera in phones/tablets and the front camera facing the environment on headsets).<br/>
 <sup>2</sup> Chrome Beta only.<br/>
 <sup>3</sup> Not enabled by default.<br/>
 <sup>ios</sup> Preferred iOS Browser. Our fork of Mozila's WebXRViewer.<br/>
@@ -63,11 +63,11 @@ TBA
 ### Oculus Browser (Quest, Quest 2 and more)
 
 To try ARENA in VR, you can use the Oculus Browser (*tested on the Quest 2*) and enter the scene URL. Be patient while the scene loads and the:
-1. click "Enter" on the normal AV dialog box
+1. Click "Enter" on the normal AV dialog box
 2. Unmute mic BEFORE entering VR
 3. Click the <button type="button" name="button" class="btn fs-3 ">VR</button> button in the lower right to enter immersive mode
 
-##### Moving around: 
+##### Moving around:
 A forward push on the left-hand rocker brings up the teleportation ring. Clicking the rocker left and right rotates.
 
 <img src="/assets/img/xr/quest-2.png" width="500"/>
@@ -81,8 +81,7 @@ Helio is Magic Leap's web browser available on Magic Leap devices. Follow [these
 > 2. Use the Control pointer or swipe on the touchpad to navigate to the Helio app in The Launcher. Press the trigger on the Control to select it—the Helio app launches.
 >
 > 3. Use the Control or swipe on the touchpad to navigate to the URL bar at the top of the Helio window.
-> 
+>
 > 4. Press the trigger on the Control to select the URL bar. A virtual keyboard appears that you can use to enter a URL address. You can also use Magic Leap Mobile App to enter text from your mobile device. See [Magic Leap Mobile App for more information](https://developer.magicleap.com/en-us/learn/guides/magic-leap-mobile-app).
-> 
+>
 > 5. Enter this page's URL and see it display on the Magic Leap device.
-

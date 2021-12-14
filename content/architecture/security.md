@@ -13,8 +13,8 @@ The root of trust for ARENA MQTT messages and other resources derives from the A
 
 The ARENA supports 2 basic modes of access: an **Authenticated** account to control scenes, and a more restricted **Anonymous** login to view scenes only.
 
-- **Web Authenticated**: Users can view and edit ARENA scenes, and video conference.
-- **Web Anonymous**: Users can only view ARENA scenes, video conference, and additional features are restricted. Users can only update their own avatar 3d object.
+- **Web Authenticated**: Users can view and edit ARENA scenes, and video conferences.
+- **Web Anonymous**: Users can only view ARENA scenes, video conferences, and additional features are restricted. Users can only update their own avatar 3d object.
 - **CLI Authenticated**: Users can run ARENA command line applications to alter the scene interactively.
 
 ## Authority Flow
@@ -26,7 +26,7 @@ The user database is consulted to generate the ARENA JSON Web Token (jwt1), then
 ### Web and CLI Client Authority Flow
 
 1. A user supplies their login credentials on the ARENA web client by visiting the web host in a browser or when launching an ARENA Python application.
-2. Login credentials are checked in the ARENA User database and a ACL-appropriate ARENA JWT (jwt1) is returned. The jwt1 will include a specific list of topics the user is allowed to **publish** and **subscribe** to.
+2. Login credentials are checked in the ARENA User database and an ACL-appropriate ARENA JWT (jwt1) is returned. The jwt1 will include a specific list of topics the user is allowed to **publish** and **subscribe** to.
 3. (Web only) A Jitsi server connection is established using jwt1 which includes authority for this scene as a meeting room.
 4. Any static graphical object data for the scene is loaded from the object persistence database if the jwt1 permits **subscribing** to this scene.
 5. A MQTT broker connection is established with a **subscription** to messages for scene graphical updates, user text chat, and runtime management topics. Now the user can **publish** MQTT messages to change scene graphics, which is generally only permitted by the scene creator via jwt1.
@@ -44,7 +44,7 @@ As all 3D objects in the ARENA are identified by names, camera IDs have 3 unders
 
 ## Scene Permissions
 
-All scenes a have a few default permissions to allow public viewing and private editing.
+All scenes have a few default permissions to allow public viewing and private editing.
 
 - **Public Write**: Open permission to **subscribe** to the entire scene _(default: **enabled**)._
 - **Public Read**: Open permission to **publish** to the entire scene (_default: **disabled**)._
