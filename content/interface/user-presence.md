@@ -13,7 +13,7 @@ Users in the ARENA are represented to each other in a 3d scene with an avatar. Y
 
 Upon entering a scene you will see a panel for audio and video setup. Here you can `Select Camera`, `Speakers`, or `Microphone` to use, test your devices to make sure they are working, and adjust your display name.
 
-{% include alert type="tip" title="tip" content="If you are having trouble, the `Test Browser` button is a good place to find out if your hardware is compatible with the [WebRTC protocol](https://test.webrtc.org) we use for video conferencing." %}
+<!-- {% include alert type="tip" title="tip" content="If you are having trouble, the `Test Browser` button is a good place to find out if your hardware is compatible with the [WebRTC protocol](https://test.webrtc.org) we use for video conferencing." %} -->
 
 <!-- TODO: image a/v setup -->
 
