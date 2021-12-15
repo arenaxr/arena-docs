@@ -1,8 +1,8 @@
 ---
 title: ARENA A-Frame Components
-nav_order: 6
+nav_order: 2
 layout: default
-parent: Messaging Format
+parent: ARENA Schemas
 ---
 
 # ARENA Specific A-Frame Components

@@ -1,19 +1,23 @@
 ---
-title: JSON Spec
-nav_order: 3
+title: Object Definitions Reference
+nav_order: 1
 layout: default
-parent: Messaging Format
+parent: ARENA Schemas
 ---
 
-# ARENA MQTT Message Payload JSON Specification
-Each ARENA message is JSON formatted and is structured for its general use and persistence within the ARENA environment. Each message begins with a [`Scene Message object`](#scene-message-object) of general properties, paired with a more granular detailed `data` sub-object which varies in form and follow the examples below.
-- [**ARENA-core**](https://github.com/conix-center/ARENA-core) webserver repository
+# ARENA Object
+
+ARENA objects follow the structure of [`Scene Message object`](#scene-message-object), with general object properties, paired with a more granular detailed `data` sub-object which varies in form and follow the examples below.
+
+ARENA 3D Environment is built on top of [A-Frame](https://aframe.io/), and it supports the majority of A-Frame's primitives (e.g., geometries like boxes, circles, spheres) and components (that can be attached to objects, such as position, rotation, material, sound). See [here](/content/schemas/#arena-objects-and-a-frame) for a clarification of the relation between ARENA and A-Frame properties.
 
 {% include alert type="tip" title="Tip" content="
-In most cases arbitrary A-Frame properties which are applied in HTML as attributes can be submitted as JSON below.
+In most cases, arbitrary A-Frame properties which are applied in HTML as attributes can be applied to ARENA Objects. We link the corresponding A-Frame object definition for completeness in the tables below.
 "%}
 
-## Examples
+## Over-the-Wire Message Examples
+
+ARENA object schemas are the basis for the over-the-wire message format. Below you can find some additional message examples and links to the respective object definitions.
 
 ### Object Message
 [`Scene Message object`](#scene-message-object) with a `data` property of the [`Object Data` object](#object-data-object).
@@ -51,7 +55,7 @@ In most cases arbitrary A-Frame properties which are applied in HTML as attribut
 -------------------------
 
 ## "Scene Message" object
-This is the main payload body of every MQTT scene topic in the ARENA.
+This is the primary payload body of every MQTT scene topic in the ARENA.
 
 ### properties
 
