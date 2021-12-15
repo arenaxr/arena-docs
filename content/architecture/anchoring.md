@@ -1,13 +1,15 @@
 ---
-title: Anchoring to Reality
+title: ATLAS and Anchoring to Reality
 nav_order: 3
 layout: tutorial
 parent: Architecture
 ---
 
-# Anchoring to Reality
+# ATLAS and Anchoring Scenes
 
-ARENA provides several mechanisms to help streamline the management and sharing of anchor data as well as simplifying the process of combining multiple tracking technologies into a uniform coordinate system. ARENA scenes can be registered and discovered by the Atlas service. Atlas operates in a hierarchical manner much like the Internet’s Domain Name Service (DNS), but using a mixture of GPS coordinates, UUIDs and Scenes instead of domain names. UUID markers can be embedded into QR codes,BLE beacons or other digital markers (WiFi, LTE tower, etc). Atlas can also provide absolute and/or local coordinates for markers that are associated with scenes. For example, a user could scan a QR code or read a BLE beacon which provides a UUID that maps to a GPS coordinate along with any Scenes that contain that GPS coordinate. Atlas stores a GPS location for each Scene along with a 3D bounding polygon. The GPS location is typically assigned to the origin of the Scene’s local coordinate system.  A user can perform follow-up queries to Atlas for assets that fall within each Scene. For example, a Scene might contain a number of AprilTags(low bit-density tracking markers) that have GPS coordinates as well as local coordinates referenced from the Scene’s origin. It is worth noting that a Scene’s address can be used to form a URL for virtual environments that have no physical location.Since Atlas is a public facing entity that needs administrative management, ARENA also supports the ability to store location data within a Scene by attaching real-world properties to objects.
+ARENA provides several mechanisms to help streamline the management and sharing of anchor data as well as simplifying the process of combining multiple tracking technologies into a uniform coordinate system. 
+
+ARENA scenes can be registered and discovered by the **Atlas service**. Atlas is an essential ARENA service that allows users to find nearby content based on coarse location and supports managing the data needed to link Scene content with the physical world. Atlas operates in a hierarchical manner much like the Internet’s Domain Name Service (DNS), but using a mixture of GPS coordinates, UUIDs and Scenes instead of domain names. UUID markers can be embedded into QR codes,BLE beacons or other digital markers (WiFi, LTE tower, etc). Atlas can also provide absolute and/or local coordinates for markers that are associated with scenes. For example, a user could scan a QR code or read a BLE beacon which provides a UUID that maps to a GPS coordinate along with any Scenes that contain that GPS coordinate. Atlas stores a GPS location for each Scene along with a 3D bounding polygon. The GPS location is typically assigned to the origin of the Scene’s local coordinate system.  A user can perform follow-up queries to Atlas for assets that fall within each Scene. For example, a Scene might contain a number of [Apriltags](https://april.eecs.umich.edu/software/apriltag) (low bit-density tracking markers) that have GPS coordinates as well as local coordinates referenced from the Scene’s origin. It is worth noting that a Scene’s address can be used to form a URL for virtual environments that have no physical location.Since Atlas is a public facing entity that needs administrative management, ARENA also supports the ability to store location data within a Scene by attaching real-world properties to objects.
 
 ```json
 {
@@ -47,6 +49,6 @@ Figure 1 shows an example of how a box object in a scene can have an AR marker p
 
 For example, a Python agent can convert OptiTrack motion capture objects into ARENA position updates. If you target those outputs to specific user cameras or objects, they are automatically localized within the scene. This seamlessly works side-by-side with devices that use optical tags or even UWB localization. We have a number of helper applications that leverage different localization systems to help build tag maps (e.g. OptiTrack can be used to calibrate AprilTags within a shared space). This is another example where the implicitly networked nature of all objects dramatically simplifies merging data from multiple sensing modalities
 
-# Coordinate Frame
-
-{% include alert type="warning" title="Coming Soon" content="Stay tuned for more details..." %}
+{% include alert type="note" content="
+Additional information on anchoring ARENA Scenes in the [miXed Reality (XR) Section](/content/xr) for a quick taste of XR in ARENA.
+"%}
