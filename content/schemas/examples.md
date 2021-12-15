@@ -2,7 +2,7 @@
 title: Examples
 nav_order: 3
 layout: default
-parent: ARENA Schemas
+parent: ARENA Objects
 ---
 
 # Formatting PubSub Messages 

@@ -2,7 +2,7 @@
 title: ARENA A-Frame Components
 nav_order: 2
 layout: default
-parent: ARENA Schemas
+parent: ARENA Objects
 ---
 
 # ARENA Specific A-Frame Components

@@ -2,7 +2,7 @@
 title: Object Definitions Reference
 nav_order: 1
 layout: default
-parent: ARENA Schemas
+parent: ARENA Objects
 ---
 
 # ARENA Object
