@@ -9,7 +9,7 @@ parent: Python Library
 
 Events are ways to interact with user input in the ARENA.
 
-See [messaging](/content/messaging/examples.html).
+See [object definition reference](/content/schemas/definitions).
 
 ## Event handlers
 To handle events in ARENA-py, you must set a function to the `evt_handler` parameter.

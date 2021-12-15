@@ -9,7 +9,7 @@ parent: Python Library
 
 Attributes are used to specify parameters for ARENA Objects.
 
-See [messaging](/content/messaging/examples.html).
+See [object definition reference](/content/schemas/definitions).
 
 ## Accessing Object Attributes
 See Appendix for all types of Attributes.

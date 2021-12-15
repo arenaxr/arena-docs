@@ -64,8 +64,8 @@ This is the primary payload body of every MQTT scene topic in the ARENA.
 | object_id | *A/P* | `string` | A unique name within the scene (**required**).
 | action | *A/P* | `string` | An action to perform: `create, delete, update, clientEvent` (**required**).
 | type | *A/P* | `string` | Message type: `object, program, scene-options, rig, camera-override, mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup`.
-| [persist](examples#persisted-objects) | *A/P* | `boolean` | Save to persistence database (*default: false*).
-| [ttl](examples#temporary-objects-ttl) | *A/P* | `number` | Time-to-live seconds to create the object and automatically delete (*default: 0*).
+| [persist](message-examples#persisted-objects) | *A/P* | `boolean` | Save to persistence database (*default: false*).
+| [ttl](message-examples#temporary-objects-ttl) | *A/P* | `number` | Time-to-live seconds to create the object and automatically delete (*default: 0*).
 | data | *A/P* | [`Object Data` object](#object-data-object) | The detailed properties of a 3d object in the scene. Used by Message Type `object`.
 | data | *A/P* | [`Event Data` object](#event-data-object) | The detailed properties of an event in the scene. Used by Event Type `mousedown (and others)`, Action: `clientEvent`.
 | data | *A* | [`Program Data` object](#program-data-object) | The detailed properties of a program managed by the [runtime manager](../arts) in the scene. Used by Message Type `program`.
@@ -86,7 +86,7 @@ The `create`, `update`, and `delete` actions are similar to typical C\(R\)UD ope
 ## "Object Data" object
 
 {% include alert type="warning" title="Arbitrary A-Frame Components" content="
-Some A-Frame attributes and components we don't officially include in our JSON may be usable by following certain [patterns of use](../messaging/arena-aframe-components). We make no promises!
+Some A-Frame attributes and components we don't officially include in our JSON may be usable by following certain [patterns of use](../schemas/arena-aframe-components). We make no promises!
 "%}
 
 ### properties
@@ -96,30 +96,30 @@ Some A-Frame attributes and components we don't officially include in our JSON m
 | object_type | *A/P* | `string` | A primitive object type: `cube, sphere, circle, cone, cylinder, dodecahedron, icosahedron, tetrahedron, octahedron, plane, ring, torus, torusKnot, triangle`
 | | *A/P* | | ...or, A complex object type: `gltf_model, image, particle, text, line, light, thickline`
 | | *A* | | ...or, A presence object type : `camera, handLeft, handRight` (`camera` is used by web browsers and VIO cameras)
-| [position](examples#move) | *A/P* | [`Position` object](#position-object) | Position of the object's origin in 3d, relative to world-origin.
-| [rotation](examples#rotate) | *A/P* | [`Rotation` object](#rotation-object) | Quaternion rotation of the object.
+| [position](message-examples#move) | *A/P* | [`Position` object](#position-object) | Position of the object's origin in 3d, relative to world-origin.
+| [rotation](message-examples#rotate) | *A/P* | [`Rotation` object](#rotation-object) | Quaternion rotation of the object.
 | scale | *A/P* | [`scale` object](#scale-object) | Scale factor of the object in 3d.
-| [color](examples#color) | *A/P* | `string` | A hexadecimal color or [CSS/HTML color](https://htmlcolorcodes.com/color-names) name (*default: "#FFFFFF"*).
-| [text](examples#text) | *A/P* | `string` | Any `string` of [ASCII characters](https://aframe.io/docs/1.0.0/components/text.html#non-ascii-characters). e.g. "Hello world!"
-| [click-listener](examples#events) | *A/P* | `string` | Name of the click-listener, default can be empty string. e.g. ""
-| [url](examples#images) | *A/P* | `string` | URI, relative or full path of a file. e.g. "store/models/Duck.glb"
-| [material](examples#360-video) | *A/P* | [`Material` object](#material-object) | The material properties of the object's surface.
-| [multisrc](examples#images-on-objects) | *A* | [`Multisrc` object](#multisrc-object) | Define multiple visual sources applied to an object.
-| [light](examples#lights) | *A* | [`Light` object](#light-object) | Properties of a light source. Used by `object_type`: `light`.
-| [animation](examples#animate) | *A* | [`Animation` object](#animation-object) | Animation rules of an object.
-| [animation-mixer](examples#animating-gltf-models) | *A/P* | [`Animation-Mixer` object](#animation-mixer-object) | Animation sequence rules.
-| [start](examples#lines) | *A/P* | [`Position` object](#position-object) | Starting position of a line. Used by `object_type`: `line`.
-| [end](examples#lines) | *A/P* | [`Position` object](#position-object) | Ending position of a line. Used by `object_type`: `line`.
-| [meshline](examples#thicklines) | *A/P* | [`Meshline` object](#meshline-object) | A line type with multiple way-points. Used by `object_type`: `thickline`.
-| [sound](examples#sound) | *A* | [`Sound` object](#sound-object) | The sound properties of an object. Requires `click-listener`
-| [dynamic-body](examples#physics) | *A/P* | [`Dynamic-Body` object](#dynamic-body-object) | The physics rules an object should obey.
-| [impulse](examples#physics) | *A/P* | [`Impulse` object](#impulse-object) | The force applied using physics. Requires `click-listener`
-| [spe-particles](examples#particles) | *A* | [`SPE-Particles` object](#spe-particles-object) | Properties of the particles effects component and its animations.
-| ~~[environment](examples#background-themes)~~ | *A* | ~~[`Environment` object](#environment-object)~~ | ~~Environment options.~~ May be deprecated due to the new [`env-presets` object](#env-presets-object).
-| [collision-listener](examples#events) | *A/P* | `string` | Name of the collision-listener, default can be empty string. e.g. ""
-| [parent](examples#parentchild-linking) | *A/P* | `string` | `object_id` of the object which is the parent.
-| [goto-url](examples#goto-url) | *A* | [`Goto URL` object](#goto-url-object) | Requires `click-listener`
-| [landmark](examples#landmark) | *P* | [`Landmark` object](#landmark-object) | A landmark either as teleport destination or starting point
+| [color](message-examples#color) | *A/P* | `string` | A hexadecimal color or [CSS/HTML color](https://htmlcolorcodes.com/color-names) name (*default: "#FFFFFF"*).
+| [text](message-examples#text) | *A/P* | `string` | Any `string` of [ASCII characters](https://aframe.io/docs/1.0.0/components/text.html#non-ascii-characters). e.g. "Hello world!"
+| [click-listener](message-examples#events) | *A/P* | `string` | Name of the click-listener, default can be empty string. e.g. ""
+| [url](message-examples#images) | *A/P* | `string` | URI, relative or full path of a file. e.g. "store/models/Duck.glb"
+| [material](message-examples#360-video) | *A/P* | [`Material` object](#material-object) | The material properties of the object's surface.
+| [multisrc](message-examples#images-on-objects) | *A* | [`Multisrc` object](#multisrc-object) | Define multiple visual sources applied to an object.
+| [light](message-examples#lights) | *A* | [`Light` object](#light-object) | Properties of a light source. Used by `object_type`: `light`.
+| [animation](message-examples#animate) | *A* | [`Animation` object](#animation-object) | Animation rules of an object.
+| [animation-mixer](message-examples#animating-gltf-models) | *A/P* | [`Animation-Mixer` object](#animation-mixer-object) | Animation sequence rules.
+| [start](message-examples#lines) | *A/P* | [`Position` object](#position-object) | Starting position of a line. Used by `object_type`: `line`.
+| [end](message-examples#lines) | *A/P* | [`Position` object](#position-object) | Ending position of a line. Used by `object_type`: `line`.
+| [meshline](message-examples#thicklines) | *A/P* | [`Meshline` object](#meshline-object) | A line type with multiple way-points. Used by `object_type`: `thickline`.
+| [sound](message-examples#sound) | *A* | [`Sound` object](#sound-object) | The sound properties of an object. Requires `click-listener`
+| [dynamic-body](message-examples#physics) | *A/P* | [`Dynamic-Body` object](#dynamic-body-object) | The physics rules an object should obey.
+| [impulse](message-examples#physics) | *A/P* | [`Impulse` object](#impulse-object) | The force applied using physics. Requires `click-listener`
+| [spe-particles](message-examples#particles) | *A* | [`SPE-Particles` object](#spe-particles-object) | Properties of the particles effects component and its animations.
+| ~~[environment](message-examples#background-themes)~~ | *A* | ~~[`Environment` object](#environment-object)~~ | ~~Environment options.~~ May be deprecated due to the new [`env-presets` object](#env-presets-object).
+| [collision-listener](message-examples#events) | *A/P* | `string` | Name of the collision-listener, default can be empty string. e.g. ""
+| [parent](message-examples#parentchild-linking) | *A/P* | `string` | `object_id` of the object which is the parent.
+| [goto-url](message-examples#goto-url) | *A* | [`Goto URL` object](#goto-url-object) | Requires `click-listener`
+| [landmark](message-examples#landmark) | *P* | [`Landmark` object](#landmark-object) | A landmark either as teleport destination or starting point
 
 
 ## "position" object

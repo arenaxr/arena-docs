@@ -9,7 +9,7 @@ parent: Python Library
 
 Objects are the main interface for placing content into the ARENA.
 
-See [messaging](/content/messaging/examples.html).
+See [object definition reference](/content/schemas/definitions).
 
 ## Creating an Object and Adding Attributes
 See Appendix for all types of Objects.
