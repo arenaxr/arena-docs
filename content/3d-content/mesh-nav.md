@@ -1,6 +1,5 @@
 ---
 title: Navigation Meshes
-nav_order: 6
 layout: default
 parent: 3D Content
 ---

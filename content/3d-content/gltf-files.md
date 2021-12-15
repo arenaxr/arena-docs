@@ -1,6 +1,5 @@
 ---
 title: GLTF Files
-nav_order: 5
 layout: default
 parent: 3D Content
 ---
