@@ -72,6 +72,23 @@ When exporting the GLTF model in Blender (File->Export), check 'Custom Propertie
 
 Metadata exported from blender will be included in the GLTF file in the `scene.extras` property. Don't worry; ARENA will look for its existence and use it.
 
+## GLTF Model LOD (Level of Detail)
+Detailed GLTF models and textures can often have significant resource and visual footprint.
+
+For a given object, you can use a lower fidelity version (or stand-in) until a user is within a specified distance, at which
+point the gltf source is swapped out for a more detailed version. 
+
+To use this feature, assign the [gltf-model-lod](/content/schemas/arena-aframe-components#module_gltf-model-lod) component to
+your object, with the `gltf-model` component parameter set to the lower fidelity model URL.
+
+<img src="/assets/img/3dcontent/gltf-model-lod.png" width="300"/>
+
+Set the `detailedUrl` to that of the corresponding detailed model, and choose a desired `detailedDistance`
+to switch between the models. 
+
+Note that the distance is from the center of the object, so larger models
+should account for the additional distance from the center to the edge of the model. 
+
 ## Chronos GLTF sample models
 
 The [Chronos GLTF sample models](https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0) are available on the ARENA main (`andrew.andrew.cmu.edu`) server, accessible from the `store/models/<model-filename.glb>` path:

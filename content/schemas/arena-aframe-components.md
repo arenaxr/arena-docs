@@ -393,6 +393,24 @@ Requires [Physics for A-Frame VR](https://github.com/n5ro/aframe-physics-system)
 Detect multi-finger touch gestures. Publish events accordingly.
 Based of 8th Wall's [gesture-detector](https://github.com/8thwall/web/tree/master/examples/aframe)
 
+
+<a name="module_gltf-model-lod"></a>
+
+## gltf-model-lod
+
+GLTF lod switching between models based on distance. Use a low-detail `gltf-model` by default, and
+switch to specified `detailedUrl` when within specified distance.
+
+**Properties**
+
+| Name | Type                 | Default | Description                                                                      |
+| --- |----------------------|---------|----------------------------------------------------------------------------------|
+| [detailedUrl] | <code>string</code>  |         | URL to detailed model                                                            |
+| [detailedDistance] | <code>number</code>  | 10      | Distance (meters) at which the default `gltf-model` is switched to `detailedUrl` |
+| [updateRate] | <code>number</code>  | 333     | How often LOD distance is checked in ms                                          |
+| [retainCache] | <code>boolean</code> | false   | Override `THREE.Cache` removal of detailed model when leaving `detailedDistance` |
+
+
 <a name="module_gltf-model-progress"></a>
 
 ## gltf-model-progress
