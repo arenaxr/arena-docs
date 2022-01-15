@@ -54,6 +54,9 @@ Callout alerts are available. Use this syntax:
 - **ARENA-py Python examples**
   - https://github.com/conix-center/ARENA-py
 
+- **ARENA-unity Unity library**
+  - https://github.com/conix-center/ARENA-unity
+
 - **ARENA Runtime Supervisor (ARTS)**
   - https://github.com/conix-center/arts
 

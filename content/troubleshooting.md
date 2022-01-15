@@ -67,6 +67,7 @@ We have a place for submitting issues and asking questions in most of our code r
 - [ARENA Docs issues](https://github.com/conix-center/ARENA/issues)
 - [ARENA Website/Webserver issues](https://github.com/conix-center/ARENA-core/issues)
 - [ARENA Python issues](https://github.com/conix-center/ARENA-py/issues)
+- [ARENA Unity issues](https://github.com/conix-center/ARENA-unity/issues)
 - [ATLAS Scene Locator issues](https://github.com/conix-center/ATLAS/issues)
 - [ARENA Persistence issues](https://github.com/conix-center/arena-persist/issues)
 - [ARENA Authentication issues](https://github.com/conix-center/arena-account/issues)
