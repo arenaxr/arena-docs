@@ -9,7 +9,7 @@ has_children: true
 Unity C# library for editing scenes and creating applications for the ARENA.
 - [**ARENA-unity**](https://github.com/conix-center/ARENA-unity) Unity repository
 
-<img alt="" src="/assets/img/unity/arena-unity-demo.gif" width="600">
+<img alt="" src="/assets/img/unity/arena-unity-demo.gif">
 
 ## Library Usage:
 1. Open a new or existing Unity project. **Unity 2019.1+ supported.**
