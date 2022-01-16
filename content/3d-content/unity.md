@@ -6,7 +6,7 @@ parent: 3D Content
 
 # Exporting from Unity
 
-There are some limitations and things to keep in mind when exporting from [Unity](https://unity.com).
+There are some limitations and things to keep in mind when exporting from [Unity](https://unity.com). A plugin like [GLTF Exporter](https://github.com/Plattar/gltf-exporter) can be useful with the following guidance.
 
 1. In order to optimize load times, reduce file sizes and increase frame rates, all meshes with same material should be combined into single mesh.
 1. Meshes should be compressed by reducing floating point accuracy and decimating mesh polygon count.

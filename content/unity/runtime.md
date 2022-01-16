@@ -25,6 +25,15 @@ You can use the `Scene` or `Game` tabs to navigate.
 1. Change the sorting mode with top right button of the `Hierarchy` window.
     ![/assets/img/unity/alphanumeric-sort.png](/assets/img/unity/alphanumeric-sort.png)
 
+## Exporting Unity Objects as GLTF
+
+Since the ARENA uses GLTF models as a web-friendly format, it is useful to know how to export your Unity work as a GLTF model, which the ARENA web can render.
+1. We recommend using 2 Scenes separately: a `Design View` scene and an `ARENA View` scene.
+1. In scene `Design View`, use an available plug-in to [export your model](/content/3d-content/unity) to GLTF file format.
+1. Store this model online, like the on the [ARENA File Store](/content/interface/filestore) or [Dropbox](/content/overview/build#add-new-objects).
+1. In scene  `ARENA View` [load your ARENA scene](/content/unity).
+1. Import your model, adding an ARENA object using the menu `GameObject > ARENA > GLTF Model` and provide your model URL.
+
 ## During Runtime (Play)
 
 1. If objects are stored in the ARENA Persistence Database, they will be child objects of the `ARENA` GameObject.
