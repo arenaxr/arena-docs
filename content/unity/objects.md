@@ -31,4 +31,5 @@ This library provides you some options to manage CRUD operations on ARENA Persis
     - Keystroke delete.
     - App menu `Edit > Delete`.
     - Context menu `Delete`.
+- `Edit > Undo Create` just after creating an object also works to delete.
 - Every delete command on ARENA objects that you initiate will ask you to confirm first.
