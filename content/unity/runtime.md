@@ -15,12 +15,6 @@ Two options:
 - **Editor:** Select the menu item `ARENA > Signout`.
 - **Runtime:** Click the `Signout` button on the `ArenaClient` Component.
 
-## During Runtime (Play)
-
-1. If objects are stored in the ARENA Persistence Database, they will be child objects of the `ARENA` GameObject.
-1. You may create or change an object and if it is a child of the `ARENA` GameObject, its properties will be published to the ARENA Persistence Database.
-1. Incoming authorized messages may also add/change/remove your ARENA Unity objects.
-
 ## Exporting Unity Objects as GLTF
 
 Since the ARENA uses GLTF models as a web-friendly format, it is useful to know how to export your Unity work as a GLTF model, which the ARENA web can render.
@@ -29,6 +23,12 @@ Since the ARENA uses GLTF models as a web-friendly format, it is useful to know 
 1. Store this model online, like the on the [ARENA File Store](/content/interface/filestore) or [Dropbox](/content/overview/build#add-new-objects).
 1. In scene  `ARENA View` [load your ARENA scene](/content/unity).
 1. Import your model, adding an ARENA object using the menu `GameObject > ARENA > GLTF Model` and provide your model URL.
+
+## During Runtime (Play)
+
+1. If objects are stored in the ARENA Persistence Database, they will be child objects of the `ARENA` GameObject.
+1. You may create or change an object and if it is a child of the `ARENA` GameObject, its properties will be published to the ARENA Persistence Database.
+1. Incoming authorized messages may also add/change/remove your ARENA Unity objects.
 
 ![/assets/img/unity/unity-desktop.png](/assets/img/unity/unity-desktop.png)
 
