@@ -89,3 +89,9 @@ Script | ArenaObject | -- | The script instance to manage an ARENA object runtim
 **Persist**| bool | true | Persist this object in the ARENA server database (default true = persist on server)
 **Json Data** | string | null | ARENA JSON-encoded message `data` attributes.
 **Publish Json Data** | button | -- | Manual button to publish edited `Json Data`. Enabled when `Json Data` is well formatted.
+
+## ARENA Mesh Tool
+
+The ARENA Mesh Tool is a Unity `CustomTool` which allows you to manipulate the `Mesh` dimensions of ARENA primitive geometries without having to modify the `Scale` component to chang the size of an object and risk inheriting that scale for any child objects.
+
+<img alt="" src="/assets/img/unity/arena-mesh-tool.gif">
