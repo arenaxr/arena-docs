@@ -64,11 +64,11 @@ name | type | default | description
 -- | -- | -- | --
 **Signout** | button | -- | Manual button to signout from the ARENA and stop the Runtime.
 **Scene Url** | string | null | Browser URL for scene as a clickable link highlighted in <span style="color: blue;">blue text</span>.
-Script | ArenaClient | -- | The script instance to manage the MQTT runtime.
+Script | `ArenaClient` | -- | The script instance to manage the MQTT runtime.
 **Broker Address** | string | arenaxr.org | Host name of the ARENA MQTT broker
 **Namespace Name** | string | null | Namespace (automated with username), but can be overridden
 **Scene Name** | string | example | Name of the scene, without namespace ('example', not 'username/example'
-**Camera For Display** | Camera | MainCamera | Cameras for Display 1
+**Camera For Display** | `Camera` | MainCamera | Cameras for Display 1
 **Camera Auto Sync** | bool | false | Synchronize camera display to first ARENA user in the scene
 **Log Mqtt Objects** | bool | false | Console log MQTT object messages
 **Log Mqtt Users** | bool | false | Console log MQTT user messages
@@ -84,12 +84,25 @@ The `ArenaObject` Script monitors Transform and Name changes to an ARENA object,
 name | type | default | description
 -- | -- | -- | --
 **Publish Unity Data** | button | -- | Manual button to publish an object update. Enabled only for ARENA message type `object` (transform changes will update automatically).
-Script | ArenaObject | -- | The script instance to manage an ARENA object runtime.
+Script | `ArenaObject` | -- | The script instance to manage an ARENA object runtime.
 **Message Type** | string | object | Message type in persistance storage schema
 **Persist**| bool | true | Persist this object in the ARENA server database (default true = persist on server)
-**Json Data** | string | null | ARENA JSON-encoded message `data` attributes.
+**Json Data** | string | null | ARENA JSON-encoded message `data` attributes. This can be manually edited and published with the `Publish Json Data` button.
 **Publish Json Data** | button | -- | Manual button to publish edited `Json Data`. Enabled when `Json Data` is well formatted.
-**Animation** | AnimationClip[], buttons | [] | List of animations when included in model. Adds `Play, Stop, Rewind` buttons for each `AnimationClip`.
+**Animation** | `AnimationClip[]`, buttons | [] | List of animations when included in model. Adds `Play, Stop, Rewind` buttons for each `AnimationClip`.
+
+## Inspector Window: ArenaMesh
+Each primitive mesh `ArenaObject` in our ARENA scene is rendered by a custom mesh that preserves its non-inherited size attributes for the `Mesh`, separate from its inherited size attributes for  `Scale`. Each primitive has a different set of attributes which we mimic from [A-Frame's geometries](https://aframe.io/docs/1.2.0/components/geometry.html). The `ArenaMesh` scripts available are as follows.
+- `ArenaMeshCircle`
+- `ArenaMeshCone`
+- `ArenaMeshCube`
+- `ArenaMeshCylinder`
+- `ArenaMeshIcosahedron`
+- `ArenaMeshOctahedron`
+- `ArenaMeshPlane`
+- `ArenaMeshRing`
+- `ArenaMeshSphere`
+- `ArenaMeshTorus`
 
 ## ARENA Mesh Tool
 
