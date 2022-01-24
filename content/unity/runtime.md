@@ -63,11 +63,11 @@ The `ArenaClient` Script controls the connection and authentication to the ARENA
 name | type | default | description
 -- | -- | -- | --
 **Signout** | button | -- | Manual button to signout from the ARENA and stop the Runtime.
+**Scene Url** | string | null | Browser URL for scene as a clickable link highlighted in <span style="color: blue;">blue text</span>.
 Script | ArenaClient | -- | The script instance to manage the MQTT runtime.
 **Broker Address** | string | arenaxr.org | Host name of the ARENA MQTT broker
 **Namespace Name** | string | null | Namespace (automated with username), but can be overridden
 **Scene Name** | string | example | Name of the scene, without namespace ('example', not 'username/example'
-**Scene Url** | string | null | Browser URL for the scene
 **Camera For Display** | Camera | MainCamera | Cameras for Display 1
 **Camera Auto Sync** | bool | false | Synchronize camera display to first ARENA user in the scene
 **Log Mqtt Objects** | bool | false | Console log MQTT object messages
@@ -89,6 +89,7 @@ Script | ArenaObject | -- | The script instance to manage an ARENA object runtim
 **Persist**| bool | true | Persist this object in the ARENA server database (default true = persist on server)
 **Json Data** | string | null | ARENA JSON-encoded message `data` attributes.
 **Publish Json Data** | button | -- | Manual button to publish edited `Json Data`. Enabled when `Json Data` is well formatted.
+**Animation** | AnimationClip[], buttons | [] | List of animations when included in model. Adds `Play, Stop, Rewind` buttons for each `AnimationClip`.
 
 ## ARENA Mesh Tool
 
