@@ -92,6 +92,6 @@ Script | ArenaObject | -- | The script instance to manage an ARENA object runtim
 
 ## ARENA Mesh Tool
 
-The ARENA Mesh Tool is a Unity `CustomTool` which allows you to manipulate the `Mesh` dimensions of ARENA primitive geometries without having to modify the `Scale` component to chang the size of an object and risk inheriting that scale for any child objects.
+The ARENA Mesh Tool is a Unity `CustomTool` which allows you to manipulate the `Mesh` dimensions of ARENA primitive geometries without having to modify the `Scale` component to change the size of an object. `Scale` is inherited by children objects and `Mesh` is not inherited.
 
 <img alt="" src="/assets/img/unity/arena-mesh-tool.gif">
