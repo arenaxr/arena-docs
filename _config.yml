@@ -21,11 +21,13 @@ url: https://arena.conix.io
 aux_links:
   "The ARENA":
     - "https://arenaxr.org/"
-  "CONIX Research Center":
-    - "https://conix.io/arena"
+  "CONIX":
+    - "https://conix.io"
+  "CMU":
+    - "https://wise.ece.cmu.edu/"
   "Our GitHub":
     - "https://github.com/conix-center/"
-footer_content: "Copyright &copy; 2020-2021, CONIX Research Center"
+footer_content: "Copyright &copy; 2020-2021, CONIX Research Center. ARENA is a project led by <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>."
 
 # Build settings
 markdown: kramdown
