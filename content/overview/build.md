@@ -37,7 +37,7 @@ Once you are done, press the <button type="button" name="button" class="btn btn-
 Because we let the '*Add Objects From Default Scene*' option checked when creating the scene, it has an object already (your current ARENA instance might have even more objects in the default scene): a `scene options` object. We will play with this in a bit.
 "%}
 
-In the figure above, we numbered (orange boxes) the following sections of the page:
+In the figure above, we numbered (<span style="color: orange;">orange boxes</span>) the following sections of the page:
 1.  **Scene selection**: Select the scene you are editing here. As we have seen, we can also add scenes. Additionally, we can delete a scene and force a refresh of the scene list.
   - 1.a. This area has a logout button, and a button that allows you to check your permissions.
 1.  **Scene Objects**: See a list of the objects **persisted** in the scene. At the bottom of the list there are buttons to delete, copy and select objects. To select a single object, click on its name (the line will become darker). You can press the object's edit button <button type="button" name="button" class="btn fs-3 "><img src="/assets/img/overview/build/icon-edit.png" width="20"/></button> (highlighted with a circle in the figure above) to edit its properties.

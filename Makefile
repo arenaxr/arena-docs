@@ -16,6 +16,7 @@ check:
 		--allow-hash-href \
 		--check-favicon \
 		--empty-alt-ignore \
+		--disable-external \
 		_site
 
 install: $(PROJECT_DEPS)

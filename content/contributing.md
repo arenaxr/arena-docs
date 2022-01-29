@@ -68,6 +68,7 @@ The ARENA is composed from a number of repositories. That can be confusing. We r
 
 - ARENA Client Website: [conix-center/ARENA-core/issues](https://github.com/conix-center/ARENA-core/issues)
 - ARENA Python client: [conix-center/ARENA-py/issues](https://github.com/conix-center/ARENA-py/issues)
+- ARENA Unity client: [conix-center/ARENA-unity/issues](https://github.com/conix-center/ARENA-unity/issues)
 - ARENA Docs Website: [conix-center/ARENA/issues](https://github.com/conix-center/ARENA/issues)
 
 Server components:
