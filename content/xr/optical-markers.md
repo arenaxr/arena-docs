@@ -9,6 +9,10 @@ parent: XR Experiences
 
 ARENA can support different optical markers: [Apriltags](https://april.eecs.umich.edu/software/apriltag), has experimental (outside the mainline code) support for [lightanchors/flash](https://youtu.be/_P01roIG93U), and more are expected to be added.
 
+{% include alert type="note" content="
+You can obtain Apriltags with different ids and sizes [here](https://github.com/conix-center/apriltag-gen).
+"%}
+
 ## Requirements
 
 Optical Markers require support for ARENA's computer vision processing pipeline, which is supported by the custom camera access implemented in [WebXR Viewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) and [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989), and also by [WebXR's raw camera access currently implemented in Chrome](https://chromestatus.com/feature/5759984304390144).
