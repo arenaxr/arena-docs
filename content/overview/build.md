@@ -1,6 +1,6 @@
 ---
 title: Build Scenes
-nav_order: 2
+nav_order: 3
 layout: tutorial
 parent: Overview
 ---

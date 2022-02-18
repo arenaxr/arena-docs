@@ -15,7 +15,7 @@ parent: Unity Library
 ## Library Development:
 Almost all steps to develop the library are the same, just prepare a development project using the [Library Usage](#library-usage) steps, except import the `ARENA Unity` package locally instead of from a Git URL.
 1. Clone this repo locally.
-1. Open `Window > Package Manager` and `+ > Add package from disk...`, use your local repo location.
+1. Open `Window > Package Manager` and `+ > Add package from disk...`, use your local repo location selecting `package.json`.
 1. Create changes on a development fork or branch and submit a Pull Request.
 
 ## Debugging in VS Code

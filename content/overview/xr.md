@@ -1,6 +1,6 @@
 ---
 title: miXed Reality
-nav_order: 3
+nav_order: 5
 layout: tutorial
 parent: Overview
 ---
@@ -48,12 +48,12 @@ Finally, point the device to the AprilTag, and scene's origin should be anchored
 [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) supports loading a URL from a QR code:
 > **i)** Tap the address bar. The QR code scanner button will show up on the right.
 > <img src="/assets/img/xr/xrbrowser-qr-code.png" width="400"/>
-> 
+>
 > **ii).** XR Browser will open your phone camera for scanning QR codes after you grant it permission.
-> 
+>
 > **iii)** Position the following QR code to align it within the frame outlined by the four blue corners. XR Browser will automatically scan the QR code once it detects proper alignment.
 > <img src="/assets/img/xr/artest-url-qr-code.svg" width="200"/><br/>
-> 
+>
 > **iv)** After scanning (because the QR code is a web address), the page will open.
 
 #### Footnotes

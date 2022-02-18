@@ -1,6 +1,6 @@
 ---
 title: Develop Python Programs
-nav_order: 4
+nav_order: 7
 layout: tutorial
 parent: Overview
 ---
