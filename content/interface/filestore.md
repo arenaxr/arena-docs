@@ -5,19 +5,19 @@ layout: tutorial
 parent: Web Interface
 ---
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
 # ARENA File Store
 
 To add models or programs to the ARENA, they will have to be stored somewhere. The [file store](https://arenaxr.org/files/) is where most of these files are currently located, and can easily be accessed.
 
 ## User space
 
-Every user automatically has space publicly available: http://arenaxr.org/store/users/[your username].
+Every user automatically has space publicly available: https://arenaxr.org/store/users/[your username].
 
 ## Uploading Models
 
-After logging into the ARENA file store, there will be options to create a new folder or file on the left of the screen. You can upload entire folders or files, either by clicking the "upload" button on the top right, or dragging them to the page.
-
-![](../../assets/img/overview/filestore/fs3.png)
+| After logging into the ARENA file store, there will be options to create a new folder or file on the left of the screen. You can upload entire folders or files, either by clicking the "upload" button <i class="fas fa-upload"></i> on the top right, or dragging them to the page. You can copy a filestore path or file link by opening the file or folder and clicking the copy path link button <i class="fas fa-link"></i>.| ![](../../assets/img/overview/filestore/fs-copy-link.png) |
 
 Most of the 3D models are stored in the folder "models". To add a 3D model, make sure that it is in `*.GLB/*.GLTF` format, and upload the models. If it is a GLTF in a folder with multiple files, make sure to upload all of it. Keep this in mind when adding the object to a scene, as you will have to specify the GLTF file name within the folder (but not the textures or other components).
 
