@@ -86,7 +86,7 @@ name | type | default | description
 -- | -- | -- | --
 **Publish Unity Data** | button | -- | Manual button to publish an object update. Enabled only for ARENA message type `object` (transform changes will update automatically).
 Script | `ArenaObject` | -- | The script instance to manage an ARENA object runtime.
-**Message Type** | string | object | Message type in persistance storage schema
+**Message Type** | string | object | Message type in persistence storage schema
 **Persist**| bool | true | Persist this object in the ARENA server database (default true = persist on server)
 **Json Data** | string | null | ARENA JSON-encoded message `data` attributes. This can be manually edited and published with the `Publish Json Data` button.
 **Publish Json Data** | button | -- | Manual button to publish edited `Json Data`. Enabled when `Json Data` is well formatted.

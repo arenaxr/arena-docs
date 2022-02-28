@@ -25,10 +25,10 @@ void ArenaUnityTestDemo()
     // Set the MQTT broker address, default: "arenaxr.org".
     scene.brokerAddress = "arenaxr.org";
 
-    // Set the namespace name fot the scene, default: [your ARENA username].
+    // Set the namespace name for the scene, default: [your ARENA username].
     scene.namespaceName = "public";
 
-    // Set the scene name for tne scene, default: "example".
+    // Set the scene name for the scene, default: "example".
     scene.sceneName = "example";
 
     // Authenticate flow, MQTT connection flow, and Persistence download flow.

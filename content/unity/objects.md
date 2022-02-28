@@ -6,7 +6,7 @@ parent: Unity Library
 ---
 
 # ARENA Unity Objects
-This library provides you some options to manage CRUD operations on ARENA Persist objects during Runtime(**Play**). Each operation will publish the appropriate ARENA message for the persistance database and other client subscribers to the scene.
+This library provides you some options to manage CRUD operations on ARENA Persist objects during Runtime(**Play**). Each operation will publish the appropriate ARENA message for the persistence database and other client subscribers to the scene.
 
 ## Create
 - Create any Unity GameObject and drag it as a parent of the `ARENA CLient Runtime` in the `Hierarchy`.
