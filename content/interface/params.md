@@ -29,4 +29,5 @@ The following URL parameters are accepted.
 | noreticle (bool)                | In AR, change the reticle ring to transparent when true, gray when false (default). |
 | armode (bool)                | Instantly enter AR mode. |
 | ar (bool)                | Do not load models with hide-on-enter-ar (allows opening scenes with large models that are not visible in AR). |
+| auth (string)               | Save the authentication method for the browser session (e.g. ```auth=anonymous```, or ```auth=google```)                                                                                                                                          |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
