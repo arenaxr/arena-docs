@@ -16,7 +16,7 @@ Here are some common situations which can help when programming and collaboratin
 - For **Edge**, in Windows *Start > Settings > Privacy > Camera*, and toggle the switch. Try the *Microphone* setting here as well.
 - For **Firefox**, test your permissions **about:preferences#privacy**, scroll down to *Permissions*, then *Camera/Microphone* and try different cameras/microphones:
 - For **Safari**, navigate your menus to *Menu > Safari > Preferences... > Websites > Camera/Microphones* and try different cameras/microphones.
-<!-- - Since we use WebRTC, try your browser at a third-party WebRTC test site [https://test.webrtc.org/](https://test.webrtc.org/). -->
+- Since we use WebRTC, try your browser at a third-party WebRTC test site [https://test.8x8.vc/](https://test.8x8.vc/).
 
 ## Where is my Object?
 - Is the object's position below the ground? The **y** position will be negative below the default visible floor.

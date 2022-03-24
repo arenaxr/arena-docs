@@ -121,7 +121,7 @@ Scale varies widely between individual models, so experiment with the best scale
     {
       "name": "avocado",
       "url_gltf": "store/models/Avocado.glb",
-      "scale": 5
+      "scale": 1
     },
     {
       "name": "shuttle",
