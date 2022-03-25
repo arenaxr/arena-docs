@@ -7,17 +7,17 @@ has_children: true
 
 # ARENA-unity
 Unity C# library for editing scenes and creating applications for the ARENA.
-- [**ARENA-unity**](https://github.com/conix-center/ARENA-unity) Unity repository
 
 <img alt="" src="/assets/img/unity/arena-unity-demo.gif">
 
 ## Library Usage:
 1. Open a new or existing Unity project. **Unity 2019.4+ supported.**
-1. `Edit > Project Settings > Player > Android > Other Settings > Configuration`:
+1. `Edit > Project Settings > Player > PC, Mac & Linux Standalone > Other Settings > Configuration`:
     - `Api Compatibility Level` to: `.NET 4.x`.
-1. `Edit > Project Settings > Player > Android > Other Settings > Script Compilation`:
+1. `Edit > Project Settings > Player > PC, Mac & Linux Standalone > Other Settings > Script Compilation`:
     - `Scripted Define Symbols` to include:
         - `SSL`
+1. You may need to install [`git`](https://git-scm.com/) if it doesn't come preinstalled on your OS (Windows 10).
 1. Open `Window > Package Manager` and `+ > Add package from git URL...`, use this link:
     ```
     https://github.com/conix-center/ARENA-unity.git#0.0.13
