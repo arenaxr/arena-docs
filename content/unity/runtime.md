@@ -8,6 +8,11 @@ parent: Unity Library
 # ARENA-Unity Runtime
 The ArenaUnity package can be used to build new interfaces to collaboratively connect and edit ARENA scenes. Be sure to use the [project setup instructions](/content/unity) to install the package. For the `Editor` interface, see the [ARENA Unity Editor](/content/unity/editor) instructions.
 
+## Architecture
+- The `.NET 4.x` API level is required since ARENA JSON payloads are fluid, and we cannot keep up with schema serialization definitions by developers and users. So we use the `dynamic` object instantiations offered in the .Net 4 API to test for JSON attributes at runtime.
+- **ArenaClient** is a Singleton class, meant to be instantiated only once to control the auth and MQTT communication flow.
+- **ArenaObject** is a class for each GameObjects to publish to the ARENA, accessing the publish and subscribe MQTT methods through **ArenaClient.Instance**. `ArenaClient` will manage attaching `ArenaObject` to Unity GameObjects for you.
+
 ## Example
 The example code below contains both synchronous and asynchronous APIs, so please plan your application events accordingly.
 
