@@ -5,7 +5,7 @@ layout: default
 parent: ARENA Objects
 ---
 
-# Formatting PubSub Messages 
+# Formatting PubSub Messages
 
 For debugging purposes, or to create your own ARENA client software, it can be helpful to interact with ARENA's PubSub messaging directly. Here we describe some examples of doing this.
 
@@ -15,7 +15,7 @@ All ARENA objects have similar well-defined schemas, and these are the basis for
 
 ```json
 {
-  "object_id": "dinossaur",
+  "object_id": "dinosaur",
   "persist": true,
   "type": "object",
   "action": "update",

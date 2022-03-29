@@ -19,6 +19,7 @@ The following URL parameters are accepted.
 | ATLASurl | string | URL of ATLAS (e.g. `ATLASurl=//atlas.conix.io`) |
 | auth | string | Save the authentication method for the browser session (e.g. `auth=anonymous`, or `auth=google`) |
 | camUpdateIntervalMs | string | Minimum camera update interval in milliseconds (e.g. `camUpdateIntervalMs=100`) |
+| confstats | bool | Enable logging to MQTT of conference quality stats. |
 | fixedCamera | string | Sets the camera name to the given value **and** enables VIO output to `realm/vio/scene-name/camera-name` ; `fixedCamera=iPhone` will set the camera name **exactly** to the given value (not add any prefix/suffix) |
 | lat | float | Override device location; (e.g. `lat=40.4427`) |
 | long | float | Override device location; (e.g. `long=79.9430`) |
