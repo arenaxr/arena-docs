@@ -87,4 +87,4 @@ The viewer device was an IPad with XRViewer, and the user was logged in ARENA to
 
 <img src="/assets/img/xr/scene-permissions.png" width="500"/>
 
-For reference, [these are the attributes](https://gist.github.com/nampereira/de5b6286bfb9c4ad79960e767f165315) of the box object (named 'dynamic-box') we attached a dynamic ARMArker (note that the position is just the initial static position; it will be updated once the marker gets in the view of a device with permissions to update it).
+For reference, [these are the attributes](https://gist.github.com/nampereira/de5b6286bfb9c4ad79960e767f165315) of the box object (named 'dynamic-box') we attached a dynamic ARMarker (note that the position is just the initial static position; it will be updated once the marker gets in the view of a device with permissions to update it).

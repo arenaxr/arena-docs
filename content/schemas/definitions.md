@@ -100,7 +100,7 @@ Some A-Frame attributes and components we don't officially include in our JSON m
 | [rotation](message-examples#rotate) | *A/P* | [`Rotation` object](#rotation-object) | Quaternion rotation of the object.
 | scale | *A/P* | [`scale` object](#scale-object) | Scale factor of the object in 3d.
 | [color](message-examples#color) | *A/P* | `string` | A hexadecimal color or [CSS/HTML color](https://htmlcolorcodes.com/color-names) name (*default: "#FFFFFF"*).
-| [text](message-examples#text) | *A/P* | `string` | Any `string` of [ASCII characters](https://aframe.io/docs/1.0.0/components/text.html#non-ascii-characters). e.g. "Hello world!"
+| [text](message-examples#text) | *A/P* | `string` | Any `string` of [ASCII characters](https://aframe.io/docs/1.3.0/components/text.html#non-ascii-characters). e.g. "Hello world!"
 | [click-listener](message-examples#events) | *A/P* | `string` | Name of the click-listener, default can be empty string. e.g. ""
 | [url](message-examples#images) | *A/P* | `string` | URI, relative or full path of a file. e.g. "store/models/Duck.glb"
 | [material](message-examples#360-video) | *A/P* | [`Material` object](#material-object) | The material properties of the object's surface.
@@ -123,7 +123,7 @@ Some A-Frame attributes and components we don't officially include in our JSON m
 
 
 ## "position" object
-Follows A-Frame [position](https://aframe.io/docs/1.0.0/components/position.html).
+Follows A-Frame [position](https://aframe.io/docs/1.3.0/components/position.html).
 
 ### properties
 
@@ -134,7 +134,7 @@ Follows A-Frame [position](https://aframe.io/docs/1.0.0/components/position.html
 | z | *A/P* | `number` | Z-axis distance from origin, in meters (*default: 0*, **required**).
 
 ## "rotation" object
-Follows A-Frame [rotation](https://aframe.io/docs/1.0.0/components/rotation.html).
+Follows A-Frame [rotation](https://aframe.io/docs/1.3.0/components/rotation.html).
 
 ### properties
 
@@ -146,7 +146,7 @@ Follows A-Frame [rotation](https://aframe.io/docs/1.0.0/components/rotation.html
 | w | *A/P* | `number` | Quaternion value for theta (*default: 1*, **required**).
 
 ## "scale" object
-Follows A-Frame [scale](https://aframe.io/docs/1.0.0/components/scale.html).
+Follows A-Frame [scale](https://aframe.io/docs/1.3.0/components/scale.html).
 
 ### properties
 
@@ -157,7 +157,7 @@ Follows A-Frame [scale](https://aframe.io/docs/1.0.0/components/scale.html).
 | z | *A/P* | `number` | Z-axis length of object, in meters (*default: 1*, **required**).
 
 ## "material" object
-Follows A-Frame [material](https://aframe.io/docs/1.0.0/components/material.html).
+Follows A-Frame [material](https://aframe.io/docs/1.3.0/components/material.html).
 
 ### properties
 
@@ -173,7 +173,7 @@ Follows A-Frame [material](https://aframe.io/docs/1.0.0/components/material.html
 | repeat | *A* | [`Repeat` object](#repeat-object) | Used by `material`: `repeat`.
 
 ## "repeat" object
-Follows A-Frame [repeating-textures](https://aframe.io/docs/1.0.0/components/material.html#repeating-textures).
+Follows A-Frame [repeating-textures](https://aframe.io/docs/1.3.0/components/material.html#repeating-textures).
 
 ### properties
 
@@ -192,7 +192,7 @@ Follows A-Frame [repeating-textures](https://aframe.io/docs/1.0.0/components/mat
 | srcs | *A* | `string` | A comma-delimited list if URIs, e.g. "side1.png, side2.png, side3.png, side4.png, side5.png, side6.png" (**required**).
 
 ## "light" object
-Follows A-Frame [light](https://aframe.io/docs/1.0.0/components/light.html).
+Follows A-Frame [light](https://aframe.io/docs/1.3.0/components/light.html).
 
 ### properties
 
@@ -201,7 +201,7 @@ Follows A-Frame [light](https://aframe.io/docs/1.0.0/components/light.html).
 | type | *A* | `string` | `ambient, directional, hemisphere, point, spot` e.g. "directional" (**required**).
 
 ## "animation" object
-Follows A-Frame [animation](https://aframe.io/docs/1.0.0/components/animation.html).
+Follows A-Frame [animation](https://aframe.io/docs/1.3.0/components/animation.html).
 
 ### properties
 
@@ -232,7 +232,7 @@ Follows Don McCurdy’s [animation-mixer](https://github.com/n5ro/aframe-extras/
 | path | *A/P* | `string` | e.g. "0 0 0, 0 0 1" (**required**).
 
 ## "sound" object
-Follows A-Frame [sound](https://aframe.io/docs/1.0.0/components/sound.html).
+Follows A-Frame [sound](https://aframe.io/docs/1.3.0/components/sound.html).
 
 ### properties
 

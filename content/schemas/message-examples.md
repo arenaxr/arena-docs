@@ -142,7 +142,7 @@ Animate rotation of the already drawn cube.
 arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "cube_1", "action": "update", "type": "object", "data": { "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000}} }'
 ```
 
-Other animations are available that resemble the `"data": {"animation": { "property": ... }}` blob above: see [A-Frame Animation](https://aframe.io/docs/1.0.0/components/animation.html) documentation for more examples.
+Other animations are available that resemble the `"data": {"animation": { "property": ... }}` blob above: see [A-Frame Animation](https://aframe.io/docs/1.3.0/components/animation.html) documentation for more examples.
 
 ## Remove
 
@@ -177,7 +177,7 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "die1", "action": "cre
 
 ## Other Primitives: TorusKnot
 
-Instantiate a wacky torusKnot, then turn it blue. Other primitive types are available in the in [A-Frame docs](https://aframe.io/docs/1.0.0/components/geometry.html#built-in-geometries). Here is a brief list: **box circle cone cylinder dodecahedron icosahedron tetrahedron octahedron plane ring sphere torus torusKnot triangle**.
+Instantiate a wacky torusKnot, then turn it blue. Other primitive types are available in the in [A-Frame docs](https://aframe.io/docs/1.3.0/components/geometry.html#built-in-geometries). Here is a brief list: **box circle cone cylinder dodecahedron icosahedron tetrahedron octahedron plane ring sphere torus torusKnot triangle**.
 
 ```json
 arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "torusKnot_1", "action": "create", "type": "object", "data": {"object_type": "torusKnot", "color": "red", "position": {"x": 0, "y": 1, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}'
