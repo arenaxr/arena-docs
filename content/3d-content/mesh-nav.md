@@ -44,6 +44,6 @@ Add the navigation mesh in the ARENA builder in the `scene-options` object as a 
 
 If a navigation mesh is properly created with the default origin in mind (0,0,0 coordinates), a user will load in to that
 starting position already constrained to the navmesh. If there **is** a vertical offset, however, then the navigation constraint may
-not apply unless specified with a [starting position landmark](../schemas/definitions#landmark-object). With a `landmark`
+not apply unless specified with a [starting position landmark](../schemas/message/landmark). With a `landmark`
 property `constrainToNavMesh` set, a teleport to landmark or starting random position can forcibly snap a user to the nearest
 position on the navigation mesh.
