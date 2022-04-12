@@ -24,7 +24,7 @@ Program Attributes
 |action|One of 3 basic Create/Update/Delete actions or a special client event action (e.g. a click)|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|Yes|
 |persist|Persist this object in the database|boolean|```true```|Yes|
 |type|ARENA program data|string; Must be: ```program```|```'program'```|Yes|
-|data|See: [program](program)|program||Yes|
+|data|Object data payload; Program config data|[program](program)||Yes|
 
 ### Program Data Attributes
 

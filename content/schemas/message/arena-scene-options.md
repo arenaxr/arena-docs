@@ -30,6 +30,6 @@ Scene Config Attributes
 
 |Attribute|Description|Type|Default|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|env-presets|See: [environment-presets](environment-presets)|environment-presets||Yes|
-|renderer-settings|See: [renderer-settings](renderer-settings)|renderer-settings||No|
-|scene-options|See: [scene-options](scene-options)|scene-options||Yes|
+|env-presets|A-Frame Environment presets. |[environment-presets](environment-presets)||Yes|
+|renderer-settings|These settings are fed into three.js WebGLRenderer properties|[renderer-settings](renderer-settings)||No|
+|scene-options|ARENA Scene Options|[scene-options](scene-options)||Yes|

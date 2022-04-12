@@ -35,28 +35,28 @@ Circle Attributes
 |segments|segments|number|```32```|No|
 |thetaLength|theta length|number|```360```|No|
 |thetaStart|theta start|number|```0```|No|
-|animation|See: [animation](animation)|animation||No|
-|armarker|See: [armarker](armarker)|armarker||No|
+|animation|Animate and tween values. |[animation](animation)||No|
+|armarker|A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|[armarker](armarker)||No|
 |click-listener|Object will listen for clicks|boolean||No|
 |collision-listener|Name of the collision-listener, default can be empty string|string||No|
 |color|Color|string|```'#ffa500'```|No|
-|dynamic-body|See: [dynamic-body](dynamic-body)|dynamic-body||No|
-|goto-url|See: [goto-url](goto-url)|goto-url||No|
+|dynamic-body|Physics type attached to the object. |[dynamic-body](dynamic-body)||No|
+|goto-url|Goto given URL; Requires click-listener|[goto-url](goto-url)||No|
 |hide-on-enter-ar|Hide object when entering AR. Remove component to *not* hide|boolean; Must be: ```True```|```True```|No|
-|impulse|See: [impulse](impulse)|impulse||No|
-|landmark|See: [landmark](landmark)|landmark||No|
-|material-extras|See: [material-extras](material-extras)|material-extras||No|
+|impulse|The force applied using physics. Requires click-listener|[impulse](impulse)||No|
+|landmark|Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is contrained by a navmesh (when it exists)|[landmark](landmark)||No|
+|material-extras|Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component. |[material-extras](material-extras)||No|
 |parent|Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|string||No|
-|position|See: [position](position)|position|```{'x': 0, 'y': 0, 'z': 0}```|No|
-|rotation|See: [rotation](rotation)|rotation|```{'x': 0, 'y': 0, 'z': 0}```|No|
-|scale|See: [scale](scale)|scale||No|
-|shadow|See: [shadow](shadow)|shadow||No|
-|sound|See: [sound](sound)|sound||No|
+|position|3D object position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|No|
+|rotation|3D object rotation in degrees by default; Right-handed coordinate system. Switches to quaternion representation if 'w' is given|[rotation](rotation)|```{'x': 0, 'y': 0, 'z': 0}```|No|
+|scale|3D object scale|[scale](scale)||No|
+|shadow|shadow|[shadow](shadow)||No|
+|sound|The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position. |[sound](sound)||No|
 |url|Model URL. Store files paths under 'store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|string||No|
 |screenshareable|Whether or not a user can screenshare on an object|boolean|```True```|No|
-|video-control|See: [video-control](video-control)|video-control||No|
+|video-control|Video Control|[video-control](video-control)||No|
 |buffer|Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate (geometries only: box, circle, cone, ...).|boolean|```true```|No|
-|jitsi-video|See: [jitsi-video](jitsi-video)|jitsi-video||No|
-|material|See: [material](material)|material|```{'color': '#7f7f7f'}```|No|
-|multisrc|See: [multisrc](multisrc)|multisrc||No|
+|jitsi-video|Apply a jitsi video source to the geometry|[jitsi-video](jitsi-video)||No|
+|material|The material properties of the object’s surface. |[material](material)|```{'color': '#7f7f7f'}```|No|
+|multisrc|Define multiple visual sources applied to an object.|[multisrc](multisrc)||No|
 |skipCache|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|boolean|```true```|No|

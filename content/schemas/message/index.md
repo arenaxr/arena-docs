@@ -18,6 +18,7 @@ has_toc: false
 |[Cylinder](cylinder)|cylinder Geometry|
 |[Dodecahedron](dodecahedron)|dodecahedron Geometry|
 |[Entity (generic object)](entity)|Entities are the base of all objects in the scene. Entities are containers into which components can be attached.|
+|[Event (non-persist)](event)|Events are ephemeral messages used to send user events like mouse movements or controller actions.|
 |[GLTF Model](gltf-model)|Load a GLTF model|
 |[Image](image)|Display an image on a plane|
 |[Light](light)|A light|
