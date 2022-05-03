@@ -16,9 +16,9 @@ Simple switch between the default gltf-model and a detailed one when a user came
 GLTF Model Level of Detail Attributes
 --------------------------------------
 
-|Attribute|Description|Type|Default|Required|
+|Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|detailedUrl|Alternative 'detailed' gltf model to load by URL|string|``````|No|
-|detailedDistance|At what distance to switch between the models|number|```10```|No|
-|updateRate|How often user camera is checked for LOD (default 333ms)|number|```333```|No|
-|retainCache|Whether to skip freeing the detailed model from browser cache (default false)|boolean|```False```|No|
+|detailedUrl|string|``````|Alternative 'detailed' gltf model to load by URL|No|
+|detailedDistance|number|```10```|At what distance to switch between the models|No|
+|updateRate|number|```333```|How often user camera is checked for LOD (default 333ms)|No|
+|retainCache|boolean|```False```|Whether to skip freeing the detailed model from browser cache (default false)|No|

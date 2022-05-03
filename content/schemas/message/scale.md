@@ -16,8 +16,8 @@ Scale
 Scale Attributes
 -----------------
 
-|Attribute|Description|Type|Default|Required|
+|Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|x|x|number|```1```|Yes|
-|y|y|number|```1```|Yes|
-|z|z|number|```1```|Yes|
+|x|number|```1```|x|Yes|
+|y|number|```1```|y|Yes|
+|z|number|```1```|z|Yes|

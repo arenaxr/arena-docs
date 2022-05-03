@@ -18,18 +18,18 @@ All wire objects have a set of basic attributes ```{object_id, action, type, per
 Scene Config Attributes
 ------------------------
 
-|Attribute|Description|Type|Default|Required|
+|Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_id|A uuid or otherwise unique identifier for this object|string|```'scene-options'```|Yes|
-|persist|Persist this object in the database|boolean|```true```|Yes|
-|type|ARENA scene options|string; Must be: ```scene-options```|```'scene-options'```|Yes|
-|action|One of 3 basic Create/Update/Delete actions|string; One of: ```['create', 'delete', 'update']```|```'create'```|Yes|
-|data|Scene Config Data|Scene Config data||Yes|
+|object_id|string|```'scene-options'```|A uuid or otherwise unique identifier for this object|Yes|
+|persist|boolean|```true```|Persist this object in the database|Yes|
+|type|string; Must be: ```scene-options```|```'scene-options'```|ARENA scene options|Yes|
+|action|string; One of: ```['create', 'delete', 'update']```|```'create'```|One of 3 basic Create/Update/Delete actions|Yes|
+|data|Scene Config data||Scene Config Data|Yes|
 
 ### Scene Config Data Attributes
 
-|Attribute|Description|Type|Default|Required|
+|Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|env-presets|A-Frame Environment presets. |[environment-presets](environment-presets)||Yes|
-|renderer-settings|These settings are fed into three.js WebGLRenderer properties|[renderer-settings](renderer-settings)||No|
-|scene-options|ARENA Scene Options|[scene-options](scene-options)||Yes|
+|env-presets|[environment-presets](environment-presets)||A-Frame Environment presets. |Yes|
+|renderer-settings|[renderer-settings](renderer-settings)||These settings are fed into three.js WebGLRenderer properties|No|
+|scene-options|[scene-options](scene-options)||ARENA Scene Options|Yes|

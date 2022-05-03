@@ -18,6 +18,6 @@ More properties at <a href='https://github.com/n5ro/aframe-physics-system#dynami
 Physics Attributes
 -------------------
 
-|Attribute|Description|Type|Default|Required|
+|Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|type|type|string; One of: ```['static', 'dynamic']```||Yes|
+|type|string; One of: ```['static', 'dynamic']```||type|Yes|

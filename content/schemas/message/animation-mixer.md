@@ -18,11 +18,11 @@ More properties at <a href='https://github.com/n5ro/aframe-extras/tree/master/sr
 Animation Mixer Attributes
 ---------------------------
 
-|Attribute|Description|Type|Default|Required|
+|Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|clampWhenFinished|If true, halts the animation at the last frame.|boolean|```False```|No|
-|clip|Name of the animation clip(s) to play. Accepts wildcards.|string|```'*'```|No|
-|crossFadeDuration|Duration of cross-fades between clips, in seconds.|number|```0```|No|
-|duration|Duration of the animation, in seconds (0 = auto).|number|```0```|No|
-|repetitions|Number of times to play the clip, in addition to the first play. Repetitions are ignored for loop: once.|number; One of: ```['once', 'repeate', 'pingpong']```|```0```|No|
-|timeScale|Scaling factor for playback speed. A value of 0 causes the animation to pause. Negative values cause the animation to play backwards.|number|```1```|No|
+|clampWhenFinished|boolean|```False```|If true, halts the animation at the last frame.|No|
+|clip|string|```'*'```|Name of the animation clip(s) to play. Accepts wildcards.|No|
+|crossFadeDuration|number|```0```|Duration of cross-fades between clips, in seconds.|No|
+|duration|number|```0```|Duration of the animation, in seconds (0 = auto).|No|
+|repetitions|number; One of: ```['once', 'repeate', 'pingpong']```|```0```|Number of times to play the clip, in addition to the first play. Repetitions are ignored for loop: once.|No|
+|timeScale|number|```1```|Scaling factor for playback speed. A value of 0 causes the animation to pause. Negative values cause the animation to play backwards.|No|

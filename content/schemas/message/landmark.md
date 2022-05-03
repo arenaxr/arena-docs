@@ -16,12 +16,12 @@ Define entities as a landmark; Landmarks appears in the landmark list and you ca
 Landmark Attributes
 --------------------
 
-|Attribute|Description|Type|Default|Required|
+|Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|randomRadiusMin|Minimum radius from the landmark to teleport to. (randomRadiusMax must > 0)|number|```0```|No|
-|randomRadiusMax|Maximum radius from the landmark to teleport to.|number|```0```|No|
-|offsetPosition|Use as a static teleport x,y,z offset|||No|
-|constrainToNavMesh|Teleports should snap to navmesh. Valid values: 'false', 'any', 'coplanar'|string; One of: ```['false', 'any', 'coplanar']```|```'false'```|No|
-|startingPosition|Set to true to use this landmark as a scene start (spawn) position. If several landmarks with startingPosition=true exist in a scene, one will be randomly selected.|boolean|```False```|No|
-|lookAtLandmark|Set to true to make users face the landmark when teleported to it.|boolean|```True```|No|
-|label|Landmark description to display in the landmark list|string|```''```|Yes|
+|randomRadiusMin|number|```0```|Minimum radius from the landmark to teleport to. (randomRadiusMax must > 0)|No|
+|randomRadiusMax|number|```0```|Maximum radius from the landmark to teleport to.|No|
+|offsetPosition|||Use as a static teleport x,y,z offset|No|
+|constrainToNavMesh|string; One of: ```['false', 'any', 'coplanar']```|```'false'```|Teleports should snap to navmesh. Valid values: 'false', 'any', 'coplanar'|No|
+|startingPosition|boolean|```False```|Set to true to use this landmark as a scene start (spawn) position. If several landmarks with startingPosition=true exist in a scene, one will be randomly selected.|No|
+|lookAtLandmark|boolean|```True```|Set to true to make users face the landmark when teleported to it.|No|
+|label|string|```''```|Landmark description to display in the landmark list|Yes|

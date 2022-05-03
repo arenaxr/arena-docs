@@ -16,8 +16,8 @@ The force applied using physics. Requires click-listener
 Impulse Attributes
 -------------------
 
-|Attribute|Description|Type|Default|Required|
+|Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|force|force|string||No|
-|on|on|string||No|
-|position|position|string||No|
+|force|string||force|No|
+|on|string||on|No|
+|position|string||position|No|

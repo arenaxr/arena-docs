@@ -16,9 +16,9 @@ Rotation
 Rotation Attributes
 --------------------
 
-|Attribute|Description|Type|Default|Required|
+|Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|w|w|number|```1```|No|
-|x|x|number|```0```|Yes|
-|y|y|number|```0```|Yes|
-|z|z|number|```0```|Yes|
+|w|number|```1```|w|No|
+|x|number|```0```|x|Yes|
+|y|number|```0```|y|Yes|
+|z|number|```0```|z|Yes|

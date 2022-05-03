@@ -16,7 +16,7 @@ Apply a jitsi video source to the geometry
 Jitsi Video Attributes
 -----------------------
 
-|Attribute|Description|Type|Default|Required|
+|Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|jitsiId|JitsiId of the video source; If defined will override displayName|string||No|
-|displayName|ARENA or Jitsi display name of the video source; Will be ignored if jitsiId is given. (* change requires reload* ) |string||Yes|
+|jitsiId|string||JitsiId of the video source; If defined will override displayName|No|
+|displayName|string||ARENA or Jitsi display name of the video source; Will be ignored if jitsiId is given. (* change requires reload* ) |Yes|
