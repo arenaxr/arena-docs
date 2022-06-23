@@ -31,7 +31,7 @@ python hello.py
 ```python
 from arena import *
 
-scene = Scene(host="arenaxr.org", scene="example")
+scene = Scene(host="mqtt.arenaxr.org", scene="example")
 
 @scene.run_once
 def make_box():
@@ -53,7 +53,7 @@ ARENA python applications can be sandboxed in the WASM runtime (currently with l
 
 To run a python program from the command line in your computer, specify the target of which server, user and scene are set by the `Scene(host="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using environmental variables at the command line as shown below.  This allows a simple way to re-target applications for your own environment without having to change the parameters manually in the code.
 ```shell
-export MQTTH=arenaxr.org
+export MQTTH=mqtt.arenaxr.org
 export REALM=realm
 export SCENE=scene
 export NAMESPACE=namespace
@@ -91,15 +91,15 @@ arena-py-permissions
 ```
 ### CLI Subscribe to Scene Messages
 ```bash
-arena-py-sub -mh arenaxr.org -s example
+arena-py-sub -mh mqtt.arenaxr.org -s example
 ```
 ### CLI Subscribe to Custom Topic
 ```bash
-arena-py-sub -mh arenaxr.org -t realm/g/a
+arena-py-sub -mh mqtt.arenaxr.org -t realm/g/a
 ```
 ### CLI Publish a Scene Object Message
 ```bash
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "gltf-model_Earth", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x":0, "y": 0.1, "z": 0}, "url": "store/models/Earth.glb", "scale": {"x": 5, "y": 5, "z": 5}}}'
+arena-py-pub -mh mqtt.arenaxr.org -s example -m '{"object_id": "gltf-model_Earth", "action": "create", "type": "object", "data": {"object_type": "gltf-model", "position": {"x":0, "y": 0.1, "z": 0}, "url": "store/models/Earth.glb", "scale": {"x": 5, "y": 5, "z": 5}}}'
 ```
 ### CLI Help
 ```bash

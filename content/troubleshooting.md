@@ -27,7 +27,7 @@ Here are some common situations which can help when programming and collaboratin
 ## Python Library `arena-py` Errors
 While using the ARENA **Python library**, You may encounter an error condition due to your network configuration. Some of these are detailed below with some troubleshooting steps.
 
-### Python: MQTT connect error to arenaxr.org, port=8883
+### Python: MQTT connect error to mqtt.arenaxr.org, port=8883
 If your internet connection uses a VPN or other firewall that may block port **8883**, then the secure, encrypted TLS connection for ARENA MQTT will be prevented. To resolve:
 - Switch to another VPN, WiFi access point, or network connection that allows port 8883.
 - Use a SSH terminal connection to another server you operate that allows port 8883.
