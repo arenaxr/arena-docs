@@ -14,5 +14,6 @@ Using the BLK360, along with 3D reconstruction software (e.g. Leica’s [Cyclone
 1. Each scan can take 30 seconds, or up to 2 minutes, depending on the resolution of the scan (we often use the fastest setting).
 1. The scan density might vary significantly from space to space, where large open spaces can be captured with few scans, and more complex areas require more scans due to occlusion.
 1. Before loading the model into ARENA, manual adjustments to simplify the model can be made using, e.g., [Blender](https://www.blender.org).
+1. Using Blender, you may want to lower the polygon count, or otherwise reduce the model size to increase the speed it can be loaded into a browser through the ARENA.
 
 {% include alert type="tip" title="Example" content="A model with over 400 square meters took less than 30 minutes to capture for us. A typical venue model (two floors, over 400 square meters) is less than 100MB, larger models can be split and loaded dynamically using a Level-of-Detail (LOD) mechanism that allows to load increasingly more detailed models as a users approaches." %}
