@@ -20,7 +20,7 @@ How to launch a program (e.g. **boxes/boxes.py**) in a [file store](https://aren
 
 1\. Edit Scene: [https://arenaxr.org/build/](https://arenaxr.org/build/)
 
-2\. Make sure the ARENA and MQTT host are **https://arenaxr.org/** and **arenaxr.org:8083**:
+2\. Make sure the ARENA and MQTT host are **https://arenaxr.org/** and **mqtt.arenaxr.org:8083**:
 
 ![](../../assets/img/arts-program/image4.png){:width="300px"}
 

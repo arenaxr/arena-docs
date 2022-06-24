@@ -73,7 +73,7 @@ Now, go into the scene to see your box!
 from arena import *
 
 # setup library
-scene = Scene(host="arenaxr.org", scene="example")
+scene = Scene(host="mqtt.arenaxr.org", scene="example")
 
 def main():
     # make a box

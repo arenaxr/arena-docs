@@ -27,8 +27,8 @@ void ArenaUnityTestDemo()
     // Only one singleton connection instance allowed per application.
     ArenaClient scene = ArenaClient.Instance;
 
-    // Set the MQTT broker address, default: "arenaxr.org".
-    scene.brokerAddress = "arenaxr.org";
+    // Set the MQTT broker address, default: "mqtt.arenaxr.org".
+    scene.brokerAddress = "mqtt.arenaxr.org";
 
     // Set the namespace name for the scene, default: [your ARENA username].
     scene.namespaceName = "public";

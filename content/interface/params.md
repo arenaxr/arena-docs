@@ -22,7 +22,7 @@ The following URL parameters are accepted.
 | fixedCamera | string | Sets the camera name to the given value **and** enables VIO output to `realm/vio/scene-name/camera-name` ; `fixedCamera=iPhone` will set the camera name **exactly** to the given value (not add any prefix/suffix) |
 | lat | float | Override device location; (e.g. `lat=40.4427`) |
 | long | float | Override device location; (e.g. `long=79.9430`) |
-| mqttHost | string | Override MQTT host address (e.g. `mqttHost=arenaxr.org`) |
+| mqttHost | string | Override MQTT host address (e.g. `mqttHost=mqtt.arenaxr.org`) |
 | name | string | Set user name (e.g. `name=MyName`) |
 | noname | bool | Handles display of user name on the screen. False: (default) display the user name. True: Do not display the user name. |
 | noreticle | bool | In AR, change the reticle ring to transparent when true, gray when false (default). |

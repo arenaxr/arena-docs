@@ -62,7 +62,7 @@ Now, go into the scene to see your box move with text!
 from arena import *
 
 # setup library
-scene = Scene(host="arenaxr.org", scene="example")
+scene = Scene(host="mqtt.arenaxr.org", scene="example")
 
 # make a box
 box = Box(object_id="my_box", position=Position(0,4,-2), scale=Scale(2,2,2))
