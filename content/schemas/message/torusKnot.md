@@ -1,6 +1,6 @@
 ---
 title: 
-nav_order: 45
+nav_order: 46
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -43,8 +43,10 @@ Torus Knot Attributes
 |collision-listener|string||Name of the collision-listener, default can be empty string|No|
 |color|string|```'#ffa500'```|Color|No|
 |dynamic-body|[dynamic-body](dynamic-body)||Physics type attached to the object. |No|
+|goto-landmark|[goto-landmark](goto-landmark)||Teleports user to the landmark with the given name; Requires click-listener|No|
 |goto-url|[goto-url](goto-url)||Goto given URL; Requires click-listener|No|
 |hide-on-enter-ar|boolean; Must be: ```True```|```True```|Hide object when entering AR. Remove component to *not* hide|No|
+|hide-on-enter-vr|boolean; Must be: ```True```|```True```|Hide object when entering VR. Remove component to *not* hide|No|
 |impulse|[impulse](impulse)||The force applied using physics. Requires click-listener|No|
 |landmark|[landmark](landmark)||Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is contrained by a navmesh (when it exists)|No|
 |material-extras|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component. |No|

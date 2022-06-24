@@ -1,6 +1,6 @@
 ---
 title: 
-nav_order: 36
+nav_order: 37
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -31,5 +31,6 @@ Scene Options Attributes
 |screenshare|string|```'screenshare'```|Name of the 3D object used when sharing desktop|No|
 |videoFrustumCulling|boolean|```True```|If false, will disable video frustum culling (video frustum culling stops video from users outside of view)|Yes|
 |videoDistanceConstraints|boolean|```True```|If false, will disable video distance constraints (video resolution decreases with distance from users in view)|Yes|
+|videoDefaultResolutionConstraint|number|```180```|Sets the default max resolution for all users. Ignored when videoDistanceConstraints = true.|Yes|
 |volume|number|```1```|Volume for users in a scene|No|
-|physics|boolean|```False```|If true, will load the aframe-physics-system. Required for the following: `dynamic-body`, `impulse`, `collision-listener`.|No|
+|physics|boolean|```False```|If true, will load the aframe-physics-system. Required for the following: `dynamic-body`, `impulse`, `collision-listener`.|Yes|

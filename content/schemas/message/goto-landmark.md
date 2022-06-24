@@ -1,23 +1,22 @@
 ---
 title: 
-nav_order: 18
+nav_order: 17
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
 ---
 
 
-Goto URL
-========
+Goto Landmark
+=============
 
 
-Goto given URL; Requires click-listener
+Teleports user to the landmark with the given name; Requires click-listener
 
-Goto URL Attributes
---------------------
+Goto Landmark Attributes
+-------------------------
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|dest|string; One of: ```['popup', 'newtab', 'sametab']```||dest|Yes|
 |on|string; One of: ```['mousedown', 'mouseup']```||on|Yes|
-|url|string||url|Yes|
+|landmark|string|```''```|landmark|Yes|
