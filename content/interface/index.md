@@ -13,7 +13,7 @@ The web client interface for our main ARENA instance is at [https://arenaxr.org/
 
 From this main entry point, there are a few relevant areas:
 - **Login**: [/user](https://arenaxr.org/user)
-- **Scene List**: [/user/scenes](https://arenaxr.org/user/scenes)
+- **Scene List**: [/scenes](https://arenaxr.org/scenes)
 - **Scene Builder**: [/build](https://arenaxr.org/build)
 - **User Files**: [/files](https://arenaxr.org/files/)
 

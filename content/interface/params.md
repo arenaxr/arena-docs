@@ -14,8 +14,7 @@ The following URL parameters are accepted.
 
 | Parameter | Type | Description |
 | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ar | bool | Do not load models with hide-on-enter-ar (allows opening scenes with large models that are not visible in AR). |
-| armode | bool | Instantly enter AR mode. |
+| armode | bool | Instantly enter AR mode, *and* Do not load models with hide-on-enter-ar (allows opening scenes with large models that are not visible in AR). |
 | ATLASurl | string | URL of ATLAS (e.g. `ATLASurl=//atlas.conix.io`) |
 | auth | string | Save the authentication method for the browser session (e.g. `auth=anonymous`, or `auth=google`) |
 | camUpdateIntervalMs | string | Minimum camera update interval in milliseconds (e.g. `camUpdateIntervalMs=100`) |
@@ -31,4 +30,5 @@ The following URL parameters are accepted.
 | skipav | bool | Skips the webcam, speaker, microphone setup modal. Attempts to use previously selected devices, or system defaults |
 | startCoords | string | User starting x, y, z coordinates in the 3D environment (e.g. `startCoords=0,1.6,0`) |
 | startLastPos | bool | User starts at the last position recorded on this browser (saved per heartbeat in localStorage) |
+| vr | bool | Do not load models with hide-on-enter-vr (allows opening scenes with large models that are not visible in VR). |
 | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
