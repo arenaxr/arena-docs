@@ -7,7 +7,7 @@ parent: 3D Content
 {% include alert type="warning" title="Coming Soon" content="Stay tuned for more details..." %}
 
 # Scanning a Large Space with Matterport
-For higher fidelity models, we use the Leica BLK360, a terrestrial laser scanner (TLS) with registered 360 color images.
+For higher fidelity models, we use the [Leica BLK360](https://shop.leica-geosystems.com/leica-blk/blk360/product-details), a terrestrial laser scanner (TLS) with registered 360 color images.
 Using the BLK360, along with 3D reconstruction software (e.g. Leica’s [Cyclone FIELD 360](https://leica-geosystems.com/en-us/products/laser-scanners/software/leica-cyclone/leica-cyclone-field-360), or [Matterport](https://matterport.com)), we create 3D models of physical spaces that can easily be imported into ARENA.
 
 1. We place the laser scanner at different spots around the venue that are merged to create the final model.
