@@ -34,3 +34,4 @@ Scene Options Attributes
 |videoDefaultResolutionConstraint|number|```180```|Sets the default max resolution for all users. Ignored when videoDistanceConstraints = true.|Yes|
 |volume|number|```1```|Volume for users in a scene|No|
 |physics|boolean|```False```|If true, will load the aframe-physics-system. Required for the following: `dynamic-body`, `impulse`, `collision-listener`.|Yes|
+|ar-hit-test|object||A-Frame AR Hit Test Settings. More properties at <a href='https://aframe.io/docs/1.3.0/components/ar-hit-test.html'>https://aframe.io/docs/1.3.0/components/ar-hit-test.html</a>|No|
