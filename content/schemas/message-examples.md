@@ -350,9 +350,25 @@ To draw a shape that is transparent, but occludes other virtual objects behind i
 
 {% include alert type="note" title="Note" content="
 This does not occlude the far background A-Frame layer (like environment component stars) but, in AR, that layer is not drawn anyway.
-Also, this method only applies to primitive objects. `gltf-model` type models have properties associated with each sub-component, requiring us to recursively update all elements which leads to some inconsistencies.
 " %}
-<!-- TODO: maybe add the rendering order property into the GLB -->
+
+Material-extras traverse objects, so can be applied to a GLTF, e.g:
+```json
+{
+  "object_id": "arobothead",
+  "persist": true,
+  "type": "object",
+  "action": "update",
+  "data": {
+    "object_type": "gltf-model",
+    "url": "/store/models/robobit.glb",
+    "material-extras": {
+      "encoding": "sRGBEncoding",
+      "transparentOccluder": true
+    }
+  }
+}
+```
 
 ## Background Themes
 
