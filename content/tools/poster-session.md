@@ -5,7 +5,7 @@ layout: default
 parent: Tools
 ---
 
-Because poster sessions in ARENA are a common use case, we created a script to [programmatically create a poster session scene](https://github.com/conix-center/ARENA-py/tree/master/tools/poster-session).
+Because poster sessions in ARENA are a common use case, we created a script to [programmatically create a poster session scene](https://github.com/arenaxr/arena-py/tree/master/tools/poster-session).
 
 The script creates poster walls using data from a google spreadsheet. For each line in the table (indicated by a range in the config file), it creates a poster wall. See the template [google spreadsheet template with instructions](https://docs.google.com/spreadsheets/d/1xwVURk0BHHtncpeokjm0FZO_sffS7vjmVxt0ewxKaBU/edit?usp=sharing).
 

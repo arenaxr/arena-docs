@@ -16,7 +16,7 @@ has_children: true
 
 [Part 4](advanced.md)
 
-Code for these can be found [here](https://github.com/conix-center/ARENA-py/tree/master/examples/tutorial)
+Code for these can be found [here](https://github.com/arenaxr/arena-py/tree/master/examples/tutorial)
 
 ## General Documentation
 See [ARENA Documentation: Python](https://arena.conix.io/content/python/).

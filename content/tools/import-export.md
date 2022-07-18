@@ -7,7 +7,7 @@ parent: Tools
 
 # Import/Export ARENA scenes
 
-The [import/export script](https://github.com/conix-center/ARENA-py/tree/master/tools/import-export-scenes) allows to import/export ARENA scenes to/from json.
+The [import/export script](https://github.com/arenaxr/arena-py/tree/master/tools/import-export-scenes) allows to import/export ARENA scenes to/from json.
 
 ## Usage
 

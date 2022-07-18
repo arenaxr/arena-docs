@@ -17,4 +17,4 @@ As applications are started in the ARENA (Figure 1), ARTS decides the best avail
 
  **Figure 1**. Starting a new Application in the ARENA
 
-See the [ARTS github](https://github.com/conix-center/arts).
+See the [SilverlineFramework github](https://github.com/SilverLineFramework/orchestrator).

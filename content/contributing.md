@@ -10,7 +10,7 @@ Thanks for your willingness to help improve our flexible, programmatic, mixed-re
 
 ## The Team
 
-ARENA development is lead by a team from <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>. Our team is composed of faculty, staff and several students and in continuously being strenghtned. See our [GitHub](https://github.com/conix-center/) for the list of contributors in each [repository](/content/source).
+ARENA development is lead by a team from <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>. Our team is composed of faculty, staff and several students and in continuously being strenghtned. See our [GitHub](https://github.com/arenaxr/) for the list of contributors in each [repository](/content/source).
 
 ## Research Platform
 
@@ -36,7 +36,7 @@ If you want to work on something that there is no GitHub issue for, it's best to
   - Is it reproducible and what are the steps to reproduce the problem?
   - Where was the issue? Which hostname and the version in use?
 
-- Deployed web server issues please include version here from the commit history at <https://github.com/conix-center/arena-services-docker>
+- Deployed web server issues please include version here from the commit history at <https://github.com/arenaxr/arena-services-docker>
 
 - Python client issues please include the version here from `pip show arena-py`.
 
@@ -66,19 +66,19 @@ We use a number of languages and technologies to run the ARENA. You may need to 
 
 The ARENA is composed from a number of repositories. That can be confusing. We recommend searching for an existing issue from our list first and familiarizing yourself with this basic map:
 
-- ARENA Client Website: [conix-center/ARENA-core/issues](https://github.com/conix-center/ARENA-core/issues)
-- ARENA Python client: [conix-center/ARENA-py/issues](https://github.com/conix-center/ARENA-py/issues)
-- ARENA Unity client: [conix-center/ARENA-unity/issues](https://github.com/conix-center/ARENA-unity/issues)
-- ARENA Docs Website: [conix-center/ARENA/issues](https://github.com/conix-center/ARENA/issues)
+- ARENA Client Website: [arenaxr/arena-web-core/issues](https://github.com/arenaxr/arena-web-core/issues)
+- ARENA Python client: [arenaxr/arena-py/issues](https://github.com/arenaxr/arena-py/issues)
+- ARENA Unity client: [arenaxr/arena-unity/issues](https://github.com/arenaxr/arena-unity/issues)
+- ARENA Docs Website: [arenaxr/arena-docs/issues](https://github.com/arenaxr/arena-docs/issues)
 
 Server components:
 
-- ATLAS Server: [conix-center/ATLAS/issues](https://github.com/conix-center/ATLAS/issues)
-- ARENA MQTT Broker: [conix-center/ARENA-broker/issues](https://github.com/conix-center/ARENA-broker/issues)
-- ARENA Runtime Supervisor: [conix-center/arts/issues](https://github.com/conix-center/arts/issues)
-- ARENA User Account DB: [conix-center/arena-account/issues](https://github.com/conix-center/arena-account/issues)
-- ARENA User Scene Persistence DB: [conix-center/arena-persist/issues](https://github.com/conix-center/arena-persist/issues)
-- ARENA User File Manager: [conix-center/arena-store/issues](https://github.com/conix-center/arena-store/issues)
+- ATLAS Server: [arenaxr/ATLAS/issues](https://github.com/arenaxr/ATLAS/issues)
+- ARENA MQTT Broker: [SilverLineFramework/mosquitto-broker/issues](https://github.com/SilverLineFramework/mosquitto-broker/issues)
+- ARENA Runtime Supervisor: [SilverLineFramework/orchestrator/issues](https://github.com/SilverLineFramework/orchestrator/issues)
+- ARENA User Account DB: [arenaxr/arena-account/issues](https://github.com/arenaxr/arena-account/issues)
+- ARENA User Scene Persistence DB: [arenaxr/arena-persist/issues](https://github.com/arenaxr/arena-persist/issues)
+- ARENA User File Manager: [arenaxr/arena-store/issues](https://github.com/arenaxr/arena-store/issues)
 
 ## Code of Conduct
 

@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: ARENA Documentation
 email: "info@conix.io"
-github_username: conix-center
+github_username: arenaxr
 description: Tutorials and Reference for the ARENA project.
 url: https://arena.conix.io
 aux_links:
@@ -26,8 +26,8 @@ aux_links:
   "CMU":
     - "https://wise.ece.cmu.edu/"
   "Our GitHub":
-    - "https://github.com/conix-center/"
-footer_content: "Copyright &copy; 2020-2021, CONIX Research Center. ARENA is a project led by <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>."
+    - "https://github.com/arenaxr/"
+footer_content: "Copyright &copy; 2020-2022, CONIX Research Center. ARENA is a project led by <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>."
 
 # Build settings
 markdown: kramdown

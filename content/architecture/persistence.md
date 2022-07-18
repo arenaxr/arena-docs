@@ -57,4 +57,4 @@ If a template scene is empty with no objects, or an instance ID already exists w
 
 The persistence service listens on the pubsub message bus for ARENA objects to save to a mongodb store.
 
-- [ARENA-persist](https://github.com/conix-center/arena-persist) repository
+- [ARENA-persist](https://github.com/arenaxr/arena-persist) repository

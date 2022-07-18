@@ -23,7 +23,7 @@ Check out [this](/content/xr/requirements) Requirements Section for details on t
 
 ## Open an ARENA Scene in AR
 
-Print out (or display on a screen[^1]) an [AprilTag with ID 0](https://github.com/conix-center/apriltag-gen/blob/master/output/tag36_11_00000.pdf) and open the scene by entering the following URL[^2] in the address bar of **either [Chrome Beta](https://www.google.com/chrome/beta/) on Android or [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) on iOS**:
+Print out (or display on a screen[^1]) an [AprilTag with ID 0](https://github.com/arenaxr/apriltag-gen/blob/master/output/tag36_11_00000.pdf) and open the scene by entering the following URL[^2] in the address bar of **either [Chrome Beta](https://www.google.com/chrome/beta/) on Android or [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) on iOS**:
 
 **[https://arenaxr.org/public/artest?armode=true](https://arenaxr.org/public/artest?armode=true)**<br/>
 {% include alert type="note" content="

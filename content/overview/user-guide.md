@@ -47,7 +47,7 @@ This will create a namespace under which you can have your own scenes. For examp
 
 ## Permissions
 
-You'll be asked to give location, microphone, and camera access to the ARENA site. If you do not select "yes", you won't be able to connect to the scene location [ATLAS](https://github.com/conix-center/ATLAS), use voice, video, or the face tracking avatar.
+You'll be asked to give location, microphone, and camera access to the ARENA site. If you do not select "yes", you won't be able to connect to the scene location [ATLAS](https://github.com/arenaxr/ATLAS), use voice, video, or the face tracking avatar.
 
 ![](../../assets/img/overview/userguide/a3.png)
 

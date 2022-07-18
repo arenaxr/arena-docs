@@ -10,7 +10,7 @@ parent: XR Experiences
 ARENA can support different optical markers: [Apriltags](https://april.eecs.umich.edu/software/apriltag), has experimental (outside the mainline code) support for [lightanchors/flash](https://youtu.be/_P01roIG93U), and more are expected to be added.
 
 {% include alert type="note" content="
-You can obtain Apriltags with different ids and sizes [here](https://github.com/conix-center/apriltag-gen).
+You can obtain Apriltags with different ids and sizes [here](https://github.com/arenaxr/apriltag-gen).
 "%}
 
 ## Requirements

@@ -49,25 +49,25 @@ Callout alerts are available. Use this syntax:
 # ARENA-Related Repositories
 
 - **ARENA-core**
-  - https://github.com/conix-center/ARENA-core
+  - https://github.com/arenaxr/arena-web-core
 
 - **ARENA-py Python examples**
-  - https://github.com/conix-center/ARENA-py
+  - https://github.com/arenaxr/arena-py
 
 - **ARENA-unity Unity library**
-  - https://github.com/conix-center/ARENA-unity
+  - https://github.com/arenaxr/arena-unity
 
 - **ARENA Runtime Supervisor (ARTS)**
-  - https://github.com/conix-center/arts
+  - https://github.com/SilverLineFramework/orchestrator
 
 - **ATLAS**
-  - https://github.com/conix-center/ATLAS
+  - https://github.com/arenaxr/ATLAS
 
 - **ARENA persist**
-  - https://github.com/conix-center/arena-persist
+  - https://github.com/arenaxr/arena-persist
 
 - **ARENA Authentication backend**
-  - https://github.com/conix-center/arena-account
+  - https://github.com/arenaxr/arena-account
 
 - **Posefusion**
   - https://github.com/conix-center/posefusion

@@ -130,17 +130,17 @@ clickable=True
 ```
 
 
-[animation]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/animation.py
-[animation-mixer]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/animation_mixer.py
-[color]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/color.py
-[clickable]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/clickable.py
-[url]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/goto_url.py
-[material]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/material.py
-[morph]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/morph.py
-[physics]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/physics_impulse.py
-[impulse]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/physics_impulse.py
-[position]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/position.py
-[rotation]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/rotation.py
-[scale]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/scale.py
-[sound]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/sound.py
-[text input]: https://github.com/conix-center/ARENA-py/blob/master/examples/attributes/text_input.py
+[animation]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation.py
+[animation-mixer]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation_mixer.py
+[color]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/color.py
+[clickable]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/clickable.py
+[url]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_url.py
+[material]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/material.py
+[morph]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/morph.py
+[physics]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physics_impulse.py
+[impulse]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physics_impulse.py
+[position]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/position.py
+[rotation]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/rotation.py
+[scale]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/scale.py
+[sound]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/sound.py
+[text input]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/text_input.py

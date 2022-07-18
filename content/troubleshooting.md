@@ -64,11 +64,11 @@ You may see this warning when using [AR Builder (ARB)](tools/authoring) or other
 
 ## I have a different problem, where can I get help?
 We have a place for submitting issues and asking questions in most of our code repositories:
-- [ARENA Docs issues](https://github.com/conix-center/ARENA/issues)
-- [ARENA Website/Webserver issues](https://github.com/conix-center/ARENA-core/issues)
-- [ARENA Python issues](https://github.com/conix-center/ARENA-py/issues)
-- [ARENA Unity issues](https://github.com/conix-center/ARENA-unity/issues)
-- [ATLAS Scene Locator issues](https://github.com/conix-center/ATLAS/issues)
-- [ARENA Persistence issues](https://github.com/conix-center/arena-persist/issues)
-- [ARENA Authentication issues](https://github.com/conix-center/arena-account/issues)
-- [ARENA Deployment Docker issues](https://github.com/conix-center/arena-services-docker/issues)
+- [ARENA Docs issues](https://github.com/arenaxr/arena-docs/issues)
+- [ARENA Website/Webserver issues](https://github.com/arenaxr/arena-web-core/issues)
+- [ARENA Python issues](https://github.com/arenaxr/arena-py/issues)
+- [ARENA Unity issues](https://github.com/arenaxr/arena-unity/issues)
+- [ATLAS Scene Locator issues](https://github.com/arenaxr/ATLAS/issues)
+- [ARENA Persistence issues](https://github.com/arenaxr/arena-persist/issues)
+- [ARENA Authentication issues](https://github.com/arenaxr/arena-account/issues)
+- [ARENA Deployment Docker issues](https://github.com/arenaxr/arena-services-docker/issues)

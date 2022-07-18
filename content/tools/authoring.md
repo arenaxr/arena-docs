@@ -7,11 +7,11 @@ parent: Tools
 
 # ARENA AR Builder
 
-An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top-level Python documentation for [requirements](https://github.com/conix-center/ARENA-py). This tool uses the [ARENA Persistence Database](https://github.com/conix-center/arena-persist), so all changes are persisted.
+An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top-level Python documentation for [requirements](https://github.com/arenaxr/arena-py). This tool uses the [ARENA Persistence Database](https://github.com/arenaxr/arena-persist), so all changes are persisted.
 
 ## Quick Start
 
-1. Clone our Python repo [https://github.com/conix-center/ARENA-py](https://github.com/conix-center/ARENA-py).
+1. Clone our Python repo [https://github.com/arenaxr/arena-py](https://github.com/arenaxr/arena-py).
 1. Usage: `arb` takes at minimum one argument, the first one, a scene name (`hello` in this example).
    ```shell
    python3 tools/arb/arb.py hello
@@ -105,7 +105,7 @@ There is a small temporary object resting on position 0,0,0 in the shape of a co
 
 ### Importing Models
 
-You can import a json-formatted manifest of GLTF models using the command argument **-m** to use on the **model** control panel option. You can write your own, or use the example, [arb-manifest.json](https://github.com/conix-center/ARENA-py/blob/master/tools/arb/arb-manifest.json).
+You can import a json-formatted manifest of GLTF models using the command argument **-m** to use on the **model** control panel option. You can write your own, or use the example, [arb-manifest.json](https://github.com/arenaxr/arena-py/blob/master/tools/arb/arb-manifest.json).
 
 ```shell
 python3 tools/arb/arb.py hello -m arb-manifest.json

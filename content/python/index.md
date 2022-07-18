@@ -10,7 +10,7 @@ has_children: true
 The Python library provides a very accessible development option for ARENA applications. Our current API allows us to create and update objects in a scene, define animations, and setup callbacks on events and timers. The library provides a scheduler and a design pattern familiar to game developers, which includes decorators to create one-shot, periodic and delayed (start after a given time) tasks.Any entity represented in Python is automatically updated upon arrival of network messages and we provide calls to load any pre-existing scene content upon startup.
 
 Draw objects and run programs in the ARENA using Python!
-- [**ARENA-py**](https://github.com/conix-center/ARENA-py) Python repository
+- [**ARENA-py**](https://github.com/arenaxr/arena-py) Python repository
 
 
 ## Setup
@@ -46,7 +46,7 @@ message protocol: JSON messages described in more detail [here](/content/schemas
 That forms a layer, in turn, on top of [A-Frame](https://aframe.io/) and [THREE.js](http://threejs.org/) javascript libraries.
 
 ## Examples
-Examples of ARENA-py programs can be found [here](https://github.com/conix-center/ARENA-py/tree/master/examples) and [here](https://github.com/conix-center/ARENA-py/tree/master/system-tests).
+Examples of ARENA-py programs can be found [here](https://github.com/arenaxr/arena-py/tree/master/examples) and [here](https://github.com/arenaxr/arena-py/tree/master/system-tests).
 
 ## Running from the Command Line
 ARENA python applications can be sandboxed in the WASM runtime (currently with limited library support due to the still immature support for Python in WASM toolchains) and managed by ARTS, or ran standalone from you computer.
