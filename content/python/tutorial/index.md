@@ -19,7 +19,7 @@ has_children: true
 Code for these can be found [here](https://github.com/arenaxr/arena-py/tree/master/examples/tutorial)
 
 ## General Documentation
-See [ARENA Documentation: Python](https://arena.conix.io/content/python/).
+See [ARENA Documentation: Python](https://docs.arenaxr.org/content/python/).
 
 ## A simple program
 ```python

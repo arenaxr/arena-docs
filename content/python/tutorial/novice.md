@@ -8,7 +8,7 @@ parent: Python Tutorial
 # Novice Example - Exploring EVEN more functionality!
 
 ## Event Handlers
-See [events](https://arena.conix.io/content/python/events.html)
+See [events](https://docs.arenaxr.org/content/python/events.html)
 ```python
 def mouse_handler(scene, evt, msg):
     print(evt.type)
