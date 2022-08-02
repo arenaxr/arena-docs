@@ -4,6 +4,10 @@ nav_order: 0
 layout: default
 ---
 
+{% include alert type="warning" content="
+Our research deployment of the ARENA at https://arenaxr.org will be unavailable at times <b>Wednesday, August 3, 2022</b> for scheduled maintenance while we move our server to its new data center home across campus at Carnegie Mellon University. Our apologies for any inconvenience this may cause.
+"%}
+
 # Collaborative Mixed Reality Applications
 {: .fs-9 }
 
