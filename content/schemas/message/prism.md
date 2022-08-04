@@ -1,22 +1,22 @@
 ---
 title: 
-nav_order: 28
+nav_order: 32
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
 ---
 
 
-Octahedron
-==========
+Prism
+=====
 
 
-Octahedron Geometry
+Prism Geometry
 
 All wire objects have a set of basic attributes ```{object_id, action, type, persist, data}```. The ```data``` attribute defines the object-specific attributes
 
-Octahedron Attributes
-----------------------
+Prism Attributes
+-----------------
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
@@ -24,14 +24,16 @@ Octahedron Attributes
 |persist|boolean|```true```|Persist this object in the database (default true = persist on server)|Yes|
 |type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
 |action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create/Update/Delete actions or a special client event action (e.g. a click)|Yes|
-|data|Octahedron data||Octahedron Data|Yes|
+|data|Prism data||Prism Data|Yes|
 
-### Octahedron Data Attributes
+### Prism Data Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_type|string; Must be: ```octahedron```|```octahedron```|3D object type.|Yes|
-|radius|number|```1```|radius|Yes|
+|object_type|string; Must be: ```prism```|```prism```|3D object type.|Yes|
+|depth|number|```1```|depth|Yes|
+|height|number|```1```|height|Yes|
+|width|number|```1```|width|Yes|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|
 |rotation|[rotation](rotation)|```{'x': 0, 'y': 0, 'z': 0}```|3D object rotation in degrees by default; Right-handed coordinate system. Switches to quaternion representation if 'w' is given|No|

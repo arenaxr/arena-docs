@@ -36,6 +36,10 @@ PCD Model Attributes
 |url|string||Model URL. Store files paths under 'store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|Yes|
 |pointSize|number|```0.01```|Size of the points|Yes|
 |pointColor|string|```#7f7f7f```|Color of the points|No|
+|parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
+|position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|Yes|
+|rotation|[rotation](rotation)|```{'x': 0, 'y': 0, 'z': 0}```|3D object rotation in degrees by default; Right-handed coordinate system. Switches to quaternion representation if 'w' is given|Yes|
+|scale|[scale](scale)|```{'x': 1, 'y': 1, 'z': 1}```|3D object scale|Yes|
 |animation|[animation](animation)||Animate and tween values. |No|
 |armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|
 |click-listener|boolean||Object will listen for clicks|No|
@@ -47,12 +51,8 @@ PCD Model Attributes
 |hide-on-enter-ar|boolean; Must be: ```True```|```True```|Hide object when entering AR. Remove component to *not* hide|No|
 |hide-on-enter-vr|boolean; Must be: ```True```|```True```|Hide object when entering VR. Remove component to *not* hide|No|
 |impulse|[impulse](impulse)||The force applied using physics. Requires click-listener|No|
-|landmark|[landmark](landmark)||Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is contrained by a navmesh (when it exists)|No|
+|landmark|[landmark](landmark)||Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists)|No|
 |material-extras|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component. |No|
-|parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|Yes|
-|rotation|[rotation](rotation)|```{'x': 0, 'y': 0, 'z': 0}```|3D object rotation in degrees by default; Right-handed coordinate system. Switches to quaternion representation if 'w' is given|Yes|
-|scale|[scale](scale)|```{'x': 1, 'y': 1, 'z': 1}```|3D object scale|Yes|
 |shadow|[shadow](shadow)||shadow|No|
 |sound|[sound](sound)||The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position. |No|
 |screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
