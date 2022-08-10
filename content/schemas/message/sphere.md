@@ -1,6 +1,6 @@
 ---
 title: 
-nav_order: 41
+nav_order: 43
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -34,9 +34,9 @@ Sphere Attributes
 |phiLength|number|```360```|phi length|No|
 |phiStart|number|```0```|phi start|No|
 |radius|number|```1```|radius|No|
-|segmentsHeight|number|```36```|segments height|No|
-|segmentsWidth|number|```18```|segments width|No|
-|thetaLength|number|```360```|theta length|No|
+|segmentsHeight|number|```18```|segments height|No|
+|segmentsWidth|number|```36```|segments width|No|
+|thetaLength|number|```180```|theta length|No|
 |thetaStart|number|```0```|theta start|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|

@@ -1,6 +1,6 @@
 ---
 title: 
-nav_order: 35
+nav_order: 37
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -33,7 +33,7 @@ Ring Attributes
 |object_type|string; Must be: ```ring```|```ring```|3D object type.|Yes|
 |radiusInner|number|```1```|radius inner|Yes|
 |radiusOuter|number|```1```|radius outer|Yes|
-|segmentsPhi|number|```8```|segments phi|No|
+|segmentsPhi|number|```10```|segments phi|No|
 |segmentsTheta|number|```32```|segments theta|No|
 |thetaLength|number|```360```|theta length|No|
 |thetaStart|number|```0```|theta start|No|

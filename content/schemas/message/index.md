@@ -13,6 +13,7 @@ has_toc: false
 | :--- | :--- |
 |[Box](box)|Box Geometry|
 |[Circle](circle)|Circle Geometry|
+|[Capsule](capsule)|Capsule Geometry|
 |[Cone](cone)|Cone Geometry|
 |[Cube (deprecated; don't use)](cube)|Cube (=Box) Geometry; Supported for Legacy reasons; Please use Box in new scenes|
 |[Cylinder](cylinder)|cylinder Geometry|
@@ -21,6 +22,7 @@ has_toc: false
 |[Event (non-persist)](event)|Events are ephemeral messages used to send user events like mouse movements or controller actions.|
 |[GLTF Model](gltf-model)|Load a GLTF model|
 |[Image](image)|Display an image on a plane|
+|[Isosahedron](isosahedron)|Isosahedron Geometry|
 |[Light](light)|A light|
 |[Line](line)|Draw a line|
 |[Octahedron](octahedron)|Octahedron Geometry|
@@ -38,3 +40,4 @@ has_toc: false
 |[Torus](torus)|Torus Geometry|
 |[Torus Knot](torusKnot)|Torus Knot Geometry|
 |[Triangle](triangle)|Triangle Geometry|
+|[Videosphere](videosphere)|Videosphere Geometry|

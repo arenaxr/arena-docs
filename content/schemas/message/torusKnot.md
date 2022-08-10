@@ -1,6 +1,6 @@
 ---
 title: 
-nav_order: 47
+nav_order: 49
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -35,8 +35,8 @@ Torus Knot Attributes
 |q|number|```3```|Q|No|
 |radius|number|```1```|radius|Yes|
 |radiusTubular|number|```0.2```|radius tubular|No|
-|segmentsRadial|number|```36```|segments radial|No|
-|segmentsTubular|number|```32```|segments tubular|No|
+|segmentsRadial|number|```8```|segments radial|No|
+|segmentsTubular|number|```100```|segments tubular|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|
 |rotation|[rotation](rotation)|```{'x': 0, 'y': 0, 'z': 0}```|3D object rotation in degrees by default; Right-handed coordinate system. Switches to quaternion representation if 'w' is given|No|
