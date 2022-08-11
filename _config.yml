@@ -37,7 +37,7 @@ logo: /xr-logo.png
 
 #theme: just-the-docs
 # after github-pages, change to:
-remote_theme: conix-center/just-the-docs
+remote_theme: arenaxr/just-the-docs
 
 defaults:
   - scope: {path: "content"}
