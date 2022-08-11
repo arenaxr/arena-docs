@@ -14,7 +14,7 @@ For **advanced** users, the ARENA accepts URL parameters to override some intern
 
 The `Scenes` page includes a set of easy checkboxes to change more common URL parameters you may want to use: [https://arenaxr.org/scenes](https://arenaxr.org/scenes).
 
-1. CLick `My Scenes` and select your scene name.
+1. Click `My Scenes` and select your scene name.
 1. Click `Scene URL Options` and check the boxes you need.
 1. Change `scene permissions` if needed.
 1. Use the buttons to enter the scene or copy the scene link with parameters to share with others.
