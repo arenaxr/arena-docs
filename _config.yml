@@ -18,7 +18,7 @@ email: "info@conix.io"
 github_username: arenaxr
 description: Tutorials and Reference for the ARENA project.
 url: https://docs.arenaxr.org
-baseurl: /
+baseurl: ""
 aux_links:
   "The ARENA":
     - "https://arenaxr.org/"
