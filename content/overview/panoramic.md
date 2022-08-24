@@ -129,6 +129,7 @@ Repeat the instructions for `Setup Digital Twin Single Panoramic Room`, just mak
 
 1. Connect the 360 camera to the computer and start the camera's "live stream".
 1. Open the scene in Chrome/Edge and select the 360 camera on the `A/V Setup` dialog and you should see a 2:1 radio preview of the video stream.
+1. Make sure your `Display Name` on the `A/V Setup` dialog is the same as the `displayName` of the `jitsi-video` attribute above.
 1. `Enter Scene`, and the scene will appear white, then black if you wait.
 1. Click the camera button in the upper right corner of the browser and you should see a preview again, as well as the video displayed on the "walls" of the 3d sphere.
 1. Click the microphone button if you want.
