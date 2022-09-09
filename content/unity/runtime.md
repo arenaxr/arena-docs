@@ -44,12 +44,18 @@ IEnumerator ArenaUnityBeginnerDemo()
     scene.ConnectArena();
     yield return new WaitUntil(() => scene.mqttClientConnected);
 
-    // create GameObject, and add ArenaObject script to manage updates, it will automatically send an MQTT create message
+    // Display the web browser GUI client URL, set after MQTT connection flow completes.
+    Debug.Log($"Scene URL: {scene.sceneUrl}");
+
+    // Create GameObject, and add ArenaObject script to manage updates, it will automatically send an MQTT create message
     GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
     ArenaObject arenaObject = cube.AddComponent(typeof(ArenaObject)) as ArenaObject;
 
-    // change the parent/name/transform, it will automatically send an MQTT update message
+    // Change the parent/name/transform, it will automatically send an MQTT update message
     cube.transform.rotation = Random.rotation;
+
+    // Publish a custom event under this client's "camera" object
+    scene.PublishEvent("{'some_attribute': 'some event data'}");
 }
 
 /// <summary>
@@ -57,36 +63,44 @@ IEnumerator ArenaUnityBeginnerDemo()
 /// </summary>
 IEnumerator ArenaUnityAdvancedDemo()
 {
-    // Only one singleton connection instance allowed per application.
-    ArenaClientScene scene = ArenaClientScene.Instance;
+    // Create a simple arena mqtt client and send receive messages.
+    GameObject gobj = new GameObject("Arena Mqtt Client Advanced");
+    MyArenaClient client = gobj.AddComponent(typeof(MyArenaClient)) as MyArenaClient;
 
     // Setup a connection using a custom namespace and anonymous authentication.
-    scene.hostAddress = "mqtt.arenaxr.org";
-    scene.namespaceName = "public";
-    scene.sceneName = "example";
-    scene.authType = ArenaMqttClient.Auth.Anonymous;
+    client.hostAddress = "mqtt.arenaxr.org";
+    client.authType = ArenaMqttClient.Auth.Anonymous;
 
-    // Authenticate flow, MQTT connection flow, and Persistence download flow.
-    scene.ConnectArena();
-    yield return new WaitUntil(() => scene.mqttClientConnected);
+    // Store any local jwt tokens here, before auth starts.
+    // Derive the local path from the next line.
+    // string localMqttPath = Path.Combine(client.appFilesPath, ".arena_mqtt_auth");
+
+    // Authenticate flow, MQTT connection flow.
+    client.ConnectArena();
+    yield return new WaitUntil(() => client.mqttClientConnected);
 
     // Display the MQTT JWT permission payload/claims, set after authentication flow completes.
-    Debug.Log($"Permissions: {scene.permissions}");
-
-    // Display the web browser GUI client URL, set after MQTT connection flow completes.
-    Debug.Log($"Scene URL: {scene.sceneUrl}");
+    Debug.Log($"Permissions: {client.permissions}");
 
     // Custom MQTT pub/sub
     string[] topics = new string[] { "my/custom/topic/#" };
-    scene.Subscribe(topics);
-    scene.Publish("my/custom/topic/channel/device-888", System.Text.Encoding.UTF8.GetBytes("some payload"));
-    scene.PublishEvent("{'some_attribute': 'some event data'}");
-    scene.Unsubscribe(topics);
+    client.Subscribe(topics);
 
-    // Disconnect from the MQTT broker, and remove local Persistence objects.
-    scene.DisconnectArena();
+    yield return new WaitForSeconds(2);
+    client.Publish("my/custom/topic/channel/device-888", System.Text.Encoding.UTF8.GetBytes("some payload"));
+}
 
-    // Remove ARENA authentication.
-    scene.SignoutArena();
+public class MyArenaClient : ArenaMqttClient
+{
+    public void ConnectArena()
+    {
+        // start auth flow and MQTT connection
+        StartCoroutine(SceneSignin("example", "public", "realm"));
+    }
+
+    protected override void ProcessMessage(byte[] msg)
+    {
+        Debug.LogFormat("Message received: {0}", System.Text.Encoding.UTF8.GetString(msg));
+    }
 }
 ```
