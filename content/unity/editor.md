@@ -14,7 +14,7 @@ In the Unity Editor, pressing `Play` will begin the signin authorization flow.
 ## Signout
 Two options:
 - **Editor:** Select the menu item `ARENA > Signout`.
-- **Runtime (Play):** Click the `Signout` button on the `ArenaClient` Component.
+- **Runtime (Play):** Click the `Signout` button on the `ArenaClientScene` Component.
 
 ## Exporting Unity Objects as GLTF
 
@@ -43,9 +43,9 @@ Here, any ARENA objects are highlighted in <span style="color: green;">green tex
 ## Game Window
 This is a display of the currently focused Camera in the scene.
 ### Navigation
-Set the `Inspector`: `ArenaClient` object option `Camera Auto Sync` to true, enter the ARENA scene web page, then navigation in the ARENA will also move the `Game` view.
+Set the `Inspector`: `ArenaClientScene` object option `Camera Auto Sync` to true, enter the ARENA scene web page, then navigation in the ARENA will also move the `Game` view.
 ### Other Cameras
-In the `Inspector`: `ArenaClient` object option `Camera For Display`, select from other cameras present on the MQTT bus. **Caution**: Some GLTF models also come with embedded Camera objects which may show up here.
+In the `Inspector`: `ArenaClientScene` object option `Camera For Display`, select from other cameras present on the MQTT bus. **Caution**: Some GLTF models also come with embedded Camera objects which may show up here.
 
 ## Scene Window
 This is the editor's view of the scene, allowing you to manipulate object Transforms graphically using toolbar options.
@@ -58,14 +58,14 @@ Any imported models, images or other resources are stored locally here in the `A
 ## Console Window
 The Console will output status, warning, and error logging here as well as MQTT messages you specify here according to the **Log Mqtt** options specified in the next section.
 
-## Inspector Window: ArenaClient
-The `ArenaClient` Script controls the connection and authentication to the ARENA MQTT broker, as well as some client-side ARENA scene state.
+## Inspector Window: ArenaClientScene
+The `ArenaClientScene` Script controls the connection and authentication to the ARENA MQTT broker, as well as some client-side ARENA scene state.
 
 name | type | default | description
 -- | -- | -- | --
 **Signout** | button | -- | Manual button to signout from the ARENA and stop the Runtime.
 **Scene Url** | string | null | Browser URL for scene as a clickable link highlighted in <span style="color: blue;">blue text</span>.
-Script | `ArenaClient` | -- | The script instance to manage the MQTT runtime.
+Script | `ArenaClientScene` | -- | The script instance to manage the MQTT runtime.
 **Broker Address** | string | mqtt.arenaxr.org | Host name of the ARENA MQTT broker
 **Namespace Name** | string | null | Namespace (automated with username), but can be overridden
 **Scene Name** | string | example | Name of the scene, without namespace ('example', not 'username/example'
