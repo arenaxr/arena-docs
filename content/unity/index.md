@@ -20,7 +20,7 @@ Unity C# library for editing scenes and creating applications for the ARENA.
 1. You may need to install [`git`](https://git-scm.com/) if it doesn't come preinstalled on your OS (Windows 10).
 1. Open `Window > Package Manager` and `+ > Add package from git URL...`, use this link:
     ```
-    https://github.com/arenaxr/arena-unity.git#0.1.0
+    https://github.com/arenaxr/arena-unity.git
     ```
 1. Create an empty GameObject to use as ARENA client root, rename it to something meaningful, like: `ARENA`.
 1. Select the `ARENA` GameObject and press `Add Component` to add the `ArenaClientScene` script.

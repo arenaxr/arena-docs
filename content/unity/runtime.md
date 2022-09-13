@@ -55,7 +55,7 @@ IEnumerator ArenaUnityBeginnerDemo()
     cube.transform.rotation = Random.rotation;
 
     // Publish a custom event under this client's "camera" object
-    scene.PublishEvent("{'some_attribute': 'some event data'}");
+    scene.PublishEvent("my-custom-event-type", "{\"my-attribute\": \"my-custom-attribute\"}");
 }
 
 /// <summary>
@@ -69,7 +69,7 @@ IEnumerator ArenaUnityAdvancedDemo()
 
     // Setup a connection using a custom namespace and anonymous authentication.
     client.hostAddress = "mqtt.arenaxr.org";
-    client.authType = ArenaMqttClient.Auth.Anonymous;
+    client.authType = ArenaMqttClient.Auth.Manual;
 
     // Store any local jwt tokens here, before auth starts.
     // Derive the local path from the next line.
@@ -95,7 +95,7 @@ public class MyArenaClient : ArenaMqttClient
     public void ConnectArena()
     {
         // start auth flow and MQTT connection
-        StartCoroutine(SceneSignin("example", "public", "realm"));
+        StartCoroutine(Signin());
     }
 
     protected override void ProcessMessage(byte[] msg)
