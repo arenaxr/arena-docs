@@ -22,7 +22,7 @@ has_toc: false
 |[Event (non-persist)](event)|Events are ephemeral messages used to send user events like mouse movements or controller actions.|
 |[GLTF Model](gltf-model)|Load a GLTF model|
 |[Image](image)|Display an image on a plane|
-|[Isosahedron](isosahedron)|Isosahedron Geometry|
+|[Icosahedron](icosahedron)|Icosahedron Geometry|
 |[Light](light)|A light|
 |[Line](line)|Draw a line|
 |[Octahedron](octahedron)|Octahedron Geometry|
