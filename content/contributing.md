@@ -10,7 +10,7 @@ Thanks for your willingness to help improve our flexible, programmatic, mixed-re
 
 ## The Team
 
-ARENA development is lead by a team from <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>. Our team is composed of faculty, staff and several students and in continuously being strenghtned. See our [GitHub](https://github.com/arenaxr/) for the list of contributors in each [repository](/content/source).
+ARENA development is lead by a team from <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>. Our team is composed of faculty, staff and several students and is continuously being strengthened. See our [GitHub](https://github.com/arenaxr/) for the list of contributors in each [repository](/content/source).
 
 ## Research Platform
 
