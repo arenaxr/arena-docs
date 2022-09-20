@@ -55,7 +55,7 @@ IEnumerator ArenaUnityBeginnerDemo()
     cube.transform.rotation = Random.rotation;
 
     // Publish a custom event under this client's "camera" object
-    scene.PublishEvent("my-custom-event-type", "{\"my-attribute\": \"my-custom-attribute\"}");
+    scene.PublishEvent(scene.camid, "my-custom-event-type", "{\"my-attribute\": \"my-custom-attribute\"}");
 }
 
 /// <summary>
