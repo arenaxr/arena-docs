@@ -9,8 +9,6 @@ parent: Overview
 
 You can use the ARENA to setup a 360° panoramic streaming video room, or several rooms with a video camera like the 360° Ricoh [Theta Z1](https://theta360.com/en/about/theta/z1.html) or [Theta X](https://theta360.com/en/about/theta/x.html).
 
-<img src="/assets/img/overview/videosphere1.png"/>
-
 ## General Performance Requirements
 
 To ensure the upload of the 360 video stream isn't diminished before other users get a chance to download it, each 360 camera should have:
@@ -26,6 +24,8 @@ To ensure the upload of the 360 video stream isn't diminished before other users
 ## Setup World Single Panoramic Room
 
 Setup a scene where the 360 video stream encompasses the entire world, and while other users can move in it, the "walls" of the video are 5000 meters away, so even if users move, the `videosphere` walls appear to stay in place. This 5000 meter radius is the default for a `videosphere` object.
+
+<img src="/assets/img/overview/videosphere1.png"/>
 
 1. In [Build](/content/overview/build), add a `videosphere` object.
 1. Add the `jitsi-video` attribute to the `videosphere` object.
@@ -81,6 +81,8 @@ Setup a scene where the 360 video stream encompasses the entire world, and while
 ## Setup Digital Twin Single Panoramic Room
 
 Match a `videosphere` to a space in a scanned model of a space or room. Users may feel like they are joining you live and can enter and leave a "streaming" room.
+
+<img src="/assets/img/overview/videosphere2.png"/>
 
 1. Camera position is important. You may want to mount the camera lens in the exact center of the room, on a table or tripod or both.
 1. Assumption: you already have a [scanned room/space](/content/3d-content/scaniverse) converted to GLB and loaded into the ARENA.
