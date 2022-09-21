@@ -86,7 +86,7 @@ Match a `videosphere` to a space in a scanned model of a space or room. Users ma
 
 1. Camera position is important. You may want to mount the camera lens in the exact center of the room, on a table or tripod or both.
 1. Assumption: you already have a [scanned room/space](/content/3d-content/scaniverse) converted to GLB and loaded into the ARENA.
-1. In [Build](/content/overview/build), add a `videosphere` object similar to [`Setup World Single Panoramic Room`](#world-single-panoramic-room) but with some crucial differences.
+1. In [Build](/content/overview/build), add a `videosphere` object similar to [`Setup World Single Panoramic Room`](#setup-world-single-panoramic-room) but with some crucial differences.
 1. Add a displayName for the `jitsi-video` attribute, but also you are going to scale down this `videosphere` to the size and position of your room to match your scanned model.
 
    - Our conference room is a small 5x7 meters and 3 meters high, not a perfect cube, so we'll position it at the center of the scanned room model at position x=2.7, z=-3.6, which matches the position of the camera in reality.

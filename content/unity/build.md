@@ -8,7 +8,7 @@ parent: Unity Library
 # Build Notes
 
 ## For All Platforms Debug Notes
-1. Follow the [startup project setup](https://github.com/conix-center/ARENA-unity#library-usage).
+1. Follow the [startup project setup](https://github.com/arenaxr/arena-unity#library-usage).
 1. `Edit > Project Settings > Player`: Create a meaningful Package Name like `com.companyname.appname`...
     - `Company Name`: `companyname` (sample)
     - `Product Name`: `appname` (sample)
@@ -53,7 +53,7 @@ Tested on Android 10 (API 29).
 
 
 ## iOS Debug Notes
-Tested on iOS 15. **NOTE: iOS builds are currently non-functional at runtime due to use of `dynamic` objects as they won't cross-compile. Status: https://github.com/conix-center/ARENA-unity/issues/22.**
+Tested on iOS 15. **NOTE: iOS builds are currently non-functional at runtime due to use of `dynamic` objects as they won't cross-compile. Status: https://github.com/arenaxr/arena-unity/issues/22.**
 
 1. `Edit > Project Settings > Player > iOS > Identification`: Override default if desired:
     - `Bundle Identifier`: `com.companyname.appname` (sample)
