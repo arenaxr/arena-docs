@@ -34,7 +34,7 @@ Torus Knot Attributes
 |p|number|```2```|P|No|
 |q|number|```3```|Q|No|
 |radius|number|```1```|radius|Yes|
-|radiusTubular|number|```0.2```|radius tubular|No|
+|radiusTubular|number|```0.4```|radius tubular|No|
 |segmentsRadial|number|```8```|segments radial|No|
 |segmentsTubular|number|```100```|segments tubular|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
