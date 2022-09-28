@@ -13,7 +13,10 @@ Unity C# library for editing scenes and creating applications for the ARENA.
 ## Library Usage:
 1. Open a new or existing Unity project. **Unity 2019.4+ supported.**
 1. `Edit > Project Settings > Player > PC, Mac & Linux Standalone > Other Settings > Configuration`:
-    - `Api Compatibility Level` to: `.NET 4.x`.
+    - Before Unity 2021.2
+        - `Api Compatibility Level` to: `.NET 4.x`.
+    - After Unity 2021.2:
+        - `Api Compatibility Level` to: `.NET Framework`.
 1. `Edit > Project Settings > Player > PC, Mac & Linux Standalone > Other Settings > Script Compilation`:
     - `Scripted Define Symbols` to include:
         - `SSL`
