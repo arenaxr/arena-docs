@@ -32,6 +32,7 @@ Entity (generic object) Attributes
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```entity```|```entity```|3D object type.|Yes|
 |geometry|||geometry|No|
+|panel||```{'depth': 0.05, 'height': 1, 'width': 1}```|The rounded UI panel primitive.|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)||3D object position|No|
 |rotation|[rotation](rotation)||3D object rotation in degrees by default; Right-handed coordinate system. Switches to quaternion representation if 'w' is given|No|
@@ -51,6 +52,7 @@ Entity (generic object) Attributes
 |material-extras|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component. |No|
 |shadow|[shadow](shadow)||shadow|No|
 |sound|[sound](sound)||The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position. |No|
+|textinput|[textinput](textinput)||Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.|No|
 |url|string||Model URL. Store files paths under 'store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|No|
 |screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
 |video-control|[video-control](video-control)||Video Control|No|
