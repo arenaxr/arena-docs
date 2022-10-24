@@ -48,7 +48,7 @@ Callout alerts are available. Use this syntax:
 
 # ARENA-Related Repositories
 
-- **ARENA-core**
+- **ARENA-web-core**
   - https://github.com/arenaxr/arena-web-core
 
 - **ARENA-py Python examples**

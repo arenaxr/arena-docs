@@ -32,6 +32,7 @@ The following URL parameters are accepted, beginner or **advanced**. The **advan
 | auth | string | beginner | Save the authentication method for the browser session (e.g. `auth=anonymous`, or `auth=google`) |
 | camUpdateIntervalMs | string | **advanced** | Minimum camera update interval in milliseconds (e.g. `camUpdateIntervalMs=100`) |
 | confstats | bool | **advanced** | Enable logging to MQTT of conference quality stats. |
+| hudstats | bool | **advanced** | Render a HUD of performance/memory stats. |
 | fixedCamera | string | **advanced** | Sets the camera name to the given value **and** enables VIO output to `realm/vio/scene-name/camera-name` ; `fixedCamera=iPhone` will set the camera name **exactly** to the given value (not add any prefix/suffix) |
 | lat | float | **advanced** | Override device location; (e.g. `lat=40.4427`) |
 | long | float | **advanced** | Override device location; (e.g. `long=79.9430`) |
