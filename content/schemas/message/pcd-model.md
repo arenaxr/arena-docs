@@ -1,6 +1,6 @@
 ---
 title: 
-nav_order: 31
+nav_order: 32
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -58,5 +58,6 @@ PCD Model Attributes
 |textinput|[textinput](textinput)||Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.|No|
 |screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
 |video-control|[video-control](video-control)||Video Control|No|
+|attribution|[attribution](attribution)||Attribution Component. Saves attribution data in any entity.|No|
 |animation-mixer|[animation-mixer](animation-mixer)||A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'. |No|
 |gltf-model-lod|[gltf-model-lod](gltf-model-lod)||Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance|No|

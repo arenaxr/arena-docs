@@ -1,6 +1,6 @@
 ---
 title: 
-nav_order: 6
+nav_order: 7
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -58,6 +58,7 @@ Capsule Attributes
 |url|string||Model URL. Store files paths under 'store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|No|
 |screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
 |video-control|[video-control](video-control)||Video Control|No|
+|attribution|[attribution](attribution)||Attribution Component. Saves attribution data in any entity.|No|
 |buffer|boolean|```true```|Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate (geometries only: box, circle, cone, ...).|No|
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
 |material|[material](material)|```{'color': '#7f7f7f'}```|The material properties of the object’s surface. |No|

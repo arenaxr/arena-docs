@@ -1,6 +1,6 @@
 ---
 title: 
-nav_order: 25
+nav_order: 26
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -78,3 +78,4 @@ Light Attributes
 |url|string||Model URL. Store files paths under 'store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|No|
 |screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
 |video-control|[video-control](video-control)||Video Control|No|
+|attribution|[attribution](attribution)||Attribution Component. Saves attribution data in any entity.|No|
