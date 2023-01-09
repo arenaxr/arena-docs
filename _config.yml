@@ -28,7 +28,7 @@ aux_links:
     - "https://wise.ece.cmu.edu/"
   "Our GitHub":
     - "https://github.com/arenaxr/"
-footer_content: "Copyright &copy; 2020-2022, CONIX Research Center. ARENA is a project led by <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>."
+footer_content: "Copyright &copy; 2020-2023, CONIX Research Center. ARENA is a project led by <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>."
 
 # Build settings
 markdown: kramdown
