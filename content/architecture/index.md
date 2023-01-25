@@ -1,6 +1,6 @@
 ---
 title: Architecture
-nav_order: 7
+nav_order: 9
 layout: default
 has_children: true
 ---

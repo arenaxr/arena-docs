@@ -1,8 +1,9 @@
 ---
 title: Python Tutorial
-nav_order: 4
+nav_order: 0
 layout: default
 has_children: true
+parent: Python Library
 ---
 
 # ARENA-py Documentation and Tutorials
