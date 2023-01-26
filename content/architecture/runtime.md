@@ -24,5 +24,5 @@ As applications are started in the ARENA (Figure 1), the orchestrator decides th
 See the [Orchestrator github](https://github.com/SilverLineFramework/orchestrator). 
 
 
-The [ARENA Programs](../runtime) Section details how to start programs within a scene using the ARENA runtime. 
+The [ARENA Programs](../programs) Section details how to start programs within a scene using the ARENA runtime. 
 
