@@ -11,7 +11,7 @@ The following instructions show how to host an ARENA program using a simple exam
 
 ## 1. Add the files.
 
-Navigate to the [file store](https://arenaxr.org/files). You might be asked to login. In your home folder, create a folder called **programs** (the folder name can be anything; this is just for the sake of our example). Later, we will need refer to this folder in the form **\<username\>/\<folder-path\>**. You can see your username on the upper left, in this example, we would refer to the folder as **cmu/programs** (**cmu** is the user in our example). **Add your program files (in this case, the `boxes.py` script) to this folder**.
+Navigate to the [file store](https://arenaxr.org/files). You might be asked to login. In your home folder, create a folder called **programs** (the folder name can be anything; this is just for the sake of our example). Later, we will need refer to this folder in the form **\<username-or-namespace\>/\<folder-path\>**. You can see your username on the upper left, in this example, we would refer to the folder as **cmu/programs** (**cmu** is the user in our example). **Add your program files (in this case, the `boxes.py` script) to this folder**.
 
 ![](../../assets/img/programs/filestore-userhome.jpg)
 
@@ -34,9 +34,9 @@ Make sure to assign a unique object ID (use ![](../../assets/img/programs/image8
 
 - **action** is `create`
 - **type** is `program`
-- **name** is the program name
+- **name** is the program name in the form **\<username-or-namespace\>/\<program-name\>**
 - **instantiate** indicates if a program instance is started for each viewer (browser) or single instance per scene;
-- **filename** is the path to the program entry file in the form **\<username\>**/**\<path-to-program-entryfile\>**. In this example: **cmu/programs/boxes.py**
+- **filename** is the path to the program entry file in the form **\<username-or-namespace\>**/**\<path-to-program-entryfile\>**. In this example: **cmu/programs/boxes.py**
 - **filetype** is either python (`PY`) or wasm (`WA`), depending on your program. In this case, `PY`.
 - Add environment variables and arguments as needed by the program (for example, the program might read environment variable `SCENE` to know its scene, then add an environment variable: `SCENE=${scene}`, where `${scene}` will be replaced by the scene name)
 
@@ -44,7 +44,38 @@ Make sure to assign a unique object ID (use ![](../../assets/img/programs/image8
 By convention, we pass programs environment variables that indicate the scene, realm and MQTT host. These are reflected in the default values of the form.
 "%}
 
+- **parent** is the runtime where the module should run; usually this is left blank, but due to current limitations of our deployment, this must be **pytest** (this is the name of the runtime that currently supports ARENA programs).
+
+{% include alert type="tip" title="note" content="
+Please set parent to **pytest** so that your programs are dispatched to this runtime.
+"%}
+
 ![](../../assets/img/programs/image6.png){:width="80%"}
+
+This is the corresponding object JSON:
+
+```json
+{
+  "object_id": "1c96947e-351c-47f5-8801-65e5cd0e778d",
+  "action": "create",
+  "persist": true,
+  "type": "program",
+  "data": {
+    "name": "cmu/boxes",
+    "instantiate": "single",
+    "filename": "cmu/programs/boxes.py",
+    "filetype": "PY",
+    "parent": "pytest",
+    "env": [
+      "MID=${moduleid}",
+      "SCENE=${scene}",
+      "NAMESPACE=${namespace}",
+      "MQTTH=${mqtth}",
+      "REALM=realm"
+    ]
+  }
+}
+```
 
 ## 4. Save the program object.
 
