@@ -22,13 +22,13 @@ arena-py
 ```
 "%}
 
-## 2. Add a program object to your scene. 
+## 2. Add a program object to your scene.
 
-Open the [scene builder](content/overview/build.html) and select the scene that you want to add the program to. Now, add a **Program** object by selecting type “program” in the Add/Edit Object select:
+Open the [scene builder](/content/overview/build) and select the scene that you want to add the program to. Now, add a **Program** object by selecting type “program” in the Add/Edit Object select:
 
 ![](../../assets/img/programs/image7.png){:width="200px"}
 
-## 3. Edit the program attributes. 
+## 3. Edit the program attributes.
 
 Make sure to assign a unique object ID (use ![](../../assets/img/programs/image8.png){:width="100px"}), and:
 
@@ -90,4 +90,3 @@ Open the Scene using ![](../../assets/img/programs/image9.png){:width="200px"}at
 ## 6. See the details of the ARENA runtime
 
 You can use the [ARENA runtime dashboard](https://arenaxr.org/programs/) to see details of the runtimes and programs running.
-

@@ -6,7 +6,7 @@ parent: Architecture
 ---
 
 # ARENA PubSub Message Bus
-The ARENA message bus is currently supported by a MQTT Mosquitto broker, modified to keep track of connected clients and data flows. This information is organized into a graph that is available to users and, more importantly, to the [runtime supervisor - ARTS](../arts/). The broker is also configured with a [JWT](https://jwt.io/) plugin that implements the PubSub ACL on the topic structure (more details below), and we use Mosquitto’s bridging to create clusters of brokers.
+The ARENA message bus is currently supported by a MQTT Mosquitto broker, modified to keep track of connected clients and data flows. This information is organized into a graph that is available to users and, more importantly, to the [runtime supervisor - ARTS](../programs/). The broker is also configured with a [JWT](https://jwt.io/) plugin that implements the PubSub ACL on the topic structure (more details below), and we use Mosquitto’s bridging to create clusters of brokers.
 
 ## PubSub Access Control
 
