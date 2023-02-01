@@ -38,5 +38,5 @@ Thickline Attributes
 |path|string|```-2 -1 0, 0 20 0, 10 -1 10```|Comma-separated list of x y z coordinates of the line vertices|Yes|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)||3D object position|No|
-|rotation|[rotation](rotation)||3D object rotation in degrees by default; Right-handed coordinate system. Switches to quaternion representation if 'w' is given|No|
+|rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
 |scale|[scale](scale)||3D object scale|No|

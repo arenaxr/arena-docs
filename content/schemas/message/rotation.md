@@ -11,14 +11,14 @@ Rotation
 ========
 
 
-3D object rotation in degrees by default; Right-handed coordinate system. Switches to quaternion representation if 'w' is given
+3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.
 
 Rotation Attributes
 --------------------
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|w|number|```1```|w|No|
+|w|number|```1```|w|Yes|
 |x|number|```0```|x|Yes|
 |y|number|```0```|y|Yes|
 |z|number|```0```|z|Yes|
