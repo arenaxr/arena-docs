@@ -13,8 +13,9 @@ You can use the ARENA to setup a 360° panoramic streaming video room, or severa
 
 To ensure the upload of the 360 video stream isn't diminished before other users get a chance to download it, each 360 camera should have:
 
-- A **fast computer**. This is a little hard to measure, but slower computers will diminish the video upload. We've had good results with the MacBook Pro M1 chip.
-- A **wired network connection** of at least 1Gbps since we need to make sure our upload of the 360 video stream has as much bandwidth as possible and without the variable instability of wireless connections.
+- **Updated camera firmware**: Many of the above cameras have updates which prevent them from overheating and shutting down in the middle of your live video stream. Contact the camera manufacturer website for updates.
+- A **fast computer**. This is a little hard to measure, but slower computers will diminish the video upload. We've had good results with the MacBook Pro M1 chip. Our Intel x86 MacBook Pros have struggled to have enough memory in the browser for the Javascript code to marshall high frame rates of 2K 360 video streams.
+- A **wired network connection** of at least 1 Gbps since we need to make sure our upload of the 360 video stream has as much bandwidth as possible and without the variable instability of wireless connections. Wifi connections will limit your resolution down to about 50 Mbps.
 - Optimally a **2K output stream** from the camera so detail renders well, higher outputs like 4K may work, but it's untested.
 - Google **Chrome** or Microsoft **Edge**. Firefox and other browsers have trouble ingesting the 2:1 video ratio required. Check the `A/V Setup` screen when entering the scene for strange visual artifacts.
 - ARENA Web Core [**version 1.11**](https://arenaxr.org/conf/versions.html) or higher.
@@ -122,6 +123,7 @@ Match a `videosphere` to a space in a scanned model of a space or room. Users ma
 
 1. Leave the ground and sky effects from your scene intact, you will need them for context.
 1. Follow [Connect the 360 camera to the ARENA.](#connect-360-camera-to-arena) and the end of this page.
+1. **Optional**: We recommend extending the laptop's view of the virtual 3D ARENA using a wall mounted or freestanding monitor. In this way, physical people next to the 360 camera can view the virtual camera views of remote participants.
 
 ## Setup Digital Twin Multiple Panoramic Rooms
 
@@ -132,6 +134,6 @@ Repeat the instructions for `Setup Digital Twin Single Panoramic Room`, just mak
 1. Connect the 360 camera to the computer and start the camera's "live stream".
 1. Open the scene in Chrome/Edge and select the 360 camera on the `A/V Setup` dialog and you should see a 2:1 radio preview of the video stream.
 1. Make sure your `Display Name` on the `A/V Setup` dialog is the same as the `displayName` of the `jitsi-video` attribute above.
-1. `Enter Scene`, and the scene will appear white, then black if you wait.
-1. Click the camera button in the upper right corner of the browser and you should see a preview again, as well as the video displayed on the "walls" of the 3d sphere.
+1. `Enter Scene`, and the 3D sphere in the scene will appear white, then black if you wait.
+1. Click the camera button in the upper right corner of the browser and you should see a preview again, as well as the video displayed on the "walls" of the 3D sphere.
 1. Click the microphone button if you want.
