@@ -1,5 +1,5 @@
 ---
-title: PubSub Messages
+title: Rendering Support
 nav_order: 6
 layout: default
 parent: ARENA Objects
