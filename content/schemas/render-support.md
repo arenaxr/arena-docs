@@ -41,7 +41,8 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `threejs-scene` | 1.0.0  | -      | Load a Three.js Scene                              |
 | `torus`         | 1.0.0  | 0.0.11 | Torus Geometry                                     |
 | `torusKnot`     | 1.0.0  | -      | Torus Knot Geometry                                |
-| `triangle`      | 1.10.0 | N/A    | Videosphere 360 Video                              |
+| `triangle`      | 1.0.0  | 0.0.12 | Triangle Geometry                                  |
+| `videosphere`   | 1.10.0 | N/A    | Videosphere 360 Video                              |
 
 | ARENA Component       | Web   | Unity  | Description                                                                                                         |
 | --------------------- | ----- | ------ | ------------------------------------------------------------------------------------------------------------------- |
