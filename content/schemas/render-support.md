@@ -12,37 +12,36 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 - [**Web Changelog**](https://github.com/arenaxr/arena-web-core/blob/master/CHANGELOG.md)
 - [**Unity Changelog**](https://github.com/arenaxr/arena-unity/blob/main/CHANGELOG.md)
 
-| ARENA Entity    | Web   | Unity  | Description                                        |
-| --------------- | ----- | ------ | -------------------------------------------------- |
-| `box`           | 1.0.0 | 0.0.1  | Box Geometry                                       |
-| `circle`        | 1.0.0 | 0.0.11 | Circle Geometry                                    |
-| `capsule`       | 1.0.0 | 0.0.12 | Capsule Geometry                                   |
-| `cone`          | 1.0.0 | 0.0.11 | Cone Geometry                                      |
-| `cylinder`      | 1.0.0 | 0.0.1  | Cylinder Geometry                                  |
-| `dodecahedron`  | 1.0.0 | 0.0.12 | Dodecahedron Geometry                              |
-| `entity`        | 1.0.0 | 0.0.1  | Entities are the base of all objects in the scene. |
-| `gltf-model`    | 1.0.0 | 0.0.2  | Load a GLTF model                                  |
-| `image`         | 1.0.0 | 0.0.7  | Display an image on a plane                        |
-| `icosahedron`   | 1.0.0 | 0.0.11 | Icosahedron Geometry                               |
-| `light`         | 1.0.0 | 0.0.5  | A light                                            |
-| `line`          | 1.0.0 | 0.?.0  | Draw a line                                        |
-| `octahedron`    | 1.0.0 | 0.0.11 | Octahedron Geometry                                |
-| `pcd-model`     | 1.0.0 | -      | Load a PCD model                                   |
-| `plane`         | 1.0.0 | 0.0.1  | Plane Geometry                                     |
-| `prism`         | 1.0.0 | -      | Prism Geometry                                     |
-| `program`       | N/A   | N/A    | ARENA program data                                 |
-| `ring`          | 1.0.0 | 0.0.11 | Ring Geometry                                      |
-| `roundedbox`    | 1.0.0 | -      | Rounded Box Geometry                               |
-| `scene-options` | 1.0.0 | -      | ARENA scene options                                |
-| `sphere`        | 1.0.0 | 0.0.1  | Sphere Geometry                                    |
-| `tetrahedron`   | 1.0.0 | 0.0.12 | Tetrahedron Geometry                               |
-| `text`          | 1.0.0 | 0.3.0  | Display text                                       |
-| `thickline`     | 1.0.0 | 0.4.0  | Draw a line that can have a custom width           |
-| `threejs-scene` | 1.0.0 | -      | Load a Three.js Scene                              |
-| `torus`         | 1.0.0 | 0.0.11 | Torus Geometry                                     |
-| `torusKnot`     | 1.0.0 | -      | Torus Knot Geometry                                |
-| `triangle`      | 1.0.0 | 0.0.12 | Triangle Geometry                                  |
-| `videosphere`   | 1.0.0 | N/A    | Videosphere 360 Video                              |
+| ARENA Entity    | Web    | Unity  | Description                                        |
+| --------------- | ------ | ------ | -------------------------------------------------- |
+| `box`           | 1.0.0  | 0.0.1  | Box Geometry                                       |
+| `circle`        | 1.0.0  | 0.0.11 | Circle Geometry                                    |
+| `capsule`       | 1.11.0 | 0.0.12 | Capsule Geometry                                   |
+| `cone`          | 1.0.0  | 0.0.11 | Cone Geometry                                      |
+| `cylinder`      | 1.0.0  | 0.0.1  | Cylinder Geometry                                  |
+| `dodecahedron`  | 1.0.0  | 0.0.12 | Dodecahedron Geometry                              |
+| `entity`        | 1.0.0  | 0.0.1  | Entities are the base of all objects in the scene. |
+| `gltf-model`    | 1.0.0  | 0.0.2  | Load a GLTF model                                  |
+| `image`         | 1.0.0  | 0.0.7  | Display an image on a plane                        |
+| `icosahedron`   | 1.0.0  | 0.0.11 | Icosahedron Geometry                               |
+| `light`         | 1.0.0  | 0.0.5  | A light                                            |
+| `line`          | 1.0.0  | 0.?.0  | Draw a line                                        |
+| `octahedron`    | 1.0.0  | 0.0.11 | Octahedron Geometry                                |
+| `pcd-model`     | 1.0.0  | -      | Load a PCD model                                   |
+| `plane`         | 1.0.0  | 0.0.1  | Plane Geometry                                     |
+| `prism`         | 1.0.0  | -      | Prism Geometry                                     |
+| `program`       | N/A    | N/A    | ARENA program data                                 |
+| `ring`          | 1.0.0  | 0.0.11 | Ring Geometry                                      |
+| `roundedbox`    | 1.14.0 | -      | Rounded Box Geometry                               |
+| `scene-options` | 1.0.0  | -      | ARENA scene options                                |
+| `sphere`        | 1.0.0  | 0.0.1  | Sphere Geometry                                    |
+| `tetrahedron`   | 1.0.0  | 0.0.12 | Tetrahedron Geometry                               |
+| `text`          | 1.0.0  | 0.3.0  | Display text                                       |
+| `thickline`     | 1.0.0  | 0.4.0  | Draw a line that can have a custom width           |
+| `threejs-scene` | 1.0.0  | -      | Load a Three.js Scene                              |
+| `torus`         | 1.0.0  | 0.0.11 | Torus Geometry                                     |
+| `torusKnot`     | 1.0.0  | -      | Torus Knot Geometry                                |
+| `triangle`      | 1.10.0 | N/A    | Videosphere 360 Video                              |
 
 | ARENA Component       | Web   | Unity  | Description                                                                                                         |
 | --------------------- | ----- | ------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -66,7 +65,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `goto-url`            | 1.0.0 | -      | Goto given URL; Requires click-listener                                                                             |
 | `hide-in-ar-mode`     | 1.0.0 | -      | Hide in AR component. When set to an entity, it will make the entity disappear when entering AR mode.               |
 | `hide-on-enter-ar`    | 1.0.0 | -      | Hide object when entering AR. Remove component to _not_ hide                                                        |
-| `hide-on-enter-vr`    | 1.0.0 | -      | Hide object when entering VR. Remove component to _not_ hide                                                        |
+| `hide-on-enter-vr`    | 1.8.0 | -      | Hide object when entering VR. Remove component to _not_ hide                                                        |
 | `impulse`             | 1.0.0 | -      | The force applied using physics. Requires click-listener                                                            |
 | `jitsi-video`         | 1.0.0 | N/A    | Apply a Jitsi video source to the geometry                                                                          |
 | `landmark`            | 1.0.0 | -      | Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them.          |
