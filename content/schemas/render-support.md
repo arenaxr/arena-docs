@@ -30,7 +30,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `pcd-model`     | 1.0.0 | -      | Load a PCD model                                   |
 | `plane`         | 1.0.0 | 0.0.1  | Plane Geometry                                     |
 | `prism`         | 1.0.0 | -      | Prism Geometry                                     |
-| `program`       | N A   | N A    | ARENA program data                                 |
+| `program`       | N/A   | N/A    | ARENA program data                                 |
 | `ring`          | 1.0.0 | 0.0.11 | Ring Geometry                                      |
 | `roundedbox`    | 1.0.0 | -      | Rounded Box Geometry                               |
 | `scene-options` | 1.0.0 | -      | ARENA scene options                                |
@@ -42,34 +42,50 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `torus`         | 1.0.0 | 0.0.11 | Torus Geometry                                     |
 | `torusKnot`     | 1.0.0 | -      | Torus Knot Geometry                                |
 | `triangle`      | 1.0.0 | 0.0.12 | Triangle Geometry                                  |
-| `videosphere`   | 1.0.0 | N A    | Videosphere 360 Video                              |
+| `videosphere`   | 1.0.0 | N/A    | Videosphere 360 Video                              |
 
-| ARENA Component       | Web   | Unity | Description                                                                                                                |
-| --------------------- | ----- | ----- | -------------------------------------------------------------------------------------------------------------------------- |
-| `animation-mixer`     | 1.0.0 | 0.7.0 |                                                                                                                           |
-| `arena-camera`        | 1.0.0 | 0.2.0 | Tracking camera movement in real time. Emits camera pose change and VIO change events.                                     |
-| `arena-user`          | 1.0.0 | 0.3.0 | Another user’s camera in the ARENA. Handles Jitsi and display name updates.                                                |
-| `arena-vive`          | 1.0.0 | -     | Tracking Vive controller movement in real time.                                                                            |
-| `armarker`            | 1.0.0 | -     | ARMarker Component. Supports ARMarkers in a scene                                                                          |
-| `armarker-system`     | 1.0.0 | -     | ARMarker System. Supports ARMarkers in a scene.                                                                            |
-| `attribution-system`  | 1.0.0 | -     | Attribution Component/System. Add attribution message to any entity.                                                       |
-| `attribution`         | 1.0.0 | -     | Attribution Component. Saves attribution data in any entity.                                                               |
-| `click-listener`      | 1.0.0 | 0.8.0 | Keep track of mouse events and publish corresponding events                                                                |
-| `collision-listener`  | 1.0.0 | -     | Listen for collisions, callback on event.                                                                                  |
-| `gesture-detector`    | 1.0.0 | -     | Detect multi-finger touch gestures. Publish events accordingly.                                                            |
-| `gltf-model-lod`      | 1.0.0 | -     | GLTF lod switching between models based on distance.                                                                       |
-| `gltf-model-progress` | 1.0.0 | 0.0.5 | GLTF model loading progress system. Manage GLTF load messages.                                                             |
-| `goto-url`            | 1.0.0 | -     | Load new URL when object is clicked                                                                                        |
-| `hide-in-ar-mode`     | 1.0.0 | -     | Hide in AR component. When set to an entity, it will make the entity disappear when entering AR mode.                      |
-| `impulse`             | 1.0.0 | -     | One physics feature is applying an impulse to an object to set it in motion.                                               |
-| `jitsi-video`         | 1.0.0 | N/A   | Apply a jitsi video to a geometry                                                                                          |
-| `landmark`            | 1.0.0 | -     | Component-System of teleport destination Landmarks                                                                         |
-| `load-scene`          | 1.0.0 | 0.0.1 | Load scene from persistence.                                                                                               |
-| `material-extras`     | 1.0.0 | -     | Allows to set extra material properties, namely texture encoding, whether to render the material’s color and render order. |
-| `network-latency`     | 1.0.0 | -     | Publish with qos of 2 for network graph to update latency                                                                  |
-| `press-and-move`      | 1.0.0 | -     | Press and move camera; User camera movement with the mouse                                                                 |
-| `screenshareable`     | 1.0.0 | N/A   | Screenshare-able Component. Allows an object to be screenshared upon                                                       |
-| `textinput`           | 1.0.0 | -     | Opens an HTML prompt when clicked. Sends text input as an event on MQTT                                                    |
-| `threejs-scene`       | 1.0.0 | -     | Load a THREE.js scene.                                                                                                     |
-| `ttl`                 | 1.0.0 | 0.4.0 | Time To Live (TTL) component.                                                                                              |
-| `video-control`       | 1.0.0 | -     | Adds a video to an entity and controls its playback.                                                                       |
+| ARENA Component       | Web   | Unity  | Description                                                                                                         |
+| --------------------- | ----- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| `animation-mixer`     | 1.0.0 | 0.7.0  | A list of available animations in model file will play by default.                                                  |
+| `animation`           | 1.0.0 | -      | Animate and tween values.                                                                                           |
+| `arena-camera`        | 1.0.0 | 0.2.0  | Tracking camera movement in real time. Emits camera pose change and VIO change events.                              |
+| `arena-user`          | 1.0.0 | 0.3.0  | Another user’s camera in the ARENA. Handles Jitsi and display name updates.                                         |
+| `arena-vive`          | 1.0.0 | -      | Tracking Vive controller movement in real time.                                                                     |
+| `armarker-system`     | 1.0.0 | -      | ARMarker System. Supports ARMarkers in a scene.                                                                     |
+| `armarker`            | 1.0.0 | -      | A location marker used to anchor scenes, or scene objects, in the real world.                                       |
+| `attribution-system`  | 1.0.0 | -      | Attribution Component/System. Add attribution message to any entity.                                                |
+| `attribution`         | 1.0.0 | -      | Attribution Component. Saves attribution data in any entity.                                                        |
+| `buffer`              | 1.0.0 | -      | Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate.          |
+| `click-listener`      | 1.0.0 | 0.8.0  | Keep track of mouse events and publish corresponding events                                                         |
+| `collision-listener`  | 1.0.0 | -      | Listen for collisions, callback on event.                                                                           |
+| `dynamic-body`        | 1.0.0 | -      | Physics type attached to the object.                                                                                |
+| `gesture-detector`    | 1.0.0 | -      | Detect multi-finger touch gestures. Publish events accordingly.                                                     |
+| `gltf-model-lod`      | 1.0.0 | -      | GLTF lod switching between models based on distance.                                                                |
+| `gltf-model-progress` | 1.0.0 | 0.0.5  | GLTF model loading progress system. Manage GLTF load messages.                                                      |
+| `goto-landmark`       | 1.0.0 | -      | Teleports user to the landmark with the given name; Requires click-listener                                         |
+| `goto-url`            | 1.0.0 | -      | Goto given URL; Requires click-listener                                                                             |
+| `hide-in-ar-mode`     | 1.0.0 | -      | Hide in AR component. When set to an entity, it will make the entity disappear when entering AR mode.               |
+| `hide-on-enter-ar`    | 1.0.0 | -      | Hide object when entering AR. Remove component to _not_ hide                                                        |
+| `hide-on-enter-vr`    | 1.0.0 | -      | Hide object when entering VR. Remove component to _not_ hide                                                        |
+| `impulse`             | 1.0.0 | -      | The force applied using physics. Requires click-listener                                                            |
+| `jitsi-video`         | 1.0.0 | N/A    | Apply a Jitsi video source to the geometry                                                                          |
+| `landmark`            | 1.0.0 | -      | Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them.          |
+| `load-scene`          | 1.0.0 | 0.0.1  | Load scene from persistence.                                                                                        |
+| `material-extras`     | 1.0.0 | -      | Define extra material properties, namely texture encoding, whether to render the material's color and render order. |
+| `material`            | 1.0.0 | 0.0.10 | The material properties of the object’s surface.                                                                    |
+| `multisrc`            | 1.0.0 | -      | Define multiple visual sources applied to an object.                                                                |
+| `network-latency`     | 1.0.0 | -      | Publish with qos of 2 for network graph to update latency                                                           |
+| `parent`              | 1.0.0 | 0.0.7  | Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.            |
+| `position`            | 1.0.0 | 0.0.1  | 3D object position                                                                                                  |
+| `press-and-move`      | 1.0.0 | -      | Press and move camera; User camera movement with the mouse                                                          |
+| `rotation`            | 1.0.0 | 0.0.1  | 3D object rotation in quaternion representation; Right-handed coordinate system.                                    |
+| `scale`               | 1.0.0 | 0.0.1  | 3D object scale                                                                                                     |
+| `screenshareable`     | 1.0.0 | N/A    | Screenshare-able Component. Allows an object to be screenshared upon                                                |
+| `shadow`              | 1.0.0 | 0.0.10 | Whether the entity cast/receives shadows onto the surrounding scene.                                                |
+| `skipCache`           | 1.0.0 | -      | Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).            |
+| `sound`               | 1.0.0 | -      | The sound component defines the entity as a source of sound or audio.                                               |
+| `textinput`           | 1.0.0 | -      | Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.                   |
+| `threejs-scene`       | 1.0.0 | -      | Load a THREE.js scene.                                                                                              |
+| `ttl`                 | 1.0.0 | 0.4.0  | Time To Live (TTL) component.                                                                                       |
+| `url`                 | 1.0.0 | 0.0.2  | Model URL.                                                                                                          |
+| `video-control`       | 1.0.0 | -      | Adds a video to an entity and controls its playback.                                                                |
