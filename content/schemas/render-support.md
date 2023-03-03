@@ -14,35 +14,35 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 
 | ARENA Entity    | Web    | Unity  | Description                                        |
 | --------------- | ------ | ------ | -------------------------------------------------- |
-| `box`           | 1.0.0  | 0.0.1  | Box Geometry                                       |
-| `circle`        | 1.0.0  | 0.0.11 | Circle Geometry                                    |
-| `capsule`       | 1.11.0 | 0.0.12 | Capsule Geometry                                   |
-| `cone`          | 1.0.0  | 0.0.11 | Cone Geometry                                      |
-| `cylinder`      | 1.0.0  | 0.0.1  | Cylinder Geometry                                  |
-| `dodecahedron`  | 1.0.0  | 0.0.12 | Dodecahedron Geometry                              |
+| `box`           | 1.0.0  | 0.0.1  | Box geometry                                       |
+| `circle`        | 1.0.0  | 0.0.11 | Circle geometry                                    |
+| `capsule`       | 1.11.0 | 0.0.12 | Capsule geometry                                   |
+| `cone`          | 1.0.0  | 0.0.11 | Cone geometry                                      |
+| `cylinder`      | 1.0.0  | 0.0.1  | Cylinder geometry                                  |
+| `dodecahedron`  | 1.0.0  | 0.0.12 | Dodecahedron geometry                              |
 | `entity`        | 1.0.0  | 0.0.1  | Entities are the base of all objects in the scene. |
 | `gltf-model`    | 1.0.0  | 0.0.2  | Load a GLTF model                                  |
 | `image`         | 1.0.0  | 0.0.7  | Display an image on a plane                        |
-| `icosahedron`   | 1.0.0  | 0.0.11 | Icosahedron Geometry                               |
+| `icosahedron`   | 1.0.0  | 0.0.11 | Icosahedron geometry                               |
 | `light`         | 1.0.0  | 0.0.5  | A light                                            |
-| `line`          | 1.0.0  | 0.?.0  | Draw a line                                        |
-| `octahedron`    | 1.0.0  | 0.0.11 | Octahedron Geometry                                |
+| `line`          | 1.0.0  | 0.8.1  | Draw a line                                        |
+| `octahedron`    | 1.0.0  | 0.0.11 | Octahedron geometry                                |
 | `pcd-model`     | 1.0.0  | -      | Load a PCD model                                   |
-| `plane`         | 1.0.0  | 0.0.1  | Plane Geometry                                     |
-| `prism`         | 1.0.0  | -      | Prism Geometry                                     |
+| `plane`         | 1.0.0  | 0.0.1  | Plane geometry                                     |
+| `prism`         | 1.0.0  | -      | Prism geometry                                     |
 | `program`       | N/A    | N/A    | ARENA program data                                 |
-| `ring`          | 1.0.0  | 0.0.11 | Ring Geometry                                      |
-| `roundedbox`    | 1.14.0 | -      | Rounded Box Geometry                               |
+| `ring`          | 1.0.0  | 0.0.11 | Ring geometry                                      |
+| `roundedbox`    | 1.14.0 | -      | Rounded Box geometry                               |
 | `scene-options` | 1.0.0  | -      | ARENA scene options                                |
-| `sphere`        | 1.0.0  | 0.0.1  | Sphere Geometry                                    |
-| `tetrahedron`   | 1.0.0  | 0.0.12 | Tetrahedron Geometry                               |
+| `sphere`        | 1.0.0  | 0.0.1  | Sphere geometry                                    |
+| `tetrahedron`   | 1.0.0  | 0.0.12 | Tetrahedron geometry                               |
 | `text`          | 1.0.0  | 0.3.0  | Display text                                       |
 | `thickline`     | 1.0.0  | 0.4.0  | Draw a line that can have a custom width           |
-| `threejs-scene` | 1.0.0  | -      | Load a Three.js Scene                              |
-| `torus`         | 1.0.0  | 0.0.11 | Torus Geometry                                     |
-| `torusKnot`     | 1.0.0  | -      | Torus Knot Geometry                                |
-| `triangle`      | 1.0.0  | 0.0.12 | Triangle Geometry                                  |
-| `videosphere`   | 1.10.0 | N/A    | Videosphere 360 Video                              |
+| `threejs-scene` | 1.0.0  | -      | Load a `three.js` Scene                            |
+| `torus`         | 1.0.0  | 0.0.11 | Torus geometry                                     |
+| `torusKnot`     | 1.0.0  | -      | Torus Knot geometry                                |
+| `triangle`      | 1.0.0  | 0.0.12 | Triangle geometry                                  |
+| `videosphere`   | 1.10.0 | N/A    | Videosphere 360 video                              |
 
 | ARENA Component       | Web   | Unity  | Description                                                                                                         |
 | --------------------- | ----- | ------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -55,7 +55,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `armarker`            | 1.0.0 | -      | A location marker used to anchor scenes, or scene objects, in the real world.                                       |
 | `attribution-system`  | 1.0.0 | -      | Attribution Component/System. Add attribution message to any entity.                                                |
 | `attribution`         | 1.0.0 | -      | Attribution Component. Saves attribution data in any entity.                                                        |
-| `buffer`              | 1.0.0 | -      | Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate.          |
+| `buffer`              | 1.0.0 | N/A    | Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate.          |
 | `click-listener`      | 1.0.0 | 0.8.0  | Keep track of mouse events and publish corresponding events                                                         |
 | `collision-listener`  | 1.0.0 | -      | Listen for collisions, callback on event.                                                                           |
 | `dynamic-body`        | 1.0.0 | -      | Physics type attached to the object.                                                                                |
@@ -82,7 +82,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `scale`               | 1.0.0 | 0.0.1  | 3D object scale                                                                                                     |
 | `screenshareable`     | 1.0.0 | N/A    | Screenshare-able Component. Allows an object to be screenshared upon                                                |
 | `shadow`              | 1.0.0 | 0.0.10 | Whether the entity cast/receives shadows onto the surrounding scene.                                                |
-| `skipCache`           | 1.0.0 | -      | Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).            |
+| `skipCache`           | 1.0.0 | -      | Disable retrieving the shared geometry object from the cache.                                                       |
 | `sound`               | 1.0.0 | -      | The sound component defines the entity as a source of sound or audio.                                               |
 | `textinput`           | 1.0.0 | -      | Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.                   |
 | `threejs-scene`       | 1.0.0 | -      | Load a THREE.js scene.                                                                                              |
