@@ -25,7 +25,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `image`         | 1.0.0  | 0.0.7  | Display an image on a plane                        |
 | `icosahedron`   | 1.0.0  | 0.0.11 | Icosahedron geometry                               |
 | `light`         | 1.0.0  | 0.0.5  | A light                                            |
-| `line`          | 1.0.0  | 0.8.1  | Draw a line                                        |
+| `line`          | 1.0.0  | 0.9.0  | Draw a line                                        |
 | `octahedron`    | 1.0.0  | 0.0.11 | Octahedron geometry                                |
 | `pcd-model`     | 1.0.0  | -      | Load a PCD model                                   |
 | `plane`         | 1.0.0  | 0.0.1  | Plane geometry                                     |
