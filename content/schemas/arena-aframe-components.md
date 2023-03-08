@@ -40,8 +40,11 @@ If <code>extractAssetExtras=true</code> (default), the <a href="https://help.ske
 <dt><a href="#module_click-listener">click-listener</a></dt>
 <dd><p>Keep track of mouse events and publish corresponding events</p>
 </dd>
+<dt><a href="#module_box-collision-listener">box-collision-listener</a></dt>
+<dd><p>Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh.</p>
+</dd>
 <dt><a href="#module_collision-listener">collision-listener</a></dt>
-<dd><p>Listen for collisions, callback on event.
+<dd><p>(legacy) Listen for collisions, callback on event.
 Requires <a href="https://github.com/n5ro/aframe-physics-system">Physics for A-Frame VR</a></p>
 </dd>
 <dt><a href="#module_gesture-detector">gesture-detector</a></dt>
@@ -380,9 +383,22 @@ Setup event listeners for mouse events; listeners publish events to MQTT
 
 - [ ] Consolidate event listeners (they are very similar)
 
+<a name="module_box-collision-listener"></a>
+
+## box-collision-listener
+Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh
+
+**Properties**
+
+| Name          | Type                 | Default | Description                                                                                   |
+|---------------|----------------------|---------|-----------------------------------------------------------------------------------------------|
+| [enabled]     | <code>boolean</code> | true    | Set `false` to disable                                                                        |
+| [dynamic]     | <code>boolean</code> | false   | (required) Set `true` for moving objects, so that its bounding box is constantly recalculated |
+
+
 <a name="module_collision-listener"></a>
 
-## collision-listener
+## collision-listener (legacy)
 Listen for collisions, callback on event.
 Requires [Physics for A-Frame VR](https://github.com/n5ro/aframe-physics-system)
 

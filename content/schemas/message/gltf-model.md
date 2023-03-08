@@ -42,6 +42,7 @@ GLTF Model Attributes
 |animation|[animation](animation)||Animate and tween values. |No|
 |armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|
 |click-listener|boolean||Object will listen for clicks|No|
+|box-collision-listener|[box-collision-listener](box-collision-listener)||Listen for bounding-box collisions with user camera and hands|No|
 |collision-listener|string||Name of the collision-listener, default can be empty string|No|
 |color|string|```'#ffa500'```|Color|No|
 |dynamic-body|[dynamic-body](dynamic-body)||Physics type attached to the object. |No|
