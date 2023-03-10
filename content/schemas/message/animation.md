@@ -15,7 +15,7 @@ Animation
 
 Animate and tween values. 
 
-More properties at <a href='https://aframe.io/docs/1.3.0/components/animation.html'>https://aframe.io/docs/1.3.0/components/animation.html</a>
+More properties at <a href='https://aframe.io/docs/1.4.0/components/animation.html'>https://aframe.io/docs/1.4.0/components/animation.html</a>
 
 Animation Attributes
 ---------------------

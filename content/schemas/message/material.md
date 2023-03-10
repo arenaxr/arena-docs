@@ -15,7 +15,7 @@ Material
 
 The material properties of the object’s surface. 
 
-More properties at <a href='https://aframe.io/docs/1.3.0/components/material.html'>https://aframe.io/docs/1.3.0/components/material.html</a>
+More properties at <a href='https://aframe.io/docs/1.4.0/components/material.html'>https://aframe.io/docs/1.4.0/components/material.html</a>
 
 Material Attributes
 --------------------
