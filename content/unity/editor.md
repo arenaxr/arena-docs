@@ -93,7 +93,7 @@ Script | `ArenaObject` | -- | The script instance to manage an ARENA object runt
 **Animation** | `AnimationClip[]`, buttons | [] | List of animations when included in model. Adds `Play, Stop, Rewind` buttons for each `AnimationClip`.
 
 ## Inspector Window: ArenaMesh
-Each primitive mesh `ArenaObject` in our ARENA scene is rendered by a custom mesh that preserves its non-inherited size attributes for the `Mesh`, separate from its inherited size attributes for  `Scale`. Each primitive has a different set of attributes which we mimic from [A-Frame's geometries](https://aframe.io/docs/1.2.0/components/geometry.html). The `ArenaMesh` scripts available are as follows.
+Each primitive mesh `ArenaObject` in our ARENA scene is rendered by a custom mesh that preserves its non-inherited size attributes for the `Mesh`, separate from its inherited size attributes for  `Scale`. Each primitive has a different set of attributes which we mimic from [A-Frame's geometries](https://aframe.io/docs/1.4.0/components/geometry.html). The `ArenaMesh` scripts available are as follows.
 - `ArenaMeshCircle`
 - `ArenaMeshCone`
 - `ArenaMeshCube`
