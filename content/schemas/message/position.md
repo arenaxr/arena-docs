@@ -1,6 +1,6 @@
 ---
 title: Position
-nav_order: 35
+nav_order: 37
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

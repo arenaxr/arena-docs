@@ -1,6 +1,6 @@
 ---
 title: Goto URL
-nav_order: 20
+nav_order: 21
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

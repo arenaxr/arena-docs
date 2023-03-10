@@ -35,7 +35,7 @@ Entity (generic object) Attributes
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```entity```|```entity```|3D object type.|Yes|
 |geometry|||geometry|No|
-|panel||```{'depth': 0.05, 'height': 1, 'width': 1}```|The rounded UI panel primitive.|No|
+|panel|[panel](panel)||The rounded UI panel primitive.|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)||3D object position|No|
 |rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|

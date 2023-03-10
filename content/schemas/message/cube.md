@@ -13,7 +13,7 @@ Cube (deprecated; don't use)
 ============================
 
 
-Cube (=Box) Geometry; Supported for Legacy reasons; Please use Box in new scenes
+Cube (=Box) Geometry (deprecated); Supported for Legacy reasons; Please use Box in new scenes
 
 All wire objects have a set of basic attributes ```{object_id, action, type, persist, data}```. The ```data``` attribute defines the object-specific attributes
 

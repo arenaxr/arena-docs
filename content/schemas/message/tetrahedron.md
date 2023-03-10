@@ -1,6 +1,6 @@
 ---
 title: Tetrahedron
-nav_order: 47
+nav_order: 49
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

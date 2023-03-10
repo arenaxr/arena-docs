@@ -1,6 +1,6 @@
 ---
 title: GLTF Model
-nav_order: 18
+nav_order: 19
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

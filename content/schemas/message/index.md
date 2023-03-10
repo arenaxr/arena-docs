@@ -17,7 +17,7 @@ has_toc: false
 |[Circle](circle)|Circle Geometry|
 |[Capsule](capsule)|Capsule Geometry|
 |[Cone](cone)|Cone Geometry|
-|[Cube (deprecated; don't use)](cube)|Cube (=Box) Geometry; Supported for Legacy reasons; Please use Box in new scenes|
+|[Cube (deprecated; don't use)](cube)|Cube (=Box) Geometry (deprecated); Supported for Legacy reasons; Please use Box in new scenes|
 |[Cylinder](cylinder)|Cylinder Geometry|
 |[Dodecahedron](dodecahedron)|Dodecahedron Geometry|
 |[Entity (generic object)](entity)|Entities are the base of all objects in the scene. Entities are containers into which components can be attached.|
@@ -43,3 +43,4 @@ has_toc: false
 |[Torus Knot](torusKnot)|Torus Knot Geometry|
 |[Triangle](triangle)|Triangle Geometry|
 |[Videosphere](videosphere)|Videosphere 360 Video|
+|[Event](event)|Events are ephemeral messages used to send user events like mouse movements or controller actions.|
