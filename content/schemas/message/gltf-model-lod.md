@@ -1,5 +1,5 @@
 ---
-title: 
+title: GLTF Model Level of Detail
 nav_order: 17
 layout: default
 parent: Objects Schema

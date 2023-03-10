@@ -1,5 +1,5 @@
 ---
-title: 
+title: Prism
 nav_order: 36
 layout: default
 parent: Objects Schema

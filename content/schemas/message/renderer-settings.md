@@ -1,5 +1,5 @@
 ---
-title: 
+title: Renderer Settings
 nav_order: 38
 layout: default
 parent: Objects Schema

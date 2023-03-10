@@ -1,5 +1,5 @@
 ---
-title: 
+title: Line
 nav_order: 27
 layout: default
 parent: Objects Schema

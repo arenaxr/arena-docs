@@ -1,5 +1,5 @@
 ---
-title: 
+title: Thickline
 nav_order: 50
 layout: default
 parent: Objects Schema

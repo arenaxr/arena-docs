@@ -1,5 +1,5 @@
 ---
-title: 
+title: Material extras
 nav_order: 28
 layout: default
 parent: Objects Schema

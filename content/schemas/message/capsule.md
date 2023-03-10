@@ -1,5 +1,5 @@
 ---
-title: 
+title: Capsule
 nav_order: 8
 layout: default
 parent: Objects Schema

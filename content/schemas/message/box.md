@@ -1,5 +1,5 @@
 ---
-title: 
+title: Box
 nav_order: 7
 layout: default
 parent: Objects Schema

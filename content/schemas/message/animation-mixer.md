@@ -1,5 +1,5 @@
 ---
-title: 
+title: Animation Mixer
 nav_order: 0
 layout: default
 parent: Objects Schema

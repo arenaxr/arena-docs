@@ -1,5 +1,5 @@
 ---
-title: 
+title: Ring
 nav_order: 39
 layout: default
 parent: Objects Schema

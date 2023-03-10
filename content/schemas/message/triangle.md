@@ -1,5 +1,5 @@
 ---
-title: 
+title: Triangle
 nav_order: 54
 layout: default
 parent: Objects Schema

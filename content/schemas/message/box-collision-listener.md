@@ -1,5 +1,5 @@
 ---
-title: 
+title: Box Collision Listener
 nav_order: 6
 layout: default
 parent: Objects Schema

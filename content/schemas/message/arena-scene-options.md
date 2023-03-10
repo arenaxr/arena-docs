@@ -1,5 +1,5 @@
 ---
-title: 
+title: Scene Config
 nav_order: 3
 layout: default
 parent: Objects Schema

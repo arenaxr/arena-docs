@@ -1,5 +1,5 @@
 ---
-title: 
+title: Torus
 nav_order: 52
 layout: default
 parent: Objects Schema

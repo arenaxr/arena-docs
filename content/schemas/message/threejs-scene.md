@@ -1,5 +1,5 @@
 ---
-title: 
+title: Three.js Scene
 nav_order: 51
 layout: default
 parent: Objects Schema

@@ -1,5 +1,5 @@
 ---
-title: 
+title: GLTF Model Update
 nav_order: 30
 layout: default
 parent: Objects Schema

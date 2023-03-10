@@ -1,5 +1,5 @@
 ---
-title: 
+title: Animation
 nav_order: 1
 layout: default
 parent: Objects Schema

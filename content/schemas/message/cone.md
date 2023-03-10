@@ -1,5 +1,5 @@
 ---
-title: 
+title: Cone
 nav_order: 10
 layout: default
 parent: Objects Schema

@@ -1,5 +1,5 @@
 ---
-title: 
+title: Plane
 nav_order: 34
 layout: default
 parent: Objects Schema

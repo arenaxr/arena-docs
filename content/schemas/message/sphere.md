@@ -1,5 +1,5 @@
 ---
-title: 
+title: Sphere
 nav_order: 46
 layout: default
 parent: Objects Schema

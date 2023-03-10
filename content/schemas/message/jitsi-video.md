@@ -1,5 +1,5 @@
 ---
-title: 
+title: Jitsi Video
 nav_order: 24
 layout: default
 parent: Objects Schema

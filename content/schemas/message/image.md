@@ -1,5 +1,5 @@
 ---
-title: 
+title: Image
 nav_order: 22
 layout: default
 parent: Objects Schema

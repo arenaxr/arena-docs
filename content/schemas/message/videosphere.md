@@ -1,5 +1,5 @@
 ---
-title: 
+title: Videosphere
 nav_order: 56
 layout: default
 parent: Objects Schema

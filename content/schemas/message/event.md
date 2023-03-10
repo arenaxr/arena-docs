@@ -1,5 +1,5 @@
 ---
-title: 
+title: Event
 nav_order: 16
 layout: default
 parent: Objects Schema

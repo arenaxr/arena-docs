@@ -1,5 +1,5 @@
 ---
-title: 
+title: Scale
 nav_order: 42
 layout: default
 parent: Objects Schema

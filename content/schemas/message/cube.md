@@ -1,5 +1,5 @@
 ---
-title: 
+title: Cube (deprecated; don't use)
 nav_order: 11
 layout: default
 parent: Objects Schema

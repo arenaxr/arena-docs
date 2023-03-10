@@ -1,5 +1,5 @@
 ---
-title: 
+title: Video
 nav_order: 55
 layout: default
 parent: Objects Schema

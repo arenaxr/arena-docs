@@ -1,5 +1,5 @@
 ---
-title: 
+title: Dodecahedron
 nav_order: 13
 layout: default
 parent: Objects Schema

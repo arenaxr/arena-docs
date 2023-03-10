@@ -1,5 +1,5 @@
 ---
-title: 
+title: Octahedron
 nav_order: 32
 layout: default
 parent: Objects Schema

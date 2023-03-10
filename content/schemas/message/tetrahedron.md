@@ -1,5 +1,5 @@
 ---
-title: 
+title: Tetrahedron
 nav_order: 47
 layout: default
 parent: Objects Schema

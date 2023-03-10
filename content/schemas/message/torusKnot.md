@@ -1,5 +1,5 @@
 ---
-title: 
+title: Torus Knot
 nav_order: 53
 layout: default
 parent: Objects Schema

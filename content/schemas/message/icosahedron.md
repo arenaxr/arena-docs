@@ -1,5 +1,5 @@
 ---
-title: 
+title: Icosahedron
 nav_order: 21
 layout: default
 parent: Objects Schema

@@ -1,5 +1,5 @@
 ---
-title: 
+title: Entity (generic object)
 nav_order: 15
 layout: default
 parent: Objects Schema

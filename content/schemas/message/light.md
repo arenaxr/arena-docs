@@ -1,5 +1,5 @@
 ---
-title: 
+title: Light
 nav_order: 26
 layout: default
 parent: Objects Schema

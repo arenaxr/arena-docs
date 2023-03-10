@@ -1,5 +1,5 @@
 ---
-title: 
+title: Impulse
 nav_order: 23
 layout: default
 parent: Objects Schema
