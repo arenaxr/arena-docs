@@ -1,6 +1,6 @@
 ---
 title: Three.js Scene
-nav_order: 53
+nav_order: 54
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -61,3 +61,4 @@ Three.js Scene Attributes
 |screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
 |video-control|[video-control](video-control)||Video Control|No|
 |attribution|[attribution](attribution)||Attribution Component. Saves attribution data in any entity.|No|
+|particle-system|[particle-system](particle-system)||Particle system component for A-Frame. |No|
