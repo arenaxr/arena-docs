@@ -31,7 +31,7 @@ Animation Attributes
 |enabled|boolean|```True```|If disabled, animation will stop and startEvents will not trigger animation start.|No|
 |from|string|```''```|Initial value at start of animation. If not specified, the current property value of the entity will be used (will be sampled on each animation start). It is best to specify a from value when possible for stability.|No|
 |isRawProperty|boolean|```False```|Flag to animate an arbitrary object property outside of A-Frame components for better performance. If set to true, for example, we can set property to like components.material.material.opacity. If property starts with components or object3D, this will be inferred to true.|No|
-|loop|number|```0```|How many times the animation should repeat. If the value is true, the animation will repeat infinitely.|No|
+|loop|string|```'0'```|How many times the animation should repeat. If the value is true, the animation will repeat infinitely.|No|
 |pauseEvents|array|```[]```|Comma-separated list of events to listen to trigger pause. Can be resumed with resumeEvents.|No|
 |property|string||Property to animate. Can be a component name, a dot-delimited property of a component (e.g., material.color), or a plain attribute.|No|
 |resumeEvents|array|```[]```|Comma-separated list of events to listen to trigger resume after pausing.|No|

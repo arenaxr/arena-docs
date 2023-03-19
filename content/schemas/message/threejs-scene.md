@@ -1,6 +1,6 @@
 ---
 title: Three.js Scene
-nav_order: 54
+nav_order: 55
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -62,3 +62,4 @@ Three.js Scene Attributes
 |video-control|[video-control](video-control)||Video Control|No|
 |attribution|[attribution](attribution)||Attribution Component. Saves attribution data in any entity.|No|
 |particle-system|[particle-system](particle-system)||Particle system component for A-Frame. |No|
+|spe-particles|[spe-particles](spe-particles)||GPU based particle systems in A-Frame. |No|

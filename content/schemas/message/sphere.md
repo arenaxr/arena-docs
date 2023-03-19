@@ -1,6 +1,6 @@
 ---
 title: Sphere
-nav_order: 49
+nav_order: 50
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -67,6 +67,7 @@ Sphere Attributes
 |video-control|[video-control](video-control)||Video Control|No|
 |attribution|[attribution](attribution)||Attribution Component. Saves attribution data in any entity.|No|
 |particle-system|[particle-system](particle-system)||Particle system component for A-Frame. |No|
+|spe-particles|[spe-particles](spe-particles)||GPU based particle systems in A-Frame. |No|
 |buffer|boolean|```True```|Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate (geometries only: box, circle, cone, ...).|No|
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
 |material|[material](material)|```{'color': '#7f7f7f'}```|The material properties of the object’s surface. |No|

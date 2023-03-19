@@ -42,7 +42,7 @@ Particle System Attributes
 |duration|number|```None```|The duration in seconds that this emitter should live for. If not specified, the emitter will emit particles indefinitely.|No|
 |enabled|boolean|```True```|When true the emitter will emit particles, when false it will not. This value can be changed dynamically during a scene. While particles are emitting, they will disappear immediately when set to false.|No|
 |particleCount|number|```1000```|The total number of particles this emitter will hold. NOTE: this is not the number of particles emitted in a second, or anything like that. The number of particles emitted per-second is calculated by particleCount |No|
-|texture|string|```'static/images/textures/star2.png'```|The texture used by this emitter. Also available: 'static/images/textures/star2.png', 'static/images/textures/smokeparticle.png', 'static/images/textures/raindrop.png'|Yes|
+|texture|string|```'static/images/textures/star2.png'```|The texture used by this emitter. Also available: 'static/images/textures/star2.png', static/images/textures/smokeparticle.png, static/images/textures/raindrop.png|Yes|
 |randomise|boolean|```False```|When a particle is re-spawned, whether it's position should be re-randomised or not. Can incur a performance hit.|No|
 |opacity|number|```1```|Either a single number to describe the opacity of a particle.|No|
 |blending|string; One of: ```['0', '1', '2', '3', '4']```|```'2'```|The blending mode of the particles. Possible values are 0 (no blending), 1 (normal), 2 (additive), 3 (subtractive), 4 (multiply)|No|
