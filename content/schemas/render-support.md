@@ -85,7 +85,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `shadow`              | 1.0.0  | 0.0.10 | Whether the entity cast/receives shadows onto the surrounding scene.                                                |
 | `skipCache`           | 1.0.0  | -      | Disable retrieving the shared geometry object from the cache.                                                       |
 | `sound`               | 1.0.0  | -      | The sound component defines the entity as a source of sound or audio.                                               |
-| `spe-particles`       | -      | -      | GPU based particle systems in A-Frame: supports single textures and spritesheets.                                   |
+| `spe-particles`       | 1.18.0 | -      | GPU based particle systems in A-Frame: supports single textures and spritesheets.                                   |
 | `textinput`           | 1.0.0  | -      | Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.                   |
 | `threejs-scene`       | 1.0.0  | -      | Load a THREE.js scene.                                                                                              |
 | `ttl`                 | 1.0.0  | 0.4.0  | Time To Live (TTL) component.                                                                                       |
