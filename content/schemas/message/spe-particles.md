@@ -41,7 +41,7 @@ SPE Particles Attributes
 |dragSpread|number|```0```|spread to apply to the drag attribute|No|
 |duration|number|```-1```|duration of the emitter (seconds), if less than 0 then continuously emit particles|No|
 |emitterScale|number|```100```|global scaling factor for all particles from the emitter|No|
-|enableInSditor|boolean|```False```|enable the emitter while the editor is active (i.e. while scene is paused)|No|
+|enableInEditor|boolean|```False```|enable the emitter while the editor is active (i.e. while scene is paused)|No|
 |enabled|boolean|```True```|enable/disable the emitter|No|
 |frustumCulled|boolean|```False```|enable/disable frustum culling|No|
 |hasPerspective|boolean|```True```|if true, particles will be larger the closer they are to the camera|No|
@@ -80,5 +80,5 @@ SPE Particles Attributes
 |velocity|[Vector3](Vector3)|```{x: 0, y: 0, z: 0}```|for sphere and disc distributions, only the x axis is used|No|
 |velocityDistribution|string; One of: ```['none', 'box', 'sphere', 'disc']```|```'none'```|distribution of particle velocities, for disc and sphere, only the x component will be used. if set to NONE use the 'distribution' attribute for velocityDistribution|No|
 |velocitySpread|[Vector3](Vector3)|```{x: 0, y: 0, z: 0}```|variance for the velocity|No|
-|wiggle|[Vector3](Vector3)|```{x: 0, y: 0, z: 0}```|extra distance the particle moves over its lifetime|No|
-|wiggleSpread|[Vector3](Vector3)|```{x: 0, y: 0, z: 0}```|+- spread for the wiggle attribute|No|
+|wiggle|number|```0```|extra distance the particle moves over its lifetime|No|
+|wiggleSpread|number|```0```|+- spread for the wiggle attribute|No|
