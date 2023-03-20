@@ -72,7 +72,7 @@ SPE Particles Attributes
 |rotationStatic|boolean|```False```|if true, the particles are fixed at their initial rotation value. if false, the particle will rotate from 0 to the 'rotation' value|No|
 |size|array|```[1]```|array of sizes over the particle's lifetime, max 4 elements|No|
 |sizeSpread|array|```[0]```|spread in size over the particle's lifetime, max 4 elements|No|
-|texture|string|```''```|texture to be used for each particle, may be a spritesheet|No|
+|texture|string|```''```|texture to be used for each particle, may be a spritesheet.  Examples: [blob.png, fog.png, square.png, explosion_sheet.png, fireworks_sheet.png], like path 'static/images/textures/blob.png'|No|
 |textureFrameCount|integer|```-1```|number of frames in the spritesheet, negative numbers default to textureFrames.x * textureFrames.y|No|
 |textureFrameLoop|integer|```1```|number of times the spritesheet should be looped over the lifetime of a particle|No|
 |textureFrames|[Vector2](Vector2)|```{x: 1, y: 1}```|x and y frames for a spritesheet. each particle will transition through every frame of the spritesheet over its lifetime (see textureFramesLoop)|No|
