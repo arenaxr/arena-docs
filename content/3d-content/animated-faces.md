@@ -15,12 +15,8 @@ Here are some notes gathered to understand how to understand and create facial a
 ## Blendshapes
 
 - [Blend Shape Interpolation and FACS for Realistic Avatar](https://www.researchgate.net/publication/271596909_Blend_Shape_Interpolation_and_FACS_for_Realistic_Avatar) [[2]](#2) (**F**acial **A**ction **C**oding)
-  - Founded company "Blendshapes" that makes a pretty good technique with both capture (Face Cap App) and models (Face Scan App)
-  - We can export custom texture mapped models from iphone for $35
-  - Face Cap app streams over open protocol (could be good for testing)
-  - Lots of good developer info here
-    - [Face Scan App (developers)](https://www.bannaflak.com/face-scan/documentation.html)
-    - [Face Cap App (product)](https://www.bannaflak.com/face-cap/index.html)
+- [Face Scan App (developers)](https://www.bannaflak.com/face-scan/documentation.html)
+- [Face Cap App (product)](https://www.bannaflak.com/face-cap/index.html)
 
 ## Exporting
 
@@ -42,7 +38,7 @@ How do we go from landmarks to expressions?
 
 - **F**aces **L**earned with an **A**rticulated **M**odel and **E**xpressions: [https://flame.is.tue.mpg.de/](https://flame.is.tue.mpg.de/)
 - Early Hao Li project on using ML to do face rigging.
-- Very cool web demo: [https://flame.is.tue.mpg.de/interactive-model-viewer](https://flame.is.tue.mpg.de/interactive-model-viewer)
+- Very cool web demo: [https://flame.is.tue.mpg.de/interactivemodelviewer.html](https://flame.is.tue.mpg.de/interactivemodelviewer.html)
 
 
 ## References
