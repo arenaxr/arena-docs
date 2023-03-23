@@ -26,6 +26,7 @@ has_toc: false
 |[Icosahedron](icosahedron)|Icosahedron Geometry|
 |[Light](light)|A light|
 |[Line](line)|Draw a line|
+|[Ocean](ocean)|Ocean|
 |[Octahedron](octahedron)|Octahedron Geometry|
 |[PCD Model](pcd-model)|Load a PCD model|
 |[Plane](plane)|Plane Geometry|

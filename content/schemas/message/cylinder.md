@@ -34,7 +34,7 @@ Cylinder Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```cylinder```|```cylinder```|3D object type.|Yes|
-|height|number|```2```|height|Yes|
+|height|number|```1```|height|Yes|
 |openEnded|boolean|```False```|open ended|No|
 |radius|number|```1```|radius|Yes|
 |segmentsHeight|number|```18```|segments height|No|

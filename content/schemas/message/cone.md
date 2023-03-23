@@ -34,7 +34,7 @@ Cone Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```cone```|```cone```|3D object type.|Yes|
-|height|number|```2```|height|Yes|
+|height|number|```1```|height|Yes|
 |openEnded|boolean|```False```|open ended|No|
 |radiusBottom|number|```1```|radius bottom|Yes|
 |radiusTop|number|```0.01```|radius top|No|

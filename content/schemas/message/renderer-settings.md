@@ -1,6 +1,6 @@
 ---
 title: Renderer Settings
-nav_order: 41
+nav_order: 42
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
