@@ -13,38 +13,40 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 - [**Python Changelog**](https://github.com/arenaxr/arena-py/blob/master/CHANGELOG.md)
 - [**Unity Changelog**](https://github.com/arenaxr/arena-unity/blob/main/CHANGELOG.md)
 
-| ARENA Entity    | Web    | Python | Unity  | Description                                        |
-| --------------- | ------ | ------ | ------ | -------------------------------------------------- |
-| `box`           | 1.0.0  | 0.1.12 | 0.0.1  | Box geometry                                       |
-| `capsule`       | 1.11.0 | -      | 0.0.12 | Capsule geometry                                   |
-| `circle`        | 1.0.0  | 0.1.12 | 0.0.11 | Circle geometry                                    |
-| `cone`          | 1.0.0  | 0.1.12 | 0.0.11 | Cone geometry                                      |
-| `cylinder`      | 1.0.0  | 0.1.12 | 0.0.1  | Cylinder geometry                                  |
-| `dodecahedron`  | 1.0.0  | 0.1.12 | 0.0.12 | Dodecahedron geometry                              |
-| `entity`        | 1.0.0  | 0.1.12 | 0.0.1  | Entities are the base of all objects in the scene. |
-| `gltf-model`    | 1.0.0  | 0.1.12 | 0.0.2  | Load a GLTF model                                  |
-| `icosahedron`   | 1.0.0  | 0.1.12 | 0.0.11 | Icosahedron geometry                               |
-| `image`         | 1.0.0  | 0.1.12 | 0.0.7  | Display an image on a plane                        |
-| `light`         | 1.0.0  | 0.1.12 | 0.0.5  | A light                                            |
-| `line`          | 1.0.0  | 0.1.12 | 0.9.0  | Draw a line                                        |
-| `ocean`         | 1.18.0 | -      | -      | Oceans, water                                      |
-| `octahedron`    | 1.0.0  | 0.1.12 | 0.0.11 | Octahedron geometry                                |
-| `pcd-model`     | 1.0.0  | -      | -      | Load a PCD model                                   |
-| `plane`         | 1.0.0  | 0.1.12 | 0.0.1  | Plane geometry                                     |
-| `prism`         | 1.0.0  | -      | -      | Prism geometry                                     |
-| `program`       | N/A    | N/A    | N/A    | ARENA program data                                 |
-| `ring`          | 1.0.0  | 0.1.12 | 0.0.11 | Ring geometry                                      |
-| `roundedbox`    | 1.14.0 | -      | -      | Rounded Box geometry                               |
-| `scene-options` | 1.0.0  | -      | -      | ARENA scene options                                |
-| `sphere`        | 1.0.0  | 0.1.12 | 0.0.1  | Sphere geometry                                    |
-| `tetrahedron`   | 1.0.0  | 0.1.12 | 0.0.12 | Tetrahedron geometry                               |
-| `text`          | 1.0.0  | 0.1.12 | 0.3.0  | Display text                                       |
-| `thickline`     | 1.0.0  | 0.1.12 | 0.4.0  | Draw a line that can have a custom width           |
-| `threejs-scene` | 1.0.0  | -      | -      | Load a `three.js` Scene                            |
-| `torus`         | 1.0.0  | 0.1.12 | 0.0.11 | Torus geometry                                     |
-| `torusKnot`     | 1.0.0  | 0.1.12 | -      | Torus Knot geometry                                |
-| `triangle`      | 1.0.0  | 0.1.12 | 0.0.12 | Triangle geometry                                  |
-| `videosphere`   | 1.10.0 | N/A    | N/A    | Videosphere 360 video                              |
+| ARENA Entity        | Web    | Python | Unity  | Description                                                   |
+| ------------------- | ------ | ------ | ------ | ------------------------------------------------------------- |
+| `box`               | 1.0.0  | 0.1.12 | 0.0.1  | Box geometry                                                  |
+| `capsule`           | 1.11.0 | -      | 0.0.12 | Capsule geometry                                              |
+| `circle`            | 1.0.0  | 0.1.12 | 0.0.11 | Circle geometry                                               |
+| `cone`              | 1.0.0  | 0.1.12 | 0.0.11 | Cone geometry                                                 |
+| `cylinder`          | 1.0.0  | 0.1.12 | 0.0.1  | Cylinder geometry                                             |
+| `dodecahedron`      | 1.0.0  | 0.1.12 | 0.0.12 | Dodecahedron geometry                                         |
+| `entity`            | 1.0.0  | 0.1.12 | 0.0.1  | Entities are the base of all objects in the scene.            |
+| `env-presets`       | 1.0.0  | -      | -      | A-Frame Environment presets.                                  |
+| `gltf-model`        | 1.0.0  | 0.1.12 | 0.0.2  | Load a GLTF model                                             |
+| `icosahedron`       | 1.0.0  | 0.1.12 | 0.0.11 | Icosahedron geometry                                          |
+| `image`             | 1.0.0  | 0.1.12 | 0.0.7  | Display an image on a plane                                   |
+| `light`             | 1.0.0  | 0.1.12 | 0.0.5  | A light                                                       |
+| `line`              | 1.0.0  | 0.1.12 | 0.9.0  | Draw a line                                                   |
+| `ocean`             | 1.18.0 | -      | -      | Oceans, water                                                 |
+| `octahedron`        | 1.0.0  | 0.1.12 | 0.0.11 | Octahedron geometry                                           |
+| `pcd-model`         | 1.0.0  | -      | -      | Load a PCD model                                              |
+| `plane`             | 1.0.0  | 0.1.12 | 0.0.1  | Plane geometry                                                |
+| `prism`             | 1.0.0  | -      | -      | Prism geometry                                                |
+| `program`           | N/A    | N/A    | N/A    | ARENA program data                                            |
+| `renderer-settings` | 1.0.0  | -      | -      | These settings are fed into three.js WebGLRenderer properties |
+| `ring`              | 1.0.0  | 0.1.12 | 0.0.11 | Ring geometry                                                 |
+| `roundedbox`        | 1.14.0 | -      | -      | Rounded Box geometry                                          |
+| `scene-options`     | 1.0.0  | -      | -      | ARENA Scene Options                                           |
+| `sphere`            | 1.0.0  | 0.1.12 | 0.0.1  | Sphere geometry                                               |
+| `tetrahedron`       | 1.0.0  | 0.1.12 | 0.0.12 | Tetrahedron geometry                                          |
+| `text`              | 1.0.0  | 0.1.12 | 0.3.0  | Display text                                                  |
+| `thickline`         | 1.0.0  | 0.1.12 | 0.4.0  | Draw a line that can have a custom width                      |
+| `threejs-scene`     | 1.0.0  | -      | -      | Load a `three.js` Scene                                       |
+| `torus`             | 1.0.0  | 0.1.12 | 0.0.11 | Torus geometry                                                |
+| `torusKnot`         | 1.0.0  | 0.1.12 | -      | Torus Knot geometry                                           |
+| `triangle`          | 1.0.0  | 0.1.12 | 0.0.12 | Triangle geometry                                             |
+| `videosphere`       | 1.10.0 | N/A    | N/A    | Videosphere 360 video                                         |
 
 | ARENA Component       | Web    | Python | Unity  | Description                                                                                                         |
 | --------------------- | ------ | ------ | ------ | ------------------------------------------------------------------------------------------------------------------- |
