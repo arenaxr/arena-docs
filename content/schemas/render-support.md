@@ -53,9 +53,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `arena-camera`        | 1.0.0  | 0.1.12 | 0.2.0  | Tracking camera movement in real time. Emits camera pose change and VIO change events.                              |
 | `arena-user`          | 1.0.0  | N/A    | 0.3.0  | Another user’s camera in the ARENA. Handles Jitsi and display name updates.                                         |
 | `arena-vive`          | 1.0.0  | N/A    | -      | Tracking Vive controller movement in real time.                                                                     |
-| `armarker-system`     | 1.0.0  | N/A    | -      | ARMarker system. Supports ARMarkers in a scene.                                                                     |
 | `armarker`            | 1.0.0  | N/A    | -      | A location marker used to anchor scenes, or scene objects, in the real world.                                       |
-| `attribution-system`  | 1.0.0  | -      | -      | Attribution component/system. Add attribution message to any entity.                                                |
 | `attribution`         | 1.0.0  | -      | -      | Attribution component. Saves attribution data in any entity.                                                        |
 | `box-collider`        | 1.17.0 | -      | -      | AABB collision detection for entities with a mesh                                                                   |
 | `buffer`              | 1.0.0  | N/A    | N/A    | Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate.          |
