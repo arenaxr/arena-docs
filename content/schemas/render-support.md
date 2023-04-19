@@ -95,4 +95,4 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `threejs-scene`          | 1.0.0  | -      | -      | Load a THREE.js scene.                                                                             |
 | `ttl`                    | 1.0.0  | 0.1.12 | 0.4.0  | Time To Live (TTL) component.                                                                      |
 | `url`                    | 1.0.0  | 0.1.12 | 0.0.2  | Model URL.                                                                                         |
-| `video-control`          | 1.0.0  | -      | -      | Adds a video to an entity and controls its playback.                                               |
+| `video-control`          | 1.0.0  | 0.3.0  | -      | Adds a video to an entity and controls its playback.                                               |
