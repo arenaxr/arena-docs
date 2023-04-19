@@ -14,8 +14,9 @@ You can use the ARENA to setup a 360° panoramic streaming video room, or severa
 To ensure the upload of the 360 video stream isn't diminished before other users get a chance to download it, each 360 camera should have:
 
 - **Updated camera firmware**: Many of the above cameras have updates which prevent them from overheating and shutting down in the middle of your live video stream. Contact the camera manufacturer website for updates.
-- A **fast computer**. This is a little hard to measure, but slower computers will diminish the video upload. We've had good results with the MacBook Pro M1 chip. Our Intel x86 MacBook Pros have struggled to have enough memory in the browser for the Javascript code to marshall high frame rates of 2K 360 video streams.
+- A **fast computer**. This is a little hard to measure, but slower computers will diminish the video upload. We've had good results with the **MacBook Pro M1** chip. Our Intel x86 MacBook Pros have struggled to have enough memory in the browser for the Javascript code to marshall high frame rates of 2K 360 video streams. Other Windows/Linux machines may work. **Laptops** are recommended for flexibility.
 - A **wired network connection** of at least 1 Gbps since we need to make sure our upload of the 360 video stream has as much bandwidth as possible and without the variable instability of wireless connections. Wifi connections will limit your resolution down to about 50 Mbps.
+- **Wired power**: Don't rely on the laptop battery, 3D web and 360 cameras will consume power quickly.
 - Optimally a **2K output stream** from the camera so detail renders well, higher outputs like 4K may work, but it's untested.
 - Google **Chrome** or Microsoft **Edge**. Firefox and other browsers have trouble ingesting the 2:1 video ratio required. Check the `A/V Setup` screen when entering the scene for strange visual artifacts.
 - ARENA Web Core [**version 1.11**](https://arenaxr.org/conf/versions.html) or higher.
@@ -137,3 +138,22 @@ Repeat the instructions for `Setup Digital Twin Single Panoramic Room`, just mak
 1. `Enter Scene`, and the 3D sphere in the scene will appear white, then black if you wait.
 1. Click the camera button in the upper right corner of the browser and you should see a preview again, as well as the video displayed on the "walls" of the 3D sphere.
 1. Click the microphone button if you want.
+
+## Create a Virtual Mirror
+
+To complete the effect for your physical participants, you can use a monitor or TV, preferably against a wall, to reflect visiting virtual participants back to the physical participants. To do this, we will reverse-mirror your ARENA browser view from your laptop to the wall monitor. Reverse-mirroring can be done in several ways, and in this example we will use [OBS Studio](https://obsproject.com). This only works for the [`Setup World Single Panoramic Room`](#setup-world-single-panoramic-room) configuration.
+
+1. You should have a 360 camera connected to your laptop and the ARENA website open in a browser to the scene you constructed in the above steps.
+1. Connect your **wall monitor** to your laptop, and configure it to be an extended desktop, not mirrored.
+1. Browser: Use the **WASD-keys** or **arrow-keys** to position your ARENA browser view outside the videosphere, exactly where your wall monitor appears on the edge of the videosphere; your ARENA view should now be looking into the center of the sphere now.
+1. Browser: Expand your ARENA browser window to fullscreen on your **laptop desktop**.
+1. OBS: On the `Sources` tab, add a new **Source**, selecting `Screen Capture`; you will see an infinite mirror effect.
+1. OBS: Move the OBS window from your laptop desktop to the **extended desktop** on the wall monitor; the infinite mirror effect should end.
+1. OBS: Perhaps rename this **Source** from the default name `Screen Capture` to something like `Reverse Mirror` if you want to reuse it later.
+1. OBS: Select your desktop view until it has a **red outline**, then `Edit > Transform > Flip Horizontal`. **OPTIONAL, skip this step if you don't want the full mirror-effect.**
+1. OBS: Expand your OBS window to fullscreen to fill the entire wall monitor.
+1. OBS: For more screen real estate, you can close some open tabs; disable `Docks > Scenes`, `Docks > Sources`, etc...
+1. OBS: For even more screen real estate, also disable `View > Source Toolbar`, `View > Status Bar`, etc...
+1. Now you should see a **reflected live virtual** scene like the image below and you should be able to see any virtual participants that enter the sphere on the wall monitor just like [this](/assets/img/overview/videosphere1.png).
+
+<img src="/assets/img/overview/videosphere3.png"/>
