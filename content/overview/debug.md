@@ -15,23 +15,23 @@ Since the ARENA's rendering uses the A-Frame web 3D rendering engine, you can op
 
 Examine the list of elements on the left side. Each element or object you select will show it's details and attributes on the right side. You may edit any attributes here you wish, however, remember that the A-Frame Scene Inspector will not persist any changes to the persistence database. We do have a way to visually manipulate objects and save changes that we will share next.
 
-![](../../../assets/img/overview/inspector.png)
+![A-Frame Inspector](../../../assets/img/overview/inspector.png)
 
 {% include alert type="tip" content="
 While in the A-Frame Inspector view, press the `H` key to pull up a list of super-useful A-Frame Inspector commands.
 "%}
 
-![](../../../assets/img/overview/inspector-help.png)
+![A-Frame Inspector Help](../../../assets/img/overview/inspector-help.png)
 
 ## WebXR API Emulator
 
-Since ARENA's web view runs on WebXR, we can use the ebXR API Emulator to test Immersive VR (headset) features without a headset.
+Since ARENA's web view runs on WebXR, we can use the WebXR API Emulator to test Immersive VR (headset) features without a headset.
 
 1. Go to the addon stores to install ([Firefox](https://addons.mozilla.org/firefox/addon/webxr-api-emulator), [Chrome](https://chrome.google.com/webstore/detail/webxr-api-emulator/mjddjgeghkdijejnciaefnkjmkafnnje))
 1. Open your ARENA scene web view and the ARENA detects that you have a XR device (emulated) and it will let you enter the immersive (VR、AR) mode.
 1. Open the `WebXR` tab in the browser developer tool ([Firefox](https://developer.mozilla.org/en-US/docs/Tools), [Chrome](https://developers.google.com/web/tools/chrome-devtools/)) to control the emulated devices. You can move the headset and controllers, and trigger the controller buttons.
 
-![WebXR tab](../../../assets/img/overview/webxr-vr-emulator.png)
+![WebXR Browser Tab](../../../assets/img/overview/webxr-vr-emulator.png)
 
 ## AR Builder, visual content authoring
 
