@@ -42,7 +42,7 @@ Copy the python script below, and paste it into a ```box.py``` file. After savin
 from arena import *
 
 # this creates an object for scene 'example' at the given arena host
-scene = Scene(host="mqtt.arenaxr.org", scene="example")
+scene = Scene(host="arenaxr.org", scene="example")
 
 # define a task that will add a box to the scene
 @scene.run_once
@@ -64,7 +64,7 @@ Now, go back to your browser and <b>refresh</b> the page. You will notice that t
 ```python
 from arena import *
 
-scene = Scene(host="mqtt.arenaxr.org", scene="example")
+scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
 def make_box():
@@ -85,7 +85,7 @@ Once you run the script above, you can go back to the scene <b>example</b> in yo
 ## Running from the Command Line
 The target of which server, user and scene are set by the `Scene(host="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using shell environmental variables at the command line as shown below.  This allows a simple way to re-target applications for your own environment without having to change the parameters manually in the code.
 ```shell
-export MQTTH=mqtt.arenaxr.org
+export MQTTH=arenaxr.org # ARENA webserver main host
 export REALM=realm
 export SCENE=scene
 export NAMESPACE=namespace
@@ -143,7 +143,7 @@ A more advanced manipulation of objects in the ARENA is using 3d models as [GLTF
 ```python
 from arena import *
 
-scene = Scene(host="mqtt.arenaxr.org", scene="example")
+scene = Scene(host="arenaxr.org", scene="example")
 
 obj = GLTF(object_id="duck_1",
             position=(-1, 1, -3),

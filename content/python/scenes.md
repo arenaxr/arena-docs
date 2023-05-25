@@ -12,8 +12,8 @@ Scenes give ARENA-py programs access to an ARENA scene. It provides an interface
 ## Scene Access
 To get access to a scene in the ARENA, create a `Scene` object. Make sure you have proper permissions to access it!
 ```python
-scene = Scene(host="mqtt.arenaxr.org", scene="example")
-# scene = Arena(host="mqtt.arenaxr.org", scene="example") works too
+scene = Scene(host="arenaxr.org", scene="example")
+# scene = Arena(host="arenaxr.org", scene="example") works too
 ```
 
 ## Arguments

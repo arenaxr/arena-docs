@@ -14,7 +14,7 @@ pip3 install arena-py
 
 Ok, now let's get started!
 
-### Setup environmental variables (reccomended but not required)
+### Setup environmental variables (recommended but not required)
 Replace [host], [realm], and [scene] with your desired mqtt broker, realm, and scene name, respectively.
 ```shell
 export MQTTH=[host]
@@ -73,7 +73,7 @@ Now, go into the scene to see your box!
 from arena import *
 
 # setup library
-scene = Scene(host="mqtt.arenaxr.org", scene="example")
+scene = Scene(host="arenaxr.org", scene="example")
 
 def main():
     # make a box

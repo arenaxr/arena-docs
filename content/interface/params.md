@@ -38,7 +38,7 @@ The following URL parameters are accepted, beginner or **advanced**. The **advan
 | hudstats | bool | **advanced** | Render a HUD of performance/memory stats. |
 | lat | float | **advanced** | Override device location; (e.g. `lat=40.4427`) |
 | long | float | **advanced** | Override device location; (e.g. `long=79.9430`) |
-| mqttHost | string | **advanced** | Override MQTT host address (e.g. `mqttHost=mqtt.arenaxr.org`) |
+| mqttHost | string | **advanced** | Override MQTT host address (e.g. `mqttHost=arenaxr.org`) |
 | name | string | **advanced** | Set user name (e.g. `name=MyName`) |
 | noav | bool | beginner | Disables videoconferencing for this browser only. |
 | noname | bool | beginner | Handles display of user name on the screen. False: (default) display the user name. True: Do not display the user name. |

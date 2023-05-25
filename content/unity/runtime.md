@@ -33,7 +33,7 @@ public class ArenaTestButton : MonoBehaviour
         ArenaClientScene scene = ArenaClientScene.Instance;
 
         // Set the MQTT broker address, default: "arenaxr.org".
-        scene.hostAddress = "mqtt.arenaxr.org";
+        scene.hostAddress = "arenaxr.org";
 
         // Set the namespace name for the scene, default: [your ARENA username].
         // For google authentication, this is set automatically on login and unnecessary when using your own username.
@@ -86,7 +86,7 @@ public class ArenaTestButton : MonoBehaviour
         MyArenaClient client = gobj.AddComponent(typeof(MyArenaClient)) as MyArenaClient;
 
         // Setup a connection using a custom namespace and anonymous authentication.
-        client.hostAddress = "mqtt.arenaxr.org";
+        client.hostAddress = "arenaxr.org";
         //client.authType = ArenaMqttClient.Auth.Manual;
 
         // Store any local jwt tokens here, before auth starts.

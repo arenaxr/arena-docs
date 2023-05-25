@@ -66,7 +66,7 @@ name | type | default | description
 **Signout** | button | -- | Manual button to signout from the ARENA and stop the Runtime.
 **Scene Url** | string | null | Browser URL for scene as a clickable link highlighted in <span style="color: blue;">blue text</span>.
 Script | `ArenaClientScene` | -- | The script instance to manage the MQTT runtime.
-**Broker Address** | string | mqtt.arenaxr.org | Host name of the ARENA MQTT broker
+**Broker Address** | string | arenaxr.org | Host name of the ARENA MQTT broker
 **Namespace Name** | string | null | Namespace (automated with username), but can be overridden
 **Scene Name** | string | example | Name of the scene, without namespace ('example', not 'username/example'
 **Camera For Display** | `Camera` | MainCamera | Cameras for Display 1

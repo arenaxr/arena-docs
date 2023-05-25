@@ -27,7 +27,7 @@ See [ARENA Documentation: Python](https://docs.arenaxr.org/content/python/).
 from arena import *
 
 # create library
-scene = Scene(host="mqtt.arenaxr.org", scene="example")
+scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once # make this function a task that runs once at startup
 def main():

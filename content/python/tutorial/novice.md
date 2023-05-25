@@ -35,7 +35,7 @@ scene.delete_object(box)
 from arena import *
 
 # setup library
-scene = Scene(host="mqtt.arenaxr.org", scene="example")
+scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_async
 async def func():

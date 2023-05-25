@@ -51,7 +51,7 @@ To pass arguments to the script, add the ARGS variable when invoking Make, e.g.:
 ```bash
 make import ARGS='-h'
 make export ARGS='--dry-run'
-make import ARGS='--host=mqtt.arenaxr.org --mqtt_port=8883 --conf=myconfigfile.yaml'
+make import ARGS='--host=arenaxr.org --mqtt_port=8883 --conf=myconfigfile.yaml'
 ```
 
 ## Config file
@@ -68,7 +68,7 @@ And define options in the **config file** (`./config.yaml` by default). The conf
 ```yaml
 dryrun: False # a dry run does not perform publish, just lists objects that would be imported (default: True; import only)
 persist: True # persist flag used in published messages (default: True)
-host: mqtt.arenaxr.org
+host: arenaxr.org
 mqtt_port: 8883
 realm: realm
 
@@ -111,4 +111,3 @@ namespaces:
 ## Permissions
 
 This tool will use the permissions of the ARENA user logged in. Can only import to namespaces/scenes the user has access to. If the user is not logged in, a login prompt (in a browser) will be presented.
-
