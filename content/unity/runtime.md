@@ -32,7 +32,7 @@ public class ArenaTestButton : MonoBehaviour
         // Only one singleton connection instance allowed per application.
         ArenaClientScene scene = ArenaClientScene.Instance;
 
-        // Set the MQTT broker address, default: "arenaxr.org".
+        // Set the ARENA webserver main host address, default: "arenaxr.org".
         scene.hostAddress = "arenaxr.org";
 
         // Set the namespace name for the scene, default: [your ARENA username].
