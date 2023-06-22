@@ -32,7 +32,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `octahedron`        | 1.0.0  | 0.1.12 | 0.0.11 | Octahedron geometry                                           |
 | `pcd-model`         | 1.0.0  | -      | -      | Load a PCD model                                              |
 | `plane`             | 1.0.0  | 0.1.12 | 0.0.1  | Plane geometry                                                |
-| `prism`             | 1.0.0  | -      | -      | Prism geometry                                                |
+| `post-processing`   | 1.20.0 | -      | -      | These effects are enabled in desktop and XR views             |
 | `program`           | N/A    | N/A    | N/A    | ARENA program data                                            |
 | `renderer-settings` | 1.0.0  | -      | -      | These settings are fed into three.js WebGLRenderer properties |
 | `ring`              | 1.0.0  | 0.1.12 | 0.0.11 | Ring geometry                                                 |
@@ -84,10 +84,13 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `particle-system`        | 1.18.0 | -      | -      | Particle system component for A-Frame (rain, snow, dust).                                          |
 | `position`               | 1.0.0  | 0.1.12 | 0.0.1  | 3D object position                                                                                 |
 | `press-and-move`         | 1.0.0  | N/A    | -      | Press and move camera; User camera movement with the mouse                                         |
+| `remote-render`          | N/A    | N/A    | -      | Whether or not an object should be remote rendered                                                 |
 | `rotation`               | 1.0.0  | 0.1.12 | 0.0.1  | 3D object rotation in quaternion representation; Right-handed coordinate system.                   |
 | `scale`                  | 1.0.0  | 0.1.12 | 0.0.1  | 3D object scale                                                                                    |
 | `screenshareable`        | 1.0.0  | N/A    | N/A    | Screenshare-able component. Allows an object to be screenshared upon                               |
 | `shadow`                 | 1.0.0  | -      | 0.0.10 | Whether the entity cast/receives shadows onto the surrounding scene.                               |
+| `show-on-enter-ar`       | 1.20.0 | N/A    | -      | Show object when entering AR. Hidden otherwise                                                     |
+| `show-on-enter-vr`       | 1.08.0 | N/A    | -      | Show object when entering VR. Hidden otherwise                                                     |
 | `skipCache`              | 1.0.0  | N/A    | -      | Disable retrieving the shared geometry object from the cache.                                      |
 | `sound`                  | 1.0.0  | 0.1.12 | -      | The sound component defines the entity as a source of sound or audio.                              |
 | `spe-particles`          | 1.18.0 | -      | -      | GPU based particle systems in A-Frame: supports single textures and spritesheets.                  |
