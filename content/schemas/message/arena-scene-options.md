@@ -35,3 +35,4 @@ Scene Config Attributes
 |env-presets|[environment-presets](environment-presets)||A-Frame Environment presets. |Yes|
 |renderer-settings|[renderer-settings](renderer-settings)||These settings are fed into three.js WebGLRenderer properties|No|
 |scene-options|[scene-options](scene-options)||ARENA Scene Options|Yes|
+|post-processing|[post-processing](post-processing)||These effects are enabled in desktop and XR views|No|

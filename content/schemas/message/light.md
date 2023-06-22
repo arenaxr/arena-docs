@@ -1,6 +1,6 @@
 ---
 title: Light
-nav_order: 27
+nav_order: 28
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -65,7 +65,7 @@ Light Attributes
 |scale|[scale](scale)|```{'x': 1, 'y': 1, 'z': 1}```|3D object scale|No|
 |animation|[animation](animation)||Animate and tween values. |No|
 |armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|
-|click-listener|boolean||Object will listen for clicks|No|
+|click-listener|[click-listener](click-listener)||Object will listen for clicks|No|
 |box-collision-listener|[box-collision-listener](box-collision-listener)||Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps|No|
 |collision-listener|string||Name of the collision-listener, default can be empty string. Collisions trigger click events|No|
 |dynamic-body|[dynamic-body](dynamic-body)||Physics type attached to the object. |No|
@@ -73,6 +73,8 @@ Light Attributes
 |goto-url|[goto-url](goto-url)||Goto given URL; Requires click-listener|No|
 |hide-on-enter-ar|boolean; Must be: ```True```|```True```|Hide object when entering AR. Remove component to *not* hide|No|
 |hide-on-enter-vr|boolean; Must be: ```True```|```True```|Hide object when entering VR. Remove component to *not* hide|No|
+|show-on-enter-ar|boolean; Must be: ```True```|```True```|Show object when entering AR. Hidden otherwise|No|
+|show-on-enter-vr|boolean; Must be: ```True```|```True```|Show object when entering VR. Hidden otherwise|No|
 |impulse|[impulse](impulse)||The force applied using physics. Requires click-listener|No|
 |landmark|[landmark](landmark)||Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists)|No|
 |material-extras|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component. |No|
@@ -81,6 +83,7 @@ Light Attributes
 |textinput|[textinput](textinput)||Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.|No|
 |url|string||Model URL. Store files paths under 'store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|No|
 |screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
+|remote-render|[remote-render](remote-render)||Whether or not an object should be remote rendered [Experimental]|No|
 |video-control|[video-control](video-control)||Video Control|No|
 |attribution|[attribution](attribution)||Attribution Component. Saves attribution data in any entity.|No|
 |particle-system|[particle-system](particle-system)||Particle system component for A-Frame. |No|

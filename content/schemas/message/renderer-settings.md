@@ -1,6 +1,6 @@
 ---
 title: Renderer Settings
-nav_order: 42
+nav_order: 45
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -20,8 +20,7 @@ Renderer Settings Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|gammaFactor|number|```2.2```|Gamma factor (three.js default is 2.0; we use 2.2 as default)|No|
 |localClippingEnabled|boolean|```False```|Defines whether the renderer respects object-level clipping planes|No|
-|outputEncoding|string; One of: ```['BasicDepthPacking', 'GammaEncoding', 'LinearEncoding', 'LogLuvEncoding', 'RGBADepthPacking', 'RGBDEncoding', 'RGBEEncoding', 'RGBM16Encoding', 'RGBM7Encoding', 'sRGBEncoding']```|```'sRGBEncoding'```|Defines the output encoding of the renderer (three.js default is LinearEncoding; we use sRGBEncoding as default)|Yes|
+|outputColorSpace|string; One of: ```['SRGBColorSpace', 'LinearSRGBColorSpace', 'DisplayP3ColorSpace', 'NoColorSpace']```|```'SRGBColorSpace'```|Defines the output color space of the renderer (three.js default is SRGBColorSpace)|Yes|
 |physicallyCorrectLights|boolean|```False```|Whether to use physically correct lighting mode.|No|
 |sortObjects|boolean|```True```|Defines whether the renderer should sort objects|No|
