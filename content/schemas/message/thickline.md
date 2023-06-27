@@ -1,6 +1,6 @@
 ---
 title: Thickline
-nav_order: 58
+nav_order: 57
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

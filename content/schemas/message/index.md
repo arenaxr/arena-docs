@@ -30,7 +30,6 @@ has_toc: false
 |[Octahedron](octahedron)|Octahedron Geometry|
 |[PCD Model](pcd-model)|Load a PCD model|
 |[Plane](plane)|Plane Geometry|
-|[Prism](prism)|Prism Geometry|
 |[Program](arena-program)|ARENA program data|
 |[Ring](ring)|Ring Geometry|
 |[Rounded Box](roundedbox)|Rounded Box Geometry|
