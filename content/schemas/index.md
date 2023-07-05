@@ -48,8 +48,9 @@ Looking up [A-Frame's documentation](https://aframe.io/docs/1.4.0/introduction/)
 
 **See our [reference of ARENA supported objects and their properties](/content/schemas/message).**
 
-## ARENA-Specific components
+## ARENA-Specific Components and Systems
 
 We also extended A-Frame by building ARENA-specific components and systems for, e.g. AR markers, programs, networked events, and options.
 
-**The documentation of ARENA-specific components and systems is [here](/content/schemas/arena-aframe-components).**
+**The documentation of ARENA-specific components is [here](/content/schemas/arena-aframe-components).**
+**The documentation of ARENA-specific systems is [here](/content/schemas/arena-aframe-systems).**
