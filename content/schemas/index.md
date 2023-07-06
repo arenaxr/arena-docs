@@ -53,4 +53,5 @@ Looking up [A-Frame's documentation](https://aframe.io/docs/1.4.0/introduction/)
 We also extended A-Frame by building ARENA-specific components and systems for, e.g. AR markers, programs, networked events, and options.
 
 **The documentation of ARENA-specific components is [here](/content/schemas/arena-aframe-components).**
+
 **The documentation of ARENA-specific systems is [here](/content/schemas/arena-aframe-systems).**

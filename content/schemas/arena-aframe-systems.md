@@ -1,5 +1,5 @@
 ---
-title: ARENA A-Frame Components
+title: ARENA A-Frame Systems
 nav_order: 2
 layout: default
 parent: ARENA Objects
