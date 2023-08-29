@@ -1,6 +1,6 @@
 ---
 title: UI Panel
-nav_order: 36
+nav_order: 39
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

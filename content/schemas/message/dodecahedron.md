@@ -1,6 +1,6 @@
 ---
 title: Dodecahedron
-nav_order: 14
+nav_order: 17
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

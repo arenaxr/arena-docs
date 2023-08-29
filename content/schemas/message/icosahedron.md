@@ -1,6 +1,6 @@
 ---
 title: Icosahedron
-nav_order: 23
+nav_order: 26
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

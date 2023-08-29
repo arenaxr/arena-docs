@@ -1,6 +1,6 @@
 ---
 title: Capsule
-nav_order: 8
+nav_order: 11
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
