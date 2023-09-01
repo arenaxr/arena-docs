@@ -22,12 +22,14 @@ Below is how you access attributes of the `Event` object.
 # [msg] is the raw JSON message as a dict
 def click_handler(scene, evt, msg):
     ## Get Event type
-    evt.type # == "mousedown", "mouseup", "mouseenter", "mouseleave", etc.
+    evt.type # == "buttonClick", "mousedown", "mouseup", "mouseenter", "mouseleave", etc.
 
     ## Get Event data
     evt.data.clickPos
     evt.data.position
     evt.data.source
+    evt.data.buttonName
+    evt.data.buttonIndex
     # etc.
 
 box = Box(..., evt_handler=click_handler) # note the use of "evt_handler=click_handler"

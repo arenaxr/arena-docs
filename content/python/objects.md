@@ -208,6 +208,25 @@ Particle(...)
 Camera(object_id, ...)
 ```
 
+## Card
+Create an ARENAUI Card
+```python
+Card(...)
+```
+
+## ButtonPanel
+Create an ARENAUI Button Panel
+```python
+ButtonPanel(buttons=[Button(...), ...], ...)
+```
+
+## Prompt
+Create an ARENAUI Prompt
+```python 
+Prompt(...)
+```
+
+
 ## Generic Object
 For objects that might not exist yet (but may exist in AFRAME). Inherit from this class to create custom objects.
 ```python
