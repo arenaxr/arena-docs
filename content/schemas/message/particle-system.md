@@ -1,6 +1,6 @@
 ---
 title: Particle System
-nav_order: 40
+nav_order: 41
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -26,7 +26,7 @@ Particle System Attributes
 |maxAge|number|```6```|The particle's maximum age in seconds.|No|
 |positionSpread|[Vector3](Vector3)|```{x: 0, y: 0, z: 0}```|Describes this emitter's position variance on a per-particle basis.|No|
 |type|number|```1```|The default distribution this emitter should use to control its particle's spawn position and force behaviour. Possible values are 1 (box), 2 (sphere), 3 (disc)|No|
-|rotationAxis|string; One of: ```['x', 'y', 'x']```|```'x'```|Describes this emitter's axis of rotation. Possible values are x, y and z.|No|
+|rotationAxis|string; One of: ```['x', 'y', 'z']```|```'x'```|Describes this emitter's axis of rotation. Possible values are x, y and z.|No|
 |rotationAngle|number|```0```|The angle of rotation, given in radians. Dust preset is 3.14.|No|
 |rotationAngleSpread|number|```0```|The amount of variance in the angle of rotation per-particle, given in radians.|No|
 |accelerationValue|[Vector3](Vector3)|```{x: 0, y: -10, z: 0}```|Describes this emitter's base acceleration.|No|
@@ -40,7 +40,7 @@ Particle System Attributes
 |size|array|```[1]```|Describes a particle's size.|Yes|
 |sizeSpread|array|```[0]```|sizeSpread|No|
 |direction|number|```1```|The direction of the emitter. If value is 1, emitter will start at beginning of particle's lifecycle. If value is -1, emitter will start at end of particle's lifecycle and work it's way backwards.|No|
-|duration|number|```None```|The duration in seconds that this emitter should live for. If not specified, the emitter will emit particles indefinitely.|No|
+|duration|number|```0```|The duration in seconds that this emitter should live for. If not specified, the emitter will emit particles indefinitely.|No|
 |enabled|boolean|```True```|When true the emitter will emit particles, when false it will not. This value can be changed dynamically during a scene. While particles are emitting, they will disappear immediately when set to false.|No|
 |particleCount|number|```1000```|The total number of particles this emitter will hold. NOTE: this is not the number of particles emitted in a second, or anything like that. The number of particles emitted per-second is calculated by particleCount |No|
 |texture|string|```'static/images/textures/star2.png'```|The texture used by this emitter. Examples: [star2.png, smokeparticle.png, raindrop.png], like path 'static/images/textures/star2.png'|Yes|

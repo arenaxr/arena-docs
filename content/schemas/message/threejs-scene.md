@@ -1,6 +1,6 @@
 ---
 title: Three.js Scene
-nav_order: 61
+nav_order: 62
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -46,6 +46,7 @@ Three.js Scene Attributes
 |click-listener|[click-listener](click-listener)||Object will listen for clicks|No|
 |box-collision-listener|[box-collision-listener](box-collision-listener)||Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps|No|
 |collision-listener|string||Name of the collision-listener, default can be empty string. Collisions trigger click events|No|
+|blip|[blip](blip)||When the object is created or deleted, it will animate in/out of the scene instead of appearing/disappearing instantly. Must have a geometric mesh.|No|
 |color|string|```'#ffa500'```|(deprecated) Color of the material. Please use material.color instead.|No|
 |dynamic-body|[dynamic-body](dynamic-body)||Physics type attached to the object. |No|
 |goto-landmark|[goto-landmark](goto-landmark)||Teleports user to the landmark with the given name; Requires click-listener|No|
