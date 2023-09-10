@@ -34,9 +34,9 @@ Line Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```line```|```line```|3D object type.|Yes|
-|end||```{'x': -0.5, 'y': -0.5, 'z': 0}```|vertex B (end)|Yes|
+|end|[vector3](vector3)|```{'x': -0.5, 'y': -0.5, 'z': 0}```|vertex B (end)|Yes|
 |opacity|number|```1```|Line Opacity|No|
-|start||```{'x': 0, 'y': 0.5, 'z': 0}```|vertex A (start)|Yes|
+|start|[vector3](vector3)|```{'x': 0, 'y': 0.5, 'z': 0}```|vertex A (start)|Yes|
 |visible|boolean|```True```|Visible|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)||3D object position|No|
@@ -48,7 +48,6 @@ Line Attributes
 |box-collision-listener|[box-collision-listener](box-collision-listener)||Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps|No|
 |collision-listener|string||Name of the collision-listener, default can be empty string. Collisions trigger click events|No|
 |blip|[blip](blip)||When the object is created or deleted, it will animate in/out of the scene instead of appearing/disappearing instantly. Must have a geometric mesh.|No|
-|color|string|```#7f7f7f```|(deprecated) Color of the material. Please use material.color instead.|No|
 |dynamic-body|[dynamic-body](dynamic-body)||Physics type attached to the object. |No|
 |goto-landmark|[goto-landmark](goto-landmark)||Teleports user to the landmark with the given name; Requires click-listener|No|
 |goto-url|[goto-url](goto-url)||Goto given URL; Requires click-listener|No|

@@ -24,15 +24,15 @@ Particle System Attributes
 | :--- | :--- | :--- | :--- | :--- |
 |preset|string; One of: ```['default', 'dust', 'snow', 'rain']```|```'default'```|Preset configuration. Possible values are: default, dust, snow, rain.|No|
 |maxAge|number|```6```|The particle's maximum age in seconds.|No|
-|positionSpread|[Vector3](Vector3)|```{x: 0, y: 0, z: 0}```|Describes this emitter's position variance on a per-particle basis.|No|
+|positionSpread|[vector3](vector3)|```{x: 0, y: 0, z: 0}```|Describes this emitter's position variance on a per-particle basis.|No|
 |type|number|```1```|The default distribution this emitter should use to control its particle's spawn position and force behaviour. Possible values are 1 (box), 2 (sphere), 3 (disc)|No|
 |rotationAxis|string; One of: ```['x', 'y', 'z']```|```'x'```|Describes this emitter's axis of rotation. Possible values are x, y and z.|No|
 |rotationAngle|number|```0```|The angle of rotation, given in radians. Dust preset is 3.14.|No|
 |rotationAngleSpread|number|```0```|The amount of variance in the angle of rotation per-particle, given in radians.|No|
-|accelerationValue|[Vector3](Vector3)|```{x: 0, y: -10, z: 0}```|Describes this emitter's base acceleration.|No|
-|accelerationSpread|[Vector3](Vector3)|```{x: 10, y: 0, z: 10}```|Describes this emitter's acceleration variance on a per-particle basis.|No|
-|velocityValue|[Vector3](Vector3)|```{x: 0, y: 25, z: 0}```|Describes this emitter's base velocity.|No|
-|velocitySpread|[Vector3](Vector3)|```{x: 10, y: 7.5, z: 10}```|Describes this emitter's acceleration variance on a per-particle basis.|No|
+|accelerationValue|[vector3](vector3)|```{x: 0, y: -10, z: 0}```|Describes this emitter's base acceleration.|No|
+|accelerationSpread|[vector3](vector3)|```{x: 10, y: 0, z: 10}```|Describes this emitter's acceleration variance on a per-particle basis.|No|
+|velocityValue|[vector3](vector3)|```{x: 0, y: 25, z: 0}```|Describes this emitter's base velocity.|No|
+|velocitySpread|[vector3](vector3)|```{x: 10, y: 7.5, z: 10}```|Describes this emitter's acceleration variance on a per-particle basis.|No|
 |dragValue|number|```0```|Number between 0 and 1 describing drag applied to all particles.|No|
 |dragSpread|number|```0```|Number describing drag variance on a per-particle basis.|No|
 |dragRandomise|boolean|```False```|WHen a particle is re-spawned, whether it's drag should be re-randomised or not. Can incur a performance hit.|No|

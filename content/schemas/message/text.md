@@ -51,7 +51,6 @@ Text Attributes
 |shader|; One of: ```['portal', 'flat', 'standard', 'sdf', 'msdf', 'ios10hls', 'skyshader', 'gradientshader']```|```sdf```|Shader used to render text.|No|
 |side|; One of: ```['front', 'back', 'double']```|```double```|Side to render. (front, back, double)|No|
 |tabSize|number|```4```|Tab size in spaces.|No|
-|text|string||(deprecated) Please use attribute 'value' in new Text objects;|No|
 |transparent|boolean|```True```|Whether text is transparent.|No|
 |value|string|``````|The actual content of the text. Line breaks and tabs are supported with \n and \t.|No|
 |whiteSpace|; One of: ```['normal', 'pre', 'nowrap']```|```normal```|How whitespace should be handled (i.e., normal, pre, nowrap).</a>|No|

@@ -34,4 +34,4 @@ Event Attributes
 | :--- | :--- | :--- | :--- | :--- |
 |source|string||The `object_id` of event origination. e.g camera or client program connection id.|Yes|
 |position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|The event destination position in 3D.|Yes|
-|clickPos||```{'x': 0, 'y': 1.6, 'z': 0}```|The event origination position in 3D.|No|
+|clickPos|[vector3](vector3)|```{'x': 0, 'y': 1.6, 'z': 0}```|The event origination position in 3D.|No|

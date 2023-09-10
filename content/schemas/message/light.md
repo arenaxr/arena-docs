@@ -38,12 +38,11 @@ Light Attributes
 |object_type|string; Must be: ```light```|```light```|3D object type.|Yes|
 |angle|number|```60```|Maximum extent of spot light from its direction (in degrees). NOTE: Spot light type only.|No|
 |castShadow|boolean|```False```|castShadow (point, spot, directional)|No|
-|color|string|```#ffffff```|(deprecated) Color of the material. Please use material.color instead.|No|
+|color|string|```#ffffff```|Light color.|No|
 |decay|number|```1.0```|Amount the light dims along the distance of the light. NOTE: Point and Spot light type only.|No|
 |distance|number|```0.0```|Distance where intensity becomes 0. If distance is 0, then the point light does not decay with distance. NOTE: Point and Spot light type only.|No|
 |groundColor|string|```'#ffffff'```|Light color from below. NOTE: Hemisphere light type only|No|
 |intensity|number|```1```|Light strength.|No|
-|light|||These attributes (light, intensity, color, ...) can be set directly on the light object (instead of this light attribute inside the light object); dont use in new light objects|No|
 |penumbra|number|```0.0```|Percent of the spotlight cone that is attenuated due to penumbra. NOTE: Spot light type only.|No|
 |shadowBias|number|```0```|shadowBias (castShadow=true)|No|
 |shadowCameraBottom|number|```-5```|shadowCameraBottom (castShadow=true)|No|
