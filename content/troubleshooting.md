@@ -34,7 +34,7 @@ If your internet connection uses a VPN or other firewall that may block port **8
 
 ### Python: Unable to get local issuer certificate
 It seems some distributions of Python may not have any certificate roots installed for SSL. To resolve, some useful troubleshooting can be found online:
-- https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to-get-local-issuer-certificate
+- [https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to-get-local-issuer-certificate](https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to-get-local-issuer-certificate)
 
 ## Web Browser Scene Errors
 While visiting an ARENA scene in a **web browser**, you may encounter an error condition due to limited hardware, memory, or network capacity. Some of these are detailed below with some troubleshooting steps.
