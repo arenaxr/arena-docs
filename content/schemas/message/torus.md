@@ -37,8 +37,8 @@ Torus Attributes
 |arc|number|```360```|Arc|No|
 |radius|number|```1```|radius|Yes|
 |radiusTubular|number|```0.4```|radius tubular|No|
-|segmentsRadial|number|```36```|segments radial|No|
-|segmentsTubular|number|```32```|segments tubular|No|
+|segmentsRadial|integer|```36```|segments radial|No|
+|segmentsTubular|integer|```32```|segments tubular|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|
 |rotation|[rotation](rotation)|```{'w': 1, 'x': 0, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
@@ -73,4 +73,4 @@ Torus Attributes
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
 |material|[material](material)|```{'color': '#7f7f7f'}```|The material properties of the object’s surface. |No|
 |multisrc|[multisrc](multisrc)||Define multiple visual sources applied to an object.|No|
-|skipCache|boolean|```True```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|
+|skipCache|boolean|```False```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|

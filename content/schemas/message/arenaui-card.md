@@ -41,6 +41,7 @@ ARENAUI Card Panel Attributes
 |imgCaption|string|``````|This will caption the image|No|
 |imgDirection|string; One of: ```['left', 'right']```|```'right'```|Image Direction|No|
 |imgSize|string; One of: ```['cover', 'contain', 'stretch']```|```cover```|Image sizing|No|
+|textImageRatio|number|```0.5```|Text to Image Width Ratio|No|
 |fontSize|number|```0.035```|Font Size|No|
 |widthScale|number|```1```|Width scale multiplier|No|
 |closeButton|boolean|```True```|Show close button|No|

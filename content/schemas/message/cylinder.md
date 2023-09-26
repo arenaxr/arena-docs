@@ -37,8 +37,8 @@ Cylinder Attributes
 |height|number|```1```|height|Yes|
 |openEnded|boolean|```False```|open ended|No|
 |radius|number|```1```|radius|Yes|
-|segmentsHeight|number|```18```|segments height|No|
-|segmentsRadial|number|```36```|segments radial|No|
+|segmentsHeight|integer|```18```|segments height|No|
+|segmentsRadial|integer|```36```|segments radial|No|
 |thetaLength|number|```360```|theta length|No|
 |thetaStart|number|```0```|theta start|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
@@ -75,4 +75,4 @@ Cylinder Attributes
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
 |material|[material](material)|```{'color': '#7f7f7f'}```|The material properties of the object’s surface. |No|
 |multisrc|[multisrc](multisrc)||Define multiple visual sources applied to an object.|No|
-|skipCache|boolean|```True```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|
+|skipCache|boolean|```False```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|

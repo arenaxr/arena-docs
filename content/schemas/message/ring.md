@@ -36,8 +36,8 @@ Ring Attributes
 |object_type|string; Must be: ```ring```|```ring```|3D object type.|Yes|
 |radiusInner|number|```0.5```|radius inner|Yes|
 |radiusOuter|number|```1```|radius outer|Yes|
-|segmentsPhi|number|```10```|segments phi|No|
-|segmentsTheta|number|```32```|segments theta|No|
+|segmentsPhi|integer|```10```|segments phi|No|
+|segmentsTheta|integer|```32```|segments theta|No|
 |thetaLength|number|```360```|theta length|No|
 |thetaStart|number|```0```|theta start|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
@@ -74,4 +74,4 @@ Ring Attributes
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
 |material|[material](material)|```{'color': '#7f7f7f'}```|The material properties of the object’s surface. |No|
 |multisrc|[multisrc](multisrc)||Define multiple visual sources applied to an object.|No|
-|skipCache|boolean|```True```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|
+|skipCache|boolean|```False```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|

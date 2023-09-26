@@ -38,7 +38,7 @@ Rounded Box Attributes
 |height|number|```1```|height|Yes|
 |width|number|```1```|width|Yes|
 |radius|number|```0.15```|radius of edge|Yes|
-|radiusSegments|number|```10```|segments radius|No|
+|radiusSegments|integer|```10```|segments radius|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|
 |rotation|[rotation](rotation)|```{'w': 1, 'x': 0, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
@@ -73,4 +73,4 @@ Rounded Box Attributes
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
 |material|[material](material)|```{'color': '#7f7f7f'}```|The material properties of the object’s surface. |No|
 |multisrc|[multisrc](multisrc)||Define multiple visual sources applied to an object.|No|
-|skipCache|boolean|```True```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|
+|skipCache|boolean|```False```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|

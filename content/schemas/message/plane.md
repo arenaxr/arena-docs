@@ -35,8 +35,8 @@ Plane Attributes
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```plane```|```plane```|3D object type.|Yes|
 |height|number|```1```|height|Yes|
-|segmentsHeight|number|```1```|segments height|No|
-|segmentsWidth|number|```1```|segments width|No|
+|segmentsHeight|integer|```1```|segments height|No|
+|segmentsWidth|integer|```1```|segments width|No|
 |width|number|```1```|width|Yes|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|
@@ -72,4 +72,4 @@ Plane Attributes
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
 |material|[material](material)|```{'color': '#7f7f7f'}```|The material properties of the object’s surface. |No|
 |multisrc|[multisrc](multisrc)||Define multiple visual sources applied to an object.|No|
-|skipCache|boolean|```True```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|
+|skipCache|boolean|```False```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|

@@ -37,8 +37,8 @@ Sphere Attributes
 |phiLength|number|```360```|phi length|No|
 |phiStart|number|```0```|phi start|No|
 |radius|number|```1```|radius|No|
-|segmentsHeight|number|```18```|segments height|No|
-|segmentsWidth|number|```36```|segments width|No|
+|segmentsHeight|integer|```18```|segments height|No|
+|segmentsWidth|integer|```36```|segments width|No|
 |thetaLength|number|```180```|theta length|No|
 |thetaStart|number|```0```|theta start|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
@@ -75,4 +75,4 @@ Sphere Attributes
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
 |material|[material](material)|```{'color': '#7f7f7f'}```|The material properties of the object’s surface. |No|
 |multisrc|[multisrc](multisrc)||Define multiple visual sources applied to an object.|No|
-|skipCache|boolean|```True```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|
+|skipCache|boolean|```False```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|

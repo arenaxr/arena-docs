@@ -38,8 +38,8 @@ Videosphere Attributes
 |crossOrigin|string|```'anonymous'```|crossOrigin|No|
 |loop|boolean|```True```|loop|No|
 |radius|number|```5000```|radius|No|
-|segmentsHeight|number|```64```|segments height|No|
-|segmentsWidth|number|```64```|segments width|No|
+|segmentsHeight|integer|```64```|segments height|No|
+|segmentsWidth|integer|```64```|segments width|No|
 |src|string||URI, relative or full path of an image/video file. e.g. 'store/users/wiselab/images/360falls.mp4'|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|
@@ -49,4 +49,4 @@ Videosphere Attributes
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
 |material|[material](material)||The material properties of the object’s surface. |No|
 |multisrc|[multisrc](multisrc)||Define multiple visual sources applied to an object.|No|
-|skipCache|boolean|```True```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|
+|skipCache|boolean|```False```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|
