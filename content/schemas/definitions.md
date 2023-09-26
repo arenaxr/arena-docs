@@ -22,7 +22,7 @@ ARENA object schemas are the basis for the over-the-wire message format. Below y
 ### Object Message
 [`Scene Message object`](#scene-message-object) with a `data` property of the `Object Data` object.
 ```json
-{"object_id": "cube_1", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 1, "y": 1, "z": -1}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}, "color": "#FF0000"}}
+{"object_id": "cube_1", "action": "create", "type": "object", "data": {"object_type": "box", "position": {"x": 1, "y": 1, "z": -1}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}, "material": {"color": "#FF0000"}}}
 ```
 
 ### Event Message

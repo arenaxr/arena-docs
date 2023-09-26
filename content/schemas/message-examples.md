@@ -77,11 +77,11 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id" : "gltf-model_Earth", "
 ```
 ### Create marker objects
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id" : "box0", "action": "create", "type": "object", "data": {"color": "blue", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": 0, "y": 0, "z": 0} }}'
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id" : "box1", "action": "create", "type": "object", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -0.7, "y": 1.67, "z": 2.11} }}'
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id" : "box2", "action": "create", "type": "object", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -2.88, "y": 2.80, "z": -2.12} }}'
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id" : "box3", "action": "create", "type": "object", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -0.09, "y": 1.30, "z": -3.66} }}'
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id" : "box4", "action": "create", "type": "object", "data": {"color": "red", "object_type": "cube", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": 3.31, "y": 2.00, "z": -0.97} }}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id" : "box0", "action": "create", "type": "object", "data": {"material": {"color": "blue"}}, "object_type": "box", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": 0, "y": 0, "z": 0} }}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id" : "box1", "action": "create", "type": "object", "data": {"material": {"color": "red"}, "object_type": "box", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -0.7, "y": 1.67, "z": 2.11} }}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id" : "box2", "action": "create", "type": "object", "data": {"material": {"color": "red"}, "object_type": "box", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -2.88, "y": 2.80, "z": -2.12} }}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id" : "box3", "action": "create", "type": "object", "data": {"material": {"color": "red"}, "object_type": "box", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": -0.09, "y": 1.30, "z": -3.66} }}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id" : "box4", "action": "create", "type": "object", "data": {"material": {"color": "red"}, "object_type": "box", "scale":  {"x": 0.2, "y": 0.2, "z": 0.2}, "position": {"x": 3.31, "y": 2.00, "z": -0.97} }}'
 ```
 
 # Messaging Format Reference
@@ -93,7 +93,7 @@ This is a reference list of primitives and how these can be created by interacti
 Instantiate a cube and set all of it's basic parameters.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "cube_1", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 1, "y": 1, "z": -1}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}, "color": "#FF0000"}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "cube_1", "action": "create", "type": "object", "data": {"object_type": "box", "position": {"x": 1, "y": 1, "z": -1}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}, "material": {"color": "#FF0000"}}}'
 ```
 
 ## Color
@@ -101,7 +101,7 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "cube_1", "action": "c
 Change only the color of the already-drawn cube.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "cube_1", "action": "update", "type": "object", "data": {"material": {"color": "#00FF00"}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "cube_1", "action": "update", "type": "object", "data": {"material": {"material": {"color": "#00FF00"}}}}'
 ```
 
 ## Transparency
@@ -172,7 +172,7 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "image_2", "action": "
 Use the `multisrc` A-Frame Component to specify different bitmaps for sides of a cube or other primitive shape.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "die1", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 0, "y": 0.5, "z": -2}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}, "color": "#ffffff", "dynamic-body": {"type": "dynamic"}, "multisrc": {"srcspath": "images/dice/", "srcs": "side1.png, side2.png, side3.png, side4.png, side5.png, side6.png"}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "die1", "action": "create", "type": "object", "data": {"object_type": "box", "position": {"x": 0, "y": 0.5, "z": -2}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}, "material": {"color": "#ffffff"}, "dynamic-body": {"type": "dynamic"}, "multisrc": {"srcspath": "images/dice/", "srcs": "side1.png, side2.png, side3.png, side4.png, side5.png, side6.png"}}}'
 ```
 
 ## Other Primitives: TorusKnot
@@ -180,9 +180,9 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "die1", "action": "cre
 Instantiate a wacky torusKnot, then turn it blue. Other primitive types are available in the in [A-Frame docs](https://aframe.io/docs/1.4.0/components/geometry.html#built-in-geometries). Here is a brief list: **box circle cone cylinder dodecahedron icosahedron tetrahedron octahedron plane ring sphere torus torusKnot triangle**.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "torusKnot_1", "action": "create", "type": "object", "data": {"object_type": "torusKnot", "color": "red", "position": {"x": 0, "y": 1, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "torusKnot_1", "action": "create", "type": "object", "data": {"object_type": "torusKnot", "material": {"color": "red"}, "position": {"x": 0, "y": 1, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}'
 
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "torusKnot_1", "action": "update", "type": "object", "data": {"material": {"color": "blue"}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "torusKnot_1", "action": "update", "type": "object", "data": {"material": {"material": {"color": "blue"}}}}'
 ```
 
 ## Models
@@ -241,13 +241,13 @@ This assumes we know our camera ID. One way to find out your camera ID is, autom
 Add some red text that says "Hello World".
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "text_3", "action": "create", "type": "object", "data": {"color": "red", "text": "Hello world!", "object_type": "text", "position": {"x": 0, "y": 3, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "text_3", "action": "create", "type": "object", "data": {"material": {"color": "red"}, "value": "Hello world!", "object_type": "text", "position": {"x": 0, "y": 3, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}'
 ```
 
 Change text color properties [A-Frame Text](https://aframe.io/docs/0.9.0/components/text.html#properties).
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "text_3", "action": "update", "type": "object", "data": {"text": {"color": "green"}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "text_3", "action": "update", "type": "object", "data": {"text": {"material": {"color": "green"}}}}'
 ```
 
 ## Lights
@@ -255,13 +255,13 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "text_3", "action": "u
 Create a red light in the scene.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "light_3", "action": "create", "type": "object", "data": {"object_type": "light", "position": {"x": 1, "y": 1, "z": 1}, "rotation": {"x": 0.25, "y": 0.25, "z": 0, "w": 1}, "color": "#FF0000"}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "light_3", "action": "create", "type": "object", "data": {"object_type": "light", "position": {"x": 1, "y": 1, "z": 1}, "rotation": {"x": 0.25, "y": 0.25, "z": 0, "w": 1}, "material": {"color": "#FF0000"}}}'
 ```
 
 Default is ambient light. To change type, or other light [A-Frame Light](https://aframe.io/docs/0.9.0/components/light.html) parameters, example: change to **directional**. Options: **ambient, directional, hemisphere, point, spot**.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "light_3", "action": "update", "type": "object", "data": {"light": {"type": "directional"}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "light_3", "action": "update", "type": "object", "data": {"object_type": "light", "type": "directional"}}'
 ```
 
 ## Sound
@@ -269,7 +269,7 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "light_3", "action": "
 Play toy piano sound from a URL when you click a cube. Sets click-listener Component, waveform URL, and sound attribute.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "box_asharp", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 2.5, "y": 0.25, "z": -5}, "scale": {"x": 0.8, "y": 1, "z": 1}, "color": "#000000", "sound": {"src": "url(https://arenaxr.org/audio/toypiano/Asharp1.wav)", "on": "mousedown"}, "click-listener": ""}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "box_asharp", "action": "create", "type": "object", "data": {"object_type": "box", "position": {"x": 2.5, "y": 0.25, "z": -5}, "scale": {"x": 0.8, "y": 1, "z": 1}, "material": {"color": "#000000"}, "sound": {"src": "url(https://arenaxr.org/audio/toypiano/Asharp1.wav)", "on": "mousedown"}, "click-listener": ""}}'
 ```
 
 ## 360 Video
@@ -277,7 +277,7 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "box_asharp", "action"
 Draw a sphere, set the texture src to be an equirectangular video, on the 'back' (inside).
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "sphere_vid", "action": "create", "type": "object", "data": {"object_type": "sphere", "scale": {"x": 200, "y": 200, "z": 200}, "rotation": {"x": 0, "y": 0.7, "z": 0, "w": 0.7}, "color": "#808080", "material": {"src": "images/360falls.mp4", "side": "back"}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "sphere_vid", "action": "create", "type": "object", "data": {"object_type": "sphere", "scale": {"x": 200, "y": 200, "z": 200}, "rotation": {"x": 0, "y": 0.7, "z": 0, "w": 0.7}, "material": {"color": "#808080"}, "material": {"src": "images/360falls.mp4", "side": "back"}}}'
 ```
 
 ## Lines
@@ -285,13 +285,13 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "sphere_vid", "action"
 Draw a purple line from (2, 2, 2) to (3, 3, 3).
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "line_1", "action": "create", "type": "object", "data": {"object_type": "line", "start": {"x": 2, "y": 2, "z": 2}, "end": {"x": 3, "y": 3, "z": 3}, "color": "#CE00FF"}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "line_1", "action": "create", "type": "object", "data": {"object_type": "line", "start": {"x": 2, "y": 2, "z": 2}, "end": {"x": 3, "y": 3, "z": 3}, "material": {"color": "#CE00FF"}}}'
 ```
 
 Extend the line with a new segment, colored green.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "line_1", "action": "update", "type": "object", "data": {"line__2": {"start": {"x": 3, "y": 3, "z": 3}, "end": {"x": 4, "y": 4, "z": 4}, "color": "#00FF00"}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "line_1", "action": "update", "type": "object", "data": {"line__2": {"start": {"x": 3, "y": 3, "z": 3}, "end": {"x": 4, "y": 4, "z": 4}, "material": {"color": "#00FF00"}}}}'
 ```
 
 ## Thicklines
@@ -299,13 +299,13 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "line_1", "action": "u
 A "thickline" (to improve openpose skeleton rendering visibility) - works like a line, but the `lineWidth` value specifies thickness, and multiple points can be specified at once, e.g. draw a pink line 11 pixels thick from 0, 0, 0 to 1, 0, 0 to 1, 1, 0 to 1, 1, 1. The shorthand syntax for coordinates is a bonus feature of lower level code; extending it for the rest of ARENA commands remains as an enhancement.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "thickline_8", "action": "create", "type": "object", "data": {"object_type": "thickline", "lineWidth": 11, "color": "#FF88EE", "path": "0 0 0, 1 0 0, 1 1 0, 1 1 1"}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "thickline_8", "action": "create", "type": "object", "data": {"object_type": "thickline", "lineWidth": 11, "material": {"color": "#FF88EE"}, "path": "0 0 0, 1 0 0, 1 1 0, 1 1 1"}}'
 ```
 
 You might be wondering, why can't normal lines just use the scale value to specify thickness? But this one goes to eleven! Really though, normal lines perform faster. To update a "thickline" takes a special syntax because thicklines are really "meshline"s.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "thickline_8", "action": "update", "type": "object", "data": {"meshline": {"lineWidth": 11, "color": "#FFFFFF", "path": "0 0 0, 0 0 1"}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "thickline_8", "action": "update", "type": "object", "data": {"meshline": {"lineWidth": 11, "material": {"color": "#ffffff"}, "path": "0 0 0, 0 0 1"}}}'
 ```
 
 ## Events
@@ -321,7 +321,7 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "cube_1", "action": "u
 If we want our objects to return to the scene when we next open or reload our browser, we can commit them on creation to the ARENA Persistence DB by setting `"persist": true`.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "Ball2", "action": "create", "persist": true, "data": {"position": {"x": -1, "y": 1, "z": -1}, "color": "blue", "object_type": "sphere"}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "Ball2", "action": "create", "persist": true, "data": {"position": {"x": -1, "y": 1, "z": -1}, "material": {"color": "blue"}, "object_type": "sphere"}}'
 ```
 
 ## Temporary Objects: TTL
@@ -329,7 +329,7 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "Ball2", "action": "cr
 It's desirable to have objects that don't last forever and pile up. For that there is the 'ttl' parameter that gives objects a lifetime, in seconds. This is an example usage for a sphere that disappears after 5 seconds.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "Ball2", "action": "create", "ttl": 5, "data": {"position": {"x": -1, "y": 1, "z": -1}, "color": "blue", "object_type": "sphere"}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "Ball2", "action": "create", "ttl": 5, "data": {"position": {"x": -1, "y": 1, "z": -1}, "material": {"color": "blue"}, "object_type": "sphere"}}'
 ```
 
 ## Transparent Occlusion
@@ -389,9 +389,9 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "box_3", "action": "up
 One physics feature is applying an impulse to an object to set it in motion. This happens in conjunction with an event. As an example, here are messages setting objects fallBox and fallBox2 to respond to `mouseup` and `mousedown` messages with an impulse with a certain force and position.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "fallBox2", "action": "create", "type": "object", "data": {"object_type": "cube", "dynamic-body": {"type": "dynamic"}, "impulse": {"on": "mousedown", "force": "1 50 1", "position": "1 1 1"}, "click-listener": "", "position": {"x": 0.1, "y": 4.5, "z": -4}, "scale": {"x": 0.5, "y": 0.5, "z": 0.5}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "fallBox2", "action": "create", "type": "object", "data": {"object_type": "box", "dynamic-body": {"type": "dynamic"}, "impulse": {"on": "mousedown", "force": "1 50 1", "position": "1 1 1"}, "click-listener": "", "position": {"x": 0.1, "y": 4.5, "z": -4}, "scale": {"x": 0.5, "y": 0.5, "z": 0.5}}}'
 
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "fallBox", "action": "create", "type": "object", "data": {"object_type": "cube", "dynamic-body": {"type": "dynamic"}, "impulse": {"on": "mouseup", "force": "1 50 1", "position": "1 1 1"}, "click-listener": "", "position": {"x": 0, "y": 4, "z": -4}, "scale": {"x": 0.5, "y": 0.5, "z": 0.5}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "fallBox", "action": "create", "type": "object", "data": {"object_type": "box", "dynamic-body": {"type": "dynamic"}, "impulse": {"on": "mouseup", "force": "1 50 1", "position": "1 1 1"}, "click-listener": "", "position": {"x": 0, "y": 4, "z": -4}, "scale": {"x": 0.5, "y": 0.5, "z": 0.5}}}'
 ```
 
 ## Parent/Child Linking
@@ -411,7 +411,7 @@ Child objects inherit attributes of their parent, for example scale. Scale the p
 Navigates to entirely new page into browser when clicked, or other event (requires `click-listener`).
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "cube_1", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 1, "y": 1, "z": -1}, "click-listener": "", "goto-url": { "dest": "newtab", "on": "mousedown", "url": "http: www.eet.com"}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "cube_1", "action": "create", "type": "object", "data": {"object_type": "box", "position": {"x": 1, "y": 1, "z": -1}, "click-listener": "", "goto-url": { "dest": "newtab", "on": "mousedown", "url": "http: www.eet.com"}}}'
 ```
 
 ## Landmark
@@ -419,7 +419,7 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "cube_1", "action": "c
 Creates a landmark that can be teleported to from the UI list, or is one of the random starting positions for the scene
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "cube_1", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 1, "y": 1, "z": -1}, "landmark": { "label": "Cube 1", "randomRadiusMin": 1, "randomRadiusMax": 2, "lookAtLandmark": true }}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "cube_1", "action": "create", "type": "object", "data": {"object_type": "box", "position": {"x": 1, "y": 1, "z": -1}, "landmark": { "label": "Cube 1", "randomRadiusMin": 1, "randomRadiusMax": 2, "lookAtLandmark": true }}}'
 ```
 
 ## Particles
@@ -429,11 +429,11 @@ Particles are based on [aframe-spe-particles-component](https://github.com/harly
 For now, it's not directly supported, but rather by passing JSON inside the `data{}` element. The syntax for parameter names has been updated so instead of a name like this that is `space-separated` it becomes `spaceSeparated` (camel case). Three examples here have been created starting with the examples in [aframe-spe-particles-component examples](https://harlyq.github.io/aframe-spe-particles-component/) then reformulating to ARENA JSON syntax.
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "smoke", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 0, "y": 1, "z": -3.9}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.01, "y": 0.01, "z": 0.01}, "color": "#ffffff", "spe-particles": {"texture": "textures/fog.png", "velocity": "1 30 0", "velocitySpread": "2 1 0.2", "particleCount": 50, "maxAge": 4, "size": "3, 8", "opacity": "0, 1, 0", "color": "#aaa, #222"}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "smoke", "action": "create", "type": "object", "data": {"object_type": "entity", "position": {"x": 0, "y": 1, "z": -3.9}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.01, "y": 0.01, "z": 0.01}, "spe-particles": {"texture": "textures/fog.png", "velocity": "1 30 0", "velocitySpread": "2 1 0.2", "particleCount": 50, "maxAge": 4, "size": "3, 8", "opacity": "0, 1, 0", "color": "#aaa, #222"}}}'
 
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "flames", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 0, "y": 1, "z": -3.8}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.01, "y": 0.01, "z": 0.01}, "color": "#ffffff", "spe-particles": {"texture": "textures/explosion_sheet.png", "textureFrames": "5 5", "velocity": "4 100 0", "acceleration": "0 10 0", "accelerationSpread": "0 10 0", "velocitySpread": "4 0 4", "particleCount": 15, "maxAge": 1, "size": "4, 8", "sizeSpread": 2, "opacity": "1, 0", "wiggle": "0 1 0", "blending": "additive"}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "flames", "action": "create", "type": "object", "data": {"object_type": "entity", "position": {"x": 0, "y": 1, "z": -3.8}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.01, "y": 0.01, "z": 0.01}, "spe-particles": {"texture": "textures/explosion_sheet.png", "textureFrames": "5 5", "velocity": "4 100 0", "acceleration": "0 10 0", "accelerationSpread": "0 10 0", "velocitySpread": "4 0 4", "particleCount": 15, "maxAge": 1, "size": "4, 8", "sizeSpread": 2, "opacity": "1, 0", "wiggle": "0 1 0", "blending": "additive"}}}'
 
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "sparks", "action": "create", "type": "object", "data": {"object_type": "cube", "position": {"x": 0, "y": 1, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.01, "y": 0.01, "z": 0.01}, "color": "#ffffff", "spe-particles": {"texture": "textures/square.png", "color": "yellow, red", "particleCount": 3, "maxAge": 0.5, "maxAgeSpread": 1, "velocity": "40 200 40", "velocitySpread": "10 3 10", "wiggle": "50 0 50", "wiggleSpread": "15 0 15", "emitterScale": 8, "sizeSpread": 10, "randomizeVelocity": true}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "sparks", "action": "create", "type": "object", "data": {"object_type": "entity", "position": {"x": 0, "y": 1, "z": -4}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.01, "y": 0.01, "z": 0.01}, "spe-particles": {"texture": "textures/square.png", "color": "yellow, red", "particleCount": 3, "maxAge": 0.5, "maxAgeSpread": 1, "velocity": "40 200 40", "velocitySpread": "10 3 10", "wiggle": "50 0 50", "wiggleSpread": "15 0 15", "emitterScale": 8, "sizeSpread": 10, "randomizeVelocity": true}}}'
 ```
 
 Particles are very complicated and take a lot of parameters. It would not make sense to translate all of them into explicit ARENA types, thus this flexible 'raw JSON' format is used.
@@ -481,7 +481,7 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "scene", "action": "up
 Customize the fog (notice 3 character hexadecimal color representation):
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "scene", "action": "update", "type": "object", "data": {"fog": {"type": "linear", "color": "#F00"}}}'
+arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "scene", "action": "update", "type": "object", "data": {"fog": {"type": "linear", "material": {"color": "#F00"}}}}'
 ```
 
 Remove the "enter VR" icon:
