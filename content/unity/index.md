@@ -21,9 +21,13 @@ Unity C# library for editing scenes and creating applications for the ARENA.
     - `Scripted Define Symbols` to include:
         - `SSL`
 1. You may need to install [`git`](https://git-scm.com/) if it doesn't come preinstalled on your OS (Windows 10).
-1. Open `Window > Package Manager` and `+ > Add package from git URL...`, use this link:
+1. Open `Window > Package Manager` and `+ > Add package from git URL...`, use this link for the latest:
     ```
     https://github.com/arenaxr/arena-unity.git
+    ```
+    or this for a specific version:
+    ```
+    https://github.com/arenaxr/arena-unity.git#v0.10.1
     ```
 1. Create an empty GameObject to use as ARENA client root, rename it to something meaningful, like: `ARENA`.
 1. Select the `ARENA` GameObject and press `Add Component` to add the `ArenaClientScene` script.
