@@ -60,12 +60,12 @@ GLTF Model Attributes
 |shadow|[shadow](shadow)||shadow|No|
 |sound|[sound](sound)||The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position. |No|
 |textinput|[textinput](textinput)||Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.|No|
-|screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
 |remote-render|[remote-render](remote-render)||Whether or not an object should be remote rendered [Experimental]|No|
 |video-control|[video-control](video-control)||Video Control|No|
 |attribution|[attribution](attribution)||Attribution Component. Saves attribution data in any entity.|No|
 |particle-system|[particle-system](particle-system)||Particle system component for A-Frame. |No|
 |spe-particles|[spe-particles](spe-particles)||GPU based particle systems in A-Frame. |No|
+|look-at|string||The look-at component defines the behavior for an entity to dynamically rotate or face towards another entity or position. Use '#my-camera' to face the user camera, otherwise can take either a vec3 position or a query selector to another entity.|No|
 |animation-mixer|[animation-mixer](animation-mixer)||A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'. |No|
 |gltf-model-lod|[gltf-model-lod](gltf-model-lod)||Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance|No|
 |modelUpdate|[modelUpdate](modelUpdate)||The GLTF-specific `modelUpdate` attribute is an object with child component names as keys. The top-level keys are the names of the child components to be updated. The values of each are nested `position` and `rotation` attributes to set as new values, respectively. Either `position` or `rotation` can be omitted if unchanged.|No|

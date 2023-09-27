@@ -34,42 +34,12 @@ Line Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```line```|```line```|3D object type.|Yes|
-|end|[vector3](vector3)|```{'x': -0.5, 'y': -0.5, 'z': 0}```|vertex B (end)|Yes|
-|opacity|number|```1```|Line Opacity|No|
-|start|[vector3](vector3)|```{'x': 0, 'y': 0.5, 'z': 0}```|vertex A (start)|Yes|
-|visible|boolean|```True```|Visible|No|
+|color|string|```#7f7f7f```|Line color.|No|
+|end|[vector3](vector3)|```{'x': -0.5, 'y': -0.5, 'z': 0}```|End coordinate.|Yes|
+|opacity|number|```1```|Line opacity.|No|
+|start|[vector3](vector3)|```{'x': 0, 'y': 0.5, 'z': 0}```|Start point coordinate.|Yes|
+|visible|boolean|```True```|Whether the material is visible.|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)||3D object position|No|
 |rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
 |scale|[scale](scale)||3D object scale|No|
-|animation|[animation](animation)||Animate and tween values. |No|
-|armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|
-|click-listener|[click-listener](click-listener)||Object will listen for clicks|No|
-|box-collision-listener|[box-collision-listener](box-collision-listener)||Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps|No|
-|collision-listener|string||Name of the collision-listener, default can be empty string. Collisions trigger click events|No|
-|blip|[blip](blip)||When the object is created or deleted, it will animate in/out of the scene instead of appearing/disappearing instantly. Must have a geometric mesh.|No|
-|dynamic-body|[dynamic-body](dynamic-body)||Physics type attached to the object. |No|
-|goto-landmark|[goto-landmark](goto-landmark)||Teleports user to the landmark with the given name; Requires click-listener|No|
-|goto-url|[goto-url](goto-url)||Goto given URL; Requires click-listener|No|
-|hide-on-enter-ar|boolean; Must be: ```True```|```True```|Hide object when entering AR. Remove component to *not* hide|No|
-|hide-on-enter-vr|boolean; Must be: ```True```|```True```|Hide object when entering VR. Remove component to *not* hide|No|
-|show-on-enter-ar|boolean; Must be: ```True```|```True```|Show object when entering AR. Hidden otherwise|No|
-|show-on-enter-vr|boolean; Must be: ```True```|```True```|Show object when entering VR. Hidden otherwise|No|
-|impulse|[impulse](impulse)||The force applied using physics. Requires click-listener|No|
-|landmark|[landmark](landmark)||Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists)|No|
-|material-extras|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component. |No|
-|shadow|[shadow](shadow)||shadow|No|
-|sound|[sound](sound)||The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position. |No|
-|textinput|[textinput](textinput)||Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.|No|
-|url|string||Model URL. Store files paths under 'store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|No|
-|screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
-|remote-render|[remote-render](remote-render)||Whether or not an object should be remote rendered [Experimental]|No|
-|video-control|[video-control](video-control)||Video Control|No|
-|attribution|[attribution](attribution)||Attribution Component. Saves attribution data in any entity.|No|
-|particle-system|[particle-system](particle-system)||Particle system component for A-Frame. |No|
-|spe-particles|[spe-particles](spe-particles)||GPU based particle systems in A-Frame. |No|
-|buffer|boolean|```True```|Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate (geometries only: box, circle, cone, ...).|No|
-|jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
-|material|[material](material)||The material properties of the object’s surface. |No|
-|multisrc|[multisrc](multisrc)||Define multiple visual sources applied to an object.|No|
-|skipCache|boolean|```False```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|

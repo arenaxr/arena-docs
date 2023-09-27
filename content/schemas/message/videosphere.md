@@ -49,4 +49,5 @@ Videosphere Attributes
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
 |material|[material](material)||The material properties of the object’s surface. |No|
 |multisrc|[multisrc](multisrc)||Define multiple visual sources applied to an object.|No|
+|screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
 |skipCache|boolean|```False```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|
