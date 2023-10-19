@@ -1,6 +1,6 @@
 ---
 title: Videosphere
-nav_order: 68
+nav_order: 69
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -37,13 +37,13 @@ Videosphere Attributes
 |autoplay|boolean|```True```|autoplay|No|
 |crossOrigin|string|```'anonymous'```|crossOrigin|No|
 |loop|boolean|```True```|loop|No|
-|radius|number|```5000```|radius|No|
+|radius|number|```5000```|radius|Yes|
 |segmentsHeight|integer|```64```|segments height|No|
 |segmentsWidth|integer|```64```|segments width|No|
 |src|string||URI, relative or full path of an image/video file. e.g. 'store/users/wiselab/images/360falls.mp4'|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|
-|rotation|[rotation](rotation)|```{'w': 1, 'x': 0, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
+|position|[position](position)||3D object position|Yes|
+|rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
 |scale|[scale](scale)||3D object scale|No|
 |buffer|boolean|```True```|Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate (geometries only: box, circle, cone, ...).|No|
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|

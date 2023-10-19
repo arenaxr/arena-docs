@@ -1,6 +1,6 @@
 ---
 title: Ocean
-nav_order: 38
+nav_order: 39
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -41,9 +41,9 @@ Ocean Attributes
 |amplitudeVariance|number|```0.3```|Wave amplitude variance.|No|
 |speed|number|```1```|Wave speed.|No|
 |speedVariance|number|```2```|Wave speed variance.|No|
-|color|string|```#7AD2F7```|Wave color.|Yes|
+|color|string|```'#7AD2F7'```|Wave color.|Yes|
 |opacity|number|```0.8```|Wave opacity.|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)||3D object position|No|
-|rotation|[rotation](rotation)|```{'w': -0.70711, 'x': 0.70711, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
+|position|[position](position)||3D object position|Yes|
+|rotation|[rotation](rotation)|```{'w': -0.70711, 'x': 0.70711, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
 |scale|[scale](scale)||3D object scale|No|

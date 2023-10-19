@@ -34,15 +34,15 @@ Cube (deprecated; don't use) Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```cube```|```cube```|3D object type.|Yes|
-|depth|number|```1```|depth|No|
-|height|number|```1```|height|No|
+|depth|number|```1```|depth|Yes|
+|height|number|```1```|height|Yes|
 |segmentsDepth|integer|```1```|segments depth|No|
 |segmentsHeight|integer|```1```|segments height|No|
 |segmentsWidth|integer|```1```|segments width|No|
-|width|number|```1```|width|No|
+|width|number|```1```|width|Yes|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)||3D object position|No|
-|rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
+|position|[position](position)||3D object position|Yes|
+|rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
 |scale|[scale](scale)||3D object scale|No|
 |animation|[animation](animation)||Animate and tween values. |No|
 |armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|
@@ -72,7 +72,7 @@ Cube (deprecated; don't use) Attributes
 |look-at|string||The look-at component defines the behavior for an entity to dynamically rotate or face towards another entity or position. Use '#my-camera' to face the user camera, otherwise can take either a vec3 position or a query selector to another entity.|No|
 |buffer|boolean|```True```|Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate (geometries only: box, circle, cone, ...).|No|
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
-|material|[material](material)||The material properties of the object’s surface. |No|
+|material|[material](material)|```{'color': '#7f7f7f'}```|The material properties of the object’s surface. |No|
 |multisrc|[multisrc](multisrc)||Define multiple visual sources applied to an object.|No|
 |screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
 |skipCache|boolean|```False```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|

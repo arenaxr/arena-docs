@@ -1,6 +1,6 @@
 ---
 title: Torus Knot
-nav_order: 64
+nav_order: 65
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -37,12 +37,12 @@ Torus Knot Attributes
 |p|number|```2```|P|No|
 |q|number|```3```|Q|No|
 |radius|number|```1```|radius|Yes|
-|radiusTubular|number|```0.4```|radius tubular|No|
+|radiusTubular|number|```0.2```|radius tubular|Yes|
 |segmentsRadial|integer|```8```|segments radial|No|
 |segmentsTubular|integer|```100```|segments tubular|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|
-|rotation|[rotation](rotation)|```{'w': 1, 'x': 0, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
+|position|[position](position)||3D object position|Yes|
+|rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
 |scale|[scale](scale)||3D object scale|No|
 |animation|[animation](animation)||Animate and tween values. |No|
 |armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|

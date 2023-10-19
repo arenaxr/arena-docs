@@ -1,6 +1,6 @@
 ---
 title: Light
-nav_order: 32
+nav_order: 33
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -38,13 +38,13 @@ Light Attributes
 |object_type|string; Must be: ```light```|```light```|3D object type.|Yes|
 |angle|number|```60```|Maximum extent of spot light from its direction (in degrees). NOTE: Spot light type only.|No|
 |castShadow|boolean|```False```|castShadow (point, spot, directional)|No|
-|color|string|```#ffffff```|Light color.|No|
-|decay|number|```1.0```|Amount the light dims along the distance of the light. NOTE: Point and Spot light type only.|No|
-|distance|number|```0.0```|Distance where intensity becomes 0. If distance is 0, then the point light does not decay with distance. NOTE: Point and Spot light type only.|No|
+|color|string|```'#ffffff'```|Light color.|Yes|
+|decay|number|```1```|Amount the light dims along the distance of the light. NOTE: Point and Spot light type only.|No|
+|distance|number|```0```|Distance where intensity becomes 0. If distance is 0, then the point light does not decay with distance. NOTE: Point and Spot light type only.|No|
 |groundColor|string|```'#ffffff'```|Light color from below. NOTE: Hemisphere light type only|No|
-|intensity|number|```1```|Light strength.|No|
+|intensity|number|```1```|Light strength.|Yes|
 |light|[light](light)||DEPRECATED: data.light.[property] is deprecated, use object_type: light and data.[property] instead.|No|
-|penumbra|number|```0.0```|Percent of the spotlight cone that is attenuated due to penumbra. NOTE: Spot light type only.|No|
+|penumbra|number|```0```|Percent of the spotlight cone that is attenuated due to penumbra. NOTE: Spot light type only.|No|
 |shadowBias|number|```0```|shadowBias (castShadow=true)|No|
 |shadowCameraBottom|number|```-5```|shadowCameraBottom (castShadow=true)|No|
 |shadowCameraFar|number|```500```|shadowCameraFar (castShadow=true)|No|
@@ -58,11 +58,11 @@ Light Attributes
 |shadowMapWidth|number|```512```|shadowMapWidth (castShadow=true)|No|
 |shadowRadius|number|```1```|shadowRadius (castShadow=true)|No|
 |target|string|```'None'```|Id of element the spot should point to. set to null to transform spotlight by orientation, pointing to it’s -Z axis. NOTE: Spot light type only.|No|
-|type|string; One of: ```['ambient', 'directional', 'hemisphere', 'point', 'spot']```|```directional```|One of ambient, directional, hemisphere, point, spot.|No|
+|type|string; One of: ```['ambient', 'directional', 'hemisphere', 'point', 'spot']```|```'directional'```|One of ambient, directional, hemisphere, point, spot.|Yes|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|
-|rotation|[rotation](rotation)|```{'w': 1, 'x': 0, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
-|scale|[scale](scale)|```{'x': 1, 'y': 1, 'z': 1}```|3D object scale|No|
+|position|[position](position)||3D object position|Yes|
+|rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
+|scale|[scale](scale)||3D object scale|No|
 |animation|[animation](animation)||Animate and tween values. |No|
 |armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|
 |click-listener|[click-listener](click-listener)||Object will listen for clicks|No|

@@ -1,6 +1,6 @@
 ---
 title: Material extras
-nav_order: 34
+nav_order: 35
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -23,7 +23,7 @@ Material extras Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |overrideSrc|string|```''```|Overrides the material source in all meshes of an object (e.g. a basic shape or a GLTF); Use, for example, to change the texture of a GLTF.|No|
-|encoding|string; One of: ```['LinearEncoding', 'sRGBEncoding', 'GammaEncoding', 'RGBEEncoding', 'LogLuvEncoding', 'RGBM7Encoding', 'RGBM16Encoding', 'RGBDEncoding', 'BasicDepthPacking', 'RGBADepthPacking']```|```sRGBEncoding```|encoding|No|
+|encoding|string; One of: ```['LinearEncoding', 'sRGBEncoding', 'GammaEncoding', 'RGBEEncoding', 'LogLuvEncoding', 'RGBM7Encoding', 'RGBM16Encoding', 'RGBDEncoding', 'BasicDepthPacking', 'RGBADepthPacking']```|```'sRGBEncoding'```|encoding|Yes|
 |colorWrite|boolean|```True```|Whether to render the material's color.|No|
 |renderOrder|number|```1```|Allows the default rendering order of scene graph objects to be overridden.|No|
 |transparentOccluder|boolean|```False```|If `true`, will set `colorWrite=false` and `renderOrder=0` to make the material a transparent occluder.|No|

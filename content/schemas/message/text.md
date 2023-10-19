@@ -1,6 +1,6 @@
 ---
 title: Text
-nav_order: 59
+nav_order: 60
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -36,30 +36,30 @@ Text Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```text```|```text```|3D object type.|Yes|
-|align|; One of: ```['left', 'center', 'right']```|```left```|Multi-line text alignment (left, center, right).|No|
+|align|string; One of: ```['left', 'center', 'right']```|```'left'```|Multi-line text alignment (left, center, right).|No|
 |alphaTest|number|```0.5```|Discard text pixels if alpha is less than this value.|No|
-|anchor|; One of: ```['left', 'right', 'center', 'align']```|```center```|Horizontal positioning (left, center, right, align).|No|
-|baseline|; One of: ```['top', 'center', 'bottom']```|```center```|Vertical positioning (top, center, bottom).|No|
-|color|string|```white```|Text color.|No|
-|font|string; One of: ```['aileronsemibold', 'dejavu', 'exo2bold', 'exo2semibold', 'kelsonsans', 'monoid', 'mozillavr', 'roboto', 'sourcecodepro']```|```roboto```|Font to render text, either the name of one of A-Frame's stock fonts or a URL to a font file|No|
+|anchor|string; One of: ```['left', 'right', 'center', 'align']```|```'center'```|Horizontal positioning (left, center, right, align).|No|
+|baseline|string; One of: ```['top', 'center', 'bottom']```|```'center'```|Vertical positioning (top, center, bottom).|No|
+|color|string|```'#000000'```|Text color.|Yes|
+|font|string; One of: ```['aileronsemibold', 'dejavu', 'exo2bold', 'exo2semibold', 'kelsonsans', 'monoid', 'mozillavr', 'roboto', 'sourcecodepro']```|```'roboto'```|Font to render text, either the name of one of A-Frame's stock fonts or a URL to a font file|Yes|
 |fontImage|string||Font image texture path to render text. Defaults to the font's name with extension replaced to .png. Don't need to specify if using a stock font. (derived from font name)|No|
 |height|number||Height of text block. (derived from text size)|No|
 |letterSpacing|number|```0```|Letter spacing in pixels.|No|
 |lineHeight|number||Line height in pixels. (derived from font file)|No|
 |negate|boolean|```True```|negate|No|
-|opacity|number|```1.0```|Opacity, on a scale from 0 to 1, where 0 means fully transparent and 1 means fully opaque.|No|
-|shader|; One of: ```['portal', 'flat', 'standard', 'sdf', 'msdf', 'ios10hls', 'skyshader', 'gradientshader']```|```sdf```|Shader used to render text.|No|
-|side|; One of: ```['front', 'back', 'double']```|```double```|Side to render. (front, back, double)|No|
+|opacity|number|```1```|Opacity, on a scale from 0 to 1, where 0 means fully transparent and 1 means fully opaque.|No|
+|shader|string; One of: ```['portal', 'flat', 'standard', 'sdf', 'msdf', 'ios10hls', 'skyshader', 'gradientshader']```|```'sdf'```|Shader used to render text.|No|
+|side|string; One of: ```['front', 'back', 'double']```|```'double'```|Side to render. (front, back, double)|Yes|
 |tabSize|number|```4```|Tab size in spaces.|No|
 |transparent|boolean|```True```|Whether text is transparent.|No|
-|value|string|``````|The actual content of the text. Line breaks and tabs are supported with \n and \t.|No|
-|whiteSpace|; One of: ```['normal', 'pre', 'nowrap']```|```normal```|How whitespace should be handled (i.e., normal, pre, nowrap).</a>|No|
+|value|string||The actual content of the text. Line breaks and tabs are supported with \n and \t.|Yes|
+|whiteSpace|string; One of: ```['normal', 'pre', 'nowrap']```|```'normal'```|How whitespace should be handled (i.e., normal, pre, nowrap).</a>|No|
 |width|number|```5```|Width in meters. (derived from geometry if exists)|No|
 |wrapCount|number|```40```|Number of characters before wrapping text (more or less).|No|
 |wrapPixels|number||Number of pixels before wrapping text. (derived from wrapCount)|No|
 |xOffset|number|```0```|X-offset to apply to add padding.|No|
 |zOffset|number|```0.001```|Z-offset to apply to avoid Z-fighting if using with a geometry as a background.|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|
-|rotation|[rotation](rotation)|```{'w': 1, 'x': 0, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
+|position|[position](position)||3D object position|Yes|
+|rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
 |scale|[scale](scale)||3D object scale|No|

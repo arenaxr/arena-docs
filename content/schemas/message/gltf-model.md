@@ -1,6 +1,6 @@
 ---
 title: GLTF Model
-nav_order: 24
+nav_order: 25
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -38,9 +38,9 @@ GLTF Model Attributes
 |object_type|string; Must be: ```gltf-model```|```gltf-model```|3D object type.|Yes|
 |url|string||Model URL. Store files paths under 'store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|Yes|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|Yes|
-|rotation|[rotation](rotation)|```{'w': 1, 'x': 0, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
-|scale|[scale](scale)|```{'x': 1, 'y': 1, 'z': 1}```|3D object scale|Yes|
+|position|[position](position)||3D object position|Yes|
+|rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
+|scale|[scale](scale)||3D object scale|Yes|
 |animation|[animation](animation)||Animate and tween values. |No|
 |armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|
 |click-listener|[click-listener](click-listener)||Object will listen for clicks|No|

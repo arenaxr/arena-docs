@@ -1,6 +1,6 @@
 ---
 title: UI Panel
-nav_order: 40
+nav_order: 41
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -20,6 +20,6 @@ UI Panel Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|depth|number|```0.05```|depth|No|
-|height|number|```1```|height|No|
-|width|number|```1```|width|No|
+|depth|number|```0.05```|depth|Yes|
+|height|number|```1```|height|Yes|
+|width|number|```1```|width|Yes|

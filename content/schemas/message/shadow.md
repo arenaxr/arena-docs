@@ -1,6 +1,6 @@
 ---
 title: Shadow
-nav_order: 54
+nav_order: 55
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -20,5 +20,5 @@ Shadow Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|cast|boolean|```False```|Whether the entity casts shadows onto the surrounding scene|No|
-|receive|boolean|```False```|Whether the entity receives shadows from the surrounding scene|No|
+|cast|boolean|```False```|Whether the entity casts shadows onto the surrounding scene|Yes|
+|receive|boolean|```False```|Whether the entity receives shadows from the surrounding scene|Yes|

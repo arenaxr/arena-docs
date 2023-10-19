@@ -1,6 +1,6 @@
 ---
 title: Line
-nav_order: 33
+nav_order: 34
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -34,7 +34,7 @@ Line Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```line```|```line```|3D object type.|Yes|
-|color|string|```#7f7f7f```|Line color.|No|
+|color|string|```'#74BEC1'```|Line color.|Yes|
 |end|[vector3](vector3)|```{'x': -0.5, 'y': -0.5, 'z': 0}```|End coordinate.|Yes|
 |opacity|number|```1```|Line opacity.|No|
 |start|[vector3](vector3)|```{'x': 0, 'y': 0.5, 'z': 0}```|Start point coordinate.|Yes|

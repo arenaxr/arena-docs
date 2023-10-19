@@ -1,6 +1,6 @@
 ---
 title: Landmark
-nav_order: 31
+nav_order: 32
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -20,10 +20,10 @@ Landmark Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|randomRadiusMin|number|```0```|Minimum radius from the landmark to teleport to. (randomRadiusMax must > 0)|No|
-|randomRadiusMax|number|```0```|Maximum radius from the landmark to teleport to.|No|
+|randomRadiusMin|number|```0```|Minimum radius from the landmark to teleport to. (randomRadiusMax must > 0)|Yes|
+|randomRadiusMax|number|```0```|Maximum radius from the landmark to teleport to.|Yes|
 |offsetPosition|[vector3](vector3)|```{'x': 0, 'y': 1.6, 'z': 0}```|Use as a static teleport x,y,z offset|No|
 |constrainToNavMesh|string; One of: ```['false', 'any', 'coplanar']```|```'false'```|Teleports should snap to navmesh. Valid values: 'false', 'any', 'coplanar'|No|
 |startingPosition|boolean|```False```|Set to true to use this landmark as a scene start (spawn) position. If several landmarks with startingPosition=true exist in a scene, one will be randomly selected.|No|
-|lookAtLandmark|boolean|```True```|Set to true to make users face the landmark when teleported to it.|No|
+|lookAtLandmark|boolean|```True```|Set to true to make users face the landmark when teleported to it.|Yes|
 |label|string|```''```|Landmark description to display in the landmark list|Yes|

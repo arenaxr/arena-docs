@@ -33,14 +33,15 @@ ARENAUI Button Panel Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_type|string; Must be: ```arenaui-button-panel```|```arenaui-panel```|3D object type.|Yes|
-|buttons|array|```['Confirm', 'Cancel']```|Buttons|Yes|
-|title|string|``````|Title to display above buttons (optional).|Yes|
+|object_type|string; Must be: ```arenaui-button-panel```|```arenaui-button-panel```|3D object type.|Yes|
+|buttons|array|```[{'name': 'Option 1'}, {'name': 'Option 2'}]```|Buttons|Yes|
+|title|string|```''```|Title to display above buttons (optional).|Yes|
 |vertical|boolean|```False```|Vertical button layout|Yes|
 |font|string; One of: ```['Roboto', 'Roboto-Mono']```|```'Roboto'```|Font to use for button text|No|
+|theme|string; One of: ```['light', 'dark']```|```'light'```|Color Theme|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|
-|rotation|[rotation](rotation)|```{'w': 1, 'x': 0, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
+|position|[position](position)||3D object position|Yes|
+|rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
 |scale|[scale](scale)||3D object scale|No|
 |animation|[animation](animation)||Animate and tween values. |No|
 |armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|

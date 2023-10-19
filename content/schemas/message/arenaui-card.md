@@ -33,22 +33,23 @@ ARENAUI Card Panel Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_type|string; Must be: ```arenaui-card```|```arenaui-card-panel```|3D object type.|Yes|
-|title|string|``````|Title|Yes|
-|body|string|``````|This is the text body of the card.|Yes|
-|bodyAlign|string; One of: ```['left', 'center', 'right', 'justify']```|```left```|Body Text Alignment|No|
-|img|string|``````|This image will be embedded alongside the body text|Yes|
-|imgCaption|string|``````|This will caption the image|No|
+|object_type|string; Must be: ```arenaui-card```|```arenaui-card```|3D object type.|Yes|
+|title|string|```''```|Title|Yes|
+|body|string|```''```|This is the text body of the card.|Yes|
+|bodyAlign|string; One of: ```['left', 'center', 'right', 'justify']```|```'left'```|Body Text Alignment|No|
+|img|string|```''```|This image will be embedded alongside the body text|Yes|
+|imgCaption|string|```''```|This will caption the image|No|
 |imgDirection|string; One of: ```['left', 'right']```|```'right'```|Image Direction|No|
-|imgSize|string; One of: ```['cover', 'contain', 'stretch']```|```cover```|Image sizing|No|
+|imgSize|string; One of: ```['cover', 'contain', 'stretch']```|```'cover'```|Image sizing|No|
 |textImageRatio|number|```0.5```|Text to Image Width Ratio|No|
 |fontSize|number|```0.035```|Font Size|No|
 |widthScale|number|```1```|Width scale multiplier|No|
-|closeButton|boolean|```True```|Show close button|No|
+|closeButton|boolean|```False```|Show close button|No|
 |font|string; One of: ```['Roboto', 'Roboto-Mono']```|```'Roboto'```|Font to use for button text|No|
+|theme|string; One of: ```['light', 'dark']```|```'light'```|Color Theme|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)|```{'x': 0, 'y': 0, 'z': 0}```|3D object position|No|
-|rotation|[rotation](rotation)|```{'w': 1, 'x': 0, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
+|position|[position](position)||3D object position|Yes|
+|rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
 |scale|[scale](scale)||3D object scale|No|
 |animation|[animation](animation)||Animate and tween values. |No|
 |armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|
