@@ -3,6 +3,7 @@ title: Advanced Example
 nav_order: 4
 layout: default
 parent: Python Tutorial
+grand_parent: Python Library
 ---
 
 # Advanced Example - EVEN more functionality!

@@ -3,6 +3,7 @@ title: Beginner Example
 nav_order: 1
 layout: default
 parent: Python Tutorial
+grand_parent: Python Library
 ---
 
 # Beginner Example - The bare minimum you need to start using ARENA-py
