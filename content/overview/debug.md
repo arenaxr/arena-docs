@@ -1,6 +1,6 @@
 ---
 title: Debug Visually
-nav_order: 8
+nav_order: 9.8
 layout: tutorial
 parent: Overview
 ---

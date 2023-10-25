@@ -1,6 +1,6 @@
 ---
 title: miXed Reality
-nav_order: 5
+nav_order: 1.3
 layout: tutorial
 parent: Overview
 ---

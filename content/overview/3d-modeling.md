@@ -1,6 +1,6 @@
 ---
 title: 3D Modeling
-nav_order: 8.3
+nav_order: 5.3
 layout: tutorial
 parent: Overview
 ---

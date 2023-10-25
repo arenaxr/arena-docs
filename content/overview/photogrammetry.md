@@ -1,6 +1,6 @@
 ---
 title: Photogrammetry
-nav_order: 8.2
+nav_order: 5.2
 layout: tutorial
 parent: Overview
 ---

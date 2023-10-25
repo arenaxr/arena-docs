@@ -1,6 +1,6 @@
 ---
 title: Panoramic Rooms
-nav_order: 6
+nav_order: 9.1
 layout: tutorial
 parent: Overview
 ---
