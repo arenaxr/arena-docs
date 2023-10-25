@@ -2,7 +2,7 @@
 title: Develop Python Programs
 nav_order: 5.7
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 # Introduction to ARENA Python Program Development

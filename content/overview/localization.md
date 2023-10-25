@@ -2,7 +2,7 @@
 title: XR Localization for ARENA
 nav_order: 5.8
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 **XR Localization for ARENA**

@@ -2,7 +2,7 @@
 title: Debug Visually
 nav_order: 9.8
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 # Debugging ARENA Web Browser Visually

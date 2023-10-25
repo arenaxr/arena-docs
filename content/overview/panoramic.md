@@ -2,7 +2,7 @@
 title: Panoramic Rooms
 nav_order: 9.1
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 # Panoramic Video Rooms

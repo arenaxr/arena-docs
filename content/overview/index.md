@@ -1,9 +1,23 @@
 ---
-title: Overview
+title: Tutorial
 nav_order: 1
 layout: tutorial
 has_children: true
 ---
+
+# ARENA Tutorial Overview
+
+You can learn the basics of the interface and [enter an ARENA scene](/content/overview/user-guide.html). Also learn about [building scenes](/content/overview/build.html), and how to develop [python programs](/content/overview/dev-guide.html) to define the behavior of your scenes.
+You can also see a more detailed description of the [ARENA architecture](/content/architecture/index.html).
+
+[ <img src="/assets/img/icons/first-time.svg" width="40"/> <br/>First Time in the ARENA ](/content/overview/user-guide.html){: .btn .mr-4  .intro-button}
+[ <img src="/assets/img/icons/scene.svg" width="40"/> <br/>Build a Scene ](/content/overview/build.html){: .btn .mr-4 .intro-button}
+<br/><br/>
+[ <img src="/assets/img/icons/code.svg" width="40"/> <br/>Develop Python Programs ](/content/overview/dev-guide.html){: .btn .mr-4  .intro-button}
+[ <img src="/assets/img/icons/arch.svg" width="40"/> <br/>ARENA Architecture ](/content/architecture/index.html){: .btn .mr-4  .intro-button}
+
+Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+{: .fs-1 }
 
 # ARENA Background
 
@@ -53,17 +67,3 @@ It is worth noting that a Scene’s address can be used to form a URL for virtua
 ### Runtime Management (ARTS)
 
 Execution of applications in a Scene is managed by a local resource manager (ARTS) that is also part of the Realm. ARTS is responsible for dispatching, monitoring and migrating for execution of programs to available runtimes.
-
-## Next Steps
-
-You can learn the basics of the interface and [enter an ARENA scene](/content/overview/user-guide.html). Also learn about [building scenes](/content/overview/build.html), and how to develop [python programs](/content/overview/dev-guide.html) to define the behavior of your scenes.
-You can also see a more detailed description of the [ARENA architecture](/content/architecture/index.html).
-
-[ <img src="/assets/img/icons/first-time.svg" width="40"/> <br/>First Time in the ARENA ](/content/overview/user-guide.html){: .btn .mr-4  .intro-button}
-[ <img src="/assets/img/icons/scene.svg" width="40"/> <br/>Build a Scene ](/content/overview/build.html){: .btn .mr-4 .intro-button}
-<br/><br/>
-[ <img src="/assets/img/icons/code.svg" width="40"/> <br/>Develop Python Programs ](/content/overview/dev-guide.html){: .btn .mr-4  .intro-button}
-[ <img src="/assets/img/icons/arch.svg" width="40"/> <br/>ARENA Architecture ](/content/architecture/index.html){: .btn .mr-4  .intro-button}
-
-Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-{: .fs-1 }

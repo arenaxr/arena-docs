@@ -2,7 +2,7 @@
 title: miXed Reality
 nav_order: 1.3
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 # Quick XR Experience Example

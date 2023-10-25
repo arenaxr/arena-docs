@@ -2,7 +2,7 @@
 title: Animations and Morph Targets
 nav_order: 5.4
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 **Animations and Morph Targets**

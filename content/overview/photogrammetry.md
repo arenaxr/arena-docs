@@ -2,7 +2,7 @@
 title: Photogrammetry
 nav_order: 5.2
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 **Photogrammetry**

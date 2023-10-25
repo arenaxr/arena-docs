@@ -2,7 +2,7 @@
 title: 3D Modeling
 nav_order: 5.3
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 **3D Modeling**

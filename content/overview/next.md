@@ -2,7 +2,7 @@
 title: Next Steps
 nav_order: 9.9
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 # Next Steps

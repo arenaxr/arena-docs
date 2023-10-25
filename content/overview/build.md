@@ -2,7 +2,7 @@
 title: Build Scenes
 nav_order: 5.6
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 # Build an ARENA Scene

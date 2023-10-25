@@ -2,7 +2,7 @@
 title: First Time in the ARENA
 nav_order: 1.1
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 # Entering ARENA for the First Time
@@ -25,7 +25,7 @@ The link above will open in a new tab. Since ARENA is a collaborative, multi-use
 
 {% include alert type="note" content="
 ARENA uses the concept of **scenes** to separate content. In a Virtual Reality (VR) environment, you can imagine each scene as a separate room.
-See the [ARENA Overview](/content/overview/#arena-scene) to learn more.
+See the [ARENA Tutorial](/content/overview/#arena-scene) to learn more.
 "%}
 
 ## Signing In

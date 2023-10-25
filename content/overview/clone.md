@@ -2,7 +2,7 @@
 title: Quick Meetings
 nav_order: 1.2
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 # Sharing a Link to a Meeting Space
