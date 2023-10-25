@@ -14,7 +14,7 @@ Reality; AR). A spectrum often identified as miXed Reality (XR). Try the
 following for a quick sample of AR using ARENA by opening a pre-made
 scene and anchoring it in the real world with an optical marker.
 
-**Using April Tags**
+## **Using April Tags**
 
 Modern phones and tablets support pass-through augmented reality (AR)
 with 3D digital content overlaid on top of back-facing camera
@@ -90,7 +90,7 @@ More info about AprilTags and ARENA setup here:
 
 [https://docs.arenaxr.org/content/overview/xr.html](https://docs.arenaxr.org/content/overview/xr.html)
 
-**Using the VR Calibrator**
+## **Using the VR Calibrator**
 
 Virtual Reality (VR) headsets can also be anchored into the scene. Note:
 not all VR headsets natively support AprilTag anchoring (**including

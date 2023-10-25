@@ -28,7 +28,7 @@ level, span:
 This tutorial will provide practical experience using photogrammetry, you
 will learn more about the details later in the semester.
 
-**Setting up your workflow**
+## **Setting up your workflow**
 
 Download [Meshroom](https://alicevision.org/#meshroom), along
 with this
@@ -74,7 +74,7 @@ select Open Folder. You’ll find one OBJ file that contains the 3D model,
 two EXR files that represent texture maps, and one MTL file that
 describes how the model and texture files link to each other.
 
-**Capture your own model**
+## **Capture your own model**
 
 Now that you have reconstructed a model from the dataset, it’s time to
 collect your own data to build a model. All you need is to take images

@@ -21,7 +21,7 @@ meshes, holes, background noises, etc. This is when Blender comes to the
 rescue! We can use Blender to post-edit the model and clean up the
 artifacts.
 
-**Import your model**
+## **Import your model**
 
 To visualize your model, first locate your model save directory and
 import it into Blender (File -&gt; Import -&gt; .obj). After importing
@@ -37,7 +37,7 @@ style="width:2.89997in;height:1.84062in" />
 <img src="../../assets/img/overview/3d-modeling/media/image9.png"
 style="width:2.85112in;height:1.81986in" />
 
-**UV Mapping**
+## **UV Mapping**
 
 One important thing to understand is the process called UV Mapping. It
 involves projecting 2D images onto 3D models to create texture mapping,
@@ -57,7 +57,7 @@ different regions on the mesh.
 <img src="../../assets/img/overview/3d-modeling/media/image6.png"
 style="width:6in;height:3.31944in" />
 
-**Model Cleanup - Removing Incorrect Geometry**
+## **Model Cleanup - Removing Incorrect Geometry**
 
 From the model visualization we can clearly see that the sky is mapped
 at the wrong depth, and removing the sky will make the model cleaner and

@@ -76,18 +76,18 @@ Metadata exported from blender will be included in the GLTF file in the `scene.e
 Detailed GLTF models and textures can often have significant resource and visual load.
 
 For a given object, you can use a lower fidelity version or stand-in until a user is within a specified distance, at which
-point the gltf source is swapped out for a more detailed version. 
+point the gltf source is swapped out for a more detailed version.
 
-To use this feature, assign the [gltf-model-lod](/content/schemas/arena-aframe-components#module_gltf-model-lod) component to
+To use this feature, assign the [gltf-model-lod](/content/schemas/message/gltf-model-lod) component to
 your object, with the `gltf-model` component parameter set to the lower fidelity model URL.
 
 <img src="/assets/img/3dcontent/gltf-model-lod.png" width="714"/>
 
 Set the `detailedUrl` parameter to that of the corresponding detailed model, and choose a desired `detailedDistance`
-to switch between the models. 
+to switch between the models.
 
 Note that the distance is from the center of the object, so larger models
-should account for the additional distance from the center to the edge of the model. 
+should account for the additional distance from the center to the edge of the model.
 
 ## Chronos GLTF sample models
 

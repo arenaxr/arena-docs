@@ -10,7 +10,7 @@ parent: Tutorial
 We will now do a quick tour of a simple interface to edit ARENA scenes.
 We will see how to create a scene and add some content to it! 🏗️
 
-**Add a Scene**
+## **Add a Scene**
 
 Head to the build page in a new tab:
 [https://arenaxr.org/build/](https://arenaxr.org/build/)
@@ -74,7 +74,7 @@ of the page:
 Let us see the Scene Objects and Add/Edit Objects sections in a little
 more detail now:
 
-**Editing Object Properties**
+## **Editing Object Properties**
 
 Press the **\[Edit\]** button of the **scene options** object:
 
@@ -131,7 +131,7 @@ After making the edits, update the object by pressing the **\[+ Add/Update
 Object\]** button. You will have to reload the scene to have the new scene
 options applied.
 
-**Add new Objects**
+## **Add new Objects**
 
 Let us try to add a new object to our scene. We will add a GLTF model of
 the *Mammuthus primigenius (Blumbach)*. In order to use it in the ARENA,
