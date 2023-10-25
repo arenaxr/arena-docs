@@ -5,7 +5,7 @@ layout: tutorial
 parent: Tutorial
 ---
 
-**Photogrammetry**
+# Photogrammetry
 
 In this section of the tutorial, you will construct a 3D model of a real
 world object using a technique known as photogrammetry.
@@ -30,9 +30,9 @@ will learn more about the details later in the semester.
 
 **Setting up your workflow**
 
-Download [<u>Meshroom</u>](https://alicevision.org/#meshroom), along
+Download [<u>Meshroom](https://alicevision.org/#meshroom), along
 with this
-[<u>dataset</u>](https://drive.google.com/file/d/1TXwt8oSllGSJLj8Z6-y1i0yqj81JxM_v/view?usp=sharing)
+[<u>dataset](https://drive.google.com/file/d/1TXwt8oSllGSJLj8Z6-y1i0yqj81JxM_v/view?usp=sharing)
 to a Linux / Windows computer that has an Nvidia GPU.
 
 <img src="../../assets/img/overview/photogrammetry/media/image4.png"
@@ -42,7 +42,7 @@ After opening Meshroom and loading the dataset, you should see an
 interface as shown below. The key thing to notice is the *Graph Editor*
 panel located in the bottom left. This panel describes individual steps
 that photogrammetry involves. To get to know the purpose of each step,
-read [<u>this</u>](https://alicevision.org/#photogrammetry/) nice
+read [<u>this](https://alicevision.org/#photogrammetry/) nice
 writeup.
 
 <img src="../../assets/img/overview/photogrammetry/media/image3.png"
@@ -91,7 +91,9 @@ model quality. The knobs that might be of interest is:
 
 -   Mesh Decimate (right click to add this node): Simplification Factor
 
+{% include alert type="goal" content="
 Make sure you have a good-looking and **<u>complete</u>** scan (it's ok
 if there are some holes/artifacts, we will fix those later). You will be
-using this model for the rest of the semester in various labs, so create
+using this model for the remaining tutorials, so create
 a virtual model you are proud of!!
+"%}

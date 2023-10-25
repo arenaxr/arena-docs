@@ -56,4 +56,8 @@ Finally, point the device to the AprilTag, and scene's origin should be anchored
 >
 > **iv)** After scanning (because the QR code is a web address), the page will open.
 
+{% include alert type="goal" content="
+Experiment with viewing 3D content in XR, Mixed Reality.
+"%}
+
 #### Footnotes

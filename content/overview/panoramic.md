@@ -157,3 +157,7 @@ To complete the effect for your physical participants, you can use a monitor or 
 1. Now you should see a **reflected live virtual** scene like the image below and you should be able to see any virtual participants that enter the sphere on the wall monitor just like [this](/assets/img/overview/videosphere1.png).
 
 <img src="/assets/img/overview/videosphere3.png"/>
+
+{% include alert type="goal" content="
+Build a scene in which you host a meeting using a 360 videosphere, such that it serves local and remote participants in full Hybrid-fashion.
+"%}

@@ -46,3 +46,7 @@ In either case, ARB allows any user in the scene to edit, so it can be used coll
 <figure class="video_container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/bYantKzkTFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
+
+{% include alert type="goal" content="
+Use a tool like A-Frame Inspector to navigate a real-time ARENA scene graph and seek out an object to discover its properties and feel free to change them and observe the rendered changes.
+"%}

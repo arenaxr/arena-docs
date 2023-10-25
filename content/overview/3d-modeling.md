@@ -5,13 +5,13 @@ layout: tutorial
 parent: Tutorial
 ---
 
-**3D Modeling**
+# 3D Modeling
 
 For this part of the tutorial, you will begin using a 3D Modeling called
-[<u>Blender</u>](https://www.blender.org/), a software that is commonly
+[<u>Blender](https://www.blender.org/), a software that is commonly
 used by 3D graphics artists to create animated films (see
-[<u>CHARGE</u>](https://www.youtube.com/watch?v=UXqq0ZvbOnk) and
-[<u>Sprite Fright</u>](https://www.youtube.com/watch?v=cMxraX_5RE)).
+[<u>CHARGE](https://www.youtube.com/watch?v=UXqq0ZvbOnk) and
+[<u>Sprite Fright](https://www.youtube.com/watch?v=cMxraX_5RE)).
 
 The Photogrammetry part was mostly automated, with you tuning a few
 knobs to adjust settings. Once you hit the start button, the computer
@@ -80,5 +80,7 @@ geometry.
 style="width:2.9375in;height:1.48421in" /><img src="../../assets/img/overview/3d-modeling/media/image3.png"
 style="width:2.9375in;height:1.49452in" />
 
+{% include alert type="goal" content="
 At this stage, you should understand the basic usage of Blender and be
 able to import and clean up your photogrammetry model.
+"%}

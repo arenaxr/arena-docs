@@ -5,7 +5,7 @@ layout: tutorial
 parent: Tutorial
 ---
 
-**XR Localization for ARENA**
+# XR Localization for ARENA
 
 ARENA has seamless support for a spectrum of experiences, from
 completely immersing the user in a digital world (Virtual Reality; VR)
@@ -25,16 +25,16 @@ sensors to track relative motion of viewing devices.
 style="width:6in;height:3.375in" />
 
 *(Google’s AR framework
-[<u>ARCore</u>](https://developers.google.com/ar) runs on devices with
+[<u>ARCore](https://developers.google.com/ar) runs on devices with
 Android version 7.0 API level 24 or above, and Apple’s AR framework
-[<u>ARKit</u>](https://developer.apple.com/augmented-reality/arkit/)
+[<u>ARKit](https://developer.apple.com/augmented-reality/arkit/)
 runs on devices running iOS version 11.0 or higher.)*
 
 If you are using an iOS device to view AR content, download the **[<u>XR
-Browser</u>](https://apps.apple.com/us/app/xr-browser/id1588029989).**
+Browser](https://apps.apple.com/us/app/xr-browser/id1588029989).**
 
 If you are using an Android device, you can use [<u>**Google Chrome for
-Android**.</u>](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en_US&gl=US&pli=1)
+Android**.](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en_US&gl=US&pli=1)
 
 <img src="../../assets/img/overview/localization/media/image7.png"
 style="width:2.55729in;height:1.24131in" />
@@ -56,7 +56,7 @@ black and white square-pattern markers easily recognized by cameras to
 gain position and rotation relative to the marker.
 
 Print out this PDF of the [<u>default “zero”
-AprilTag</u>](https://github.com/arenaxr/apriltag-gen/blob/master/output/tag36_11_00000.pdf),
+AprilTag](https://github.com/arenaxr/apriltag-gen/blob/master/output/tag36_11_00000.pdf),
 and place it on the floor.
 
 *(Or, print this page out. The default “zero” April tag is pictured
@@ -67,10 +67,10 @@ style="width:5.90625in;height:6.56115in" />
 
 *Note: more AprilTag markers can be found here:*
 
-*[<u>https://github.com/arenaxr/apriltag-gen/tree/master/output</u>](https://github.com/arenaxr/apriltag-gen/tree/master/output)*
+*[https://github.com/arenaxr/apriltag-gen/tree/master/output](https://github.com/arenaxr/apriltag-gen/tree/master/output)*
 
 To test AprilTag localization, enter this scene:
-[<u>https://arenaxr.org/public/artest?armode=true</u>](https://arenaxr.org/public/artest?armode=true)
+[https://arenaxr.org/public/artest?armode=true](https://arenaxr.org/public/artest?armode=true)
 
 *Optionally, you can also enter scenes with a QR code instead of
 manually typing the link in the browser search bar:*
@@ -88,7 +88,7 @@ style="width:5.78646in;height:2.68066in" />
 
 More info about AprilTags and ARENA setup here:
 
-[<u>https://docs.arenaxr.org/content/overview/xr.html</u>](https://docs.arenaxr.org/content/overview/xr.html)
+[https://docs.arenaxr.org/content/overview/xr.html](https://docs.arenaxr.org/content/overview/xr.html)
 
 **Using the VR Calibrator**
 
@@ -111,7 +111,7 @@ pip3 install arena-py
 
 Clone the arena-py repository on github to gain access to all of the
 examples and utilities:
-[<u>https://github.com/arenaxr/arena-py</u>](https://github.com/arenaxr/arena-py)
+[https://github.com/arenaxr/arena-py](https://github.com/arenaxr/arena-py)
 
 Inside this repository, change the directory to
 *arena-py/tools/calibrate-vr*. Here, there is a python script named
@@ -170,3 +170,7 @@ calibrator gizmo and lock it in place. If the calibration drifts too
 much, simply click on the green button to recalibrate. Note that
 recalibration will likely be necessary every time the browser is
 refreshed.
+
+{% include alert type="goal" content="
+Learn how a device like the Quest 2 and other XR goggles require different strategies to localize content. To come full circle, you should be able to use your controller to activate your animation-rigged 3D model in the room using AR passthrough.
+"%}

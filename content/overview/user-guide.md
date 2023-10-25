@@ -95,3 +95,7 @@ The landmarks button only appears in scenes that have landmarks.
 ## Additional Settings
 
 The settings menu is collapsed by default; clicking the arrow underneath the face tracking icon will expand the menu. When clicked, you will see additional icons, your name and authentication options in a pop up next to the icons. It shows the authenticator (Google or anonymous), the email used for Google authentication, and your display name. The display name can be changed here. It is initially set to the name from your Google account or the name chosen when signing in anonymously. If you click the X on the settings box and it disappears, you will need to collapse and re-open the icons to show the options again.
+
+{% include alert type="goal" content="
+Enter any ARENA 3D scene and move around to get familiar with the controls.
+"%}

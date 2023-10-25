@@ -5,11 +5,19 @@ layout: tutorial
 parent: Tutorial
 ---
 
-# Introduction to ARENA Python Program Development
+# Python Scripting for ARENA
 
-{% include alert type="note" content="
-We recommend the [ARENA Overview](/content/overview) to learn about the main concepts of the ARENA.
-"%}
+The Python library provides a development option for ARENA applications
+to add simple interactions and scripting. Our current API allows us to
+create and update objects in a scene, define animations, and set up
+callbacks on events and timers. The library provides a scheduler and a
+design pattern familiar to game developers, which include decorators to
+create one-shot, periodic and delayed (start after a given time) tasks.
+Any entity represented in Python is automatically updated upon arrival
+of network messages and we provide calls to load any pre-existing scene
+content upon startup.
+
+*Draw objects and run programs in the ARENA using Python! 😀👍*
 
 You can define the appearance and behavior of objects in a scene using python programs, which take advantage of the fact that all objects in a scene are networked via a MQTT Publish-Subscribe (PubSub) messaging bus:
 
@@ -19,8 +27,21 @@ Note that the python program can be hosted anywhere with access to the MQTT bus.
 
 <!-- TODO: Link to ARTS. -->
 
+## Setup
+
+First, if we do not already have a compatible version of Python
+installed on our development machine, we must install **Python 3.8** or
+above:
+
+[https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+<img src="../../assets/img/overview/dev/media/image2.png"
+style="width:3.69792in;height:1.57278in" />
 
 ## Install the ARENA Python library
+
+Then, we must install the arena-py library using pip:
+[https://pypi.org/project/arena-py/](https://pypi.org/project/arena-py/)
 
 The easiest way to begin programming in the ARENA is to install the [Python library](../python) and create your first Python program. ARENA programs communicate over MQTT messages which govern all objects and their properties. This library is a wrapper which will allow you to easily send and receive those messages.
 
@@ -178,3 +199,13 @@ obj = Model(object_id="duck_1",
 ```
 
 If you run the program again, you will notice that the duck remains in the scene, even across a refresh.
+
+{% include alert type="goal" content="
+Create an ARENA Python script that triggers your animation when a user clicks on your scanned object! You can also write a script to trigger animations when the user gets close to the object, when a user interacts with another object, etc. Again, be creative here!
+"%}
+
+**More links/info/tutorials/samples:**
+- [Further Python tutorials](https://docs.arenaxr.org/content/python/tutorial/)
+- [Python Example Apps](https://github.com/arenaxr/arena-py)
+- [Python Click Event Tutorials](https://docs.arenaxr.org/content/python/events.html)
+- [Python Animation Tutorials](https://docs.arenaxr.org/content/python/animations.html)

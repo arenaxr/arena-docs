@@ -45,3 +45,7 @@ You can use any of our pre-built ARENA scenes for group meetings and unique soci
     <img src="/assets/img/overview/clone/ARENA-scene-clone3.png">
     <span class="w3-badge w3-red" style="top:15%; left:80%;">5</span>
 </div>
+
+{% include alert type="goal" content="
+Clone a simple scene and send the link to another user to try a 3D meeting.
+"%}
