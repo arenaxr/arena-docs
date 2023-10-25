@@ -163,5 +163,5 @@ and export it as a .glb for usage in ARENA in the next section!
 "%}
 
 \[Optional\] See:
-- [https://www.youtube.com/watch?v=e5I\_xim7rXQ](https://www.youtube.com/watch?v=e5I_xim7rXQ)
-- [https://www.youtube.com/watch?v=e675Ulc7QL4](https://www.youtube.com/watch?v=e675Ulc7QL4)
+- YouTube: [Creating Shape Keys in Blender 2.80](https://www.youtube.com/watch?v=e5I_xim7rXQ)
+- YouTube: [Blender 2.8 Shapekeys and Morphing](https://www.youtube.com/watch?v=e675Ulc7QL4)

@@ -30,9 +30,9 @@ will learn more about the details later in the semester.
 
 **Setting up your workflow**
 
-Download [<u>Meshroom](https://alicevision.org/#meshroom), along
+Download [Meshroom](https://alicevision.org/#meshroom), along
 with this
-[<u>dataset](https://drive.google.com/file/d/1TXwt8oSllGSJLj8Z6-y1i0yqj81JxM_v/view?usp=sharing)
+[dataset](https://drive.google.com/file/d/1TXwt8oSllGSJLj8Z6-y1i0yqj81JxM_v/view?usp=sharing)
 to a Linux / Windows computer that has an Nvidia GPU.
 
 <img src="../../assets/img/overview/photogrammetry/media/image4.png"
@@ -42,7 +42,7 @@ After opening Meshroom and loading the dataset, you should see an
 interface as shown below. The key thing to notice is the *Graph Editor*
 panel located in the bottom left. This panel describes individual steps
 that photogrammetry involves. To get to know the purpose of each step,
-read [<u>this](https://alicevision.org/#photogrammetry/) nice
+read [this](https://alicevision.org/#photogrammetry/) nice
 writeup.
 
 <img src="../../assets/img/overview/photogrammetry/media/image3.png"

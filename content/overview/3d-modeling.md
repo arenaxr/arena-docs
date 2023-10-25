@@ -8,10 +8,10 @@ parent: Tutorial
 # 3D Modeling
 
 For this part of the tutorial, you will begin using a 3D Modeling called
-[<u>Blender](https://www.blender.org/), a software that is commonly
+[Blender](https://www.blender.org/), a software that is commonly
 used by 3D graphics artists to create animated films (see
-[<u>CHARGE](https://www.youtube.com/watch?v=UXqq0ZvbOnk) and
-[<u>Sprite Fright](https://www.youtube.com/watch?v=cMxraX_5RE)).
+[CHARGE](https://www.youtube.com/watch?v=UXqq0ZvbOnk) and
+[Sprite Fright](https://www.youtube.com/watch?v=cMxraX_5RE)).
 
 The Photogrammetry part was mostly automated, with you tuning a few
 knobs to adjust settings. Once you hit the start button, the computer

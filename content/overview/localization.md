@@ -1,5 +1,5 @@
 ---
-title: XR Localization for ARENA
+title: XR Localization
 nav_order: 5.8
 layout: tutorial
 parent: Tutorial
@@ -25,15 +25,15 @@ sensors to track relative motion of viewing devices.
 style="width:6in;height:3.375in" />
 
 *(Google’s AR framework
-[<u>ARCore](https://developers.google.com/ar) runs on devices with
+[ARCore](https://developers.google.com/ar) runs on devices with
 Android version 7.0 API level 24 or above, and Apple’s AR framework
-[<u>ARKit](https://developer.apple.com/augmented-reality/arkit/)
+[ARKit](https://developer.apple.com/augmented-reality/arkit/)
 runs on devices running iOS version 11.0 or higher.)*
 
-If you are using an iOS device to view AR content, download the **[<u>XR
+If you are using an iOS device to view AR content, download the **[XR
 Browser](https://apps.apple.com/us/app/xr-browser/id1588029989).**
 
-If you are using an Android device, you can use [<u>**Google Chrome for
+If you are using an Android device, you can use [**Google Chrome for
 Android**.](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en_US&gl=US&pli=1)
 
 <img src="../../assets/img/overview/localization/media/image7.png"
@@ -55,7 +55,7 @@ real-world anchoring of 3D digital content with **AprilTags**, which are
 black and white square-pattern markers easily recognized by cameras to
 gain position and rotation relative to the marker.
 
-Print out this PDF of the [<u>default “zero”
+Print out this PDF of the [default “zero”
 AprilTag](https://github.com/arenaxr/apriltag-gen/blob/master/output/tag36_11_00000.pdf),
 and place it on the floor.
 
