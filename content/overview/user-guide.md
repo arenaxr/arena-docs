@@ -39,7 +39,7 @@ You can also choose to sign in anonymously; you'll have to enter a name to use i
 
 ### ARENA Username
 
-If you choose to login using your Google account, you will be asked to signup and define your arena username:
+If you choose to login using your Google account, you will be asked to signup and define your ARENA username:
 
 <img src="/assets/img/overview/signup.png" width="500"/>
 

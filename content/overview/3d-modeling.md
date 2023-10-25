@@ -7,7 +7,7 @@ parent: Tutorial
 
 **3D Modeling**
 
-For this part of the lab, you will begin using a 3D Modeling called
+For this part of the tutorial, you will begin using a 3D Modeling called
 [<u>Blender</u>](https://www.blender.org/), a software that is commonly
 used by 3D graphics artists to create animated films (see
 [<u>CHARGE</u>](https://www.youtube.com/watch?v=UXqq0ZvbOnk) and

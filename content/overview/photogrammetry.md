@@ -7,7 +7,7 @@ parent: Tutorial
 
 **Photogrammetry**
 
-In this section of the lab, you will construct a 3D model of a real
+In this section of the tutorial, you will construct a 3D model of a real
 world object using a technique known as photogrammetry.
 
 Photogrammetry estimates the 3D geometric properties (such as shape,
@@ -25,7 +25,7 @@ level, span:
 
 -   3D model reconstruction from color and depth information
 
-This lab will provide practical experience using photogrammetry, you
+This tutorial will provide practical experience using photogrammetry, you
 will learn more about the details later in the semester.
 
 **Setting up your workflow**
