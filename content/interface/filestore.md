@@ -13,9 +13,9 @@ To add models or programs to the ARENA, they will have to be stored somewhere. T
 
 We only allow 3 different methods of storage currently: the ARENA File Store, CDN, and Dropbox, as follows.
 
-- **ARENA File Store Url**: `store/users/wiselab/build/blumbach.glb`
-- **ARENA File Store CDN Url**: `https://arena-cdn.conix.io/store/users/wiselab/build/blumbach.glb`
-- **Dropbox Url**: `https://www.dropbox.com/s/pgytn552kzukm8f/blumbach.glb?dl=0`
+- [**ARENA File Store Url**](#file-store-web-interface): `store/users/wiselab/build/blumbach.glb`
+- [**ARENA File Store CDN Url**](#file-store-cdn): `https://arena-cdn.conix.io/store/users/wiselab/build/blumbach.glb`
+- [**Dropbox Url**](#dropbox): `https://www.dropbox.com/s/pgytn552kzukm8f/blumbach.glb?dl=0`
 
 ## User Space
 
@@ -50,6 +50,11 @@ Most of the 3D models are stored in the folder "models". To add a 3D model, make
 
 You may choose to have our CDN store the files for faster loading.
 In that case, just store files paths under 'store/users/<username>' and to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. `https://arena-cdn.conix.io/store/users/wiselab/build/blumbach.glb`).
+
+{% include alert type="warning" content="
+We have a synchonization process when using this CDN access method.
+Be aware that it may take up to **5 minutes** for your files to be available through our CDN link.
+"%}
 
 ### Dropbox
 
