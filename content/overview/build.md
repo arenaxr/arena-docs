@@ -150,7 +150,7 @@ the top of the Add/Edit Object section:
 <img src="../../assets/img/overview/build/media/image9.png"
 style="width:6in;height:2.63889in" />
 
-There are multiple paths to upload files on the [ARENA File Store and Dropbox](content/interface/File Store), which you can review.
+There are multiple paths to upload files on the [ARENA File Store and Dropbox](/content/interface/filestore), which you can review.
 Currently we will use the simplest method, the **\[Upload Model to File Store and Scene\]** or
 **\[ <img src="/assets/img/overview/build/3dobj-icon.png" width="10"/>↑ \]**.
 Select the model and it will be uploaded for you automatically.
