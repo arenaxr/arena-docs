@@ -16,17 +16,13 @@ different perspectives. While this might sound like magic, it is based
 on well-established physical principles. These principles, at a high
 level, span:
 
--   How camera captures light and projects it onto image sensor
+-  How camera captures light and projects it onto image sensor
+-  Algorithms that inferring camera spatial location at the time when
+   images were captured
+-  Depth estimation from 2D images sequences
+-  3D model reconstruction from color and depth information
 
--   Algorithms that inferring camera spatial location at the time when
-    images were captured
-
--   Depth estimation from 2D images sequences
-
--   3D model reconstruction from color and depth information
-
-This tutorial will provide practical experience using photogrammetry, you
-will learn more about the details later in the semester.
+This tutorial will provide practical experience using photogrammetry.
 
 ## **Setting up your workflow**
 
@@ -85,11 +81,10 @@ animations to this scan later on.
 
 This time, instead of running the pipeline only with default parameters
 in the nodes, explore how adjusting different parameters impacts the
-model quality. The knobs that might be of interest is:
+model quality. The knobs that might be of interest are:
 
--   Texturing: Texture Size, Texture Downscale
-
--   Mesh Decimate (right click to add this node): Simplification Factor
+-  **Texturing**: Texture Size, Texture Downscale
+-  **Mesh Decimate** (right click to add this node): Simplification Factor
 
 {% include alert type="goal" content="
 Make sure you have a good-looking and **<u>complete</u>** scan (it's ok

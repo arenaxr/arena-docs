@@ -65,9 +65,10 @@ below:)*
 <img src="../../assets/img/overview/localization/media/image4.png"
 style="width:5.90625in;height:6.56115in" />
 
-*Note: more AprilTag markers can be found here:*
-
+{% include alert type="note" content="
+*More AprilTag markers can be found here:*
 *[https://github.com/arenaxr/apriltag-gen/tree/master/output](https://github.com/arenaxr/apriltag-gen/tree/master/output)*
+"%}
 
 To test AprilTag localization, enter this scene:
 [https://arenaxr.org/public/artest?armode=true](https://arenaxr.org/public/artest?armode=true)
@@ -92,9 +93,14 @@ More info about AprilTags and ARENA setup here:
 
 ## **Using the VR Calibrator**
 
-Virtual Reality (VR) headsets can also be anchored into the scene. Note:
-not all VR headsets natively support AprilTag anchoring (**including
-Meta headsets**), so we have an alternative for manual calibration. This
+Virtual Reality (VR) headsets can also be anchored into the scene.
+
+{% include alert type="warning" content="
+Not all VR headsets natively support AprilTag anchoring (**including
+Meta headsets**)
+"%}
+
+We have an alternative for manual calibration. This
 calibration allows you to manually align the virtual world to the
 physical world.
 
@@ -107,7 +113,9 @@ script to the scene being viewed in virtual reality.
 First, if you have not done so already, follow the instructions in the
 Python setup and install the ARENA-py library.
 
+```bash
 pip3 install arena-py
+```
 
 Clone the arena-py repository on github to gain access to all of the
 examples and utilities:
@@ -118,15 +126,14 @@ Inside this repository, change the directory to
 “calibrate.py”. Run the following command in a terminal or command
 prompt:
 
+```bash
 python calibrate.py -mh arenaxr.org -n username -s scenename
+```
 
 The following parameters should be changed to reflect your scene:
-
--mh arenaxr.org (do not change this)
-
--n username (change this to your username)
-
--s scenename (change this to your scene name)
+* `-mh arenaxr.org` (do not change this)
+* `-n username` (change this to your username)
+* `-s scenename` (change this to your scene name)
 
 Now, in your VR headset, use the default **Browser** app, and open the
 scene of interest (the same scene as you set the python VR calibrator
@@ -155,8 +162,8 @@ style="width:6in;height:3.75in" />
 
 Use the VR controller to repeatedly click on the gizmo’s eight buttons
 
-(move x+, move x-, move y+, move y-, move z+, move z-, rotate y+, rotate
-y-)
+**(move x+, move x-, move y+, move y-, move z+, move z-, rotate y+, rotate
+y-)**
 
 until the multi-axis VR calibrator gizmo is aligned with the AprilTag
 marker.
