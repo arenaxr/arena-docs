@@ -68,7 +68,7 @@ The model's `rotation` y-axis (Euler) you will have to experiment with, to match
 
 ## Program Your Space
 
-All this so far helps you Twin your physical space in 3D, but now, let us add some interactivity the Twinned data. Your experience in previous [Python tutorials](/content/overview/dev-guide.md) will help you generate interactions from buttons and other objects. Here is some guidance when building a digital twin application.
+All this so far helps you Twin your physical space in 3D, but now, let us add some interactivity the Twinned data. Your experience in previous [Python tutorials](/content/overview/dev-guide) will help you generate interactions from buttons and other objects. Here is some guidance when building a digital twin application.
 
 - **Data**: What data is useful in proximity to your space? What useful displays or controls were previously **impractical or inappropriate**? Consider these data classes:
     - Sensor data embedded in walls or machines: network, electric, compute, pipes and filtration.
