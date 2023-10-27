@@ -1,0 +1,11 @@
+name: Check HTML links
+
+on: push
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: htmlproofer link check
+      run: make check
