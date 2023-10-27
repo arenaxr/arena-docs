@@ -19,5 +19,8 @@ jobs:
     - name: Dependencies
       run: make update
 
+    - name: Build site
+      run: make build
+
     - name: Check html
       run: make check
