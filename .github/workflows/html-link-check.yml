@@ -4,8 +4,17 @@ on: push
 
 jobs:
   markdown-link-check:
+    
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@master
-    - run: make install
-    - run: make check
+    - uses: actions/checkout@v3
+
+    - name: Install any new ruby packages
+      run: make install
+
+    - name: Dependencies
+      run: make update
+
+    - name: Check html
+      run: make check
