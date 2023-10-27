@@ -32,7 +32,6 @@ Our demonstration sample server runs at https://arenaxr.org
 - [**ATLAS**](https://github.com/arenaxr/ATLAS)
 - [**Persistence Database**](https://github.com/arenaxr/arena-persist)
 - [**Authentication Backend**](https://github.com/arenaxr/arena-account)
-- [**Runtime Manager**](https://github.com/SilverLineFramework/runtime-browser)
 - [**File Store**](https://github.com/arenaxr/arena-store)
 - [**Mosquitto Broker**](https://github.com/SilverLineFramework/mosquitto-broker)
 - [**Posefusion**](https://github.com/conix-center/posefusion)
