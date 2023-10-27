@@ -9,7 +9,7 @@ parent: Architecture
 
 When a Scene in ARENA is loaded, its current state is fetched from a data store service that tracks the persisted state of the Scene. In this section, we detail some features of this essential ARENA service.
 
-![img](../../assets/img/overview/scene-load.png)
+![img](/assets/img/overview/scene-load.png)
 **Figure 3**. Scene objects are first loaded from a data store service and then updated over PubSub.
 
 ## Object Persistence

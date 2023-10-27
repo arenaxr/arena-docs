@@ -14,4 +14,4 @@ The recommended way to create an ARENA program is using the [ARENA Python Librar
 2. Edit/create the scene that will load your program using the [scene builder](/content/overview/build).
 3. See the [Dashboard](https://arenaxr.org/programs/) to see the runtimes and modules running.
 
-**See the [step-by-step example](/content/programs/programs.html).**
+**See the [step-by-step example](/content/programs/programs).**

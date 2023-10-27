@@ -18,22 +18,23 @@ We will use an [AprilTag](https://april.eecs.umich.edu/software/apriltag) optica
 Detection of optical markers requires that the browser supports ARENA's computer vision while in AR mode. For this quick test, we suggest [Chrome Beta](https://www.google.com/chrome/beta/) on Android or [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) on iOS.
 
 {% include alert type="note" content="
-Check out [this](/content/xr/requirements) Requirements Section for details on the requirements of different types of anchors that can be used in ARENA and the browsers that support these.
+Check out the [XR Requirements Section](/content/xr/requirements) for details on the requirements of different types of anchors that can be used in ARENA and the browsers that support these.
 "%}
 
 ## Open an ARENA Scene in AR
 
-Print out (or display on a screen[^1]) an [AprilTag with ID 0](https://github.com/arenaxr/apriltag-gen/blob/master/output/tag36_11_00000.pdf) and open the scene by entering the following URL[^2] in the address bar of **either [Chrome Beta](https://www.google.com/chrome/beta/) on Android or [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) on iOS**:
+1. Print out (or display on a screen[^1]) an [AprilTag with ID 0](https://raw.githubusercontent.com/arenaxr/apriltag-gen/master/output/tag36_11_00000.pdf). It should look like the image above.
+2. Then, open the scene by entering the following URL[^2] in the address bar of **either [Chrome Beta](https://www.google.com/chrome/beta/) on Android or [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) on iOS**:
 
-**[https://arenaxr.org/public/artest?armode=true](https://arenaxr.org/public/artest?armode=true)**<br/>
+    **[https://arenaxr.org/public/artest?armode=true](https://arenaxr.org/public/artest?armode=true)**<br/>
+
 {% include alert type="note" content="
 See instructions on using a **QR Code to quickly open the URL on XR Browser** [further down](#open-scene-from-qr-code-xr-browser).
 "%}
 
-
 [^1]: For a quick test, you can also use an AprilTag on a screen. Note, however, that the ARENA location solver needs to know the size of the tag to accurately compute its location (this information comes from the ARMarker object in the scene, which, in this scene, is configured for an AprilTag of size 150x150 mm).
 
-[^2]: The URL includes an `armode=true` flag which tells ARENA to automatically enter AR by skipping some AV setup steps. If this flag is not present, the user must select the <button type="button" name="button" class="btn fs-3 ">AR</button> button in the lower right to switch into AR mode.
+[^2]: The URL includes an `armode=true` flag which tells ARENA to automatically enter AR by skipping some AV setup steps. If this flag is not present, the user must select the **\[ AR \]** button in the lower right to switch into AR mode.
 
 Opening the URL should display the following sequence of screens. Click “Allow” for motion and camera access and “Enter” for AR mode.
 

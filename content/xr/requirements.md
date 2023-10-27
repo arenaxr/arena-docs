@@ -7,7 +7,7 @@ parent: XR Experiences
 
 # Supported Platforms
 
-Mixed Reality experiences in ARENA require a WebXR-compatible browser, which currently includes Edge (desktop), Chrome (desktop and mobile), Firefox (desktop and mobile; not enabled by default), among others as shown [here](https://caniuse.com/webxr). Note that these include browsers that can run in many AR and VR headsets. For example, Oculus/Meta and Magic Leap's browsers are based on the open-source codebase of Chrome (Chromium) and include WebXR support. See below for a summary table of supported browsers and platforms.
+Mixed Reality experiences in ARENA require a WebXR-compatible browser, which currently includes Edge (desktop), Chrome (desktop and mobile), Firefox (desktop and mobile; not enabled by default), among others as shown in [Current WebXR Support](https://caniuse.com/webxr) documentation. Note that these include browsers that can run in many AR and VR headsets. For example, Oculus/Meta and Magic Leap's browsers are based on the open-source codebase of Chrome (Chromium) and include WebXR support. See below for a summary table of supported browsers and platforms.
 
 Additionally, and to prototype the needs for future browser platforms, we are also maintaining **[XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989)**, a custom version of Firefox for iOS (based of [WebXR Viewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056)). Both [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) and [WebXR Viewer](https://apps.apple.com/us/app/webxr-viewer/id1295998056) support ARENA's computer vision pipeline. In addition, the team used [XR Browser](https://apps.apple.com/us/app/xr-browser/id1588029989) to experiment with other features, such as [spoof-resilient AR anchors](https://wise.ece.cmu.edu/projects/glitter.html).
 
@@ -53,7 +53,7 @@ Mozilla's WebXR Viewer viewer can be installed from the [App Store](https://apps
 * **WebXR Polyfill URL:** ```https://arenaxr.org/webxrios.js``` or ```https://arenaxr.org/vendor/webxr-webxrviewer-ios.js```
 * **Always Allow World Sensing:** ```Yes```
 
-![img](../../assets/img/xr/webxrviewer-settings.png)
+![img](/assets/img/xr/webxrviewer-settings.png)
 
 ### Edge
 

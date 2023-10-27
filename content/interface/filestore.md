@@ -35,16 +35,17 @@ Select the **\[Upload Model to File Store and Scene\]** or
 **\[ <img src="/assets/img/overview/build/3dobj-icon.png" width="10"/>↑ \]** button at the top of the [build page](https://arenaxr.org/build) .
 Select the model and it will be uploaded for you automatically.
 
-<img src="../../assets/img/overview/build/auto-upload.png" style="width:3in" />
+<img src="/assets/img/overview/build/auto-upload.png" style="width:3in;border:1px solid;" />
 
 
 ### File Store Web Interface
 
-| After logging into the ARENA file store, there will be options to create a new folder or file on the left of the screen. You can upload entire folders or files, either by clicking the "upload" button <i class="fas fa-upload"></i> on the top right, or dragging them to the page. You can copy a filestore path or file link by opening the file or folder and clicking the copy path link button <i class="fas fa-link"></i>.| ![](../../assets/img/overview/filestore/fs-copy-link.png) |
+| After logging into the ARENA file store, there will be options to create a new folder or file on the left of the screen. You can upload entire folders or files, either by clicking the "upload" button <i class="fas fa-upload"></i> on the top right, or dragging them to the page. You can copy a filestore path or file link by opening the file or folder and clicking the copy path link button <i class="fas fa-link"></i>.| <img src="/assets/img/overview/filestore/fs-copy-link.png" style="border:1px solid;" /> |
 
 Most of the 3D models are stored in the folder "models". To add a 3D model, make sure that it is in `*.GLB/*.GLTF` format, and upload the models. If it is a GLTF in a folder with multiple files, make sure to upload all of it. Keep this in mind when adding the object to a scene, as you will have to specify the GLTF file name within the folder (but not the textures or other components).
 
-![](../../assets/img/overview/filestore/fs2.jpg)
+<img src="/assets/img/overview/filestore/fs2.jpg"
+style="border:1px solid;" />
 
 ### File Store CDN
 
@@ -52,7 +53,7 @@ You may choose to have our CDN store the files for faster loading.
 In that case, just store files paths under 'store/users/<username>' and to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. `https://arena-cdn.conix.io/store/users/wiselab/build/blumbach.glb`).
 
 {% include alert type="warning" content="
-We have a synchonization process when using this CDN access method.
+We have a synchronization process when using this CDN access method.
 Be aware that it may take up to **5 minutes** for your files to be available through our CDN link.
 "%}
 
@@ -61,8 +62,8 @@ Be aware that it may take up to **5 minutes** for your files to be available thr
 In order to use it in the ARENA, we uploaded a .glb copy to dropbox and shared it publicly:
 [https://www.dropbox.com/s/pgytn552kzukm8f/blumbach.glb?dl=0](https://www.dropbox.com/s/pgytn552kzukm8f/blumbach.glb?dl=0)
 
-<img src="../../assets/img/overview/build/media/image5.png"
-style="width:6in;height:2.23611in" />
+<img src="/assets/img/overview/build/media/image5.png"
+style="width:6in;height:2.23611in;border:1px solid;" />
 
 {% include alert type="note" content="
 Why Dropbox? ARENA internally converts dropbox share links into
@@ -77,13 +78,17 @@ for free.
 
 To upload a Python or WASM program to the ARENA, follow the same steps as uploading a 3D model. Either create a new file/folder, or upload the files/folders with the programs.
 
-![](../../assets/img/overview/filestore/fs4.jpg)
+<img src="/assets/img/overview/filestore/fs4.jpg"
+style="border:1px solid;" />
 
-![](../../assets/img/overview/filestore/fs5.png)
+<img src="/assets/img/overview/filestore/fs5.png"
+style="border:1px solid;" />
 
-![](../../assets/img/overview/filestore/fs6.jpg)
+<img src="/assets/img/overview/filestore/fs6.jpg"
+style="border:1px solid;" />
 
-![](../../assets/img/overview/filestore/fs7.png)
+<img src="/assets/img/overview/filestore/fs7.png"
+style="border:1px solid;" />
 
 ## Additional Notes
 

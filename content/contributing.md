@@ -44,7 +44,7 @@ If you want to work on something that there is no GitHub issue for, it's best to
 
 Some changes will require internal discussion to see if the needs of the project are still being met which can change from time to time. A list of which repo to use are listed at the end of this guide.
 
-- A great way to start is to try development of a scene using the [Python](/content/overview/dev-guide.html) and [scene builder](/content/overview/build.html) tutorials.
+- A great way to start is to try development of a scene using the [Python](/content/overview/dev-guide) and [scene builder](/content/overview/build) tutorials.
 - Once familiar, good first issues to help with are labeled with `help wanted` and `good first issue`.
 
 ## Process for Pull Requests

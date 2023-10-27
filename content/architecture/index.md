@@ -9,7 +9,7 @@ has_children: true
 
 Figure 1 presents an overview of the ARENA Architecture.
 
-![img](../../assets/img/architecture/arch.png)
+![img](/assets/img/architecture/arch.png)
 
 **Figure 1**. ARENA Architecture. Realms represent a geographically distinct set of resources. Each realm has its own set of ARENA services (web server, message bus, runtime manager).
 

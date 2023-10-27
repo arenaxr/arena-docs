@@ -17,8 +17,8 @@ Head to the build page in a new tab:
 
 If you never created a scene, it will look similar to this:
 
-<img src="../../assets/img/overview/build/media/image14.png"
-style="width:6in;height:2.29167in" />
+<img src="/assets/img/overview/build/media/image14.png"
+style="width:6in;height:2.29167in;border:1px solid;"/>
 
 {% include alert type="note" content="
 You will need to be signed-in to use the builder webpage. The
@@ -32,8 +32,8 @@ one by pressing the **\[+\]** button (highlighted with a circle in the
 figure above). This will pop a dialog to create the new scene as
 follows:
 
-<img src="../../assets/img/overview/build/media/image3.png"
-style="width:3.69971in;height:2.20313in" />
+<img src="/assets/img/overview/build/media/image3.png"
+style="width:3.69971in;height:2.20313in;border:1px solid;" />
 
 It is likely that you only have access to your User/Organization, so the
 first select will have only your username. Enter the name of the scene
@@ -46,8 +46,8 @@ a ‘Create Object create published’ popup message in the corner. The
 popup will disappear in a second. Let us take this time to have a look
 at a few other sections of the build page shown below:
 
-<img src="../../assets/img/overview/build/media/image13.png"
-style="width:6in;height:3.63889in" />
+<img src="/assets/img/overview/build/media/image13.png"
+style="width:6in;height:3.63889in;border:1px solid;" />
 
 In the figure above, we numbered (orange boxes) the following sections
 of the page:
@@ -78,15 +78,15 @@ more detail now:
 
 Press the **\[Edit\]** button of the **scene options** object:
 
-<img src="../../assets/img/overview/build/media/image6.png"
-style="width:4.99197in;height:0.92733in" />
+<img src="/assets/img/overview/build/media/image6.png"
+style="width:4.99197in;height:0.92733in;border:1px solid;" />
 
 You can now edit the object properties. When we are done editing the
 object, we can press the **\[+ Add/Update Object\]** button to trigger an
 update:
 
-<img src="../../assets/img/overview/build/media/image15.png"
-style="width:4.83854in;height:4.53613in" />
+<img src="/assets/img/overview/build/media/image15.png"
+style="width:4.83854in;height:4.53613in;border:1px solid;" />
 
 {% include alert type="tip" content="
 Note the **Object JSON** panel on the right; this is a text
@@ -108,8 +108,8 @@ The properties that appear on the form can be set with the
 
 Notice the 3 different sections of the scene options object:
 
-<img src="../../assets/img/overview/build/media/image7.png"
-style="width:6in;height:1.65278in" />
+<img src="/assets/img/overview/build/media/image7.png"
+style="width:6in;height:1.65278in;border:1px solid;" />
 
 The checkboxes allow to hide/show those subsections of the top-level
 object (scene options). Note that each subsection has its own
@@ -117,15 +117,15 @@ object (scene options). Note that each subsection has its own
 
 For example, the environment presets:
 
-<img src="../../assets/img/overview/build/media/image10.png"
-style="width:6in;height:2.30556in" />
+<img src="/assets/img/overview/build/media/image10.png"
+style="width:6in;height:2.30556in;border:1px solid;" />
 
 Later, we will add a nice model to our scene. To prepare the scene for
 it, try to set the environment preset to **forest**, add a point light
 to the scene at(x=0, y=5, z=0), and set shadows to true:
 
-<img src="../../assets/img/overview/build/media/image4.png"
-style="width:5.09896in;height:7.4342in" />
+<img src="/assets/img/overview/build/media/image4.png"
+style="width:5.09896in;height:7.4342in;border:1px solid;" />
 
 After making the edits, update the object by pressing the **\[+ Add/Update
 Object\]** button. You will have to reload the scene to have the new scene
@@ -147,15 +147,15 @@ we will upload a .glb copy and share it publicly using the **ARENA File Store Ur
 Start by selecting the GLTF model object type from the Type select at
 the top of the Add/Edit Object section:
 
-<img src="../../assets/img/overview/build/media/image9.png"
-style="width:6in;height:2.63889in" />
+<img src="/assets/img/overview/build/media/image9.png"
+style="width:6in;height:2.63889in;border:1px solid;" />
 
 There are multiple paths to upload files on the [ARENA File Store and Dropbox](/content/interface/filestore), which you can review.
 Currently we will use the simplest method, the **\[Upload Model to File Store and Scene\]** or
 **\[ <img src="/assets/img/overview/build/3dobj-icon.png" width="10"/>↑ \]**.
 Select the model and it will be uploaded for you automatically.
 
-<img src="../../assets/img/overview/build/auto-upload.png" style="width:3in" />
+<img src="/assets/img/overview/build/auto-upload.png" style="width:3in;border:1px solid;" />
 
 As you select the GLTF model, the form will change to the default properties for this object type. Let us edit the form and enter:
 1. **object_id**: `blumbach` (any name that identifies the model will do)
@@ -168,26 +168,26 @@ As you select the GLTF model, the form will change to the default properties for
 
 In order to have nice shadows from our model, add a shadow property to
 the GLTF
-model:<img src="../../assets/img/overview/build/media/image12.png"
-style="width:6in;height:0.69444in" />
+model:<img src="/assets/img/overview/build/media/image12.png"
+style="width:6in;height:0.69444in;border:1px solid;" />
 
 And enable both cast and receive shadows:
 
-<img src="../../assets/img/overview/build/media/image8.png"
-style="width:6in;height:2.25in" />
+<img src="/assets/img/overview/build/media/image8.png"
+style="width:6in;height:2.25in;border:1px solid;" />
 
 Update the object by pressing the **\[+ Add/Update Object\]** button.
 
 Now, if you open the scene in your browser by following the link at the
 top of the page:
 
-<img src="../../assets/img/overview/build/media/image11.png"
-style="width:5.10417in;height:0.54167in" />
+<img src="/assets/img/overview/build/media/image11.png"
+style="width:5.10417in;height:0.54167in;border:1px solid;" />
 
 You should have a magnificent *Mammuthus primigenius (Blumbach)* in your
 scene!
 
-<img src="../../assets/img/overview/build/media/image16.png"
+<img src="/assets/img/overview/build/media/image16.png"
 style="width:6in;height:4.40278in" />
 
 {% include alert type="tip" content="
@@ -209,7 +209,7 @@ Let us add a landmark to the Mammuthus primigenius (Blumbach) model. This way, w
 Update the object by pressing the **\[+ Add/Update Object\]** button.
 
 Under the **GLTF Model Data** section, click on the **\[Properties\]** button, and check/add
-the [`Landmark` property](../schemas/message/landmark). Add the `label` "Mammuthus primigenius (Blumbach)".
+the [`Landmark` property](/content/schemas/message/landmark). Add the `label` "Mammuthus primigenius (Blumbach)".
 
 ![](/assets/img/overview/build/landmarks-obj.png)
 
@@ -222,7 +222,8 @@ You can control the distance and/or position you are placed from a landmark in t
 or an `offsetPosition`. Otherwise, you may be placed in the middle of the object!
 "%}
 
-![](/assets/img/overview/build/mammuthus-primigenius-scene-landmark.png)
+<img src="/assets/img/overview/build/mammuthus-primigenius-scene-landmark.png"
+style="border:1px solid;" />
 
 ## See your scene in Augmented Reality (AR)
 
