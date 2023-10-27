@@ -8,7 +8,7 @@ This is the ARENA Documentation website giving architecture, APIs, and step-by-s
 * Dependencies: `make update`
 * Build and test: `make serve`
 * Clean build: `make clean`
-* Check html (during make serve)): `make check`
+* Check html: `make check`
 * Preview site at [http://localhost:4000/](http://localhost:4000/).
 
 ## Content

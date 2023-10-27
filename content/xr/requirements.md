@@ -57,7 +57,7 @@ Mozilla's WebXR Viewer viewer can be installed from the [App Store](https://apps
 
 ### Edge
 
-Recent versions of [Microsoft Edge adopted the Chromium open source project on the desktop, with WebXR support](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-microsoft-edge). 
+Recent versions of [Microsoft Edge adopted the Chromium open source project on the desktop, with WebXR support](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-microsoft-edge).
 
 #### HoloLens 2
 
@@ -81,7 +81,7 @@ A forward push on the left-hand rocker brings up the teleportation ring. Clickin
 
 ### Helio (Magic Leap)
 
-Helio is Magic Leap's web browser available on Magic Leap devices. Follow [these steps to open Helio and navigate to a website](https://developer.magicleap.com/en-us/learn/guides/debug-web-content), which we reproduce here for ease of access:
+Helio is Magic Leap's web browser available on Magic Leap devices. Follow [these steps to open Helio and navigate to a website](https://ml1-developer.magicleap.com/en-us/learn/guides/debug-web-content), which we reproduce here for ease of access:
 
 > 1. In the Magic Leap device, hold down the Home Button on the Control to show The Launcher. A circle of icons appears in the view.
 >
@@ -89,6 +89,6 @@ Helio is Magic Leap's web browser available on Magic Leap devices. Follow [these
 >
 > 3. Use the Control or swipe on the touchpad to navigate to the URL bar at the top of the Helio window.
 >
-> 4. Press the trigger on the Control to select the URL bar. A virtual keyboard appears that you can use to enter a URL address. You can also use Magic Leap Mobile App to enter text from your mobile device. See [Magic Leap Mobile App for more information](https://developer.magicleap.com/en-us/learn/guides/magic-leap-mobile-app).
+> 4. Press the trigger on the Control to select the URL bar. A virtual keyboard appears that you can use to enter a URL address. You can also use Magic Leap Mobile App to enter text from your mobile device. See [Magic Leap Mobile App for more information](https://ml1-developer.magicleap.com/en-us/learn/guides/magic-leap-mobile-app).
 >
 > 5. Enter this page's URL and see it display on the Magic Leap device.

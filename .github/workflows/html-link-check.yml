@@ -3,8 +3,8 @@ name: Check HTML links
 on: push
 
 jobs:
-  markdown-link-check:
-    
+  html-link-check:
+
     runs-on: ubuntu-latest
 
     steps:
