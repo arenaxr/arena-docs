@@ -152,7 +152,7 @@ style="width:6in;height:2.63889in;border:1px solid;" />
 
 There are multiple paths to upload files on the [ARENA File Store and Dropbox](/content/interface/filestore), which you can review.
 Currently we will use the simplest method, the **\[Upload Model to File Store and Scene\]** or
-**\[ <img src="/assets/img/overview/build/3dobj-icon.png" width="10"/>↑ \]**.
+**\[ <img src="/assets/img/overview/build/3dobj-icon.png" width="15"/>↑ \]**.
 Select the model and it will be uploaded for you automatically.
 
 <img src="/assets/img/overview/build/auto-upload.png" style="width:3in;border:1px solid;" />
@@ -198,7 +198,7 @@ added in a similar way.
 ## Add Landmarks
 
 A list of Landmarks is shown from the button at the bottom left corner of the screen
-**\[ <img src="/assets/img/overview/build/landmarks.svg" width="20"/> \]**.
+**\[ <img src="/assets/img/overview/build/landmarks.svg" width="15"/> \]**.
 
 Landmarks allow you to jump to certain places of interest in a scene. If you copied the landmarks from `scene/public`, it is likely that you have a single landmark pointing to a *Screenshare*:
 
