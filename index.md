@@ -49,20 +49,22 @@ Perform geographic queries for content, assets (such as location markers) and co
 ## Next Steps
 
 <br/>
+
 Get started by following our [ARENA Overview](/content/overview) to learn the main concepts.
 {: .fs-5 .fw-300 }
 
 [ <img src="/assets/img/icons/report.svg" width="40"/> <br/>ARENA Overview ](/content/overview){: .btn .mr-4  .intro-button}
 
 <br/>
-Then, you can learn the basics of the interface and [enter an ARENA scene](/content/overview/user-guide.html). Also learn about [building scenes](/content/overview/build.html), and how to develop [python programs](/content/overview/dev-guide.html) to define the behavior of your scenes. You can also see a more detailed description of the [ARENA architecture](/content/architecture/index.html).
+
+Then, you can learn the basics of the interface and [enter an ARENA scene](/content/overview/user-guide). Also learn about [building scenes](/content/overview/build), and how to develop [python programs](/content/overview/dev-guide) to define the behavior of your scenes. You can also see a more detailed description of the [ARENA architecture](/content/architecture).
 
 
-[ <img src="/assets/img/icons/first-time.svg" width="40"/> <br/>First Time in the ARENA ](/content/overview/user-guide.html){: .btn .mr-4 .intro-button}
-[ <img src="/assets/img/icons/scene.svg" width="40"/> <br/>Build a Scene ](/content/overview/build.html){: .btn .mr-4 .intro-button}
+[ <img src="/assets/img/icons/first-time.svg" width="40"/> <br/>First Time in the ARENA ](/content/overview/user-guide){: .btn .mr-4 .intro-button}
+[ <img src="/assets/img/icons/scene.svg" width="40"/> <br/>Build a Scene ](/content/overview/build){: .btn .mr-4 .intro-button}
 <br/><br/>
-[ <img src="/assets/img/icons/code.svg" width="40"/> <br/>Develop Python Programs ](/content/overview/dev-guide.html){: .btn .mr-4 .intro-button}
-[ <img src="/assets/img/icons/arch.svg" width="40"/> <br/>ARENA Architecture ](/content/architecture/index.html){: .btn .mr-4  .intro-button}
+[ <img src="/assets/img/icons/code.svg" width="40"/> <br/>Develop Python Programs ](/content/overview/dev-guide){: .btn .mr-4 .intro-button}
+[ <img src="/assets/img/icons/arch.svg" width="40"/> <br/>ARENA Architecture ](/content/architecture/index){: .btn .mr-4  .intro-button}
 
 The navigation bar on the left side will take you to much more content about the ARENA, which you can browse.
 
