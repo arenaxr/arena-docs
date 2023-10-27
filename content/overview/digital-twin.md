@@ -44,7 +44,7 @@ There are a range of scanning cameras and software to scan a room-scale 3D model
 
 We are going to use the scene you created in the Building a Scene tutorial, and add your room scale model to it.
 
-1. From your phone, enter the [build page](/content/overview/build) for your scene.
+1. From your phone, enter the [build page](https://arenaxr.org/build) for your scene.
 
 1. There are multiple paths to upload files on the [ARENA File Store and Dropbox](/content/interface/filestore), which you can review.
 Currently we will use the simplest method, the **\[Upload Model to File Store and Scene\]** or
@@ -68,19 +68,23 @@ The model's `rotation` y-axis (Euler) you will have to experiment with, to match
 
 ## Program Your Space
 
-Now, let us add some interactivity to your digital twin model. Your experience in previous [Python tutorials](/content/overview//dev-guide.md), will help you generate interactions from buttons and other objects. Here is some guidance when building a digital twin application.
+All this so far helps you Twin your physical space in 3D, but now, let us add some interactivity the Twinned data. Your experience in previous [Python tutorials](/content/overview//dev-guide.md) will help you generate interactions from buttons and other objects. Here is some guidance when building a digital twin application.
 
-- **Text I/O**: There are multiple ways to **render text, data,** and allow **user input**, try these strategies.
+- **Data**: What data is useful in proximity to your space? What useful displays or controls were previously **impractical or inappropriate**? Consider these data classes:
+    - Sensor data embedded in walls or machines: network, electric, compute, pipes and filtration.
+    - Sensors which cannot be blocked for light access: foliage, plants, solar panels.
+    - System components which are hidden for aesthetics, but difficult to find for maintenance.
+- **Text I/O**: There are multiple ways to **render text, data,** and allow **user input**. Try these strategies:
     - [ARENA UI Panels](/content/3d-content/ui)
     - [Text Display](/content/python/objects#text)
     - [Text Input](/content/python/attributes#text-input)
     - [Object Click Events](/content/python/events#click-events)
 - **Text Color**: Pay attention to the overall colors of your room model, you want any text you display to be **well contrasted**. ARENA UI Panels have **light or dark themes**, and text in general can be **any color**.
-- **Portal/Videospehre**: This is a nice to have for hybrid interaction, but consider if your want tp host a hybrid meeting, or provide more XR interaction without.
+- **Portal/Videosphere**: [Videospheres and Portals](/content/overview/panoramic) are a nice to have for hybrid interaction and can align well to a 3D model twin, but consider your goal. Do you want to host a hybrid meeting, or provide an XR interaction of your valuable data?
 
 
 {% include alert type="goal" content="
 Scan your space and add it to your scene using these techniques to create a replica of your physical space for virtual visitors.
-Then, run a Python application which provides a live feed of data, perhaps showing data which is inconvenient or impractical to display physically,
-but useful to show/hide in XR in proximity to the physical world.
+Then, run a Python application which provides a live feed of data, perhaps showing data which is **inconvenient or impractical** to display physically,
+but useful to show/hide/control in XR in proximity to the physical world.
 "%}
