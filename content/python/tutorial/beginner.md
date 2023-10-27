@@ -51,9 +51,9 @@ box = Box(object_id="my_box", position=Position(0,4,-2), scale=Scale(2,2,2))
 ```
 Note the input arguments. The names must match what they will be in the ARENA JSON specification. We don't have to worry too much about that now, but keep this in mind, as typos will be very bad!
 
-Box is a type of "Object". See [objects](https://docs.arenaxr.org/content/python/objects.html).
+Box is a type of "Object". See [objects](/content/python/objects).
 
-Position and Scale are what we call "Attributes". See [attributes](https://docs.arenaxr.org/content/python/attributes.html).
+Position and Scale are what we call "Attributes". See [attributes](/content/python/attributes).
 
 ## Adding our object to the ARENA
 ```python

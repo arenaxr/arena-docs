@@ -31,17 +31,17 @@ with this
 [dataset](https://drive.google.com/file/d/1TXwt8oSllGSJLj8Z6-y1i0yqj81JxM_v/view?usp=sharing)
 to a Linux / Windows computer that has an Nvidia GPU.
 
-<img src="../../assets/img/overview/photogrammetry/media/image4.png"
+<img src="/assets/img/overview/photogrammetry/media/image4.png"
 style="width:6in;height:3in" />
 
 After opening Meshroom and loading the dataset, you should see an
 interface as shown below. The key thing to notice is the *Graph Editor*
 panel located in the bottom left. This panel describes individual steps
 that photogrammetry involves. To get to know the purpose of each step,
-read [this](https://alicevision.org/#photogrammetry/) nice
+read the [AliceVision photogrammetry](https://alicevision.org/#photogrammetry/)
 writeup.
 
-<img src="../../assets/img/overview/photogrammetry/media/image3.png"
+<img src="/assets/img/overview/photogrammetry/media/image3.png"
 style="width:6in;height:3.05556in" />
 
 Now, click start to generate your first 3D model. This will take several
@@ -49,7 +49,7 @@ minutes or more depending on the compute power of your machine. After
 it’s finished, you should see sparse 3D point cloud shown in the 3D
 viewer panel:
 
-<img src="../../assets/img/overview/photogrammetry/media/image5.png"
+<img src="/assets/img/overview/photogrammetry/media/image5.png"
 style="width:6in;height:3.05556in" />
 
 If you look closely at the Scene section in 3D Viewer, you’ll find this
@@ -62,7 +62,7 @@ Double clicking any blocks from Structure From Motion to Texturing will
 visualize the result. The final 3D model is generated at the Texturing
 step.
 
-<img src="../../assets/img/overview/photogrammetry/media/image2.png"
+<img src="/assets/img/overview/photogrammetry/media/image2.png"
 style="width:6in;height:0.56944in" />
 
 To access the final output files, right click on the Texturing node and

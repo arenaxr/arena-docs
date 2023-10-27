@@ -13,7 +13,8 @@ The following instructions show how to host an ARENA program using a simple exam
 
 Navigate to the [file store](https://arenaxr.org/files). You might be asked to login. In your home folder, create a folder called **programs** (the folder name can be anything; this is just for the sake of our example). Later, we will need refer to this folder in the form **\<username-or-namespace\>/\<folder-path\>**. You can see your username on the upper left, in this example, we would refer to the folder as **cmu/programs** (**cmu** is the user in our example). **Add your program files (in this case, the `boxes.py` script) to this folder**.
 
-![](../../assets/img/programs/filestore-userhome.jpg)
+<img src="/assets/img/programs/filestore-userhome.jpg"
+style="border:1px solid;" />
 
 {% include alert type="warning" title="Authentication" content="
 You also need to include a `requirements.txt` with your `.py` files providing the authentication version of the ARENA Python library that has at least the line:
@@ -26,11 +27,12 @@ arena-py
 
 Open the [scene builder](/content/overview/build) and select the scene that you want to add the program to. Now, add a **Program** object by selecting type “program” in the Add/Edit Object select:
 
-![](../../assets/img/programs/image7.png){:width="200px"}
+<img src="/assets/img/programs/image7.png"
+style="width:3in;border:1px solid;" />
 
 ## 3. Edit the program attributes.
 
-Make sure to assign a unique object ID (use ![](../../assets/img/programs/image8.png){:width="100px"}), and:
+Make sure to assign a unique object ID (use ![](/assets/img/programs/image8.png){:width="100px"}), and:
 
 - **action** is `create`
 - **type** is `program`
@@ -50,7 +52,8 @@ By convention, we pass programs environment variables that indicate the scene, r
 Please set parent to **pytest** so that your programs are dispatched to this runtime.
 "%}
 
-![](../../assets/img/programs/image6.png){:width="80%"}
+<img src="/assets/img/programs/image6.png"
+style="width=80%;border:1px solid;" />
 
 This is the corresponding object JSON:
 
@@ -81,11 +84,12 @@ This is the corresponding object JSON:
 
 **Finalize by pressing the "Add/Update Object" button.** You should see the new program object in the scene object list:
 
-![](../../assets/img/programs/image3.png){:width="80%"}
+<img src="/assets/img/programs/image3.png"
+style="width=80%;border:1px solid;" />
 
 ## 5. Open the scene
 
-Open the Scene using ![](../../assets/img/programs/image9.png){:width="200px"}at the top of the build page (the link should be something like https://arenaxr.org/[your username]/\[scene-name\])
+Open the Scene using ![](/assets/img/programs/image9.png){:width="200px"}at the top of the build page (the link should be something like https://arenaxr.org/[your username]/\[scene-name\])
 
 ## 6. See the details of the ARENA runtime
 

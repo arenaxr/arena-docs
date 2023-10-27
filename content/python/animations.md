@@ -55,7 +55,7 @@ Note that the tweening of these properties occur browser-clientside. For the pos
 
 ### Animation vs AnimationMixer
 `AnimationMixer`s are special animations specific to a 3D model. These can be run the same way as regular `Animation`s.
-See [here](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation).
+See the [Animation component](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation).
 ```python
 xr_logo.dispatch_animation(
     AnimationMixer(clip="*", loop="repeat")

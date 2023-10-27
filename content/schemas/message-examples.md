@@ -46,7 +46,7 @@ All ARENA objects have similar well-defined schemas, and these are the basis for
 ```
 
 ## Sample Publish/Subscribe
-To run the commands below, you may need to install the [ARENA Python client](../python) which includes these scripts.
+To run the commands below, you may need to install the [ARENA Python client](/content/python) which includes these scripts.
 
 ### Subscribe to Scene Object Messages
 ```json
@@ -195,7 +195,7 @@ arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "gltf-model_1", "actio
 
 ## Animating GLTF Models
 
-To animate a GLTF model (see [GLTF Files](../3d-content/gltf-files) for how to find animation names), and set the animation-mixer parameter.
+To animate a GLTF model (see [GLTF Files](/content/3d-content/gltf-files) for how to find animation names), and set the animation-mixer parameter.
 
 ```json
 arena-py-pub -mh arenaxr.org -s example -m '{"object_id": "gltf-model_3", "action": "update", "type": "object", "data": {"animation-mixer": {"clip": "*"}}}'

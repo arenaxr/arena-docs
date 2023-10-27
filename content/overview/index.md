@@ -7,14 +7,14 @@ has_children: true
 
 # ARENA Tutorial Overview
 
-You can learn the basics of the interface and [enter an ARENA scene](/content/overview/user-guide.html). Also learn about [building scenes](/content/overview/build.html), and how to develop [python programs](/content/overview/dev-guide.html) to define the behavior of your scenes.
-You can also see a more detailed description of the [ARENA architecture](/content/architecture/index.html).
+You can learn the basics of the interface and [enter an ARENA scene](/content/overview/user-guide). Also learn about [building scenes](/content/overview/build), and how to develop [python programs](/content/overview/dev-guide) to define the behavior of your scenes.
+You can also see a more detailed description of the [ARENA architecture](/content/architecture).
 
-[ <img src="/assets/img/icons/first-time.svg" width="40"/> <br/>First Time in the ARENA ](/content/overview/user-guide.html){: .btn .mr-4  .intro-button}
-[ <img src="/assets/img/icons/scene.svg" width="40"/> <br/>Build a Scene ](/content/overview/build.html){: .btn .mr-4 .intro-button}
+[ <img src="/assets/img/icons/first-time.svg" width="40"/> <br/>First Time in the ARENA ](/content/overview/user-guide){: .btn .mr-4  .intro-button}
+[ <img src="/assets/img/icons/scene.svg" width="40"/> <br/>Build a Scene ](/content/overview/build){: .btn .mr-4 .intro-button}
 <br/><br/>
-[ <img src="/assets/img/icons/code.svg" width="40"/> <br/>Develop Python Programs ](/content/overview/dev-guide.html){: .btn .mr-4  .intro-button}
-[ <img src="/assets/img/icons/arch.svg" width="40"/> <br/>ARENA Architecture ](/content/architecture/index.html){: .btn .mr-4  .intro-button}
+[ <img src="/assets/img/icons/code.svg" width="40"/> <br/>Develop Python Programs ](/content/overview/dev-guide){: .btn .mr-4  .intro-button}
+[ <img src="/assets/img/icons/arch.svg" width="40"/> <br/>ARENA Architecture ](/content/architecture){: .btn .mr-4  .intro-button}
 
 Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 {: .fs-1 }
@@ -28,11 +28,11 @@ However, building pervasive mixed (virtual and augmented) reality applications i
 The Augmented Reality Edge Networking Architecture (ARENA) was designed to address many of the challenges of building collaborative mixed reality applications.
 {: .fs-5 .fw-300 }
 
-![img](../../assets/img/overview/app-examples.png)
+![img](/assets/img/overview/app-examples.png)
 
 See a summary of the main features in the [introduction](/index.html#key-features).
 
-We also have a more detailed description of the [ARENA architecture](/content/architecture/index.html).
+We also have a more detailed description of the [ARENA architecture](/content/architecture).
 
 ## Main Concepts
 

@@ -21,7 +21,7 @@ In addition, we can access ARENA scenes as described below.
 
 ## Accessing ARENA Scenes
 
-**Scenes** are accessed from `<namespace>/<scene>`, where `namespace` is the ARENA user name, and `scene` is the name of the scene. If a namespace is not given, it will default to the `public` namespace. For example, the **lobby** scene (the `scenename`) of the **public** namespace in our main ARENA instance: can be accessed through both [https://arenaxr.org/public/lobby](https://arenaxr.org/public/lobby) or, omitting the namespace: [https://arenaxr.org/lobby](https://arenaxr.org/public/lobby). See some example public scenes [here](https://arenaxr.org/showcase.html).
+**Scenes** are accessed from `<namespace>/<scene>`, where `namespace` is the ARENA user name, and `scene` is the name of the scene. If a namespace is not given, it will default to the `public` namespace. For example, the **lobby** scene (the `scenename`) of the **public** namespace in our main ARENA instance: can be accessed through both [https://arenaxr.org/public/lobby](https://arenaxr.org/public/lobby) or, omitting the namespace: [https://arenaxr.org/lobby](https://arenaxr.org/public/lobby). See some example public scenes in our [Showcase](https://arenaxr.org/showcase.html).
 
 {% include alert type="note" content="
 We recommend the [ARENA Overview](/content/overview) as a quick introduction to ARENA and some of these areas, including on how to [access scenes](/content/overview/user-guide) and [edit/create them](/content/overview/build).

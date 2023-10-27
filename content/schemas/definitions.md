@@ -9,7 +9,7 @@ parent: ARENA Objects
 
 ARENA objects follow the structure of [`Scene Message object`](#scene-message-object), with general object properties, paired with a more granular detailed `data` sub-object which varies in form and follow the examples below.
 
-ARENA 3D Environment is built on top of [A-Frame](https://aframe.io/), and it supports the majority of A-Frame's primitives (e.g., geometries like boxes, circles, spheres) and components (that can be attached to objects, such as position, rotation, material, sound). See [here](/content/schemas/#arena-objects-and-a-frame) for a clarification of the relation between ARENA and A-Frame properties.
+ARENA 3D Environment is built on top of [A-Frame](https://aframe.io/), and it supports the majority of A-Frame's primitives (e.g., geometries like boxes, circles, spheres) and components (that can be attached to objects, such as position, rotation, material, sound). See our [clarification of the relationship](/content/schemas/#arena-objects-and-a-frame) between ARENA and A-Frame properties.
 
 {% include alert type="tip" title="Tip" content="
 In most cases, arbitrary A-Frame properties which are applied in HTML as attributes can be applied to ARENA Objects. We link the corresponding A-Frame object definition for completeness in the tables below.

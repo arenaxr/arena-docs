@@ -21,7 +21,7 @@ with 3D digital content overlaid on top of back-facing camera
 backgrounds, enhanced with built-in accelerometer, gyroscope and other
 sensors to track relative motion of viewing devices.
 
-<img src="../../assets/img/overview/localization/media/image8.jpg"
+<img src="/assets/img/overview/localization/media/image8.jpg"
 style="width:6in;height:3.375in" />
 
 *(Google’s AR framework
@@ -36,14 +36,14 @@ Browser](https://apps.apple.com/us/app/xr-browser/id1588029989).**
 If you are using an Android device, you can use [**Google Chrome for
 Android**.](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en_US&gl=US&pli=1)
 
-<img src="../../assets/img/overview/localization/media/image7.png"
+<img src="/assets/img/overview/localization/media/image7.png"
 style="width:2.55729in;height:1.24131in" />
 
 To view an ARENA scene in augmented reality (AR) mode, enter the URL of
 the scene using the correct browser, allow the necessary permissions and
 tap on the \[AR\] button on the lower right side of the screen.
 
-<img src="../../assets/img/overview/localization/media/image9.png"
+<img src="/assets/img/overview/localization/media/image9.png"
 style="width:5.39343in;height:2.50008in" />
 
 *(Landscape mode works best for AR mode. Only use Landscape in XR
@@ -56,14 +56,14 @@ black and white square-pattern markers easily recognized by cameras to
 gain position and rotation relative to the marker.
 
 Print out this PDF of the [default “zero”
-AprilTag](https://github.com/arenaxr/apriltag-gen/blob/master/output/tag36_11_00000.pdf),
+AprilTag](https://raw.githubusercontent.com/arenaxr/apriltag-gen/master/output/tag36_11_00000.pdf),
 and place it on the floor.
+The page should look like this:
 
-*(Or, print this page out. The default “zero” April tag is pictured
-below:)*
+<div style="width:4.25in;height:5.5in;display:table-cell;vertical-align:middle;text-align:center;border:1px solid;">
+<img src="/assets/img/overview/localization/media/image4.png" />
+</div>
 
-<img src="../../assets/img/overview/localization/media/image4.png"
-style="width:5.90625in;height:6.56115in" />
 
 {% include alert type="note" content="
 *More AprilTag markers can be found here:*
@@ -76,7 +76,7 @@ To test AprilTag localization, enter this scene:
 *Optionally, you can also enter scenes with a QR code instead of
 manually typing the link in the browser search bar:*
 
-<img src="../../assets/img/overview/localization/media/image6.png"
+<img src="/assets/img/overview/localization/media/image6.png"
 style="width:3.11995in;height:3.11995in" />
 
 Now, using ARENA on a mobile Android or iOS device in AR mode, look at
@@ -84,12 +84,10 @@ the marker so that it is in full view of the camera, and watch as the 3D
 digital content’s origin anchors itself correctly to the AprilTag
 marker.
 
-<img src="../../assets/img/overview/localization/media/image16.png"
+<img src="/assets/img/overview/localization/media/image16.png"
 style="width:5.78646in;height:2.68066in" />
 
-More info about AprilTags and ARENA setup here:
-
-[https://docs.arenaxr.org/content/overview/xr.html](https://docs.arenaxr.org/content/overview/xr.html)
+Check out more info about [AprilTags and ARENA setup](/content/overview/xr).
 
 ## **Using the VR Calibrator**
 
@@ -104,7 +102,7 @@ We have an alternative for manual calibration. This
 calibration allows you to manually align the virtual world to the
 physical world.
 
-<img src="../../assets/img/overview/localization/media/image12.png"
+<img src="/assets/img/overview/localization/media/image12.png"
 style="width:6in;height:4.93056in" />
 
 VR scene calibration currently requires connecting and running a python
@@ -141,7 +139,7 @@ script to). When the scene has loaded in your VR browser, enable the
 necessary permissions and click on the \[AR\] button on the lower right
 hand side of the ARENA page.
 
-<img src="../../assets/img/overview/localization/media/image10.png"
+<img src="/assets/img/overview/localization/media/image10.png"
 style="width:6in;height:3.58333in" />
 
 *Pictured above: Oculus Quest Pro browser view.*
@@ -151,13 +149,13 @@ colored buttons: a **green triangular “Play” button** and a **red
 octagonal “Stop” button**. Press the green button to begin VR
 calibration.
 
-<img src="../../assets/img/overview/localization/media/image5.jpg"
+<img src="/assets/img/overview/localization/media/image5.jpg"
 style="width:6in;height:3.75in" />
 
 When the big green button is pressed, a multi-axis calibrator gizmo will
 be visible.
 
-<img src="../../assets/img/overview/localization/media/image3.jpg"
+<img src="/assets/img/overview/localization/media/image3.jpg"
 style="width:6in;height:3.75in" />
 
 Use the VR controller to repeatedly click on the gizmo’s eight buttons
@@ -168,7 +166,7 @@ y-)**
 until the multi-axis VR calibrator gizmo is aligned with the AprilTag
 marker.
 
-<img src="../../assets/img/overview/localization/media/image11.png"
+<img src="/assets/img/overview/localization/media/image11.png"
 style="width:6in;height:6.68056in" />
 
 When you are done aligning the multi-axis VR calibrator gizmo with the
