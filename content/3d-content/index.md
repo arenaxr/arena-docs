@@ -36,7 +36,7 @@ In the bottom right Context menu, there is a line of tabs down the side. To chan
 
 To change the color of a sphere or new mesh created, there are a few additional steps. If you select the sphere in the Scene Collection menu and go to the Material tab of the Context menu, you will notice there are no presets or settings to change, unlike the already-generated cube. Create a new material, name it whatever you want, and you can change the colors, materials, and display.
 
-![tutorial_07](/assets/img/blender/tutorial_07.png) ![tutorial_08](/assets/img/blender/tutorial_08.png)](/
+![tutorial_07](/assets/img/blender/tutorial_07.png) ![tutorial_08](/assets/img/blender/tutorial_08.png)
 ### Starting Animation
 At the top of the window, change from the Layout tab to the Animation tab. This window will look different, with a preview on the left, scene in the middle, and a timeline at the bottom. Right click on the cube, select 'Insert Keyframe', and select 'Location'. ![tutorial_09](/assets/img/blender/tutorial_09.png) In Blender, a keyframe is a specific frame in the timeline that contains the attributes of models, such as their location, rotation, or size. You can read more about [Blender keyframes](https://docs.blender.org/manual/en/latest/animation/keyframes/introduction.html).
 

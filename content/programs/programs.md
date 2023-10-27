@@ -11,7 +11,7 @@ The following instructions show how to host an ARENA program using a simple exam
 
 ## 1. Add the files.
 
-Navigate to the [file store](https://arenaxr.org/files). You might be asked to login. In your home folder, create a folder called **programs** (the folder name can be anything; this is just for the sake of our example). Later, we will need refer to this folder in the form **\<username-or-namespace\>/\<folder-path\>**. You can see your username on the upper left, in this example, we would refer to the folder as **cmu/programs** (**cmu** is  the user in our example). **Add your program files (in this case, the `boxes.py` script) to this folder**.
+Navigate to the [file store](https://arenaxr.org/files). You might be asked to login. In your home folder, create a folder called **programs** (the folder name can be anything; this is just for the sake of our example). Later, we will need refer to this folder in the form **\<username-or-namespace\>/\<folder-path\>**. You can see your username on the upper left, in this example, we would refer to the folder as **cmu/programs** (**cmu** is the user in our example). **Add your program files (in this case, the `boxes.py` script) to this folder**.
 
 <img src="/assets/img/programs/filestore-userhome.jpg"
 style="border:1px solid;" />

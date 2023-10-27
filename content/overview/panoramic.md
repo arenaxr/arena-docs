@@ -154,7 +154,7 @@ To complete the effect for your physical participants, you can use a monitor or 
 1. OBS: Expand your OBS window to fullscreen to fill the entire wall monitor.
 1. OBS: For more screen real estate, you can close some open tabs; disable `Docks > Scenes`, `Docks > Sources`, etc...
 1. OBS: For even more screen real estate, also disable `View > Source Toolbar`, `View > Status Bar`, etc...
-1. Now you should see a **reflected live virtual** scene like the image below and you should be able to see any virtual participants that enter the sphere on [the wall monitor ](/assets/img/overview/videosphere1.png).
+1. Now you should see a **reflected live virtual** scene like the image below and you should be able to see any virtual participants that enter the sphere on the [wall monitor](/assets/img/overview/videosphere1.png).
 
 <img src="/assets/img/overview/videosphere3.png"/>
 
