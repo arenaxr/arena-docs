@@ -1,5 +1,5 @@
 ---
-title: Exporting from Unity
+title: Unity Export
 layout: default
 parent: 3D Content
 ---

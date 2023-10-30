@@ -1,5 +1,5 @@
 ---
-title: Converting SketchUp Files
+title: SketchUp Conversion
 layout: default
 parent: 3D Content
 ---

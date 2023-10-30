@@ -14,10 +14,10 @@ layout: default
 
 Our demonstration sample server runs at https://arenaxr.org
 
-- [ARENA Default Scene](https://arenaxr.org/)
+- [ARENA Default Scene](https://arenaxr.org/public/lobby)
 - [ARENA Scene Builder](https://arenaxr.org/build/)
 - [ARENA Network Graph](https://arenaxr.org/network/)
-- [ARENA Runtime Supervisor - ARTS](https://arenaxr.org/arts/)
+- [ARENA Runtime Supervisor - ARTS](https://arenaxr.org/programs/)
 - [ARENA File Store](https://arenaxr.org/files/)
 - [ARENA Scene Locator - ATLAS]()<em> - COMING SOON</em><!--https://atlas.conix.io -->
 - [ARENA Scene list](https://arenaxr.org/scenes)
