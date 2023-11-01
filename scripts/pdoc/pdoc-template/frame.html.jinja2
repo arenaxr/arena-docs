@@ -2,7 +2,7 @@
 {% if module.modulename.split('.')|length == 1 -%}
 title: Python API
 has_children: true
-nav_order: 6.0
+nav_order: 6.5
 {% elif module.modulename.split('.')|length == 2 -%}
 title: {{ module.modulename if module else "API Reference" }}
 parent: Python API
@@ -13,7 +13,7 @@ parent: {{ '.'.join(module.modulename.split('.')[:-1]) }}
 grand_parent: Python API
 {% endif %}
 ---
-<small>arena-py API v{{ env["PDOC-ARENA-PI-VERSION"] }}</small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v{{ env["PDOC-ARENA-PI-VERSION"] }}/arena">v{{ env["PDOC-ARENA-PI-VERSION"] }}</a></small>
 <div>
     {% block content %}{% endblock %}
     {% filter minify_css %}

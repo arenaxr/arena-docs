@@ -3,7 +3,7 @@ title: arena.auth
 parent: Python API
 has_children: true
 ---
-<small>arena-py API v0.8.0</small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
