@@ -5,7 +5,7 @@ layout: default
 parent: Unity Library
 ---
 
-# ARENA-Unity Runtime
+# arena-unity Runtime
 The ArenaUnity package can be used to build new interfaces to collaboratively connect and edit ARENA scenes. Be sure to use the [project setup instructions](/content/unity) to install the package. For the `Editor` interface, see the [ARENA Unity Editor](/content/unity/editor) instructions.
 
 ## Architecture

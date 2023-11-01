@@ -10,7 +10,7 @@ has_children: true
 The Python library provides a very accessible development option for ARENA applications. Our current API allows us to create and update objects in a scene, define animations, and setup callbacks on events and timers. The library provides a scheduler and a design pattern familiar to game developers, which includes decorators to create one-shot, periodic and delayed (start after a given time) tasks.Any entity represented in Python is automatically updated upon arrival of network messages and we provide calls to load any pre-existing scene content upon startup.
 
 Draw objects and run programs in the ARENA using Python!
-- [**ARENA-py**](https://github.com/arenaxr/arena-py) Python repository
+- [**arena-py**](https://github.com/arenaxr/arena-py) Python repository
 
 
 ## Setup
@@ -40,13 +40,13 @@ def make_box():
 scene.run_tasks()
 ```
 
-## ARENA-py Library
+## arena-py Library
 The above is the simplest example of an ARENA Python program. This library sits above the ARENA pub/sub MQTT
 message protocol. JSON messages are described in more detail in our [Wire Message Definition](/content/schemas/definitions) which runs in a browser.
 That forms a layer, in turn, on top of [A-Frame](https://aframe.io/) and [THREE.js](http://threejs.org/) javascript libraries.
 
 ## Examples
-Examples of ARENA-py programs can be found in our [Examples](https://github.com/arenaxr/arena-py/tree/master/examples) and [System Tests](https://github.com/arenaxr/arena-py/tree/master/system-tests).
+Examples of arena-py programs can be found in our [Examples](https://github.com/arenaxr/arena-py/tree/master/examples) and [System Tests](https://github.com/arenaxr/arena-py/tree/master/system-tests).
 
 ## Running from the Command Line
 ARENA python applications can be sandboxed in the WASM runtime (currently with limited library support due to the still immature support for Python in WASM toolchains) and managed by ARTS, or ran standalone from you computer.
@@ -73,10 +73,10 @@ If not specified the namespace is your current logged in user-id. The most commo
 We have added protection to the ARENA MQTT broker to limit access to change your scenes, which requires Python programs to supply authentication through a Google account.
 
 ### Sign-In Desktop OS
-If you have a web browser available, the ARENA-py library `Scene(host="myhost.com")` will launch a web browser the first time and ask you for an account to authenticate you with, before opening a client MQTT connection.
+If you have a web browser available, the arena-py library `Scene(host="myhost.com")` will launch a web browser the first time and ask you for an account to authenticate you with, before opening a client MQTT connection.
 
 ### Sign-In Server/Headless OS
-For headless environments, the ARENA-py library `Scene(host="myhost.com")` will provide you with a url to cut and paste in a browser anywhere, ask you for an account to authenticate you with, and show you a code you can enter on the command line, before opening a client MQTT connection.
+For headless environments, the arena-py library `Scene(host="myhost.com")` will provide you with a url to cut and paste in a browser anywhere, ask you for an account to authenticate you with, and show you a code you can enter on the command line, before opening a client MQTT connection.
 
 ## Scripts
 Some helper script aliases have been added in this library to help you manage authentication and quick command-line (CLI) publish and subscribe to the ARENA.

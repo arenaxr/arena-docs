@@ -5,7 +5,7 @@ layout: default
 parent: Python Library
 ---
 
-# Attributes in ARENA-py
+# Attributes in arena-py
 
 Attributes are used to specify parameters for ARENA Objects.
 

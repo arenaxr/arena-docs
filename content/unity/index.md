@@ -5,7 +5,7 @@ layout: default
 has_children: true
 ---
 
-# ARENA-unity
+# arena-unity
 Unity C# library for editing scenes and creating applications for the ARENA.
 
 <img alt="" src="/assets/img/unity/arena-unity-demo.gif">

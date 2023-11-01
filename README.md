@@ -51,10 +51,10 @@ Callout alerts are available. Use this syntax:
 - **ARENA-web-core**
   - https://github.com/arenaxr/arena-web-core
 
-- **ARENA-py Python examples**
+- **arena-py Python examples**
   - https://github.com/arenaxr/arena-py
 
-- **ARENA-unity Unity library**
+- **arena-unity Unity library**
   - https://github.com/arenaxr/arena-unity
 
 - **ARENA Runtime Supervisor (ARTS)**

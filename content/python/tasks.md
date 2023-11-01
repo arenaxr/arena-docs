@@ -5,12 +5,12 @@ layout: default
 parent: Python Library
 ---
 
-# Tasks in ARENA-py
+# Tasks in arena-py
 
 Tasks are ways you can run programs in the ARENA.
 
 You can think of tasks like threads. In fact, they behave a bit like Python threads, but unlike threads,
-ARENA-py tasks are all run in a single event loop.
+arena-py tasks are all run in a single event loop.
 
 ## Run Tasks/Start Event Loop
 ```python
@@ -67,7 +67,7 @@ scene.run_async(f, 1000)
 ```
 
 ## Sharing global variables
-Like with threads, global variables in ARENA-py must be used with the "global" keyword.
+Like with threads, global variables in arena-py must be used with the "global" keyword.
 Note: If global variables are pointing to something allocated in memory (like a class or list), "global" may not be needed, but it's always best to use "global" just to be safe.
 
 ```python

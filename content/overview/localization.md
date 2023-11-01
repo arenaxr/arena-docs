@@ -109,7 +109,7 @@ VR scene calibration currently requires connecting and running a python
 script to the scene being viewed in virtual reality.
 
 First, if you have not done so already, follow the instructions in the
-Python setup and install the ARENA-py library.
+Python setup and install the arena-py library.
 
 ```bash
 pip3 install arena-py

@@ -5,9 +5,9 @@ layout: default
 parent: Python Library
 ---
 
-# Scenes in ARENA-py
+# Scenes in arena-py
 
-Scenes give ARENA-py programs access to an ARENA scene. It provides an interface to add/update objects, run animations, and many more!
+Scenes give arena-py programs access to an ARENA scene. It provides an interface to add/update objects, run animations, and many more!
 
 ## Scene Access
 To get access to a scene in the ARENA, create a `Scene` object. Make sure you have proper permissions to access it!

@@ -6,7 +6,7 @@ parent: Python Tutorial
 grand_parent: Python Library
 ---
 
-# Beginner Example - The bare minimum you need to start using ARENA-py
+# Beginner Example - The bare minimum you need to start using arena-py
 
 ## Let's start by installing and importing the library
 ```shell
@@ -36,10 +36,10 @@ You can also pass host and scene as arguments, if you don't want to use environm
 ```python
 scene = Scene(host=[host], scene=[scene])
 ```
-Note: ARENA-py will always favor environmental variables over arguments.
+Note: arena-py will always favor environmental variables over arguments.
 
 ## Define a task
-ARENA-py works by running tasks in an event loop, so we need a main task for our sample program.
+arena-py works by running tasks in an event loop, so we need a main task for our sample program.
 ```python
 def main():
 ```

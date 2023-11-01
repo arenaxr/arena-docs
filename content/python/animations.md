@@ -5,7 +5,7 @@ layout: default
 parent: Python Library
 ---
 
-# Animations and GLTF Morphs in ARENA-py
+# Animations and GLTF Morphs in arena-py
 
 Dispatching and running animations and GLTF 3D Morphs.
 

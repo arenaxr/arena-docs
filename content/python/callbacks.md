@@ -53,7 +53,7 @@ scene.new_obj_callback = new_obj_callback
 
 ### delete_obj_callback
 This is called whenever there is an object has been deleted in the scene.
-ARENA-py will look for all "action" = "delete" messages and call this callback.
+arena-py will look for all "action" = "delete" messages and call this callback.
 Use this to delete references and to be notified when an object is removed by
 another user or program.
 

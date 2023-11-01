@@ -6,7 +6,7 @@ has_children: true
 parent: Python Library
 ---
 
-# ARENA-py Documentation and Tutorials
+# arena-py Documentation and Tutorials
 
 ## Tutorials
 [Part 1](beginner.md)

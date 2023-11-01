@@ -5,7 +5,7 @@ layout: default
 parent: Python Library
 ---
 
-# Objects in ARENA-py
+# Objects in arena-py
 
 Objects are the main interface for placing content into the ARENA.
 
@@ -65,15 +65,15 @@ obj.update_handler = update
 ```
 
 # Automatic Updates
-ARENA-py will keep track of internal states of active objects in a scene, so the library user doesn't have to.
+arena-py will keep track of internal states of active objects in a scene, so the library user doesn't have to.
 This means if you create an `Object` in a `Scene`, the `Scene` instance will listen to incoming messages and update
 your `Object` instance's attributes automatically!
 
-This allows ARENA-py programs to interact with the build page, with users, and even with other ARENA-py programs.
+This allows arena-py programs to interact with the build page, with users, and even with other arena-py programs.
 As long as your program is running, you do not need to manually keep track of your `Object`s' current state in the scene.
 
-For instance, if you create an `Object` in ARENA-py and you update its position with the build page or with another program,
-that `Object`'s position in the original ARENA-py program will automatically be updated for you!
+For instance, if you create an `Object` in arena-py and you update its position with the build page or with another program,
+that `Object`'s position in the original arena-py program will automatically be updated for you!
 
 # All Objects
 
@@ -222,7 +222,7 @@ ButtonPanel(buttons=[Button(...), ...], ...)
 
 ## Prompt
 Create an ARENAUI Prompt
-```python 
+```python
 Prompt(...)
 ```
 
