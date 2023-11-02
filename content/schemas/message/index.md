@@ -46,7 +46,7 @@ has_toc: false
 |[Torus Knot](torusKnot)|Torus Knot Geometry|
 |[Triangle](triangle)|Triangle Geometry|
 |[Videosphere](videosphere)|Videosphere 360 Video|
-|[Event](event)|Events are ephemeral messages used to send user events like mouse movements or controller actions.|
 |[Camera](camera)|Camera is the pose and arena-user component data representing a user avatar.|
-|[Hand](hand)|Hand is the (left or right) hand metadata pose and controller type of the user avatar.|
-|[Hand](hand)|Hand is the (left or right) hand metadata pose and controller type of the user avatar.|
+|[Event](event)|Events are ephemeral messages used to send user events like mouse movements or controller actions.|
+|[Hand Left](hand)|Hand Left is the left hand metadata pose and controller type of the user avatar.|
+|[Hand Right](hand)|Hand Right is the right hand metadata pose and controller type of the user avatar.|
