@@ -1,6 +1,6 @@
 ---
 title: ARENAUI Button Panel
-nav_order: 4
+nav_order: 5
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

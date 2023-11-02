@@ -47,3 +47,6 @@ has_toc: false
 |[Triangle](triangle)|Triangle Geometry|
 |[Videosphere](videosphere)|Videosphere 360 Video|
 |[Event](event)|Events are ephemeral messages used to send user events like mouse movements or controller actions.|
+|[Camera](camera)|Camera is the pose and arena-user component data representing a user avatar.|
+|[Hand](hand)|Hand is the (left or right) hand metadata pose and controller type of the user avatar.|
+|[Hand](hand)|Hand is the (left or right) hand metadata pose and controller type of the user avatar.|

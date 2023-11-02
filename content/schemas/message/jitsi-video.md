@@ -1,6 +1,6 @@
 ---
 title: Jitsi Video
-nav_order: 31
+nav_order: 34
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

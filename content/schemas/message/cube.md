@@ -1,6 +1,6 @@
 ---
 title: Cube (deprecated; don't use)
-nav_order: 16
+nav_order: 18
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

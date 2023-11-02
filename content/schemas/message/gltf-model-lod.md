@@ -1,6 +1,6 @@
 ---
 title: GLTF Model Level of Detail
-nav_order: 24
+nav_order: 26
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

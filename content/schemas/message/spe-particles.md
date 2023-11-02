@@ -1,6 +1,6 @@
 ---
 title: SPE Particles
-nav_order: 57
+nav_order: 60
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

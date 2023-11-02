@@ -1,6 +1,6 @@
 ---
 title: ARENAUI Prompt
-nav_order: 6
+nav_order: 7
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

@@ -1,6 +1,6 @@
 ---
 title: Light
-nav_order: 33
+nav_order: 36
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

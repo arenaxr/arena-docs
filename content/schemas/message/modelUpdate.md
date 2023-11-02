@@ -1,6 +1,6 @@
 ---
 title: GLTF Model Update
-nav_order: 37
+nav_order: 40
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
