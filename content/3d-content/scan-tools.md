@@ -7,11 +7,11 @@ parent: 3D Content
 #  List of 3D Scanner Tools
 
 There are a number of tools and technologies to choose from to capture 3D scans of reality.
-We've tried to share our experiences here.
+We've tried to share our experiences here when scanning **Objects** and **Rooms**.
 
 ## **LiDAR**
 
- [LiDAR](https://wikipedia.org/wiki/Lidar) or "light/laser detection and ranging" is a method for determining ranges to an object or a surface with a laser and measuring the time for the reflected light to return to the receiver. This can be powerful when combined with visual light from a camera to capture RGBD images.
+ [LiDAR](https://wikipedia.org/wiki/Lidar) or "light/laser detection and ranging" is a method for determining ranges to an object or a surface with a laser and measuring the time for the reflected light to return to the receiver. This can be powerful when combined with visual light from a camera to capture RGB-D images.
 
 | App Name | Quality / 10 | Time to Use | Difficulty / 10 | Other notes |
 | -- | -- | -- | -- | -- |
@@ -23,7 +23,7 @@ We've tried to share our experiences here.
 
 ## **NeRF**
 
-[NeRF](https://wikipedia.org/wiki/Neural_radiance_field) or "neural radiance field" is an AI-based method of building s 3D model from 2D images.
+[NeRF](https://wikipedia.org/wiki/Neural_radiance_field) or "neural radiance field" is an AI-based method of building a 3D model from 2D images.
 
 | App Name | Quality / 10 | Time to Use | Difficulty / 10 | Other notes |
 | -- | -- | -- | -- | -- |
