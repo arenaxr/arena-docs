@@ -75,7 +75,7 @@ Implements a timeout scheme in lack of better management of the timing/events ca
 <dt><a href="#module_pcd-model">pcd-model</a></dt>
 <dd><p>Load Point Cloud Data (PCD) models using three.js example loader
 Point Cloud Data is a file format for Point Cloud Library.
-<a href="https://en.wikipedia.org/wiki/Point_Cloud_Library">https://en.wikipedia.org/wiki/Point_Cloud_Library</a></p>
+<a href="https://wikipedia.org/wiki/Point_Cloud_Library">https://wikipedia.org/wiki/Point_Cloud_Library</a></p>
 </dd>
 <dt><a href="#module_press-and-move">press-and-move</a></dt>
 <dd><p>Press and move camera; User camera movement with the mouse.
@@ -222,7 +222,7 @@ Keep track of mouse events and publish corresponding events
 Listen for collisions, callback on event.
 Requires [Physics for A-Frame VR](https://github.com/n5ro/aframe-physics-system)
 
-**Requires**: <code>module:&#x27;aframe-physics-system&#x27;</code>  
+**Requires**: <code>module:&#x27;aframe-physics-system&#x27;</code>
 <a name="module_gesture-detector"></a>
 
 ## gesture-detector
@@ -249,7 +249,7 @@ One physics feature is applying an impulse to an object to set it in motion.
 This happens in conjunction with an event.
 Requires [Physics for A-Frame VR](https://github.com/n5ro/aframe-physics-system)
 
-**Requires**: <code>module:aframe-physics-system</code>  
+**Requires**: <code>module:aframe-physics-system</code>
 <a name="module_jitsi-video"></a>
 
 ## jitsi-video
@@ -322,7 +322,7 @@ Publish with qos of 2 for network graph to update latency
 ## pcd-model
 Load Point Cloud Data (PCD) models using three.js example loader
 Point Cloud Data is a file format for Point Cloud Library.
-https://en.wikipedia.org/wiki/Point_Cloud_Library
+https://wikipedia.org/wiki/Point_Cloud_Library
 
 <a name="module_press-and-move"></a>
 
@@ -406,9 +406,8 @@ Adds a video to an entity and controls its playback.
 ## jitsiStatsLocalCallback(e)
 Called when Jitsi local stats are updated, used to save local status for stats-monitor.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | <code>Object</code> | event object; e.detail contains the callback arguments |
-
