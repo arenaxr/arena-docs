@@ -7,6 +7,7 @@ has_children: true
 
 # arena-unity
 Unity C# library for editing scenes and creating applications for the ARENA.
+- [**arena-unity**](https://github.com/arenaxr/arena-unity) Unity repository
 
 <img alt="" src="/assets/img/unity/arena-unity-demo.gif">
 
