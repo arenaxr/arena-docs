@@ -25,7 +25,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `cylinder`             | 1.0.0  | 0.1.12 | 0.0.1  | Cylinder geometry                                             |
 | `dodecahedron`         | 1.0.0  | 0.1.12 | 0.0.12 | Dodecahedron geometry                                         |
 | `entity`               | 1.0.0  | 0.1.12 | 0.0.1  | Entities are the base of all objects in the scene.            |
-| `env-presets`          | 1.0.0  | -      | -      | A-Frame Environment presets.                                  |
+| `environment`          | 1.0.0  | -      | -      | A-Frame Environment and presets.                              |
 | `gltf-model`           | 1.0.0  | 0.1.12 | 0.0.2  | Load a GLTF model                                             |
 | `icosahedron`          | 1.0.0  | 0.1.12 | 0.0.11 | Icosahedron geometry                                          |
 | `image`                | 1.0.0  | 0.1.12 | 0.0.7  | Display an image on a plane                                   |
