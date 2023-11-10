@@ -60,7 +60,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `arena-vive`             | 1.0.0  | N/A    | -      | Tracking Vive controller movement in real time.                                                    |
 | `armarker`               | 1.0.0  | N/A    | -      | A location marker used to anchor scenes, or scene objects, in the real world.                      |
 | `attribution`            | 1.0.0  | -      | -      | Attribution component. Saves attribution data in any entity.                                       |
-| `blip`                   | 1.23.0 | -      | -      | Adds a video to an entity and controls its playback.                                               |
+| `blip`                   | 1.23.0 | -      | -      | Objects animate in/out of the scene instead of appearing/disappearing instantly.                                               |
 | `box-collision-listener` | 1.17.0 | -      | -      | AABB collision detection for entities with a mesh                                                  |
 | `buffer`                 | 1.0.0  | N/A    | N/A    | Transform geometry into a BufferGeometry: reduce memory usage while being harder to manipulate.    |
 | `click-listener`         | 1.0.0  | 0.1.12 | 0.8.0  | Keep track of mouse events and publish corresponding events                                        |
