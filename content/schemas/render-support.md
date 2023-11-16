@@ -71,6 +71,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `gltf-model-lod`         | 1.0.0  | -      | -      | GLTF lod switching between models based on distance.                                               |
 | `gltf-model-progress`    | 1.0.0  | N/A    | 0.0.5  | GLTF model loading progress system. Manage GLTF load messages.                                     |
 | `gltf-morph`             | 1.0.0  | 0.1.12 | -      | GLTF 3D morphable model controls                                                                   |
+| `gltf-opacity`           | 1.25.0 | -      | -      | GLTF opacity                                                                                       |
 | `goto-landmark`          | 1.0.0  | 0.1.12 | -      | Teleports user to the landmark with the given name; Requires click-listener                        |
 | `goto-url`               | 1.0.0  | 0.1.12 | -      | Goto given URL; Requires click-listener                                                            |
 | `hide-in-ar-mode`        | 1.0.0  | N/A    | -      | Hide in AR component. When set to an entity, makes the entity disappear when entering AR mode.     |
