@@ -1,6 +1,6 @@
 ---
 title: Scene Options
-nav_order: 57
+nav_order: 59
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

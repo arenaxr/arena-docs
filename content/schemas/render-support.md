@@ -26,7 +26,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `dodecahedron`         | 1.0.0  | 0.1.12 | 0.0.12 | Dodecahedron geometry                                         |
 | `entity`               | 1.0.0  | 0.1.12 | 0.0.1  | Entities are the base of all objects in the scene.            |
 | `environment`          | 1.0.0  | -      | -      | A-Frame Environment and presets.                              |
-| `gaussian_splatting`   | 1.25.0 | -      | -      | Load a Gaussian Splat model                                   |
+| `gaussian_splatting`   | 1.24.0 | -      | -      | Load a Gaussian Splat model                                   |
 | `gltf-model`           | 1.0.0  | 0.1.12 | 0.0.2  | Load a GLTF model                                             |
 | `icosahedron`          | 1.0.0  | 0.1.12 | 0.0.11 | Icosahedron geometry                                          |
 | `image`                | 1.0.0  | 0.1.12 | 0.0.7  | Display an image on a plane                                   |
@@ -61,7 +61,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `arena-vive`             | 1.0.0  | N/A    | -      | Tracking Vive controller movement in real time.                                                    |
 | `armarker`               | 1.0.0  | N/A    | -      | A location marker used to anchor scenes, or scene objects, in the real world.                      |
 | `attribution`            | 1.0.0  | -      | -      | Attribution component. Saves attribution data in any entity.                                       |
-| `blip`                   | 1.23.0 | -      | -      | Objects animate in/out of the scene instead of appearing/disappearing instantly.                                               |
+| `blip`                   | 1.23.0 | -      | -      | Objects animate in/out of the scene instead of appearing/disappearing instantly.                   |
 | `box-collision-listener` | 1.17.0 | -      | -      | AABB collision detection for entities with a mesh                                                  |
 | `buffer`                 | 1.0.0  | N/A    | N/A    | Transform geometry into a BufferGeometry: reduce memory usage while being harder to manipulate.    |
 | `click-listener`         | 1.0.0  | 0.1.12 | 0.8.0  | Keep track of mouse events and publish corresponding events                                        |
@@ -71,7 +71,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `gltf-model-lod`         | 1.0.0  | -      | -      | GLTF lod switching between models based on distance.                                               |
 | `gltf-model-progress`    | 1.0.0  | N/A    | 0.0.5  | GLTF model loading progress system. Manage GLTF load messages.                                     |
 | `gltf-morph`             | 1.0.0  | 0.1.12 | -      | GLTF 3D morphable model controls                                                                   |
-| `gltf-opacity`           | 1.25.0 | -      | -      | GLTF opacity                                                                                       |
+| `gltf-opacity`           | 1.24.0 | -      | -      | GLTF opacity                                                                                       |
 | `goto-landmark`          | 1.0.0  | 0.1.12 | -      | Teleports user to the landmark with the given name; Requires click-listener                        |
 | `goto-url`               | 1.0.0  | 0.1.12 | -      | Goto given URL; Requires click-listener                                                            |
 | `hide-in-ar-mode`        | 1.0.0  | N/A    | -      | Hide in AR component. When set to an entity, makes the entity disappear when entering AR mode.     |

@@ -1,6 +1,6 @@
 ---
 title: Shadow
-nav_order: 58
+nav_order: 60
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

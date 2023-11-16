@@ -1,6 +1,6 @@
 ---
 title: Three.js Scene
-nav_order: 66
+nav_order: 68
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
