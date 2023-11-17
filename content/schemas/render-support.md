@@ -56,8 +56,8 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | ------------------------ | ------ | ------ | ------ | -------------------------------------------------------------------------------------------------- |
 | `animation-mixer`        | 1.0.0  | 0.1.12 | 0.7.0  | A list of available animations in model file will play by default.                                 |
 | `animation`              | 1.0.0  | 0.1.12 | -      | Animate and tween values.                                                                          |
-| `arena-camera`           | 1.0.0  | 0.1.12 | 0.2.0  | Tracking camera movement in real time. Emits camera pose change and VIO change events.             |
-| `arena-user`             | 1.0.0  | N/A    | 0.3.0  | Another user’s camera in the ARENA. Handles Jitsi and display name updates.                        |
+| `arena-camera`           | 1.23.3 | N/A    | 0.11.0 | Tracking camera movement in real time. Emits camera/VIO pose updates. (Format change 2023-11-02)   |
+| `arena-user`             | 1.23.3 | 0.8.0  | 0.11.0 | Another user’s camera in the ARENA, renders Jitsi/displayName updates. (Format change 2023-11-02)  |
 | `arena-vive`             | 1.0.0  | N/A    | -      | Tracking Vive controller movement in real time.                                                    |
 | `armarker`               | 1.0.0  | N/A    | -      | A location marker used to anchor scenes, or scene objects, in the real world.                      |
 | `attribution`            | 1.0.0  | -      | -      | Attribution component. Saves attribution data in any entity.                                       |
