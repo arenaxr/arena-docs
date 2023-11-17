@@ -1,6 +1,6 @@
 ---
 title: Text Input
-nav_order: 66
+nav_order: 65
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

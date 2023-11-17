@@ -1,6 +1,6 @@
 ---
 title: Hand
-nav_order: 32
+nav_order: 31
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

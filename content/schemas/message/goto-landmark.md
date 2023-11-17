@@ -1,6 +1,6 @@
 ---
 title: Goto Landmark
-nav_order: 30
+nav_order: 29
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

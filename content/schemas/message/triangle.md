@@ -1,6 +1,6 @@
 ---
 title: Triangle
-nav_order: 71
+nav_order: 70
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

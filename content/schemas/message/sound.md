@@ -1,6 +1,6 @@
 ---
 title: Positional Sound
-nav_order: 61
+nav_order: 60
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

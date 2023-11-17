@@ -1,6 +1,6 @@
 ---
 title: Material
-nav_order: 41
+nav_order: 40
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

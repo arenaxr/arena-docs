@@ -1,6 +1,6 @@
 ---
 title: Torus Knot
-nav_order: 70
+nav_order: 69
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

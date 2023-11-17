@@ -1,6 +1,6 @@
 ---
 title: Video
-nav_order: 73
+nav_order: 72
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

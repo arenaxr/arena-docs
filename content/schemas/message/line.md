@@ -1,6 +1,6 @@
 ---
 title: Line
-nav_order: 39
+nav_order: 38
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

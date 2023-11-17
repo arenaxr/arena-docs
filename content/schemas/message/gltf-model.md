@@ -67,6 +67,5 @@ GLTF Model Attributes
 |spe-particles|[spe-particles](spe-particles)||GPU based particle systems in A-Frame. |No|
 |look-at|string||The look-at component defines the behavior for an entity to dynamically rotate or face towards another entity or position. Use '#my-camera' to face the user camera, otherwise can take either a vec3 position or a query selector to another entity.|No|
 |animation-mixer|[animation-mixer](animation-mixer)||A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'. |No|
-|gltf-opacity|[gltf-opacity](gltf-opacity)||Apply oApacity to the model|No|
 |gltf-model-lod|[gltf-model-lod](gltf-model-lod)||Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance|No|
 |modelUpdate|[modelUpdate](modelUpdate)||The GLTF-specific `modelUpdate` attribute is an object with child component names as keys. The top-level keys are the names of the child components to be updated. The values of each are nested `position` and `rotation` attributes to set as new values, respectively. Either `position` or `rotation` can be omitted if unchanged.|No|
