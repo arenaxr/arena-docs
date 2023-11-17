@@ -67,13 +67,13 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `click-listener`         | 1.0.0  | 0.1.12 | 0.8.0  | Keep track of mouse events and publish corresponding events                                        |
 | `collision-listener`     | 1.0.0  | -      | -      | Listen for collisions, callback on event.                                                          |
 | `dynamic-body`           | 1.0.0  | 0.1.12 | -      | Physics type attached to the object.                                                               |
-| `geometry`               | 1.0.0  | 0.1.12 | -      |                                                                                                    |
+| `geometry`               | 1.0.0  | 0.1.12 | 0.10.0 | Primitive mesh geometry support in A-Frame.                                                        |
 | `gesture-detector`       | 1.0.0  | N/A    | -      | Detect multi-finger touch gestures. Publish events accordingly.                                    |
 | `gltf-model-lod`         | 1.0.0  | -      | -      | GLTF lod switching between models based on distance.                                               |
 | `gltf-morph`             | 1.0.0  | 0.1.12 | -      | GLTF 3D morphable model controls                                                                   |
 | `goto-landmark`          | 1.0.0  | 0.1.12 | -      | Teleports user to the landmark with the given name; Requires click-listener                        |
 | `goto-url`               | 1.0.0  | 0.1.12 | -      | Goto given URL; Requires click-listener                                                            |
-| `hide-on-enter-ar`       | 1.8.0  | N/A    | -      | Hide object when entering AR. Remove component to _not_ hide. Was "hide-in-ar-mode`".              |
+| `hide-on-enter-ar`       | 1.8.0  | N/A    | -      | Hide object when entering AR. Remove component to _not_ hide. Was hide-in-ar-mode.                 |
 | `hide-on-enter-vr`       | 1.8.0  | N/A    | -      | Hide object when entering VR. Remove component to _not_ hide.                                      |
 | `impulse`                | 1.0.0  | 0.1.12 | -      | The force applied using physics. Requires click-listener                                           |
 | `jitsi-video`            | 1.0.0  | 0.1.39 | N/A    | Apply a Jitsi video source to the geometry                                                         |
@@ -95,7 +95,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `show-on-enter-vr`       | 1.20.0 | N/A    | -      | Show object when entering VR. Hidden otherwise.                                                    |
 | `skipCache`              | 1.0.0  | N/A    | -      | Disable retrieving the shared geometry object from the cache.                                      |
 | `sound`                  | 1.0.0  | 0.1.12 | -      | The sound component defines the entity as a source of sound or audio.                              |
-| `spe-particles`          | 1.18.0 | -      | -      | GPU based particle systems in A-Frame: supports single textures and spritesheets.                  |
+| `spe-particles`          | 1.18.0 | 0.7.0  | -      | GPU based particle systems in A-Frame: supports single textures and spritesheets.                  |
 | `textinput`              | 1.0.0  | 0.1.24 | -      | Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.  |
 | `video-control`          | 1.0.0  | 0.3.0  | -      | Adds a video to an entity and controls its playback.                                               |
-| `visible`                | 1.0.0  | N/A    | -      |                                                                                                    |
+| `visible`                | 1.0.0  | N/A    | 0.10.1 | Whether or not an object should rendered visible.                                                  |
