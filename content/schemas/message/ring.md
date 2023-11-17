@@ -1,6 +1,5 @@
 ---
 title: Ring
-nav_order: 54
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

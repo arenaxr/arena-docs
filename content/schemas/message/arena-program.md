@@ -1,6 +1,5 @@
 ---
 title: Program
-nav_order: 2
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

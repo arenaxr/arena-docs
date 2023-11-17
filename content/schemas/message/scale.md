@@ -1,6 +1,5 @@
 ---
 title: Scale
-nav_order: 57
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

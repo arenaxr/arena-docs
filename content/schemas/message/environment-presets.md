@@ -1,6 +1,5 @@
 ---
 title: Environment Presets
-nav_order: 23
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

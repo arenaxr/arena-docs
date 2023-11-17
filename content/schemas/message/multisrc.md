@@ -1,6 +1,5 @@
 ---
 title: Multi Source
-nav_order: 42
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

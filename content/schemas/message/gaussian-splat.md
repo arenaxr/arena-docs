@@ -1,6 +1,5 @@
 ---
 title: 3D Gaussian Splat
-nav_order: 25
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -13,7 +12,9 @@ grand_parent: ARENA Objects
 =================
 
 
-Load a 3D Gaussian Splat for Real-Time Radiance Field Rendering
+Load a 3D Gaussian Splat for Real-Time Radiance Field Rendering. 
+
+More information : <a href='https://github.com/quadjr/aframe-gaussian-splatting'>https://github.com/quadjr/aframe-gaussian-splatting</a>
 
 All wire objects have a set of basic attributes ```{object_id, action, type, persist, data}```. The ```data``` attribute defines the object-specific attributes
 

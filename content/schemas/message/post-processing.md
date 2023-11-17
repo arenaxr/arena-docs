@@ -1,6 +1,5 @@
 ---
 title: Post-Processing Effects
-nav_order: 50
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

@@ -1,6 +1,5 @@
 ---
 title: Cone
-nav_order: 17
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

@@ -1,6 +1,5 @@
 ---
 title: Attribution
-nav_order: 9
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

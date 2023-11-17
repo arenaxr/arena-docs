@@ -1,6 +1,5 @@
 ---
 title: ARENAUI Card Panel
-nav_order: 6
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

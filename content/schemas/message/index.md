@@ -1,6 +1,5 @@
 ---
 title: Objects Schema
-nav_order: 1
 layout: default
 parent: ARENA Objects
 has_children: true

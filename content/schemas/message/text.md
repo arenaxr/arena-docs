@@ -1,6 +1,5 @@
 ---
 title: Text
-nav_order: 64
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

@@ -1,6 +1,5 @@
 ---
 title: Vector2
-nav_order: 66.5
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

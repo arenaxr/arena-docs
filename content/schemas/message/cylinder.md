@@ -1,6 +1,5 @@
 ---
 title: Cylinder
-nav_order: 19
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

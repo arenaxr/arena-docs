@@ -1,6 +1,5 @@
 ---
 title: Blip Effect
-nav_order: 10
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

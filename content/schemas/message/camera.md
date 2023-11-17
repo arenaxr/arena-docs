@@ -1,6 +1,5 @@
 ---
 title: Camera
-nav_order: 13
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

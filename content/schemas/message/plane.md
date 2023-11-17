@@ -1,6 +1,5 @@
 ---
 title: Plane
-nav_order: 48
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

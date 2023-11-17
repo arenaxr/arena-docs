@@ -1,6 +1,5 @@
 ---
 title: Geometry
-nav_order: 26
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

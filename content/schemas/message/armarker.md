@@ -1,6 +1,5 @@
 ---
 title: ARMarker
-nav_order: 8
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

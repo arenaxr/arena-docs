@@ -1,6 +1,5 @@
 ---
 title: Torus
-nav_order: 68
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

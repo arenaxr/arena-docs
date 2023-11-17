@@ -1,6 +1,5 @@
 ---
 title: Box Collision Listener
-nav_order: 11
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

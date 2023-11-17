@@ -1,6 +1,5 @@
 ---
 title: User Avatar
-nav_order: 4
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

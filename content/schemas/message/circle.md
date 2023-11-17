@@ -1,6 +1,5 @@
 ---
 title: Circle
-nav_order: 15
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

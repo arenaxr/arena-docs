@@ -1,6 +1,5 @@
 ---
 title: Scene Config
-nav_order: 3
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

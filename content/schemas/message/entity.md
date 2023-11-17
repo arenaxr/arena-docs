@@ -1,6 +1,5 @@
 ---
 title: Entity (generic object)
-nav_order: 22
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

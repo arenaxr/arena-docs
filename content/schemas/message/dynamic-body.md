@@ -1,6 +1,5 @@
 ---
 title: Physics
-nav_order: 21
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
