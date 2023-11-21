@@ -25,16 +25,25 @@ Our demonstration sample server runs at [https://arenaxr.org](https://arenaxr.or
 
 ## ARENA Sources
 
-- [**Documentation**](https://github.com/arenaxr/arena-docs)
-- [**Deployment Docker**](https://github.com/arenaxr/arena-services-docker)
-- [**Browser client (ARENA-core)**](https://github.com/arenaxr/arena-web-core)
-- [**Python Library**](https://github.com/arenaxr/arena-py)
-- [**ATLAS**](https://github.com/arenaxr/ATLAS)
-- [**Persistence Database**](https://github.com/arenaxr/arena-persist)
-- [**Authentication Backend**](https://github.com/arenaxr/arena-account)
-- [**File Store**](https://github.com/arenaxr/arena-store)
-- [**Mosquitto Broker**](https://github.com/SilverLineFramework/mosquitto-broker)
-- [**Posefusion**](https://github.com/conix-center/posefusion)
-- [**AprilTag Decoding for AR.js**](https://github.com/conix-center/AR.js/blob/master/README.md#apriltag-detection)
-- [**AprilTag WASM Detector**](https://github.com/arenaxr/apriltag-js-standalone)
-- [**AprilTag 36h11 Generator**](https://github.com/arenaxr/apriltag-gen)
+The ARENA project creates and makes use of several open source projects. This is a short list of the major projects in use.
+
+| Repository                                                                                      | Project Purpose             |
+| ----------------------------------------------------------------------------------------------- | --------------------------- |
+| [aframevr/aframe](https://github.com/aframevr/aframe)                                           | Web 3D Renderer             |
+| [arenaxr/apriltag-gen](https://github.com/arenaxr/apriltag-gen)                                 | AprilTag 36h11 Generator    |
+| [arenaxr/apriltag-js-standalone](https://github.com/arenaxr/apriltag-js-standalone)             | AprilTag WASM Detector      |
+| [arenaxr/arena-account](https://github.com/arenaxr/arena-account)                               | Authentication Backend      |
+| [arenaxr/arena-docs](https://github.com/arenaxr/arena-docs)                                     | Documentation               |
+| [arenaxr/arena-persist](https://github.com/arenaxr/arena-persist)                               | Persistence Database        |
+| [arenaxr/arena-py](https://github.com/arenaxr/arena-py)                                         | Python Library              |
+| [arenaxr/arena-renderfusion](https://github.com/arenaxr/arena-renderfusion)                     | Remote Renderer             |
+| [arenaxr/arena-schemas](https://github.com/arenaxr/arena-schemas)                               | Wire Schema Generator       |
+| [arenaxr/arena-services-docker](https://github.com/arenaxr/arena-services-docker)               | Deployment Docker           |
+| [arenaxr/arena-unity](https://github.com/arenaxr/arena-unity)                                   | Unity Library               |
+| [arenaxr/arena-web-core](https://github.com/arenaxr/arena-web-core)                             | Web Browser Client          |
+| [arenaxr/ATLAS](https://github.com/arenaxr/ATLAS)                                               | Geolocation Database        |
+| [conix-center/AR.js](https://github.com/arenaxr/conix-center/AR.js)                             | AprilTag Decoding for AR.js |
+| [conix-center/posefusion](https://github.com/conix-center/posefusion)                           | Pose Capture                |
+| [filebrowser/filebrowser](https://github.com/filebrowser/filebrowser)                           | File Store Backend          |
+| [jitsi/jitsi-meet](https://github.com/jitsi/jitsi-meet)                                         | Video Conferencing          |
+| [SilverLineFramework/mosquitto-broker](https://github.com/SilverLineFramework/mosquitto-broker) | Mosquitto Broker            |
