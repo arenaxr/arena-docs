@@ -12,7 +12,7 @@ layout: default
 
 ## ARENA Usage Links
 
-Our demonstration sample server runs at https://arenaxr.org
+Our demonstration sample server runs at [https://arenaxr.org](https://arenaxr.org)
 
 - [ARENA Default Scene](https://arenaxr.org/public/lobby)
 - [ARENA Scene Builder](https://arenaxr.org/build/)
