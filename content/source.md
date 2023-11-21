@@ -42,7 +42,7 @@ The ARENA project creates and makes use of several open source projects. This is
 | [arenaxr/arena-unity](https://github.com/arenaxr/arena-unity)                                   | Unity Library               |
 | [arenaxr/arena-web-core](https://github.com/arenaxr/arena-web-core)                             | Web Browser Client          |
 | [arenaxr/ATLAS](https://github.com/arenaxr/ATLAS)                                               | Geolocation Database        |
-| [conix-center/AR.js](https://github.com/arenaxr/conix-center/AR.js)                             | AprilTag Decoding for AR.js |
+| [conix-center/AR.js](https://github.com/conix-center/AR.js)                                     | AprilTag Decoding for AR.js |
 | [conix-center/posefusion](https://github.com/conix-center/posefusion)                           | Pose Capture                |
 | [filebrowser/filebrowser](https://github.com/filebrowser/filebrowser)                           | File Store Backend          |
 | [jitsi/jitsi-meet](https://github.com/jitsi/jitsi-meet)                                         | Video Conferencing          |
