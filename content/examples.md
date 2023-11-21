@@ -27,9 +27,9 @@ Thumbnail images can be clicked for a larger view.
 <!-- image links-->
 
 [i-landmark]: /assets/img/overview/build/landmark-list.png
-{:height="100px"}
+{:width="100px"}
 [i-gltf-model]: /assets/img/overview/build/mammuthus-primigenius-scene.png
-{:height="100px"}
+{:width="100px"}
 
 <!-- json links-->
 
