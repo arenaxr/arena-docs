@@ -19,17 +19,14 @@ Which **Web/Python/Unity** platform supports each of these features? Take a look
 
 Thumbnail images can be clicked for a larger view.
 
-[![][i-landmark]][i-landmark]
-
 | Example    |             Thumbnail             | Description                                                           | Example Links                                                                                 |
 | ---------- | :-------------------------------: | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| GLTF Model |   [![][i-landmark]][i-landmark]   | GLTF Models afford consistent cross-platform rendering of 3D assets.  | [JSON][j-gltf-model], [Python][p-gltf-model], [Unity][u-gltf-model], [Tutorial][t-gltf-model] |
-| Landmark   | [![][i-gltf-model]][i-gltf-model] | Landmarks allow you to jump to certain places of interest in a scene. | [JSON][j-landmark], [Tutorial][t-landmark]                                                    |
+| GLTF Model | [![][i-gltf-model]][i-gltf-model] | GLTF Models afford consistent cross-platform rendering of 3D assets.  | [JSON][j-gltf-model], [Python][p-gltf-model], [Unity][u-gltf-model], [Tutorial][t-gltf-model] |
+| Landmark   |   [![][i-landmark]][i-landmark]   | Landmarks allow you to jump to certain places of interest in a scene. | [JSON][j-landmark], [Tutorial][t-landmark]                                                    |
 
 <!-- image links-->
 
 [i-landmark]: /assets/img/overview/build/landmark-list.png
-
 {:height="100px"}
 [i-gltf-model]: /assets/img/overview/build/mammuthus-primigenius-scene.png
 {:height="100px"}
@@ -37,17 +34,17 @@ Thumbnail images can be clicked for a larger view.
 <!-- json links-->
 
 [j-landmark]: /content/schemas/message/landmark
-[j-gltf-model]: /content/schemas/message/gltf-model.md
+[j-gltf-model]: /content/schemas/message/gltf-model
 
 <!-- python links-->
 
-[p-gltf-model]: /content/python/objects.md#gltf
+[p-gltf-model]: /content/python/objects#gltf
 
 <!-- tutorial links-->
 
-[t-landmark]: /content/overview/build.md#add-landmarks
-[t-gltf-model]: /content/overview/build.md#add-new-objects
+[t-landmark]: /content/overview/build#add-landmarks
+[t-gltf-model]: /content/overview/build#add-new-objects
 
 <!-- unity links-->
 
-[u-gltf-model]: /content/unity/editor.md#exporting-unity-objects-as-gltf
+[u-gltf-model]: /content/unity/editor#exporting-unity-objects-as-gltf
