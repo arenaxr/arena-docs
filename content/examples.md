@@ -61,6 +61,10 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Videosphere             |  [![][i-videosphere]][i-videosphere]  | Videosphere 360 Video                                                   | [Object][obj3],                                                                       |
 | Landmark                |     [![][i-landmark]][i-landmark]     | Landmarks allow you to jump to certain places of interest in a scene.   | [Property][oprp], [JSON][j-landmark], [Tutorial][t-landmark]                          |
 
+<!-- Segment -->
+<!-- Geometry -->
+<!-- Mesh -->
+
 ## Wire Format Types
 
 ### 3D Object
@@ -164,7 +168,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 [i-triangle]: /favicon.ico
 {:width="100px"}
 [i-ui-buttons]: /assets/img/3dcontent/ui-button-panel.png
-{:width="100px"}
+{:width="60px"}
 [i-ui-card]: /assets/img/3dcontent/ui-card.png
 {:width="100px"}
 [i-ui-prompt]: /assets/img/3dcontent/ui-prompt.png
@@ -181,7 +185,40 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <!-- python links-->
 
-[p-gltf]: /content/python/objects#gltf
+[p-box]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/box.py
+[p-circle]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/circle.py
+[p-cone]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/cone.py
+[p-cylinder]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/cylinder.py
+[p-dodecahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/dodecahedron.py
+[p-gltf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/gltf.py
+[p-icosahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/icosahedron.py
+[p-image]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/image.py
+[p-light]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/light.py
+[p-line]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/line.py
+[p-octahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/octahedron.py
+[p-plane]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/plane.py
+[p-ring]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ring.py
+[p-sphere]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/sphere.py
+[p-tetrahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/tetrahedron.py
+[p-text]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/text.py
+[p-thickline]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/thickline.py
+[p-torus]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus.py
+[p-torus-knot]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus_knot.py
+[p-triangle]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/triangle.py
+[p-animation]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation.py
+[p-animation-mixer]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation_mixer.py
+[p-color]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/color.py
+[p-clickable]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/clickable.py
+[p-url]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_url.py
+[p-material]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/material.py
+[p-morph]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/morph.py
+[p-physics]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physics_impulse.py
+[p-impulse]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physics_impulse.py
+[p-position]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/position.py
+[p-rotation]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/rotation.py
+[p-scale]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/scale.py
+[p-sound]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/sound.py
+[p-textinput]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/text_input.py
 
 <!-- tutorial links-->
 
