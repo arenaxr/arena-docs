@@ -21,45 +21,45 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 
 | Example                 |               Thumbnail               | Description                                                             | Example Links                                                                         |
 | ----------------------- | :-----------------------------------: | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| Box                     |          [![][i-box]][i-box]          | Box Geometry                                                            | [Object][wobj],                                                                       |
-| Camera                  |       [![][i-camera]][i-camera]       | Camera is the pose and component data representing a user avatar.       | [Object][wobj],                                                                       |
-| Capsule                 |      [![][i-capsule]][i-capsule]      | Capsule Geometry                                                        | [Object][wobj],                                                                       |
-| Circle                  |       [![][i-circle]][i-circle]       | Circle Geometry                                                         | [Object][wobj],                                                                       |
-| Cone                    |         [![][i-cone]][i-cone]         | Cone Geometry                                                           | [Object][wobj],                                                                       |
-| Cube                    |         [![][i-cube]][i-cube]         | Cube (=Box) Geometry **(deprecated)**                                   | [Object][wobj],                                                                       |
-| Cylinder                |     [![][i-cylinder]][i-cylinder]     | Cylinder Geometry                                                       | [Object][wobj],                                                                       |
-| Dodecahedron            | [![][i-dodecahedron]][i-dodecahedron] | Dodecahedron Geometry                                                   | [Object][wobj],                                                                       |
-| Entity (generic object) |       [![][i-entity]][i-entity]       | Entities are containers into which components can be attached.          | [Object][wobj],                                                                       |
-| Event                   |        [![][i-event]][i-event]        | Events are ephemeral messages used for events like controller actions.  | [Object][wobj],                                                                       |
-| Gaussian Splat          |        [![][i-splat]][i-splat]        | Load 3D Gaussian Splat                                                  | [Object][wobj],                                                                       |
-| GLTF Model              |         [![][i-gltf]][i-gltf]         | GLTF Models afford consistent cross-platform rendering of 3D assets.    | [Object][wobj], [JSON][j-gltf], [Python][p-gltf], [Unity][u-gltf], [Tutorial][t-gltf] |
-| Hand Left               |         [![][i-hand]][i-hand]         | Hand Left is the metadata pose and controller type of the user avatar.  | [Object][wobj],                                                                       |
-| Hand Right              |         [![][i-hand]][i-hand]         | Hand Right is the metadata pose and controller type of the user avatar. | [Object][wobj],                                                                       |
-| Icosahedron             |  [![][i-icosahedron]][i-icosahedron]  | Icosahedron Geometry                                                    | [Object][wobj],                                                                       |
-| Image                   |        [![][i-image]][i-image]        | Display an image on a plane                                             | [Object][wobj],                                                                       |
-| Landmark                |     [![][i-landmark]][i-landmark]     | Landmarks allow you to jump to certain places of interest in a scene.   | [Property][oatt], [JSON][j-landmark], [Tutorial][t-landmark]                          |
-| Light                   |        [![][i-light]][i-light]        | A light                                                                 | [Object][wobj],                                                                       |
-| Line                    |         [![][i-line]][i-line]         | Draw a line                                                             | [Object][wobj],                                                                       |
-| Ocean                   |        [![][i-ocean]][i-ocean]        | Ocean                                                                   | [Object][wobj],                                                                       |
-| Octahedron              |   [![][i-octahedron]][i-octahedron]   | Octahedron Geometry                                                     | [Object][wobj],                                                                       |
-| PCD Model               |          [![][i-pcd]][i-pcd]          | Load a PCD model                                                        | [Object][wobj],                                                                       |
-| Plane                   |        [![][i-plane]][i-plane]        | Plane Geometry                                                          | [Object][wobj],                                                                       |
-| Program                 |      [![][i-program]][i-program]      | ARENA program data                                                      | [Object][wobj],                                                                       |
-| Ring                    |         [![][i-ring]][i-ring]         | Ring Geometry                                                           | [Object][wobj],                                                                       |
-| Rounded Box             |   [![][i-roundedbox]][i-roundedbox]   | Rounded Box Geometry                                                    | [Object][wobj],                                                                       |
-| Scene Options           |    [![][i-scene-opt]][i-scene-opt]    | ARENA scene options                                                     | [Object][wobj],                                                                       |
-| Sphere                  |       [![][i-sphere]][i-sphere]       | Sphere Geometry                                                         | [Object][wobj],                                                                       |
-| Tetrahedron             |  [![][i-tetrahedron]][i-tetrahedron]  | Tetrahedron Geometry                                                    | [Object][wobj],                                                                       |
-| Text                    |         [![][i-text]][i-text]         | Display text                                                            | [Object][wobj],                                                                       |
-| Thickline               |    [![][i-thickline]][i-thickline]    | Draw a thick line that can have a custom width                          | [Object][wobj],                                                                       |
-| Three.js Scene          |      [![][i-threejs]][i-threejs]      | Load a Three.js Scene                                                   | [Object][wobj],                                                                       |
-| Torus                   |        [![][i-torus]][i-torus]        | Torus Geometry                                                          | [Object][wobj],                                                                       |
-| Torus Knot              |    [![][i-torusKnot]][i-torusKnot]    | Torus Knot Geometry                                                     | [Object][wobj],                                                                       |
-| Triangle                |     [![][i-triangle]][i-triangle]     | Triangle Geometry                                                       | [Object][wobj],                                                                       |
-| UI Button Panel         |   [![][i-ui-buttons]][i-ui-buttons]   | ARENAUI Button Panel                                                    | [Object][wobj],                                                                       |
-| UI Card                 |      [![][i-ui-card]][i-ui-card]      | ARENAUI Card                                                            | [Object][wobj],                                                                       |
-| UI Prompt               |    [![][i-ui-prompt]][i-ui-prompt]    | ARENAUI Prompt                                                          | [Object][wobj],                                                                       |
-| Videosphere             |  [![][i-videosphere]][i-videosphere]  | Videosphere 360 Video                                                   | [Object][wobj],                                                                       |
+| Box                     |          [![][i-box]][i-box]          | Box Geometry                                                            | [Object][obj3],                                                                       |
+| Camera                  |       [![][i-camera]][i-camera]       | Camera is the pose and component data representing a user avatar.       | [Object][obj3],                                                                       |
+| Capsule                 |      [![][i-capsule]][i-capsule]      | Capsule Geometry                                                        | [Object][obj3],                                                                       |
+| Circle                  |       [![][i-circle]][i-circle]       | Circle Geometry                                                         | [Object][obj3],                                                                       |
+| Cone                    |         [![][i-cone]][i-cone]         | Cone Geometry                                                           | [Object][obj3],                                                                       |
+| Cube                    |         [![][i-cube]][i-cube]         | Cube Geometry **(deprecated, see Box)**                                 | [Object][obj3],                                                                       |
+| Cylinder                |     [![][i-cylinder]][i-cylinder]     | Cylinder Geometry                                                       | [Object][obj3],                                                                       |
+| Dodecahedron            | [![][i-dodecahedron]][i-dodecahedron] | Dodecahedron Geometry                                                   | [Object][obj3],                                                                       |
+| Entity (generic object) |       [![][i-entity]][i-entity]       | Entities are containers into which components can be attached.          | [Object][obj3],                                                                       |
+| Event                   |        [![][i-event]][i-event]        | Events are ephemeral messages used for events like controller actions.  | [Object][obj3],                                                                       |
+| Gaussian Splat          |        [![][i-splat]][i-splat]        | Load 3D Gaussian Splat                                                  | [Object][obj3],                                                                       |
+| GLTF Model              |         [![][i-gltf]][i-gltf]         | GLTF Models afford consistent cross-platform rendering of 3D assets.    | [Object][obj3], [JSON][j-gltf], [Python][p-gltf], [Unity][u-gltf], [Tutorial][t-gltf] |
+| Hand Left               |         [![][i-hand]][i-hand]         | Hand Left is the metadata pose and controller type of the user avatar.  | [Object][obj3],                                                                       |
+| Hand Right              |         [![][i-hand]][i-hand]         | Hand Right is the metadata pose and controller type of the user avatar. | [Object][obj3],                                                                       |
+| Icosahedron             |  [![][i-icosahedron]][i-icosahedron]  | Icosahedron Geometry                                                    | [Object][obj3],                                                                       |
+| Image                   |        [![][i-image]][i-image]        | Display an image on a plane                                             | [Object][obj3],                                                                       |
+| Light                   |        [![][i-light]][i-light]        | A light                                                                 | [Object][obj3],                                                                       |
+| Line                    |         [![][i-line]][i-line]         | Draw a line                                                             | [Object][obj3],                                                                       |
+| Ocean                   |        [![][i-ocean]][i-ocean]        | Ocean                                                                   | [Object][obj3],                                                                       |
+| Octahedron              |   [![][i-octahedron]][i-octahedron]   | Octahedron Geometry                                                     | [Object][obj3],                                                                       |
+| PCD Model               |          [![][i-pcd]][i-pcd]          | Load a PCD model                                                        | [Object][obj3],                                                                       |
+| Plane                   |        [![][i-plane]][i-plane]        | Plane Geometry                                                          | [Object][obj3],                                                                       |
+| Program                 |      [![][i-program]][i-program]      | ARENA program data                                                      | [Object][obj3],                                                                       |
+| Ring                    |         [![][i-ring]][i-ring]         | Ring Geometry                                                           | [Object][obj3],                                                                       |
+| Rounded Box             |   [![][i-roundedbox]][i-roundedbox]   | Rounded Box Geometry                                                    | [Object][obj3],                                                                       |
+| Scene Options           |    [![][i-scene-opt]][i-scene-opt]    | ARENA scene options                                                     | [Object][obj3],                                                                       |
+| Sphere                  |       [![][i-sphere]][i-sphere]       | Sphere Geometry                                                         | [Object][obj3],                                                                       |
+| Tetrahedron             |  [![][i-tetrahedron]][i-tetrahedron]  | Tetrahedron Geometry                                                    | [Object][obj3],                                                                       |
+| Text                    |         [![][i-text]][i-text]         | Display text                                                            | [Object][obj3],                                                                       |
+| Thickline               |    [![][i-thickline]][i-thickline]    | Draw a thick line that can have a custom width                          | [Object][obj3],                                                                       |
+| Three.js Scene          |      [![][i-threejs]][i-threejs]      | Load a Three.js Scene                                                   | [Object][obj3],                                                                       |
+| Torus                   |        [![][i-torus]][i-torus]        | Torus Geometry                                                          | [Object][obj3],                                                                       |
+| Torus Knot              |    [![][i-torusKnot]][i-torusKnot]    | Torus Knot Geometry                                                     | [Object][obj3],                                                                       |
+| Triangle                |     [![][i-triangle]][i-triangle]     | Triangle Geometry                                                       | [Object][obj3],                                                                       |
+| UI Button Panel         |   [![][i-ui-buttons]][i-ui-buttons]   | ARENAUI Button Panel                                                    | [Object][obj3],                                                                       |
+| UI Card                 |      [![][i-ui-card]][i-ui-card]      | ARENAUI Card                                                            | [Object][obj3],                                                                       |
+| UI Prompt               |    [![][i-ui-prompt]][i-ui-prompt]    | ARENAUI Prompt                                                          | [Object][obj3],                                                                       |
+| Videosphere             |  [![][i-videosphere]][i-videosphere]  | Videosphere 360 Video                                                   | [Object][obj3],                                                                       |
+| Landmark                |     [![][i-landmark]][i-landmark]     | Landmarks allow you to jump to certain places of interest in a scene.   | [Property][oprp], [JSON][j-landmark], [Tutorial][t-landmark]                          |
 
 ## Wire Format Types
 
@@ -76,6 +76,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ### Scene Option
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+### Environment Setting
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -159,11 +163,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {:width="100px"}
 [i-triangle]: /favicon.ico
 {:width="100px"}
-[i-ui-buttons]: /favicon.ico
+[i-ui-buttons]: /assets/img/3dcontent/ui-button-panel.png
 {:width="100px"}
-[i-ui-card]: /favicon.ico
+[i-ui-card]: /assets/img/3dcontent/ui-card.png
 {:width="100px"}
-[i-ui-prompt]: /favicon.ico
+[i-ui-prompt]: /assets/img/3dcontent/ui-prompt.png
 {:width="100px"}
 [i-videosphere]: /favicon.ico
 {:width="100px"}
@@ -190,9 +194,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <!-- wire type links-->
 
-[wobj]: #3d-object
-[oatt]: #3d-object-property
+[obj3]: #3d-object
+[oprp]: #3d-object-property
 [prog]: #program-option
+[senv]: #environment-setting
 [sopt]: #scene-option
-[rend]: #renderer-setting
-[pprc]: #post-processing-setting
+[spps]: #post-processing-setting
+[srnd]: #renderer-setting
