@@ -23,7 +23,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 
 | Example         |               Thumbnail               | Description                                                                     | Example Links                                                                         |
 | --------------- | :-----------------------------------: | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| Box             |          [![][i-box]][i-box]          | Box Geometry                                                                    | [Object][obj3],                                                                       |
+| Box             |          [![][i-box]][i-box]          | Box Geometry (Unity Cube)                                                       | [Object][obj3],                                                                       |
 | Camera          |       [![][i-camera]][i-camera]       | Camera is the pose and component data representing a user avatar.               | [Object][obj3],                                                                       |
 | Capsule         |      [![][i-capsule]][i-capsule]      | Capsule Geometry                                                                | [Object][obj3],                                                                       |
 | Circle          |       [![][i-circle]][i-circle]       | Circle Geometry                                                                 | [Object][obj3],                                                                       |
@@ -43,8 +43,8 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Line            |         [![][i-line]][i-line]         | Draw a line                                                                     | [Object][obj3],                                                                       |
 | Ocean           |        [![][i-ocean]][i-ocean]        | Ocean                                                                           | [Object][obj3],                                                                       |
 | Octahedron      |   [![][i-octahedron]][i-octahedron]   | Octahedron Geometry                                                             | [Object][obj3],                                                                       |
-| PCD Model       |          [![][i-pcd]][i-pcd]          | Load a PCD model                                                                | [Object][obj3],                                                                       |
-| Plane           |        [![][i-plane]][i-plane]        | Plane Geometry                                                                  | [Object][obj3],                                                                       |
+| PCD Model       |          [![][i-pcd]][i-pcd]          | Load a Point-Cloud data (PCD) model                                             | [Object][obj3],                                                                       |
+| Plane           |        [![][i-plane]][i-plane]        | Plane Geometry (Unity Quad/Plane)                                               | [Object][obj3],                                                                       |
 | Program         |      [![][i-program]][i-program]      | ARENA program data                                                              | [Object][obj3],                                                                       |
 | Ring            |         [![][i-ring]][i-ring]         | Ring Geometry                                                                   | [Object][obj3],                                                                       |
 | Rounded Box     |   [![][i-roundedbox]][i-roundedbox]   | Rounded Box Geometry                                                            | [Object][obj3],                                                                       |
@@ -60,48 +60,58 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | UI Button Panel |   [![][i-ui-buttons]][i-ui-buttons]   | ARENAUI Button Panel                                                            | [Object][obj3],                                                                       |
 | UI Card         |      [![][i-ui-card]][i-ui-card]      | ARENAUI Card                                                                    | [Object][obj3],                                                                       |
 | UI Prompt       |    [![][i-ui-prompt]][i-ui-prompt]    | ARENAUI Prompt                                                                  | [Object][obj3],                                                                       |
-| Videosphere     |  [![][i-videosphere]][i-videosphere]  | Video sphere 360 Video bubble                                                   | [Object][obj3],                                                                       |
-| Landmark        |     [![][i-landmark]][i-landmark]     | Landmarks allow you to jump to certain places of interest in a scene.           | [Property][oprp], [JSON][j-landmark], [Tutorial][t-landmark]                          |
+| Videosphere     |  [![][i-videosphere]][i-videosphere]  | Video sphere 360 video bubble                                                   | [Object][obj3],                                                                       |
 
-<!-- Segment -->
-<!-- Geometry -->
-<!-- Mesh -->
+| Example  |           Thumbnail           | Description                                                           | Example Links                                                |
+| -------- | :---------------------------: | --------------------------------------------------------------------- | ------------------------------------------------------------ |
+| Landmark | [![][i-landmark]][i-landmark] | Landmarks allow you to jump to certain places of interest in a scene. | [Attribute][oprp], [JSON][j-landmark], [Tutorial][t-landmark] |
 
 ## Wire Format Types
 
 ### 3D Object
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Base 3D entity to which multiple components can be attached.
 
-### 3D Object Property
+### 3D Object Attribute
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A component or effect which can be optionally added to an entity.
 
-### Program Option
+### Program
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ARENA remote runtime, Python or WebAssembly (WASM).
 
 ### Scene Option
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ARENA Scene Options
 
 ### Environment Setting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A-Frame Environment presets. More properties at <a href='https://github.com/supermedium/aframe-environment-component'>https://github.com/supermedium/aframe-environment-component</a>.
 
 ### Renderer Setting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+These settings are fed into three.js WebGLRenderer properties.
 
-### Post Processing Setting
+### Post-Processing Effect
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+These effects are enabled in desktop and XR views.
 
-<!-- image links-->
+<!-- image links -->
 
-[i-box]: /
+<!-- Segment -->
+<!-- Geometry -->
+<!-- Mesh -->
+<!-- Navigate Keyboard assets/img/overview/userguide/m1.png -->
+<!-- Navigate Controller -->
+<!-- Material Extras assets/img/examples/attributes/transparent-occluder.gif -->
+<!-- Nav Mesh assets/img/nav-mesh/nav-demo.gif -->
+<!-- Attribution assets/img/3dcontent/credits.png -->
+<!-- Blip assets/img/examples/attributes/blip.gif -->
+<!-- Screenshare assets/img/examples/attributes/screenshare1.png -->
+
+[i-box]: /assets/img/overview/devguide/box.png
 {:width="100px"}
-[i-camera]: /
+[i-camera]: /assets/img/overview/userguide/a6.png
 {:width="100px"}
 [i-capsule]: /
 {:width="100px"}
@@ -109,7 +119,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {:width="100px"}
 [i-cone]: /
 {:width="100px"}
-[i-cube]: /
+[i-cube]: /assets/img/overview/userguide/cube.png
 {:width="100px"}
 [i-cylinder]: /
 {:width="100px"}
@@ -123,9 +133,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {:width="100px"}
 [i-gltf]: /assets/img/overview/build/mammuthus-primigenius-scene-landmark.png
 {:width="100px"}
-[i-hand]: /
+[i-hand]: /assets/img/xr/quest-2.png
 {:width="100px"}
-[i-hand]: /
+[i-hand]: /assets/img/xr/quest-2.png
 {:width="100px"}
 [i-icosahedron]: /
 {:width="100px"}
@@ -240,8 +250,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <!-- wire type links-->
 
 [obj3]: #3d-object
-[oprp]: #3d-object-property
-[prog]: #program-option
+[oprp]: #3d-object-attribute
+[prog]: #program
 [senv]: #environment-setting
 [sopt]: #scene-option
 [spps]: #post-processing-setting
