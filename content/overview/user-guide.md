@@ -66,19 +66,73 @@ To move, use the arrow keys. More advanced movement can be done by a combination
 
 The buttons around the screen give access to several options, such as: your sound and video settings, you display name, chat, or find other people and places. **Note that everyone starts with audio and video off**.
 
-| Button                                                                                                                                                                                                                                                                                                        | Action             | Description                                                                                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| ![](/assets/img/icons/down-arrow.png){:height="32px" width="32px" style="background-color:#262626"} ![](/assets/img/icons/up-arrow.png){:height="32px" width="32px" style="background-color:#262626"}                                                                                                         | **Settings**       | Expand/Collapse settings along the right.                                                                           |
-| ![](/assets/img/icons/audio-on.png){:height="32px" width="32px" style="background-color:#262626"} ![](/assets/img/icons/audio-off.png){:height="32px" width="32px" style="background-color:#262626"}                                                                                                          | **Microphone**     | Speak into the ARENA, or remain silent.                                                                             |
-| ![](/assets/img/icons/video-on.png){:height="32px" width="32px" style="background-color:#262626"} ![](/assets/img/icons/video-off.png){:height="32px" width="32px" style="background-color:#262626"}                                                                                                          | **Camera**         | Let your camera show you as a moving box with your camera image on it.                                              |
-| ![](/assets/img/icons/avatar-on.png){:height="32px" width="32px" style="background-color:#262626"} ![](/assets/img/icons/avatar-off.png){:height="32px" width="32px" style="background-color:#262626"}                                                                                                        | **Facial Avatar**  | Let your camera recognize your facial features, and you will appear an animated head matching your facial movement. |
-| ![](/assets/img/icons/flying-on.png){:height="32px" width="32px" style="background-color:#262626"} ![](/assets/img/icons/flying-off.png){:height="32px" width="32px" style="background-color:#262626"}                                                                                                        | **Flight**         | Movement defaults to walking along the ground, this will enable you to fly up or even down through the ground.      |
-| ![](/assets/img/icons/speed-slow.png){:height="32px" width="32px" style="background-color:#262626"} ![](/assets/img/icons/speed-medium.png){:height="32px" width="32px" style="background-color:#262626"} ![](/assets/img/icons/speed-fast.png){:height="32px" width="32px" style="background-color:#262626"} | **Movement Speed** | Slow/Medium/Fast, defaults to Medium.                                                                               |
-| ![](/assets/img/icons/screen-on.png){:height="32px" width="32px" style="background-color:#262626"}                                                                                                                                                                                                            | **Screenshare**    | Share your screen as a large panel in the ARENA.                                                                    |
-| ![](/assets/img/icons/logout.png){:height="32px" width="32px" style="background-color:#262626"}                                                                                                                                                                                                               | **Sign Out**       | Exit the ARENA.                                                                                                     |
-| ![](/assets/img/icons/message.png){:height="32px" width="32px" style="background-color:#262626"}                                                                                                                                                                                                              | **Chat Messages**  | Open chat messaging.                                                                                                |
-| ![](/assets/img/icons/users.png){:height="32px" width="32px" style="background-color:#262626"}                                                                                                                                                                                                                | **User List**      | Open list of present users.                                                                                         |
-| ![](/assets/img/icons/landmarks.png){:height="32px" width="32px" style="background-color:#262626"}                                                                                                                                                                                                            | **Landmarks**      | Open list of landmarks (when present).                                                                              |
+| Button                                                     | Action             | Description                                                                                                         |
+| ---------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| ![][i-down-arrow] ![][i-up-arrow]                          | **Settings**       | Expand/Collapse settings along the right.                                                                           |
+| ![][i-audio-on] ![][i-audio-off]                           | **Microphone**     | Speak into the ARENA, or remain silent.                                                                             |
+| ![][i-video-on] ![][i-video-off]                           | **Camera**         | Let your camera show you as a moving box with your camera image on it.                                              |
+| ![][i-options]                                             | **A/V Options**    | Change your Audio/Video settings.                                                                                   |
+| ![][i-avatar-on] ![][i-avatar-off]                         | **Facial Avatar**  | Let your camera recognize your facial features, and you will appear an animated head matching your facial movement. |
+| ![][i-flying-on] ![][i-flying-off]                         | **Flight**         | Movement defaults to walking along the ground, this will enable you to fly up or even down through the ground.      |
+| ![][i-speed-slow] ![][i-speed-medium] ![][i-speed-fast]    | **Movement Speed** | Slow/Medium/Fast, defaults to Medium.                                                                               |
+| ![][i-screen-on]                                           | **Screenshare**    | Share your screen as a large panel in the ARENA.                                                                    |
+| ![][i-logout]                                              | **Sign Out**       | Exit the ARENA.                                                                                                     |
+| ![][i-message]                                             | **Chat Messages**  | Open chat messaging.                                                                                                |
+| ![][i-users]                                               | **User List**      | Open list of present users.                                                                                         |
+| ![][i-landmarks]                                           | **Landmarks**      | Open list of landmarks (when present).                                                                              |
+| ![][i-health-error] ![][i-health-warn]                     | **Health Checks**  | Errors and warnings, click for details and troubleshooting suggestions.                                             |
+| ![][i-sigbad] ![][i-sigweak] ![][i-sigpoor] ![][i-siggood] | **Video Quality**  | Video conference quality metric.                                                                                    |
+
+[i-down-arrow]: /assets/img/icons/down-arrow.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-up-arrow]: /assets/img/icons/up-arrow.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-audio-on]: /assets/img/icons/audio-on.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-audio-off]: /assets/img/icons/audio-off.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-video-on]: /assets/img/icons/video-on.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-video-off]: /assets/img/icons/video-off.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-options]: /assets/img/icons/options.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-avatar-on]: /assets/img/icons/avatar-on.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-avatar-off]: /assets/img/icons/avatar-off.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-flying-on]: /assets/img/icons/flying-on.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-flying-off]: /assets/img/icons/flying-off.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-speed-slow]: /assets/img/icons/speed-slow.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-speed-medium]: /assets/img/icons/speed-medium.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-speed-fast]: /assets/img/icons/speed-fast.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-screen-on]: /assets/img/icons/screen-on.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-logout]: /assets/img/icons/logout.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-message]: /assets/img/icons/message.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-users]: /assets/img/icons/users.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-landmarks]: /assets/img/icons/landmarks.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-health-error]: /assets/img/icons/exclamation-error.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-health-warn]: /assets/img/icons/exclamation-warn.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-sigbad]: /assets/img/icons/signal-bad.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-sigweak]: /assets/img/icons/signal-weak.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-sigpoor]: /assets/img/icons/signal-poor.png
+{:height="32px" width="32px" style="background-color:#262626"}
+[i-siggood]: /assets/img/icons/signal-good.png
+{:height="32px" width="32px" style="background-color:#262626"}
 
 ## Audio/Video Capabilities
 
