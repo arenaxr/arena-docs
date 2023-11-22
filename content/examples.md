@@ -28,7 +28,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Capsule         |      [![][i-capsule]][i-capsule]      | Capsule Geometry                                                                | [Object][obj3],                                                                       |
 | Circle          |       [![][i-circle]][i-circle]       | Circle Geometry                                                                 | [Object][obj3],                                                                       |
 | Cone            |         [![][i-cone]][i-cone]         | Cone Geometry                                                                   | [Object][obj3],                                                                       |
-| Cube            |         [![][i-cube]][i-cube]         | Cube Geometry **(deprecated, see Box)**                                         | [Object][obj3],                                                                       |
+| Cube            |         [![][i-cube]][i-cube]         | Cube Geometry (**deprecated**, see Box)                                         | [Object][obj3],                                                                       |
 | Cylinder        |     [![][i-cylinder]][i-cylinder]     | Cylinder Geometry                                                               | [Object][obj3],                                                                       |
 | Dodecahedron    | [![][i-dodecahedron]][i-dodecahedron] | Dodecahedron Geometry                                                           | [Object][obj3],                                                                       |
 | Entity          |       [![][i-entity]][i-entity]       | Entities (generic object) are containers into which components can be attached. | [Object][obj3],                                                                       |
@@ -45,10 +45,8 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Octahedron      |   [![][i-octahedron]][i-octahedron]   | Octahedron Geometry                                                             | [Object][obj3],                                                                       |
 | PCD Model       |          [![][i-pcd]][i-pcd]          | Load a Point-Cloud data (PCD) model                                             | [Object][obj3],                                                                       |
 | Plane           |        [![][i-plane]][i-plane]        | Plane Geometry (Unity Quad/Plane)                                               | [Object][obj3],                                                                       |
-| Program         |      [![][i-program]][i-program]      | ARENA program data                                                              | [Object][obj3],                                                                       |
 | Ring            |         [![][i-ring]][i-ring]         | Ring Geometry                                                                   | [Object][obj3],                                                                       |
 | Rounded Box     |   [![][i-roundedbox]][i-roundedbox]   | Rounded Box Geometry                                                            | [Object][obj3],                                                                       |
-| Scene Options   |    [![][i-scene-opt]][i-scene-opt]    | ARENA scene options                                                             | [Object][obj3],                                                                       |
 | Sphere          |       [![][i-sphere]][i-sphere]       | Sphere Geometry                                                                 | [Object][obj3],                                                                       |
 | Tetrahedron     |  [![][i-tetrahedron]][i-tetrahedron]  | Tetrahedron Geometry                                                            | [Object][obj3],                                                                       |
 | Text            |         [![][i-text]][i-text]         | Display text                                                                    | [Object][obj3],                                                                       |
@@ -62,11 +60,45 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | UI Prompt       |    [![][i-ui-prompt]][i-ui-prompt]    | ARENAUI Prompt                                                                  | [Object][obj3],                                                                       |
 | Videosphere     |  [![][i-videosphere]][i-videosphere]  | Video sphere 360 video bubble                                                   | [Object][obj3],                                                                       |
 
-| Example  |           Thumbnail           | Description                                                           | Example Links                                                |
-| -------- | :---------------------------: | --------------------------------------------------------------------- | ------------------------------------------------------------ |
-| Landmark | [![][i-landmark]][i-landmark] | Landmarks allow you to jump to certain places of interest in a scene. | [Attribute][oprp], [JSON][j-landmark], [Tutorial][t-landmark] |
+| Example  |           Thumbnail           | Description                                                           | Example Links                                                 |
+| -------- | :---------------------------: | --------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Landmark | [![][i-landmark]][i-landmark] | Landmarks allow you to jump to certain places of interest in a scene. | [Attribute][obja], [JSON][j-landmark], [Tutorial][t-landmark] |
+
+<!-- Segment -->
+<!-- Geometry -->
+<!-- Mesh -->
+<!-- Attribution assets/img/3dcontent/credits.png -->
+<!-- Blip assets/img/examples/attributes/blip.gif -->
+<!-- Screenshare assets/img/examples/attributes/screenshare1.png -->
+<!-- Material Extras assets/img/examples/attributes/transparent-occluder.gif -->
+
+| Example |          Thumbnail          | Description        | Example Links    |
+| ------- | :-------------------------: | ------------------ | ---------------- |
+| Program | [![][i-program]][i-program] | ARENA program data | [Program][prog], |
+
+| Example  |           Thumbnail           | Description                                                              | Example Links      |
+| -------- | :---------------------------: | ------------------------------------------------------------------------ | ------------------ |
+| Nav Mesh | [![][i-nav-mesh]][i-nav-mesh] | Navigation Mesh is an invisible 3d model surface for users to move upon. | [Scene Opt][sopt], |
+
+| Example               |              Thumbnail              | Description | Example Links     |
+| --------------------- | :---------------------------------: | ----------- | ----------------- |
+| Keyboard Navigation   |    [![][i-nav-keys]][i-nav-keys]    |             | [User Opt][user], |
+| Controller Navigation | [![][i-nav-control]][i-nav-control] |             | [User Opt][user], |
+
+<!-- Display Name -->
+<!-- Speed -->
+<!-- Flight/Fly -->
+<!-- Video -->
+<!-- Audio -->
+<!-- Chat -->
+<!-- User List -->
+<!-- Landmark List -->
 
 ## Wire Format Types
+
+### User Option
+
+User preferences to alter default behavior.
 
 ### 3D Object
 
@@ -97,17 +129,6 @@ These settings are fed into three.js WebGLRenderer properties.
 These effects are enabled in desktop and XR views.
 
 <!-- image links -->
-
-<!-- Segment -->
-<!-- Geometry -->
-<!-- Mesh -->
-<!-- Navigate Keyboard assets/img/overview/userguide/m1.png -->
-<!-- Navigate Controller -->
-<!-- Material Extras assets/img/examples/attributes/transparent-occluder.gif -->
-<!-- Nav Mesh assets/img/nav-mesh/nav-demo.gif -->
-<!-- Attribution assets/img/3dcontent/credits.png -->
-<!-- Blip assets/img/examples/attributes/blip.gif -->
-<!-- Screenshare assets/img/examples/attributes/screenshare1.png -->
 
 [i-box]: /assets/img/overview/devguide/box.png
 {:width="100px"}
@@ -189,10 +210,16 @@ These effects are enabled in desktop and XR views.
 {:width="100px"}
 [i-landmark]: /assets/img/overview/build/landmark-list.png
 {:width="60px"}
+[i-nav-mesh]: /assets/img/nav-mesh/nav-demo.gif
+{:width="100px"}
+[i-nav-keys]: /assets/img/overview/userguide/m1.png
+{:width="100px"}
+[i-nav-control]: /
+{:width="100px"}
 
 <!-- json links-->
 
-[j-gltf]: /content/schemas/message/gltf
+[j-gltf]: /content/schemas/message/gltf-model
 [j-landmark]: /content/schemas/message/landmark
 
 <!-- python links-->
@@ -247,12 +274,15 @@ These effects are enabled in desktop and XR views.
 
 [u-gltf]: /content/unity/editor#exporting-unity-objects-as-gltf
 
+<!-- video links: TODO! -->
+
 <!-- wire type links-->
 
+[user]: #user-option
 [obj3]: #3d-object
-[oprp]: #3d-object-attribute
+[obja]: #3d-object-attribute
 [prog]: #program
-[senv]: #environment-setting
 [sopt]: #scene-option
-[spps]: #post-processing-setting
+[senv]: #environment-setting
 [srnd]: #renderer-setting
+[spps]: #post-processing-setting

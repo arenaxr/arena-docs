@@ -19,7 +19,7 @@ Upon entering a scene you will see a panel for audio and video setup. Here you c
 
 ## User Display Name
 
-![](/assets/img/icons/more.png){:height="32px" width="32px"}
+![](/assets/img/icons/down-arrow.png){:height="32px" width="32px"}
 The display name you choose, will be displayed in random colored text above your user avatar. In an ARENA Scene, you can change your display text by clicking the last right-hand arrow "V" icon to show the `Settings` panel, which provides a `Display Name` input box you can change to what you wish.
 
 <img src="/assets/img/overview/userguide/name.png" width="50%"/>
@@ -67,7 +67,7 @@ By default the ARENA shows your location as a 3d model of a head, with your nose
 
 ## Facial Recognition Avatar
 
-![](/assets/img/icons/avatar3-on.png){:height="32px" width="32px"}
+![](/assets/img/icons/avatar-on.png){:height="32px" width="32px"}
 Your ARENA scene may have the capability to use facial recognition to recognize your facial feature points from your camera and present a generic 3d head which will move its eyes, eyebrows, mouth and lips as you do. Only other users will see the 3d rendering of your avatar.
 
 <figure class="video_container">
