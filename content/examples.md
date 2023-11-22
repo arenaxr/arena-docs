@@ -180,8 +180,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <!-- json links-->
 
-[j-landmark]: /content/schemas/message/landmark
 [j-gltf]: /content/schemas/message/gltf
+[j-landmark]: /content/schemas/message/landmark
 
 <!-- python links-->
 
@@ -191,8 +191,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 [p-cylinder]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/cylinder.py
 [p-dodecahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/dodecahedron.py
 [p-gltf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/gltf.py
+[p-hands]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/hands.py
 [p-icosahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/icosahedron.py
 [p-image]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/image.py
+[p-landmarks]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/landmarks.py
 [p-light]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/light.py
 [p-line]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/line.py
 [p-octahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/octahedron.py
@@ -205,6 +207,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 [p-torus]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus.py
 [p-torus-knot]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus_knot.py
 [p-triangle]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/triangle.py
+[p-ui]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
 [p-animation]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation.py
 [p-animation-mixer]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation_mixer.py
 [p-color]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/color.py
@@ -219,11 +222,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 [p-scale]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/scale.py
 [p-sound]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/sound.py
 [p-textinput]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/text_input.py
+[p-video-control]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/video_control.py
 
 <!-- tutorial links-->
 
-[t-landmark]: /content/overview/build#add-landmarks
 [t-gltf]: /content/overview/build#add-new-objects
+[t-landmark]: /content/overview/build#add-landmarks
 
 <!-- unity links-->
 
