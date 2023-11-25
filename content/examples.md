@@ -20,6 +20,10 @@ Which **Web/Python/Unity** platform supports each of these features? Take a look
 Thumbnail images can be clicked for a larger view. Multiple links are provided to examples of each feature.
 
 <!-- Examples Table Editing -->
+<!-- Table Design:
+     - Use markdown reference links to make editing, formatting easier.
+     - Reduce your IDE/emacs window font to fit 225-250 columns, and use Prettier or other formatter to sync column width.
+-->
 
 | Example               |                Thumbnail                | Description                                                             | Type        | J                    | M                    | P                    | T               |
 | --------------------- | :-------------------------------------: | ----------------------------------------------------------------------- | ----------- | -------------------- | -------------------- | -------------------- | --------------- |
@@ -89,7 +93,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Remote Render         | [![][i-remote-render]][i-remote-render] | Whether or not an object should be remote rendered [Experimental]       | [Att][obja] | [J][s-remote-render] | [M][m-remote-render] |                      |                 |
 | Rotation              |      [![][i-rotation]][i-rotation]      | 3D object rotation in quaternions; Right-handed coordinates.            | [Att][obja] | [J][s-rotation]      | [M][m-rotation]      | [P][p-rotation]      |                 |
 | Scale                 |         [![][i-scale]][i-scale]         | 3D object scale                                                         | [Att][obja] | [J][s-scale]         | [M][m-scale]         | [P][p-scale]         |                 |
-| Screenshareable       |   [![][i-screenshare]][i-screenshare]   | Whether or not a user can screenshare on an object                      | [Att][obja] | [J][s-screenshare]   | [M][m-screenshare]   | [P][p-screenshare]   |                 |
+| Screenshareable       |   [![][i-screenshare]][i-screenshare]   | Whether or not a user can screen share on an object                     | [Att][obja] | [J][s-screenshare]   | [M][m-screenshare]   | [P][p-screenshare]   |                 |
 | Shadow                |        [![][i-shadow]][i-shadow]        | shadow                                                                  | [Att][obja] | [J][s-shadow]        | [M][m-shadow]        | [P][p-shadow]        |                 |
 | Skip Cache            |     [![][i-skipCache]][i-skipCache]     | Disable retrieving the shared geometry object from the cache.           | [Att][obja] | [J][s-skipCache]     | [M][m-skipCache]     |                      |                 |
 | Sound                 |         [![][i-sound]][i-sound]         | Positional sound is thus affected by the component's position.          | [Att][obja] | [J][s-sound]         | [M][m-sound]         | [P][p-sound]         |                 |
