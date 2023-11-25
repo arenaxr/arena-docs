@@ -12,6 +12,7 @@ ARENA Scenes are a collection of Entities to which Components can be attached, f
 <img src="/assets/img/schemas/build-box-object-simple.png" width="100%"/>
 
 All ARENA objects have similar well-defined schemas, and these are the basis for the over-the-wire message format shown below. This is the message format transmitted over the PubSub to create/update/delete objects.
+
 ```json
 {
   "object_id": "abox",
@@ -23,11 +24,7 @@ All ARENA objects have similar well-defined schemas, and these are the basis for
     "depth": 1,
     "height": 1,
     "width": 1,
-    "position": {
-      "x": 0,
-      "y": 0,
-      "z": 0
-    }
+    "position": { "x": 0, "y": 0, "z": 0 }
   }
 }
 ```

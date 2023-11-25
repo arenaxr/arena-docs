@@ -13,7 +13,19 @@ Animate rotation of the already drawn cube.
 Raw Message
 
 ```json
-arena-py-pub -mh arenaxr.org -s example -m '{"object_id" : "cube_1", "action": "update", "type": "object", "data": { "animation": { "property": "rotation", "to": "0 360 0", "loop": true, "dur": 10000}} }'
+{
+  "object_id": "cube_1",
+  "action": "update",
+  "type": "object",
+  "data": {
+    "animation": {
+      "property": "rotation",
+      "to": "0 360 0",
+      "loop": true,
+      "dur": 10000
+    }
+  }
+}
 ```
 
 Python

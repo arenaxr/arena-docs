@@ -22,25 +22,10 @@ All ARENA objects have similar well-defined schemas, and these are the basis for
   "data": {
     "object_type": "gltf-model",
     "url": "https://www.dropbox.com/s/pgytn552kzukm8f/blumbach.glb?dl=0",
-    "position": {
-      "x": 0,
-      "y": 1.7,
-      "z": -5
-    },
-    "rotation": {
-      "x": 0,
-      "y": 45,
-      "z": 0
-    },
-    "scale": {
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "shadow": {
-      "cast": true,
-      "receive": true
-    }
+    "position": { "x": 0, "y": 1.7, "z": -5 },
+    "rotation": { "x": 0, "y": 45, "z": 0 },
+    "scale": { "x": 1, "y": 1, "z": 1 },
+    "shadow": { "cast": true, "receive": true }
   }
 }
 ```
