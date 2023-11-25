@@ -231,7 +231,7 @@ Change only the color of the already-drawn cube.
   "object_id": "cube_1",
   "action": "update",
   "type": "object",
-  "data": { "material": { "material": { "color": "#00FF00" } } }
+  "data": { "material": { "color": "#00FF00" } }
 }
 ```
 
@@ -390,7 +390,7 @@ Instantiate a wacky torusKnot, then turn it blue. Other primitive types are avai
   "object_id": "torusKnot_1",
   "action": "update",
   "type": "object",
-  "data": { "material": { "material": { "color": "blue" } } }
+  "data": { "material": { "color": "blue" } }
 }
 ```
 
