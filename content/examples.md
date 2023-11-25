@@ -21,86 +21,95 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 
 <!-- Examples Table Editing-->
 
-| Example               |                  Thumbnail                  | Description                                                             | Example Links                                                                          |
-| --------------------- | :-----------------------------------------: | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Box                   |             [![][i-box]][i-box]             | Box Geometry (Unity Cube)                                               | [Object][obj3], [JSON][j-box], [Python][p-box],                                        |
-| Camera                |          [![][i-camera]][i-camera]          | Camera is the pose and component data representing a user avatar.       | [Object][obj3], [JSON][j-camera], [Python][p-camera],                                  |
-| Capsule               |         [![][i-capsule]][i-capsule]         | Capsule Geometry                                                        | [Object][obj3], [JSON][j-capsule],                                                     |
-| Circle                |          [![][i-circle]][i-circle]          | Circle Geometry                                                         | [Object][obj3], [JSON][j-circle], [Python][p-circle],                                  |
-| Cone                  |            [![][i-cone]][i-cone]            | Cone Geometry                                                           | [Object][obj3], [JSON][j-cone], [Python][p-cone],                                      |
-| Cube                  |            [![][i-cube]][i-cube]            | Cube Geometry (**deprecated**,see Box)                                  | [Object][obj3], [JSON][j-cube], [Python][p-cube],                                      |
-| Cylinder              |        [![][i-cylinder]][i-cylinder]        | Cylinder Geometry                                                       | [Object][obj3], [JSON][j-cylinder], [Python][p-cylinder],                              |
-| Dodecahedron          |    [![][i-dodecahedron]][i-dodecahedron]    | Dodecahedron Geometry                                                   | [Object][obj3], [JSON][j-dodecahedron], [Python][p-dodecahedron],                      |
-| Entity                |          [![][i-entity]][i-entity]          | Entities are containers into which components can be attached.          | [Object][obj3], [JSON][j-entity], [Python][p-entity],                                  |
-| Event                 |           [![][i-event]][i-event]           | Events are ephemeral messages used for events like controller actions.  | [Object][obj3], [JSON][j-event], [Python][p-event],                                    |
-| Gaussian Splat        |           [![][i-splat]][i-splat]           | Load 3D Gaussian Splat                                                  | [Object][obj3], [JSON][j-splat],                                                       |
-| GLTF Model            |            [![][i-gltf]][i-gltf]            | GLTF Models afford consistent cross-platform rendering of 3D assets.    | [Object][obj3], [JSON][j-gltf], [Python][p-gltf], [Unity][u-gltf], [Tutorial][t-gltf], |
-| Hand Left             |            [![][i-hand]][i-hand]            | Hand Left is the metadata pose and controller type of the user avatar.  | [Object][obj3], [JSON][j-hand], [Python][p-hands],                                     |
-| Hand Right            |            [![][i-hand]][i-hand]            | Hand Right is the metadata pose and controller type of the user avatar. | [Object][obj3], [JSON][j-hand], [Python][p-hands],                                     |
-| Icosahedron           |     [![][i-icosahedron]][i-icosahedron]     | Icosahedron Geometry                                                    | [Object][obj3], [JSON][j-icosahedron], [Python][p-icosahedron],                        |
-| Image                 |           [![][i-image]][i-image]           | Display an image on a plane                                             | [Object][obj3], [JSON][j-image], [Python][p-image],                                    |
-| Light                 |           [![][i-light]][i-light]           | A light                                                                 | [Object][obj3], [JSON][j-light], [Python][p-light],                                    |
-| Line                  |            [![][i-line]][i-line]            | Draw a line                                                             | [Object][obj3], [JSON][j-line], [Python][p-line],                                      |
-| Ocean                 |           [![][i-ocean]][i-ocean]           | Ocean                                                                   | [Object][obj3], [JSON][j-ocean],                                                       |
-| Octahedron            |      [![][i-octahedron]][i-octahedron]      | Octahedron Geometry                                                     | [Object][obj3], [JSON][j-octahedron], [Python][p-octahedron],                          |
-| PCD Model             |             [![][i-pcd]][i-pcd]             | Load a Point-Cloud data (PCD) model                                     | [Object][obj3], [JSON][j-pcd],                                                         |
-| Plane                 |           [![][i-plane]][i-plane]           | Plane Geometry (Unity Quad/Plane)                                       | [Object][obj3], [JSON][j-plane], [Python][p-plane],                                    |
-| Ring                  |            [![][i-ring]][i-ring]            | Ring Geometry                                                           | [Object][obj3], [JSON][j-ring], [Python][p-ring],                                      |
-| Rounded Box           |      [![][i-roundedbox]][i-roundedbox]      | Rounded Box Geometry                                                    | [Object][obj3], [JSON][j-roundedbox],                                                  |
-| Sphere                |          [![][i-sphere]][i-sphere]          | Sphere Geometry                                                         | [Object][obj3], [JSON][j-sphere], [Python][p-sphere],                                  |
-| Tetrahedron           |     [![][i-tetrahedron]][i-tetrahedron]     | Tetrahedron Geometry                                                    | [Object][obj3], [JSON][j-tetrahedron], [Python][p-tetrahedron],                        |
-| Text                  |            [![][i-text]][i-text]            | Display text                                                            | [Object][obj3], [JSON][j-text], [Python][p-text],                                      |
-| Thickline             |       [![][i-thickline]][i-thickline]       | Draw a thick line that can have a custom width                          | [Object][obj3], [JSON][j-thickline], [Python][p-thickline],                            |
-| Three.js Scene        |         [![][i-threejs]][i-threejs]         | Load a Three.js Scene                                                   | [Object][obj3], [JSON][j-threejs],                                                     |
-| Torus                 |           [![][i-torus]][i-torus]           | Torus Geometry                                                          | [Object][obj3], [JSON][j-torus], [Python][p-torus],                                    |
-| Torus Knot            |       [![][i-torusKnot]][i-torusKnot]       | Torus Knot Geometry                                                     | [Object][obj3], [JSON][j-torusKnot], [Python][p-torusKnot],                            |
-| Triangle              |        [![][i-triangle]][i-triangle]        | Triangle Geometry                                                       | [Object][obj3], [JSON][j-triangle], [Python][p-triangle],                              |
-| UI Button Panel       |      [![][i-ui-buttons]][i-ui-buttons]      | ARENAUI Button Panel                                                    | [Object][obj3], [JSON][j-ui-buttons], [Python][p-ui-buttons],                          |
-| UI Card               |         [![][i-ui-card]][i-ui-card]         | ARENAUI Card                                                            | [Object][obj3], [JSON][j-ui-card], [Python][p-ui-card],                                |
-| UI Prompt             |       [![][i-ui-prompt]][i-ui-prompt]       | ARENAUI Prompt                                                          | [Object][obj3], [JSON][j-ui-prompt], [Python][p-ui-prompt],                            |
-| Videosphere           |     [![][i-videosphere]][i-videosphere]     | Video sphere 360 video bubble                                           | [Object][obj3], [JSON][j-videosphere],                                                 |
-| Animation             |       [![][i-animation]][i-animation]       | Animate and tween values.                                               | [Attribute][obja], [JSON][j-animation], [Python][p-animation],                         |
-| Animation Mixer       | [![][i-animation-mixer]][i-animation-mixer] | Control playing animations stored in a GLTF model.                      | [Attribute][obja], [JSON][j-animation-mixer], [Python][p-animation-mixer],             |
-| AR Hide/Show          |     [![][i-ar-hideshow]][i-ar-hideshow]     | Hide/Show object when entering AR.                                      | [Attribute][obja], [JSON][j-ar-hideshow],                                              |
-| AR Marker             |        [![][i-armarker]][i-armarker]        | A location marker used to anchor scenes/objects,in the real world.      | [Attribute][obja], [JSON][j-armarker], [Python][p-armarker],                           |
-| Attribution           |     [![][i-attribution]][i-attribution]     | Attribution Component. Saves attribution data in any entity.            | [Attribute][obja], [JSON][j-attribution], [Python][p-attribution],                     |
-| Blip                  |            [![][i-blip]][i-blip]            | When the object is created or deleted,it will animate in/out.           | [Attribute][obja], [JSON][j-blip],                                                     |
-| Box Collision         |   [![][i-box-collision]][i-box-collision]   | Listen for bounding-box collisions with user camera and hands.          | [Attribute][obja], [JSON][j-box-collision], [Python][p-box-collision],                 |
-| Buffer Geometry       |          [![][i-buffer]][i-buffer]          | Reduce geometry memory usage while being harder to manipulate           | [Attribute][obja], [JSON][j-buffer], [Python][p-buffer],                               |
-| Click                 |           [![][i-click]][i-click]           | Object will listen for clicks                                           | [Attribute][obja], [JSON][j-click], [Python][p-click],                                 |
-| Collision             |       [![][i-collision]][i-collision]       | Collisions trigger click events                                         | [Attribute][obja], [JSON][j-collision], [Python][p-collision],                         |
-| GLTF LOD              |  [![][i-gltf-model-lod]][i-gltf-model-lod]  | Switch between default and detailed GLTF models                         | [Attribute][obja], [JSON][j-gltf-model-lod], [Python][p-gltf-model-lod],               |
-| GLTF Morph            |      [![][i-gltf-morph]][i-gltf-morph]      | Target and control a GLTF model's morphTargets created in Blender.      | [Attribute][obja], [JSON][j-gltf-morph], [Python][p-gltf-morph],                       |
-| Go to Landmark        |   [![][i-goto-landmark]][i-goto-landmark]   | Teleports user to the landmark with the given name                      | [Attribute][obja], [JSON][j-goto-landmark], [Python][p-goto-landmark],                 |
-| Go to URL             |        [![][i-goto-url]][i-goto-url]        | Goto given URL                                                          | [Attribute][obja], [JSON][j-goto-url], [Python][p-goto-url],                           |
-| GTLF Model Update     |     [![][i-modelUpdate]][i-modelUpdate]     | Allows translation of named GLTF model sub-components.                  | [Attribute][obja], [JSON][j-modelUpdate], [Python][p-modelUpdate],                     |
-| Impulse               |         [![][i-impulse]][i-impulse]         | The force applied using physics.                                        | [Attribute][obja], [JSON][j-impulse], [Python][p-impulse],                             |
-| Jitsi Video           |     [![][i-jitsi-video]][i-jitsi-video]     | Apply Jitsi video source to the geometry                                | [Attribute][obja], [JSON][j-jitsi-video], [Python][p-jitsi-video],                     |
-| Landmark              |        [![][i-landmark]][i-landmark]        | Landmarks allow you to jump to certain places of interest in a scene.   | [Attribute][obja], [JSON][j-landmark], [Tutorial][t-landmark],                         |
-| Look At               |         [![][i-look-at]][i-look-at]         | Dynamically rotate or face towards another entity or position.          | [Attribute][obja], [JSON][j-look-at], [Python][p-look-at],                             |
-| Material              |        [![][i-material]][i-material]        | The material properties of the object’s surface.                        | [Attribute][obja], [JSON][j-material], [Python][p-material],                           |
-| Material Extras       | [![][i-material-extras]][i-material-extras] | Define extra material properties: texture encoding,render order.        | [Attribute][obja], [JSON][j-material-extras], [Python][p-material-extras],             |
-| Multi-Src             |        [![][i-multisrc]][i-multisrc]        | Define multiple visual sources applied to an object.                    | [Attribute][obja], [JSON][j-multisrc], [Python][p-multisrc],                           |
-| Parent                |          [![][i-parent]][i-parent]          | Parent's object_id. Child objects inherit scale and translation.        | [Attribute][obja], [JSON][j-parent], [Python][p-parent],                               |
-| Particle System       | [![][i-particle-system]][i-particle-system] | Particle system component for A-Frame.                                  | [Attribute][obja], [JSON][j-particle-system],                                          |
-| Particles (SPE)       |   [![][i-spe-particles]][i-spe-particles]   | GPU based particle systems in A-Frame.                                  | [Attribute][obja], [JSON][j-spe-particles],                                            |
-| Physics               |    [![][i-dynamic-body]][i-dynamic-body]    | Physics type attached to the object.                                    | [Attribute][obja], [JSON][j-dynamic-body], [Python][p-dynamic-body],                   |
-| Position              |        [![][i-position]][i-position]        | 3D object position                                                      | [Attribute][obja], [JSON][j-position], [Python][p-position],                           |
-| Remote Render         |   [![][i-remote-render]][i-remote-render]   | Whether or not an object should be remote rendered [Experimental]       | [Attribute][obja], [JSON][j-remote-render],                |
-| Rotation              |        [![][i-rotation]][i-rotation]        | 3D object rotation in quaternions; Right-handed coordinates.            | [Attribute][obja], [JSON][j-rotation], [Python][p-rotation],                           |
-| Scale                 |           [![][i-scale]][i-scale]           | 3D object scale                                                         | [Attribute][obja], [JSON][j-scale], [Python][p-scale],                                 |
-| Screenshareable       | [![][i-screenshareable]][i-screenshareable] | Whether or not a user can screenshare on an object                      | [Attribute][obja], [JSON][j-screenshareable], [Python][p-screenshareable],             |
-| Shadow                |          [![][i-shadow]][i-shadow]          | shadow                                                                  | [Attribute][obja], [JSON][j-shadow], [Python][p-shadow],                               |
-| Skip Cache            |       [![][i-skipCache]][i-skipCache]       | Disable retrieving the shared geometry object from the cache.           | [Attribute][obja], [JSON][j-skipCache],                        |
-| Sound                 |           [![][i-sound]][i-sound]           | Positional sound is thus affected by the component's position.          | [Attribute][obja], [JSON][j-sound], [Python][p-sound],                                 |
-| Text Input            |       [![][i-textinput]][i-textinput]       | Opens an HTML prompt when clicked. Sends text xas an event on MQTT.     | [Attribute][obja], [JSON][j-textinput], [Python][p-textinput],                         |
-| Video Control         |   [![][i-video-control]][i-video-control]   | Video Control                                                           | [Attribute][obja], [JSON][j-video-control], [Python][p-video-control],                 |
-| VR Hide/Show          |     [![][i-vr-hideshow]][i-vr-hideshow]     | Hide/Show object when entering VR.                                      | [Attribute][obja], [JSON][j-vr-hideshow],                                              |
-| Program               |         [![][i-program]][i-program]         | ARENA program data                                                      | [Program][prog], [JSON][j-program], [Python][p-program],                               |
-| Nav Mesh              |        [![][i-nav-mesh]][i-nav-mesh]        | Invisible 3d model surface for users to move upon.                      | [Scene Opt][sopt], [JSON][j-nav-mesh], [Python][p-nav-mesh],                           |
-| Keyboard Navigation   |        [![][i-nav-keys]][i-nav-keys]        |                                                                         | [User Opt][user], [JSON][j-nav-keys], [Python][p-nav-keys],                            |
-| Controller Navigation |     [![][i-nav-control]][i-nav-control]     |                                                                         | [User Opt][user], [JSON][j-nav-control], [Python][p-nav-control],                      |
+| Example               |                Thumbnail                | Description                                                             | Type        | J                    | M                    | P                    | T               |
+| --------------------- | :-------------------------------------: | ----------------------------------------------------------------------- | ----------- | -------------------- | -------------------- | -------------------- | --------------- |
+| Box                   |           [![][i-box]][i-box]           | Box Geometry (Unity Cube)                                               | [Obj][obj3] | [J][s-box]           | [M][m-box]           | [P][p-box]           |                 |
+| Camera                |        [![][i-camera]][i-camera]        | Camera is the pose and component data representing a user avatar.       | [Obj][obj3] | [J][s-camera]        | [M][m-camera]        | [P][p-camera]        |                 |
+| Capsule               |       [![][i-capsule]][i-capsule]       | Capsule Geometry                                                        | [Obj][obj3] | [J][s-capsule]       | [M][m-capsule]       |                      |                 |
+| Circle                |        [![][i-circle]][i-circle]        | Circle Geometry                                                         | [Obj][obj3] | [J][s-circle]        | [M][m-circle]        | [P][p-circle]        |                 |
+| Cone                  |          [![][i-cone]][i-cone]          | Cone Geometry                                                           | [Obj][obj3] | [J][s-cone]          | [M][m-cone]          | [P][p-cone]          |                 |
+| Cube                  |          [![][i-cube]][i-cube]          | Cube Geometry (**deprecated**,see Box)                                  | [Obj][obj3] | [J][s-cube]          | [M][m-cube]          | [P][p-cube]          |                 |
+| Cylinder              |      [![][i-cylinder]][i-cylinder]      | Cylinder Geometry                                                       | [Obj][obj3] | [J][s-cylinder]      | [M][m-cylinder]      | [P][p-cylinder]      |                 |
+| Dodecahedron          |  [![][i-dodecahedron]][i-dodecahedron]  | Dodecahedron Geometry                                                   | [Obj][obj3] | [J][s-dodecahedron]  | [M][m-dodecahedron]  | [P][p-dodecahedron]  |                 |
+| Entity                |        [![][i-entity]][i-entity]        | Entities are containers into which components can be attached.          | [Obj][obj3] | [J][s-entity]        | [M][m-entity]        | [P][p-entity]        |                 |
+| Event                 |         [![][i-event]][i-event]         | Events are ephemeral messages used for events like controller actions.  | [Obj][obj3] | [J][s-event]         | [M][m-event]         | [P][p-event]         |                 |
+| Gaussian Splat        |         [![][i-splat]][i-splat]         | Load 3D Gaussian Splat                                                  | [Obj][obj3] | [J][s-splat]         | [M][m-splat]         |                      |                 |
+| GLTF Model            |          [![][i-gltf]][i-gltf]          | GLTF Models afford consistent cross-platform rendering of 3D assets.    | [Obj][obj3] | [J][s-gltf]          | [M][m-gltf]          | [P][p-gltf]          | [T][t-gltf]     |
+| Hand Left             |          [![][i-hand]][i-hand]          | Hand Left is the metadata pose and controller type of the user avatar.  | [Obj][obj3] | [J][s-hand]          | [M][m-hand]          | [P][p-hands]         |                 |
+| Hand Right            |          [![][i-hand]][i-hand]          | Hand Right is the metadata pose and controller type of the user avatar. | [Obj][obj3] | [J][s-hand]          | [M][m-hand]          | [P][p-hands]         |                 |
+| Icosahedron           |   [![][i-icosahedron]][i-icosahedron]   | Icosahedron Geometry                                                    | [Obj][obj3] | [J][s-icosahedron]   | [M][m-icosahedron]   | [P][p-icosahedron]   |                 |
+| Image                 |         [![][i-image]][i-image]         | Display an image on a plane                                             | [Obj][obj3] | [J][s-image]         | [M][m-image]         | [P][p-image]         |                 |
+| Light                 |         [![][i-light]][i-light]         | A light                                                                 | [Obj][obj3] | [J][s-light]         | [M][m-light]         | [P][p-light]         |                 |
+| Line                  |          [![][i-line]][i-line]          | Draw a line                                                             | [Obj][obj3] | [J][s-line]          | [M][m-line]          | [P][p-line]          |                 |
+| Ocean                 |         [![][i-ocean]][i-ocean]         | Ocean                                                                   | [Obj][obj3] | [J][s-ocean]         | [M][m-ocean]         |                      |                 |
+| Octahedron            |    [![][i-octahedron]][i-octahedron]    | Octahedron Geometry                                                     | [Obj][obj3] | [J][s-octahedron]    | [M][m-octahedron]    | [P][p-octahedron]    |                 |
+| PCD Model             |           [![][i-pcd]][i-pcd]           | Load a Point-Cloud data (PCD) model                                     | [Obj][obj3] | [J][s-pcd]           | [M][m-pcd]           |                      |                 |
+| Plane                 |         [![][i-plane]][i-plane]         | Plane Geometry (Unity Quad/Plane)                                       | [Obj][obj3] | [J][s-plane]         | [M][m-plane]         | [P][p-plane]         |                 |
+| Ring                  |          [![][i-ring]][i-ring]          | Ring Geometry                                                           | [Obj][obj3] | [J][s-ring]          | [M][m-ring]          | [P][p-ring]          |                 |
+| Rounded Box           |    [![][i-roundedbox]][i-roundedbox]    | Rounded Box Geometry                                                    | [Obj][obj3] | [J][s-roundedbox]    | [M][m-roundedbox]    |                      |                 |
+| Sphere                |        [![][i-sphere]][i-sphere]        | Sphere Geometry                                                         | [Obj][obj3] | [J][s-sphere]        | [M][m-sphere]        | [P][p-sphere]        |                 |
+| Tetrahedron           |   [![][i-tetrahedron]][i-tetrahedron]   | Tetrahedron Geometry                                                    | [Obj][obj3] | [J][s-tetrahedron]   | [M][m-tetrahedron]   | [P][p-tetrahedron]   |                 |
+| Text                  |          [![][i-text]][i-text]          | Display text                                                            | [Obj][obj3] | [J][s-text]          | [M][m-text]          | [P][p-text]          |                 |
+| Thickline             |     [![][i-thickline]][i-thickline]     | Draw a thick line that can have a custom width                          | [Obj][obj3] | [J][s-thickline]     | [M][m-thickline]     | [P][p-thickline]     |                 |
+| Three.js Scene        |       [![][i-threejs]][i-threejs]       | Load a Three.js Scene                                                   | [Obj][obj3] | [J][s-threejs]       | [M][m-threejs]       |                      |                 |
+| Torus                 |         [![][i-torus]][i-torus]         | Torus Geometry                                                          | [Obj][obj3] | [J][s-torus]         | [M][m-torus]         | [P][p-torus]         |                 |
+| Torus Knot            |     [![][i-torusKnot]][i-torusKnot]     | Torus Knot Geometry                                                     | [Obj][obj3] | [J][s-torusKnot]     | [M][m-torusKnot]     | [P][p-torusKnot]     |                 |
+| Triangle              |      [![][i-triangle]][i-triangle]      | Triangle Geometry                                                       | [Obj][obj3] | [J][s-triangle]      | [M][m-triangle]      | [P][p-triangle]      |                 |
+| UI Button Panel       |    [![][i-ui-buttons]][i-ui-buttons]    | ARENAUI Button Panel                                                    | [Obj][obj3] | [J][s-ui-buttons]    | [M][m-ui-buttons]    | [P][p-ui-buttons]    |                 |
+| UI Card               |       [![][i-ui-card]][i-ui-card]       | ARENAUI Card                                                            | [Obj][obj3] | [J][s-ui-card]       | [M][m-ui-card]       | [P][p-ui-card]       |                 |
+| UI Prompt             |     [![][i-ui-prompt]][i-ui-prompt]     | ARENAUI Prompt                                                          | [Obj][obj3] | [J][s-ui-prompt]     | [M][m-ui-prompt]     | [P][p-ui-prompt]     |                 |
+| Videosphere           |   [![][i-videosphere]][i-videosphere]   | Video sphere 360 video bubble                                           | [Obj][obj3] | [J][s-videosphere]   | [M][m-videosphere]   |                      |                 |
+| Animation             |     [![][i-animation]][i-animation]     | Animate and tween values.                                               | [Att][obja] | [J][s-animation]     | [M][m-animation]     | [P][p-animation]     |                 |
+| Animation Mixer       | [![][i-animation-mix]][i-animation-mix] | Control playing animations stored in a GLTF model.                      | [Att][obja] | [J][s-animation-mix] | [M][m-animation-mix] | [P][p-animation-mix] |                 |
+| AR Hide/Show          |   [![][i-ar-hideshow]][i-ar-hideshow]   | Hide/Show object when entering AR.                                      | [Att][obja] | [J][s-ar-hideshow]   | [M][m-ar-hideshow]   |                      |                 |
+| AR Marker             |      [![][i-armarker]][i-armarker]      | A location marker used to anchor scenes/objects,in the real world.      | [Att][obja] | [J][s-armarker]      | [M][m-armarker]      | [P][p-armarker]      |                 |
+| Attribution           |   [![][i-attribution]][i-attribution]   | Attribution Component. Saves attribution data in any entity.            | [Att][obja] | [J][s-attribution]   | [M][m-attribution]   | [P][p-attribution]   |                 |
+| Blip                  |          [![][i-blip]][i-blip]          | When the object is created or deleted,it will animate in/out.           | [Att][obja] | [J][s-blip]          | [M][m-blip]          |                      |                 |
+| Box Collision         | [![][i-box-collision]][i-box-collision] | Listen for bounding-box collisions with user camera and hands.          | [Att][obja] | [J][s-box-collision] | [M][m-box-collision] | [P][p-box-collision] |                 |
+| Buffer Geometry       |        [![][i-buffer]][i-buffer]        | Reduce geometry memory usage while being harder to manipulate           | [Att][obja] | [J][s-buffer]        | [M][m-buffer]        | [P][p-buffer]        |                 |
+| Click                 |         [![][i-click]][i-click]         | Object will listen for clicks                                           | [Att][obja] | [J][s-click]         | [M][m-click]         | [P][p-click]         |                 |
+| Collision             |     [![][i-collision]][i-collision]     | Collisions trigger click events                                         | [Att][obja] | [J][s-collision]     | [M][m-collision]     | [P][p-collision]     |                 |
+| GLTF LOD              |      [![][i-gltf-lod]][i-gltf-lod]      | Switch between default and detailed GLTF models                         | [Att][obja] | [J][s-gltf-lod]      | [M][m-gltf-lod]      | [P][p-gltf-lod]      |                 |
+| GLTF Morph            |    [![][i-gltf-morph]][i-gltf-morph]    | Target and control a GLTF model's morphTargets created in Blender.      | [Att][obja] | [J][s-gltf-morph]    | [M][m-gltf-morph]    | [P][p-gltf-morph]    |                 |
+| Go to Landmark        | [![][i-goto-landmark]][i-goto-landmark] | Teleports user to the landmark with the given name                      | [Att][obja] | [J][s-goto-landmark] | [M][m-goto-landmark] | [P][p-goto-landmark] |                 |
+| Go to URL             |      [![][i-goto-url]][i-goto-url]      | Goto given URL                                                          | [Att][obja] | [J][s-goto-url]      | [M][m-goto-url]      | [P][p-goto-url]      |                 |
+| GTLF Model Update     |   [![][i-modelUpdate]][i-modelUpdate]   | Allows translation of named GLTF model sub-components.                  | [Att][obja] | [J][s-modelUpdate]   | [M][m-modelUpdate]   | [P][p-modelUpdate]   |                 |
+| Impulse               |       [![][i-impulse]][i-impulse]       | The force applied using physics.                                        | [Att][obja] | [J][s-impulse]       | [M][m-impulse]       | [P][p-impulse]       |                 |
+| Jitsi Video           |   [![][i-jitsi-video]][i-jitsi-video]   | Apply Jitsi video source to the geometry                                | [Att][obja] | [J][s-jitsi-video]   | [M][m-jitsi-video]   | [P][p-jitsi-video]   |                 |
+| Landmark              |      [![][i-landmark]][i-landmark]      | Landmarks allow you to jump to certain places of interest in a scene.   | [Att][obja] | [J][s-landmark]      | [M][m-landmark]      |                      | [T][t-landmark] |
+| Look At               |       [![][i-look-at]][i-look-at]       | Dynamically rotate or face towards another entity or position.          | [Att][obja] | [J][s-look-at]       | [M][m-look-at]       | [P][p-look-at]       |                 |
+| Material              |      [![][i-material]][i-material]      | The material properties of the object’s surface.                        | [Att][obja] | [J][s-material]      | [M][m-material]      | [P][p-material]      |                 |
+| Material Extras       |  [![][i-material-ext]][i-material-ext]  | Define extra material properties: texture encoding,render order.        | [Att][obja] | [J][s-material-ext]  | [M][m-material-ext]  | [P][p-material-ext]  |                 |
+| Multi-Src             |      [![][i-multisrc]][i-multisrc]      | Define multiple visual sources applied to an object.                    | [Att][obja] | [J][s-multisrc]      | [M][m-multisrc]      | [P][p-multisrc]      |                 |
+| Parent                |        [![][i-parent]][i-parent]        | Parent's object_id. Child objects inherit scale and translation.        | [Att][obja] | [J][s-parent]        | [M][m-parent]        | [P][p-parent]        |                 |
+| Particle System       |  [![][i-particle-sys]][i-particle-sys]  | Particle system component for A-Frame.                                  | [Att][obja] | [J][s-particle-sys]  | [M][m-particle-sys]  |                      |                 |
+| Particles (SPE)       | [![][i-spe-particles]][i-spe-particles] | GPU based particle systems in A-Frame.                                  | [Att][obja] | [J][s-spe-particles] | [M][m-spe-particles] |                      |                 |
+| Physics               |  [![][i-dynamic-body]][i-dynamic-body]  | Physics type attached to the object.                                    | [Att][obja] | [J][s-dynamic-body]  | [M][m-dynamic-body]  | [P][p-dynamic-body]  |                 |
+| Position              |      [![][i-position]][i-position]      | 3D object position                                                      | [Att][obja] | [J][s-position]      | [M][m-position]      | [P][p-position]      |                 |
+| Remote Render         | [![][i-remote-render]][i-remote-render] | Whether or not an object should be remote rendered [Experimental]       | [Att][obja] | [J][s-remote-render] | [M][m-remote-render] |                      |                 |
+| Rotation              |      [![][i-rotation]][i-rotation]      | 3D object rotation in quaternions; Right-handed coordinates.            | [Att][obja] | [J][s-rotation]      | [M][m-rotation]      | [P][p-rotation]      |                 |
+| Scale                 |         [![][i-scale]][i-scale]         | 3D object scale                                                         | [Att][obja] | [J][s-scale]         | [M][m-scale]         | [P][p-scale]         |                 |
+| Screenshareable       |   [![][i-screenshare]][i-screenshare]   | Whether or not a user can screenshare on an object                      | [Att][obja] | [J][s-screenshare]   | [M][m-screenshare]   | [P][p-screenshare]   |                 |
+| Shadow                |        [![][i-shadow]][i-shadow]        | shadow                                                                  | [Att][obja] | [J][s-shadow]        | [M][m-shadow]        | [P][p-shadow]        |                 |
+| Skip Cache            |     [![][i-skipCache]][i-skipCache]     | Disable retrieving the shared geometry object from the cache.           | [Att][obja] | [J][s-skipCache]     | [M][m-skipCache]     |                      |                 |
+| Sound                 |         [![][i-sound]][i-sound]         | Positional sound is thus affected by the component's position.          | [Att][obja] | [J][s-sound]         | [M][m-sound]         | [P][p-sound]         |                 |
+| Text Input            |     [![][i-textinput]][i-textinput]     | Opens an HTML prompt when clicked. Sends text xas an event on MQTT.     | [Att][obja] | [J][s-textinput]     | [M][m-textinput]     | [P][p-textinput]     |                 |
+| Video Control         | [![][i-video-control]][i-video-control] | Video Control                                                           | [Att][obja] | [J][s-video-control] | [M][m-video-control] | [P][p-video-control] |                 |
+| VR Hide/Show          |   [![][i-vr-hideshow]][i-vr-hideshow]   | Hide/Show object when entering VR.                                      | [Att][obja] | [J][s-vr-hideshow]   | [M][m-vr-hideshow]   |                      |                 |
+| Program               |       [![][i-program]][i-program]       | ARENA program data                                                      | [Pro][prog] | [J][s-program]       | [M][m-program]       | [P][p-program]       |                 |
+| Nav Mesh              |      [![][i-nav-mesh]][i-nav-mesh]      | Invisible 3d model surface for users to move upon.                      | [Scn][sopt] | [J][s-nav-mesh]      | [M][m-nav-mesh]      | [P][p-nav-mesh]      |                 |
+| Keyboard Navigation   |      [![][i-nav-keys]][i-nav-keys]      |                                                                         | [Usr][user] | [J][s-nav-keys]      | [M][m-nav-keys]      | [P][p-nav-keys]      |                 |
+| Controller Navigation |   [![][i-nav-control]][i-nav-control]   |                                                                         | [Usr][user] | [J][s-nav-control]   | [M][m-nav-control]   | [P][p-nav-control]   |                 |
 
+<!-- Overwrite -->
+<!-- Null -->
+<!-- Data Block -->
+<!-- Object ID -->
+<!-- Action (Message) -->
+<!-- TTL -->
+<!-- Persist -->
+<!-- Child -->
+<!-- Command Line (CLI) -->
 <!-- Segment -->
 <!-- Geometry -->
 <!-- Mesh -->
@@ -148,6 +157,7 @@ These settings are fed into three.js WebGLRenderer properties.
 These effects are enabled in desktop and XR views.
 
 <!-- image links -->
+<!--Ideally, create new images and store them in /assets/img/examples/objects/, /assets/img/examples/attributes/, etc... -->
 
 [i-box]: /assets/img/overview/devguide/box.png
 {:width="100px"}
@@ -229,7 +239,7 @@ These effects are enabled in desktop and XR views.
 {:width="100px"}
 [i-animation]: /
 {:width="100px"}
-[i-animation-mixer]: /
+[i-animation-mix]: /
 {:width="100px"}
 [i-armarker]: /
 {:width="100px"}
@@ -247,7 +257,7 @@ These effects are enabled in desktop and XR views.
 {:width="100px"}
 [i-dynamic-body]: /
 {:width="100px"}
-[i-gltf-model-lod]: /
+[i-gltf-lod]: /
 {:width="100px"}
 [i-gltf-morph]: /
 {:width="100px"}
@@ -265,7 +275,7 @@ These effects are enabled in desktop and XR views.
 {:width="100px"}
 [i-material]: /
 {:width="100px"}
-[i-material-extras]: /assets/img/examples/attributes/transparent-occluder.gif
+[i-material-ext]: /assets/img/examples/attributes/transparent-occluder.gif
 {:width="100px"}
 [i-modelUpdate]: /
 {:width="100px"}
@@ -273,7 +283,7 @@ These effects are enabled in desktop and XR views.
 {:width="100px"}
 [i-parent]: /
 {:width="100px"}
-[i-particle-system]: /
+[i-particle-sys]: /
 {:width="100px"}
 [i-position]: /
 {:width="100px"}
@@ -283,7 +293,7 @@ These effects are enabled in desktop and XR views.
 {:width="100px"}
 [i-scale]: /
 {:width="100px"}
-[i-screenshareable]: /assets/img/examples/attributes/screenshare1.png
+[i-screenshare]: /assets/img/examples/attributes/screenshare1.png
 {:width="100px"}
 [i-shadow]: /
 {:width="100px"}
@@ -308,78 +318,124 @@ These effects are enabled in desktop and XR views.
 [i-nav-control]: /
 {:width="100px"}
 
-<!-- json links-->
+<!-- json schema links-->
 
-[j-box]: /content/schemas/message/box
-[j-camera]: /content/schemas/message/camera
-[j-capsule]: /content/schemas/message/capsule
-[j-circle]: /content/schemas/message/circle
-[j-cone]: /content/schemas/message/cone
-[j-cube]: /content/schemas/message/cube
-[j-cylinder]: /content/schemas/message/cylinder
-[j-dodecahedron]: /content/schemas/message/dodecahedron
-[j-entity]: /content/schemas/message/entity
-[j-event]: /content/schemas/message/event
-[j-splat]: /content/schemas/message/gaussian-splat
-[j-gltf]: /content/schemas/message/gltf-model
-[j-hand]: /content/schemas/message/hand
-[j-hand]: /content/schemas/message/hand
-[j-icosahedron]: /content/schemas/message/icosahedron
-[j-image]: /content/schemas/message/image
-[j-light]: /content/schemas/message/light
-[j-line]: /content/schemas/message/line
-[j-ocean]: /content/schemas/message/ocean
-[j-octahedron]: /content/schemas/message/octahedron
-[j-pcd]: /content/schemas/message/pcd-model
-[j-plane]: /content/schemas/message/plane
-[j-ring]: /content/schemas/message/ring
-[j-roundedbox]: /content/schemas/message/roundedbox
-[j-sphere]: /content/schemas/message/sphere
-[j-tetrahedron]: /content/schemas/message/tetrahedron
-[j-text]: /content/schemas/message/text
-[j-thickline]: /content/schemas/message/thickline
-[j-threejs]: /content/schemas/message/threejs-scene
-[j-torus]: /content/schemas/message/torus
-[j-torusKnot]: /content/schemas/message/torusKnot
-[j-triangle]: /content/schemas/message/triangle
-[j-ui-buttons]: /content/schemas/message/arenaui-button-panel
-[j-ui-card]: /content/schemas/message/arenaui-card
-[j-ui-prompt]: /content/schemas/message/arenaui-prompt
-[j-videosphere]: /content/schemas/message/videosphere
-[j-animation]: /content/schemas/message/animation
-[j-animation-mixer]: /content/schemas/message/animation-mixer
-[j-armarker]: /content/schemas/message/armarker
-[j-attribution]: /content/schemas/message/attribution
-[j-blip]: /content/schemas/message/blip
-[j-box-collision]: /content/schemas/message/box-collision-listener
-[j-click]: /content/schemas/message/click-listener
-[j-collision]: /content/schemas/message/collision-listener
-[j-gltf-model-lod]: /content/schemas/message/gltf-model-lod
-[j-gltf-morph]: /content/schemas/message/gltf-morph
-[j-goto-landmark]: /content/schemas/message/goto-landmark
-[j-goto-url]: /content/schemas/message/goto-url
-[j-modelUpdate]: /content/schemas/message/modelUpdate
-[j-impulse]: /content/schemas/message/impulse
-[j-jitsi-video]: /content/schemas/message/jitsi-video
-[j-landmark]: /content/schemas/message/landmark
-[j-look-at]: /content/schemas/message/look-at
-[j-material]: /content/schemas/message/material
-[j-material-extras]: /content/schemas/message/material-extras
-[j-multisrc]: /content/schemas/message/multisrc
-[j-parent]: /content/schemas/message/parent
-[j-particle-system]: /content/schemas/message/particle-system
-[j-spe-particles]: /content/schemas/message/spe-particles
-[j-dynamic-body]: /content/schemas/message/dynamic-body
-[j-position]: /content/schemas/message/position
-[j-remote-render]: /content/schemas/message/remote-render
-[j-rotation]: /content/schemas/message/rotation
-[j-scale]: /content/schemas/message/scale
-[j-screenshareable]: /content/schemas/message/screenshareable
-[j-shadow]: /content/schemas/message/shadow
-[j-skipCache]: /content/schemas/message/skipCache
-[j-sound]: /content/schemas/message/sound
-[j-textinput]: /content/schemas/message/textinput
-[j-video-control]: /content/schemas/message/video-control
+[s-box]: /content/schemas/message/box
+[s-camera]: /content/schemas/message/camera
+[s-capsule]: /content/schemas/message/capsule
+[s-circle]: /content/schemas/message/circle
+[s-cone]: /content/schemas/message/cone
+[s-cube]: /content/schemas/message/cube
+[s-cylinder]: /content/schemas/message/cylinder
+[s-dodecahedron]: /content/schemas/message/dodecahedron
+[s-entity]: /content/schemas/message/entity
+[s-event]: /content/schemas/message/event
+[s-splat]: /content/schemas/message/gaussian-splat
+[s-gltf]: /content/schemas/message/gltf-model
+[s-hand]: /content/schemas/message/hand
+[s-hand]: /content/schemas/message/hand
+[s-icosahedron]: /content/schemas/message/icosahedron
+[s-image]: /content/schemas/message/image
+[s-light]: /content/schemas/message/light
+[s-line]: /content/schemas/message/line
+[s-ocean]: /content/schemas/message/ocean
+[s-octahedron]: /content/schemas/message/octahedron
+[s-pcd]: /content/schemas/message/pcd-model
+[s-plane]: /content/schemas/message/plane
+[s-ring]: /content/schemas/message/ring
+[s-roundedbox]: /content/schemas/message/roundedbox
+[s-sphere]: /content/schemas/message/sphere
+[s-tetrahedron]: /content/schemas/message/tetrahedron
+[s-text]: /content/schemas/message/text
+[s-thickline]: /content/schemas/message/thickline
+[s-threejs]: /content/schemas/message/threejs-scene
+[s-torus]: /content/schemas/message/torus
+[s-torusKnot]: /content/schemas/message/torusKnot
+[s-triangle]: /content/schemas/message/triangle
+[s-ui-buttons]: /content/schemas/message/arenaui-button-panel
+[s-ui-card]: /content/schemas/message/arenaui-card
+[s-ui-prompt]: /content/schemas/message/arenaui-prompt
+[s-videosphere]: /content/schemas/message/videosphere
+[s-animation]: /content/schemas/message/animation
+[s-animation-mix]: /content/schemas/message/animation-mixer
+[s-armarker]: /content/schemas/message/armarker
+[s-attribution]: /content/schemas/message/attribution
+[s-blip]: /content/schemas/message/blip
+[s-box-collision]: /content/schemas/message/box-collision-listener
+[s-click]: /content/schemas/message/click-listener
+[s-collision]: /content/schemas/message/collision-listener
+[s-gltf-lod]: /content/schemas/message/gltf-model-lod
+[s-gltf-morph]: /content/schemas/message/gltf-morph
+[s-goto-landmark]: /content/schemas/message/goto-landmark
+[s-goto-url]: /content/schemas/message/goto-url
+[s-modelUpdate]: /content/schemas/message/modelUpdate
+[s-impulse]: /content/schemas/message/impulse
+[s-jitsi-video]: /content/schemas/message/jitsi-video
+[s-landmark]: /content/schemas/message/landmark
+[s-look-at]: /content/schemas/message/look-at
+[s-material]: /content/schemas/message/material
+[s-material-ext]: /content/schemas/message/material-extras
+[s-multisrc]: /content/schemas/message/multisrc
+[s-parent]: /content/schemas/message/parent
+[s-particle-sys]: /content/schemas/message/particle-system
+[s-spe-particles]: /content/schemas/message/spe-particles
+[s-dynamic-body]: /content/schemas/message/dynamic-body
+[s-position]: /content/schemas/message/position
+[s-remote-render]: /content/schemas/message/remote-render
+[s-rotation]: /content/schemas/message/rotation
+[s-scale]: /content/schemas/message/scale
+[s-screenshare]: /content/schemas/message/screenshareable
+[s-shadow]: /content/schemas/message/shadow
+[s-skipCache]: /content/schemas/message/skipCache
+[s-sound]: /content/schemas/message/sound
+[s-textinput]: /content/schemas/message/textinput
+[s-video-control]: /content/schemas/message/video-control
+
+<!-- full message example links-->
+
+[m-null]: /content/schemas/message-examples#messaging-format-overview
+[m-null]: /content/schemas/message-examples#sample-publishsubscribe
+[m-null]: /content/schemas/message-examples#sample-scene-earth-and-moon-with-markers
+[m-null]: /content/schemas/message-examples#publish-a-scene-object-message
+[m-null]: /content/schemas/message-examples#subscribe-to-scene-object-messages
+[m-null]: /content/schemas/message-examples#create-models
+[m-null]: /content/schemas/message-examples#create-marker-objects
+[m-null]: /content/schemas/message-examples#define-animation-and-movement
+[m-null]: /content/schemas/message-examples#add-a-click-listener
+[m-null]: /content/schemas/message-examples#messaging-format-reference
+[m-null]: /content/schemas/message-examples#formatting-pubsub-messages
+[m-videosphere]: /content/schemas/message-examples#360-video
+[m-animation]: /content/schemas/message-examples#animate
+[m-animation-mix]: /content/schemas/message-examples#animating-gltf-models
+[m-environemnt]: /content/schemas/message-examples#background-themes
+[m-Look-at]: /content/schemas/message-examples#camera-look-at
+[m-color]: /content/schemas/message-examples#color
+[m-box]: /content/schemas/message-examples#draw-a-cube
+[m-click]: /content/schemas/message-examples#events
+[m-event]: /content/schemas/message-examples#events-1
+[m-goto-url]: /content/schemas/message-examples#goto-url
+[m-image]: /content/schemas/message-examples#images
+[m-multisrc]: /content/schemas/message-examples#images-on-objects
+[m-landmark]: /content/schemas/message-examples#landmark
+[m-light]: /content/schemas/message-examples#lights
+[m-line]: /content/schemas/message-examples#lines
+[m-gltf]: /content/schemas/message-examples#models
+[m-position]: /content/schemas/message-examples#move
+[m-user]: /content/schemas/message-examples#move-camera
+[m-torusKnot]: /content/schemas/message-examples#other-primitives-torusknot
+[m-parent]: /content/schemas/message-examples#parentchild-linking
+[m-spe-particles]: /content/schemas/message-examples#particles
+[m-persist]: /content/schemas/message-examples#persisted-objects
+[m-dynamic-body]: /content/schemas/message-examples#physics
+[m-camera]: /content/schemas/message-examples#relocalize-camera-rig
+[m-delete]: /content/schemas/message-examples#remove
+[m-stats]: /content/schemas/message-examples#scene-settings
+[m-sound]: /content/schemas/message-examples#sound
+[m-ttl]: /content/schemas/message-examples#temporary-objects-ttl
+[m-text]: /content/schemas/message-examples#text
+[m-thickline]: /content/schemas/message-examples#thicklines
+[m-transparency]: /content/schemas/message-examples#transparency
+[m-occlusion]: /content/schemas/message-examples#transparent-occlusion
 
 <!-- python links-->
 
@@ -409,7 +465,7 @@ These effects are enabled in desktop and XR views.
 [p-ui-card]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
 [p-ui-prompt]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
 [p-animation]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation.py
-[p-animation-mixer]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation_mixer.py
+[p-animation-mix]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation_mixer.py
 [p-color]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/color.py
 [p-clickable]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/clickable.py
 [p-goto-url]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_url.py
