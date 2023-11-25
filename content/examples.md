@@ -19,7 +19,7 @@ Which **Web/Python/Unity** platform supports each of these features? Take a look
 
 Thumbnail images can be clicked for a larger view. Multiple links are provided to examples of each feature.
 
-<!-- Examples Table Editing-->
+<!-- Examples Table Editing -->
 
 | Example               |                Thumbnail                | Description                                                             | Type        | J                    | M                    | P                    | T               |
 | --------------------- | :-------------------------------------: | ----------------------------------------------------------------------- | ----------- | -------------------- | -------------------- | -------------------- | --------------- |
@@ -126,11 +126,11 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 
 ### User Option
 
-User preferences to alter default behavior.
+User preferences to alter default behavior. For reference, a list of [some user settings](/content/overview/user-guide#buttons).
 
 ### 3D Object
 
-Base 3D entity to which multiple components can be attached.
+Base 3D entity to which multiple components can be attached. For reference, a list of [all 3D Objects](/content/schemas/message).
 
 ### 3D Object Attribute
 
@@ -138,23 +138,23 @@ A component or effect which can be optionally added to an entity.
 
 ### Program
 
-ARENA remote runtime,Python or WebAssembly (WASM).
+ARENA remote runtime,Python or WebAssembly (WASM). For reference, a list of [all program attributes](/content/schemas/message/arena-program#program-data-attributes)
 
 ### Scene Option
 
-ARENA Scene Options
+ARENA Scene Options. For reference, a list of [all scene options](/content/schemas/message/scene-options#scene-options-attributes)
 
 ### Environment Setting
 
-A-Frame Environment presets. More properties at <a href='https://github.com/supermedium/aframe-environment-component'>https://github.com/supermedium/aframe-environment-component</a>.
+A-Frame Environment presets. More properties at repo [supermedium/aframe-environment-component](https://github.com/supermedium/aframe-environment-component#readme).
 
 ### Renderer Setting
 
-These settings are fed into three.js WebGLRenderer properties.
+These settings are fed into three.js WebGLRenderer properties. For reference, a list of [all renderer settings](/content/schemas/message/renderer-settings#renderer-settings-attributes)
 
 ### Post-Processing Effect
 
-These effects are enabled in desktop and XR views.
+These effects are enabled in desktop and XR views. For reference, a list of [all post-processing effects](/content/schemas/message/post-processing#post-processing-effects-attributes)
 
 <!-- image links -->
 <!--Ideally, create new images and store them in /assets/img/examples/objects/, /assets/img/examples/attributes/, etc... -->
