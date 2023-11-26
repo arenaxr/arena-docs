@@ -526,6 +526,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 <!-- tutorial links-->
 
 [t-action]: /content/schemas/definitions#actions
+[t-build]: /content/overview/build
 [t-animation-mix]: /content/overview/dev-guide#animate-a-gltf-model
 [t-animation]: /content/3d-content/animated-models#animated-models
 [t-armarker]: /content/xr/optical-markers#attaching-an-armarker-component-to-scene-objects
