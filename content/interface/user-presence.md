@@ -91,7 +91,7 @@ By default we use A-Frame `laser-controls` which default to showing Valve Index 
 
 ## Camera Perspective
 
-(from [A-Frame documentation](https://aframe.io/docs/1.4.0/components/camera.html))
+(from [A-Frame documentation](https://aframe.io/docs/1.5.0/components/camera.html))
 
 | The camera component defines from which perspective the user views the scene. The camera is commonly paired with control components that allow input devices to move and rotate the camera.
 

@@ -12,9 +12,9 @@ Text
 ====
 
 
-Display text. 
+Display text.
 
-More properties at <a href='https://aframe.io/docs/1.4.0/components/text.html'>https://aframe.io/docs/1.4.0/components/text.html</a>
+More properties at <a href='https://aframe.io/docs/1.5.0/components/text.html'>https://aframe.io/docs/1.5.0/components/text.html</a>
 
 All wire objects have a set of basic attributes ```{object_id, action, type, persist, data}```. The ```data``` attribute defines the object-specific attributes
 

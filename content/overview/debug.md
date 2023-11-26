@@ -11,7 +11,7 @@ When running programs in Python or Unity, you have a plethora of debug tools at 
 
 ## Debug your scene with A-Frame Scene Inspector
 
-Since the ARENA's rendering uses the A-Frame web 3D rendering engine, you can open the [A-Frame Scene Inspector](https://aframe.io/docs/1.4.0/introduction/visual-inspector-and-dev-tools.html) on any scene to examine and manipulate any of the A-Frame elements in your scene. Try this now from your example scene by typing `<ctrl> + <alt> + i` on most systems.
+Since the ARENA's rendering uses the A-Frame web 3D rendering engine, you can open the [A-Frame Scene Inspector](https://aframe.io/docs/1.5.0/introduction/visual-inspector-and-dev-tools.html) on any scene to examine and manipulate any of the A-Frame elements in your scene. Try this now from your example scene by typing `<ctrl> + <alt> + i` on most systems.
 
 Examine the list of elements on the left side. Each element or object you select will show it's details and attributes on the right side. You may edit any attributes here you wish, however, remember that the A-Frame Scene Inspector will not persist any changes to the persistence database. We do have a way to visually manipulate objects and save changes that we will share next.
 

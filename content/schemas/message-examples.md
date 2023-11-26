@@ -300,7 +300,7 @@ Animate rotation of the already drawn cube.
 }
 ```
 
-Other animations are available that resemble the `"data": {"animation": { "property": ... }}` blob above: see [A-Frame Animation](https://aframe.io/docs/1.4.0/components/animation.html) documentation for more examples.
+Other animations are available that resemble the `"data": {"animation": { "property": ... }}` blob above: see [A-Frame Animation](https://aframe.io/docs/1.5.0/components/animation.html) documentation for more examples.
 
 ## Remove
 
@@ -368,7 +368,7 @@ Use the `multisrc` A-Frame Component to specify different bitmaps for sides of a
 
 ## Other Primitives: TorusKnot
 
-Instantiate a wacky torusKnot, then turn it blue. Other primitive types are available in the in [A-Frame docs](https://aframe.io/docs/1.4.0/components/geometry.html#built-in-geometries). Here is a brief list: **box circle cone cylinder dodecahedron icosahedron tetrahedron octahedron plane ring sphere torus torusKnot triangle**.
+Instantiate a wacky torusKnot, then turn it blue. Other primitive types are available in the in [A-Frame docs](https://aframe.io/docs/1.5.0/components/geometry.html#built-in-geometries). Here is a brief list: **box circle cone cylinder dodecahedron icosahedron tetrahedron octahedron plane ring sphere torus torusKnot triangle**.
 
 ```json
 {
@@ -512,7 +512,7 @@ Add some red text that says "Hello World".
 }
 ```
 
-Change text color properties [A-Frame Text](https://aframe.io/docs/0.9.0/components/text.html#properties).
+Change text color properties [A-Frame Text](https://aframe.io/docs/1.5.0/components/text.html#properties).
 
 ```json
 {
@@ -1022,7 +1022,7 @@ Full list of Vive controller event names:
 
 ## Scene Settings
 
-Some settings are available by setting attributes of the Scene element (see [A-Frame Scene](https://aframe.io/docs/0.9.0/core/scene.html)) for example, turn on statistics:
+Some settings are available by setting attributes of the Scene element (see [A-Frame Scene](https://aframe.io/docs/1.5.0/core/scene.html)) for example, turn on statistics:
 
 ```json
 {
