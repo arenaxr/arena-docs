@@ -29,8 +29,8 @@ There are a few hints to help you establish objects to screenshare on.
 
 <!-- TODO: add setup to click Landmarks to see Screens as Landmarks -->
 
-- Click the **More Options** icon: ![](/assets/img/icons/more.png){:height="24px" width="24px"}
-- Click the **Screenshare** icon: ![](/assets/img/icons/screen-on.png){:height="24px" width="24px"}
+- Click the **More Options** icon: ![](/assets/img/icons/down-arrow.png){:height="32px" width="32px" style="background-color:#262626"}
+- Click the **Screenshare** icon: ![](/assets/img/icons/screen-on.png){:height="32px" width="32px" style="background-color:#262626"}
 
 <img src="/assets/img/overview/screenshare/ARENA-screenshare0.png" width="49%" />
 <img src="/assets/img/overview/screenshare/ARENA-screenshare1.png" width="49%" />
