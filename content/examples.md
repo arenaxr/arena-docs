@@ -32,12 +32,12 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Action (Message)          |                                         | The scene graph action: create, update (merge), delete.                          | [Graph:][grph]                                                                                            [Tutorial][t-action]        |
 | Animation                 |     [![][i-animation]][i-animation]     | Animate and tween values.                                                        | [Attribute:][obja]         [Schema][s-animation]     [Message][m-animation]     [Python][p-animation]     [Tutorial][t-animation]     |
 | Animation Mixer           | [![][i-animation-mix]][i-animation-mix] | Control playing animations stored in a GLTF model.                               | [Attribute:][obja]         [Schema][s-animation-mix] [Message][m-animation-mix] [Python][p-animation-mix] [Tutorial][t-animation-mix] |
-| AR Hide/Show              |   [![][i-ar-hideshow]][i-ar-hideshow]   | Hide/Show object when entering AR.                                               | [Attribute:][obja]         [Schema][s-ar-hideshow]                                                                                    |
+| AR Hide/Show              |   [![][i-ar-hideshow]][i-ar-hideshow]   | Hide/Show object (`hide-on-enter-ar`) when entering AR.                          | [Attribute:][obja]         [Schema][s-ar-hideshow]                                                                                    |
 | AR Marker                 |      [![][i-armarker]][i-armarker]      | A location marker used to anchor scenes/objects, in the real world               | [Attribute:][obja]         [Schema][s-armarker]                                                           [Tutorial][t-armarker]      |
 | ARTS                      |          [![][i-arts]][i-arts]          | ARTS, a runtime supervisor for programs                                          | [Application][a-arts]                                                                                                                 |
 | ATLAS                     |         [![][i-atlas]][i-atlas]         | ATLAS, a geolocation index of AR scenes.                                         | Application                                                                                               Tutorial forthcoming        |
 | Attribution               |   [![][i-attribution]][i-attribution]   | Attribution Component. Saves attribution data in any entity                      | [Attribute:][obja]         [Schema][s-attribution]                                                        [Tutorial][t-attribution]   |
-| Audio                     |      [![][i-audio-on]][i-audio-on]      | User's Microphone On/Off state (requires permission)                             | [User:][user]                                                                                             [Tutorial][t-audio]         |
+| Audio                     |      [![][i-audio-on]][i-audio-on]      | User's Microphone On/Off state (requires microphone permission)                  | [User:][user]                                                                                             [Tutorial][t-audio]         |
 | Blip                      |          [![][i-blip]][i-blip]          | When the object is created or deleted, it will animate in/out                    | [Attribute:][obja]         [Schema][s-blip]                                                                                           |
 | Box                       |           [![][i-box]][i-box]           | Box Geometry (Unity Cube)                                                        | [Object:][obj3]            [Schema][s-box]           [Message][m-box]           [Python][p-box]           [Tutorial][t-box]           |
 | Box Collision             | [![][i-box-collision]][i-box-collision] | Listen for bounding-box collisions with user camera and hands                    | [Attribute:][obja]         [Schema][s-box-collision]                                                                                  |
@@ -74,6 +74,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Go to URL                 |      [![][i-goto-url]][i-goto-url]      | Goto given URL                                                                   | [Attribute:][obja]         [Schema][s-goto-url]      [Message][m-goto-url]      [Python][p-goto-url]                                  |
 | Hand Left                 |          [![][i-hand]][i-hand]          | Hand Left is the metadata pose and controller type of the user avatar            | [Object:][obj3]            [Schema][s-hand]                                     [Python][p-hands]                                     |
 | Hand Right                |          [![][i-hand]][i-hand]          | Hand Right is the metadata pose and controller type of the user avatar           | [Object:][obj3]            [Schema][s-hand]                                     [Python][p-hands]                                     |
+| Health Check              |   [![][i-health-warn]][i-health-warn]   | A clickable warning/error icon when critical errors happen in a scene            | [User:][user]                                                                                             [Tutorial][t-health]        |
 | Icosahedron               |   [![][i-icosahedron]][i-icosahedron]   | Icosahedron Geometry                                                             | [Object:][obj3]            [Schema][s-icosahedron]                              [Python][p-icosahedron]                               |
 | Image                     |         [![][i-image]][i-image]         | Display an image on a plane                                                      | [Object:][obj3]            [Schema][s-image]         [Message][m-image]         [Python][p-image]                                     |
 | Impulse                   |       [![][i-impulse]][i-impulse]       | The force applied using physics.                                                 | [Attribute:][obja]         [Schema][s-impulse]       [Message][m-dynamic-body]  [Python][p-impulse]                                   |
@@ -106,7 +107,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Plane                     |         [![][i-plane]][i-plane]         | Plane Geometry (Unity Quad/Plane)                                                | [Object:][obj3]            [Schema][s-plane]                                    [Python][p-plane]                                     |
 | Position                  |      [![][i-position]][i-position]      | 3D object position                                                               | [Attribute:][obja]         [Schema][s-position]      [Message][m-position]      [Python][p-position]                                  |
 | Program                   |       [![][i-program]][i-program]       | ARENA program data                                                               | [Program:][prog]                                     [Message][m-program]                                 [Tutorial][t-program]       |
-| Remote Render             | [![][i-remote-render]][i-remote-render] | Whether or not an object should be remote rendered [Experimental]                | [Attribute:][obja]         [Schema][s-remote-render]                                                                                  |
+| Remote Render             | [![][i-remote-render]][i-remote-render] | Whether or not an object should be remote rendered [Experimental]                | [Attribute:][obja]         [Schema][s-remote-render]                                                      [Tutorial][t-remote-render] |
 | Ring                      |          [![][i-ring]][i-ring]          | Ring Geometry                                                                    | [Object:][obj3]            [Schema][s-ring]                                     [Python][p-ring]                                      |
 | Rotation                  |      [![][i-rotation]][i-rotation]      | 3D object rotation in quaternions; Right-handed coordinates                      | [Attribute:][obja]         [Schema][s-rotation]      [Message][m-rotation]      [Python][p-rotation]                                  |
 | Rounded Box               |    [![][i-roundedbox]][i-roundedbox]    | Rounded Box Geometry                                                             | [Object:][obj3]            [Schema][s-roundedbox]                                                                                     |
@@ -122,6 +123,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Sound                     |         [![][i-sound]][i-sound]         | Positional sound is thus affected by the component's position                    | [Attribute:][obja]         [Schema][s-sound]         [Message][m-sound]         [Python][p-sound]                                     |
 | Speed                     |    [![][i-speed-fast]][i-speed-fast]    | The user setting defining how fast to move when using Navigation Keys            | [User:][user]                                                                                             [Tutorial][t-usercrtl]      |
 | Sphere                    |        [![][i-sphere]][i-sphere]        | Sphere Geometry                                                                  | [Object:][obj3]            [Schema][s-sphere]                                   [Python][p-sphere]                                    |
+| Spot AR                   |       [![][i-spot-ar]][i-spot-ar]       | SpotAR is a mode for viewing AR-tagged content in restricted browsers (Safari)   | Application                                                                                                                           |
 | Start/Spawn Position      |                                         | The scene options to control the variance of position to enter the scene         | [Scene:][sopt]                                                                                            [Tutorial][t-spawn]         |
 | Tetrahedron               |   [![][i-tetrahedron]][i-tetrahedron]   | Tetrahedron Geometry                                                             | [Object:][obj3]            [Schema][s-tetrahedron]                              [Python][p-tetrahedron]                               |
 | Text                      |          [![][i-text]][i-text]          | Display text                                                                     | [Object:][obj3]            [Schema][s-text]          [Message][m-text]          [Python][p-text]                                      |
@@ -138,10 +140,11 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | User Account              |       [![][i-profile]][i-profile]       | The User's account profile and scene permissions.                                | [Application][a-profile]                                                                                  [Tutorial][t-profile]       |
 | User List                 |         [![][i-users]][i-users]         | A scene tool to list connect users and their Jitsi (video conference) state      | [User:][user]                                                                                             [Tutorial][t-userlist]      |
 | User Name                 |                                         | Your ARENA account username (same as Namespace)                                  | Concept                                                                                                   [Tutorial][t-username]      |
-| Video                     |      [![][i-video-on]][i-video-on]      | User's Camera On/Off state (requires permission)                                 | [User:][user]                                                                                             [Tutorial][t-video]         |
+| Video                     |      [![][i-video-on]][i-video-on]      | User's Camera On/Off state (requires camera permission)                          | [User:][user]                                                                                             [Tutorial][t-video]         |
 | Video Control             | [![][i-video-control]][i-video-control] | Video Control                                                                    | [Attribute:][obja]         [Schema][s-video-control]                            [Python][p-video-control]                             |
+| Video Quality             |       [![][i-sigpoor]][i-sigpoor]       | An indicator above a user when Jitsi video quality is poor                       | [User:][user]                                                                                             [Tutorial][t-usercrtl]      |
 | Videosphere               |   [![][i-videosphere]][i-videosphere]   | Video sphere 360 video bubble                                                    | [Object:][obj3]            [Schema][s-videosphere]   [Message][m-videosphere]                             [Tutorial][t-videosphere]   |
-| VR Hide/Show              |   [![][i-vr-hideshow]][i-vr-hideshow]   | Hide/Show object when entering VR.                                               | [Attribute:][obja]         [Schema][s-vr-hideshow]                                                                                    |
+| VR Hide/Show              |   [![][i-vr-hideshow]][i-vr-hideshow]   | Hide/Show object (`hide-on-enter-vr`) when entering VR.                          | [Attribute:][obja]         [Schema][s-vr-hideshow]                                                                                    |
 | WebXR                     |     [![][i-webxr-api]][i-webxr-api]     | WebXR is an API for building web-accessible XR scenes.                           | Application                                                                                               [Tutorial][t-webxr-api]     |
 
 ## Wire Format Types
@@ -314,7 +317,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 {:width="100px"}
 [i-position]: /
 {:width="100px"}
-[i-remote-render]: /
+[i-remote-render]: https://github.com/arenaxr/arena-renderfusion/blob/main/Documentation~/images/demo.png
 {:width="100px"}
 [i-rotation]: /
 {:width="100px"}
@@ -345,6 +348,8 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [i-nav-control]: /assets/img/xr/quest-2.png
 {:width="100px"}
 [i-displayname]: /assets/img/overview/userguide/name.png
+{:width="100px"}
+[i-spot-ar]: /
 {:width="100px"}
 [i-arts]: /
 {:width="100px"}
@@ -649,6 +654,8 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [t-webxr-api]: /content/overview/debug#webxr-api-emulator
 [t-profile]: /content/interface/user-account
 [t-null]: /content/schemas/definitions#actions
+[t-remote-render]: https://github.com/arenaxr/arena-renderfusion#arena-renderfusion
+[t-health]: /content/troubleshooting#web-browser-scene-errors
 
 <!-- application links-->
 <!-- [a-atlas]: https://atlas.conix.io -->
