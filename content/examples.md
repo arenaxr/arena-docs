@@ -233,7 +233,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 {:width="100px"}
 [i-plane]: /assets/img/examples/objects/plane.png
 {:width="100px"}
-[i-program]: /
+[i-program]: /assets/img/examples/program.png
 {:width="100px"}
 [i-ring]: /assets/img/examples/objects/ring.png
 {:width="100px"}
@@ -347,7 +347,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 {:width="100px"}
 [i-displayname]: /assets/img/overview/userguide/name.png
 {:width="100px"}
-[i-spot-ar]: /
+[i-spot-ar]: /assets/img/examples/spot-ar-qr.png
 {:width="100px"}
 [i-arts]: /
 {:width="100px"}
@@ -365,7 +365,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 {:width="100px"}
 [i-profile]: /
 {:width="100px"}
-[i-scene]: /
+[i-scene]: /assets/img/examples/scene-graph.png
 {:width="100px"}
 [i-scenelist]: /assets/img/overview/clone/ARENA-scene-clone0.png
 {:width="100px"}
