@@ -355,7 +355,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 {:width="100px"}
 [i-build]: /assets/img/overview/build/media/image13.png
 {:width="100px"}
-[i-build3d]: /
+[i-build3d]: /assets/img/examples/build3d.png
 {:width="100px"}
 [i-filestore]: /assets/img/overview/filestore/fs2.jpg
 {:width="100px"}
