@@ -32,7 +32,7 @@ Tries to extract author, license, source and title (assuming format used in sket
 Looks for authorship metadata in both asset.extras (sketchfab models) and scene.extra (manually added attributes in blender).
 If both asset.extras and scene.extra exist, gives preference to asset.extras.
 
-**Example** *(Sketchfab downloaded model attributes - asset.extra)*  
+**Example** *(Sketchfab downloaded model attributes - asset.extra)*
 ```js
    author: "AuthorName (url-link-to-author)"
    license: "CC-BY-4.0 (url-link-to-license)"
@@ -44,7 +44,7 @@ If both asset.extras and scene.extra exist, gives preference to asset.extras.
     * [registerComponent(el)](#exp_module_attribution-system--registerComponent) ⏏
     * [unregisterComponent(el)](#exp_module_attribution-system--unregisterComponent) ⏏
     * [getAttributionTable()](#exp_module_attribution-system--getAttributionTable) ⇒ <code>string</code> ⏏
-    * [extractAttributionFromGtlfAsset(el, gltfComponent)](#exp_module_attribution-system--extractAttributionFromGtlfAsset) ⏏
+    * [extractAttributionFromGltfAsset(el, gltfComponent)](#exp_module_attribution-system--extractAttributionFromGltfAsset) ⏏
     * [parseExtrasAttributes(extras)](#exp_module_attribution-system--parseExtrasAttributes) ⇒ <code>object</code> ⏏
     * [parseAttribute(extras, attribution, attribute)](#exp_module_attribution-system--parseAttribute) ⇒ <code>boolean</code> ⏏
 
@@ -53,7 +53,7 @@ If both asset.extras and scene.extra exist, gives preference to asset.extras.
 ### registerComponent(el) ⏏
 Register an attribution component with the system
 
-**Kind**: Exported function  
+**Kind**: Exported function
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -64,7 +64,7 @@ Register an attribution component with the system
 ### unregisterComponent(el) ⏏
 Unregister an attribution component
 
-**Kind**: Exported function  
+**Kind**: Exported function
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -75,15 +75,15 @@ Unregister an attribution component
 ### getAttributionTable() ⇒ <code>string</code> ⏏
 Collect all attribution components and return an HTML table with credits
 
-**Kind**: Exported function  
-**Returns**: <code>string</code> - - an HTML table with the scene credits  
-**Example** *(Query the system for an HTML table of credits:)*  
+**Kind**: Exported function
+**Returns**: <code>string</code> - - an HTML table with the scene credits
+**Example** *(Query the system for an HTML table of credits:)*
 ```js
    document.querySelector("a-scene").systems["attribution"].getAttributionTable();
 ```
-<a name="exp_module_attribution-system--extractAttributionFromGtlfAsset"></a>
+<a name="exp_module_attribution-system--extractAttributionFromGltfAsset"></a>
 
-### extractAttributionFromGtlfAsset(el, gltfComponent) ⏏
+### extractAttributionFromGltfAsset(el, gltfComponent) ⏏
 Extract author, license, source and title assuming sketchfab format:
   author: "AuthorName (url-link-to-author)"
   license: "CC-BY-4.0 (url-link-to-license)"
@@ -93,7 +93,7 @@ Extract author, license, source and title assuming sketchfab format:
 It will try to get exttributes from gltf's asset.extras (sketchfab) and scene.userData (blender)
 If both are found, data will be merged with preference to properties in asset.extras
 
-**Kind**: Exported function  
+**Kind**: Exported function
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -105,8 +105,8 @@ If both are found, data will be merged with preference to properties in asset.ex
 ### parseExtrasAttributes(extras) ⇒ <code>object</code> ⏏
 Parse author, license, source and title attributes.
 
-**Kind**: Exported function  
-**Returns**: <code>object</code> - - a dictionary with the author, license, source and title parsed  
+**Kind**: Exported function
+**Returns**: <code>object</code> - - a dictionary with the author, license, source and title parsed
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -117,8 +117,8 @@ Parse author, license, source and title attributes.
 ### parseAttribute(extras, attribution, attribute) ⇒ <code>boolean</code> ⏏
 Parse attribute given as parameter. Tries to find the attribute and add it to 'attribution' dictionary
 
-**Kind**: Exported function  
-**Returns**: <code>boolean</code> - - true/false if it could find the attribute  
+**Kind**: Exported function
+**Returns**: <code>boolean</code> - - true/false if it could find the attribute
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -130,4 +130,3 @@ Parse attribute given as parameter. Tries to find the attribute and add it to 'a
 
 ## screenshareable
 Screenshare-able System. Allows an object to be screenshared upon
-
