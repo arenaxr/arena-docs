@@ -189,39 +189,37 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 <!-- Ideally,  create new images and store them in /assets/img/examples/objects/,  /assets/img/examples/attributes/,  etc.|.. -->
 <!-- Temporarily,  use "/" for links without images,  if we want a tag,  and not have the unlinked code tag rendered. -->
 
-[i-box]: /assets/img/overview/devguide/box.png
+[i-box]: /assets/img/examples/objects/box.png
 {:width="100px"}
 [i-camera]: /assets/img/overview/userguide/a6.png
 {:width="100px"}
-[i-capsule]: /
+[i-capsule]: /assets/img/examples/objects/capsule.png
 {:width="100px"}
-[i-circle]: /
+[i-circle]: /assets/img/examples/objects/circle.png
 {:width="100px"}
-[i-cone]: /
+[i-cone]: /assets/img/examples/objects/cone.png
 {:width="100px"}
 [i-cube]: /assets/img/overview/userguide/cube.png
 {:width="100px"}
-[i-cylinder]: /
+[i-cylinder]: /assets/img/examples/objects/cylinder.png
 {:width="100px"}
-[i-dodecahedron]: /
+[i-dodecahedron]: /assets/img/examples/objects/dodecahedron.png
 {:width="100px"}
 [i-entity]: /
 {:width="100px"}
 [i-event]: /
 {:width="100px"}
-[i-splat]: /
+[i-splat]: /assets/img/examples/objects/splat.png
 {:width="100px"}
-[i-gltf]: /assets/img/overview/build/mammuthus-primigenius-scene-landmark.png
-{:width="100px"}
-[i-hand]: /assets/img/xr/quest-2.png
+[i-gltf]: /assets/img/examples/objects/gltf.png
 {:width="100px"}
 [i-hand]: /assets/img/xr/quest-2.png
 {:width="100px"}
-[i-icosahedron]: /
+[i-hand]: /assets/img/xr/quest-2.png
+{:width="100px"}
+[i-icosahedron]: /assets/img/examples/objects/icosahedron.png
 {:width="100px"}
 [i-image]: /
-{:width="100px"}
-[i-landmark]: /
 {:width="100px"}
 [i-light]: /
 {:width="100px"}
@@ -229,35 +227,35 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 {:width="100px"}
 [i-ocean]: /
 {:width="100px"}
-[i-octahedron]: /
+[i-octahedron]: /assets/img/examples/objects/octahedron.png
 {:width="100px"}
 [i-pcd]: /
 {:width="100px"}
-[i-plane]: /
+[i-plane]: /assets/img/examples/objects/plane.png
 {:width="100px"}
 [i-program]: /
 {:width="100px"}
-[i-ring]: /
+[i-ring]: /assets/img/examples/objects/ring.png
 {:width="100px"}
-[i-roundedbox]: /
+[i-roundedbox]: /assets/img/examples/objects/roundedbox.png
 {:width="100px"}
 [i-scene-opt]: /
 {:width="100px"}
-[i-sphere]: /
+[i-sphere]: /assets/img/examples/objects/sphere.png
 {:width="100px"}
-[i-tetrahedron]: /
+[i-tetrahedron]: /assets/img/examples/objects/tetrahedron.png
 {:width="100px"}
 [i-text]: /
 {:width="100px"}
 [i-thickline]: /
 {:width="100px"}
-[i-threejs]: /
+[i-threejs]: /assets/img/examples/objects/threejs.png
 {:width="100px"}
-[i-torus]: /
+[i-torus]: /assets/img/examples/objects/torus.png
 {:width="100px"}
-[i-torusKnot]: /
+[i-torusKnot]: /assets/img/examples/objects/torusKnot.png
 {:width="100px"}
-[i-triangle]: /
+[i-triangle]: /assets/img/examples/objects/triangle.png
 {:width="100px"}
 [i-ui-buttons]: /assets/img/3dcontent/ui-button-panel.png
 {:width="60px"}
