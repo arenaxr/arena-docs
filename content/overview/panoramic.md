@@ -41,7 +41,7 @@ Setup a scene where the 360 video stream encompasses the entire world, and while
      "data": {
        "object_type": "videosphere",
        "position": { "x": 0, "y": 0, "z": 0 },
-       "rotation": { "x": 0, "y": 0, "z": 0 },
+       "rotation": { "x": 0, "y": 0, "z": 0, "w": 1 },
        "radius": 5000,
        "jitsi-video": { "displayName": "360 cam" }
      }
@@ -95,7 +95,7 @@ Match a `videosphere` to a space in a scanned model of a space or room. Users ma
      "data": {
        "object_type": "videosphere",
        "position": { "x": 2.7, "y": 2, "z": -3.6 },
-       "rotation": { "x": 0, "y": -90, "z": 0 },
+       "rotation": { "x": 0, "y": -0.70711, "z": 0, "w": 0.70711 },
        "radius": 2.5,
        "jitsi-video": { "displayName": "Conference Room 4" }
      }

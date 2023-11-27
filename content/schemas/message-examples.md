@@ -23,7 +23,7 @@ All ARENA objects have similar well-defined schemas, and these are the basis for
     "object_type": "gltf-model",
     "url": "https://www.dropbox.com/s/pgytn552kzukm8f/blumbach.glb?dl=0",
     "position": { "x": 0, "y": 1.7, "z": -5 },
-    "rotation": { "x": 0, "y": 45, "z": 0 },
+    "rotation": { "x": 0, "y": 0.38268, "z": 0, "w": 0.92388 },
     "scale": { "x": 1, "y": 1, "z": 1 },
     "shadow": { "cast": true, "receive": true }
   }
@@ -36,7 +36,7 @@ To run the commands below, you may need to install the [ARENA Python client](/co
 
 ### Subscribe to Scene Object Messages
 
-```json
+```bash
 arena-py-sub -mh arenaxr.org -s example
 ```
 
@@ -270,7 +270,7 @@ Rotate the already drawn cube; these are in quaternions, not A-Frame degrees.
   "object_id": "cube_1",
   "action": "update",
   "type": "object",
-  "data": { "rotation": { "x": 60, "y": 2, "z": 3 } }
+  "data": { "rotation": { "x": 0.5, "y": 0, "z": 0, "w": 0.86603 } }
 }
 ```
 
