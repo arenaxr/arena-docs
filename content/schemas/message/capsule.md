@@ -47,14 +47,15 @@ Capsule Attributes
 |box-collision-listener|[box-collision-listener](box-collision-listener)||Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps|No|
 |collision-listener|string||Name of the collision-listener, default can be empty string. Collisions trigger click events|No|
 |blip|[blip](blip)||When the object is created or deleted, it will animate in/out of the scene instead of appearing/disappearing instantly. Must have a geometric mesh.|No|
-|dynamic-body|[dynamic-body](dynamic-body)||Physics type attached to the object. |No|
+|static-body|[static-body](static-body)||A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. |No|
+|dynamic-body|[dynamic-body](dynamic-body)||A freely-moving object. Dynamic bodies have mass, collide with other objects, bounce or slow during collisions, and fall if gravity is enabled. |No|
 |goto-landmark|[goto-landmark](goto-landmark)||Teleports user to the landmark with the given name; Requires click-listener|No|
 |goto-url|[goto-url](goto-url)||Goto given URL; Requires click-listener|No|
 |hide-on-enter-ar|boolean; Must be: ```True```|```True```|Hide object when entering AR. Remove component to *not* hide|No|
 |hide-on-enter-vr|boolean; Must be: ```True```|```True```|Hide object when entering VR. Remove component to *not* hide|No|
 |show-on-enter-ar|boolean; Must be: ```True```|```True```|Show object when entering AR. Hidden otherwise|No|
 |show-on-enter-vr|boolean; Must be: ```True```|```True```|Show object when entering VR. Hidden otherwise|No|
-|impulse|[impulse](impulse)||The force applied using physics. Requires click-listener|No|
+|impulse|[impulse](impulse)||Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires click-listener and physics.|No|
 |landmark|[landmark](landmark)||Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists)|No|
 |material-extras|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component. |No|
 |shadow|[shadow](shadow)||shadow|No|

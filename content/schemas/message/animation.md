@@ -12,7 +12,7 @@ Animation
 =========
 
 
-Animate and tween values.
+Animate and tween values. 
 
 More properties at <a href='https://aframe.io/docs/1.5.0/components/animation.html'>https://aframe.io/docs/1.5.0/components/animation.html</a>
 

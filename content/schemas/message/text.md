@@ -12,7 +12,7 @@ Text
 ====
 
 
-Display text.
+Display text. 
 
 More properties at <a href='https://aframe.io/docs/1.5.0/components/text.html'>https://aframe.io/docs/1.5.0/components/text.html</a>
 

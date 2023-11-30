@@ -12,13 +12,13 @@ Impulse
 =======
 
 
-The force applied using physics. Requires click-listener
+Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires click-listener and physics.
 
 Impulse Attributes
 -------------------
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|force|string||force|No|
-|on|string||on|No|
-|position|string||position|No|
+|force|[vector3](vector3)|```{x: 1, y: 1, z: 1}```|impulse vector|No|
+|on|string; One of: ```['mousedown', 'mouseup']```|```''```|Event to listen 'on'.|No|
+|position|[vector3](vector3)|```{x: 1, y: 1, z: 1}```|world position|No|
