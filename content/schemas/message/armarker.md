@@ -26,6 +26,6 @@ ARMarker Attributes
 |lat|number|```0```|Tag latitude.|No|
 |long|number|```0```|Tag longitude.|No|
 |markerid|string|```'0'```|The marker id (e.g. for AprilTag 36h11 family, an integer in the range [0, 586])|Yes|
-|markertype|string; One of: ```['apriltag_36h11', 'lightanchor', 'uwb']```|```'apriltag_36h11'```|The marker type (apriltag_36h11, lightanchor, uwb)|Yes|
+|markertype|string; One of: ```['apriltag_36h11', 'lightanchor', 'uwb', 'vive', 'optitrack']```|```'apriltag_36h11'```|The marker type (apriltag_36h11, lightanchor, uwb, vive, optitrack)|Yes|
 |size|number|```150```|Tag size in millimeters|Yes|
 |url|string|```''```|URL associated with the tag|No|
