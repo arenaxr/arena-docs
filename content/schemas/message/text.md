@@ -14,7 +14,7 @@ Text
 
 Display text. 
 
-More properties at <a href='https://aframe.io/docs/1.5.0/components/text.html'>https://aframe.io/docs/1.5.0/components/text.html</a>
+More properties at <a href='https://aframe.io/docs/1.5.0/components/text.html'>aframe text</a>
 
 All wire objects have a set of basic attributes ```{object_id, action, type, persist, data}```. The ```data``` attribute defines the object-specific attributes
 
@@ -23,10 +23,11 @@ Text Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
+|format|||format|No|
 |object_id|string||A uuid or otherwise unique identifier for this object|Yes|
 |persist|boolean|```True```|Persist this object in the database (default true = persist on server)|Yes|
 |type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
-|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create/Update/Delete actions or a special client event action (e.g. a click)|Yes|
+|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create, Update, Delete actions or a special client event action (e.g. a click)|Yes|
 |ttl|integer||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
 |data|Text data||Text Data|Yes|
 
@@ -52,7 +53,7 @@ Text Attributes
 |tabSize|number|```4```|Tab size in spaces.|No|
 |transparent|boolean|```True```|Whether text is transparent.|No|
 |value|string||The actual content of the text. Line breaks and tabs are supported with \n and \t.|Yes|
-|whiteSpace|string; One of: ```['normal', 'pre', 'nowrap']```|```'normal'```|How whitespace should be handled (i.e., normal, pre, nowrap).</a>|No|
+|whiteSpace|string; One of: ```['normal', 'pre', 'nowrap']```|```'normal'```|How whitespace should be handled (i.e., normal, pre, nowrap).|No|
 |width|number|```5```|Width in meters. (derived from geometry if exists)|No|
 |wrapCount|number|```40```|Number of characters before wrapping text (more or less).|No|
 |wrapPixels|number||Number of pixels before wrapping text. (derived from wrapCount)|No|

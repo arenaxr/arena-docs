@@ -14,7 +14,7 @@ GLTF Morph
 
 Allows you to target and control a gltf model's morphTargets created in Blender. 
 
-More properties at <a href='https://github.com/elbobo/aframe-gltf-morph-component'>https://github.com/elbobo/aframe-gltf-morph-component</a>
+More properties at <a href='https://github.com/elbobo/aframe-gltf-morph-component'>aframe gltf morph component</a>
 
 GLTF Morph Attributes
 ----------------------

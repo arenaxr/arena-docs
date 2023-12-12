@@ -14,14 +14,14 @@ Environment Presets
 
 A-Frame Environment presets. 
 
-More properties at <a href='https://github.com/supermedium/aframe-environment-component'>https://github.com/supermedium/aframe-environment-component</a>
+More properties at <a href='https://github.com/supermedium/aframe-environment-component'>aframe environment component.</a>
 
 Environment Presets Attributes
 -------------------------------
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|active|boolean|```True```|Show/hides the environment presets component. Use this instead of using the visible attribute.|Yes|
+|active|boolean|```True```|Shows or hides the environment presets component. Use this instead of using the visible attribute.|Yes|
 |dressing|string; One of: ```['apparatus', 'arches', 'cubes', 'cylinders', 'hexagons', 'mushrooms', 'none', 'pyramids', 'stones', 'torii', 'towers', 'trees']```|```'none'```|Dressing is the term we use here for the set of additional objects that are put on the ground for decoration.|No|
 |dressingAmount|integer|```10```|Number of objects used for dressing|No|
 |dressingColor|string|```'#795449'```|Base color of dressing objects.|No|
