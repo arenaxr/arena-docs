@@ -21,7 +21,6 @@ Event Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|format|||format|No|
 |object_id|string||A uuid or otherwise unique identifier for this object|Yes|
 |persist|boolean|```False```|Persist this object in the database (default false = do not persist on server)|No|
 |type|string; One of: ```['mousedown', 'mouseup', 'mouseenter', 'mouseleave', 'triggerdown', 'triggerup', 'gripdown', 'gripup', 'menudown', 'menuup', 'systemdown', 'systemup', 'trackpaddown', 'trackpadup', 'soundplay', 'soundpause', 'soundstop']```||One of the client event action types like 'mousedown'.|Yes|
