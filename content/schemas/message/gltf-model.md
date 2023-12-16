@@ -14,7 +14,7 @@ GLTF Model
 
 Load a GLTF model. 
 
-Besides applying standard rotation and position attributes to the center-point of the GLTF model, the individual child components can also be manually manipulated. See format details in the `modelUpdate` data attribute.
+Besides applying standard rotation and position attributes to the center-point of the GLTF model, the individual child components can also be manually manipulated. See format details in the `modelUpdate` data attribute. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.
 
 All wire objects have a set of basic attributes ```{object_id, action, type, persist, data}```. The ```data``` attribute defines the object-specific attributes
 
@@ -23,10 +23,10 @@ GLTF Model Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_id|string||A uuid or otherwise unique identifier for this object|Yes|
-|persist|boolean|```True```|Persist this object in the database (default true = persist on server)|Yes|
+|object_id|string||A uuid or otherwise unique identifier for this object.|Yes|
+|persist|boolean|```True```|Persist this object in the database.|Yes|
 |type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
-|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create/Update/Delete actions or a special client event action (e.g. a click)|Yes|
+|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|Message action: CRUD or client event.|Yes|
 |ttl|integer||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
 |data|GLTF Model data||GLTF Model Data|Yes|
 
@@ -35,19 +35,19 @@ GLTF Model Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```gltf-model```|```gltf-model```|3D object type.|Yes|
-|url|string||Model URL. Store files paths under 'store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|Yes|
+|url|string||Store File Store file paths under 'store/users/<username>', see CDN and other storage options in the description above.|Yes|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)||3D object position|Yes|
 |rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
 |scale|[scale](scale)||3D object scale|Yes|
-|animation|[animation](animation)||Animate and tween values. |No|
+|animation|[animation](animation)||Animate and tween values.|No|
 |armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|
 |click-listener|[click-listener](click-listener)||Object will listen for clicks|No|
 |box-collision-listener|[box-collision-listener](box-collision-listener)||Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps|No|
 |collision-listener|string||Name of the collision-listener, default can be empty string. Collisions trigger click events|No|
 |blip|[blip](blip)||When the object is created or deleted, it will animate in/out of the scene instead of appearing/disappearing instantly. Must have a geometric mesh.|No|
-|static-body|[static-body](static-body)||A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. |No|
-|dynamic-body|[dynamic-body](dynamic-body)||A freely-moving object. Dynamic bodies have mass, collide with other objects, bounce or slow during collisions, and fall if gravity is enabled. |No|
+|static-body|[static-body](static-body)||A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions.|No|
+|dynamic-body|[dynamic-body](dynamic-body)||A freely-moving object. Dynamic bodies have mass, collide with other objects, bounce or slow during collisions, and fall if gravity is enabled.|No|
 |goto-landmark|[goto-landmark](goto-landmark)||Teleports user to the landmark with the given name; Requires click-listener|No|
 |goto-url|[goto-url](goto-url)||Goto given URL; Requires click-listener|No|
 |hide-on-enter-ar|boolean; Must be: ```True```|```True```|Hide object when entering AR. Remove component to *not* hide|No|
@@ -56,17 +56,17 @@ GLTF Model Attributes
 |show-on-enter-vr|boolean; Must be: ```True```|```True```|Show object when entering VR. Hidden otherwise|No|
 |impulse|[impulse](impulse)||Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires click-listener and physics.|No|
 |landmark|[landmark](landmark)||Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists)|No|
-|material-extras|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component. |No|
+|material-extras|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order.|No|
 |shadow|[shadow](shadow)||shadow|No|
-|sound|[sound](sound)||The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position. |No|
+|sound|[sound](sound)||The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position.|No|
 |textinput|[textinput](textinput)||Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.|No|
 |remote-render|[remote-render](remote-render)||Whether or not an object should be remote rendered [Experimental]|No|
 |video-control|[video-control](video-control)||Video Control|No|
 |attribution|[attribution](attribution)||Attribution Component. Saves attribution data in any entity.|No|
-|particle-system|[particle-system](particle-system)||Particle system component for A-Frame. |No|
-|spe-particles|[spe-particles](spe-particles)||GPU based particle systems in A-Frame. |No|
+|particle-system|[particle-system](particle-system)||Particle system component for A-Frame.|No|
+|spe-particles|[spe-particles](spe-particles)||GPU based particle systems in A-Frame.|No|
 |look-at|string||The look-at component defines the behavior for an entity to dynamically rotate or face towards another entity or position. Use '#my-camera' to face the user camera, otherwise can take either a vec3 position or a query selector to another entity.|No|
-|animation-mixer|[animation-mixer](animation-mixer)||A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'. |No|
-|gltf-morph|[gltf-morph](gltf-morph)||Allows you to target and control a gltf model's morphTargets created in Blender. |No|
+|animation-mixer|[animation-mixer](animation-mixer)||A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'.|No|
+|gltf-morph|[gltf-morph](gltf-morph)||Allows you to target and control a gltf model's morphTargets created in Blender.|No|
 |gltf-model-lod|[gltf-model-lod](gltf-model-lod)||Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance|No|
 |modelUpdate|[modelUpdate](modelUpdate)||The GLTF-specific `modelUpdate` attribute is an object with child component names as keys. The top-level keys are the names of the child components to be updated. The values of each are nested `position` and `rotation` attributes to set as new values, respectively. Either `position` or `rotation` can be omitted if unchanged.|No|

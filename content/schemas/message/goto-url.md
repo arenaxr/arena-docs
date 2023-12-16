@@ -21,4 +21,4 @@ Goto URL Attributes
 | :--- | :--- | :--- | :--- | :--- |
 |dest|string; One of: ```['popup', 'newtab', 'sametab']```|```'sametab'```|dest|Yes|
 |on|string; One of: ```['mousedown', 'mouseup']```|```'mousedown'```|on|Yes|
-|url|string|```''```|url|Yes|
+|url|string|```''```|Landmark Url|Yes|

@@ -12,9 +12,9 @@ Animation
 =========
 
 
-Animate and tween values. 
+Animate and tween values.
 
-More properties at <a href='https://aframe.io/docs/1.5.0/components/animation.html'>https://aframe.io/docs/1.5.0/components/animation.html</a>
+More properties at <a href='https://aframe.io/docs/1.5.0/components/animation.html'>A-Frame Animation</a> component. Easing properties are detailed at <a href='https://easings.net'>easings.net</a>.
 
 Animation Attributes
 ---------------------
@@ -25,7 +25,7 @@ Animation Attributes
 |delay|number|```0```|How long (milliseconds) to wait before starting.|No|
 |dir|string; One of: ```['normal', 'alternate', 'reverse']```|```'normal'```|Which dir to go from from to to.|No|
 |dur|number|```1000```|How long (milliseconds) each cycle of the animation is.|No|
-|easing|string; One of: ```['easeInQuad', 'easeInCubic', 'easeInQuart', 'easeInQuint', 'easeInSine', 'easeInExpo', 'easeInCirc', 'easeInBack', 'easeInElastic', 'easeOutQuad', 'easeOutCubic', 'easeOutQuart', 'easeOutQuint', 'easeOutSine', 'easeOutExpo', 'easeOutCirc', 'easeOutBack', 'easeOutElastic', 'easeInOutQuad', 'easeInOutCubic', 'easeInOutQuart', 'easeInOutQuint', 'easeInOutSine', 'easeInOutExpo', 'easeInOutCirc', 'easeInOutBack', 'easeInOutElastic', 'linear']```|```'easeInQuad'```|Easing function of animation. To ease in, ease out, ease in and out (https://easings.net).|No|
+|easing|string; One of: ```['easeInQuad', 'easeInCubic', 'easeInQuart', 'easeInQuint', 'easeInSine', 'easeInExpo', 'easeInCirc', 'easeInBack', 'easeInElastic', 'easeOutQuad', 'easeOutCubic', 'easeOutQuart', 'easeOutQuint', 'easeOutSine', 'easeOutExpo', 'easeOutCirc', 'easeOutBack', 'easeOutElastic', 'easeInOutQuad', 'easeInOutCubic', 'easeInOutQuart', 'easeInOutQuint', 'easeInOutSine', 'easeInOutExpo', 'easeInOutCirc', 'easeInOutBack', 'easeInOutElastic', 'linear']```|```'easeInQuad'```|Easing function of animation. To ease in, ease out, ease in and out. See easings.net for more.|No|
 |elasticity|number|```400```|How much to bounce (higher is stronger).|No|
 |enabled|boolean|```True```|If disabled, animation will stop and startEvents will not trigger animation start.|No|
 |from|string|```''```|Initial value at start of animation. If not specified, the current property value of the entity will be used (will be sampled on each animation start). It is best to specify a from value when possible for stability.|No|
