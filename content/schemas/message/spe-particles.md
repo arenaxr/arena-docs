@@ -14,7 +14,7 @@ SPE Particles
 
 GPU based particle systems in A-Frame. 
 
-More properties at <a href='https://github.com/harlyq/aframe-spe-particles-component'>aframe spe particles component</a>
+More properties at <a href='https://github.com/harlyq/aframe-spe-particles-component'>https://github.com/harlyq/aframe-spe-particles-component</a>
 
 SPE Particles Attributes
 -------------------------

@@ -14,7 +14,7 @@ Three.js Scene
 
 Load a Three.js Scene (might be THREE.js version-specific; you can see THREE.js version in the JS console once you open ARENA; using glTF is preferred) 
 
-Format: <a href='https://threejs.org/docs/#api/en/scenes/Scene'>threejs Scene</a>
+Format: <a href='https://threejs.org/docs/#api/en/scenes/Scene'>https://threejs.org/docs/#api/en/scenes/Scene</a>
 
 All wire objects have a set of basic attributes ```{object_id, action, type, persist, data}```. The ```data``` attribute defines the object-specific attributes
 
@@ -26,7 +26,7 @@ Three.js Scene Attributes
 |object_id|string||A uuid or otherwise unique identifier for this object|Yes|
 |persist|boolean|```True```|Persist this object in the database (default true = persist on server)|Yes|
 |type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
-|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create, Update, Delete actions or a special client event action (e.g. a click)|Yes|
+|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create/Update/Delete actions or a special client event action (e.g. a click)|Yes|
 |ttl|integer||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
 |data|Three.js Scene data||Three.js Scene Data|Yes|
 
@@ -35,7 +35,7 @@ Three.js Scene Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```threejs-scene```|```threejs-scene```|3D object type.|Yes|
-|url|string||See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox.</a> |Yes|
+|url|string||Model URL. Store files paths under 'store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|Yes|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)||3D object position|Yes|
 |rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|

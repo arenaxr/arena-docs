@@ -14,7 +14,7 @@ grand_parent: ARENA Objects
 
 Load a 3D Gaussian Splat for Real-Time Radiance Field Rendering. 
 
-More information : <a href='https://github.com/quadjr/aframe-gaussian-splatting'>aframe gaussian splatting</a>
+More information : <a href='https://github.com/quadjr/aframe-gaussian-splatting'>https://github.com/quadjr/aframe-gaussian-splatting</a>
 
 All wire objects have a set of basic attributes ```{object_id, action, type, persist, data}```. The ```data``` attribute defines the object-specific attributes
 
@@ -26,7 +26,7 @@ All wire objects have a set of basic attributes ```{object_id, action, type, per
 |object_id|string||A uuid or otherwise unique identifier for this object|Yes|
 |persist|boolean|```True```|Persist this object in the database (default true = persist on server)|Yes|
 |type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
-|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create, Update, Delete actions or a special client event action (e.g. a click)|Yes|
+|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create/Update/Delete actions or a special client event action (e.g. a click)|Yes|
 |ttl|integer||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
 |data|3D Gaussian Splat data||3D Gaussian Splat|Yes|
 
@@ -35,7 +35,7 @@ All wire objects have a set of basic attributes ```{object_id, action, type, per
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```gaussian_splatting```|```gaussian_splatting```|3D object type.|Yes|
-|src|string||See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox.</a> |Yes|
+|src|string||Splat URL. Dropbox share links also accepted. Store files paths under '/store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|Yes|
 |cutoutEntity|string|```''```|Selector to a box primitive that uses scale and position to define the bounds of splat points to render|No|
 |pixelRatio|number|```1.0```|Pixel ratio for rendering. Reducing the value decreases the resolution and improves performance. If a negative value is set, the device's native value will be applied.|No|
 |xrPixelRatio|number|```0.5```| 	Same as pixelRatio. Applied to XR devices.|No|
@@ -63,7 +63,7 @@ All wire objects have a set of basic attributes ```{object_id, action, type, per
 |shadow|[shadow](shadow)||shadow|No|
 |sound|[sound](sound)||The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position. |No|
 |textinput|[textinput](textinput)||Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.|No|
-|url|string||See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox.</a> |No|
+|url|string||Model URL. Store files paths under 'store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|No|
 |remote-render|[remote-render](remote-render)||Whether or not an object should be remote rendered [Experimental]|No|
 |video-control|[video-control](video-control)||Video Control|No|
 |attribution|[attribution](attribution)||Attribution Component. Saves attribution data in any entity.|No|

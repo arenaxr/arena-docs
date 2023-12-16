@@ -14,7 +14,7 @@ Physics Static Body
 
 A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. 
 
-More properties at <a href='https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md'>aframe physics system.</a>
+More properties at <a href='https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md'>https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md</a>
 
 Physics Static Body Attributes
 -------------------------------

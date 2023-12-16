@@ -24,7 +24,7 @@ Thickline Attributes
 |object_id|string||A uuid or otherwise unique identifier for this object|Yes|
 |persist|boolean|```True```|Persist this object in the database (default true = persist on server)|Yes|
 |type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
-|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create, Update, Delete actions or a special client event action (e.g. a click)|Yes|
+|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create/Update/Delete actions or a special client event action (e.g. a click)|Yes|
 |ttl|integer||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
 |data|Thickline data||Thickline Data|Yes|
 

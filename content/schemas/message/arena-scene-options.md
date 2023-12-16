@@ -24,7 +24,7 @@ Scene Config Attributes
 |object_id|string|```'scene-options'```|A uuid or otherwise unique identifier for this object|Yes|
 |persist|boolean|```True```|Persist this object in the database|Yes|
 |type|string; Must be: ```scene-options```|```'scene-options'```|ARENA scene options|Yes|
-|action|string; One of: ```['create', 'delete', 'update']```|```'create'```|One of 3 basic Create, Update, Delete actions|Yes|
+|action|string; One of: ```['create', 'delete', 'update']```|```'create'```|One of 3 basic Create/Update/Delete actions|Yes|
 |data|Scene Config data||Scene Config Data|Yes|
 
 ### Scene Config Data Attributes

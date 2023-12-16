@@ -24,7 +24,7 @@ Image Attributes
 |object_id|string||A uuid or otherwise unique identifier for this object|Yes|
 |persist|boolean|```True```|Persist this object in the database (default true = persist on server)|Yes|
 |type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
-|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create, Update, Delete actions or a special client event action (e.g. a click)|Yes|
+|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create/Update/Delete actions or a special client event action (e.g. a click)|Yes|
 |ttl|integer||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
 |data|Image data||Image Data|Yes|
 
@@ -33,7 +33,7 @@ Image Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```image```|```image```|3D object type.|Yes|
-|url|string||See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox.</a> |Yes|
+|url|string||Model URL. Store files paths under 'store/users/<username>' (e.g. store/users/wiselab/models/factory_robot_arm/scene.gltf); to use CDN, prefix with `https://arena-cdn.conix.io/` (e.g. https://arena-cdn.conix.io/store/users/wiselab/models/factory_robot_arm/scene.gltf)|Yes|
 |height|number|```1```|height|Yes|
 |segmentsHeight|integer|```1```|segments height|No|
 |segmentsWidth|integer|```1```|segments width|No|

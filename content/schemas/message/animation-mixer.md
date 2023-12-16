@@ -14,7 +14,7 @@ Animation Mixer
 
 A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'. 
 
-More properties at <a href='https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation'>aframe extras animation</a>
+More properties at <a href='https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation'>https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation</a>
 
 Animation Mixer Attributes
 ---------------------------
