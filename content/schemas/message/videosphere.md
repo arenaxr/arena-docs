@@ -21,10 +21,10 @@ Videosphere Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_id|string||A uuid or otherwise unique identifier for this object|Yes|
-|persist|boolean|```True```|Persist this object in the database (default true = persist on server)|Yes|
+|object_id|string||A uuid or otherwise unique identifier for this object.|Yes|
+|persist|boolean|```True```|Persist this object in the database.|Yes|
 |type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
-|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create/Update/Delete actions or a special client event action (e.g. a click)|Yes|
+|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|Message action: CRUD or client event.|Yes|
 |ttl|integer||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
 |data|Videosphere data||Videosphere Data|Yes|
 
@@ -46,7 +46,7 @@ Videosphere Attributes
 |scale|[scale](scale)||3D object scale|No|
 |buffer|boolean|```True```|Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate (geometries only: box, circle, cone, ...).|No|
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
-|material|[material](material)||The material properties of the object’s surface. |No|
+|material|[material](material)||The material properties of the object’s surface.|No|
 |multisrc|[multisrc](multisrc)||Define multiple visual sources applied to an object.|No|
 |screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
 |skipCache|boolean|```False```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|

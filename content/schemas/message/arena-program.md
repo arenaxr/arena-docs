@@ -22,7 +22,7 @@ Program Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_id|string||Object identifier; Must be a valid UUID.|Yes|
-|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create/Update/Delete actions or a special client event action (e.g. a click)|Yes|
+|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create, Update, Delete actions or a special client event action (e.g. a click)|Yes|
 |persist|boolean|```True```|Persist this object in the database|Yes|
 |type|string; Must be: ```program```|```'program'```|ARENA program data|Yes|
 |data|[program](program)||Object data payload; Program config data|Yes|
