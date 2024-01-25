@@ -21,10 +21,10 @@ Scene Config Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_id|string|```'scene-options'```|A uuid or otherwise unique identifier for this object|Yes|
-|persist|boolean|```True```|Persist this object in the database|Yes|
+|object_id|string|```'scene-options'```|A uuid or otherwise unique identifier for this object.|Yes|
+|persist|boolean|```True```|Persist this object in the database.|Yes|
 |type|string; Must be: ```scene-options```|```'scene-options'```|ARENA scene options|Yes|
-|action|string; One of: ```['create', 'delete', 'update']```|```'create'```|One of 3 basic Create, Update, Delete actions|Yes|
+|action|string; One of: ```['create', 'delete', 'update']```|```'create'```|Message action create, update, delete.|Yes|
 |data|Scene Config data||Scene Config Data|Yes|
 
 ### Scene Config Data Attributes
@@ -32,6 +32,6 @@ Scene Config Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |env-presets|[environment-presets](environment-presets)||A-Frame Environment presets.|Yes|
-|renderer-settings|[renderer-settings](renderer-settings)||These settings are fed into three.js WebGLRenderer properties|No|
-|scene-options|[scene-options](scene-options)||ARENA Scene Options|Yes|
-|post-processing|[post-processing](post-processing)||These effects are enabled in desktop and XR views|No|
+|renderer-settings|[renderer-settings](renderer-settings)||These settings are fed into three.js WebGLRenderer properties.|No|
+|scene-options|[scene-options](scene-options)||ARENA Scene Options.|Yes|
+|post-processing|[post-processing](post-processing)||These effects are enabled in desktop and XR views.|No|

@@ -12,17 +12,17 @@ Landmark
 ========
 
 
-Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists)
+Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists).
 
 Landmark Attributes
 --------------------
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|randomRadiusMin|number|```0```|Minimum radius from the landmark to teleport to. (randomRadiusMax must > 0)|Yes|
+|randomRadiusMin|number|```0```|Minimum radius from the landmark to teleport to. (randomRadiusMax must > 0).|Yes|
 |randomRadiusMax|number|```0```|Maximum radius from the landmark to teleport to.|Yes|
-|offsetPosition|[vector3](vector3)|```{'x': 0, 'y': 1.6, 'z': 0}```|Use as a static teleport x,y,z offset|No|
+|offsetPosition|[vector3](vector3)|```{'x': 0, 'y': 1.6, 'z': 0}```|Use as a static teleport x,y,z offset.|No|
 |constrainToNavMesh|string; One of: ```['false', 'any', 'coplanar']```|```'false'```|Teleports should snap to navmesh.|No|
 |startingPosition|boolean|```False```|Set to true to use this landmark as a scene start (spawn) position. If several landmarks with startingPosition=true exist in a scene, one will be randomly selected.|No|
 |lookAtLandmark|boolean|```True```|Set to true to make users face the landmark when teleported to it.|Yes|
-|label|string|```''```|Landmark description to display in the landmark list|Yes|
+|label|string|```''```|Landmark description to display in the landmark list.|Yes|

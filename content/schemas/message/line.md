@@ -12,7 +12,7 @@ Line
 ====
 
 
-Draw a line
+Draw a line.
 
 All wire objects have a set of basic attributes ```{object_id, action, type, persist, data}```. The ```data``` attribute defines the object-specific attributes
 
@@ -24,7 +24,7 @@ Line Attributes
 |object_id|string||A uuid or otherwise unique identifier for this object.|Yes|
 |persist|boolean|```True```|Persist this object in the database.|Yes|
 |type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
-|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|Message action: CRUD or client event.|Yes|
+|action|string; One of: ```['create', 'delete', 'update']```|```'create'```|Message action create, update, delete.|Yes|
 |ttl|integer||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
 |data|Line data||Line Data|Yes|
 
@@ -39,6 +39,6 @@ Line Attributes
 |start|[vector3](vector3)|```{'x': 0, 'y': 0.5, 'z': 0}```|Start point coordinate.|Yes|
 |visible|boolean|```True```|Whether the material is visible.|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)||3D object position|No|
+|position|[position](position)||3D object position.|No|
 |rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
-|scale|[scale](scale)||3D object scale|No|
+|scale|[scale](scale)||3D object scale.|No|

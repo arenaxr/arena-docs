@@ -21,10 +21,10 @@ Event Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_id|string||A uuid or otherwise unique identifier for this object|Yes|
-|persist|boolean|```False```|Persist this object in the database (default false = do not persist on server)|No|
+|object_id|string||A uuid or otherwise unique identifier for this object.|Yes|
+|persist|boolean|```False```|Persist this object in the database.|No|
 |type|string; One of: ```['mousedown', 'mouseup', 'mouseenter', 'mouseleave', 'triggerdown', 'triggerup', 'gripdown', 'gripup', 'menudown', 'menuup', 'systemdown', 'systemup', 'trackpaddown', 'trackpadup', 'soundplay', 'soundpause', 'soundstop']```||One of the client event action types like 'mousedown'.|Yes|
-|action|string; Must be: ```clientEvent```|```'clientEvent'```|One of 3 basic Create, Update, Delete actions or a special client event action (e.g. a click)|Yes|
+|action|string; Must be: ```clientEvent```|```'clientEvent'```|Message action client event.|Yes|
 |data|Event data||Event Data|Yes|
 
 ### Event Data Attributes

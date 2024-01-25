@@ -12,14 +12,14 @@ Renderer Settings
 =================
 
 
-These settings are fed into three.js WebGLRenderer properties
+These settings are fed into three.js WebGLRenderer properties.
 
 Renderer Settings Attributes
 -----------------------------
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|localClippingEnabled|boolean|```False```|Defines whether the renderer respects object-level clipping planes|No|
-|outputColorSpace|string; One of: ```['SRGBColorSpace', 'LinearSRGBColorSpace', 'DisplayP3ColorSpace', 'NoColorSpace']```|```'SRGBColorSpace'```|Defines the output color space of the renderer (three.js default is SRGBColorSpace)|Yes|
+|localClippingEnabled|boolean|```False```|Defines whether the renderer respects object-level clipping planes.|No|
+|outputColorSpace|string; One of: ```['SRGBColorSpace', 'LinearSRGBColorSpace', 'DisplayP3ColorSpace', 'NoColorSpace']```|```'SRGBColorSpace'```|Defines the output color space of the renderer (three.js default is SRGBColorSpace).|Yes|
 |physicallyCorrectLights|boolean|```False```|Whether to use physically correct lighting mode.|No|
-|sortObjects|boolean|```True```|Defines whether the renderer should sort objects|No|
+|sortObjects|boolean|```True```|Defines whether the renderer should sort objects.|No|

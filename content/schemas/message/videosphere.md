@@ -12,7 +12,7 @@ Videosphere
 ===========
 
 
-Videosphere Geometry
+Videosphere Geometry.
 
 All wire objects have a set of basic attributes ```{object_id, action, type, persist, data}```. The ```data``` attribute defines the object-specific attributes
 
@@ -24,7 +24,7 @@ Videosphere Attributes
 |object_id|string||A uuid or otherwise unique identifier for this object.|Yes|
 |persist|boolean|```True```|Persist this object in the database.|Yes|
 |type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
-|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|Message action: CRUD or client event.|Yes|
+|action|string; One of: ```['create', 'delete', 'update']```|```'create'```|Message action create, update, delete.|Yes|
 |ttl|integer||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
 |data|Videosphere data||Videosphere Data|Yes|
 
@@ -33,20 +33,20 @@ Videosphere Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```videosphere```|```videosphere```|3D object type.|Yes|
-|autoplay|boolean|```True```|autoplay|No|
-|crossOrigin|string|```'anonymous'```|crossOrigin|No|
-|loop|boolean|```True```|loop|No|
-|radius|number|```5000```|radius|Yes|
-|segmentsHeight|integer|```64```|segments height|No|
-|segmentsWidth|integer|```64```|segments width|No|
-|src|string||URI, relative or full path of an image/video file. e.g. 'store/users/wiselab/images/360falls.mp4'|No|
+|autoplay|boolean|```True```|Autoplay|No|
+|crossOrigin|string|```'anonymous'```|Cross Origin|No|
+|loop|boolean|```True```|Loop|No|
+|radius|number|```5000```|Radius|Yes|
+|segmentsHeight|integer|```64```|Segments Height|No|
+|segmentsWidth|integer|```64```|Segments Width|No|
+|src|string||URI, relative or full path of an image/video file. e.g. 'store/users/wiselab/images/360falls.mp4'.|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)||3D object position|Yes|
+|position|[position](position)||3D object position.|Yes|
 |rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
-|scale|[scale](scale)||3D object scale|No|
+|scale|[scale](scale)||3D object scale.|No|
 |buffer|boolean|```True```|Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate (geometries only: box, circle, cone, ...).|No|
-|jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry|No|
-|material|[material](material)||The material properties of the object’s surface.|No|
+|jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry.|No|
+|material|[material](material)||The material properties of the object's surface.|No|
 |multisrc|[multisrc](multisrc)||Define multiple visual sources applied to an object.|No|
-|screenshareable|boolean|```True```|Whether or not a user can screenshare on an object|No|
+|screenshareable|boolean|```True```|Whether or not a user can screenshare on an object.|No|
 |skipCache|boolean|```False```|Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, ...).|No|

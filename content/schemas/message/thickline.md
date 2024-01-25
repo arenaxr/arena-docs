@@ -12,7 +12,7 @@ Thickline
 =========
 
 
-Draw a line that can have a custom width
+Draw a line that can have a custom width.
 
 All wire objects have a set of basic attributes ```{object_id, action, type, persist, data}```. The ```data``` attribute defines the object-specific attributes
 
@@ -24,7 +24,7 @@ Thickline Attributes
 |object_id|string||A uuid or otherwise unique identifier for this object.|Yes|
 |persist|boolean|```True```|Persist this object in the database.|Yes|
 |type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
-|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|Message action: CRUD or client event.|Yes|
+|action|string; One of: ```['create', 'delete', 'update']```|```'create'```|Message action create, update, delete.|Yes|
 |ttl|integer||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
 |data|Thickline data||Thickline Data|Yes|
 
@@ -33,11 +33,11 @@ Thickline Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```thickline```|```thickline```|3D object type.|Yes|
-|color|string|```'#000000'```|color|Yes|
-|lineWidth|number|```1```|Line width|Yes|
-|lineWidthStyler|string; One of: ```['default', 'grow', 'shrink', 'center-sharp', 'center-smooth', 'sine-wave']```|```'default'```|Allows defining the line width as a function of relative position p along the path of the line. By default it is set to a constant 1. You may also choose one of the preset functions|Yes|
-|path|string|```'-2 -1 0, 0 20 0, 10 -1 10'```|Comma-separated list of x y z coordinates of the line vertices|Yes|
+|color|string|```'#000000'```|Line color.|Yes|
+|lineWidth|number|```1```|Width of line in px.|Yes|
+|lineWidthStyler|string; One of: ```['default', 'grow', 'shrink', 'center-sharp', 'center-smooth', 'sine-wave']```|```'default'```|Allows defining the line width as a function of relative position p along the path of the line. By default it is set to a constant 1. You may also choose one of the preset functions.|Yes|
+|path|string|```'-2 -1 0, 0 20 0, 10 -1 10'```|Comma-separated list of x y z coordinates of the line vertices.|Yes|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)||3D object position|No|
+|position|[position](position)||3D object position.|No|
 |rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
-|scale|[scale](scale)||3D object scale|No|
+|scale|[scale](scale)||3D object scale.|No|

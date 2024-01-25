@@ -12,7 +12,7 @@ Goto Landmark
 =============
 
 
-Teleports user to the landmark with the given name; Requires click-listener
+Teleports user to the landmark with the given name; Requires click-listener.
 
 Goto Landmark Attributes
 -------------------------

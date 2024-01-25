@@ -12,7 +12,7 @@ Goto URL
 ========
 
 
-Goto given URL; Requires click-listener
+Goto given URL; Requires click-listener.
 
 Goto URL Attributes
 --------------------

@@ -23,7 +23,7 @@ Environment Presets Attributes
 | :--- | :--- | :--- | :--- | :--- |
 |active|boolean|```True```|Shows or hides the environment presets component. Use this instead of using the visible attribute.|Yes|
 |dressing|string; One of: ```['apparatus', 'arches', 'cubes', 'cylinders', 'hexagons', 'mushrooms', 'none', 'pyramids', 'stones', 'torii', 'towers', 'trees']```|```'none'```|Dressing is the term we use here for the set of additional objects that are put on the ground for decoration.|No|
-|dressingAmount|integer|```10```|Number of objects used for dressing|No|
+|dressingAmount|integer|```10```|Number of objects used for dressing.|No|
 |dressingColor|string|```'#795449'```|Base color of dressing objects.|No|
 |dressingOnPlayArea|number|```0```|Amount of dressing on play area.|No|
 |dressingScale|number|```5```|Height (in meters) of dressing objects.|No|
@@ -46,7 +46,7 @@ Environment Presets Attributes
 |playArea|number|```1```|Radius of the area in the center reserved for the player and the gameplay. The ground is flat in there and no objects are placed inside.|No|
 |preset|string; One of: ```['arches', 'checkerboard', 'contact', 'default', 'dream', 'egypt', 'forest', 'goaland', 'goldmine', 'japan', 'none', 'osiris', 'poison', 'starry', 'threetowers', 'tron', 'volcano', 'yavapai']```|```'default'```|An A-frame preset environment.|Yes|
 |seed|integer|```1```|Seed for randomization. If you don't like the layout of the elements, try another value for the seed.|No|
-|shadow|boolean|```False```|Shadows on/off. Sky light casts shadows on the ground of all those objects with shadow component applied|No|
-|shadowSize|number|```10```|Size of the shadow, if applied|No|
+|shadow|boolean|```False```|Shadows on/off. Sky light casts shadows on the ground of all those objects with shadow component applied.|No|
+|shadowSize|number|```10```|Size of the shadow, if applied.|No|
 |skyColor|string|```'#ffa500'```|Sky Color|No|
-|skyType|string; One of: ```['atmosphere', 'color', 'gradient', 'none']```|```'color'```|A sky type|No|
+|skyType|string; One of: ```['atmosphere', 'color', 'gradient', 'none']```|```'color'```|A sky type.|No|
