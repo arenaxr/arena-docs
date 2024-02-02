@@ -98,7 +98,7 @@ You can add arguments to tasks like so:
 ```python
 @scene.run_once(text="arena-py 2.0!", parent="sphere")
 def make_text(text, parent):
-    text_obj = Text(text=text, position=(0,1.5,0), parent=parent)
+    text_obj = Text(value=text, position=(0,1.5,0), parent=parent)
     scene.add_object(text_obj)
 
 # scene.run_once(make_text, text="arena-py 2.0!", parent="sphere") # also works

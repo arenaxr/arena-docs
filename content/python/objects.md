@@ -186,7 +186,7 @@ Torus(...)
 ```
 
 ## TorusKnot
-Create a [torus-knot]:
+Create a [torusKnot]:
 ```python
 TorusKnot(...)
 ```
@@ -197,31 +197,26 @@ Create a flat [triangle]:
 Triangle(...)
 ```
 
-## Particle
-Add a particle effect (may be unsupported):
-```python
-Particle(...)
-```
-
 ## Camera
+[camera]
 ```python
 Camera(object_id, ...)
 ```
 
 ## Card
-Create an ARENAUI Card
+Create an [arenaui-card]
 ```python
 Card(...)
 ```
 
 ## ButtonPanel
-Create an ARENAUI Button Panel
+Create an [arenaui-button-panel]
 ```python
 ButtonPanel(buttons=[Button(...), ...], ...)
 ```
 
 ## Prompt
-Create an ARENAUI Prompt
+Create an [arenaui-prompt]
 ```python
 Prompt(...)
 ```
@@ -234,22 +229,36 @@ Object(object_type, ...)
 ```
 
 [box]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/box.py
+[camera]: https://github.com/arenaxr/arena-py/blob/master/examples/camera-print.py
+[capsule]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/capsule.py
 [circle]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/circle.py
 [cone]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/cone.py
 [cylinder]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/cylinder.py
 [dodecahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/dodecahedron.py
+[entity]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/entity.py
 [gltf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/gltf.py
+[hands]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/hands.py
 [icosahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/icosahedron.py
 [image]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/image.py
 [light]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/light.py
 [line]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/line.py
+[ocean]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ocean.py
 [octahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/octahedron.py
+[parent]: https://github.com/arenaxr/arena-py/blob/master/examples/earth-moon.py
+[pcd]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/pcd.py
 [plane]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/plane.py
 [ring]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ring.py
+[roundedbox]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/roundedbox.py
 [sphere]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/sphere.py
+[splat]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/splat.py
 [tetrahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/tetrahedron.py
 [text]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/text.py
 [thickline]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/thickline.py
+[threejs]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/threejs_scene.py
 [torus]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus.py
-[torus-knot]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus_knot.py
+[torusKnot]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus_knot.py
 [triangle]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/triangle.py
+[arenaui-button-panel]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
+[arenaui-card]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
+[arenaui-prompt]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
+[videosphere]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/videosphere.py

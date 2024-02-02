@@ -62,9 +62,9 @@ scale=(x, y, z)
 ## Color
 The [color] of an object can be specified by:
 ```python
-color=Color(red, green, blue)
+material=Material(color=Color(red, green, blue))
 # or
-color=(red, green, blue)
+material=Material(color=(red, green, blue))
 ```
 
 ## Material
@@ -72,7 +72,6 @@ The [material] (transparency and color) of an object can be set by:
 ```python
 material=Material(color, transparent, opacity, ...)
 ```
-
 
 ## Animation
 An [animation] and/or an [animation-mixer] can be added to an object:
@@ -86,7 +85,7 @@ sound=Sound(positional, poolSize, autoplay, src, ...)
 ```
 
 ## GotoUrl
-Goes to a [url] on click.
+Goes to a [goto-url] on click.
 ```python
 goto_url=GotoUrl(dest, on, url)
 ```
@@ -99,7 +98,7 @@ impulse=Impulse(on, force, position)
 ```
 
 ## Physics
-[Physics] ("none", "static", or "dynamic") can be added with:
+[dynamic-body] and [static-body] ("none", "static", or "dynamic") can be added with:
 ```python
 physics=Physics(type)
 ```
@@ -109,9 +108,15 @@ dynamic_body=Physics(type)
 ```
 
 ## Text Input
-[Text input] can be added using a keyboard with:
+[textinput] can be added using a keyboard with:
 ```python
 text_input=TextInput(on, title, label, placeholder)
+```
+
+## Particle
+Add a [spe-particles] effect:
+```python
+Particle(...)
 ```
 
 ## Generic attribute
@@ -129,18 +134,36 @@ clickable=True
 # etc.
 ```
 
-
 [animation]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation.py
 [animation-mixer]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation_mixer.py
-[color]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/color.py
+[armarker]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/armarker.py
+[attribution]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/attribution.py
+[blip]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/blip.py
+[box-collision]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/box_collision.py
 [clickable]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/clickable.py
-[url]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_url.py
-[material]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/material.py
-[morph]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/morph.py
-[physics]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physics_impulse.py
+[collision]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/collision.py
+[color]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/color.py
+[dynamic-body]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physics_impulse.py
+[gltf-lod]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/model_lod.py
+[gltf-morph]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/morph.py
+[goto-landmark]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_landmark.py
+[goto-url]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_url.py
 [impulse]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physics_impulse.py
+[jitsi-video]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/jitsi_video.py
+[landmark]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/landmark.py
+[look-at]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/look_at.py
+[material-ext]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/material_extras.py
+[material]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/material.py
+[modelUpdate]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/modelUpdate.py
+[multisrc]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/multisrc.py
+[parent]: https://github.com/arenaxr/arena-py/blob/master/examples/earth-moon.py
 [position]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/position.py
 [rotation]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/rotation.py
 [scale]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/scale.py
+[screenshare]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/screenshare.py
+[shadow]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/shadow.py
 [sound]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/sound.py
-[text input]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/text_input.py
+[spe-particles]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/particles.py
+[static-body]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physics_impulse.py
+[textinput]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/text_input.py
+[video-control]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/video_control.py

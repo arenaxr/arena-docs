@@ -559,8 +559,8 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 
 [p-animation-mix]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation_mixer.py
 [p-animation]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation.py
-[p-armarker]: https://github.com/arenaxr/arena-py/blob/master/attributes/objects/armarker.py
-[p-attribution]: https://github.com/arenaxr/arena-py/blob/master/attributes/objects/attribution.py
+[p-armarker]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/armarker.py
+[p-attribution]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/attribution.py
 [p-blip]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/blip.py
 [p-box-collision]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/box_collision.py
 [p-box]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/box.py
@@ -574,11 +574,11 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [p-cylinder]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/cylinder.py
 [p-dodecahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/dodecahedron.py
 [p-dynamic-body]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physics_impulse.py
-[p-entity]: /content/python/objects#generic-object
+[p-entity]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/entity.py
 [p-event]: /content/python/events#generating-events-with-arena-py-scenes
 [p-gltf-lod]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/model_lod.py
 [p-gltf-morph]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/morph.py
-[p-gltf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/gltf_model.py
+[p-gltf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/gltf.py
 [p-goto-landmark]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_landmark.py
 [p-goto-url]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_url.py
 [p-hands]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/hands.py
