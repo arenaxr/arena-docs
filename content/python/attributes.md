@@ -134,8 +134,8 @@ clickable=True
 # etc.
 ```
 
-[animation]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation.py
 [animation-mixer]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation_mixer.py
+[animation]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation.py
 [armarker]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/armarker.py
 [attribution]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/attribution.py
 [blip]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/blip.py

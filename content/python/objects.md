@@ -228,6 +228,9 @@ For objects that might not exist yet (but may exist in AFRAME). Inherit from thi
 Object(object_type, ...)
 ```
 
+[arenaui-button-panel]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
+[arenaui-card]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
+[arenaui-prompt]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
 [box]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/box.py
 [camera]: https://github.com/arenaxr/arena-py/blob/master/examples/camera-print.py
 [capsule]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/capsule.py
@@ -258,7 +261,4 @@ Object(object_type, ...)
 [torus]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus.py
 [torusKnot]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus_knot.py
 [triangle]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/triangle.py
-[arenaui-button-panel]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
-[arenaui-card]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
-[arenaui-prompt]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
 [videosphere]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/videosphere.py

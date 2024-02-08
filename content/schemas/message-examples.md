@@ -136,10 +136,12 @@ MQTT messages that define the scene:
   "object_id": "box0",
   "action": "create",
   "type": "object",
-  "data": { "material": { "color": "blue" } },
-  "object_type": "box",
-  "scale": { "x": 0.2, "y": 0.2, "z": 0.2 },
-  "position": { "x": 0, "y": 0, "z": 0 }
+  "data": {
+    "object_type": "box",
+    "scale": { "x": 0.2, "y": 0.2, "z": 0.2 },
+    "position": { "x": 0, "y": 0, "z": 0 },
+    "material": { "color": "blue" }
+  }
 }
 ```
 
@@ -359,8 +361,8 @@ Use the `multisrc` A-Frame Component to specify different bitmaps for sides of a
     "material": { "color": "#ffffff" },
     "dynamic-body": { "type": "dynamic" },
     "multisrc": {
-      "srcspath": "images/dice/",
-      "srcs": "side1.png, side2.png, side3.png, side4.png, side5.png, side6.png"
+      "srcspath": "store/users/wiselab/images/dice/",
+      "srcs": "side1.png,side2.png,side3.png,side4.png,side5.png,side6.png"
     }
   }
 }
@@ -502,7 +504,7 @@ Add some red text that says "Hello World".
   "action": "create",
   "type": "object",
   "data": {
-    "material": { "color": "red" },
+    "color": "red",
     "value": "Hello world!",
     "object_type": "text",
     "position": { "x": 0, "y": 3, "z": -4 },
@@ -519,7 +521,7 @@ Change text color properties [A-Frame Text](https://aframe.io/docs/1.5.0/compone
   "object_id": "text_3",
   "action": "update",
   "type": "object",
-  "data": { "text": { "material": { "color": "green" } } }
+  "data": { "text": { "color": "green" } }
 }
 ```
 
@@ -536,7 +538,7 @@ Create a red light in the scene.
     "object_type": "light",
     "position": { "x": 1, "y": 1, "z": 1 },
     "rotation": { "x": 0.25, "y": 0.25, "z": 0, "w": 1 },
-    "material": { "color": "#FF0000" }
+    "color": "#FF0000"
   }
 }
 ```
@@ -607,7 +609,7 @@ Draw a purple line from (2, 2, 2) to (3, 3, 3).
     "object_type": "line",
     "start": { "x": 2, "y": 2, "z": 2 },
     "end": { "x": 3, "y": 3, "z": 3 },
-    "material": { "color": "#CE00FF" }
+    "color": "#CE00FF"
   }
 }
 ```
@@ -623,7 +625,7 @@ Extend the line with a new segment, colored green.
     "line__2": {
       "start": { "x": 3, "y": 3, "z": 3 },
       "end": { "x": 4, "y": 4, "z": 4 },
-      "material": { "color": "#00FF00" }
+      "color": "#00FF00"
     }
   }
 }
@@ -641,7 +643,7 @@ A "thickline" (to improve openpose skeleton rendering visibility) - works like a
   "data": {
     "object_type": "thickline",
     "lineWidth": 11,
-    "material": { "color": "#FF88EE" },
+    "color": "#FF88EE",
     "path": "0 0 0, 1 0 0, 1 1 0, 1 1 1"
   }
 }
@@ -657,7 +659,7 @@ You might be wondering, why can't normal lines just use the scale value to speci
   "data": {
     "meshline": {
       "lineWidth": 11,
-      "material": { "color": "#ffffff" },
+      "color": "#ffffff",
       "path": "0 0 0, 0 0 1"
     }
   }
@@ -1040,7 +1042,7 @@ Customize the fog (notice 3 character hexadecimal color representation):
   "object_id": "scene",
   "action": "update",
   "type": "object",
-  "data": { "fog": { "type": "linear", "material": { "color": "#F00" } } }
+  "data": { "fog": { "type": "linear", "color": "#F00" } }
 }
 ```
 
