@@ -37,7 +37,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `pcd-model`            | 1.0.0  | 0.9.0  | -      | Load a PCD model                                              |
 | `plane`                | 1.0.0  | 0.1.12 | 0.0.1  | Plane geometry                                                |
 | `post-processing`      | 1.20.0 | -      | -      | These effects are enabled in desktop and XR views             |
-| `program`              | N/A    | N/A    | N/A    | ARENA program data                                            |
+| `program`              | 1.0.0  | 0.9.0  | N/A    | ARENA program data                                            |
 | `renderer-settings`    | 1.0.0  | -      | -      | These settings are fed into three.js WebGLRenderer properties |
 | `ring`                 | 1.0.0  | 0.1.12 | 0.0.11 | Ring geometry                                                 |
 | `roundedbox`           | 1.14.0 | 0.9.0  | -      | Rounded Box geometry                                          |
