@@ -3,14 +3,27 @@ title: arena.utils.cmd_interpreter
 parent: arena.utils
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
 <a href="./../../arena.html">arena</a><wbr>.<a href="./../utils.html">utils</a><wbr>.cmd_interpreter    </h1>
 
-                
+                        <div class="docstring"><p>The ArenaCmdInterpreter is a simple line-oriented command interpreter that
+allows to inspect library/program state. It looks at :envvar:<code>ENABLE_INTERPRETER</code> 
+to enable the interpreter. </p>
+
+<p>The <code>.ArenaCmdInterpreter</code> receives a <code>.Scene</code> instance and provides commands
+to inspect attributes and execute functions (callables) given to the constructor.</p>
+
+<p>The commands available are:
+  show: displays attributes
+  info: excutes scene functions that output information
+  help: displays the commands available
+  exit: terminates the program</p>
+</div>
+
                 
                 
                 
@@ -40,7 +53,7 @@ in order to inherit Cmd's methods and encapsulate action methods.</p>
                             <div id="ArenaCmdInterpreter.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">ArenaCmdInterpreter</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">scene</span>,</span><span class="param">	<span class="n">show_attrs</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;config_data&#39;</span><span class="p">,</span> <span class="s1">&#39;scene&#39;</span><span class="p">,</span> <span class="s1">&#39;users&#39;</span><span class="p">,</span> <span class="s1">&#39;all_objects&#39;</span><span class="p">,</span> <span class="s1">&#39;msg_io&#39;</span><span class="p">)</span>,</span><span class="param">	<span class="n">get_callables</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;persisted_objs&#39;</span><span class="p">,</span> <span class="s1">&#39;persisted_scene_option&#39;</span><span class="p">,</span> <span class="s1">&#39;writable_scenes&#39;</span><span class="p">,</span> <span class="s1">&#39;user_list&#39;</span><span class="p">)</span></span>)</span>
+        <span class="name">ArenaCmdInterpreter</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">scene</span>,</span><span class="param">	<span class="n">show_attrs</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;config_data&#39;</span><span class="p">,</span> <span class="s1">&#39;scene&#39;</span><span class="p">,</span> <span class="s1">&#39;users&#39;</span><span class="p">,</span> <span class="s1">&#39;all_objects&#39;</span><span class="p">,</span> <span class="s1">&#39;msg_io&#39;</span><span class="p">)</span>,</span><span class="param">	<span class="n">get_callables</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;persisted_objs&#39;</span><span class="p">,</span> <span class="s1">&#39;persisted_scene_option&#39;</span><span class="p">,</span> <span class="s1">&#39;writable_scenes&#39;</span><span class="p">,</span> <span class="s1">&#39;user_list&#39;</span><span class="p">)</span>,</span><span class="param">	<span class="n">start_cmd_event</span><span class="o">=</span><span class="kc">None</span></span>)</span>
 
         
     </div>
@@ -94,15 +107,13 @@ sys.stdin and sys.stdout are used.</p>
     
 
                             </div>
-                            <div id="ArenaCmdInterpreter.start_thread" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">start_thread</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">start_cmd_event</span><span class="o">=</span><span class="kc">None</span></span><span class="return-annotation">):</span></span>
+                            <div id="ArenaCmdInterpreter.enable_interp" class="classattr">
+                                <div class="attr variable">
+            <span class="name">enable_interp</span>
 
         
     </div>
-    <a class="headerlink" href="#ArenaCmdInterpreter.start_thread"></a>
+    <a class="headerlink" href="#ArenaCmdInterpreter.enable_interp"></a>
     
     
 

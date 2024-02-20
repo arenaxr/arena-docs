@@ -3,7 +3,7 @@ title: arena.objects.sphere
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,19 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Sphere"></a>
     
-            <div class="docstring"><p>Class for Sphere in the ARENA.</p>
+            <div class="docstring"><p>Sphere object class to manage its properties in the ARENA: Sphere Geometry.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>float phiLength</strong>:  phi length Defaults to '360' (optional)</li>
+<li><strong>float phiStart</strong>:  phi start (optional)</li>
+<li><strong>float radius</strong>:  radius Defaults to '1' (optional)</li>
+<li><strong>int segmentsHeight</strong>:  segments height Defaults to '18' (optional)</li>
+<li><strong>int segmentsWidth</strong>:  segments width Defaults to '36' (optional)</li>
+<li><strong>float thetaLength</strong>:  theta length Defaults to '180' (optional)</li>
+<li><strong>float thetaStart</strong>:  theta start (optional)</li>
+</ul>
 </div>
 
 

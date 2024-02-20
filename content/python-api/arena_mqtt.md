@@ -3,7 +3,7 @@ title: arena.arena_mqtt
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -253,28 +253,6 @@ has_children: true
     
 
                             </div>
-                            <div id="ArenaMQTT.msg_io" class="classattr">
-                                <div class="attr variable">
-            <span class="name">msg_io</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ArenaMQTT.msg_io"></a>
-    
-    
-
-                            </div>
-                            <div id="ArenaMQTT.msg_rate_time_start" class="classattr">
-                                <div class="attr variable">
-            <span class="name">msg_rate_time_start</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ArenaMQTT.msg_rate_time_start"></a>
-    
-    
-
-                            </div>
                             <div id="ArenaMQTT.msg_queue" class="classattr">
                                 <div class="attr variable">
             <span class="name">msg_queue</span>
@@ -282,17 +260,6 @@ has_children: true
         
     </div>
     <a class="headerlink" href="#ArenaMQTT.msg_queue"></a>
-    
-    
-
-                            </div>
-                            <div id="ArenaMQTT.connected_evt" class="classattr">
-                                <div class="attr variable">
-            <span class="name">connected_evt</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ArenaMQTT.connected_evt"></a>
     
     
 
@@ -338,21 +305,6 @@ has_children: true
     <a class="headerlink" href="#ArenaMQTT.network_latency_update"></a>
     
             <div class="docstring"><p>Update client latency in $NETWORK/latency</p>
-</div>
-
-
-                            </div>
-                            <div id="ArenaMQTT.msg_rate_update" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">msg_rate_update</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#ArenaMQTT.msg_rate_update"></a>
-    
-            <div class="docstring"><p>Update Message rate</p>
 </div>
 
 
@@ -533,19 +485,6 @@ has_children: true
 
 
                             </div>
-                            <div id="ArenaMQTT.on_publish" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">on_publish</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">mid</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#ArenaMQTT.on_publish"></a>
-    
-    
-
-                            </div>
                             <div id="ArenaMQTT.message_callback_add" class="classattr">
                                 <div class="attr function">
             
@@ -572,6 +511,51 @@ has_children: true
     <a class="headerlink" href="#ArenaMQTT.message_callback_remove"></a>
     
             <div class="docstring"><p>Unsubscribes to topic and removes callback</p>
+</div>
+
+
+                            </div>
+                            <div id="ArenaMQTT.rcv_queue_len" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">rcv_queue_len</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ArenaMQTT.rcv_queue_len"></a>
+    
+            <div class="docstring"><p>Return receive queue length</p>
+</div>
+
+
+                            </div>
+                            <div id="ArenaMQTT.pub_queue_len" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">pub_queue_len</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ArenaMQTT.pub_queue_len"></a>
+    
+            <div class="docstring"><p>Return publish queue length</p>
+</div>
+
+
+                            </div>
+                            <div id="ArenaMQTT.client_id" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">client_id</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ArenaMQTT.client_id"></a>
+    
+            <div class="docstring"><p>Return client id</p>
 </div>
 
 

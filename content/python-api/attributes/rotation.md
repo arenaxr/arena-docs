@@ -3,7 +3,7 @@ title: arena.attributes.rotation
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,8 +25,17 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Rotation"></a>
     
-            <div class="docstring"><p>Rotation Attribute in quaternions or euler.
+            <div class="docstring"><p>Rotation attribute class to manage its properties in the ARENA: 3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.
 Usage: rotation=Rotation(x,y,z,w) or rotation=Rotation(x,y,z)</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>float w</strong>:   Defaults to '1' (optional)</li>
+<li><strong>float x</strong>:   (optional)</li>
+<li><strong>float y</strong>:   (optional)</li>
+<li><strong>float z</strong>:   (optional)</li>
+</ul>
 </div>
 
 

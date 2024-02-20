@@ -1,43 +1,43 @@
 ---
-title: arena.attributes.physics
+title: arena.attributes.model_update
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../../arena.html">arena</a><wbr>.<a href="./../attributes.html">attributes</a><wbr>.physics    </h1>
+<a href="./../../arena.html">arena</a><wbr>.<a href="./../attributes.html">attributes</a><wbr>.model_update    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="Physics">
+                <section id="ModelUpdate">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Physics</span><wbr>(<span class="base"><a href="attribute.html#Attribute">arena.attributes.attribute.Attribute</a></span>):
+    <span class="name">ModelUpdate</span><wbr>(<span class="base"><a href="attribute.html#Attribute">arena.attributes.attribute.Attribute</a></span>):
 
         
     </div>
-    <a class="headerlink" href="#Physics"></a>
+    <a class="headerlink" href="#ModelUpdate"></a>
     
-            <div class="docstring"><p>Physics Attribute.
-Usage: physics=Physics(...) OR dynamic_body=Physics(...)</p>
+            <div class="docstring"><p>ModelUpdate attribute class to manage its properties in the ARENA: The GLTF-specific <code>modelUpdate</code> attribute is an object with child component names as keys. The top-level keys are the names of the child components to be updated. The values of each are nested <code>position</code> and <code>rotation</code> attributes to set as new values, respectively. Either <code>position</code> or <code>rotation</code> can be omitted if unchanged.
+Usage: modelUpdate=ModelUpdate(...)</p>
 </div>
 
 
-                            <div id="Physics.__init__" class="classattr">
+                            <div id="ModelUpdate.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">Physics</span><span class="signature pdoc-code condensed">(<span class="param"><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;static&#39;</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">ModelUpdate</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
-    <a class="headerlink" href="#Physics.__init__"></a>
+    <a class="headerlink" href="#ModelUpdate.__init__"></a>
     
     
 
@@ -46,9 +46,9 @@ Usage: physics=Physics(...) OR dynamic_body=Physics(...)</p>
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="Physics.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
-                <dd id="Physics.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
-                <dd id="Physics.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
+                                <dd id="ModelUpdate.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
+                <dd id="ModelUpdate.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                <dd id="ModelUpdate.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
 
             </div>
                                 </dl>

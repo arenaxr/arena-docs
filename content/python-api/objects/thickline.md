@@ -3,7 +3,7 @@ title: arena.objects.thickline
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -15,40 +15,49 @@ grand_parent: Python API
                 
                 
             </section>
-                <section id="ThickLine">
+                <section id="Thickline">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">ThickLine</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
+    <span class="name">Thickline</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
 
         
     </div>
-    <a class="headerlink" href="#ThickLine"></a>
+    <a class="headerlink" href="#Thickline"></a>
     
-            <div class="docstring"><p>Class for ThickLine in the ARENA.</p>
+            <div class="docstring"><p>Thickline object class to manage its properties in the ARENA: Draw a line that can have a custom width.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>str color</strong>:  Line color. Defaults to '#000000' (optional)</li>
+<li><strong>float lineWidth</strong>:  Width of line in px. Defaults to '1' (optional)</li>
+<li><strong>str lineWidthStyler</strong>:  Allows defining the line width as a function of relative position p along the path of the line. By default it is set to a constant 1. You may also choose one of the preset functions. Allows [default, grow, shrink, center-sharp, center-smooth, sine-wave] Defaults to 'default' (optional)</li>
+<li><strong>str path</strong>:  Comma-separated list of x y z coordinates of the line vertices. Defaults to '-2 -1 0, 0 20 0, 10 -1 10' (optional)</li>
+</ul>
 </div>
 
 
-                            <div id="ThickLine.__init__" class="classattr">
+                            <div id="Thickline.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">ThickLine</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">path</span><span class="o">=</span><span class="kc">None</span>, </span><span class="param"><span class="n">lineWidth</span><span class="o">=</span><span class="mi">1</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">Thickline</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">path</span><span class="o">=</span><span class="kc">None</span>, </span><span class="param"><span class="n">lineWidth</span><span class="o">=</span><span class="mi">1</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
-    <a class="headerlink" href="#ThickLine.__init__"></a>
+    <a class="headerlink" href="#Thickline.__init__"></a>
     
     
 
                             </div>
-                            <div id="ThickLine.object_type" class="classattr">
+                            <div id="Thickline.object_type" class="classattr">
                                 <div class="attr variable">
             <span class="name">object_type</span>        =
 <span class="default_value">&#39;thickline&#39;</span>
 
         
     </div>
-    <a class="headerlink" href="#ThickLine.object_type"></a>
+    <a class="headerlink" href="#Thickline.object_type"></a>
     
     
 
@@ -57,6 +66,56 @@ grand_parent: Python API
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
+                                <dd id="Thickline.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
+                <dd id="Thickline.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
+                <dd id="Thickline.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
+                <dd id="Thickline.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
+                <dd id="Thickline.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
+                <dd id="Thickline.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
+                <dd id="Thickline.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
+                <dd id="Thickline.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
+                <dd id="Thickline.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
+                <dd id="Thickline.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
+                <dd id="Thickline.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
+                <dd id="Thickline.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
+                <dd id="Thickline.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
+                <dd id="Thickline.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
+                <dd id="Thickline.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
+                <dd id="Thickline.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
+                <dd id="Thickline.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
+                <dd id="Thickline.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
+
+            </div>
+            <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
+                                <dd id="Thickline.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+
+            </div>
+                                </dl>
+                            </div>
+                </section>
+                <section id="ThickLine">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ThickLine</span><wbr>(<span class="base"><a href="#Thickline">Thickline</a></span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ThickLine"></a>
+    
+            <div class="docstring"><p>Alternate name for Thickline.</p>
+</div>
+
+
+                            <div class="inherited">
+                                <h5>Inherited Members</h5>
+                                <dl>
+                                    <div><dt><a href="#Thickline">Thickline</a></dt>
+                                <dd id="ThickLine.__init__" class="function"><a href="#Thickline.__init__">Thickline</a></dd>
+                <dd id="ThickLine.object_type" class="variable"><a href="#Thickline.object_type">object_type</a></dd>
+
+            </div>
+            <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
                                 <dd id="ThickLine.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
                 <dd id="ThickLine.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
                 <dd id="ThickLine.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>

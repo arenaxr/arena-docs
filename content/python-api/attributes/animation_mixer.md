@@ -3,7 +3,7 @@ title: arena.attributes.animation_mixer
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,19 +25,40 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#AnimationMixer"></a>
     
-            <div class="docstring"><p>Animation Attribute.
-Usage: AnimationMixer(...)</p>
+            <div class="docstring"><p>AnimationMixer attribute class to manage its properties in the ARENA: A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'.  More properties at (<a href="https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation">https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation</a>) A-Frame Extras Animation.
+Usage: animation_mixer=AnimationMixer(...)</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>bool clampWhenFinished</strong>:  If true, halts the animation at the last frame. (optional)</li>
+<li><strong>str clip</strong>:  Name of the animation clip(s) to play. Accepts wildcards. Defaults to '*' (optional)</li>
+<li><strong>float crossFadeDuration</strong>:  Duration of cross-fades between clips, in seconds. (optional)</li>
+<li><strong>float duration</strong>:  Duration of the animation, in seconds (0 = auto). (optional)</li>
+<li><strong>str loop</strong>:  In repeat and pingpong modes, the clip plays once plus the specified number of repetitions. For pingpong, every second clip plays in reverse. Allows [once, repeat, pingpong] Defaults to 'repeat' (optional)</li>
+<li><strong>str repetitions: Number of times to play the clip, in addition to the first play (empty string = Infinity). Repetitions are ignored for loop</strong>:  once. (optional)</li>
+<li><strong>float startAt</strong>:  Sets the start of an animation to a specific time (in milliseconds). This is useful when you need to jump to an exact time in an animation. The input parameter will be scaled by the mixer's timeScale. (optional)</li>
+<li><strong>float timeScale</strong>:  Scaling factor for playback speed. A value of 0 causes the animation to pause. Negative values cause the animation to play backwards. Defaults to '1' (optional)</li>
+</ul>
 </div>
 
 
+                            <div id="AnimationMixer.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">AnimationMixer</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AnimationMixer.__init__"></a>
+    
+    
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
-                                    <div><dt><a href="animation.html#Animation">arena.attributes.animation.Animation</a></dt>
-                                <dd id="AnimationMixer.__init__" class="function"><a href="animation.html#Animation.__init__">Animation</a></dd>
-
-            </div>
-            <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
+                                    <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
                                 <dd id="AnimationMixer.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
                 <dd id="AnimationMixer.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
                 <dd id="AnimationMixer.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>

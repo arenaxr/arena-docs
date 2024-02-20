@@ -3,7 +3,7 @@ title: arena.attributes.sound
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,8 +25,24 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Sound"></a>
     
-            <div class="docstring"><p>Sound Attribute.
+            <div class="docstring"><p>Sound attribute class to manage its properties in the ARENA: The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position.  More properties at (<a href="https://aframe.io/docs/1.5.0/components/sound.html">https://aframe.io/docs/1.5.0/components/sound.html</a>) A-Frame Sound.
 Usage: sound=Sound(...)</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>bool autoplay</strong>:  Whether to automatically play sound once set. (optional)</li>
+<li><strong>str distanceModel</strong>:  Sound model. Allows [linear, inverse, exponential] Defaults to 'inverse' (optional)</li>
+<li><strong>bool loop</strong>:  Whether to loop the sound once the sound finishes playing. (optional)</li>
+<li><strong>float maxDistance</strong>:  Maximum distance between the audio source and the listener, after which the volume is not reduced any further. Defaults to '10000' (optional)</li>
+<li><strong>str on</strong>:  An event for the entity to listen to before playing sound. Allows [mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup] Defaults to 'mousedown' (optional)</li>
+<li><strong>float poolSize</strong>:  Numbers of simultaneous instances of this sound that can be playing at the same time. Defaults to '1' (optional)</li>
+<li><strong>bool positional</strong>:  Whether or not the audio is positional (movable). Defaults to 'True' (optional)</li>
+<li><strong>float refDistance</strong>:  Reference distance for reducing volume as the audio source moves further from the listener. Defaults to '1' (optional)</li>
+<li><strong>float rolloffFactor</strong>:  Describes how quickly the volume is reduced as the source moves away from the listener. Defaults to '1' (optional)</li>
+<li><strong>str src</strong>:  URL path to sound file e.g. 'store/users/wiselab/sound/wave.mp3'. (optional)</li>
+<li><strong>float volume</strong>:  How loud to play the sound. Defaults to '1' (optional)</li>
+</ul>
 </div>
 
 

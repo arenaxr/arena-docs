@@ -3,7 +3,7 @@ title: arena.objects.cone
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,20 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Cone"></a>
     
-            <div class="docstring"><p>Class for Cone in the ARENA.</p>
+            <div class="docstring"><p>Cone object class to manage its properties in the ARENA: Cone Geometry.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>float height</strong>:  height Defaults to '1' (optional)</li>
+<li><strong>bool openEnded</strong>:  open ended (optional)</li>
+<li><strong>float radiusBottom</strong>:  radius bottom Defaults to '1' (optional)</li>
+<li><strong>float radiusTop</strong>:  radius top Defaults to '0.01' (optional)</li>
+<li><strong>int segmentsHeight</strong>:  segments height Defaults to '18' (optional)</li>
+<li><strong>int segmentsRadial</strong>:  segments radial Defaults to '36' (optional)</li>
+<li><strong>float thetaLength</strong>:  theta length Defaults to '360' (optional)</li>
+<li><strong>float thetaStart</strong>:  theta start (optional)</li>
+</ul>
 </div>
 
 

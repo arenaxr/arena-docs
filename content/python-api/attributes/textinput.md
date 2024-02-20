@@ -1,130 +1,52 @@
 ---
-title: arena.objects.gltf
-parent: arena.objects
+title: arena.attributes.textinput
+parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../../arena.html">arena</a><wbr>.<a href="./../objects.html">objects</a><wbr>.gltf    </h1>
+<a href="./../../arena.html">arena</a><wbr>.<a href="./../attributes.html">attributes</a><wbr>.textinput    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="GLTF">
+                <section id="Textinput">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">GLTF</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
+    <span class="name">Textinput</span><wbr>(<span class="base"><a href="attribute.html#Attribute">arena.attributes.attribute.Attribute</a></span>):
 
         
     </div>
-    <a class="headerlink" href="#GLTF"></a>
+    <a class="headerlink" href="#Textinput"></a>
     
-            <div class="docstring"><p>Class for GLTF Models in the ARENA.</p>
+            <div class="docstring"><p>Textinput attribute class to manage its properties in the ARENA: Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.
+Usage: textinput=Textinput(...)</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>str label</strong>:  Text prompt label Defaults to 'Input text below (max is 140 characters).' (optional)</li>
+<li>**str on: A case-sensitive string representing the event type to listen for, e.g. 'mousedown', 'mouseup'. See <a href='https**: //developer.mozilla.org/en-US/docs/Web/Events'>Web Events</a> Allows [mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup] Defaults to 'mousedown' (optional)</li>
+<li><strong>str placeholder</strong>:  Text input place holder. Defaults to 'Type here' (optional)</li>
+<li><strong>str title</strong>:  The prompt title. Defaults to 'Text Input' (optional)</li>
+</ul>
 </div>
 
 
-                            <div id="GLTF.__init__" class="classattr">
+                            <div id="Textinput.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">GLTF</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">url</span><span class="o">=</span><span class="s1">&#39;&#39;</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">Textinput</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">title</span><span class="o">=</span><span class="s1">&#39;Text Input&#39;</span>,</span><span class="param">	<span class="n">label</span><span class="o">=</span><span class="s1">&#39;Input text below (max is 140 characters)&#39;</span>,</span><span class="param">	<span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Type here&#39;</span>,</span><span class="param">	<span class="n">on</span><span class="o">=</span><span class="s1">&#39;mousedown&#39;</span>,</span><span class="param">	<span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
-    <a class="headerlink" href="#GLTF.__init__"></a>
-    
-    
-
-                            </div>
-                            <div id="GLTF.object_type" class="classattr">
-                                <div class="attr variable">
-            <span class="name">object_type</span>        =
-<span class="default_value">&#39;gltf-model&#39;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#GLTF.object_type"></a>
-    
-    
-
-                            </div>
-                            <div id="GLTF.morphs" class="classattr">
-                                <div class="attr variable">
-            <span class="name">morphs</span>
-
-        
-    </div>
-    <a class="headerlink" href="#GLTF.morphs"></a>
-    
-    
-
-                            </div>
-                            <div id="GLTF.update_morph" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">update_morph</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">morph</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#GLTF.update_morph"></a>
-    
-    
-
-                            </div>
-                            <div id="GLTF.remove_morph" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">remove_morph</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">morph</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#GLTF.remove_morph"></a>
-    
-    
-
-                            </div>
-                            <div id="GLTF.clear_morphs" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">clear_morphs</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#GLTF.clear_morphs"></a>
-    
-    
-
-                            </div>
-                            <div id="GLTF.json_preprocess" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">json_preprocess</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#GLTF.json_preprocess"></a>
-    
-    
-
-                            </div>
-                            <div id="GLTF.json_postprocess" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">json_postprocess</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">json_payload</span>, </span><span class="param"><span class="n">json_data</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#GLTF.json_postprocess"></a>
+    <a class="headerlink" href="#Textinput.__init__"></a>
     
     
 
@@ -132,81 +54,41 @@ grand_parent: Python API
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
-                                    <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
-                                <dd id="GLTF.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
-                <dd id="GLTF.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
-                <dd id="GLTF.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
-                <dd id="GLTF.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
-                <dd id="GLTF.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
-                <dd id="GLTF.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
-                <dd id="GLTF.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
-                <dd id="GLTF.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
-                <dd id="GLTF.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
-                <dd id="GLTF.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
-                <dd id="GLTF.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
-                <dd id="GLTF.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
-                <dd id="GLTF.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
-                <dd id="GLTF.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
-                <dd id="GLTF.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
-                <dd id="GLTF.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
-
-            </div>
-            <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="GLTF.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                                    <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
+                                <dd id="Textinput.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
+                <dd id="Textinput.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                <dd id="Textinput.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
 
             </div>
                                 </dl>
                             </div>
                 </section>
-                <section id="Model">
+                <section id="TextInput">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Model</span><wbr>(<span class="base"><a href="#GLTF">GLTF</a></span>):
+    <span class="name">TextInput</span><wbr>(<span class="base"><a href="#Textinput">Textinput</a></span>):
 
         
     </div>
-    <a class="headerlink" href="#Model"></a>
+    <a class="headerlink" href="#TextInput"></a>
     
-            <div class="docstring"><p>Another name for GLTF.</p>
+            <div class="docstring"><p>Alternate name for Textinput.
+Usage: textinput=TextInput(...)</p>
 </div>
 
 
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
-                                    <div><dt><a href="#GLTF">GLTF</a></dt>
-                                <dd id="Model.__init__" class="function"><a href="#GLTF.__init__">GLTF</a></dd>
-                <dd id="Model.object_type" class="variable"><a href="#GLTF.object_type">object_type</a></dd>
-                <dd id="Model.morphs" class="variable"><a href="#GLTF.morphs">morphs</a></dd>
-                <dd id="Model.update_morph" class="function"><a href="#GLTF.update_morph">update_morph</a></dd>
-                <dd id="Model.remove_morph" class="function"><a href="#GLTF.remove_morph">remove_morph</a></dd>
-                <dd id="Model.clear_morphs" class="function"><a href="#GLTF.clear_morphs">clear_morphs</a></dd>
-                <dd id="Model.json_preprocess" class="function"><a href="#GLTF.json_preprocess">json_preprocess</a></dd>
-                <dd id="Model.json_postprocess" class="function"><a href="#GLTF.json_postprocess">json_postprocess</a></dd>
-
-            </div>
-            <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
-                                <dd id="Model.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
-                <dd id="Model.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
-                <dd id="Model.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
-                <dd id="Model.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
-                <dd id="Model.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
-                <dd id="Model.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
-                <dd id="Model.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
-                <dd id="Model.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
-                <dd id="Model.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
-                <dd id="Model.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
-                <dd id="Model.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
-                <dd id="Model.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
-                <dd id="Model.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
-                <dd id="Model.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
-                <dd id="Model.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
-                <dd id="Model.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
+                                    <div><dt><a href="#Textinput">Textinput</a></dt>
+                                <dd id="TextInput.__init__" class="function"><a href="#Textinput.__init__">Textinput</a></dd>
 
             </div>
             <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="Model.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                                <dd id="TextInput.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
+                <dd id="TextInput.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                <dd id="TextInput.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
 
             </div>
                                 </dl>

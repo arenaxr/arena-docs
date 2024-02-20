@@ -3,7 +3,7 @@ title: arena.scene
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -51,103 +51,52 @@ Can create and execute various user-defined functions/tasks.</p>
     
 
                             </div>
-                            <div id="Scene.persist_host" class="classattr">
+                            <div id="Scene.telemetry" class="classattr">
                                 <div class="attr variable">
-            <span class="name">persist_host</span>
+            <span class="name">telemetry</span>
 
         
     </div>
-    <a class="headerlink" href="#Scene.persist_host"></a>
+    <a class="headerlink" href="#Scene.telemetry"></a>
     
     
 
                             </div>
-                            <div id="Scene.persist_path" class="classattr">
+                            <div id="Scene.connected_evt" class="classattr">
                                 <div class="attr variable">
-            <span class="name">persist_path</span>
+            <span class="name">connected_evt</span>
 
         
     </div>
-    <a class="headerlink" href="#Scene.persist_path"></a>
+    <a class="headerlink" href="#Scene.connected_evt"></a>
     
     
 
                             </div>
-                            <div id="Scene.persist_url" class="classattr">
+                            <div id="Scene.cmd_interpreter" class="classattr">
                                 <div class="attr variable">
-            <span class="name">persist_url</span>
+            <span class="name">cmd_interpreter</span>
 
         
     </div>
-    <a class="headerlink" href="#Scene.persist_url"></a>
+    <a class="headerlink" href="#Scene.cmd_interpreter"></a>
     
     
 
                             </div>
-                            <div id="Scene.new_obj_callback" class="classattr">
-                                <div class="attr variable">
-            <span class="name">new_obj_callback</span>
+                            <div id="Scene.exit" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">exit</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">arg</span><span class="o">=</span><span class="mi">0</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#Scene.new_obj_callback"></a>
+    <a class="headerlink" href="#Scene.exit"></a>
     
-    
+            <div class="docstring"><p>Custom exit to push errors to telemetry</p>
+</div>
 
-                            </div>
-                            <div id="Scene.delete_obj_callback" class="classattr">
-                                <div class="attr variable">
-            <span class="name">delete_obj_callback</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Scene.delete_obj_callback"></a>
-    
-    
-
-                            </div>
-                            <div id="Scene.user_join_callback" class="classattr">
-                                <div class="attr variable">
-            <span class="name">user_join_callback</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Scene.user_join_callback"></a>
-    
-    
-
-                            </div>
-                            <div id="Scene.user_left_callback" class="classattr">
-                                <div class="attr variable">
-            <span class="name">user_left_callback</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Scene.user_left_callback"></a>
-    
-    
-
-                            </div>
-                            <div id="Scene.unspecified_object_ids" class="classattr">
-                                <div class="attr variable">
-            <span class="name">unspecified_object_ids</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Scene.unspecified_object_ids"></a>
-    
-    
-
-                            </div>
-                            <div id="Scene.users" class="classattr">
-                                <div class="attr variable">
-            <span class="name">users</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Scene.users"></a>
-    
-    
 
                             </div>
                             <div id="Scene.on_connect" class="classattr">
@@ -163,6 +112,32 @@ Can create and execute various user-defined functions/tasks.</p>
             <div class="docstring"><p>Paho MQTT client on_connect callback</p>
 </div>
 
+
+                            </div>
+                            <div id="Scene.on_message" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">on_message</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">msg</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scene.on_message"></a>
+    
+    
+
+                            </div>
+                            <div id="Scene.on_publish" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">on_publish</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">mid</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scene.on_publish"></a>
+    
+    
 
                             </div>
                             <div id="Scene.process_message" class="classattr">
@@ -411,6 +386,8 @@ duration. Uses async sleep to avoid blocking.</p>
     <a class="headerlink" href="#Scene.get_persisted_obj"></a>
     
             <div class="docstring"><p>Returns a dictionary for a persisted object.</p>
+
+<p>If object is known by arena-py, return local object, not persisted</p>
 </div>
 
 
@@ -425,7 +402,11 @@ duration. Uses async sleep to avoid blocking.</p>
     </div>
     <a class="headerlink" href="#Scene.get_persisted_objs"></a>
     
-            <div class="docstring"><p>Returns a dictionary of persisted objects. [TODO] check object_type</p>
+            <div class="docstring"><p>Returns a dictionary of persisted objects.</p>
+
+<p>If object is known by arena-py, return our local object, not persisted
+Silently fails/skip objects without object_id and object_type (except programs)
+Instanciates generic Object if object_type is given but unknown to arena-py</p>
 </div>
 
 
@@ -476,6 +457,36 @@ Returns: list of scenes.</p>
 
 
                             </div>
+                            <div id="Scene.get_rcv_pub_queue_len" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">get_rcv_pub_queue_len</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scene.get_rcv_pub_queue_len"></a>
+    
+            <div class="docstring"><p>Return QueueStats object with receive and publish queue length</p>
+</div>
+
+
+                            </div>
+                            <div id="Scene.run_info_update" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">run_info_update</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">run_info</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scene.run_info_update"></a>
+    
+            <div class="docstring"><p>Callbak when program stats are updated; publish program object update</p>
+</div>
+
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
@@ -499,14 +510,10 @@ Returns: list of scenes.</p>
                 <dd id="Scene.end_program_callback" class="variable"><a href="arena_mqtt.html#ArenaMQTT.end_program_callback">end_program_callback</a></dd>
                 <dd id="Scene.event_loop" class="variable"><a href="arena_mqtt.html#ArenaMQTT.event_loop">event_loop</a></dd>
                 <dd id="Scene.mqtt_connect_evt" class="variable"><a href="arena_mqtt.html#ArenaMQTT.mqtt_connect_evt">mqtt_connect_evt</a></dd>
-                <dd id="Scene.msg_io" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_io">msg_io</a></dd>
-                <dd id="Scene.msg_rate_time_start" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_rate_time_start">msg_rate_time_start</a></dd>
                 <dd id="Scene.msg_queue" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_queue">msg_queue</a></dd>
-                <dd id="Scene.connected_evt" class="variable"><a href="arena_mqtt.html#ArenaMQTT.connected_evt">connected_evt</a></dd>
                 <dd id="Scene.parse_cli" class="function"><a href="arena_mqtt.html#ArenaMQTT.parse_cli">parse_cli</a></dd>
                 <dd id="Scene.generate_client_id" class="function"><a href="arena_mqtt.html#ArenaMQTT.generate_client_id">generate_client_id</a></dd>
                 <dd id="Scene.network_latency_update" class="function"><a href="arena_mqtt.html#ArenaMQTT.network_latency_update">network_latency_update</a></dd>
-                <dd id="Scene.msg_rate_update" class="function"><a href="arena_mqtt.html#ArenaMQTT.msg_rate_update">msg_rate_update</a></dd>
                 <dd id="Scene.run_once" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_once">run_once</a></dd>
                 <dd id="Scene.run_after_interval" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_after_interval">run_after_interval</a></dd>
                 <dd id="Scene.run_async" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_async">run_async</a></dd>
@@ -514,12 +521,13 @@ Returns: list of scenes.</p>
                 <dd id="Scene.run_tasks" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_tasks">run_tasks</a></dd>
                 <dd id="Scene.stop_tasks" class="function"><a href="arena_mqtt.html#ArenaMQTT.stop_tasks">stop_tasks</a></dd>
                 <dd id="Scene.sleep" class="function"><a href="arena_mqtt.html#ArenaMQTT.sleep">sleep</a></dd>
-                <dd id="Scene.on_message" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_message">on_message</a></dd>
                 <dd id="Scene.on_disconnect" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_disconnect">on_disconnect</a></dd>
                 <dd id="Scene.disconnect" class="function"><a href="arena_mqtt.html#ArenaMQTT.disconnect">disconnect</a></dd>
-                <dd id="Scene.on_publish" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_publish">on_publish</a></dd>
                 <dd id="Scene.message_callback_add" class="function"><a href="arena_mqtt.html#ArenaMQTT.message_callback_add">message_callback_add</a></dd>
                 <dd id="Scene.message_callback_remove" class="function"><a href="arena_mqtt.html#ArenaMQTT.message_callback_remove">message_callback_remove</a></dd>
+                <dd id="Scene.rcv_queue_len" class="function"><a href="arena_mqtt.html#ArenaMQTT.rcv_queue_len">rcv_queue_len</a></dd>
+                <dd id="Scene.pub_queue_len" class="function"><a href="arena_mqtt.html#ArenaMQTT.pub_queue_len">pub_queue_len</a></dd>
+                <dd id="Scene.client_id" class="function"><a href="arena_mqtt.html#ArenaMQTT.client_id">client_id</a></dd>
 
             </div>
                                 </dl>
@@ -544,16 +552,13 @@ Returns: list of scenes.</p>
                                 <dl>
                                     <div><dt><a href="#Scene">Scene</a></dt>
                                 <dd id="Arena.__init__" class="function"><a href="#Scene.__init__">Scene</a></dd>
-                <dd id="Arena.persist_host" class="variable"><a href="#Scene.persist_host">persist_host</a></dd>
-                <dd id="Arena.persist_path" class="variable"><a href="#Scene.persist_path">persist_path</a></dd>
-                <dd id="Arena.persist_url" class="variable"><a href="#Scene.persist_url">persist_url</a></dd>
-                <dd id="Arena.new_obj_callback" class="variable"><a href="#Scene.new_obj_callback">new_obj_callback</a></dd>
-                <dd id="Arena.delete_obj_callback" class="variable"><a href="#Scene.delete_obj_callback">delete_obj_callback</a></dd>
-                <dd id="Arena.user_join_callback" class="variable"><a href="#Scene.user_join_callback">user_join_callback</a></dd>
-                <dd id="Arena.user_left_callback" class="variable"><a href="#Scene.user_left_callback">user_left_callback</a></dd>
-                <dd id="Arena.unspecified_object_ids" class="variable"><a href="#Scene.unspecified_object_ids">unspecified_object_ids</a></dd>
-                <dd id="Arena.users" class="variable"><a href="#Scene.users">users</a></dd>
+                <dd id="Arena.telemetry" class="variable"><a href="#Scene.telemetry">telemetry</a></dd>
+                <dd id="Arena.connected_evt" class="variable"><a href="#Scene.connected_evt">connected_evt</a></dd>
+                <dd id="Arena.cmd_interpreter" class="variable"><a href="#Scene.cmd_interpreter">cmd_interpreter</a></dd>
+                <dd id="Arena.exit" class="function"><a href="#Scene.exit">exit</a></dd>
                 <dd id="Arena.on_connect" class="function"><a href="#Scene.on_connect">on_connect</a></dd>
+                <dd id="Arena.on_message" class="function"><a href="#Scene.on_message">on_message</a></dd>
+                <dd id="Arena.on_publish" class="function"><a href="#Scene.on_publish">on_publish</a></dd>
                 <dd id="Arena.process_message" class="function"><a href="#Scene.process_message">process_message</a></dd>
                 <dd id="Arena.callback_wrapper" class="function"><a href="#Scene.callback_wrapper">callback_wrapper</a></dd>
                 <dd id="Arena.generate_custom_event" class="function"><a href="#Scene.generate_custom_event">generate_custom_event</a></dd>
@@ -574,6 +579,8 @@ Returns: list of scenes.</p>
                 <dd id="Arena.get_persisted_scene_option" class="function"><a href="#Scene.get_persisted_scene_option">get_persisted_scene_option</a></dd>
                 <dd id="Arena.get_writable_scenes" class="function"><a href="#Scene.get_writable_scenes">get_writable_scenes</a></dd>
                 <dd id="Arena.get_user_list" class="function"><a href="#Scene.get_user_list">get_user_list</a></dd>
+                <dd id="Arena.get_rcv_pub_queue_len" class="function"><a href="#Scene.get_rcv_pub_queue_len">get_rcv_pub_queue_len</a></dd>
+                <dd id="Arena.run_info_update" class="function"><a href="#Scene.run_info_update">run_info_update</a></dd>
 
             </div>
             <div><dt><a href="arena_mqtt.html#ArenaMQTT">arena.arena_mqtt.ArenaMQTT</a></dt>
@@ -596,14 +603,10 @@ Returns: list of scenes.</p>
                 <dd id="Arena.end_program_callback" class="variable"><a href="arena_mqtt.html#ArenaMQTT.end_program_callback">end_program_callback</a></dd>
                 <dd id="Arena.event_loop" class="variable"><a href="arena_mqtt.html#ArenaMQTT.event_loop">event_loop</a></dd>
                 <dd id="Arena.mqtt_connect_evt" class="variable"><a href="arena_mqtt.html#ArenaMQTT.mqtt_connect_evt">mqtt_connect_evt</a></dd>
-                <dd id="Arena.msg_io" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_io">msg_io</a></dd>
-                <dd id="Arena.msg_rate_time_start" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_rate_time_start">msg_rate_time_start</a></dd>
                 <dd id="Arena.msg_queue" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_queue">msg_queue</a></dd>
-                <dd id="Arena.connected_evt" class="variable"><a href="arena_mqtt.html#ArenaMQTT.connected_evt">connected_evt</a></dd>
                 <dd id="Arena.parse_cli" class="function"><a href="arena_mqtt.html#ArenaMQTT.parse_cli">parse_cli</a></dd>
                 <dd id="Arena.generate_client_id" class="function"><a href="arena_mqtt.html#ArenaMQTT.generate_client_id">generate_client_id</a></dd>
                 <dd id="Arena.network_latency_update" class="function"><a href="arena_mqtt.html#ArenaMQTT.network_latency_update">network_latency_update</a></dd>
-                <dd id="Arena.msg_rate_update" class="function"><a href="arena_mqtt.html#ArenaMQTT.msg_rate_update">msg_rate_update</a></dd>
                 <dd id="Arena.run_once" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_once">run_once</a></dd>
                 <dd id="Arena.run_after_interval" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_after_interval">run_after_interval</a></dd>
                 <dd id="Arena.run_async" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_async">run_async</a></dd>
@@ -611,12 +614,13 @@ Returns: list of scenes.</p>
                 <dd id="Arena.run_tasks" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_tasks">run_tasks</a></dd>
                 <dd id="Arena.stop_tasks" class="function"><a href="arena_mqtt.html#ArenaMQTT.stop_tasks">stop_tasks</a></dd>
                 <dd id="Arena.sleep" class="function"><a href="arena_mqtt.html#ArenaMQTT.sleep">sleep</a></dd>
-                <dd id="Arena.on_message" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_message">on_message</a></dd>
                 <dd id="Arena.on_disconnect" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_disconnect">on_disconnect</a></dd>
                 <dd id="Arena.disconnect" class="function"><a href="arena_mqtt.html#ArenaMQTT.disconnect">disconnect</a></dd>
-                <dd id="Arena.on_publish" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_publish">on_publish</a></dd>
                 <dd id="Arena.message_callback_add" class="function"><a href="arena_mqtt.html#ArenaMQTT.message_callback_add">message_callback_add</a></dd>
                 <dd id="Arena.message_callback_remove" class="function"><a href="arena_mqtt.html#ArenaMQTT.message_callback_remove">message_callback_remove</a></dd>
+                <dd id="Arena.rcv_queue_len" class="function"><a href="arena_mqtt.html#ArenaMQTT.rcv_queue_len">rcv_queue_len</a></dd>
+                <dd id="Arena.pub_queue_len" class="function"><a href="arena_mqtt.html#ArenaMQTT.pub_queue_len">pub_queue_len</a></dd>
+                <dd id="Arena.client_id" class="function"><a href="arena_mqtt.html#ArenaMQTT.client_id">client_id</a></dd>
 
             </div>
                                 </dl>

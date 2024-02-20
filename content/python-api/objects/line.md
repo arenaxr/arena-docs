@@ -3,7 +3,7 @@ title: arena.objects.line
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,17 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Line"></a>
     
-            <div class="docstring"><p>Class for Line in the ARENA.</p>
+            <div class="docstring"><p>Line object class to manage its properties in the ARENA: Draw a line.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>str color</strong>:  Line color. Defaults to '#74BEC1' (optional)</li>
+<li><strong>dict end: End coordinate. Defaults to '{'x': -0.5, 'y': -0.5, 'z'</strong>:  0}' (optional)</li>
+<li><strong>float opacity</strong>:  Line opacity. Defaults to '1' (optional)</li>
+<li><strong>dict start: Start point coordinate. Defaults to '{'x': 0, 'y': 0.5, 'z'</strong>:  0}' (optional)</li>
+<li><strong>bool visible</strong>:  Whether the material is visible. Defaults to 'True' (optional)</li>
+</ul>
 </div>
 
 

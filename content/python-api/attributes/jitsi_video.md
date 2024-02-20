@@ -3,7 +3,7 @@ title: arena.attributes.jitsi_video
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,8 +25,15 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#JitsiVideo"></a>
     
-            <div class="docstring"><p>Jitsi Video Attribute. For video source.
+            <div class="docstring"><p>JitsiVideo attribute class to manage its properties in the ARENA: Apply a jitsi video source to the geometry.
 Usage: jitsi_video=JitsiVideo(...)</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>str displayName</strong>:  ARENA or Jitsi display name of the video source; Will be ignored if jitsiId is given. (* change requires reload* ). (optional)</li>
+<li><strong>str jitsiId</strong>:  JitsiId of the video source; If defined will override displayName. (optional)</li>
+</ul>
 </div>
 
 

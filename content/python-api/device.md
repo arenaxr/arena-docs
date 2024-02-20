@@ -3,7 +3,7 @@ title: arena.device
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -79,6 +79,19 @@ Can create and execute various user-defined functions/tasks.</p>
 
 
                             </div>
+                            <div id="Device.on_publish" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">on_publish</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">mid</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Device.on_publish"></a>
+    
+    
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
@@ -102,14 +115,10 @@ Can create and execute various user-defined functions/tasks.</p>
                 <dd id="Device.end_program_callback" class="variable"><a href="arena_mqtt.html#ArenaMQTT.end_program_callback">end_program_callback</a></dd>
                 <dd id="Device.event_loop" class="variable"><a href="arena_mqtt.html#ArenaMQTT.event_loop">event_loop</a></dd>
                 <dd id="Device.mqtt_connect_evt" class="variable"><a href="arena_mqtt.html#ArenaMQTT.mqtt_connect_evt">mqtt_connect_evt</a></dd>
-                <dd id="Device.msg_io" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_io">msg_io</a></dd>
-                <dd id="Device.msg_rate_time_start" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_rate_time_start">msg_rate_time_start</a></dd>
                 <dd id="Device.msg_queue" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_queue">msg_queue</a></dd>
-                <dd id="Device.connected_evt" class="variable"><a href="arena_mqtt.html#ArenaMQTT.connected_evt">connected_evt</a></dd>
                 <dd id="Device.parse_cli" class="function"><a href="arena_mqtt.html#ArenaMQTT.parse_cli">parse_cli</a></dd>
                 <dd id="Device.generate_client_id" class="function"><a href="arena_mqtt.html#ArenaMQTT.generate_client_id">generate_client_id</a></dd>
                 <dd id="Device.network_latency_update" class="function"><a href="arena_mqtt.html#ArenaMQTT.network_latency_update">network_latency_update</a></dd>
-                <dd id="Device.msg_rate_update" class="function"><a href="arena_mqtt.html#ArenaMQTT.msg_rate_update">msg_rate_update</a></dd>
                 <dd id="Device.run_once" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_once">run_once</a></dd>
                 <dd id="Device.run_after_interval" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_after_interval">run_after_interval</a></dd>
                 <dd id="Device.run_async" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_async">run_async</a></dd>
@@ -121,9 +130,11 @@ Can create and execute various user-defined functions/tasks.</p>
                 <dd id="Device.on_message" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_message">on_message</a></dd>
                 <dd id="Device.on_disconnect" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_disconnect">on_disconnect</a></dd>
                 <dd id="Device.disconnect" class="function"><a href="arena_mqtt.html#ArenaMQTT.disconnect">disconnect</a></dd>
-                <dd id="Device.on_publish" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_publish">on_publish</a></dd>
                 <dd id="Device.message_callback_add" class="function"><a href="arena_mqtt.html#ArenaMQTT.message_callback_add">message_callback_add</a></dd>
                 <dd id="Device.message_callback_remove" class="function"><a href="arena_mqtt.html#ArenaMQTT.message_callback_remove">message_callback_remove</a></dd>
+                <dd id="Device.rcv_queue_len" class="function"><a href="arena_mqtt.html#ArenaMQTT.rcv_queue_len">rcv_queue_len</a></dd>
+                <dd id="Device.pub_queue_len" class="function"><a href="arena_mqtt.html#ArenaMQTT.pub_queue_len">pub_queue_len</a></dd>
+                <dd id="Device.client_id" class="function"><a href="arena_mqtt.html#ArenaMQTT.client_id">client_id</a></dd>
 
             </div>
                                 </dl>

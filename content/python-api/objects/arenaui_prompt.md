@@ -1,125 +1,65 @@
 ---
-title: arena.objects.ui
+title: arena.objects.arenaui_prompt
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../../arena.html">arena</a><wbr>.<a href="./../objects.html">objects</a><wbr>.ui    </h1>
+<a href="./../../arena.html">arena</a><wbr>.<a href="./../objects.html">objects</a><wbr>.arenaui_prompt    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="Button">
+                <section id="ArenauiPrompt">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Button</span>:
+    <span class="name">ArenauiPrompt</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
 
         
     </div>
-    <a class="headerlink" href="#Button"></a>
+    <a class="headerlink" href="#ArenauiPrompt"></a>
     
-            <div class="docstring"><p>Buttons of a ButtonPanel in the ARENA UI.</p>
+            <div class="docstring"><p>ArenauiPrompt object class to manage its properties in the ARENA: ARENAUI element which displays prompt with button actions.</p>
 
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>str name</strong>:  Button Name</li>
-<li><strong>str img</strong>:  Image URl for image buttons (optional)</li>
-<li><strong>float size</strong>:  Size of image button (optional)</li>
-<li><strong>float height</strong>:  Height of image button, overrides size (optional)</li>
-<li><strong>float</strong>:  Width of image button, overrides size (optional)</li>
-<li><strong>float borderRadius</strong>:  Border radius of image button (optional)</li>
+<li><strong>list[str] buttons</strong>:  Buttons Defaults to '['Confirm', 'Cancel']' (optional)</li>
+<li><strong>str description</strong>:  Description Defaults to 'This is a prompt. Please confirm or cancel.' (optional)</li>
+<li><strong>str font</strong>:  Font to use for button text. Allows [Roboto, Roboto-Mono] Defaults to 'Roboto' (optional)</li>
+<li><strong>str theme</strong>:  Color Theme Allows [light, dark] Defaults to 'light' (optional)</li>
+<li><strong>str title</strong>:  Title Defaults to 'Prompt' (optional)</li>
+<li><strong>float width</strong>:  Override width Defaults to '1.5' (optional)</li>
 </ul>
 </div>
 
 
-                            <div id="Button.__init__" class="classattr">
+                            <div id="ArenauiPrompt.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">Button</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Button&#39;</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">ArenauiPrompt</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
-    <a class="headerlink" href="#Button.__init__"></a>
+    <a class="headerlink" href="#ArenauiPrompt.__init__"></a>
     
     
 
                             </div>
-                            <div id="Button.name" class="classattr">
-                                <div class="attr variable">
-            <span class="name">name</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Button.name"></a>
-    
-    
-
-                            </div>
-                </section>
-                <section id="ButtonPanel">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">ButtonPanel</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
-
-        
-    </div>
-    <a class="headerlink" href="#ButtonPanel"></a>
-    
-            <div class="docstring"><p>Button Panel in the ARENA UI.</p>
-
-<h6 id="parameters">Parameters</h6>
-
-<ul>
-<li><strong>list[Button] buttons</strong>:  List of Button objects</li>
-<li><strong>str title</strong>:  Title of Button Panel (optional)</li>
-<li><strong>bool vertical</strong>:  Whether to display buttons vertically (optional)</li>
-<li><strong>str font</strong>:  Font of button panel ['Roboto', 'Roboto-Mono'] (optional)</li>
-</ul>
-</div>
-
-
-                            <div id="ButtonPanel.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">ButtonPanel</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ButtonPanel.__init__"></a>
-    
-    
-
-                            </div>
-                            <div id="ButtonPanel.object_type" class="classattr">
+                            <div id="ArenauiPrompt.object_type" class="classattr">
                                 <div class="attr variable">
             <span class="name">object_type</span>        =
-<span class="default_value">&#39;arenaui-button-panel&#39;</span>
+<span class="default_value">&#39;arenaui-prompt&#39;</span>
 
         
     </div>
-    <a class="headerlink" href="#ButtonPanel.object_type"></a>
-    
-    
-
-                            </div>
-                            <div id="ButtonPanel.json_preprocess" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">json_preprocess</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#ButtonPanel.json_preprocess"></a>
+    <a class="headerlink" href="#ArenauiPrompt.object_type"></a>
     
     
 
@@ -128,27 +68,28 @@ grand_parent: Python API
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
-                                <dd id="ButtonPanel.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
-                <dd id="ButtonPanel.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
-                <dd id="ButtonPanel.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
-                <dd id="ButtonPanel.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
-                <dd id="ButtonPanel.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
-                <dd id="ButtonPanel.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
-                <dd id="ButtonPanel.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
-                <dd id="ButtonPanel.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
-                <dd id="ButtonPanel.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
-                <dd id="ButtonPanel.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
-                <dd id="ButtonPanel.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
-                <dd id="ButtonPanel.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
-                <dd id="ButtonPanel.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
-                <dd id="ButtonPanel.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
-                <dd id="ButtonPanel.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
-                <dd id="ButtonPanel.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
-                <dd id="ButtonPanel.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
+                                <dd id="ArenauiPrompt.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
+                <dd id="ArenauiPrompt.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
+                <dd id="ArenauiPrompt.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
+                <dd id="ArenauiPrompt.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
+                <dd id="ArenauiPrompt.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
+                <dd id="ArenauiPrompt.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
+                <dd id="ArenauiPrompt.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
+                <dd id="ArenauiPrompt.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
+                <dd id="ArenauiPrompt.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
+                <dd id="ArenauiPrompt.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
+                <dd id="ArenauiPrompt.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
+                <dd id="ArenauiPrompt.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
+                <dd id="ArenauiPrompt.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
+                <dd id="ArenauiPrompt.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
+                <dd id="ArenauiPrompt.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
+                <dd id="ArenauiPrompt.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
+                <dd id="ArenauiPrompt.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
+                <dd id="ArenauiPrompt.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
 
             </div>
             <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="ButtonPanel.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                                <dd id="ArenauiPrompt.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
 
             </div>
                                 </dl>
@@ -158,54 +99,25 @@ grand_parent: Python API
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Prompt</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
+    <span class="name">Prompt</span><wbr>(<span class="base"><a href="#ArenauiPrompt">ArenauiPrompt</a></span>):
 
         
     </div>
     <a class="headerlink" href="#Prompt"></a>
     
-            <div class="docstring"><p>Popup Prompt in the ARENA UI.</p>
-
-<h6 id="parameters">Parameters</h6>
-
-<ul>
-<li><strong>str title</strong>:  Title of Prompt (optional)</li>
-<li><strong>str description</strong>:  Additional desc text of prompt (optional)</li>
-<li><strong>list[str] buttons</strong>:  List of button name strings (optional)</li>
-<li><strong>str width</strong>:  Width of prompt (optional)</li>
-<li><strong>str font</strong>:  Font of button panel ['Roboto', 'Roboto-Mono'] (optional)</li>
-</ul>
+            <div class="docstring"><p>Alternate name for ArenauiPrompt.</p>
 </div>
 
 
-                            <div id="Prompt.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">Prompt</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Prompt.__init__"></a>
-    
-    
-
-                            </div>
-                            <div id="Prompt.object_type" class="classattr">
-                                <div class="attr variable">
-            <span class="name">object_type</span>        =
-<span class="default_value">&#39;arenaui-prompt&#39;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Prompt.object_type"></a>
-    
-    
-
-                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
-                                    <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
+                                    <div><dt><a href="#ArenauiPrompt">ArenauiPrompt</a></dt>
+                                <dd id="Prompt.__init__" class="function"><a href="#ArenauiPrompt.__init__">ArenauiPrompt</a></dd>
+                <dd id="Prompt.object_type" class="variable"><a href="#ArenauiPrompt.object_type">object_type</a></dd>
+
+            </div>
+            <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
                                 <dd id="Prompt.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
                 <dd id="Prompt.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
                 <dd id="Prompt.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
@@ -228,91 +140,6 @@ grand_parent: Python API
             </div>
             <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
                                 <dd id="Prompt.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
-
-            </div>
-                                </dl>
-                            </div>
-                </section>
-                <section id="Card">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">Card</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
-
-        
-    </div>
-    <a class="headerlink" href="#Card"></a>
-    
-            <div class="docstring"><p>Text/Image Card in the ARENA UI.</p>
-
-<h6 id="parameters">Parameters</h6>
-
-<ul>
-<li><strong>str title</strong>:  Title of Card (optional)</li>
-<li><strong>str body</strong>:  Body text of Card (optional)</li>
-<li><strong>str bodyAlign</strong>:  Text alignment of body text ['center', 'left', 'right', 'justify'] (optional)</li>
-<li><strong>str img</strong>:  Image URL of Card (optional)</li>
-<li><strong>str imgCaption</strong>:  Image caption (optional)</li>
-<li><strong>str imgDirection</strong>:  Left or Right image placement vs body text [ 'left', 'right'] (optional)</li>
-<li><strong>str imgSize</strong>:  Container size fitting of image ['cover', 'contain'] (optional)</li>
-<li><strong>float fontSize</strong>:  Font size of card, scales both title and body (optional)</li>
-<li><strong>float widthScale</strong>:  Width of card as a factor of the default (optional)</li>
-<li><strong>bool closeButton</strong>:  Whether to display a close button (optional)</li>
-<li><strong>str font</strong>:  Font of card ['Roboto', 'Roboto-Mono'] (optional)</li>
-</ul>
-</div>
-
-
-                            <div id="Card.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">Card</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Card.__init__"></a>
-    
-    
-
-                            </div>
-                            <div id="Card.object_type" class="classattr">
-                                <div class="attr variable">
-            <span class="name">object_type</span>        =
-<span class="default_value">&#39;arenaui-card&#39;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Card.object_type"></a>
-    
-    
-
-                            </div>
-                            <div class="inherited">
-                                <h5>Inherited Members</h5>
-                                <dl>
-                                    <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
-                                <dd id="Card.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
-                <dd id="Card.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
-                <dd id="Card.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
-                <dd id="Card.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
-                <dd id="Card.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
-                <dd id="Card.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
-                <dd id="Card.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
-                <dd id="Card.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
-                <dd id="Card.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
-                <dd id="Card.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
-                <dd id="Card.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
-                <dd id="Card.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
-                <dd id="Card.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
-                <dd id="Card.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
-                <dd id="Card.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
-                <dd id="Card.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
-                <dd id="Card.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
-                <dd id="Card.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
-
-            </div>
-            <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="Card.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
 
             </div>
                                 </dl>

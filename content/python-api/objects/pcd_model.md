@@ -1,43 +1,62 @@
 ---
-title: arena.attributes.text_input
-parent: arena.attributes
+title: arena.objects.pcd_model
+parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../../arena.html">arena</a><wbr>.<a href="./../attributes.html">attributes</a><wbr>.text_input    </h1>
+<a href="./../../arena.html">arena</a><wbr>.<a href="./../objects.html">objects</a><wbr>.pcd_model    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="TextInput">
+                <section id="PcdModel">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">TextInput</span><wbr>(<span class="base"><a href="attribute.html#Attribute">arena.attributes.attribute.Attribute</a></span>):
+    <span class="name">PcdModel</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
 
         
     </div>
-    <a class="headerlink" href="#TextInput"></a>
+    <a class="headerlink" href="#PcdModel"></a>
     
-            <div class="docstring"><p>TextInput Attribute.
-Usage: textinput=TextInput(...)</p>
+            <div class="docstring"><p>PcdModel object class to manage its properties in the ARENA: Load a PCD model.  Format: (<a href="https://pointclouds.org/documentation/tutorials/index.html">https://pointclouds.org/documentation/tutorials/index.html</a>) Point Clouds. See guidance to store paths under (<a href="https://docs.arenaxr.org/content/interface/filestore.html">https://docs.arenaxr.org/content/interface/filestore.html</a>) ARENA File Store, CDN, or DropBox.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>str pointColor</strong>:  Color of the points. Defaults to '#7f7f7f' (optional)</li>
+<li><strong>float pointSize</strong>:  Size of the points. Defaults to '0.01' (optional)</li>
+<li><strong>str url</strong>:  Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
+</ul>
 </div>
 
 
-                            <div id="TextInput.__init__" class="classattr">
+                            <div id="PcdModel.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">TextInput</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">title</span><span class="o">=</span><span class="s1">&#39;Text Input&#39;</span>,</span><span class="param">	<span class="n">label</span><span class="o">=</span><span class="s1">&#39;Input text below (max is 140 characters)&#39;</span>,</span><span class="param">	<span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Type here&#39;</span>,</span><span class="param">	<span class="n">on</span><span class="o">=</span><span class="s1">&#39;mousedown&#39;</span>,</span><span class="param">	<span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">PcdModel</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
-    <a class="headerlink" href="#TextInput.__init__"></a>
+    <a class="headerlink" href="#PcdModel.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="PcdModel.object_type" class="classattr">
+                                <div class="attr variable">
+            <span class="name">object_type</span>        =
+<span class="default_value">&#39;pcd-model&#39;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PcdModel.object_type"></a>
     
     
 
@@ -45,10 +64,29 @@ Usage: textinput=TextInput(...)</p>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
-                                    <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="TextInput.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
-                <dd id="TextInput.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
-                <dd id="TextInput.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
+                                    <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
+                                <dd id="PcdModel.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
+                <dd id="PcdModel.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
+                <dd id="PcdModel.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
+                <dd id="PcdModel.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
+                <dd id="PcdModel.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
+                <dd id="PcdModel.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
+                <dd id="PcdModel.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
+                <dd id="PcdModel.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
+                <dd id="PcdModel.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
+                <dd id="PcdModel.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
+                <dd id="PcdModel.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
+                <dd id="PcdModel.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
+                <dd id="PcdModel.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
+                <dd id="PcdModel.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
+                <dd id="PcdModel.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
+                <dd id="PcdModel.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
+                <dd id="PcdModel.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
+                <dd id="PcdModel.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
+
+            </div>
+            <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
+                                <dd id="PcdModel.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
 
             </div>
                                 </dl>

@@ -3,7 +3,7 @@ title: arena.attributes.goto_url
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,8 +25,16 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#GotoUrl"></a>
     
-            <div class="docstring"><p>GotoUrl Attribute.
+            <div class="docstring"><p>GotoUrl attribute class to manage its properties in the ARENA: Goto given URL; Requires click-listener.
 Usage: goto_url=GotoUrl(...)</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>str dest</strong>:   Allows [popup, newtab, sametab] Defaults to 'sametab' (optional)</li>
+<li><strong>str on</strong>:   Allows [mousedown, mouseup] Defaults to 'mousedown' (optional)</li>
+<li><strong>str url</strong>:  Landmark Url (optional)</li>
+</ul>
 </div>
 
 

@@ -3,7 +3,7 @@ title: arena.attributes.impulse
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,8 +25,16 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Impulse"></a>
     
-            <div class="docstring"><p>Impulse Attribute.
+            <div class="docstring"><p>Impulse attribute class to manage its properties in the ARENA: Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires click-listener and physics.
 Usage: impulse=Impulse(...)</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>dict force: Impulse vector. Defaults to '{'x': 1, 'y': 1, 'z'</strong>:  1}' (optional)</li>
+<li><strong>str on</strong>:  Event to listen 'on'. (optional)</li>
+<li><strong>dict position: World position. Defaults to '{'x': 1, 'y': 1, 'z'</strong>:  1}' (optional)</li>
+</ul>
 </div>
 
 

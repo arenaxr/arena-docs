@@ -3,7 +3,7 @@ title: arena.objects.image
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,17 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Image"></a>
     
-            <div class="docstring"><p>Class for Image in the ARENA.</p>
+            <div class="docstring"><p>Image object class to manage its properties in the ARENA: Display an image on a plane.  See guidance to store paths under (<a href="https://docs.arenaxr.org/content/interface/filestore.html">https://docs.arenaxr.org/content/interface/filestore.html</a>) ARENA File Store, CDN, or DropBox.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>float height</strong>:  height Defaults to '1' (optional)</li>
+<li><strong>int segmentsHeight</strong>:  segments height Defaults to '1' (optional)</li>
+<li><strong>int segmentsWidth</strong>:  segments width Defaults to '1' (optional)</li>
+<li><strong>str url</strong>:  Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
+<li><strong>float width</strong>:  width Defaults to '1' (optional)</li>
+</ul>
 </div>
 
 

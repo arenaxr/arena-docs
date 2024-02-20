@@ -3,7 +3,7 @@ title: arena.attributes.landmark
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,8 +25,20 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Landmark"></a>
     
-            <div class="docstring"><p>Landmark Attribute.
-Usage: Animation(...)</p>
+            <div class="docstring"><p>Landmark attribute class to manage its properties in the ARENA: Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists).
+Usage: landmark=Landmark(...)</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>str constrainToNavMesh</strong>:  Teleports should snap to navmesh. Allows [false, any, coplanar] Defaults to 'false' (optional)</li>
+<li><strong>str label</strong>:  Landmark description to display in the landmark list. (optional)</li>
+<li><strong>bool lookAtLandmark</strong>:  Set to true to make users face the landmark when teleported to it. Defaults to 'True' (optional)</li>
+<li><strong>dict offsetPosition: Use as a static teleport x,y,z offset. Defaults to '{'x': 0, 'y': 1.6, 'z'</strong>:  0}' (optional)</li>
+<li><strong>float randomRadiusMax</strong>:  Maximum radius from the landmark to teleport to. (optional)</li>
+<li><strong>float randomRadiusMin</strong>:  Minimum radius from the landmark to teleport to. (randomRadiusMax must &gt; 0). (optional)</li>
+<li><strong>bool startingPosition</strong>:  Set to true to use this landmark as a scene start (spawn) position. If several landmarks with startingPosition=true exist in a scene, one will be randomly selected. (optional)</li>
+</ul>
 </div>
 
 

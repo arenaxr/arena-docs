@@ -3,7 +3,7 @@ title: arena.objects.torus_knot
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,18 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#TorusKnot"></a>
     
-            <div class="docstring"><p>Class for TorusKnot in the ARENA.</p>
+            <div class="docstring"><p>TorusKnot object class to manage its properties in the ARENA: Torus Knot Geometry.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>float p</strong>:  P Defaults to '2' (optional)</li>
+<li><strong>float q</strong>:  Q Defaults to '3' (optional)</li>
+<li><strong>float radius</strong>:  radius Defaults to '1' (optional)</li>
+<li><strong>float radiusTubular</strong>:  radius tubular Defaults to '0.2' (optional)</li>
+<li><strong>int segmentsRadial</strong>:  segments radial Defaults to '8' (optional)</li>
+<li><strong>int segmentsTubular</strong>:  segments tubular Defaults to '100' (optional)</li>
+</ul>
 </div>
 
 

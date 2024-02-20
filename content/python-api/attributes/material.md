@@ -3,7 +3,7 @@ title: arena.attributes.material
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,8 +25,29 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Material"></a>
     
-            <div class="docstring"><p>Material Attribute. For setting color and opacity.
+            <div class="docstring"><p>Material attribute class to manage its properties in the ARENA: The material properties of the object's surface.  More properties at (<a href="https://aframe.io/docs/1.5.0/components/material.html">https://aframe.io/docs/1.5.0/components/material.html</a>) A-Frame Material.
 Usage: material=Material(...)</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>float alphaTest</strong>:  Alpha test threshold for transparency. (optional)</li>
+<li><strong>str blending</strong>:  The blending mode for the material's RGB and Alpha sent to the WebGLRenderer. Allows [none, normal, additive, subtractive, multiply] Defaults to 'normal' (optional)</li>
+<li><strong>str color</strong>:  Base diffuse color. Defaults to '#7f7f7f' (optional)</li>
+<li><strong>bool depthTest</strong>:  Whether depth testing is enabled when rendering the material. Defaults to 'True' (optional)</li>
+<li><strong>bool dithering</strong>:  Whether material is dithered with noise. Removes banding from gradients like ones produced by lighting. Defaults to 'True' (optional)</li>
+<li><strong>bool flatShading</strong>:  Use THREE.FlatShading rather than THREE.StandardShading. (optional)</li>
+<li><strong>bool npot</strong>:  Use settings for non-power-of-two (NPOT) texture. (optional)</li>
+<li><strong>dict offset: Texture offset to be used. Defaults to '{'x': 1, 'y'</strong>:  1}' (optional)</li>
+<li><strong>float opacity</strong>:  Extent of transparency. If the transparent property is not true, then the material will remain opaque and opacity will only affect color. Defaults to '1' (optional)</li>
+<li><strong>dict repeat: Texture repeat to be used. Defaults to '{'x': 1, 'y'</strong>:  1}' (optional)</li>
+<li><strong>str shader</strong>:  Which material to use. Defaults to the standard material. Can be set to the flat material or to a registered custom shader material. Defaults to 'standard' (optional)</li>
+<li><strong>str side</strong>:  Which sides of the mesh to render. Allows [front, back, double] Defaults to 'front' (optional)</li>
+<li><strong>str src</strong>:  URI, relative or full path of an image/video file. e.g. 'store/users/wiselab/images/360falls.mp4'. (optional)</li>
+<li><strong>bool transparent</strong>:  Whether material is transparent. Transparent entities are rendered after non-transparent entities. (optional)</li>
+<li><strong>str vertexColors</strong>:  Whether to use vertex or face colors to shade the material. Allows [none, vertex, face] Defaults to 'none' (optional)</li>
+<li><strong>bool visible</strong>:  Whether material is visible. Raycasters will ignore invisible materials. Defaults to 'True' (optional)</li>
+</ul>
 </div>
 
 

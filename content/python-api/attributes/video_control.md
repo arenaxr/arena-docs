@@ -3,7 +3,7 @@ title: arena.attributes.video_control
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,17 +25,41 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#VideoControl"></a>
     
-            <div class="docstring"><p>VideoControl Attribute.
+            <div class="docstring"><p>VideoControl attribute class to manage its properties in the ARENA: Video Control.
 Usage: video_control=VideoControl(...)</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>bool anyone_clicks</strong>:  Responds to clicks from any user. Defaults to 'True' (optional)</li>
+<li><strong>bool autoplay</strong>:  Video starts playing automatically. (optional)</li>
+<li><strong>bool cleanup</strong>:  Automatically remove HTML5 video and img assets from DOM on object removal. Defaults to 'True' (optional)</li>
+<li><strong>str frame_object</strong>:  URL of a thumbnail image, e.g. 'store/users/wiselab/images/conix-face-white.jpg'. (optional)</li>
+<li><strong>bool video_loop</strong>:  Video automatically loops. Defaults to 'True' (optional)</li>
+<li><strong>str video_object</strong>:  Name of object where to put the video, e.g. 'square_vid6'. (optional)</li>
+<li><strong>str video_path</strong>:  URL of the video file, e.g. 'store/users/wiselab/videos/kungfu.mp4'. (optional)</li>
+<li><strong>float volume</strong>:  Video sound volume. Defaults to '1' (optional)</li>
+</ul>
 </div>
 
 
+                            <div id="VideoControl.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">VideoControl</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#VideoControl.__init__"></a>
+    
+    
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="VideoControl.__init__" class="function"><a href="../base_object.html#BaseObject.__init__">BaseObject</a></dd>
-                <dd id="VideoControl.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
+                                <dd id="VideoControl.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
                 <dd id="VideoControl.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
                 <dd id="VideoControl.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
 

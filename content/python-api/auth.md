@@ -3,7 +3,7 @@ title: arena.auth
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -206,7 +206,7 @@ or admin, for now, get a fresh mqtt_token each time.</p>
 <ul>
 <li><strong>str url</strong>:  the url to POST/GET.</li>
 <li><strong>str data</strong>:  None for GET, add params for POST.</li>
-<li><strong>str creds</strong>:  True to pass the MQTT token as a cookie.</li>
+<li><strong>bool creds</strong>:  True to pass the MQTT token as a cookie.</li>
 <li><strong>str csrf</strong>:  The csrftoken.</li>
 </ul>
 </div>

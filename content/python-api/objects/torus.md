@@ -3,7 +3,7 @@ title: arena.objects.torus
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,17 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Torus"></a>
     
-            <div class="docstring"><p>Class for Torus in the ARENA.</p>
+            <div class="docstring"><p>Torus object class to manage its properties in the ARENA: Torus Geometry.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>float arc</strong>:  Arc Defaults to '360' (optional)</li>
+<li><strong>float radius</strong>:  radius Defaults to '1' (optional)</li>
+<li><strong>float radiusTubular</strong>:  radius tubular Defaults to '0.2' (optional)</li>
+<li><strong>int segmentsRadial</strong>:  segments radial Defaults to '36' (optional)</li>
+<li><strong>int segmentsTubular</strong>:  segments tubular Defaults to '32' (optional)</li>
+</ul>
 </div>
 
 

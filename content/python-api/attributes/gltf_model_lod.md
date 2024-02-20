@@ -1,65 +1,52 @@
 ---
-title: arena.objects.hands
-parent: arena.objects
+title: arena.attributes.gltf_model_lod
+parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../../arena.html">arena</a><wbr>.<a href="./../objects.html">objects</a><wbr>.hands    </h1>
+<a href="./../../arena.html">arena</a><wbr>.<a href="./../attributes.html">attributes</a><wbr>.gltf_model_lod    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="HandLeft">
+                <section id="GltfModelLod">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">HandLeft</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
+    <span class="name">GltfModelLod</span><wbr>(<span class="base"><a href="attribute.html#Attribute">arena.attributes.attribute.Attribute</a></span>):
 
         
     </div>
-    <a class="headerlink" href="#HandLeft"></a>
+    <a class="headerlink" href="#GltfModelLod"></a>
     
-            <div class="docstring"><p>Class for Left Hands/Controllers in the ARENA.</p>
+            <div class="docstring"><p>GltfModelLod attribute class to manage its properties in the ARENA: Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance
+Usage: gltf_model_lod=GltfModelLod(...)</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>float detailedDistance</strong>:  At what distance to switch between the models. Defaults to '10' (optional)</li>
+<li><strong>str detailedUrl</strong>:  Alternative 'detailed' gltf model to load by URL. (optional)</li>
+<li><strong>bool retainCache</strong>:  Whether to skip freeing the detailed model from browser cache (default false). (optional)</li>
+<li><strong>float updateRate</strong>:  How often user camera is checked for LOD (default 333ms). Defaults to '333' (optional)</li>
+</ul>
 </div>
 
 
-                            <div id="HandLeft.__init__" class="classattr">
+                            <div id="GltfModelLod.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">HandLeft</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">GltfModelLod</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
-    <a class="headerlink" href="#HandLeft.__init__"></a>
-    
-    
-
-                            </div>
-                            <div id="HandLeft.object_type" class="classattr">
-                                <div class="attr variable">
-            <span class="name">object_type</span>        =
-<span class="default_value">&#39;handLeft&#39;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#HandLeft.object_type"></a>
-    
-    
-
-                            </div>
-                            <div id="HandLeft.camera" class="classattr">
-                                <div class="attr variable">
-            <span class="name">camera</span>
-
-        
-    </div>
-    <a class="headerlink" href="#HandLeft.camera"></a>
+    <a class="headerlink" href="#GltfModelLod.__init__"></a>
     
     
 
@@ -67,109 +54,10 @@ grand_parent: Python API
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
-                                    <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
-                                <dd id="HandLeft.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
-                <dd id="HandLeft.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
-                <dd id="HandLeft.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
-                <dd id="HandLeft.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
-                <dd id="HandLeft.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
-                <dd id="HandLeft.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
-                <dd id="HandLeft.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
-                <dd id="HandLeft.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
-                <dd id="HandLeft.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
-                <dd id="HandLeft.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
-                <dd id="HandLeft.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
-                <dd id="HandLeft.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
-                <dd id="HandLeft.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
-                <dd id="HandLeft.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
-                <dd id="HandLeft.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
-                <dd id="HandLeft.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
-                <dd id="HandLeft.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
-                <dd id="HandLeft.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
-
-            </div>
-            <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="HandLeft.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
-
-            </div>
-                                </dl>
-                            </div>
-                </section>
-                <section id="HandRight">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">HandRight</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
-
-        
-    </div>
-    <a class="headerlink" href="#HandRight"></a>
-    
-            <div class="docstring"><p>Class for Right Hands/Controllers in the ARENA.</p>
-</div>
-
-
-                            <div id="HandRight.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">HandRight</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
-
-        
-    </div>
-    <a class="headerlink" href="#HandRight.__init__"></a>
-    
-    
-
-                            </div>
-                            <div id="HandRight.object_type" class="classattr">
-                                <div class="attr variable">
-            <span class="name">object_type</span>        =
-<span class="default_value">&#39;handRight&#39;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#HandRight.object_type"></a>
-    
-    
-
-                            </div>
-                            <div id="HandRight.camera" class="classattr">
-                                <div class="attr variable">
-            <span class="name">camera</span>
-
-        
-    </div>
-    <a class="headerlink" href="#HandRight.camera"></a>
-    
-    
-
-                            </div>
-                            <div class="inherited">
-                                <h5>Inherited Members</h5>
-                                <dl>
-                                    <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
-                                <dd id="HandRight.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
-                <dd id="HandRight.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
-                <dd id="HandRight.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
-                <dd id="HandRight.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
-                <dd id="HandRight.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
-                <dd id="HandRight.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
-                <dd id="HandRight.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
-                <dd id="HandRight.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
-                <dd id="HandRight.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
-                <dd id="HandRight.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
-                <dd id="HandRight.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
-                <dd id="HandRight.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
-                <dd id="HandRight.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
-                <dd id="HandRight.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
-                <dd id="HandRight.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
-                <dd id="HandRight.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
-                <dd id="HandRight.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
-                <dd id="HandRight.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
-
-            </div>
-            <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="HandRight.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                                    <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
+                                <dd id="GltfModelLod.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
+                <dd id="GltfModelLod.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                <dd id="GltfModelLod.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
 
             </div>
                                 </dl>

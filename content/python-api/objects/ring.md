@@ -3,7 +3,7 @@ title: arena.objects.ring
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.8.0/arena">v0.8.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,18 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Ring"></a>
     
-            <div class="docstring"><p>Class for Ring in the ARENA.</p>
+            <div class="docstring"><p>Ring object class to manage its properties in the ARENA: Ring Geometry.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>float radiusInner</strong>:  radius inner Defaults to '0.8' (optional)</li>
+<li><strong>float radiusOuter</strong>:  radius outer Defaults to '1.2' (optional)</li>
+<li><strong>int segmentsPhi</strong>:  segments phi Defaults to '10' (optional)</li>
+<li><strong>int segmentsTheta</strong>:  segments theta Defaults to '32' (optional)</li>
+<li><strong>float thetaLength</strong>:  theta length Defaults to '360' (optional)</li>
+<li><strong>float thetaStart</strong>:  theta start (optional)</li>
+</ul>
 </div>
 
 
