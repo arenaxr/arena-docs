@@ -75,152 +75,202 @@ As long as your program is running, you do not need to manually keep track of yo
 For instance, if you create an `Object` in arena-py and you update its position with the build page or with another program,
 that `Object`'s position in the original arena-py program will automatically be updated for you!
 
-# All Objects
+# All Primitive Geometric Mesh Objects
 
-## Box
+## [Box](/content/python-api/objects/box)
 Create a [box]:
 ```python
 Box(...)
 ```
 
-## Circle
+## [Capsule](/content/python-api/objects/capsule)
+Create a [capsule]:
+```python
+Capsule(...)
+```
+
+## [Circle](/content/python-api/objects/circle)
 Create a flat [circle]:
 ```python
 Circle(...)
 ```
 
-## Cone
+## [Cone](/content/python-api/objects/cone)
 Create a [cone]:
 ```python
 Cone(...)
 ```
 
-## Cylinder
+## [Cylinder](/content/python-api/objects/cylinder)
 Create a [cylinder]:
 ```python
 Cylinder(...)
 ```
 
-## Dodecahedron
+## [Dodecahedron](/content/python-api/objects/dodecahedron)
 Create a [dodecahedron]:
 ```python
 Dodecahedron(...)
 ```
 
-## GLTF
-Create a [gltf] 3D model:
-```python
-GLTF(url, ...)
-```
-
-## Icosahedron
+## [Icosahedron](/content/python-api/objects/icosahedron)
 Create an [icosahedron]:
 ```python
 Icosahedron(...)
 ```
 
-## Image
-Create a flat [image]:
-```python
-Image(url, ...)
-```
-
-## Light
-Create a [light]:
-```python
-Light(...)
-```
-
-## Line
-Create a thin [line]:
-```python
-Line(path, ...)
-```
-
-## Octahedron
+## [Octahedron](/content/python-api/objects/octahedron)
 Create an [octahedron]:
 ```python
 Octahedron(...)
 ```
 
-## Plane
+## [Plane](/content/python-api/objects/plane)
 Create a flat [plane]:
 ```python
 Plane(...)
 ```
 
-## Ring
+## [Ring](/content/python-api/objects/ring)
 Create a flat [ring]:
 ```python
 Ring(...)
 ```
 
-## Sphere
+## [Rounded Box](/content/python-api/objects/roundedbox)
+Create a [rounded-box]:
+```python
+Roundedbox(...)
+```
+
+## [Sphere](/content/python-api/objects/sphere)
 Create a [sphere]:
 ```python
 Sphere(...)
 ```
 
-## Tetrahedron
+## [Tetrahedron](/content/python-api/objects/tetrahedron)
 Create a [tetrahedron]:
 ```python
 Tetrahedron(...)
 ```
 
-## Text
-Write 3D [text]:
-```python
-Text(...)
-```
-
-## ThickLine
-Create a [thickline]:
-```python
-ThickLine(path, lineWidth, ...)
-```
-
-## Torus
+## [Torus](/content/python-api/objects/torus)
 Create a [torus]:
 ```python
 Torus(...)
 ```
 
-## TorusKnot
-Create a [torusKnot]:
+## [TorusKnot](/content/python-api/objects/torus_knot)
+Create a [torus-knot]:
 ```python
 TorusKnot(...)
 ```
 
-## Triangle
+## [Triangle](/content/python-api/objects/triangle)
 Create a flat [triangle]:
 ```python
 Triangle(...)
 ```
 
-## Camera
-[camera]
-```python
-Camera(object_id, ...)
-```
+# All Objects
 
-## Card
+## [ARENA UI Card](/content/python-api/objects/arenaui_card)
 Create an [arenaui-card]
 ```python
 Card(...)
 ```
 
-## ButtonPanel
+## [ARENA UI ButtonPanel](/content/python-api/objects/arenaui_button_panel)
 Create an [arenaui-button-panel]
 ```python
 ButtonPanel(buttons=[Button(...), ...], ...)
 ```
 
-## Prompt
+## [ARENA UI Prompt](/content/python-api/objects/arenaui_prompt)
 Create an [arenaui-prompt]
 ```python
 Prompt(...)
 ```
 
+## [Camera](/content/python-api/objects/camera)
+[camera]
+```python
+Camera(object_id, ...)
+```
+
+## [GLTF](/content/python-api/objects/gltf_model)
+Create a [gltf] 3D model:
+```python
+GLTF(url, ...)
+```
+
+## [Hands](/content/python-api/objects/hand_left)
+[hands]
+```python
+HandLeft(object_id, ...)
+HandRight(object_id, ...)
+```
+
+## [Image](/content/python-api/objects/image)
+Create a flat [image]:
+```python
+Image(url, ...)
+```
+
+## [Light](/content/python-api/objects/light)
+Create a [light]:
+```python
+Light(...)
+```
+
+## [Line](/content/python-api/objects/line)
+Create a thin [line]:
+```python
+Line(start, end, ...)
+```
+
+## [Ocean](/content/python-api/objects/ocean)
+Create an animated [ocean] plane:
+```python
+Ocean(...)
+```
+
+## [Point Cloud](/content/python-api/objects/pcd_model)
+Create a [pcd] model:
+```python
+PcdModel(url, ...)
+```
+
+## [Gaussian Splat](/content/python-api/objects/gaussian_splatting)
+Create a Gaussian [splat] model:
+```python
+GaussianSplatting(src, ...)
+```
+
+## [Text](/content/python-api/objects/text)
+Write 3D [text]:
+```python
+Text(value, ...)
+```
+
+## [THREE.js Scene](/content/python-api/objects/threejs_scene)
+Create a [three-js] scene model:
+```python
+ThreejsScene(url, ...)
+```
+
+## [ThickLine](/content/python-api/objects/thickline)
+Create a [thick-line]:
+```python
+ThickLine(path, lineWidth, ...)
+```
+
+## [Videosphere](/content/python-api/objects/videosphere)
+Create a [videosphere]:
+```python
+Videosphere(src, ...)
+```
 
 ## Generic Object
 For objects that might not exist yet (but may exist in AFRAME). Inherit from this class to create custom objects.
@@ -251,14 +301,14 @@ Object(object_type, ...)
 [pcd]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/pcd.py
 [plane]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/plane.py
 [ring]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ring.py
-[roundedbox]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/roundedbox.py
+[rounded-box]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/roundedbox.py
 [sphere]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/sphere.py
 [splat]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/splat.py
 [tetrahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/tetrahedron.py
 [text]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/text.py
-[thickline]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/thickline.py
-[threejs]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/threejs_scene.py
+[thick-line]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/thickline.py
+[three-js]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/threejs_scene.py
 [torus]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus.py
-[torusKnot]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus_knot.py
+[torus-knot]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus_knot.py
 [triangle]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/triangle.py
 [videosphere]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/videosphere.py
