@@ -80,97 +80,97 @@ that `Object`'s position in the original arena-py program will automatically be 
 ## [Box](/content/python-api/objects/box)
 Create a [box]:
 ```python
-Box(...)
+Box(material, ...)
 ```
 
 ## [Capsule](/content/python-api/objects/capsule)
 Create a [capsule]:
 ```python
-Capsule(...)
+Capsule(material, ...)
 ```
 
 ## [Circle](/content/python-api/objects/circle)
 Create a flat [circle]:
 ```python
-Circle(...)
+Circle(material, ...)
 ```
 
 ## [Cone](/content/python-api/objects/cone)
 Create a [cone]:
 ```python
-Cone(...)
+Cone(material, ...)
 ```
 
 ## [Cylinder](/content/python-api/objects/cylinder)
 Create a [cylinder]:
 ```python
-Cylinder(...)
+Cylinder(material, ...)
 ```
 
 ## [Dodecahedron](/content/python-api/objects/dodecahedron)
 Create a [dodecahedron]:
 ```python
-Dodecahedron(...)
+Dodecahedron(material, ...)
 ```
 
 ## [Icosahedron](/content/python-api/objects/icosahedron)
 Create an [icosahedron]:
 ```python
-Icosahedron(...)
+Icosahedron(material, ...)
 ```
 
 ## [Octahedron](/content/python-api/objects/octahedron)
 Create an [octahedron]:
 ```python
-Octahedron(...)
+Octahedron(material, ...)
 ```
 
 ## [Plane](/content/python-api/objects/plane)
 Create a flat [plane]:
 ```python
-Plane(...)
+Plane(material, ...)
 ```
 
 ## [Ring](/content/python-api/objects/ring)
 Create a flat [ring]:
 ```python
-Ring(...)
+Ring(material, ...)
 ```
 
 ## [Rounded Box](/content/python-api/objects/roundedbox)
 Create a [rounded-box]:
 ```python
-Roundedbox(...)
+Roundedbox(material, ...)
 ```
 
 ## [Sphere](/content/python-api/objects/sphere)
 Create a [sphere]:
 ```python
-Sphere(...)
+Sphere(material, ...)
 ```
 
 ## [Tetrahedron](/content/python-api/objects/tetrahedron)
 Create a [tetrahedron]:
 ```python
-Tetrahedron(...)
+Tetrahedron(material, ...)
 ```
 
 ## [Torus](/content/python-api/objects/torus)
 Create a [torus]:
 ```python
-Torus(...)
+Torus(material, ...)
 ```
 
 ## [TorusKnot](/content/python-api/objects/torus_knot)
 Create a [torus-knot]:
 ```python
-TorusKnot(...)
+TorusKnot(material, ...)
 ```
 
 ## [Triangle](/content/python-api/objects/triangle)
 Create a flat [triangle]:
 ```python
-Triangle(...)
+Triangle(material, ...)
 ```
 
 # All Objects
@@ -178,19 +178,19 @@ Triangle(...)
 ## [ARENA UI Card](/content/python-api/objects/arenaui_card)
 Create an [arenaui-card]
 ```python
-Card(...)
+Card(title, body, ...)
 ```
 
 ## [ARENA UI ButtonPanel](/content/python-api/objects/arenaui_button_panel)
 Create an [arenaui-button-panel]
 ```python
-ButtonPanel(buttons=[Button(...), ...], ...)
+ButtonPanel(title, buttons=[Button(...), ...], ...)
 ```
 
 ## [ARENA UI Prompt](/content/python-api/objects/arenaui_prompt)
 Create an [arenaui-prompt]
 ```python
-Prompt(...)
+Prompt(title, description, ...)
 ```
 
 ## [Camera](/content/python-api/objects/camera)
@@ -215,31 +215,31 @@ HandRight(object_id, ...)
 ## [Image](/content/python-api/objects/image)
 Create a flat [image]:
 ```python
-Image(url, ...)
+Image(url, width, height,...)
 ```
 
 ## [Light](/content/python-api/objects/light)
 Create a [light]:
 ```python
-Light(...)
+Light(color, ...)
 ```
 
 ## [Line](/content/python-api/objects/line)
 Create a thin [line]:
 ```python
-Line(start, end, ...)
+Line(start, end, color, ...)
 ```
 
 ## [Ocean](/content/python-api/objects/ocean)
 Create an animated [ocean] plane:
 ```python
-Ocean(...)
+Ocean(color, ...)
 ```
 
 ## [Point Cloud](/content/python-api/objects/pcd_model)
 Create a [pcd] model:
 ```python
-PcdModel(url, ...)
+PcdModel(url, pointColor, ...)
 ```
 
 ## [Gaussian Splat](/content/python-api/objects/gaussian_splatting)
@@ -251,7 +251,7 @@ GaussianSplatting(src, ...)
 ## [Text](/content/python-api/objects/text)
 Write 3D [text]:
 ```python
-Text(value, ...)
+Text(value, color, ...)
 ```
 
 ## [THREE.js Scene](/content/python-api/objects/threejs_scene)
@@ -263,13 +263,13 @@ ThreejsScene(url, ...)
 ## [ThickLine](/content/python-api/objects/thickline)
 Create a [thick-line]:
 ```python
-ThickLine(path, lineWidth, ...)
+ThickLine(path, lineWidth, color, ...)
 ```
 
 ## [Videosphere](/content/python-api/objects/videosphere)
 Create a [videosphere]:
 ```python
-Videosphere(src, ...)
+Videosphere(src, material, ...)
 ```
 
 ## Generic Object
