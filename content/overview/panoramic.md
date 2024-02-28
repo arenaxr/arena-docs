@@ -42,7 +42,7 @@ Setup a scene where the 360 video stream encompasses the entire world, and while
        "object_type": "videosphere",
        "position": { "x": 0, "y": 0, "z": 0 },
        "rotation": { "x": 0, "y": 0, "z": 0, "w": 1 },
-       "radius": 5000,
+       "radius": 500,
        "jitsi-video": { "displayName": "360 cam" }
      }
    }
