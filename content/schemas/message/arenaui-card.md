@@ -46,6 +46,7 @@ ARENAUI Card Panel Attributes
 |closeButton|boolean|```False```|Show close button|No|
 |font|string; One of: ```['Roboto', 'Roboto-Mono']```|```'Roboto'```|Font to use for button text.|No|
 |theme|string; One of: ```['light', 'dark']```|```'light'```|Color Theme|No|
+|materialSides|string; One of: ```['both', 'front']```|```'both'```|Which sides display the rendered UI material|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)||3D object position.|Yes|
 |rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|

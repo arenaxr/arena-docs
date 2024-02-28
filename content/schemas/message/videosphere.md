@@ -36,8 +36,8 @@ Videosphere Attributes
 |autoplay|boolean|```True```|Autoplay|No|
 |crossOrigin|string|```'anonymous'```|Cross Origin|No|
 |loop|boolean|```True```|Loop|No|
-|radius|number|```5000```|Radius|Yes|
-|segmentsHeight|integer|```64```|Segments Height|No|
+|radius|number|```500```|Radius|Yes|
+|segmentsHeight|integer|```32```|Segments Height|No|
 |segmentsWidth|integer|```64```|Segments Width|No|
 |src|string||URI, relative or full path of an image/video file. e.g. 'store/users/wiselab/images/360falls.mp4'.|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
