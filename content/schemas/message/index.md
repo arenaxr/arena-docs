@@ -47,6 +47,7 @@ has_toc: false
 |[Triangle](triangle)|Triangle Geometry.|
 |[Videosphere](videosphere)|Videosphere 360 Video.|
 |[Camera](camera)|Camera is the pose and arena-user component data representing a user avatar.|
+|[Camera Override](arena-override)|Camera Override is used to re-position and re-pose a client's camera.|
 |[Event](event)|Events are ephemeral messages used to send user events like mouse movements or controller actions.|
 |[Hand Left](hand)|Hand Left is the left hand metadata pose and controller type of the user avatar.|
 |[Hand Right](hand)|Hand Right is the right hand metadata pose and controller type of the user avatar.|
