@@ -22,7 +22,7 @@ The following table summarizes the browsers, platforms and support for ARENA's c
 | Chrome ([details/settings](#chrome-android-and-more)) <sup>android</sup>    | Mobile/Tablet (Android) and desktop             | <span style="color:green">Supported</span>                                    |
 | Mozilla Firefox                                                             | Mobile/Tablet (Android) and desktop<sup>2</sup> | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
 | Microsoft Edge ([details/settings](#edge))                                  | Mobile/Tablet, desktop and HoloLens             | <span style="color:green">Supported</span>                                    |
-| Safari                                                                      | Mobile/Tablet, Desktop<sup>2</sup>              | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
+| Safari ([details/settings](#safari--visionos))                              | Mobile/Tablet, Desktop and AVP<sup>2</sup>      | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
 | Oculus Browser ([details/settings](#oculus-browser-quest-quest-2-and-more)) | Oculus headsets (e.g. Quest, Quest 2)           | <span style="color:red">Not supported</span>                                  |
 | Helio ([details/settings](#oculus-browser-quest-quest-2-and-more))          | Magic Leap                                      | <span style="color:green">Supported</span>                                    |
 
@@ -87,3 +87,11 @@ Helio is Magic Leap's web browser available on Magic Leap devices. Follow [these
 > 4. Press the trigger on the Control to select the URL bar. A virtual keyboard appears that you can use to enter a URL address. You can also use Magic Leap Mobile App to enter text from your mobile device. See [Magic Leap Mobile App for more information](https://ml1-developer.magicleap.com/en-us/learn/guides/magic-leap-mobile-app).
 >
 > 5. Enter this page's URL and see it display on the Magic Leap device.
+
+### Safari & visionOS
+
+WebXR is not supported by default on Safari, but for the Apple Vision Pro (AVP) as least, there are several flags users must enable to get experimental WebXR support.
+
+- [https://appleinsider.com/inside/apple-vision-pro/tips/how-to-enable-webxr-support-on-apple-vision-pro](https://appleinsider.com/inside/apple-vision-pro/tips/how-to-enable-webxr-support-on-apple-vision-pro)
+
+{% include alert type="warning" title="AVP Warning" content="Currently the AVP is expressing device orientation rotated incorrectly through A-Frame. The z-axis is off by 90 degrees. Stay tuned here for updates..." %}

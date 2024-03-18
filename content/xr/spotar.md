@@ -1,7 +1,7 @@
 ---
 title: Spot AR
 nav_order: 4.5
-layout: default
+layout: tutorial
 parent: XR Experiences
 ---
 
