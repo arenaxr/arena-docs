@@ -8,7 +8,12 @@ layout: default
 
 ## Publications
 
-- [ARENA system paper](https://users.ece.cmu.edu/~agr/resources/publications/ARENA_ISMAR_21.pdf), ISMAR 2021
+- Jin, T., Dasari, M., Smith, C., Apicharttrisorn, K., Seshan, S., & Rowe, A. (2024). **MeshReduce: Scalable and Bandwidth Efficient 3D Scene Capture**. _2024 IEEE Conference Virtual Reality and 3D User Interfaces (VR)_. [(PDF)](https://users.ece.cmu.edu/~agr/resources/publications/IEEE_VR_MeshReduce_24.pdf) [BibTeX](https://wise.ece.cmu.edu/bibliography/meshreduce.html)
+- Jin, T., and Wu, S., Dasari, M., Apicharttrisorn, K., & Rowe, A. (2024). **StageAR: Markerless Mobile Phone Localization for AR in Live Events**. _2024 IEEE Conference Virtual Reality and 3D User Interfaces (VR)_. [(PDF)](https://users.ece.cmu.edu/~agr/resources/publications/IEEE_VR_24_StageAR.pdf) [BibTeX](https://wise.ece.cmu.edu/bibliography/stagear.html)
+- Lu, E., Bharadwaj, S., Dasari, M., Smith, C., Seshan, S., & Rowe, A. (2023). **RenderFusion: Balancing Local and Remote Rendering for Interactive 3D Scenes**. _2023 International Symposium on Mixed and Augmented Reality (ISMAR)_. [BibTeX](https://wise.ece.cmu.edu/bibliography/renderfusion.html)
+- Dasari, M., Lu, E., Farb, M. W., Pereira, N., Liang, I., & Rowe, A. (2023). **Scaling VR Video Conferencing**. _2023 International Conference on Virtual Reality and 3D User Interfaces (VR)_. [BibTeX](https://wise.ece.cmu.edu/bibliography/scaling_video_conf.html)
+- Pereira, N., Rowe, A., Farb, M., Liang, I., Lu, E., & Riebling, E. (2021). **ARENA: The Augmented Reality Edge Networking Architecture**. _2021 International Symposium on Mixed and Augmented Reality (ISMAR)_. [(PDF)](https://users.ece.cmu.edu/~agr/resources/publications/ARENA_ISMAR_21.pdf) [BibTeX](https://wise.ece.cmu.edu/bibliography/ARENA_ismar_21.html)
+
 
 ## ARENA Usage Links
 
