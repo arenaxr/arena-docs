@@ -19,16 +19,15 @@ The following table summarizes the browsers, platforms and support for ARENA's c
 | --------------------------------------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------------- |
 | XR Browser ([details/settings](#xr-browser-ios)) <sup>ios</sup>             | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>                                    |
 | Mozilla WebXR Viewer ([details/settings](#webxr-viewer-ios))                | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>                                    |
-| Chrome ([details/settings](#chrome-android-and-more)) <sup>android</sup>    | Mobile/Tablet (Android) and desktop             | <span style="color:green">Supported</span><sup>2</sup>                        |
-| Mozilla Firefox                                                             | Mobile/Tablet (Android) and desktop<sup>3</sup> | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
+| Chrome ([details/settings](#chrome-android-and-more)) <sup>android</sup>    | Mobile/Tablet (Android) and desktop             | <span style="color:green">Supported</span>                                    |
+| Mozilla Firefox                                                             | Mobile/Tablet (Android) and desktop<sup>2</sup> | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
 | Microsoft Edge ([details/settings](#edge))                                  | Mobile/Tablet, desktop and HoloLens             | <span style="color:green">Supported</span>                                    |
-| Safari                                                                      | Mobile/Tablet, Desktop<sup>3</sup>              | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
+| Safari                                                                      | Mobile/Tablet, Desktop<sup>2</sup>              | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
 | Oculus Browser ([details/settings](#oculus-browser-quest-quest-2-and-more)) | Oculus headsets (e.g. Quest, Quest 2)           | <span style="color:red">Not supported</span>                                  |
 | Helio ([details/settings](#oculus-browser-quest-quest-2-and-more))          | Magic Leap                                      | <span style="color:green">Supported</span>                                    |
 
 <sup>1</sup> ARENA Computer Vision pipeline support is required for optical markers, and it will, by default, process the default camera facing the environment in each different device (the back camera in phones/tablets and the front camera facing the environment on headsets).<br/>
-<sup>2</sup> Chrome Beta only.<br/>
-<sup>3</sup> Not enabled by default.<br/>
+<sup>2</sup> Not enabled by default.<br/>
 <sup>ios</sup> Preferred iOS Browser. Our fork of Mozilla's WebXR Viewer.<br/>
 <sup>android</sup> Preferred Android Browser.<br/>
 
@@ -40,9 +39,7 @@ This Browser is a fork of the experimental [Mozilla WebXR Viewer (XR version of 
 
 ### Chrome (Android, and more)
 
-Currently (December 2021), only [Chrome Beta](https://www.google.com/chrome/beta/) has experimental support for [WebXR's raw camera access](https://chromestatus.com/feature/5759984304390144), which is required for ARENA's computer vision processing pipeline. We expect this feature to be rolled over into the stable release soon.
-
-Ensure that the `chrome://flags/#webxr` (paste this into your URL bar) flag is enabled (since late 2019, Chrome v79, this should be enabled by default; please update chrome otherwise).
+Currently all Chrome releases, including Stable, support [WebXR's raw camera access](https://chromestatus.com/feature/5759984304390144), added in release 107, which is required for ARENA's computer vision processing pipeline.
 
 ### WebXR Viewer (iOS)
 
