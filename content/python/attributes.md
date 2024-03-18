@@ -266,7 +266,7 @@ clickable=True
 [material]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/material.py
 [model-update]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/modelUpdate.py
 [multisrc]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/multisrc.py
-[parent]: https://github.com/arenaxr/arena-py/blob/master/examples/earth-moon.py
+[parent]: https://github.com/arenaxr/arena-py/blob/master/examples/simple/earth-moon.py
 [position]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/position.py
 [rotation]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/rotation.py
 [scale]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/scale.py

@@ -282,7 +282,7 @@ Object(object_type, ...)
 [arenaui-card]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
 [arenaui-prompt]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ui.py
 [box]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/box.py
-[camera]: https://github.com/arenaxr/arena-py/blob/master/examples/camera-print.py
+[camera]: https://github.com/arenaxr/arena-py/blob/master/examples/simple/camera-print.py
 [capsule]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/capsule.py
 [circle]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/circle.py
 [cone]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/cone.py
@@ -297,7 +297,7 @@ Object(object_type, ...)
 [line]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/line.py
 [ocean]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ocean.py
 [octahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/octahedron.py
-[parent]: https://github.com/arenaxr/arena-py/blob/master/examples/earth-moon.py
+[parent]: https://github.com/arenaxr/arena-py/blob/master/examples/simple/earth-moon.py
 [pcd]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/pcd.py
 [plane]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/plane.py
 [ring]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ring.py

@@ -564,7 +564,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [p-blip]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/blip.py
 [p-box-collision]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/box_collision.py
 [p-box]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/box.py
-[p-camera]: https://github.com/arenaxr/arena-py/blob/master/examples/camera-print.py
+[p-camera]: https://github.com/arenaxr/arena-py/blob/master/examples/simple/camera-print.py
 [p-capsule]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/capsule.py
 [p-circle]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/circle.py
 [p-clickable]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/clickable.py
@@ -597,7 +597,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [p-null]: /content/python/objects#removing-object-attributes
 [p-ocean]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ocean.py
 [p-octahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/octahedron.py
-[p-parent]: https://github.com/arenaxr/arena-py/blob/master/examples/earth-moon.py
+[p-parent]: https://github.com/arenaxr/arena-py/blob/master/examples/simple/earth-moon.py
 [p-pcd]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/pcd.py
 [p-plane]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/plane.py
 [p-position]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/position.py
