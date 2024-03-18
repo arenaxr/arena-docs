@@ -15,16 +15,16 @@ Additionally, and to prototype the needs for future browser platforms, we are al
 
 The following table summarizes the browsers, platforms and support for ARENA's capabilities. Where available, the **details/settings** link provides more details about the specific Browser and platforms.
 
-| Browser                                           | XR Experiences (WebXR support)                  | ARENA CV (Optical Markers)<sup>1</sup>                                        |
-| ------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------ |
-| XR Browser ([details/settings](#xr-browser-ios)) <sup>ios</sup>             | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>             |
-| Mozilla WebXR Viewer ([details/settings](#webxr-viewer-ios)) | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>             |
-| Chrome ([details/settings](#chrome-android-and-more)) <sup>android</sup>    | Mobile/Tablet (Android) and desktop             | <span style="color:green">Supported</span><sup>2</sup>  |
-| Mozilla Firefox                                   | Mobile/Tablet (Android) and desktop<sup>3</sup> | <span style="color:red">Not supported</span>           |
-| Microsoft Edge ([details/settings](#edge))                                   | Mobile/Tablet, desktop and HoloLens         | <span style="color:green">Supported</span>           |
-| Safari                                            | Desktop<sup>3</sup>                             | <span style="color:red">Not supported</span>           |
-| Oculus Browser ([details/settings](#oculus-browser-quest-quest-2-and-more))                                    | Oculus headsets (e.g. Quest, Quest 2)           | <span style="color:red">Not supported</span>           |
-| Helio ([details/settings](#oculus-browser-quest-quest-2-and-more))                                            | Magic Leap                                      | <span style="color:green">Supported</span>             |
+| Browser                                                                     | XR Experiences (WebXR support)                  | ARENA CV (Optical Markers)<sup>1</sup>                                        |
+| --------------------------------------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------------- |
+| XR Browser ([details/settings](#xr-browser-ios)) <sup>ios</sup>             | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>                                    |
+| Mozilla WebXR Viewer ([details/settings](#webxr-viewer-ios))                | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>                                    |
+| Chrome ([details/settings](#chrome-android-and-more)) <sup>android</sup>    | Mobile/Tablet (Android) and desktop             | <span style="color:green">Supported</span><sup>2</sup>                        |
+| Mozilla Firefox                                                             | Mobile/Tablet (Android) and desktop<sup>3</sup> | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
+| Microsoft Edge ([details/settings](#edge))                                  | Mobile/Tablet, desktop and HoloLens             | <span style="color:green">Supported</span>                                    |
+| Safari                                                                      | Mobile/Tablet, Desktop<sup>3</sup>              | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
+| Oculus Browser ([details/settings](#oculus-browser-quest-quest-2-and-more)) | Oculus headsets (e.g. Quest, Quest 2)           | <span style="color:red">Not supported</span>                                  |
+| Helio ([details/settings](#oculus-browser-quest-quest-2-and-more))          | Magic Leap                                      | <span style="color:green">Supported</span>                                    |
 
 <sup>1</sup> ARENA Computer Vision pipeline support is required for optical markers, and it will, by default, process the default camera facing the environment in each different device (the back camera in phones/tablets and the front camera facing the environment on headsets).<br/>
 <sup>2</sup> Chrome Beta only.<br/>
@@ -50,8 +50,8 @@ While we recommend using [XR Browser](https://apps.apple.com/us/app/xr-browser/i
 
 Mozilla's WebXR Viewer viewer can be installed from the [App Store](https://apps.apple.com/us/app/webxr-viewer/id1295998056). After installing WebXR Viewer, go to 'Settings -> XRViewer' and change:
 
-* **WebXR Polyfill URL:** ```https://arenaxr.org/webxrios.js``` or ```https://arenaxr.org/vendor/webxr-webxrviewer-ios.js```
-* **Always Allow World Sensing:** ```Yes```
+- **WebXR Polyfill URL:** `https://arenaxr.org/webxrios.js` or `https://arenaxr.org/vendor/webxr-webxrviewer-ios.js`
+- **Always Allow World Sensing:** `Yes`
 
 ![img](/assets/img/xr/webxrviewer-settings.png)
 
@@ -63,18 +63,16 @@ Recent versions of [Microsoft Edge adopted the Chromium open source project on t
 
 These are some quick instructions to start using ARENA on HoloLens' Edge Browser:
 
-
-
-
-
 ### Oculus Browser (Quest, Quest 2 and more)
 
-To try ARENA in VR, you can use the Oculus Browser (*tested on the Quest 2*) and enter the scene URL. Be patient while the scene loads and the:
+To try ARENA in VR, you can use the Oculus Browser (_tested on the Quest 2_) and enter the scene URL. Be patient while the scene loads and the:
+
 1. Click "Enter" on the normal AV dialog box
 2. Unmute mic BEFORE entering VR
 3. Click the <button type="button" name="button" class="btn fs-3 ">VR</button> button in the lower right to enter immersive mode
 
 ##### Moving around:
+
 A forward push on the left-hand rocker brings up the teleportation ring. Clicking the rocker left and right rotates.
 
 <img src="/assets/img/xr/quest-2.png" width="500"/>

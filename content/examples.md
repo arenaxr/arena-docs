@@ -124,7 +124,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Sound                     |         [![][i-sound]][i-sound]         | Positional sound is thus affected by the component's position                            | [Attribute:][obja]         [Schema][s-sound]         [Message][m-sound]         [Python][p-sound]                                     |
 | Speed                     |    [![][i-speed-fast]][i-speed-fast]    | The user setting defining how fast to move when using Navigation Keys                    | [User:][user]                                                                                             [Tutorial][t-usercrtl]      |
 | Sphere                    |        [![][i-sphere]][i-sphere]        | Sphere Geometry                                                                          | [Object:][obj3]            [Schema][s-sphere]                                   [Python][p-sphere]                                    |
-| Spot AR                   |       [![][i-spot-ar]][i-spot-ar]       | SpotAR is a mode for viewing AR-tagged content in restricted browsers (Safari)           | Application                                                                                                                           |
+| Spot AR                   |       [![][i-spot-ar]][i-spot-ar]       | SpotAR is a mode for viewing AR-tagged content in restricted browsers (Safari)           | Application                                                                                               [Tutorial][t-spotar]        |
 | Start/Spawn Position      |                                         | The scene options to control the variance of position to enter the scene                 | [Scene:][sopt]                                                                                            [Tutorial][t-spawn]         |
 | Tetrahedron               |   [![][i-tetrahedron]][i-tetrahedron]   | Tetrahedron Geometry                                                                     | [Object:][obj3]            [Schema][s-tetrahedron]                              [Python][p-tetrahedron]                               |
 | Text                      |          [![][i-text]][i-text]          | Display text                                                                             | [Object:][obj3]            [Schema][s-text]          [Message][m-text]          [Python][p-text]                                      |
@@ -664,6 +664,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [t-screenshare]: /content/interface/screenshare
 [t-settings]: /content/overview/user-guide#additional-settings
 [t-signin]: /content/overview/user-guide#signing-in
+[t-spotar]: /content/xr/spotar
 [t-spawn]: /content/3d-content/mesh-nav#navmesh-snapping-via-landmark-teleports-or-starting-positions
 [t-ui-buttons]: /content/3d-content/ui#arenaui-button-panel
 [t-ui-card]: /content/3d-content/ui#arenaui-card---a-text-and-image-panel
