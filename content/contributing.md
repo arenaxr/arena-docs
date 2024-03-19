@@ -6,11 +6,11 @@ layout: default
 
 # Contributing to ARENA
 
-Thanks for your willingness to help improve our flexible, programmatic, mixed-reality platform! ARENA is a project led by <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>, under the [CONIX Research Center](https://conix.io/), a collaboration between six US-based universities. This guide will help you find the right path to contribute. Feel free to join the [ARENA CONIX slack](https://join.slack.com/t/arena-conix/shared_invite/zt-oq8fmgdc-QWZ414mJdfOaWfb_p2lPRg) and ask us questions.
+Thanks for your willingness to help improve our flexible, programmatic, mixed-reality platform! ARENA is a project led by <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>, a project of the [CONIX Research Center](https://conix.io/), a collaboration between six US-based universities. This guide will help you find the right path to contribute. Feel free to join the [ARENA CONIX slack](https://join.slack.com/t/arena-conix/shared_invite/zt-oq8fmgdc-QWZ414mJdfOaWfb_p2lPRg) and ask us questions.
 
 ## The Team
 
-ARENA development is lead by a team from <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>. Our team is composed of faculty, staff and several students and is continuously being strengthened. See our [GitHub](https://github.com/arenaxr/) for the list of contributors in each [repository](/content/source).
+Our team is composed of faculty, staff and several students and is continuously being strengthened. See our [GitHub](https://github.com/arenaxr/) for the list of contributors in each [repository](/content/source#arena-sources).
 
 ## Research Platform
 
