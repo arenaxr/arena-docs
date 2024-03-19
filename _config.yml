@@ -24,6 +24,10 @@ aux_links:
     - "https://arenaxr.org"
   "CMU":
     - "https://wise.ece.cmu.edu"
+  "Contact":
+    - "mailto:arenaxr@andrew.cmu.edu"
+  "Slack":
+    - "https://join.slack.com/t/arena-conix/shared_invite/zt-oq8fmgdc-QWZ414mJdfOaWfb_p2lPRg"
   "GitHub":
     - "https://github.com/arenaxr"
 footer_content: "Copyright &copy; 2020-2024, <a href='https://wise.ece.cmu.edu'>Carnegie Mellon University</a>. A project of the <a href='https://conix.io'>CONIX Research Center</a>."
