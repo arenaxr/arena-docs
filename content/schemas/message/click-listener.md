@@ -12,7 +12,7 @@ Click Listener
 ==============
 
 
-Object will listen for clicks.
+Object will listen for mouse events like clicks.
 
 Click Listener Attributes
 --------------------------

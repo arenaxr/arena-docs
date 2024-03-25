@@ -65,14 +65,14 @@ Light Attributes
 |scale|[scale](scale)||3D object scale.|No|
 |animation|[animation](animation)||Animate and tween values.|No|
 |armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|
-|click-listener|[click-listener](click-listener)||Object will listen for clicks.|No|
+|click-listener|[click-listener](click-listener)||Object will listen for mouse events like clicks.|No|
 |box-collision-listener|[box-collision-listener](box-collision-listener)||Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps.|No|
 |collision-listener|string||Name of the collision-listener, default can be empty string. Collisions trigger click events.|No|
 |blip|[blip](blip)||When the object is created or deleted, it will animate in/out of the scene instead of appearing/disappearing instantly. Must have a geometric mesh.|No|
 |static-body|[static-body](static-body)||A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions.|No|
 |dynamic-body|[dynamic-body](dynamic-body)||A freely-moving object. Dynamic bodies have mass, collide with other objects, bounce or slow during collisions, and fall if gravity is enabled.|No|
-|goto-landmark|[goto-landmark](goto-landmark)||Teleports user to the landmark with the given name; Requires click-listener.|No|
-|goto-url|[goto-url](goto-url)||Goto given URL; Requires click-listener.|No|
+|goto-landmark|[goto-landmark](goto-landmark)||Teleports user to the landmark with the given name. Requires click-listener.|No|
+|goto-url|[goto-url](goto-url)||Load new URL when object is clicked. Requires click-listener.|No|
 |hide-on-enter-ar|boolean; Must be: ```True```|```True```|Hide object when entering AR. Remove component to *not* hide.|No|
 |hide-on-enter-vr|boolean; Must be: ```True```|```True```|Hide object when entering VR. Remove component to *not* hide.|No|
 |show-on-enter-ar|boolean; Must be: ```True```|```True```|Show object when entering AR. Hidden otherwise.|No|
@@ -80,12 +80,12 @@ Light Attributes
 |impulse|[impulse](impulse)||Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires click-listener and physics.|No|
 |landmark|[landmark](landmark)||Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists).|No|
 |material-extras|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order.|No|
-|shadow|[shadow](shadow)||shadow|No|
+|shadow|[shadow](shadow)||The shadow component enables shadows for an entity and its children. Adding the shadow component alone is not enough to display shadows in your scene. We must have at least one light with castShadow: true enabled.|No|
 |sound|[sound](sound)||The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position.|No|
 |textinput|[textinput](textinput)||Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.|No|
 |url|string||Use File Store paths under 'store/users/username', see CDN and other storage options in the description above.|No|
 |remote-render|[remote-render](remote-render)||Whether or not an object should be remote rendered [Experimental].|No|
-|video-control|[video-control](video-control)||Video Control.|No|
+|video-control|[video-control](video-control)||Adds a video to an entity and controls its playback.|No|
 |attribution|[attribution](attribution)||Attribution Component. Saves attribution data in any entity.|No|
 |spe-particles|[spe-particles](spe-particles)||GPU based particle systems in A-Frame.|No|
 |look-at|string||The look-at component defines the behavior for an entity to dynamically rotate or face towards another entity or position. Use '#my-camera' to face the user camera, otherwise can take either a vec3 position or a query selector to another entity.|No|

@@ -12,7 +12,7 @@ Video
 =====
 
 
-Video Control.
+Adds a video to an entity and controls its playback.
 
 Video Attributes
 -----------------
