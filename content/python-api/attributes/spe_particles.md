@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#SpeParticles"></a>
     
             <div class="docstring"><p>SpeParticles attribute class to manage its properties in the ARENA: GPU based particle systems in A-Frame. More properties at <a href="https://github.com/harlyq/aframe-spe-particles-component">https://github.com/harlyq/aframe-spe-particles-component</a> A-Frame SPE Particles component.
-Usage: spe_particles=SpeParticles(...)</p>
+Usage: <code>spe_particles=SpeParticles(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 
@@ -130,7 +130,7 @@ Usage: spe_particles=SpeParticles(...)</p>
     <a class="headerlink" href="#Particles"></a>
     
             <div class="docstring"><p>Alternate name for SpeParticles.
-Usage: spe_particles=Particles(...)</p>
+Usage: <code>spe_particles=Particles(...)</code></p>
 </div>
 
 

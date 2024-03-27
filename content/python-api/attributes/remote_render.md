@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#RemoteRender"></a>
     
             <div class="docstring"><p>RemoteRender attribute class to manage its properties in the ARENA: Whether or not an object should be remote rendered [Experimental].
-Usage: remote_render=RemoteRender(...)</p>
+Usage: <code>remote_render=RemoteRender(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

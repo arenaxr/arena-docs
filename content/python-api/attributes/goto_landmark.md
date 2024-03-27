@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#GotoLandmark"></a>
     
             <div class="docstring"><p>GotoLandmark attribute class to manage its properties in the ARENA: Teleports user to the landmark with the given name. Requires click-listener.
-Usage: goto_landmark=GotoLandmark(...)</p>
+Usage: <code>goto_landmark=GotoLandmark(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

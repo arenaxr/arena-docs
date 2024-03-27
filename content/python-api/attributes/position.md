@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Position"></a>
     
             <div class="docstring"><p>Position attribute class to manage its properties in the ARENA: 3D object position.
-Usage: position=Position(...)</p>
+Usage: <code>position=Position(...)</code> or <code>position=Position(x,y,z)</code> or <code>position=(x,y,z)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

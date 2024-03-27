@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Material"></a>
     
             <div class="docstring"><p>Material attribute class to manage its properties in the ARENA: The material properties of the object's surface. More properties at <a href="https://aframe.io/docs/1.5.0/components/material.html">https://aframe.io/docs/1.5.0/components/material.html</a> A-Frame Material.
-Usage: material=Material(...)</p>
+Usage: <code>material=Material(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

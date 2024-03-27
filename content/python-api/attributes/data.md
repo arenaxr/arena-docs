@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Data"></a>
     
             <div class="docstring"><p>Data attribute class to manage its properties in the ARENA: Wraps all attributes in JSON.
-Usage: data=Data(...)</p>
+Usage: <code>data=Data(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

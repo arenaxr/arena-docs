@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Rotation"></a>
     
             <div class="docstring"><p>Rotation attribute class to manage its properties in the ARENA: 3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.
-Usage: rotation=Rotation(...)</p>
+Usage: <code>rotation=Rotation(...)</code> or <code>rotation=Rotation(x,y,z,w)</code> or <code>rotation=Rotation(x,y,z)</code> or <code>rotation=(x,y,z,w)</code> or <code>rotation=(x,y,z)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#ModelUpdate"></a>
     
             <div class="docstring"><p>ModelUpdate attribute class to manage its properties in the ARENA: The GLTF-specific <code>modelUpdate</code> attribute is an object with child component names as keys. The top-level keys are the names of the child components to be updated. The values of each are nested <code>position</code> and <code>rotation</code> attributes to set as new values, respectively. Either <code>position</code> or <code>rotation</code> can be omitted if unchanged.
-Usage: modelUpdate=ModelUpdate(...)</p>
+Usage: <code>modelUpdate=ModelUpdate(...)</code></p>
 </div>
 
 

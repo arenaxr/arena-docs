@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Animation"></a>
     
             <div class="docstring"><p>Animation attribute class to manage its properties in the ARENA: Animate and tween values. More properties at <a href="https://aframe.io/docs/1.5.0/components/animation.html">https://aframe.io/docs/1.5.0/components/animation.html</a> A-Frame Animation component. Easing properties are detailed at <a href="https://easings.net">https://easings.net</a> easings.net.
-Usage: animation=Animation(...)</p>
+Usage: <code>animation=Animation(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

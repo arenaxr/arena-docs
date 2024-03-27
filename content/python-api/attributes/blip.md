@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Blip"></a>
     
             <div class="docstring"><p>Blip attribute class to manage its properties in the ARENA: When the object is created or deleted, it will animate in/out of the scene instead of appearing/disappearing instantly. Must have a geometric mesh.
-Usage: blip=Blip(...)</p>
+Usage: <code>blip=Blip(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Attribution"></a>
     
             <div class="docstring"><p>Attribution attribute class to manage its properties in the ARENA: Attribution Component. Saves attribution data in any entity.
-Usage: attribution=Attribution(...)</p>
+Usage: <code>attribution=Attribution(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Impulse"></a>
     
             <div class="docstring"><p>Impulse attribute class to manage its properties in the ARENA: Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires click-listener and physics.
-Usage: impulse=Impulse(...)</p>
+Usage: <code>impulse=Impulse(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

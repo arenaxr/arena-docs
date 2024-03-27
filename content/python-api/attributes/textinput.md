@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Textinput"></a>
     
             <div class="docstring"><p>Textinput attribute class to manage its properties in the ARENA: Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.
-Usage: textinput=Textinput(...)</p>
+Usage: <code>textinput=Textinput(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 
@@ -74,7 +74,7 @@ Usage: textinput=Textinput(...)</p>
     <a class="headerlink" href="#TextInput"></a>
     
             <div class="docstring"><p>Alternate name for Textinput.
-Usage: textinput=TextInput(...)</p>
+Usage: <code>textinput=TextInput(...)</code></p>
 </div>
 
 

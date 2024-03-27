@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Armarker"></a>
     
             <div class="docstring"><p>Armarker attribute class to manage its properties in the ARENA: A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.
-Usage: armarker=Armarker(...)</p>
+Usage: <code>armarker=Armarker(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

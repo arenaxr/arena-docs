@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#DynamicBody"></a>
     
             <div class="docstring"><p>DynamicBody attribute class to manage its properties in the ARENA: A freely-moving object. Dynamic bodies have mass, collide with other objects, bounce or slow during collisions, and fall if gravity is enabled. More properties at <a href="https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md">https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md</a> A-Frame Physics System.
-Usage: dynamic_body=DynamicBody(...)</p>
+Usage: <code>dynamic_body=DynamicBody(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 
@@ -77,7 +77,7 @@ Usage: dynamic_body=DynamicBody(...)</p>
     <a class="headerlink" href="#Physics"></a>
     
             <div class="docstring"><p>Alternate name for DynamicBody.
-Usage: dynamic_body=Physics(...) or physics=Physics(...)</p>
+Usage: <code>physics=Physics(...)</code></p>
 </div>
 
 

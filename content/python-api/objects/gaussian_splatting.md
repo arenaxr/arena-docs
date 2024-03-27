@@ -25,7 +25,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#GaussianSplatting"></a>
     
-            <div class="docstring"><p>GaussianSplatting object class to manage its properties in the ARENA: Load a 3D Gaussian Splat for Real-Time Radiance Field Rendering. More information : <a href="https://github.com/quadjr/aframe-gaussian-splatting">https://github.com/quadjr/aframe-gaussian-splatting</a> A-Frame Gaussian Splatting. See guidance to store paths under <a href="https://docs.arenaxr.org/content/interface/filestore.html">https://docs.arenaxr.org/content/interface/filestore.html</a> ARENA File Store, CDN, or DropBox.</p>
+            <div class="docstring"><p>GaussianSplatting object class to manage its properties in the ARENA: Load a 3D Gaussian Splat for Real-Time Radiance Field Rendering. More information: <a href="https://github.com/quadjr/aframe-gaussian-splatting">https://github.com/quadjr/aframe-gaussian-splatting</a> A-Frame Gaussian Splatting. See guidance to store paths under <a href="https://docs.arenaxr.org/content/interface/filestore.html">https://docs.arenaxr.org/content/interface/filestore.html</a> ARENA File Store, CDN, or DropBox.</p>
 
 <h6 id="parameters">Parameters</h6>
 

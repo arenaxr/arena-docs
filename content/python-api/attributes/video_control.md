@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#VideoControl"></a>
     
             <div class="docstring"><p>VideoControl attribute class to manage its properties in the ARENA: Adds a video to an entity and controls its playback.
-Usage: video_control=VideoControl(...)</p>
+Usage: <code>video_control=VideoControl(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

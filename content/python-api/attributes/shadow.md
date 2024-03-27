@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Shadow"></a>
     
             <div class="docstring"><p>Shadow attribute class to manage its properties in the ARENA: The shadow component enables shadows for an entity and its children. Adding the shadow component alone is not enough to display shadows in your scene. We must have at least one light with castShadow: true enabled.
-Usage: shadow=Shadow(...)</p>
+Usage: <code>shadow=Shadow(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

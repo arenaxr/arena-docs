@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Multisrc"></a>
     
             <div class="docstring"><p>Multisrc attribute class to manage its properties in the ARENA: Define multiple visual sources applied to an object.
-Usage: multisrc=Multisrc(...)</p>
+Usage: <code>multisrc=Multisrc(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

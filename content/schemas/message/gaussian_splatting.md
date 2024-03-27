@@ -14,7 +14,7 @@ grand_parent: ARENA Objects
 
 Load a 3D Gaussian Splat for Real-Time Radiance Field Rendering.
 
-More information : <a href='https://github.com/quadjr/aframe-gaussian-splatting'>A-Frame Gaussian Splatting</a>. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.
+More information: <a href='https://github.com/quadjr/aframe-gaussian-splatting'>A-Frame Gaussian Splatting</a>. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.
 
 All wire objects have a set of basic attributes ```{object_id, action, type, persist, data}```. The ```data``` attribute defines the object-specific attributes
 

@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Scale"></a>
     
             <div class="docstring"><p>Scale attribute class to manage its properties in the ARENA: 3D object scale.
-Usage: scale=Scale(...)</p>
+Usage: <code>scale=Scale(...)</code> or <code>scale=Scale(x,y,z)</code> or <code>scale=(x,y,z)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

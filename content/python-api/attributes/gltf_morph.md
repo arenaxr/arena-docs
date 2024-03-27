@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#GltfMorph"></a>
     
             <div class="docstring"><p>GltfMorph attribute class to manage its properties in the ARENA: Allows you to target and control a gltf model's morphTargets created in Blender. More properties at <a href="https://github.com/elbobo/aframe-gltf-morph-component">https://github.com/elbobo/aframe-gltf-morph-component</a> A-Frame GLTF Morph component.
-Usage: gltf_morph=GltfMorph(...)</p>
+Usage: <code>gltf_morph=GltfMorph(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 
@@ -94,7 +94,7 @@ Usage: gltf_morph=GltfMorph(...)</p>
     <a class="headerlink" href="#Morph"></a>
     
             <div class="docstring"><p>Alternate name for GltfMorph.
-Usage: gltf_morph=Morph(...)</p>
+Usage: <code>gltf_morph=Morph(...)</code></p>
 </div>
 
 

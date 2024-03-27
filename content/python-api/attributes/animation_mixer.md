@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#AnimationMixer"></a>
     
             <div class="docstring"><p>AnimationMixer attribute class to manage its properties in the ARENA: A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'. More properties at <a href="https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation">https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation</a> A-Frame Extras Animation.
-Usage: animation_mixer=AnimationMixer(...)</p>
+Usage: <code>animation_mixer=AnimationMixer(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

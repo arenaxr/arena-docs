@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#BoxCollisionListener"></a>
     
             <div class="docstring"><p>BoxCollisionListener attribute class to manage its properties in the ARENA: Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps.
-Usage: box_collision_listener=BoxCollisionListener(...)</p>
+Usage: <code>box_collision_listener=BoxCollisionListener(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#StaticBody"></a>
     
             <div class="docstring"><p>StaticBody attribute class to manage its properties in the ARENA: A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. More properties at <a href="https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md">https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md</a> A-Frame Physics System.
-Usage: static_body=StaticBody(...)</p>
+Usage: <code>static_body=StaticBody(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

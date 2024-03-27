@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#ClickListener"></a>
     
             <div class="docstring"><p>ClickListener attribute class to manage its properties in the ARENA: Object will listen for mouse events like clicks.
-Usage: click_listener=ClickListener(...)</p>
+Usage: <code>click_listener=ClickListener(...)</code> or <code>clickable=True</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

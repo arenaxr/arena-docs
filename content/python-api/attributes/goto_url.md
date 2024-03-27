@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#GotoUrl"></a>
     
             <div class="docstring"><p>GotoUrl attribute class to manage its properties in the ARENA: Load new URL when object is clicked. Requires click-listener.
-Usage: goto_url=GotoUrl(...)</p>
+Usage: <code>goto_url=GotoUrl(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

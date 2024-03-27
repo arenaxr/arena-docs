@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Color"></a>
     
             <div class="docstring"><p>Color Attribute.
-Usage: color=Color(red,green,blue)</p>
+Usage: <code>color=Color(red,green,blue)</code> or <code>color=(red,green,blue)</code></p>
 </div>
 
 

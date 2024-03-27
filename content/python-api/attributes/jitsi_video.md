@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#JitsiVideo"></a>
     
             <div class="docstring"><p>JitsiVideo attribute class to manage its properties in the ARENA: Apply a jitsi video source to the geometry.
-Usage: jitsi_video=JitsiVideo(...)</p>
+Usage: <code>jitsi_video=JitsiVideo(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

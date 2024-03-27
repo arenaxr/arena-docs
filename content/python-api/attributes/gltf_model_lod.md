@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#GltfModelLod"></a>
     
             <div class="docstring"><p>GltfModelLod attribute class to manage its properties in the ARENA: Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance
-Usage: gltf_model_lod=GltfModelLod(...)</p>
+Usage: <code>gltf_model_lod=GltfModelLod(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

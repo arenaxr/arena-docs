@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#Landmark"></a>
     
             <div class="docstring"><p>Landmark attribute class to manage its properties in the ARENA: Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists).
-Usage: landmark=Landmark(...)</p>
+Usage: <code>landmark=Landmark(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 

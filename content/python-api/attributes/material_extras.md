@@ -26,7 +26,7 @@ grand_parent: Python API
     <a class="headerlink" href="#MaterialExtras"></a>
     
             <div class="docstring"><p>MaterialExtras attribute class to manage its properties in the ARENA: Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component.  More properties at <a href="https://threejs.org/docs/#api/en/materials/Material">https://threejs.org/docs/#api/en/materials/Material</a> THREE.js Material.
-Usage: material_extras=MaterialExtras(...)</p>
+Usage: <code>material_extras=MaterialExtras(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 
