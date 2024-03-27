@@ -3,7 +3,7 @@ title: arena.objects.light
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Light"></a>
     
-            <div class="docstring"><p>Light object class to manage its properties in the ARENA: A light.  More properties at (<a href="https://aframe.io/docs/1.5.0/components/light.html">https://aframe.io/docs/1.5.0/components/light.html</a>) A-Frame Light.</p>
+            <div class="docstring"><p>Light object class to manage its properties in the ARENA: A light. More properties at <a href="https://aframe.io/docs/1.5.0/components/light.html">https://aframe.io/docs/1.5.0/components/light.html</a> A-Frame Light.</p>
 
 <h6 id="parameters">Parameters</h6>
 
@@ -38,7 +38,7 @@ grand_parent: Python API
 <li><strong>str envMap</strong>:  Cube Map to load. (optional)</li>
 <li><strong>str groundColor: Light color from below. Requires type</strong>: hemisphere. Defaults to '#ffffff' (optional)</li>
 <li><strong>float intensity</strong>:  Amount of light provided. Defaults to '1' (optional)</li>
-<li><strong>dict light</strong>:   (optional)</li>
+<li><strong>dict light</strong>:  light (optional)</li>
 <li><strong>float penumbra: Percent of the spotlight cone that is attenuated due to penumbra. Requires type</strong>: spot. (optional)</li>
 <li><strong>float shadowBias</strong>:  Offset depth when deciding whether a surface is in shadow. Tiny adjustments here (in the order of +/-0.0001) may reduce artifacts in shadows. (optional)</li>
 <li><strong>float shadowCameraBottom: Bottom plane of shadow camera frustum. Requires type</strong>: directional. Defaults to '-5' (optional)</li>

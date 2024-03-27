@@ -3,7 +3,7 @@ title: arena.objects.videosphere
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -33,8 +33,8 @@ grand_parent: Python API
 <li><strong>bool autoplay</strong>:  Autoplay Defaults to 'True' (optional)</li>
 <li><strong>str crossOrigin</strong>:  Cross Origin Defaults to 'anonymous' (optional)</li>
 <li><strong>bool loop</strong>:  Loop Defaults to 'True' (optional)</li>
-<li><strong>float radius</strong>:  Radius Defaults to '5000' (optional)</li>
-<li><strong>int segmentsHeight</strong>:  Segments Height Defaults to '64' (optional)</li>
+<li><strong>float radius</strong>:  Radius Defaults to '500' (optional)</li>
+<li><strong>int segmentsHeight</strong>:  Segments Height Defaults to '32' (optional)</li>
 <li><strong>int segmentsWidth</strong>:  Segments Width Defaults to '64' (optional)</li>
 <li><strong>str src</strong>:  URI, relative or full path of an image/video file. e.g. 'store/users/wiselab/images/360falls.mp4'. (optional)</li>
 </ul>

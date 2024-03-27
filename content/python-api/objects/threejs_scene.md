@@ -3,7 +3,7 @@ title: arena.objects.threejs_scene
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#ThreejsScene"></a>
     
-            <div class="docstring"><p>ThreejsScene object class to manage its properties in the ARENA: Load a Three.js Scene.  Could be THREE.js version-specific; you can see the THREE.js version in the JS console once you open ARENA; using glTF is preferred. Format: (<a href="https://threejs.org/docs/#api/en/scenes/Scene">https://threejs.org/docs/#api/en/scenes/Scene</a>) THREE.js Scene. See guidance to store paths under (<a href="https://docs.arenaxr.org/content/interface/filestore.html">https://docs.arenaxr.org/content/interface/filestore.html</a>) ARENA File Store, CDN, or DropBox.</p>
+            <div class="docstring"><p>ThreejsScene object class to manage its properties in the ARENA: Load a Three.js Scene. Could be THREE.js version-specific; you can see the THREE.js version in the JS console once you open ARENA; using glTF is preferred. Format: <a href="https://threejs.org/docs/#api/en/scenes/Scene">https://threejs.org/docs/#api/en/scenes/Scene</a> THREE.js Scene. See guidance to store paths under <a href="https://docs.arenaxr.org/content/interface/filestore.html">https://docs.arenaxr.org/content/interface/filestore.html</a> ARENA File Store, CDN, or DropBox.</p>
 
 <h6 id="parameters">Parameters</h6>
 

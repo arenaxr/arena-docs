@@ -3,7 +3,7 @@ title: arena.objects.arenaui_card
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -39,6 +39,7 @@ grand_parent: Python API
 <li><strong>str imgCaption</strong>:  This will caption the image. (optional)</li>
 <li><strong>str imgDirection</strong>:  Image Direction Allows [left, right] Defaults to 'right' (optional)</li>
 <li><strong>str imgSize</strong>:  Image sizing Allows [cover, contain, stretch] Defaults to 'cover' (optional)</li>
+<li><strong>str materialSides</strong>:  Which sides display the rendered UI material Allows [both, front] Defaults to 'both' (optional)</li>
 <li><strong>float textImageRatio</strong>:  Text to Image Width Ratio Defaults to '0.5' (optional)</li>
 <li><strong>str theme</strong>:  Color Theme Allows [light, dark] Defaults to 'light' (optional)</li>
 <li><strong>str title</strong>:  Title (optional)</li>

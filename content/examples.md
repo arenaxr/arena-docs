@@ -481,7 +481,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-sound]: /content/schemas/message/sound
 [s-spe-particles]: /content/schemas/message/spe-particles
 [s-sphere]: /content/schemas/message/sphere
-[s-splat]: /content/schemas/message/gaussian-splat
+[s-splat]: /content/schemas/message/gaussian_splatting
 [s-static-body]: /content/schemas/message/static-body
 [s-tetrahedron]: /content/schemas/message/tetrahedron
 [s-text]: /content/schemas/message/text

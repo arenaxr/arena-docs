@@ -3,7 +3,7 @@ title: arena.objects.arenaui_button_panel
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -32,6 +32,7 @@ grand_parent: Python API
 <ul>
 <li><strong>list[dict] buttons: Buttons Defaults to '[{'name': 'Option 1'}, {'name'</strong>:  'Option 2'}]' (optional)</li>
 <li><strong>str font</strong>:  Font to use for button text. Allows [Roboto, Roboto-Mono] Defaults to 'Roboto' (optional)</li>
+<li><strong>str materialSides</strong>:  Which sides display the rendered UI material Allows [both, front] Defaults to 'both' (optional)</li>
 <li><strong>str theme</strong>:  Color Theme Allows [light, dark] Defaults to 'light' (optional)</li>
 <li><strong>str title</strong>:  Title to display above buttons (optional). (optional)</li>
 <li><strong>bool vertical</strong>:  Vertical button layout (optional)</li>

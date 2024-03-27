@@ -3,7 +3,7 @@ title: arena.attributes.scale
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -26,14 +26,14 @@ grand_parent: Python API
     <a class="headerlink" href="#Scale"></a>
     
             <div class="docstring"><p>Scale attribute class to manage its properties in the ARENA: 3D object scale.
-Usage: scale=Scale(x,y,z)</p>
+Usage: scale=Scale(...)</p>
 
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>float x</strong>:   Defaults to '1' (optional)</li>
-<li><strong>float y</strong>:   Defaults to '1' (optional)</li>
-<li><strong>float z</strong>:   Defaults to '1' (optional)</li>
+<li><strong>float x</strong>:  x Defaults to '1' (optional)</li>
+<li><strong>float y</strong>:  y Defaults to '1' (optional)</li>
+<li><strong>float z</strong>:  z Defaults to '1' (optional)</li>
 </ul>
 </div>
 

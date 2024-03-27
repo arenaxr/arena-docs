@@ -3,7 +3,7 @@ title: arena.attributes.data
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -31,28 +31,28 @@ Usage: data=Data(...)</p>
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>dict animation</strong>:  Animate and tween values. (optional)</li>
-<li><strong>dict animation_mixer: A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip</strong>:  run_*'. (optional)</li>
+<li><strong>dict animation: Animate and tween values. More properties at <a href="https://aframe.io/docs/1.5.0/components/animation.html">https://aframe.io/docs/1.5.0/components/animation.html</a> A-Frame Animation component. Easing properties are detailed at <https</strong>: //easings.net> easings.net. (optional)</li>
+<li><strong>dict animation_mixer: A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'. More properties at <https</strong>: //github.com/n5ro/aframe-extras/tree/master/src/loaders#animation> A-Frame Extras Animation. (optional)</li>
 <li><strong>dict armarker</strong>:  A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world. (optional)</li>
 <li><strong>dict attribution</strong>:  Attribution Component. Saves attribution data in any entity. (optional)</li>
 <li><strong>dict blip</strong>:  When the object is created or deleted, it will animate in/out of the scene instead of appearing/disappearing instantly. Must have a geometric mesh. (optional)</li>
 <li><strong>dict box_collision_listener</strong>:  Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps. (optional)</li>
 <li><strong>bool buffer: Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate (geometries only</strong>:  box, circle, cone, ...). Defaults to 'True' (optional)</li>
-<li><strong>dict click_listener</strong>:  Object will listen for clicks. (optional)</li>
+<li><strong>dict click_listener</strong>:  Object will listen for mouse events like clicks. (optional)</li>
 <li><strong>str collision_listener</strong>:  Name of the collision-listener, default can be empty string. Collisions trigger click events. (optional)</li>
-<li><strong>dict dynamic_body</strong>:  A freely-moving object. Dynamic bodies have mass, collide with other objects, bounce or slow during collisions, and fall if gravity is enabled. (optional)</li>
+<li><strong>dict dynamic_body: A freely-moving object. Dynamic bodies have mass, collide with other objects, bounce or slow during collisions, and fall if gravity is enabled. More properties at <https</strong>: //github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md> A-Frame Physics System. (optional)</li>
 <li><strong>dict gltf_model_lod</strong>:  Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance (optional)</li>
-<li><strong>dict gltf_morph</strong>:  Allows you to target and control a gltf model's morphTargets created in Blender. (optional)</li>
-<li><strong>dict goto_landmark</strong>:  Teleports user to the landmark with the given name; Requires click-listener. (optional)</li>
-<li><strong>dict goto_url</strong>:  Goto given URL; Requires click-listener. (optional)</li>
+<li><strong>dict gltf_morph: Allows you to target and control a gltf model's morphTargets created in Blender. More properties at <https</strong>: //github.com/elbobo/aframe-gltf-morph-component> A-Frame GLTF Morph component. (optional)</li>
+<li><strong>dict goto_landmark</strong>:  Teleports user to the landmark with the given name. Requires click-listener. (optional)</li>
+<li><strong>dict goto_url</strong>:  Load new URL when object is clicked. Requires click-listener. (optional)</li>
 <li><strong>bool hide_on_enter_ar</strong>:  Hide object when entering AR. Remove component to <em>not</em> hide. (optional)</li>
 <li><strong>bool hide_on_enter_vr</strong>:  Hide object when entering VR. Remove component to <em>not</em> hide. (optional)</li>
 <li><strong>dict impulse</strong>:  Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires click-listener and physics. (optional)</li>
 <li><strong>dict jitsi_video</strong>:  Apply a jitsi video source to the geometry. (optional)</li>
 <li><strong>dict landmark: Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport</strong>:  if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists). (optional)</li>
 <li><strong>str look_at</strong>:  The look-at component defines the behavior for an entity to dynamically rotate or face towards another entity or position. Use '#my-camera' to face the user camera, otherwise can take either a vec3 position or a query selector to another entity. (optional)</li>
-<li><strong>dict material</strong>:  The material properties of the object's surface. (optional)</li>
-<li><strong>dict material_extras</strong>:  Define extra material properties, namely texture encoding, whether to render the material's color and render order. (optional)</li>
+<li><strong>dict material: The material properties of the object's surface. More properties at <https</strong>: //aframe.io/docs/1.5.0/components/material.html> A-Frame Material. (optional)</li>
+<li><strong>dict material_extras: Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component.  More properties at <https</strong>: //threejs.org/docs/#api/en/materials/Material> THREE.js Material. (optional)</li>
 <li><strong>dict modelUpdate</strong>:  The GLTF-specific <code>modelUpdate</code> attribute is an object with child component names as keys. The top-level keys are the names of the child components to be updated. The values of each are nested <code>position</code> and <code>rotation</code> attributes to set as new values, respectively. Either <code>position</code> or <code>rotation</code> can be omitted if unchanged. (optional)</li>
 <li><strong>dict multisrc</strong>:  Define multiple visual sources applied to an object. (optional)</li>
 <li><strong>str parent</strong>:  Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation. (optional)</li>
@@ -61,16 +61,16 @@ Usage: data=Data(...)</p>
 <li><strong>dict rotation</strong>:  3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format. (optional)</li>
 <li><strong>dict scale</strong>:  3D object scale. (optional)</li>
 <li><strong>bool screenshareable</strong>:  Whether or not a user can screenshare on an object. Defaults to 'True' (optional)</li>
-<li><strong>dict shadow</strong>:  Shadow (optional)</li>
+<li><strong>dict shadow: The shadow component enables shadows for an entity and its children. Adding the shadow component alone is not enough to display shadows in your scene. We must have at least one light with castShadow</strong>:  true enabled. (optional)</li>
 <li><strong>bool show_on_enter_ar</strong>:  Show object when entering AR. Hidden otherwise. (optional)</li>
 <li><strong>bool show_on_enter_vr</strong>:  Show object when entering VR. Hidden otherwise. (optional)</li>
 <li><strong>bool skipCache: Disable retrieving the shared geometry object from the cache. (geometries only</strong>:  box, circle, cone, ...). (optional)</li>
-<li><strong>dict sound</strong>:  The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position. (optional)</li>
-<li><strong>dict spe_particles</strong>:  GPU based particle systems in A-Frame. (optional)</li>
-<li><strong>dict static_body</strong>:  A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. (optional)</li>
+<li><strong>dict sound: The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position. More properties at <https</strong>: //aframe.io/docs/1.5.0/components/sound.html> A-Frame Sound. (optional)</li>
+<li><strong>dict spe_particles: GPU based particle systems in A-Frame. More properties at <https</strong>: //github.com/harlyq/aframe-spe-particles-component> A-Frame SPE Particles component. (optional)</li>
+<li><strong>dict static_body: A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. More properties at <https</strong>: //github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md> A-Frame Physics System. (optional)</li>
 <li><strong>dict textinput</strong>:  Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener. (optional)</li>
 <li><strong>str url</strong>:  Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
-<li><strong>dict video_control</strong>:  Video Control. (optional)</li>
+<li><strong>dict video_control</strong>:  Adds a video to an entity and controls its playback. (optional)</li>
 </ul>
 </div>
 

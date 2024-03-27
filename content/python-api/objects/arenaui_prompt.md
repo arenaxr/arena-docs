@@ -3,7 +3,7 @@ title: arena.objects.arenaui_prompt
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -33,6 +33,7 @@ grand_parent: Python API
 <li><strong>list[str] buttons</strong>:  Buttons Defaults to '['Confirm', 'Cancel']' (optional)</li>
 <li><strong>str description</strong>:  Description Defaults to 'This is a prompt. Please confirm or cancel.' (optional)</li>
 <li><strong>str font</strong>:  Font to use for button text. Allows [Roboto, Roboto-Mono] Defaults to 'Roboto' (optional)</li>
+<li><strong>str materialSides</strong>:  Which sides display the rendered UI material Allows [both, front] Defaults to 'both' (optional)</li>
 <li><strong>str theme</strong>:  Color Theme Allows [light, dark] Defaults to 'light' (optional)</li>
 <li><strong>str title</strong>:  Title Defaults to 'Prompt' (optional)</li>
 <li><strong>float width</strong>:  Override width Defaults to '1.5' (optional)</li>

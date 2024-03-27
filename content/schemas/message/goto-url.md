@@ -19,6 +19,6 @@ Goto URL Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|dest|string; One of: ```['popup', 'newtab', 'sametab']```|```'sametab'```|dest|Yes|
-|on|string; One of: ```['mousedown', 'mouseup']```|```'mousedown'```|on|Yes|
-|url|string|```''```|Landmark Url|Yes|
+|dest|string; One of: ```['popup', 'newtab', 'sametab']```|```'sametab'```|Where to open the URL.|Yes|
+|on|string; One of: ```['mousedown', 'mouseup']```|```'mousedown'```|A case-sensitive string representing the event type to listen for. See <a href='https://developer.mozilla.org/en-US/docs/Web/Events'>Web Events</a>.|Yes|
+|url|string|```''```|The destination url, e.g. https://example.com.|Yes|

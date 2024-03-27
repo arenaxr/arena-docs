@@ -3,7 +3,7 @@ title: arena.scene
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -228,6 +228,21 @@ Can create and execute various user-defined functions/tasks.</p>
 
 
                             </div>
+                            <div id="Scene.teleport_to_landmark" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">teleport_to_landmark</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">cam</span>, </span><span class="param"><span class="n">target</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scene.teleport_to_landmark"></a>
+    
+            <div class="docstring"><p>Publishes a camera manipulation event</p>
+</div>
+
+
+                            </div>
                             <div id="Scene.all_objects" class="classattr">
                                 <div class="attr variable">
             <span class="name">all_objects</span>
@@ -406,7 +421,7 @@ duration. Uses async sleep to avoid blocking.</p>
 
 <p>If object is known by arena-py, return our local object, not persisted
 Silently fails/skip objects without object_id and object_type (except programs)
-Instanciates generic Object if object_type is given but unknown to arena-py</p>
+Instantiates generic Object if object_type is given but unknown to arena-py</p>
 </div>
 
 
@@ -565,6 +580,7 @@ Returns: list of scenes.</p>
                 <dd id="Arena.generate_click_event" class="function"><a href="#Scene.generate_click_event">generate_click_event</a></dd>
                 <dd id="Arena.manipulate_camera" class="function"><a href="#Scene.manipulate_camera">manipulate_camera</a></dd>
                 <dd id="Arena.look_at" class="function"><a href="#Scene.look_at">look_at</a></dd>
+                <dd id="Arena.teleport_to_landmark" class="function"><a href="#Scene.teleport_to_landmark">teleport_to_landmark</a></dd>
                 <dd id="Arena.all_objects" class="variable"><a href="#Scene.all_objects">all_objects</a></dd>
                 <dd id="Arena.add_object" class="function"><a href="#Scene.add_object">add_object</a></dd>
                 <dd id="Arena.add_objects" class="function"><a href="#Scene.add_objects">add_objects</a></dd>

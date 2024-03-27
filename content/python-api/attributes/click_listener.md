@@ -3,7 +3,7 @@ title: arena.attributes.click_listener
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,13 +25,13 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#ClickListener"></a>
     
-            <div class="docstring"><p>ClickListener attribute class to manage its properties in the ARENA: Object will listen for clicks.
-Usage: click_listener=ClickListener(...) or clickable=ClickListener(...)  or clickable=True</p>
+            <div class="docstring"><p>ClickListener attribute class to manage its properties in the ARENA: Object will listen for mouse events like clicks.
+Usage: click_listener=ClickListener(...)</p>
 
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li>**bool bubble: Set false to prevent click events from bubbling up to parent objects. See <a href='https**: //developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling'>Event Bubbling</a>. Defaults to 'True' (optional)</li>
+<li><strong>bool bubble: Set false to prevent click events from bubbling up to parent objects. See <https</strong>: //developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling> Event Bubbling. Defaults to 'True' (optional)</li>
 <li><strong>bool enabled</strong>:  Publish events, set false to disable. Defaults to 'True' (optional)</li>
 </ul>
 </div>

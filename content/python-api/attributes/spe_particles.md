@@ -3,7 +3,7 @@ title: arena.attributes.spe_particles
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#SpeParticles"></a>
     
-            <div class="docstring"><p>SpeParticles attribute class to manage its properties in the ARENA: GPU based particle systems in A-Frame.  More properties at (<a href="https://github.com/harlyq/aframe-spe-particles-component">https://github.com/harlyq/aframe-spe-particles-component</a>) A-Frame SPE Particles component.
+            <div class="docstring"><p>SpeParticles attribute class to manage its properties in the ARENA: GPU based particle systems in A-Frame. More properties at <a href="https://github.com/harlyq/aframe-spe-particles-component">https://github.com/harlyq/aframe-spe-particles-component</a> A-Frame SPE Particles component.
 Usage: spe_particles=SpeParticles(...)</p>
 
 <h6 id="parameters">Parameters</h6>
@@ -81,7 +81,7 @@ Usage: spe_particles=SpeParticles(...)</p>
 <li><strong>bool rotationStatic</strong>:  If true, the particles are fixed at their initial rotation value. if false, the particle will rotate from 0 to the 'rotation' value. (optional)</li>
 <li><strong>list[float] size</strong>:  Array of sizes over the particle's lifetime, max 4 elements. Defaults to '[1]' (optional)</li>
 <li><strong>list[float] sizeSpread</strong>:  Spread in size over the particle's lifetime, max 4 elements. Defaults to '[0]' (optional)</li>
-<li><strong>str texture: Texture to be used for each particle, may be a spritesheet.  Examples</strong>:  [blob.png, fog.png, square.png, explosion_sheet.png, fireworks_sheet.png], like path 'static/images/textures/blob.png'. (optional)</li>
+<li><strong>str texture: Texture to be used for each particle, may be a spritesheet. Examples</strong>:  [blob.png, fog.png, square.png, explosion_sheet.png, fireworks_sheet.png], like path 'static/images/textures/blob.png'. (optional)</li>
 <li><strong>int textureFrameCount</strong>:  Number of frames in the spritesheet, negative numbers default to textureFrames.x * textureFrames.y. Defaults to '-1' (optional)</li>
 <li><strong>int textureFrameLoop</strong>:  Number of times the spritesheet should be looped over the lifetime of a particle. Defaults to '1' (optional)</li>
 <li><strong>dict textureFrames: X and Y frames for a spritesheet. each particle will transition through every frame of the spritesheet over its lifetime (see textureFramesLoop). Defaults to '{'x': 1, 'y'</strong>:  1}' (optional)</li>

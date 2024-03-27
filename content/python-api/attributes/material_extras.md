@@ -3,7 +3,7 @@ title: arena.attributes.material_extras
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,14 +25,14 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#MaterialExtras"></a>
     
-            <div class="docstring"><p>MaterialExtras attribute class to manage its properties in the ARENA: Define extra material properties, namely texture encoding, whether to render the material's color and render order.  The properties set here access directly Three.js material component.   More properties at (<a href="https://threejs.org/docs/#api/en/materials/Material">https://threejs.org/docs/#api/en/materials/Material</a>) THREE.js Material.
+            <div class="docstring"><p>MaterialExtras attribute class to manage its properties in the ARENA: Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component.  More properties at <a href="https://threejs.org/docs/#api/en/materials/Material">https://threejs.org/docs/#api/en/materials/Material</a> THREE.js Material.
 Usage: material_extras=MaterialExtras(...)</p>
 
 <h6 id="parameters">Parameters</h6>
 
 <ul>
+<li><strong>str colorSpace</strong>:  The material colorspace. Allows [SRGBColorSpace, LinearSRGBColorSpace, DisplayP3ColorSpace, NoColorSpace] Defaults to 'SRGBColorSpace' (optional)</li>
 <li><strong>bool colorWrite</strong>:  Whether to render the material's color. Defaults to 'True' (optional)</li>
-<li><strong>str encoding</strong>:   Allows [LinearEncoding, sRGBEncoding, GammaEncoding, RGBEEncoding, LogLuvEncoding, RGBM7Encoding, RGBM16Encoding, RGBDEncoding, BasicDepthPacking, RGBADepthPacking] Defaults to 'sRGBEncoding' (optional)</li>
 <li><strong>float gltfOpacity</strong>:  Opacity value to apply to the model. 1 is fully opaque, 0 is fully transparent. Defaults to '1' (optional)</li>
 <li><strong>str overrideSrc</strong>:  Overrides the material source in all meshes of an object (e.g. a basic shape or a GLTF); Use, for example, to change the texture of a GLTF. (optional)</li>
 <li><strong>float renderOrder</strong>:  Allows the default rendering order of scene graph objects to be overridden. Defaults to '1' (optional)</li>

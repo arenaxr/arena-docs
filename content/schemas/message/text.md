@@ -50,7 +50,7 @@ Text Attributes
 |side|string; One of: ```['front', 'back', 'double']```|```'double'```|Side to render.|Yes|
 |tabSize|number|```4```|Tab size in spaces.|No|
 |transparent|boolean|```True```|Whether text is transparent.|No|
-|value|string||The actual content of the text. Line breaks and tabs are supported with \n and \t.|Yes|
+|value|string||The actual content of the text. Line breaks and tabs are supported with `\n` and `\t`.|Yes|
 |whiteSpace|string; One of: ```['normal', 'pre', 'nowrap']```|```'normal'```|How whitespace should be handled.|No|
 |width|number|```5```|Width in meters. (derived from geometry if exists).|No|
 |wrapCount|number|```40```|Number of characters before wrapping text (more or less).|No|

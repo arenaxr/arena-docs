@@ -3,7 +3,7 @@ title: arena.objects.entity
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -30,8 +30,8 @@ grand_parent: Python API
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>dict geometry</strong>:   (optional)</li>
-<li><strong>dict panel</strong>:   (optional)</li>
+<li><strong>dict geometry</strong>:  geometry (optional)</li>
+<li><strong>dict panel</strong>:  panel (optional)</li>
 </ul>
 </div>
 

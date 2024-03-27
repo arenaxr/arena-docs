@@ -3,7 +3,7 @@ title: arena.attributes.textinput
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -32,7 +32,7 @@ Usage: textinput=Textinput(...)</p>
 
 <ul>
 <li><strong>str label</strong>:  Text prompt label Defaults to 'Input text below (max is 140 characters).' (optional)</li>
-<li>**str on: A case-sensitive string representing the event type to listen for, e.g. 'mousedown', 'mouseup'. See <a href='https**: //developer.mozilla.org/en-US/docs/Web/Events'>Web Events</a> Allows [mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup] Defaults to 'mousedown' (optional)</li>
+<li><strong>str on: A case-sensitive string representing the event type to listen for. See <https</strong>: //developer.mozilla.org/en-US/docs/Web/Events> Web Events Allows [mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup] Defaults to 'mousedown' (optional)</li>
 <li><strong>str placeholder</strong>:  Text input place holder. Defaults to 'Type here' (optional)</li>
 <li><strong>str title</strong>:  The prompt title. Defaults to 'Text Input' (optional)</li>
 </ul>

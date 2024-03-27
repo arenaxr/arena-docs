@@ -3,7 +3,7 @@ title: arena.objects.pcd_model
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#PcdModel"></a>
     
-            <div class="docstring"><p>PcdModel object class to manage its properties in the ARENA: Load a PCD model.  Format: (<a href="https://pointclouds.org/documentation/tutorials/index.html">https://pointclouds.org/documentation/tutorials/index.html</a>) Point Clouds. See guidance to store paths under (<a href="https://docs.arenaxr.org/content/interface/filestore.html">https://docs.arenaxr.org/content/interface/filestore.html</a>) ARENA File Store, CDN, or DropBox.</p>
+            <div class="docstring"><p>PcdModel object class to manage its properties in the ARENA: Load a PCD model. Format: <a href="https://pointclouds.org/documentation/tutorials/index.html">https://pointclouds.org/documentation/tutorials/index.html</a> Point Clouds. See guidance to store paths under <a href="https://docs.arenaxr.org/content/interface/filestore.html">https://docs.arenaxr.org/content/interface/filestore.html</a> ARENA File Store, CDN, or DropBox.</p>
 
 <h6 id="parameters">Parameters</h6>
 

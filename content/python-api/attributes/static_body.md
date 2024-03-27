@@ -3,7 +3,7 @@ title: arena.attributes.static_body
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#StaticBody"></a>
     
-            <div class="docstring"><p>StaticBody attribute class to manage its properties in the ARENA: A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions.  More properties at (<a href="https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md">https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md</a>) A-Frame Physics System.
+            <div class="docstring"><p>StaticBody attribute class to manage its properties in the ARENA: A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. More properties at <a href="https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md">https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md</a> A-Frame Physics System.
 Usage: static_body=StaticBody(...)</p>
 
 <h6 id="parameters">Parameters</h6>

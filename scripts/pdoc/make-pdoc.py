@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-from pathlib import Path
-import shutil
 import os
+import shutil
 from importlib.metadata import version
+from pathlib import Path
 
-from pdoc import pdoc
-from pdoc import render
-
+from pdoc import pdoc, render
 
 lib = "arena"
 dest_dir = "python-api"

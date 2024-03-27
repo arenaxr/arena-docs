@@ -3,7 +3,7 @@ title: arena.attributes.position
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -26,14 +26,14 @@ grand_parent: Python API
     <a class="headerlink" href="#Position"></a>
     
             <div class="docstring"><p>Position attribute class to manage its properties in the ARENA: 3D object position.
-Usage: position=Position(x,y,z)</p>
+Usage: position=Position(...)</p>
 
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>float x</strong>:   (optional)</li>
-<li><strong>float y</strong>:   (optional)</li>
-<li><strong>float z</strong>:   (optional)</li>
+<li><strong>float x</strong>:  x (optional)</li>
+<li><strong>float y</strong>:  y (optional)</li>
+<li><strong>float z</strong>:  z (optional)</li>
 </ul>
 </div>
 

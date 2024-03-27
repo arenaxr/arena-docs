@@ -3,7 +3,7 @@ title: arena.attributes.animation_mixer
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#AnimationMixer"></a>
     
-            <div class="docstring"><p>AnimationMixer attribute class to manage its properties in the ARENA: A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'.  More properties at (<a href="https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation">https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation</a>) A-Frame Extras Animation.
+            <div class="docstring"><p>AnimationMixer attribute class to manage its properties in the ARENA: A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'. More properties at <a href="https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation">https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation</a> A-Frame Extras Animation.
 Usage: animation_mixer=AnimationMixer(...)</p>
 
 <h6 id="parameters">Parameters</h6>

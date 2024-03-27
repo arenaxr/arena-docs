@@ -3,7 +3,7 @@ title: arena.attributes.shadow
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Shadow"></a>
     
-            <div class="docstring"><p>Shadow attribute class to manage its properties in the ARENA: 
+            <div class="docstring"><p>Shadow attribute class to manage its properties in the ARENA: The shadow component enables shadows for an entity and its children. Adding the shadow component alone is not enough to display shadows in your scene. We must have at least one light with castShadow: true enabled.
 Usage: shadow=Shadow(...)</p>
 
 <h6 id="parameters">Parameters</h6>

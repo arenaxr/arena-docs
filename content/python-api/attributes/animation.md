@@ -3,7 +3,7 @@ title: arena.attributes.animation
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.0/arena">v0.9.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Animation"></a>
     
-            <div class="docstring"><p>Animation attribute class to manage its properties in the ARENA: Animate and tween values.  More properties at (<a href="https://aframe.io/docs/1.5.0/components/animation.html">https://aframe.io/docs/1.5.0/components/animation.html</a>) A-Frame Animation component. Easing properties are detailed at (<a href="https://easings.net">https://easings.net</a>) easings.net.
+            <div class="docstring"><p>Animation attribute class to manage its properties in the ARENA: Animate and tween values. More properties at <a href="https://aframe.io/docs/1.5.0/components/animation.html">https://aframe.io/docs/1.5.0/components/animation.html</a> A-Frame Animation component. Easing properties are detailed at <a href="https://easings.net">https://easings.net</a> easings.net.
 Usage: animation=Animation(...)</p>
 
 <h6 id="parameters">Parameters</h6>
@@ -41,11 +41,11 @@ Usage: animation=Animation(...)</p>
 <li><strong>str from</strong>:  Initial value at start of animation. If not specified, the current property value of the entity will be used (will be sampled on each animation start). It is best to specify a from value when possible for stability. (optional)</li>
 <li><strong>bool isRawProperty</strong>:  Flag to animate an arbitrary object property outside of A-Frame components for better performance. If set to true, for example, we can set property to like components.material.material.opacity. If property starts with components or object3D, this will be inferred to true. (optional)</li>
 <li><strong>str loop</strong>:  How many times the animation should repeat. If the value is true, the animation will repeat infinitely. (optional)</li>
-<li><strong>list[dict] pauseEvents</strong>:  Comma-separated list of events to listen to trigger pause. Can be resumed with resumeEvents. (optional)</li>
+<li><strong>list[str] pauseEvents</strong>:  Comma-separated list of events to listen to trigger pause. Can be resumed with resumeEvents. (optional)</li>
 <li><strong>str property</strong>:  Property to animate. Can be a component name, a dot-delimited property of a component (e.g., material.color), or a plain attribute. (optional)</li>
-<li><strong>list[dict] resumeEvents</strong>:  Comma-separated list of events to listen to trigger resume after pausing. (optional)</li>
+<li><strong>list[str] resumeEvents</strong>:  Comma-separated list of events to listen to trigger resume after pausing. (optional)</li>
 <li><strong>bool round</strong>:  Whether to round values. (optional)</li>
-<li><strong>list[dict] startEvents</strong>:  Comma-separated list of events to listen to trigger a restart and play. Animation will not autoplay if specified. startEvents will restart the animation, use pauseEvents to resume it. If there are other animation components on the entity animating the same property, those animations will be automatically paused to not conflict. (optional)</li>
+<li><strong>list[str] startEvents</strong>:  Comma-separated list of events to listen to trigger a restart and play. Animation will not autoplay if specified. startEvents will restart the animation, use pauseEvents to resume it. If there are other animation components on the entity animating the same property, those animations will be automatically paused to not conflict. (optional)</li>
 <li><strong>str to</strong>:  Target value at end of animation. (optional)</li>
 <li><strong>str type</strong>:  Right now only supports color for tweening isRawProperty color XYZ/RGB vector values. (optional)</li>
 </ul>
