@@ -104,7 +104,7 @@ scene.end_program_callback = end_program_callback
 ### user_join_callback
 
 This is called whenever the library detects/finds a new user that it hasn't seen before in a scene.
-Note: this is not neccesarily called when a user "joins" a scene, rather, it is called when the library first sees a `Camera` object/receives an "update" message from a user.
+Note: this is not necessarily called when a user "joins" a scene, rather, it is called when the library first sees a `Camera` object/receives an "update" message from a user.
 
 #### Usage:
 
@@ -115,7 +115,6 @@ def user_join_callback(camera):
     camera.object_id
     camera.displayName
     camera.hasVideo
-    camera.displayName
     # etc.
 
 scene.user_join_callback = user_join_callback
@@ -134,7 +133,6 @@ def user_left_callback(camera):
     camera.object_id
     camera.displayName
     camera.hasVideo
-    camera.displayName
     # etc.
 
 scene.user_left_callback = user_left_callback
