@@ -11,7 +11,7 @@ Scenes give arena-py programs access to an ARENA scene. It provides an interface
 There are 3 main ways to define which server, scene name, and other arguments you wish to use:
 
 1. [Python Object Args](#python-object-args)
-1. [Environment Variable Args](#environment-variable-argsn)
+1. [Environment Variable Args](#environment-variable-args)
 1. [Command Line Args](#command-line-args)
 
 ## Python Object Args
