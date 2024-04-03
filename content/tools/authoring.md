@@ -14,7 +14,7 @@ An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top
 1. Clone our Python repo [https://github.com/arenaxr/arena-py](https://github.com/arenaxr/arena-py).
 1. Usage: `arb` takes at minimum one argument, the first one, a scene name (`hello` in this example).
    ```shell
-   python3 tools/arb/arb.py hello
+   python3 tools/arb/arb.py -s hello
    ```
 1. Interact with the tool at https://arenaxr.org/[your username]/hello
 
@@ -27,26 +27,29 @@ An AR/VR capable editing tool to create/manipulate/delete ARENA objects. See top
 ## Usage
 
 ```
-usage: arb.py [-h] [-n NAMESPACE] [-b BROKER] [-p PORT] [-r REALM] [-m MODELS] [-d] scene
+usage: arb.py [-h] [-mh HOST] [-n NAMESPACE] [-s SCENE] [-d DEVICE] [-p POSITION POSITION POSITION] [-r ROTATION ROTATION ROTATION]
+              [-c SCALE SCALE SCALE] [-D]
 
-ARENA AR Builder.
-
-positional arguments:
-  scene                 ARENA scene name
+arena-py Application CLI
 
 optional arguments:
   -h, --help            show this help message and exit
+  -mh HOST, --host HOST
+                        ARENA webserver main host to connect to
   -n NAMESPACE, --namespace NAMESPACE
-                        ARENA namespace
-  -b BROKER, --broker BROKER
-                        MQTT message broker hostname
-  -p PORT, --port PORT  MQTT message broker port
-  -r REALM, --realm REALM
-                        ARENA realm name
-  -m MODELS, --models MODELS
-                        JSON GLTF manifest
-  -d, --debug           Debug mode.
-```
+                        Namespace of scene
+  -s SCENE, --scene SCENE
+                        Scene to publish and listen to
+  -d DEVICE, --device DEVICE
+                        Device to publish and listen to
+  -p POSITION POSITION POSITION, --position POSITION POSITION POSITION
+                        App position as cartesian.x cartesian.y cartesian.z
+  -r ROTATION ROTATION ROTATION, --rotation ROTATION ROTATION ROTATION
+                        App rotation as euler.x euler.y euler.z
+  -c SCALE SCALE SCALE, --scale SCALE SCALE SCALE
+                        App scale as cartesian.x cartesian.y cartesian.z
+  -D, --debug           Debug mode.
+  ```
 
 ## EDIT Button
 The `edit` button will update all objects in the scene with click-listeners, allowing you to target ARB commands to any object. Toggling the `edit` button **on**, updates the scene `scene-options` object and will remind you to reload the page for edit mode to fully activate. You may see an <span style="color: orange;">orange warning</span> in the upper left that [Events Publish Behavior is too high](/content/troubleshooting.html#warning-events-publish-behavior-is-too-high), which is expected and a reminder to toggle the `edit` button **off**, when finished editing the scene with ARB.
@@ -108,7 +111,7 @@ There is a small temporary object resting on position 0,0,0 in the shape of a co
 You can import a json-formatted manifest of GLTF models using the command argument **-m** to use on the **model** control panel option. You can write your own, or use the example, [arb-manifest.json](https://github.com/arenaxr/arena-py/blob/master/tools/arb/arb-manifest.json).
 
 ```shell
-python3 tools/arb/arb.py hello -m arb-manifest.json
+python3 tools/arb/arb.py -s hello --manifest arb-manifest.json
 ```
 
 Scale varies widely between individual models, so experiment with the best scale to start with.
@@ -150,20 +153,4 @@ Scale varies widely between individual models, so experiment with the best scale
     }
   ]
 }
-```
-
-### MQTT Host and Realm
-
-By default all `arb` MQTT messages are published to the default message broker and topic (realm and scene you specify) using this scheme:
-
-- _default broker_: `oz.andrew.cmu.edu`
-- _default topic_: `realm/s/[your namespace]/hello`
-
-To use your own MQTT message broker (**-b**) and/or realm (**-r**):
-
-- _custom broker_: `arena-west1.conix.io`
-- _custom topic_: `foo/s/[your namespace]/hello`
-
-```shell
-python tools/arb/arb.py hello -b arena-west1.conix.io -r foo
 ```
