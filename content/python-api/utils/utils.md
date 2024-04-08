@@ -3,7 +3,7 @@ title: arena.utils.utils
 parent: arena.utils
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.6/arena">v0.9.6</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -73,6 +73,76 @@ grand_parent: Python API
             <div class="docstring"><p>Repalces a key,val with a new key,val</p>
 </div>
 
+
+                            </div>
+                            <div id="Utils.quat_to_matrix3" class="classattr">
+                                <div class="attr function">
+                    <div class="decorator">@classmethod</div>
+
+        <span class="def">def</span>
+        <span class="name">quat_to_matrix3</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">cls</span>, </span><span class="param"><span class="n">rotq</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Utils.quat_to_matrix3"></a>
+    
+    
+
+                            </div>
+                            <div id="Utils.matrix3_to_quat" class="classattr">
+                                <div class="attr function">
+                    <div class="decorator">@classmethod</div>
+
+        <span class="def">def</span>
+        <span class="name">matrix3_to_quat</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">cls</span>, </span><span class="param"><span class="n">rotm</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Utils.matrix3_to_quat"></a>
+    
+    
+
+                            </div>
+                            <div id="Utils.pose_to_matrix4" class="classattr">
+                                <div class="attr function">
+                    <div class="decorator">@classmethod</div>
+
+        <span class="def">def</span>
+        <span class="name">pose_to_matrix4</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">cls</span>, </span><span class="param"><span class="n">pos</span>, </span><span class="param"><span class="n">rotq</span>, </span><span class="param"><span class="n">scale</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Utils.pose_to_matrix4"></a>
+    
+    
+
+                            </div>
+                            <div id="Utils.matrix4_to_pose" class="classattr">
+                                <div class="attr function">
+                    <div class="decorator">@classmethod</div>
+
+        <span class="def">def</span>
+        <span class="name">matrix4_to_pose</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">cls</span>, </span><span class="param"><span class="n">mat</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Utils.matrix4_to_pose"></a>
+    
+    
+
+                            </div>
+                            <div id="Utils.get_world_pose" class="classattr">
+                                <div class="attr function">
+                    <div class="decorator">@classmethod</div>
+
+        <span class="def">def</span>
+        <span class="name">get_world_pose</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">cls</span>, </span><span class="param"><span class="n">obj</span>, </span><span class="param"><span class="n">scene</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Utils.get_world_pose"></a>
+    
+    
 
                             </div>
                 </section>

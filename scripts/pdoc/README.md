@@ -2,7 +2,7 @@
 
 This is an example showing how to use pdoc with [jekyll](https://jekyllrb.com) to generate our `arena-py` API docs.
 This is derived from a [pdoc/mkdocs example](https://github.com/mitmproxy/pdoc/tree/main/examples/mkdocs).
-Run `./scripts/pdoc/make-pdoc.py` to generate the API documentation and then `make serve` to view this website!
+Run `python3 ./scripts/pdoc/make-pdoc.py` to generate the API documentation and then `make serve` to view this website!
 
 ## Implementation
 

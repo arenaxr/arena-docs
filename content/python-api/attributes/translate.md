@@ -3,7 +3,7 @@ title: arena.attributes.translate
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.6/arena">v0.9.6</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">

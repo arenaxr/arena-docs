@@ -3,7 +3,7 @@ title: arena.arena_mqtt
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.6/arena">v0.9.6</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -262,21 +262,6 @@ has_children: true
     <a class="headerlink" href="#ArenaMQTT.msg_queue"></a>
     
     
-
-                            </div>
-                            <div id="ArenaMQTT.parse_cli" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">parse_cli</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#ArenaMQTT.parse_cli"></a>
-    
-            <div class="docstring"><p>Reusable command-line options to give apps flexible options to avoid hard-coding locations.</p>
-</div>
-
 
                             </div>
                             <div id="ArenaMQTT.generate_client_id" class="classattr">

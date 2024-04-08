@@ -3,7 +3,7 @@ title: arena.objects.program
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.6/arena">v0.9.6</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -45,7 +45,7 @@ grand_parent: Python API
                             <div id="Program.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">Program</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">object_id</span><span class="o">=</span><span class="s1">&#39;73cb6d61-a4ea-414c-8428-6676fbe55f77&#39;</span>,</span><span class="param">	<span class="n">persist</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">objects_list_add</span><span class="o">=</span><span class="kc">True</span>,</span><span class="param">	<span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">Program</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">object_id</span><span class="o">=</span><span class="s1">&#39;4d9fbac4-b09a-4ecb-a696-b950b447de69&#39;</span>,</span><span class="param">	<span class="n">persist</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">objects_list_add</span><span class="o">=</span><span class="kc">True</span>,</span><span class="param">	<span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>

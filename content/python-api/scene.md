@@ -3,7 +3,7 @@ title: arena.scene
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.6/arena">v0.9.6</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -82,6 +82,21 @@ Can create and execute various user-defined functions/tasks.</p>
     <a class="headerlink" href="#Scene.cmd_interpreter"></a>
     
     
+
+                            </div>
+                            <div id="Scene.parse_cli" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">parse_cli</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">cli_args</span><span class="o">=</span><span class="kc">False</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scene.parse_cli"></a>
+    
+            <div class="docstring"><p>Reusable command-line options to give apps flexible options to avoid hard-coding locations.</p>
+</div>
+
 
                             </div>
                             <div id="Scene.exit" class="classattr">
@@ -497,7 +512,7 @@ Returns: list of scenes.</p>
     </div>
     <a class="headerlink" href="#Scene.run_info_update"></a>
     
-            <div class="docstring"><p>Callbak when program stats are updated; publish program object update</p>
+            <div class="docstring"><p>Callback when program stats are updated; publish program object update</p>
 </div>
 
 
@@ -526,7 +541,6 @@ Returns: list of scenes.</p>
                 <dd id="Scene.event_loop" class="variable"><a href="arena_mqtt.html#ArenaMQTT.event_loop">event_loop</a></dd>
                 <dd id="Scene.mqtt_connect_evt" class="variable"><a href="arena_mqtt.html#ArenaMQTT.mqtt_connect_evt">mqtt_connect_evt</a></dd>
                 <dd id="Scene.msg_queue" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_queue">msg_queue</a></dd>
-                <dd id="Scene.parse_cli" class="function"><a href="arena_mqtt.html#ArenaMQTT.parse_cli">parse_cli</a></dd>
                 <dd id="Scene.generate_client_id" class="function"><a href="arena_mqtt.html#ArenaMQTT.generate_client_id">generate_client_id</a></dd>
                 <dd id="Scene.network_latency_update" class="function"><a href="arena_mqtt.html#ArenaMQTT.network_latency_update">network_latency_update</a></dd>
                 <dd id="Scene.run_once" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_once">run_once</a></dd>
@@ -570,6 +584,7 @@ Returns: list of scenes.</p>
                 <dd id="Arena.telemetry" class="variable"><a href="#Scene.telemetry">telemetry</a></dd>
                 <dd id="Arena.connected_evt" class="variable"><a href="#Scene.connected_evt">connected_evt</a></dd>
                 <dd id="Arena.cmd_interpreter" class="variable"><a href="#Scene.cmd_interpreter">cmd_interpreter</a></dd>
+                <dd id="Arena.parse_cli" class="function"><a href="#Scene.parse_cli">parse_cli</a></dd>
                 <dd id="Arena.exit" class="function"><a href="#Scene.exit">exit</a></dd>
                 <dd id="Arena.on_connect" class="function"><a href="#Scene.on_connect">on_connect</a></dd>
                 <dd id="Arena.on_message" class="function"><a href="#Scene.on_message">on_message</a></dd>
@@ -620,7 +635,6 @@ Returns: list of scenes.</p>
                 <dd id="Arena.event_loop" class="variable"><a href="arena_mqtt.html#ArenaMQTT.event_loop">event_loop</a></dd>
                 <dd id="Arena.mqtt_connect_evt" class="variable"><a href="arena_mqtt.html#ArenaMQTT.mqtt_connect_evt">mqtt_connect_evt</a></dd>
                 <dd id="Arena.msg_queue" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_queue">msg_queue</a></dd>
-                <dd id="Arena.parse_cli" class="function"><a href="arena_mqtt.html#ArenaMQTT.parse_cli">parse_cli</a></dd>
                 <dd id="Arena.generate_client_id" class="function"><a href="arena_mqtt.html#ArenaMQTT.generate_client_id">generate_client_id</a></dd>
                 <dd id="Arena.network_latency_update" class="function"><a href="arena_mqtt.html#ArenaMQTT.network_latency_update">network_latency_update</a></dd>
                 <dd id="Arena.run_once" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_once">run_once</a></dd>

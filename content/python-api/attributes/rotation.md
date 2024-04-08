@@ -3,7 +3,7 @@ title: arena.attributes.rotation
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.6/arena">v0.9.6</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -80,6 +80,17 @@ Usage: <code>rotation=Rotation(...)</code> or <code>rotation=Rotation(x,y,z,w)</
         
     </div>
     <a class="headerlink" href="#Rotation.quaternion"></a>
+    
+    
+
+                            </div>
+                            <div id="Rotation.array" class="classattr">
+                                <div class="attr variable">
+            <span class="name">array</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Rotation.array"></a>
     
     
 

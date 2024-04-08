@@ -3,7 +3,7 @@ title: arena.device
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.3/arena">v0.9.3</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.6/arena">v0.9.6</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -42,7 +42,7 @@ Can create and execute various user-defined functions/tasks.</p>
                             <div id="Device.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">Device</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">host</span><span class="o">=</span><span class="s1">&#39;arenaxr.org&#39;</span>,</span><span class="param">	<span class="n">realm</span><span class="o">=</span><span class="s1">&#39;realm&#39;</span>,</span><span class="param">	<span class="n">network_latency_interval</span><span class="o">=</span><span class="mi">10000</span>,</span><span class="param">	<span class="n">on_msg_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">end_program_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">debug</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">cli_args</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">Device</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">host</span><span class="o">=</span><span class="s1">&#39;arenaxr.org&#39;</span>,</span><span class="param">	<span class="n">realm</span><span class="o">=</span><span class="s1">&#39;realm&#39;</span>,</span><span class="param">	<span class="n">network_latency_interval</span><span class="o">=</span><span class="mi">10000</span>,</span><span class="param">	<span class="n">on_msg_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">end_program_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">debug</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
@@ -116,7 +116,6 @@ Can create and execute various user-defined functions/tasks.</p>
                 <dd id="Device.event_loop" class="variable"><a href="arena_mqtt.html#ArenaMQTT.event_loop">event_loop</a></dd>
                 <dd id="Device.mqtt_connect_evt" class="variable"><a href="arena_mqtt.html#ArenaMQTT.mqtt_connect_evt">mqtt_connect_evt</a></dd>
                 <dd id="Device.msg_queue" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_queue">msg_queue</a></dd>
-                <dd id="Device.parse_cli" class="function"><a href="arena_mqtt.html#ArenaMQTT.parse_cli">parse_cli</a></dd>
                 <dd id="Device.generate_client_id" class="function"><a href="arena_mqtt.html#ArenaMQTT.generate_client_id">generate_client_id</a></dd>
                 <dd id="Device.network_latency_update" class="function"><a href="arena_mqtt.html#ArenaMQTT.network_latency_update">network_latency_update</a></dd>
                 <dd id="Device.run_once" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_once">run_once</a></dd>
