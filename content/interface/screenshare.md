@@ -24,7 +24,7 @@ There are a few hints to help you establish objects to screenshare on.
 
 ## Screenshare Custom Flat Screen Example
 
-If you want to create a custom screen with traditional flat properties, the below example is one way. Note the [`box`](/content/schemas/message/box) object type in use, adjusting the `depth, height, width` properties for the screen ratio we want. Applying the material texture to the outside of the box mesh (`"material": {"side": "front"}`) allows the screen to render from left to right on both sides since it is a `box` with 6 front planes and 6 back planes. The `plane` object, conversely, has 1 front plane and 1 back plane, and is another good primitive type to use.
+If you want to create a custom screen with traditional flat properties, the below example is one way. Note the [`box`](/content/schemas/message/box) object type in use, adjusting the `depth, height, width` properties for the screen ratio we want. Applying the material texture to the outside of the box mesh (`"material": {"side": "front"}`) allows the screen to render from left to right on both sides since it is a `box` with 6 front planes and 6 back planes. The [`plane`](/content/schemas/message/plane) object, conversely, has 1 front plane and 1 back plane, and is another good primitive type to use.
 
 ```json
 {
