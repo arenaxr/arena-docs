@@ -1,11 +1,11 @@
 ---
-title: ARENA Screenshare
+title: Screenshare
 nav_order: 6
 layout: tutorial
 parent: Web Interface
 ---
 
-# ARENA Screenshare
+# Screenshare
 
 You can share your screen in the ARENA following the tips below.
 
@@ -18,12 +18,69 @@ There are a few hints to help you establish objects to screenshare on.
 - Once you have selected your object name, it will open a new tab that allows you to choose which screen you want to share, and ARENA will automatically place that screen onto the object with an `object_id` you specified.
 - You can do whatever you want the object you’re screen sharing on as if it were a normal arena object (change size, shape, attach children, etc). This also applies to the object `screenshare`; it's just a standard ARENA object with `object_id`: `screenshare`!
 - When an object is dynamically created with the screen share button, it won't go away after you stop screen sharing. It will only go away if you refresh the page.
+- You can no longer screenshare to every and any object. only objects with attribute `screenshareable=True` can be screen-shared on.
+- Screen share button now gives a list of objects with `screenshareable=True` and lets you select from them. you are allowed to select multiple.
+- An object with id screenshare will be created like before if there are no screenshareble objects in a scene.
 
-<!-- TODO: integrate this guidance...
-- you can no longer screenshare to every and any object. only objects with attribute screenshareable=True can be screen share’d on.
-- screen share button now gives a list of objects with screenshareable=True and lets you select from them. you are allowed to select multiple.
-- an object with id screenshare will be created like before iff there are no screenshareble objects in a scene.
--->
+## Screenshare Custom Flat Screen Example
+
+If you want to create a custom screen with traditional flat properties, the below example is one way. Note the [`box`](/content/schemas/message/box) object type in use, adjusting the `depth, height, width` properties for the screen ratio we want. Applying the material texture to the outside of the box mesh (`"material": {"side": "front"}`) allows the screen to render from left to right on both sides since it is a `box` with 6 front planes and 6 back planes. The [`plane`](/content/schemas/message/plane) object, conversely, has 1 front plane and 1 back plane, and is another good primitive type to use.
+
+```json
+{
+  "object_id": "screen-flat",
+  "data": {
+    "object_type": "box",
+    "depth": 0.1,
+    "height": 3,
+    "width": 5.3,
+    "position": {
+      "x": 3,
+      "y": 2.7,
+      "z": 0
+    },
+    "material": {
+      "color": "#ffffff",
+      "shader": "flat",
+      "side": "front"
+    },
+    "screenshareable": true
+  }
+}
+```
+
+## Screenshare Custom Curved Screen Example
+
+If you want to create a custom screen with curved screen properties similar to a curved monitor, the below example is one way which generally mimics the A-Frame [`a-curvedimage`](https://aframe.io/docs/1.5.0/primitives/a-curvedimage.html) primitive. Note the [`cylinder`](/content/schemas/message/cylinder) object type in use, adjusting the `radius, height, thetaStart, thetaLength, openEnded` properties for the screen ratio we want. Applying the material texture to the (`"material": {"side": "double", "repeat": {"x": -1, "y": 1}}`) allows the screen to render in reverse from left to right on both sides which has the effect of producing the correct left to right forwaed view on the inside curve of the cylinder since an open ended cylinder has 1 side front plane and 1 side back plane.
+
+```json
+{
+  "object_id": "screen-curved",
+  "data": {
+    "object_type": "cylinder",
+    "height": 5,
+    "radius": 10,
+    "position": {
+      "x": 3,
+      "y": 2.5,
+      "z": 7
+    },
+    "material": {
+      "color": "#ffffff",
+      "side": "double",
+      "shader": "flat",
+      "repeat": {
+        "x": -1,
+        "y": 1
+      }
+    },
+    "openEnded": true,
+    "thetaLength": 60,
+    "screenshareable": true,
+    "thetaStart": 150
+  }
+}
+```
 
 ## Screenshare Walkthrough
 
