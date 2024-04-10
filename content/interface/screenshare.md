@@ -51,7 +51,7 @@ If you want to create a custom screen with traditional flat properties, the belo
 
 ## Screenshare Custom Curved Screen Example
 
-If you want to create a custom screen with curved screen properties similar to a curved monitor, the below example is one way which generally mimics the A-Frame [`a-curvedimage`](https://aframe.io/docs/1.5.0/primitives/a-curvedimage.html) primitive. Note the [`cylinder`](/content/schemas/message/cylinder) object type in use, adjusting the `radius, height, thetaStart, thetaLength, openEnded` properties for the screen ratio we want. Applying the material texture to the (`"material": {"side": "double", "repeat": {"x": -1, "y": 1}}`) allows the screen to render in reverse from left to right on both sides which has the effect of producing the correct left to right forwaed view on the inside curve of the cylinder since an open ended cylinder has 1 side front plane and 1 side back plane.
+If you want to create a custom screen with curved screen properties similar to a curved monitor, the below example is one way which generally mimics the A-Frame [`a-curvedimage`](https://aframe.io/docs/1.5.0/primitives/a-curvedimage.html) primitive. Note the [`cylinder`](/content/schemas/message/cylinder) object type in use, adjusting the `radius, height, thetaStart, thetaLength, openEnded` properties for the screen ratio we want. Applying the material texture to the (`"material": {"side": "double", "repeat": {"x": -1, "y": 1}}`) allows the screen to render in reverse from left to right on both sides which has the effect of producing the correct left to right forward view on the inside curve of the cylinder since an open ended cylinder has 1 side front plane and 1 side back plane.
 
 ```json
 {
