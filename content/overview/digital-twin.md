@@ -26,7 +26,7 @@ style="width:4in;border:1px solid;" />
 ## Scan Your Space
 
 There are a range of scanning cameras and software to scan a room-scale 3D model, and a few techniques to keep in mind as you scan.
-Wer have a longer [list of 3d scanning tools](/content/3d-content/scan-tools) available for LiDAR, NERF, and Photogrammerty options.
+We have a longer [list of 3d scanning tools](/content/3d-content/scan-tools) available for LiDAR, NERF, and Photogrammerty options.
 
 1. **Scan software** depends on room size and expense. For beginners we recommend using Scaniverse on a iPad/iPhone:
     - **Small** room, **free** with iPhone: use [Scaniverse](/content/3d-content/scaniverse)
