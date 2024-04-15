@@ -5,6 +5,14 @@ layout: tutorial
 parent: Tutorial
 ---
 
+
+# Python Console Interface
+
+There is a [console interface](/content/programs/debug) to the `arena-py` library. This is designed to have a way to inspect the program from the console, without having to send a heartbeat or write your own command/response interface.
+You can also interact with it from [`/programs`](https://arenaxr.org/programs):
+
+![](/assets/img/programs/cli-interpreter.png)
+
 # Debugging ARENA Web Browser Visually
 
 When running programs in Python or Unity, you have a plethora of debug tools at your disposal to debug lines of code. For debugging the visual elements of the Browser view, here are some other tools to help.

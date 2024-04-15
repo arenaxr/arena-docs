@@ -1,6 +1,6 @@
 ---
 title: Debugging Programs
-nav_order: 1
+nav_order: 9
 layout: default
 parent: ARENA Programs
 ---
@@ -72,6 +72,6 @@ This will terminate the ARENA program. Are you sure [Y/N]? y
 Exiting...
 ```
 
-You can also interact with it from `/programs`:
+You can also interact with it from [`/programs`](https://arenaxr.org/programs):
 
 ![](/assets/img/programs/cli-interpreter.png)
