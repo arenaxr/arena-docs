@@ -3,12 +3,13 @@ title: Advanced Example
 nav_order: 4
 layout: default
 parent: Python Tutorial
+grand_parent: Python Library
 ---
 
 # Advanced Example - EVEN more functionality!
 
 ## User management
-An ARENA-py Scene keep tracks of all incoming and outgoing users. Users are stored as camera objects. Get a list of all users in a scene like so:
+An arena-py Scene keep tracks of all incoming and outgoing users. Users are stored as camera objects. Get a list of all users in a scene like so:
 ```python
 scene.get_user_list()
 # returns [Camera(object_id="camera_1234556789_Edward"), Camera(object_id="camera_987654321_Ed"), ...]
@@ -32,7 +33,7 @@ print(scene.update_object(box, position=Position(1,1,1))) # will print what was 
 ```
 
 ## Objects get automatically updated
-You can leverage the fact that Objects in ARENA-py get automatically updated to do some cool things! Lets make a camera tracer program that traces the movement of users in a scene.
+You can leverage the fact that Objects in arena-py get automatically updated to do some cool things! Lets make a camera tracer program that traces the movement of users in a scene.
 
 ## Camera Tracer
 Lets start by creating a helper class that stores the camera and the previous position of the camera:

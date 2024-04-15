@@ -34,6 +34,7 @@ The following URL parameters are accepted, beginner or **advanced**. The **advan
 | camFollow | string | **advanced** | Force camera pose to the same as a named object-id (e.g. `camFollow=Box123ObjectName`) |
 | camUpdateIntervalMs | string | **advanced** | Minimum camera update interval in milliseconds (e.g. `camUpdateIntervalMs=100`) |
 | confstats | bool | **advanced** | Enable logging to MQTT of conference quality stats. |
+| demoMode | bool | beginner | Removal of screen settings and chat buttons overlay from scene. |
 | fixedCamera | string | **advanced** | Sets the camera name to the given value **and** enables VIO output to `realm/vio/scene-name/camera-name` ; `fixedCamera=iPhone` will set the camera name **exactly** to the given value (not add any prefix/suffix) |
 | hudstats | bool | **advanced** | Render a HUD of performance/memory stats. |
 | lat | float | **advanced** | Override device location; (e.g. `lat=40.4427`) |

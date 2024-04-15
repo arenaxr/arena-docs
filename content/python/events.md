@@ -5,14 +5,14 @@ layout: default
 parent: Python Library
 ---
 
-# Events in ARENA-py
+# Events in arena-py
 
 Events are ways to interact with user input in the ARENA.
 
 See [object definition reference](/content/schemas/definitions).
 
 ## Event handlers
-To handle events in ARENA-py, you must set a function to the `evt_handler` parameter.
+To handle events in arena-py, you must set a function to the `evt_handler` parameter.
 When you attach an `evt_handler` to an `Object`, you will receive `Event` objects in your handler.
 Below is how you access attributes of the `Event` object.
 
@@ -22,12 +22,14 @@ Below is how you access attributes of the `Event` object.
 # [msg] is the raw JSON message as a dict
 def click_handler(scene, evt, msg):
     ## Get Event type
-    evt.type # == "mousedown", "mouseup", "mouseenter", "mouseleave", etc.
+    evt.type # == "buttonClick", "mousedown", "mouseup", "mouseenter", "mouseleave", etc.
 
     ## Get Event data
     evt.data.clickPos
     evt.data.position
     evt.data.source
+    evt.data.buttonName
+    evt.data.buttonIndex
     # etc.
 
 box = Box(..., evt_handler=click_handler) # note the use of "evt_handler=click_handler"
@@ -35,7 +37,7 @@ box = Box(..., evt_handler=click_handler) # note the use of "evt_handler=click_h
 # or box.update_attributes(evt_handler=click_handler)
 ```
 
-## Generating events with ARENA-py Scenes
+## Generating events with arena-py Scenes
 ### Click Events
 There are several types of click events that you can generate (`mousedown`, `mouseup`, `mouseenter`, `mouseleave`, `triggerdown`, `triggerup`):
 ```python
@@ -43,12 +45,12 @@ scene.generate_click_event(obj, type, ...)
 
 # add a click listener to an object to be able to click it
 obj.update_attributes(clickable=True)
-# generate a "fake" click event from ARENA-py
+# generate a "fake" click event from arena-py
 scene.generate_click_event(
     obj,
     type="mouseup"
 )
-# ARENA-py will "click" obj with mouseup. In JSON, "source" will be defined as "arena_lib_[some random ID here]".
+# arena-py will "click" obj with mouseup. In JSON, "source" will be defined as "arena_lib_[some random ID here]".
 ```
 
 ### Camera Manipulation Events
@@ -75,7 +77,7 @@ If there is an event that does not exist yet, you can use this to have more free
 ```python
 # define custom event
 evt = Event(type="my_custom_event", position=(3,4,5), target=sphere)
-# generate custom event with ARENA-py client
+# generate custom event with arena-py client
 scene.generate_custom_event(evt, action="clientEvent")
 ```
 

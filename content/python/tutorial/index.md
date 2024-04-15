@@ -6,7 +6,7 @@ has_children: true
 parent: Python Library
 ---
 
-# ARENA-py Documentation and Tutorials
+# arena-py Documentation and Tutorials
 
 ## Tutorials
 [Part 1](beginner.md)
@@ -17,10 +17,10 @@ parent: Python Library
 
 [Part 4](advanced.md)
 
-Code for these can be found [here](https://github.com/arenaxr/arena-py/tree/master/examples/tutorial)
+Code for these tutorials can be found in our [Python Examples](https://github.com/arenaxr/arena-py/tree/master/examples/tutorial).
 
 ## General Documentation
-See [ARENA Documentation: Python](https://docs.arenaxr.org/content/python/).
+See [ARENA Documentation: Python](/content/python/).
 
 ## A simple program
 ```python

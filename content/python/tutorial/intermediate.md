@@ -3,6 +3,7 @@ title: Intermediate Example
 nav_order: 3
 layout: default
 parent: Python Tutorial
+grand_parent: Python Library
 ---
 
 # Intermediate Example - Exploring more functionality!
@@ -19,7 +20,7 @@ scene.update_object(box)
 ## Parent-Child
 We can define child objects whose position will be relative to its parent object:
 ```python
-text = Text(object_id="my_text", text="Welcome to arena-py!" position=Position(0,2,0), parent=box)
+text = Text(object_id="my_text", value="Welcome to arena-py!" position=Position(0,2,0), parent=box)
 scene.add_object(text)
 ```
 
@@ -73,7 +74,7 @@ def main():
     scene.add_object(box)
 
     # add text
-    text = Text(object_id="my_text", text="Welcome to arena-py!", position=Position(0,2,0), parent=box)
+    text = Text(object_id="my_text", value="Welcome to arena-py!", position=Position(0,2,0), parent=box)
     scene.add_object(text)
 
 x = 0

@@ -1,6 +1,5 @@
 ---
 title: Objects Schema
-nav_order: 1
 layout: default
 parent: ARENA Objects
 has_children: true
@@ -13,34 +12,42 @@ has_toc: false
 
 |Object Message|Description|
 | :--- | :--- |
-|[Box](box)|Box Geometry|
-|[Circle](circle)|Circle Geometry|
-|[Capsule](capsule)|Capsule Geometry|
-|[Cone](cone)|Cone Geometry|
-|[Cube (deprecated; don't use)](cube)|Cube (=Box) Geometry (deprecated); Supported for Legacy reasons; Please use Box in new scenes|
-|[Cylinder](cylinder)|Cylinder Geometry|
-|[Dodecahedron](dodecahedron)|Dodecahedron Geometry|
+|[ARENAUI Card](arenaui-card)|ARENAUI Card.|
+|[ARENAUI Button Panel](arenaui-button-panel)|ARENAUI Button Panel.|
+|[ARENAUI Prompt](arenaui-prompt)|ARENAUI Prompt.|
+|[Box](box)|Box Geometry.|
+|[Circle](circle)|Circle Geometry.|
+|[Capsule](capsule)|Capsule Geometry.|
+|[Cone](cone)|Cone Geometry.|
+|[Cube (deprecated; don't use)](cube)|Cube (=Box) Geometry (deprecated); Supported for Legacy reasons; Please use Box in new scenes.|
+|[Cylinder](cylinder)|Cylinder Geometry.|
+|[Dodecahedron](dodecahedron)|Dodecahedron Geometry.|
 |[Entity (generic object)](entity)|Entities are the base of all objects in the scene. Entities are containers into which components can be attached.|
-|[GLTF Model](gltf-model)|Load a GLTF model|
-|[Image](image)|Display an image on a plane|
-|[Icosahedron](icosahedron)|Icosahedron Geometry|
-|[Light](light)|A light|
-|[Line](line)|Draw a line|
-|[Ocean](ocean)|Ocean|
-|[Octahedron](octahedron)|Octahedron Geometry|
-|[PCD Model](pcd-model)|Load a PCD model|
-|[Plane](plane)|Plane Geometry|
-|[Program](arena-program)|ARENA program data|
-|[Ring](ring)|Ring Geometry|
-|[Rounded Box](roundedbox)|Rounded Box Geometry|
-|[Scene Options](arena-scene-options)|ARENA scene options|
-|[Sphere](sphere)|Sphere Geometry|
-|[Tetrahedron](tetrahedron)|Tetrahedron Geometry|
-|[Text](text)|Display text|
-|[Thickline](thickline)|Draw a line that can have a custom width|
-|[Three.js Scene](threejs-scene)|Load a Three.js Scene (might be THREE.js version-specific; you can see THREE.js version in the JS console once you open ARENA; using glTF is preferred)|
-|[Torus](torus)|Torus Geometry|
-|[Torus Knot](torusKnot)|Torus Knot Geometry|
-|[Triangle](triangle)|Triangle Geometry|
-|[Videosphere](videosphere)|Videosphere 360 Video|
+|[GLTF Model](gltf-model)|Load a GLTF model.|
+|[3D Gaussian Splat](gaussian_splatting)|Load 3D Gaussian Splat.|
+|[Image](image)|Display an image on a plane.|
+|[Icosahedron](icosahedron)|Icosahedron Geometry.|
+|[Light](light)|A light.|
+|[Line](line)|Draw a line.|
+|[Ocean](ocean)|Draw a wave-form plane.|
+|[Octahedron](octahedron)|Octahedron Geometry.|
+|[PCD Model](pcd-model)|Load a PCD model.|
+|[Plane](plane)|Plane Geometry.|
+|[Program](arena-program)|ARENA program data.|
+|[Ring](ring)|Ring Geometry.|
+|[Rounded Box](roundedbox)|Rounded Box Geometry.|
+|[Scene Options](arena-scene-options)|ARENA scene options.|
+|[Sphere](sphere)|Sphere Geometry.|
+|[Tetrahedron](tetrahedron)|Tetrahedron Geometry.|
+|[Text](text)|Display text.|
+|[Thickline](thickline)|Draw a line that can have a custom width.|
+|[Three.js Scene](threejs-scene)|Load a Three.js Scene (might be THREE.js version-specific; you can see THREE.js version in the JS console once you open ARENA; using glTF is preferred).|
+|[Torus](torus)|Torus Geometry.|
+|[Torus Knot](torusKnot)|Torus Knot Geometry.|
+|[Triangle](triangle)|Triangle Geometry.|
+|[Videosphere](videosphere)|Videosphere 360 Video.|
+|[Camera](camera)|Camera is the pose and arena-user component data representing a user avatar.|
+|[Camera Override](camera-override)|Camera Override is used to re-position and re-pose a client's camera.|
 |[Event](event)|Events are ephemeral messages used to send user events like mouse movements or controller actions.|
+|[Hand Left](hand)|Hand Left is the left hand metadata pose and controller type of the user avatar.|
+|[Hand Right](hand)|Hand Right is the right hand metadata pose and controller type of the user avatar.|

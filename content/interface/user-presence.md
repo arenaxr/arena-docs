@@ -19,14 +19,14 @@ Upon entering a scene you will see a panel for audio and video setup. Here you c
 
 ## User Display Name
 
-![](../../assets/img/icons/more.png){:height="32px" width="32px"}
+![](/assets/img/icons/down-arrow.png){:height="32px" width="32px" style="background-color:#262626"}
 The display name you choose, will be displayed in random colored text above your user avatar. In an ARENA Scene, you can change your display text by clicking the last right-hand arrow "V" icon to show the `Settings` panel, which provides a `Display Name` input box you can change to what you wish.
 
 <img src="/assets/img/overview/userguide/name.png" width="50%"/>
 
 ## User Video
 
-![](../../assets/img/icons/video-on.png){:height="32px" width="32px"}
+![](/assets/img/icons/video-on.png){:height="32px" width="32px" style="background-color:#262626"}
 If you click the camera icon, you will begin to send video to other users. The video you are sending to other users will appear in the upper left corner of the screen. If your scene is enabled to use the facial recognition feature, you can click the recognition avatar icon and you will see the facial feature points recognized in the upper left corner of your screen.
 
 | User Avatar                    | Image | Camera | Video Sent                            |
@@ -42,7 +42,7 @@ If you click the camera icon, you will begin to send video to other users. The v
 
 ## User Audio
 
-![](../../assets/img/icons/audio-on.png){:height="32px" width="32px"}
+![](/assets/img/icons/audio-on.png){:height="32px" width="32px" style="background-color:#262626"}
 If you click the microphone icon, you will begin to send audio to other users. When you have your microphone turned off, other users will see a muted microphone icon over your avatar. Our audio support includes a number of features. Depending on the range between you and other users' avatars, you may experience louder sounds the closer you are to them, depending which side of you they are speaking from, and if they are far enough away from you to cut off the audio completely.
 
 | User Audio            | User Range | Microphone | Audio Sent                        |
@@ -50,7 +50,7 @@ If you click the microphone icon, you will begin to send audio to other users. W
 | **Muted Head Icon**   | all        | Off        | None                              |
 | **Directional Audio** | 0-20m      | On         | Audio is in stereo by avatar pose |
 | **Spatial Audio**     | 0-20m      | On         | Audio fades with distance         |
-| **Cut Off Audio**      | > 20m      | On         | None                              |
+| **Cut Off Audio**     | > 20m      | On         | None                              |
 
 ## User Pose
 
@@ -67,7 +67,7 @@ By default the ARENA shows your location as a 3d model of a head, with your nose
 
 ## Facial Recognition Avatar
 
-![](../../assets/img/icons/avatar3-on.png){:height="32px" width="32px"}
+![](/assets/img/icons/avatar-on.png){:height="32px" width="32px" style="background-color:#262626"}
 Your ARENA scene may have the capability to use facial recognition to recognize your facial feature points from your camera and present a generic 3d head which will move its eyes, eyebrows, mouth and lips as you do. Only other users will see the 3d rendering of your avatar.
 
 <figure class="video_container">
@@ -76,7 +76,7 @@ Your ARENA scene may have the capability to use facial recognition to recognize 
 
 ## Screen Sharing
 
-![](../../assets/img/icons/screen-on.png){:height="32px" width="32px"}
+![](/assets/img/icons/screen-on.png){:height="32px" width="32px" style="background-color:#262626"}
 When you click and accept the screenshare icon and popup, it will ask for the object name/ID of the object you want to screen share on (defaulted to an object with `object_id`: `screenshare`, which is dynamically created if it doesn't exist already).
 
 - See our [Screenshare Walkthrough](/content/interface/screenshare) for more detail.
@@ -91,7 +91,7 @@ By default we use A-Frame `laser-controls` which default to showing Valve Index 
 
 ## Camera Perspective
 
-(from [A-Frame documentation](https://aframe.io/docs/1.4.0/components/camera.html))
+(from [A-Frame documentation](https://aframe.io/docs/1.5.0/components/camera.html))
 
 | The camera component defines from which perspective the user views the scene. The camera is commonly paired with control components that allow input devices to move and rotate the camera.
 

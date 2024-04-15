@@ -32,7 +32,7 @@ The script uses the google apps script API to get the spreadsheet data. Make sur
 1. A Google Cloud Platform project with *Google Sheets API* and *Google Drive API* enabled. See how to [create a project](https://developers.google.com/workspace/guides/create-project)
 2. Authorization credentials for a desktop application (pasted into 'credentials.json'). See how to [create credentials](https://developers.google.com/workspace/guides/create-credentials).
 
-More details [here](https://developers.google.com/apps-script/api/quickstart/python?hl=en).
+See [Google's Python Scripting](https://developers.google.com/apps-script/api/quickstart/python?hl=en) documentation for more details.
 
 ## Arguments
 

@@ -1,6 +1,5 @@
 ---
 title: Material extras
-nav_order: 30
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -13,9 +12,11 @@ Material extras
 ===============
 
 
-Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component. 
+Define extra material properties, namely texture encoding, whether to render the material's color and render order.
 
-More properties at <a href='https://threejs.org/docs/#api/en/materials/Material'>https://threejs.org/docs/#api/en/materials/Material</a>
+The properties set here access directly Three.js material component. 
+
+More properties at <a href='https://threejs.org/docs/#api/en/materials/Material'>THREE.js Material</a>.
 
 Material extras Attributes
 ---------------------------
@@ -23,7 +24,8 @@ Material extras Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |overrideSrc|string|```''```|Overrides the material source in all meshes of an object (e.g. a basic shape or a GLTF); Use, for example, to change the texture of a GLTF.|No|
-|encoding|string; One of: ```['LinearEncoding', 'sRGBEncoding', 'GammaEncoding', 'RGBEEncoding', 'LogLuvEncoding', 'RGBM7Encoding', 'RGBM16Encoding', 'RGBDEncoding', 'BasicDepthPacking', 'RGBADepthPacking']```|```sRGBEncoding```|encoding|No|
+|colorSpace|string; One of: ```['SRGBColorSpace', 'LinearSRGBColorSpace', 'DisplayP3ColorSpace', 'NoColorSpace']```|```'SRGBColorSpace'```|The material colorspace.|No|
 |colorWrite|boolean|```True```|Whether to render the material's color.|No|
 |renderOrder|number|```1```|Allows the default rendering order of scene graph objects to be overridden.|No|
 |transparentOccluder|boolean|```False```|If `true`, will set `colorWrite=false` and `renderOrder=0` to make the material a transparent occluder.|No|
+|gltfOpacity|number|```1```|Opacity value to apply to the model. 1 is fully opaque, 0 is fully transparent.|Yes|

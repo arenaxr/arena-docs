@@ -1,15 +1,23 @@
 ---
-title: Develop Python Programs
-nav_order: 7
+title: Python Programs
+nav_order: 5.7
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
-# Introduction to ARENA Python Program Development
+# Python Scripting for ARENA
 
-{% include alert type="note" content="
-We recommend the [ARENA Overview](/content/overview) to learn about the main concepts of the ARENA.
-"%}
+The Python library provides a development option for ARENA applications
+to add simple interactions and scripting. Our current API allows us to
+create and update objects in a scene, define animations, and set up
+callbacks on events and timers. The library provides a scheduler and a
+design pattern familiar to game developers, which include decorators to
+create one-shot, periodic and delayed (start after a given time) tasks.
+Any entity represented in Python is automatically updated upon arrival
+of network messages and we provide calls to load any pre-existing scene
+content upon startup.
+
+*Draw objects and run programs in the ARENA using Python! 😀👍*
 
 You can define the appearance and behavior of objects in a scene using python programs, which take advantage of the fact that all objects in a scene are networked via a MQTT Publish-Subscribe (PubSub) messaging bus:
 
@@ -19,10 +27,23 @@ Note that the python program can be hosted anywhere with access to the MQTT bus.
 
 <!-- TODO: Link to ARTS. -->
 
+## Setup
+
+First, if we do not already have a compatible version of Python
+installed on our development machine, we must install **Python 3.8** or
+above:
+
+[https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+<img src="/assets/img/overview/dev/media/image2.png"
+style="width:3.69792in;height:1.57278in" />
 
 ## Install the ARENA Python library
 
-The easiest way to begin programming in the ARENA is to install the [Python library](../python) and create your first Python program. ARENA programs communicate over MQTT messages which govern all objects and their properties. This library is a wrapper which will allow you to easily send and receive those messages.
+Then, we must install the arena-py library using pip:
+[https://pypi.org/project/arena-py/](https://pypi.org/project/arena-py/)
+
+The easiest way to begin programming in the ARENA is to install the [Python library](/content/python) and create your first Python program. ARENA programs communicate over MQTT messages which govern all objects and their properties. This library is a wrapper which will allow you to easily send and receive those messages.
 
 {% include alert type="tip" content="
 Use the **Search ARENA Documentation** bar at the very top of every page on this site to find examples and information on anything you need.
@@ -30,10 +51,10 @@ Use the **Search ARENA Documentation** bar at the very top of every page on this
 
 ## Create a box and observe
 
-Now, let us create a very simple Python program in the scene <b>example</b>, under the [username you defined the first time you entered the arena](/content/overview/user-guide.html#arena-username). Start by opening the scene in your browser and notice it is empty, with default environment settings.
+Now, let us create a very simple Python program in the scene <b>example</b>, under the [username you defined the first time you entered the ARENA](/content/overview/user-guide.html#arena-username). Start by opening the scene in your browser and notice it is empty, with default environment settings.
 
 {% include alert type="note" content="
-Open the <b>example</b> scene under your arena username by entering the following URL in your browser: ```http://arenaxr.org/<your-username>/example```
+Open the <b>example</b> scene under your ARENA username by entering the following URL in your browser: ```http://arenaxr.org/<your-username>/example```
 "%}
 
 Copy the python script below, and paste it into a ```box.py``` file. After saving the file, execute the script (e.g. ```python3 box.py```; make sure you installed the [python library](/content/python/) first).
@@ -41,7 +62,7 @@ Copy the python script below, and paste it into a ```box.py``` file. After savin
 ```python
 from arena import *
 
-# this creates an object for scene 'example' at the given arena host
+# this creates an object for scene 'example' at the given ARENA host
 scene = Scene(host="arenaxr.org", scene="example")
 
 # define a task that will add a box to the scene
@@ -55,9 +76,9 @@ scene.run_tasks()
 
 Looking at the scene in your browser will let you see the box. Watch out, if you are at the origin, the box will be underneath you.
 
-![](../../../assets/img/overview/devguide/box.png)
+![](/assets/img/overview/devguide/box.png)
 
-By default, objects are generated in a random color, with no rotation, at x, y, z position (0, 0, 0), and with no other properties applied. Some of the other properties you can add to objects are detailed in our [Python Examples](../python/objects). Notice that the box seems stuck in the ground, which is due to the box's origin at its center positioned at scene coordinates (0, 0, 0). If you enable Flying mode (see [User Guide](user-guide)), you can move below the ground plane and view the other half of the box. Type Ctrl-C to end the program.
+By default, objects are generated in a random color, with no rotation, at x, y, z position (0, 0, 0), and with no other properties applied. Some of the other properties you can add to objects are detailed in our [Python Examples](/content/python/objects). Notice that the box seems stuck in the ground, which is due to the box's origin at its center positioned at scene coordinates (0, 0, 0). If you enable Flying mode (see [User Guide](user-guide)), you can move below the ground plane and view the other half of the box. Type Ctrl-C to end the program.
 
 Now, go back to your browser and <b>refresh</b> the page. You will notice that the box disappeared. We will explain what is up with that in [a moment](#use-persistence-reload-browser). Now, let us create two boxes, one at x, y, z (1, 1, 1) and another at x, y, z (2, 2, 2).
 
@@ -80,7 +101,7 @@ scene.run_tasks()
 
 Once you run the script above, you can go back to the scene <b>example</b> in your browser to see the two boxes:
 
-![](../../../assets/img/overview/devguide/two-boxes.png)
+![](/assets/img/overview/devguide/two-boxes.png)
 
 ## Running from the Command Line
 The target of which server, user and scene are set by the `Scene(host="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using shell environmental variables at the command line as shown below.  This allows a simple way to re-target applications for your own environment without having to change the parameters manually in the code.
@@ -134,11 +155,11 @@ Now, in your scene use your mouse to click on the box and notice the messages yo
 
 - What should `mousedown` do for this object? Change its color?
 - What should `mouseenter` or `mouseleave` do? Change its opacity?
-- Many more ideas are available in our [examples](../python/events).
+- Many more ideas are available in our [examples](/content/python/events).
 
 ## Animate a GLTF model
 
-A more advanced manipulation of objects in the ARENA is using 3d models as [GLTF](../3d-content/gltf-files). Here we are going to use a GLTF model of a duck and some animation rules to make it rotate.
+A more advanced manipulation of objects in the ARENA is using 3d models as [GLTF](/content/3d-content/gltf-files). Here we are going to use a GLTF model of a duck and some animation rules to make it rotate.
 
 ```python
 from arena import *
@@ -161,13 +182,13 @@ scene.run_animations(obj)
 scene.run_tasks()
 ```
 
-At your leisure, read more about methods to generate [3d content](../3d-content) and [animate](../3d-content/animated-models) objects and models.
+At your leisure, read more about methods to generate [3d content](/content/3d-content) and [animate](/content/3d-content/animated-models) objects and models.
 
-![](../../../assets/img/overview/animate.png)
+![](/assets/img/overview/animate.png)
 
 ## Use persistence, reload browser
 
-Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. So, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistence database](../architecture/persistence) you will have to specify `persist=True` in [Python definitions](../python/attributes). This is also true when ARENA objects are created in other scenes. The underlying message needs to specify if the object state is to be persisted or not.
+Up until now, everything you have created has been non-persistent. That is, objects are only rendered in real-time for any browsers open to the `example` as MQTT messages are received. So, if you refresh your browser, notice that all the objects we created are gone, new visitors to this scene will not see them. To backup your scene objects into our [persistence database](/content/architecture/persistence) you will have to specify `persist=True` in [Python definitions](/content/python/attributes). This is also true when ARENA objects are created in other scenes. The underlying message needs to specify if the object state is to be persisted or not.
 
 Go back to the previous python code and try to add `persist=True` to the duck object:
 ```
@@ -178,3 +199,13 @@ obj = Model(object_id="duck_1",
 ```
 
 If you run the program again, you will notice that the duck remains in the scene, even across a refresh.
+
+{% include alert type="goal" content="
+Create an ARENA Python script that triggers your animation when a user clicks on your scanned object! You can also write a script to trigger animations when the user gets close to the object, when a user interacts with another object, etc. Again, be creative here!
+"%}
+
+**More links/info/tutorials/samples:**
+- [Further Python tutorials](/content/python/tutorial/)
+- [Python Example Apps](https://github.com/arenaxr/arena-py)
+- [Python Click Event Tutorials](/content/python/events)
+- [Python Animation Tutorials](/content/python/animations)

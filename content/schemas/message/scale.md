@@ -1,6 +1,5 @@
 ---
 title: Scale
-nav_order: 48
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -13,7 +12,7 @@ Scale
 =====
 
 
-3D object scale
+3D object scale.
 
 Scale Attributes
 -----------------

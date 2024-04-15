@@ -1,6 +1,5 @@
 ---
 title: Ocean
-nav_order: 34
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -22,10 +21,10 @@ Ocean Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_id|string||A uuid or otherwise unique identifier for this object|Yes|
-|persist|boolean|```True```|Persist this object in the database (default true = persist on server)|Yes|
+|object_id|string||A uuid or otherwise unique identifier for this object.|Yes|
+|persist|boolean|```True```|Persist this object in the database.|Yes|
 |type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
-|action|string; One of: ```['create', 'delete', 'update', 'clientEvent']```|```'create'```|One of 3 basic Create/Update/Delete actions or a special client event action (e.g. a click)|Yes|
+|action|string; One of: ```['create', 'delete', 'update']```|```'create'```|Message action create, update, delete.|Yes|
 |ttl|integer||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
 |data|Ocean data||Ocean Data|Yes|
 
@@ -41,9 +40,9 @@ Ocean Attributes
 |amplitudeVariance|number|```0.3```|Wave amplitude variance.|No|
 |speed|number|```1```|Wave speed.|No|
 |speedVariance|number|```2```|Wave speed variance.|No|
-|color|string|```#7AD2F7```|Wave color.|Yes|
+|color|string|```'#7AD2F7'```|Wave color.|Yes|
 |opacity|number|```0.8```|Wave opacity.|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)||3D object position|No|
-|rotation|[rotation](rotation)|```{'w': -0.70711, 'x': 0.70711, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
-|scale|[scale](scale)||3D object scale|No|
+|position|[position](position)||3D object position.|Yes|
+|rotation|[rotation](rotation)|```{'w': -0.70711, 'x': 0.70711, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
+|scale|[scale](scale)||3D object scale.|No|

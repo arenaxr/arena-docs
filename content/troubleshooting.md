@@ -22,7 +22,7 @@ Here are some common situations which can help when programming and collaboratin
 - Is the object's position below the ground? The **y** position will be negative below the default visible floor.
 - Is the object's scale too big/small? Models especially have wild differences in scale, try increasing/decreasing the order of magnitude of the scale. Try a scale of **10, 1, 0.1, or 0.01**.
 - Does the scene name in the URL match the scene name/topic where the object was created? e.g. URL is `https://arenaxr.org/[your username]/example` and MQTT topic published to is `realm/s/[your username]/example/some_object_1`.
-- Does the object appear in the left column of the [A-Frame Scene Inspector](https://aframe.io/docs/1.4.0/introduction/visual-inspector-and-dev-tools.html)?
+- Does the object appear in the left column of the [A-Frame Scene Inspector](https://aframe.io/docs/1.5.0/introduction/visual-inspector-and-dev-tools.html)?
 
 ## Python Library `arena-py` Errors
 While using the ARENA **Python library**, You may encounter an error condition due to your network configuration. Some of these are detailed below with some troubleshooting steps.
@@ -34,7 +34,7 @@ If your internet connection uses a VPN or other firewall that may block port **8
 
 ### Python: Unable to get local issuer certificate
 It seems some distributions of Python may not have any certificate roots installed for SSL. To resolve, some useful troubleshooting can be found online:
-- https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to-get-local-issuer-certificate
+- [https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to-get-local-issuer-certificate](https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to-get-local-issuer-certificate)
 
 ## Web Browser Scene Errors
 While visiting an ARENA scene in a **web browser**, you may encounter an error condition due to limited hardware, memory, or network capacity. Some of these are detailed below with some troubleshooting steps.

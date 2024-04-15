@@ -10,7 +10,7 @@ parent: XR Experiences
 ARENA can support different optical markers: [Apriltags](https://april.eecs.umich.edu/software/apriltag), has experimental (outside the mainline code) support for [lightanchors/flash](https://youtu.be/_P01roIG93U), and more are expected to be added.
 
 {% include alert type="note" content="
-You can obtain Apriltags with different ids and sizes [here](https://github.com/arenaxr/apriltag-gen).
+You can obtain Apriltags with different ids and sizes in our [Apriltag repo](https://github.com/arenaxr/apriltag-gen).
 "%}
 
 ## Requirements
@@ -68,7 +68,7 @@ Check the example [Scene in ARENA](https://arenaxr.org/public/artags1). The Apri
 
 <img src="/assets/img/xr/scene-origin-tag.png" width="500"/>
 
-In the example, we add a .gltf to the Scene that visually represents the AprilTag and the reference axis. This object is placed at 0, 0, 0 (x, y, z), and we attached an ARMarker with id 0 and size 150 mm (the id and size of the AprilTag placed on the floor), and set it as static (dynamic=false) and not buildable (buildable=false). The object (the .gltf) is rotated by -90° in the x-axis. The entire object definition that you can enter in the [scene builder](/content/overview/build) is [here](https://gist.github.com/nampereira/3e4cbf6748b42719ac3bd5d2f8354aad).
+In the example, we add a .gltf to the Scene that visually represents the AprilTag and the reference axis. This object is placed at 0, 0, 0 (x, y, z), and we attached an ARMarker with id 0 and size 150 mm (the id and size of the AprilTag placed on the floor), and set it as static (dynamic=false) and not buildable (buildable=false). The object (the .gltf) is rotated by -90° in the x-axis. The entire object definition that you can enter in the [scene builder](/content/overview/build) is in our [ARMarker schema definition](/content/schemas//message/armarker).
 
 
 ### Dynamic Marker

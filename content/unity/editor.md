@@ -5,7 +5,7 @@ layout: default
 parent: Unity Library
 ---
 
-# ARENA-Unity Editor
+# arena-unity Editor
 The ArenaUnity package can be used to collaboratively stage and edit ARENA scenes. Be sure to use the [project setup instructions](/content/unity) to install the package. For the `Runtime` interface, see the [ARENA Unity Runtime](/content/unity/runtime) instructions.
 
 ## Signin
@@ -17,13 +17,7 @@ Two options:
 - **Runtime (Play):** Click the `Signout` button on the `ArenaClientScene` Component.
 
 ## Exporting Unity Objects as GLTF
-
-Since the ARENA uses GLTF models as a web-friendly format, it is useful to know how to export your Unity work as a GLTF model, which the ARENA web can render.
-1. We recommend using 2 Scenes separately: a `Design View` scene and an `ARENA View` scene.
-1. In scene `Design View`, use an available plug-in to [export your model](/content/3d-content/unity) to GLTF file format.
-1. Store this model online, like the on the [ARENA File Store](/content/interface/filestore) or [Dropbox](/content/overview/build#add-new-objects).
-1. In scene  `ARENA View` [load your ARENA scene](/content/unity).
-1. Import your model, adding an ARENA object using the menu `GameObject > ARENA > GLTF Model` and provide your model URL.
+See our [model import/export](/content/unity/models) documentation.
 
 ## During Runtime (Play)
 
@@ -93,10 +87,10 @@ Script | `ArenaObject` | -- | The script instance to manage an ARENA object runt
 **Animation** | `AnimationClip[]`, buttons | [] | List of animations when included in model. Adds `Play, Stop, Rewind` buttons for each `AnimationClip`.
 
 ## Inspector Window: ArenaMesh
-Each primitive mesh `ArenaObject` in our ARENA scene is rendered by a custom mesh that preserves its non-inherited size attributes for the `Mesh`, separate from its inherited size attributes for  `Scale`. Each primitive has a different set of attributes which we mimic from [A-Frame's geometries](https://aframe.io/docs/1.4.0/components/geometry.html). The `ArenaMesh` scripts available are as follows.
+Each primitive mesh `ArenaObject` in our ARENA scene is rendered by a custom mesh that preserves its non-inherited size attributes for the `Mesh`, separate from its inherited size attributes for  `Scale`. Each primitive has a different set of attributes which we mimic from [A-Frame's geometries](https://aframe.io/docs/1.5.0/components/geometry.html). The `ArenaMesh` scripts available are as follows.
 - `ArenaMeshCircle`
 - `ArenaMeshCone`
-- `ArenaMeshCube`
+- `ArenaMeshBox`
 - `ArenaMeshCylinder`
 - `ArenaMeshIcosahedron`
 - `ArenaMeshOctahedron`

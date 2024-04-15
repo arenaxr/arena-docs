@@ -1,6 +1,5 @@
 ---
 title: Remote Render
-nav_order: 43
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -13,11 +12,11 @@ Remote Render
 =============
 
 
-Whether or not an object should be remote rendered [Experimental]
+Whether or not an object should be remote rendered [Experimental].
 
 Remote Render Attributes
 -------------------------
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|enabled|boolean|```True```|Remote Render this object|No|
+|enabled|boolean|```True```|Remote Render this object.|No|

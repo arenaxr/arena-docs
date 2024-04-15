@@ -11,12 +11,11 @@ all: install serve
 check:
 	$(JEKYLL) doctor
 	$(HTMLPROOF) --check-html \
-		--http-status-ignore 999,403,429 \
+		--http-status-ignore 999,403,429,301 \
 		--assume-extension \
 		--allow-hash-href \
 		--check-favicon \
 		--empty-alt-ignore \
-		--disable-external \
 		_site
 
 install: $(PROJECT_DEPS)

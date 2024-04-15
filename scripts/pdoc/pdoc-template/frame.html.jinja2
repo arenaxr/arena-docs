@@ -1,0 +1,31 @@
+---
+{% if module.modulename.split('.')|length == 1 -%}
+title: Python API
+has_children: true
+nav_order: 6.5
+{% elif module.modulename.split('.')|length == 2 -%}
+title: {{ module.modulename if module else "API Reference" }}
+parent: Python API
+has_children: true
+{% elif module.modulename.split('.')|length == 3 -%}
+title: {{ module.modulename if module else "API Reference" }}
+parent: {{ '.'.join(module.modulename.split('.')[:-1]) }}
+grand_parent: Python API
+{% endif %}
+---
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v{{ env["PDOC-ARENA-PI-VERSION"] }}/arena">v{{ env["PDOC-ARENA-PI-VERSION"] }}</a></small>
+<div>
+    {% block content %}{% endblock %}
+    {% filter minify_css %}
+        {% block style %}
+            {#
+            The important part is that we leave out layout.css here.
+            Ideally we would still include Bootstrap Reboot, but that breaks mkdocs' theme.
+            <style>{% include "resources/bootstrap-reboot.min.css" %}</style>
+            #}
+            <style>{% include "syntax-highlighting.css" %}</style>
+            <style>{% include "theme.css" %}</style>
+            <style>{% include "content.css" %}</style>
+        {% endblock %}
+    {% endfilter %}
+</div>

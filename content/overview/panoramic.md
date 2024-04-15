@@ -1,8 +1,8 @@
 ---
 title: Panoramic Rooms
-nav_order: 6
+nav_order: 9.1
 layout: tutorial
-parent: Overview
+parent: Tutorial
 ---
 
 # Panoramic Video Rooms
@@ -40,20 +40,10 @@ Setup a scene where the 360 video stream encompasses the entire world, and while
      "action": "update",
      "data": {
        "object_type": "videosphere",
-       "position": {
-         "x": 0,
-         "y": 0,
-         "z": 0
-       },
-       "rotation": {
-         "x": 0,
-         "y": 0,
-         "z": 0
-       },
-       "radius": 5000,
-       "jitsi-video": {
-         "displayName": "360 cam"
-       }
+       "position": { "x": 0, "y": 0, "z": 0 },
+       "rotation": { "x": 0, "y": 0, "z": 0, "w": 1 },
+       "radius": 500,
+       "jitsi-video": { "displayName": "360 cam" }
      }
    }
    ```
@@ -104,20 +94,10 @@ Match a `videosphere` to a space in a scanned model of a space or room. Users ma
      "action": "update",
      "data": {
        "object_type": "videosphere",
-       "position": {
-         "x": 2.7,
-         "y": 2,
-         "z": -3.6
-       },
-       "rotation": {
-         "x": 0,
-         "y": -90,
-         "z": 0
-       },
+       "position": { "x": 2.7, "y": 2, "z": -3.6 },
+       "rotation": { "x": 0, "y": -0.70711, "z": 0, "w": 0.70711 },
        "radius": 2.5,
-       "jitsi-video": {
-         "displayName": "Conference Room 4"
-       }
+       "jitsi-video": { "displayName": "Conference Room 4" }
      }
    }
    ```
@@ -154,6 +134,10 @@ To complete the effect for your physical participants, you can use a monitor or 
 1. OBS: Expand your OBS window to fullscreen to fill the entire wall monitor.
 1. OBS: For more screen real estate, you can close some open tabs; disable `Docks > Scenes`, `Docks > Sources`, etc...
 1. OBS: For even more screen real estate, also disable `View > Source Toolbar`, `View > Status Bar`, etc...
-1. Now you should see a **reflected live virtual** scene like the image below and you should be able to see any virtual participants that enter the sphere on the wall monitor just like [this](/assets/img/overview/videosphere1.png).
+1. Now you should see a **reflected live virtual** scene like the image below and you should be able to see any virtual participants that enter the sphere on the [wall monitor](/assets/img/overview/videosphere1.png).
 
 <img src="/assets/img/overview/videosphere3.png"/>
+
+{% include alert type="goal" content="
+Build a scene in which you host a meeting using a 360 videosphere, such that it serves local and remote participants in full Hybrid-fashion.
+"%}

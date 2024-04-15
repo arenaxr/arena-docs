@@ -6,11 +6,11 @@ layout: default
 
 # Contributing to ARENA
 
-Thanks for your willingness to help improve our flexible, programmatic, mixed-reality platform! ARENA is a project led by <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>, under the [CONIX Research Center](https://conix.io/), a collaboration between six US-based universities. This guide will help you find the right path to contribute. Feel free to join the [ARENA CONIX slack](https://join.slack.com/t/arena-conix/shared_invite/zt-oq8fmgdc-QWZ414mJdfOaWfb_p2lPRg) and ask us questions.
+Thanks for your willingness to help improve our flexible, programmatic, mixed-reality platform! ARENA is a project led by <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>, a project of the [CONIX Research Center](https://conix.io/), a collaboration between six US-based universities. This guide will help you find the right path to contribute. Feel free to join the [ARENA CONIX slack](https://join.slack.com/t/arena-conix/shared_invite/zt-oq8fmgdc-QWZ414mJdfOaWfb_p2lPRg) and ask us questions.
 
 ## The Team
 
-ARENA development is lead by a team from <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>. Our team is composed of faculty, staff and several students and is continuously being strengthened. See our [GitHub](https://github.com/arenaxr/) for the list of contributors in each [repository](/content/source).
+Our team is composed of faculty, staff and several students and is continuously being strengthened. See our [GitHub](https://github.com/arenaxr/) for the list of contributors in each [repository](/content/source#arena-sources).
 
 ## Research Platform
 
@@ -44,7 +44,7 @@ If you want to work on something that there is no GitHub issue for, it's best to
 
 Some changes will require internal discussion to see if the needs of the project are still being met which can change from time to time. A list of which repo to use are listed at the end of this guide.
 
-- A great way to start is to try development of a scene using the [Python](/content/overview/dev-guide.html) and [scene builder](/content/overview/build.html) tutorials.
+- A great way to start is to try development of a scene using the [Python](/content/overview/dev-guide) and [scene builder](/content/overview/build) tutorials.
 - Once familiar, good first issues to help with are labeled with `help wanted` and `good first issue`.
 
 ## Process for Pull Requests

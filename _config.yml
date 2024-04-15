@@ -14,21 +14,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: ARENA Documentation
-email: "info@conix.io"
+email: "arenaxr@andrew.cmu.edu"
 github_username: arenaxr
 description: Tutorials and Reference for the ARENA project.
 url: https://docs.arenaxr.org
 baseurl: ""
 aux_links:
   "The ARENA":
-    - "https://arenaxr.org/"
-  "CONIX":
-    - "https://conix.io"
+    - "https://arenaxr.org"
   "CMU":
-    - "https://wise.ece.cmu.edu/"
-  "Our GitHub":
-    - "https://github.com/arenaxr/"
-footer_content: "Copyright &copy; 2020-2023, CONIX Research Center. ARENA is a project led by <a href='https://wise.ece.cmu.edu/'>Carnegie Mellon University</a>."
+    - "https://wise.ece.cmu.edu"
+  "Contact":
+    - "mailto:arenaxr@andrew.cmu.edu"
+  "Slack":
+    - "https://join.slack.com/t/arena-conix/shared_invite/zt-oq8fmgdc-QWZ414mJdfOaWfb_p2lPRg"
+  "GitHub":
+    - "https://github.com/arenaxr"
+footer_content: "Copyright &copy; 2020-2024, <a href='https://wise.ece.cmu.edu'>Carnegie Mellon University</a>. A project of the <a href='https://conix.io'>CONIX Research Center</a>."
 
 # Build settings
 markdown: kramdown
@@ -56,3 +58,4 @@ exclude:
   - node_modules
   - Rakefile
   - vendor
+  - scripts

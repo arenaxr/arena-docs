@@ -3,12 +3,13 @@ title: Novice Example
 nav_order: 2
 layout: default
 parent: Python Tutorial
+grand_parent: Python Library
 ---
 
 # Novice Example - Exploring EVEN more functionality!
 
 ## Event Handlers
-See [events](https://docs.arenaxr.org/content/python/events.html)
+See [events](/content/python/events)
 ```python
 def mouse_handler(scene, evt, msg):
     print(evt.type)

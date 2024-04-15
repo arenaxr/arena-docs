@@ -3,9 +3,10 @@ title: Beginner Example
 nav_order: 1
 layout: default
 parent: Python Tutorial
+grand_parent: Python Library
 ---
 
-# Beginner Example - The bare minimum you need to start using ARENA-py
+# Beginner Example - The bare minimum you need to start using arena-py
 
 ## Let's start by installing and importing the library
 ```shell
@@ -35,10 +36,10 @@ You can also pass host and scene as arguments, if you don't want to use environm
 ```python
 scene = Scene(host=[host], scene=[scene])
 ```
-Note: ARENA-py will always favor environmental variables over arguments.
+Note: arena-py will always favor environmental variables over arguments.
 
 ## Define a task
-ARENA-py works by running tasks in an event loop, so we need a main task for our sample program.
+arena-py works by running tasks in an event loop, so we need a main task for our sample program.
 ```python
 def main():
 ```
@@ -50,9 +51,9 @@ box = Box(object_id="my_box", position=Position(0,4,-2), scale=Scale(2,2,2))
 ```
 Note the input arguments. The names must match what they will be in the ARENA JSON specification. We don't have to worry too much about that now, but keep this in mind, as typos will be very bad!
 
-Box is a type of "Object". See [objects](https://docs.arenaxr.org/content/python/objects.html).
+Box is a type of "Object". See [objects](/content/python/objects).
 
-Position and Scale are what we call "Attributes". See [attributes](https://docs.arenaxr.org/content/python/attributes.html).
+Position and Scale are what we call "Attributes". See [attributes](/content/python/attributes).
 
 ## Adding our object to the ARENA
 ```python

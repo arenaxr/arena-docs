@@ -1,0 +1,216 @@
+[
+  {
+    "object_id": "dust",
+    "type": "object",
+    "data": {
+      "object_type": "entity",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "w": 1,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "spe-particles": {
+        "rotation": 3.14,
+        "texture": "static/images/textures/smokeparticle.png",
+        "particleCount": 100,
+        "positionSpread": {
+          "x": 100,
+          "y": 100,
+          "z": 100
+        },
+        "acceleration": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "accelerationSpread": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "velocitySpread": {
+          "x": 0.5,
+          "y": 1,
+          "z": 0.5
+        },
+        "velocity": {
+          "x": 1,
+          "y": 0.3,
+          "z": 1
+        },
+        "color": [
+          "#ffffff"
+        ],
+        "blending": "additive",
+        "maxAge": 20
+      },
+      "visible": "true"
+    }
+  },
+  {
+    "object_id": "fountain",
+    "type": "object",
+    "data": {
+      "object_type": "entity",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -3
+      },
+      "rotation": {
+        "w": 1,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "spe-particles": {
+        "acceleration": {
+          "x": 0,
+          "y": -10,
+          "z": 0
+        },
+        "accelerationSpread": {
+          "x": 10,
+          "y": 0,
+          "z": 10
+        },
+        "blending": "additive",
+        "color": [
+          "#0000ff",
+          "#ff0000"
+        ],
+        "maxAge": 6,
+        "particleCount": 1000,
+        "texture": "static/images/textures/smokeparticle.png",
+        "velocity": {
+          "x": 0,
+          "y": 25,
+          "z": 0
+        },
+        "velocitySpread": {
+          "x": 10,
+          "y": 7.5,
+          "z": 10
+        }
+      },
+      "visible": "true"
+    }
+  },
+  {
+    "object_id": "rain",
+    "type": "object",
+    "data": {
+      "object_type": "entity",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "w": 1,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "spe-particles": {
+        "rotation": 3.14,
+        "particleCount": 1000,
+        "texture": "static/images/textures/raindrop.png",
+        "positionSpread": {
+          "x": 100,
+          "y": 100,
+          "z": 100
+        },
+        "acceleration": {
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        "accelerationSpread": {
+          "x": 2,
+          "y": 1,
+          "z": 2
+        },
+        "velocitySpread": {
+          "x": 10,
+          "y": 50,
+          "z": 10
+        },
+        "velocity": {
+          "x": 0,
+          "y": 75,
+          "z": 0
+        },
+        "blending": "additive",
+        "color": [
+          "#ffffff"
+        ],
+        "maxAge": 1,
+        "size": [
+          0.4
+        ]
+      },
+      "visible": "true"
+    }
+  },
+  {
+    "object_id": "snow",
+    "type": "object",
+    "data": {
+      "object_type": "entity",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "w": 1,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "spe-particles": {
+        "rotation": 3.14,
+        "texture": "static/images/textures/smokeparticle.png",
+        "particleCount": 200,
+        "positionSpread": {
+          "x": 100,
+          "y": 100,
+          "z": 100
+        },
+        "acceleration": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "accelerationSpread": {
+          "x": 0.2,
+          "y": 0,
+          "z": 0.2
+        },
+        "velocitySpread": {
+          "x": 2,
+          "y": 0,
+          "z": 2
+        },
+        "blending": "additive",
+        "color": [
+          "#ffffff"
+        ],
+        "velocity": {
+          "x": 0,
+          "y": 8,
+          "z": 0
+        },
+        "maxAge": 20
+      },
+      "visible": "true"
+    }
+  }
+]

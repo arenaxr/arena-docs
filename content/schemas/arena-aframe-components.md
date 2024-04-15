@@ -29,10 +29,10 @@ These are the A-Frame components added to support ARENA core functionality.
 <!-- markdown-link-check-disable-next-line -->
 <p>If <code>extractAssetExtras=true</code> (default), the <a href="https://help.sketchfab.com/hc/en-us/articles/202512396-Model-Properties">attribution system</a> attempts to extract data automatically from the model (requires models with authorship metadata; e.g. models downloaded from sketchfab have these data)</p>
 </dd>
-<dt><a href="#module_build-watch-object">build-watch-object</a></dt>
+<dt><a href="#module_build3d-mqtt-object">build3d-mqtt-object</a></dt>
 <dd><p>Create an observer to listen for changes made locally in the A-Frame Inspector and publish them to MQTT.</p>
 </dd>
-<dt><a href="#module_build-watch-scene">build-watch-scene</a></dt>
+<dt><a href="#module_build3d-mqtt-scene">build3d-mqtt-scene</a></dt>
 <dd><p>Create an observer to listen for changes made locally in the A-Frame Inspector and publish them to MQTT.</p>
 </dd>
 <dt><a href="#module_click-listener">click-listener</a></dt>
@@ -40,7 +40,7 @@ These are the A-Frame components added to support ARENA core functionality.
 </dd>
 <dt><a href="#module_collision-listener">collision-listener</a></dt>
 <dd><p>Listen for collisions, callback on event.
-Requires <a href="https://github.com/n5ro/aframe-physics-system">Physics for A-Frame VR</a></p>
+Requires <a href="https://github.com/c-frame/aframe-physics-system">Physics for A-Frame VR</a></p>
 </dd>
 <dt><a href="#module_gesture-detector">gesture-detector</a></dt>
 <dd><p>Detect multi-finger touch gestures. Publish events accordingly.
@@ -52,7 +52,7 @@ Based off 8th Wall&#39;s <a href="https://github.com/8thwall/web/tree/master/exa
 <dt><a href="#module_impulse">impulse</a></dt>
 <dd><p>One physics feature is applying an impulse to an object to set it in motion.
 This happens in conjunction with an event.
-Requires <a href="https://github.com/n5ro/aframe-physics-system">Physics for A-Frame VR</a></p>
+Requires <a href="https://github.com/c-frame/aframe-physics-system">Physics for A-Frame VR</a></p>
 </dd>
 <dt><a href="#module_jitsi-video">jitsi-video</a></dt>
 <dd><p>Apply a jitsi video to a geometry
@@ -75,7 +75,7 @@ Implements a timeout scheme in lack of better management of the timing/events ca
 <dt><a href="#module_pcd-model">pcd-model</a></dt>
 <dd><p>Load Point Cloud Data (PCD) models using three.js example loader
 Point Cloud Data is a file format for Point Cloud Library.
-<a href="https://en.wikipedia.org/wiki/Point_Cloud_Library">https://en.wikipedia.org/wiki/Point_Cloud_Library</a></p>
+<a href="https://wikipedia.org/wiki/Point_Cloud_Library">https://wikipedia.org/wiki/Point_Cloud_Library</a></p>
 </dd>
 <dt><a href="#module_press-and-move">press-and-move</a></dt>
 <dd><p>Press and move camera; User camera movement with the mouse.
@@ -197,14 +197,14 @@ If `extractAssetExtras=true` (default), the [attribution system](https://help.sk
 | id | <code>string</code> |  | The entity id in the scene; automatically filled in on component init |
 | [extractAssetExtras] | <code>boolean</code> | <code>true</code> | Extract attribution info from asset extras; will override attribution info given (default: true) |
 
-<a name="module_build-watch-object"></a>
+<a name="module_build3d-mqtt-object"></a>
 
-## build-watch-object
+## build3d-mqtt-object
 Create an observer to listen for changes made locally in the A-Frame Inspector and publish them to MQTT.
 
-<a name="module_build-watch-scene"></a>
+<a name="module_build3d-mqtt-scene"></a>
 
-## build-watch-scene
+## build3d-mqtt-scene
 Create an observer to listen for changes made locally in the A-Frame Inspector and publish them to MQTT.
 
 <a name="module_click-listener"></a>
@@ -220,9 +220,9 @@ Keep track of mouse events and publish corresponding events
 
 ## collision-listener
 Listen for collisions, callback on event.
-Requires [Physics for A-Frame VR](https://github.com/n5ro/aframe-physics-system)
+Requires [Physics for A-Frame VR](https://github.com/c-frame/aframe-physics-system)
 
-**Requires**: <code>module:&#x27;aframe-physics-system&#x27;</code>  
+**Requires**: <code>module:&#x27;aframe-physics-system&#x27;</code>
 <a name="module_gesture-detector"></a>
 
 ## gesture-detector
@@ -247,9 +247,9 @@ Load new URL when object is clicked
 ## impulse
 One physics feature is applying an impulse to an object to set it in motion.
 This happens in conjunction with an event.
-Requires [Physics for A-Frame VR](https://github.com/n5ro/aframe-physics-system)
+Requires [Physics for A-Frame VR](https://github.com/c-frame/aframe-physics-system)
 
-**Requires**: <code>module:aframe-physics-system</code>  
+**Requires**: <code>module:aframe-physics-system</code>
 <a name="module_jitsi-video"></a>
 
 ## jitsi-video
@@ -322,7 +322,7 @@ Publish with qos of 2 for network graph to update latency
 ## pcd-model
 Load Point Cloud Data (PCD) models using three.js example loader
 Point Cloud Data is a file format for Point Cloud Library.
-https://en.wikipedia.org/wiki/Point_Cloud_Library
+https://wikipedia.org/wiki/Point_Cloud_Library
 
 <a name="module_press-and-move"></a>
 
@@ -406,9 +406,8 @@ Adds a video to an entity and controls its playback.
 ## jitsiStatsLocalCallback(e)
 Called when Jitsi local stats are updated, used to save local status for stats-monitor.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | <code>Object</code> | event object; e.detail contains the callback arguments |
-

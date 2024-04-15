@@ -1,6 +1,5 @@
 ---
 title: Animation Mixer
-nav_order: 0
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -13,9 +12,9 @@ Animation Mixer
 ===============
 
 
-A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'. 
+A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'.
 
-More properties at <a href='https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation'>https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation</a>
+More properties at <a href='https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation'>A-Frame Extras Animation</a>.
 
 Animation Mixer Attributes
 ---------------------------
@@ -26,7 +25,7 @@ Animation Mixer Attributes
 |clip|string|```'*'```|Name of the animation clip(s) to play. Accepts wildcards.|Yes|
 |crossFadeDuration|number|```0```|Duration of cross-fades between clips, in seconds.|No|
 |duration|number|```0```|Duration of the animation, in seconds (0 = auto).|No|
-|loop|string; One of: ```['once', 'repeat', 'pingpong']```|```'repeat'```|once, repeat, or pingpong. In repeat and pingpong modes, the clip plays once plus the specified number of repetitions. For pingpong, every second clip plays in reverse.|No|
+|loop|string; One of: ```['once', 'repeat', 'pingpong']```|```'repeat'```|In repeat and pingpong modes, the clip plays once plus the specified number of repetitions. For pingpong, every second clip plays in reverse.|No|
 |repetitions|string|```''```|Number of times to play the clip, in addition to the first play (empty string = Infinity). Repetitions are ignored for loop: once.|No|
 |startAt|number|```0```|Sets the start of an animation to a specific time (in milliseconds). This is useful when you need to jump to an exact time in an animation. The input parameter will be scaled by the mixer's timeScale.|No|
 |timeScale|number|```1```|Scaling factor for playback speed. A value of 0 causes the animation to pause. Negative values cause the animation to play backwards.|No|

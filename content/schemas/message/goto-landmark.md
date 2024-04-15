@@ -1,6 +1,5 @@
 ---
 title: Goto Landmark
-nav_order: 21
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
@@ -13,7 +12,7 @@ Goto Landmark
 =============
 
 
-Teleports user to the landmark with the given name; Requires click-listener
+Teleports user to the landmark with the given name. Requires click-listener.
 
 Goto Landmark Attributes
 -------------------------

@@ -5,7 +5,7 @@ layout: default
 parent: Python Library
 ---
 
-# Animations and GLTF Morphs in ARENA-py
+# Animations and GLTF Morphs in arena-py
 
 Dispatching and running animations and GLTF 3D Morphs.
 
@@ -47,12 +47,15 @@ obj.dispatch_animation(
             )
         ]
     )
-scene.run_animations(obj) # this will cause all the dispatched animations to be run
+scene.run_animations(obj) # this will cause all the dispatched animations to be run.
+
 ```
+
+Note that the tweening of these properties occur browser-clientside. For the position property example above, at the point halfway through the animation duration, the Position property will *not* be updated to `(0, 0, -7.5)` internally. Instead, it will update to its end position at the end of the animation duration. This final position update may also change if in the middle of the duration, the position property is separately updated or if a second animation is dispatched that also changes position.
 
 ### Animation vs AnimationMixer
 `AnimationMixer`s are special animations specific to a 3D model. These can be run the same way as regular `Animation`s.
-See [here](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation).
+See the [Animation component](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation).
 ```python
 xr_logo.dispatch_animation(
     AnimationMixer(clip="*", loop="repeat")
