@@ -1,5 +1,57 @@
 [
   {
+    "object_id": "scene-options",
+    "type": "scene-options",
+    "data": {
+      "env-presets": {
+        "active": true,
+        "preset": "arches",
+        "ground": "none",
+        "fog": 0,
+        "skyType": "atmosphere"
+      },
+      "scene-options": {
+        "clickableOnlyEvents": true,
+        "maxAVDist": 20,
+        "privateScene": false,
+        "videoFrustumCulling": true,
+        "videoDistanceConstraints": true,
+        "videoDefaultResolutionConstraint": 180,
+        "physics": false
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    }
+  },
+  {
+    "object_id": "ambiance",
+    "type": "object",
+    "data": {
+      "object_type": "entity",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "w": 1,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "sound": {
+        "src": "store/users/wiselab/audio/ocean.mp3",
+        "positional": false,
+        "loop": true,
+        "autoplay": true,
+        "volume": 0.1
+      }
+    }
+  },
+  {
     "object_id": "dust",
     "type": "object",
     "data": {
@@ -100,6 +152,29 @@
         }
       },
       "visible": "true"
+    }
+  },
+  {
+    "object_id": "ocean",
+    "type": "object",
+    "data": {
+      "object_type": "ocean",
+      "width": 100,
+      "depth": 100,
+      "color": "#7ad2f7",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "w": -0.70711,
+        "x": 0.70711,
+        "y": 0,
+        "z": 0
+      },
+      "amplitude": 1,
+      "opacity": 1
     }
   },
   {
