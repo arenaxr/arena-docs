@@ -908,7 +908,7 @@ For now, it's not directly supported, but rather by passing JSON inside the `dat
     "rotation": { "x": 0, "y": 0, "z": 0, "w": 1 },
     "scale": { "x": 0.01, "y": 0.01, "z": 0.01 },
     "spe-particles": {
-      "texture": "textures/fog.png",
+      "texture": "static/images/textures/fog.png",
       "velocity": "1 30 0",
       "velocitySpread": "2 1 0.2",
       "particleCount": 50,
@@ -916,63 +916,6 @@ For now, it's not directly supported, but rather by passing JSON inside the `dat
       "size": "3, 8",
       "opacity": "0, 1, 0",
       "color": "#aaa, #222"
-    }
-  }
-}
-```
-
-```json
-{
-  "object_id": "flames",
-  "action": "create",
-  "type": "object",
-  "data": {
-    "object_type": "entity",
-    "position": { "x": 0, "y": 1, "z": -3.8 },
-    "rotation": { "x": 0, "y": 0, "z": 0, "w": 1 },
-    "scale": { "x": 0.01, "y": 0.01, "z": 0.01 },
-    "spe-particles": {
-      "texture": "textures/explosion_sheet.png",
-      "textureFrames": "5 5",
-      "velocity": "4 100 0",
-      "acceleration": "0 10 0",
-      "accelerationSpread": "0 10 0",
-      "velocitySpread": "4 0 4",
-      "particleCount": 15,
-      "maxAge": 1,
-      "size": "4, 8",
-      "sizeSpread": 2,
-      "opacity": "1, 0",
-      "wiggle": "0 1 0",
-      "blending": "additive"
-    }
-  }
-}
-```
-
-```json
-{
-  "object_id": "sparks",
-  "action": "create",
-  "type": "object",
-  "data": {
-    "object_type": "entity",
-    "position": { "x": 0, "y": 1, "z": -4 },
-    "rotation": { "x": 0, "y": 0, "z": 0, "w": 1 },
-    "scale": { "x": 0.01, "y": 0.01, "z": 0.01 },
-    "spe-particles": {
-      "texture": "textures/square.png",
-      "color": "yellow, red",
-      "particleCount": 3,
-      "maxAge": 0.5,
-      "maxAgeSpread": 1,
-      "velocity": "40 200 40",
-      "velocitySpread": "10 3 10",
-      "wiggle": "50 0 50",
-      "wiggleSpread": "15 0 15",
-      "emitterScale": 8,
-      "sizeSpread": 10,
-      "randomizeVelocity": true
     }
   }
 }
