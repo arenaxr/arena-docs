@@ -16,6 +16,8 @@ Unity C# library for editing scenes and creating applications for the ARENA.
 1. `Edit > Project Settings > Player > PC, Mac & Linux Standalone > Other Settings > Script Compilation`:
     - `Scripted Define Symbols` to include:
         - `SSL`
+1. `Edit > Project Settings > Player > PC, Mac & Linux Standalone > Resolution and Presentation > Resolution`:
+    - `Run In Background` set to true.      
 1. You may need to install [`git`](https://git-scm.com/) if it doesn't come preinstalled on your OS (Windows 10).
 1. Open `Window > Package Manager` and `+ > Add package from git URL...`, use this link for the latest:
     ```
