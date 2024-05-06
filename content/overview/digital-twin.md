@@ -48,8 +48,7 @@ We are going to use the scene you created in the Building a Scene tutorial, and 
 1. From your phone, enter the [build page](https://arenaxr.org/build) for your scene.
 
 1. There are multiple paths to upload files on the [ARENA File Store and Dropbox](/content/interface/filestore), which you can review.
-Currently we will use the simplest method, the **\[Upload Model to File Store and Scene\]** or
-**\[ <img src="/assets/img/overview/build/3dobj-icon.png" width="15"/>↑ \]**.
+Currently we will use the simplest method, under **Add/Edit Object**, select **Type: GLTF Model**, then click **\[Upload File & Publish\]**.
 Select the model and it will be uploaded for you automatically.
     - Make sure the option for **Room-scale digital twin model? Hide in AR**, **<u>is unchecked</u>**. We don't want to hide it before we finish aligning the model in space.
 

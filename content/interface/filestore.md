@@ -31,8 +31,7 @@ Think about how you want to a user to load large files from a web browser. The a
 
 ### File Store Upload on Build Page
 This example will highlight the ARENA File Store strategy.
-Select the **\[Upload Model to File Store and Scene\]** or
-**\[ <img src="/assets/img/overview/build/3dobj-icon.png" width="15"/>↑ \]** button at the top of the [build page](https://arenaxr.org/build) .
+Under **Add/Edit Object**, select **Type: GLTF Model**, then click the **\[Upload File & Publish\]** button at the top of the [build page](https://arenaxr.org/build) .
 Select the model and it will be uploaded for you automatically.
 
 <img src="/assets/img/overview/build/auto-upload.png" style="width:3in;border:1px solid;" />

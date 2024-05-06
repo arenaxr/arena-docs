@@ -151,8 +151,7 @@ the top of the Add/Edit Object section:
 style="width:6in;height:2.63889in;border:1px solid;" />
 
 There are multiple paths to upload files on the [ARENA File Store and Dropbox](/content/interface/filestore), which you can review.
-Currently we will use the simplest method, the **\[Upload Model to File Store and Scene\]** or
-**\[ <img src="/assets/img/overview/build/3dobj-icon.png" width="15"/>↑ \]**.
+Currently we will use the simplest method, under **Add/Edit Object**, select **Type: GLTF Model**, then click **\[Upload File & Publish\]**..
 Select the model and it will be uploaded for you automatically.
 
 <img src="/assets/img/overview/build/auto-upload.png" style="width:3in;border:1px solid;" />
