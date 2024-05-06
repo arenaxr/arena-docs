@@ -3,7 +3,7 @@ title: arena.attributes.sound
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.6/arena">v0.9.6</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.10.0/arena">v0.10.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Sound"></a>
     
-            <div class="docstring"><p>Sound attribute class to manage its properties in the ARENA: The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position. More properties at <a href="https://aframe.io/docs/1.5.0/components/sound.html">https://aframe.io/docs/1.5.0/components/sound.html</a> A-Frame Sound.
+            <div class="docstring"><p>Sound attribute class to manage its properties in the ARENA: The sound component defines the entity as a source of sound or audio. The sound component can be positional and is thus affected by the component's position. More properties at <a href="https://aframe.io/docs/1.5.0/components/sound.html">https://aframe.io/docs/1.5.0/components/sound.html</a> A-Frame Sound.
 Usage: <code>sound=Sound(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>

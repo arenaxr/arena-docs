@@ -3,7 +3,7 @@ title: arena.objects.pcd_model
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.6/arena">v0.9.6</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.10.0/arena">v0.10.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -30,7 +30,8 @@ grand_parent: Python API
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>str pointColor</strong>:  Color of the points. Defaults to '#7f7f7f' (optional)</li>
+<li><strong>float opacity</strong>:  Opacity of all points. Defaults to '1' (optional)</li>
+<li><strong>str pointColor</strong>:  Color of the points. (optional)</li>
 <li><strong>float pointSize</strong>:  Size of the points. Defaults to '0.01' (optional)</li>
 <li><strong>str url</strong>:  Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
 </ul>

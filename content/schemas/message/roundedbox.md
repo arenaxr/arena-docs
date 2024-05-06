@@ -60,7 +60,7 @@ Rounded Box Attributes
 |landmark|[landmark](landmark)||Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists).|No|
 |material-extras|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order.|No|
 |shadow|[shadow](shadow)||The shadow component enables shadows for an entity and its children. Adding the shadow component alone is not enough to display shadows in your scene. We must have at least one light with castShadow: true enabled.|No|
-|sound|[sound](sound)||The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position.|No|
+|sound|[sound](sound)||The sound component defines the entity as a source of sound or audio. The sound component can be positional and is thus affected by the component's position.|No|
 |textinput|[textinput](textinput)||Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.|No|
 |url|string||Use File Store paths under 'store/users/username', see CDN and other storage options in the description above.|No|
 |remote-render|[remote-render](remote-render)||Whether or not an object should be remote rendered [Experimental].|No|

@@ -1,5 +1,5 @@
 ---
-title: arena.objects.tetrahedron
+title: arena.objects.urdf_model
 parent: arena.objects
 grand_parent: Python API
 ---
@@ -8,54 +8,54 @@ grand_parent: Python API
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../../arena.html">arena</a><wbr>.<a href="./../objects.html">objects</a><wbr>.tetrahedron    </h1>
+<a href="./../../arena.html">arena</a><wbr>.<a href="./../objects.html">objects</a><wbr>.urdf_model    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="Tetrahedron">
+                <section id="UrdfModel">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Tetrahedron</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
+    <span class="name">UrdfModel</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
 
         
     </div>
-    <a class="headerlink" href="#Tetrahedron"></a>
+    <a class="headerlink" href="#UrdfModel"></a>
     
-            <div class="docstring"><p>Tetrahedron object class to manage its properties in the ARENA: Tetrahedron Geometry.</p>
+            <div class="docstring"><p>UrdfModel object class to manage its properties in the ARENA: Load a URDF model. See guidance to store paths under <a href="https://docs.arenaxr.org/content/interface/filestore.html">https://docs.arenaxr.org/content/interface/filestore.html</a> ARENA File Store, CDN, or DropBox.</p>
 
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>int detail</strong>:  detail (optional)</li>
-<li><strong>float radius</strong>:  radius Defaults to '1' (optional)</li>
+<li><strong>str joints: Set joint values (in degrees) in the form 'JointName1: ValueInDegrees1, JointName2</strong>:  ValueInDegrees2, ...'.  (optional)</li>
+<li><strong>str url</strong>:  Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
 </ul>
 </div>
 
 
-                            <div id="Tetrahedron.__init__" class="classattr">
+                            <div id="UrdfModel.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">Tetrahedron</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">UrdfModel</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
-    <a class="headerlink" href="#Tetrahedron.__init__"></a>
+    <a class="headerlink" href="#UrdfModel.__init__"></a>
     
     
 
                             </div>
-                            <div id="Tetrahedron.object_type" class="classattr">
+                            <div id="UrdfModel.object_type" class="classattr">
                                 <div class="attr variable">
             <span class="name">object_type</span>        =
-<span class="default_value">&#39;tetrahedron&#39;</span>
+<span class="default_value">&#39;urdf-model&#39;</span>
 
         
     </div>
-    <a class="headerlink" href="#Tetrahedron.object_type"></a>
+    <a class="headerlink" href="#UrdfModel.object_type"></a>
     
     
 
@@ -64,28 +64,28 @@ grand_parent: Python API
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
-                                <dd id="Tetrahedron.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
-                <dd id="Tetrahedron.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
-                <dd id="Tetrahedron.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
-                <dd id="Tetrahedron.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
-                <dd id="Tetrahedron.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
-                <dd id="Tetrahedron.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
-                <dd id="Tetrahedron.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
-                <dd id="Tetrahedron.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
-                <dd id="Tetrahedron.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
-                <dd id="Tetrahedron.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
-                <dd id="Tetrahedron.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
-                <dd id="Tetrahedron.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
-                <dd id="Tetrahedron.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
-                <dd id="Tetrahedron.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
-                <dd id="Tetrahedron.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
-                <dd id="Tetrahedron.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
-                <dd id="Tetrahedron.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
-                <dd id="Tetrahedron.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
+                                <dd id="UrdfModel.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
+                <dd id="UrdfModel.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
+                <dd id="UrdfModel.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
+                <dd id="UrdfModel.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
+                <dd id="UrdfModel.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
+                <dd id="UrdfModel.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
+                <dd id="UrdfModel.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
+                <dd id="UrdfModel.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
+                <dd id="UrdfModel.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
+                <dd id="UrdfModel.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
+                <dd id="UrdfModel.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
+                <dd id="UrdfModel.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
+                <dd id="UrdfModel.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
+                <dd id="UrdfModel.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
+                <dd id="UrdfModel.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
+                <dd id="UrdfModel.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
+                <dd id="UrdfModel.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
+                <dd id="UrdfModel.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
 
             </div>
             <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="Tetrahedron.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                                <dd id="UrdfModel.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
 
             </div>
                                 </dl>

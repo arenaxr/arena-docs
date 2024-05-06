@@ -45,6 +45,7 @@ has_toc: false
 |[Torus](torus)|Torus Geometry.|
 |[Torus Knot](torusKnot)|Torus Knot Geometry.|
 |[Triangle](triangle)|Triangle Geometry.|
+|[URDF Model](urdf-model)|Load a URFD model.|
 |[Videosphere](videosphere)|Videosphere 360 Video.|
 |[Camera](camera)|Camera is the pose and arena-user component data representing a user avatar.|
 |[Camera Override](camera-override)|Camera Override is used to re-position and re-pose a client's camera.|

@@ -24,7 +24,7 @@ Material extras Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |overrideSrc|string|```''```|Overrides the material source in all meshes of an object (e.g. a basic shape or a GLTF); Use, for example, to change the texture of a GLTF.|No|
-|colorSpace|string; One of: ```['SRGBColorSpace', 'LinearSRGBColorSpace', 'DisplayP3ColorSpace', 'NoColorSpace']```|```'SRGBColorSpace'```|The material colorspace.|No|
+|colorSpace|string; One of: ```['SRGBColorSpace', 'LinearSRGBColorSpace', 'DisplayP3ColorSpace', 'NoColorSpace']```|```'SRGBColorSpace'```|The material colorspace.|Yes|
 |colorWrite|boolean|```True```|Whether to render the material's color.|No|
 |renderOrder|number|```1```|Allows the default rendering order of scene graph objects to be overridden.|No|
 |transparentOccluder|boolean|```False```|If `true`, will set `colorWrite=false` and `renderOrder=0` to make the material a transparent occluder.|No|

@@ -3,7 +3,7 @@ title: arena.attributes.data
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.9.6/arena">v0.9.6</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.10.0/arena">v0.10.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -65,7 +65,7 @@ Usage: <code>data=Data(...)</code></p>
 <li><strong>bool show_on_enter_ar</strong>:  Show object when entering AR. Hidden otherwise. (optional)</li>
 <li><strong>bool show_on_enter_vr</strong>:  Show object when entering VR. Hidden otherwise. (optional)</li>
 <li><strong>bool skipCache: Disable retrieving the shared geometry object from the cache. (geometries only</strong>:  box, circle, cone, ...). (optional)</li>
-<li><strong>dict sound: The sound component defines the entity as a source of sound or audio. The sound component is positional and is thus affected by the component's position. More properties at <https</strong>: //aframe.io/docs/1.5.0/components/sound.html> A-Frame Sound. (optional)</li>
+<li><strong>dict sound: The sound component defines the entity as a source of sound or audio. The sound component can be positional and is thus affected by the component's position. More properties at <https</strong>: //aframe.io/docs/1.5.0/components/sound.html> A-Frame Sound. (optional)</li>
 <li><strong>dict spe_particles: GPU based particle systems in A-Frame. More properties at <https</strong>: //github.com/harlyq/aframe-spe-particles-component> A-Frame SPE Particles component. (optional)</li>
 <li><strong>dict static_body: A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. More properties at <https</strong>: //github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md> A-Frame Physics System. (optional)</li>
 <li><strong>dict textinput</strong>:  Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener. (optional)</li>
