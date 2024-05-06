@@ -138,6 +138,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | UI Button Panel           |    [![][i-ui-buttons]][i-ui-buttons]    | ARENAUI Button Panel                                                                     | [Object:][obj3]            [Schema][s-ui-buttons]                               [Python][p-ui-buttons]    [Tutorial][t-ui-buttons]    |
 | UI Card                   |       [![][i-ui-card]][i-ui-card]       | ARENAUI Card                                                                             | [Object:][obj3]            [Schema][s-ui-card]                                  [Python][p-ui-card]       [Tutorial][t-ui-card]       |
 | UI Prompt                 |     [![][i-ui-prompt]][i-ui-prompt]     | ARENAUI Prompt                                                                           | [Object:][obj3]            [Schema][s-ui-prompt]                                [Python][p-ui-prompt]     [Tutorial][t-ui-prompt]     |
+| URDF Model                |          [![][i-urdf]][i-urdf]          | URDF Models are used to express robotic shapes and joint parameters                      | [Object:][obj3]            [Schema][s-urdf]                                     [Python][p-urdf]                                      |
 | User Account              |       [![][i-profile]][i-profile]       | The User's account profile and scene permissions.                                        | [Application][a-profile]                                                                                  [Tutorial][t-profile]       |
 | User List                 |         [![][i-users]][i-users]         | A scene tool to list connect users and their Jitsi (video conference) state              | [User:][user]                                                                                             [Tutorial][t-userlist]      |
 | User Name                 |                                         | Your ARENA account username (same as Namespace)                                          | Concept                                                                                                   [Tutorial][t-username]      |
@@ -213,6 +214,8 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [i-splat]: /assets/img/examples/objects/splat.png
 {:width="100px"}
 [i-gltf]: /assets/img/examples/objects/gltf.png
+{:width="100px"}
+[i-urdf]: /assets/img/examples/objects/urdf.png
 {:width="100px"}
 [i-hand]: /assets/img/xr/quest-2.png
 {:width="100px"}
@@ -448,6 +451,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-gltf-lod]: /content/schemas/message/gltf-model-lod
 [s-gltf-morph]: /content/schemas/message/gltf-morph
 [s-gltf]: /content/schemas/message/gltf-model
+[s-urdf]: /content/schemas/message/urdf-model
 [s-goto-landmark]: /content/schemas/message/goto-landmark
 [s-goto-url]: /content/schemas/message/goto-url
 [s-hand]: /content/schemas/message/hand
@@ -579,6 +583,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [p-gltf-lod]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/model_lod.py
 [p-gltf-morph]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/morph.py
 [p-gltf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/gltf.py
+[p-urdf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/urdf.py
 [p-goto-landmark]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_landmark.py
 [p-goto-url]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_url.py
 [p-hands]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/hands.py

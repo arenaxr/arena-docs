@@ -266,6 +266,12 @@ Create a [thick-line]:
 ThickLine(path, lineWidth, color, ...)
 ```
 
+## [URDF](/content/python-api/objects/urdf_model)
+Create a [urdf] 3D model:
+```python
+UrdfModel(url, joints, ...)
+```
+
 ## [Videosphere](/content/python-api/objects/videosphere)
 Create a [videosphere]:
 ```python
@@ -290,6 +296,7 @@ Object(object_type, ...)
 [dodecahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/dodecahedron.py
 [entity]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/entity.py
 [gltf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/gltf.py
+[urdf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/urdf.py
 [hands]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/hands.py
 [icosahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/icosahedron.py
 [image]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/image.py
