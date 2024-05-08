@@ -44,7 +44,7 @@ There is a [Build 3D tutorial](/content/interface/debug#build-3d) for ARENA scen
 There is a [A-Frame Inspector tutorial](/content/interface/debug#a-frame-scene-inspector) for ARENA scenes using A-Frame Inspector. **NOTE: The default A-Frame Inspector does not publish MQTT updates. Any changes you make are local only.**
 
 {% include alert type="warning" content="
-A-Frame Inspector and Build 3D are similar, but operate critically differently. Learn to tell them apart: The A-Frame Inspector has **solid black** control panels, and Build 3D has **opaque black** control panels.
+A-Frame Inspector and Build 3D are similar, but operate critically differently. Learn to tell them apart: The A-Frame Inspector has **opaque black** control panels, and Build 3D has **transparent black** control panels.
 "%}
 
 <img src="/assets/img/overview/inspector.png" width="50%" />
