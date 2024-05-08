@@ -43,7 +43,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Box Collision             | [![][i-box-collision]][i-box-collision] | Listen for bounding-box collisions with user camera and hands (`box-collision-listener`) | [Attribute:][obja]         [Schema][s-box-collision]                            [Python][p-box-collision]                             |
 | Buffer Geometry           |        [![][i-buffer]][i-buffer]        | Reduce geometry memory usage while being harder to manipulate (`buffer`)                 | [Attribute:][obja]         [Schema][s-buffer]                                                                                         |
 | Build                     |         [![][i-build]][i-build]         | Build is a JSON editor for the persisted scene graph.                                    | [Application][a-build]                                                                                    [Tutorial][t-build]         |
-| Build 3D                  |       [![][i-build3d]][i-build3d]       | Build3D is a visual 3D editor for the persisted scene graph (based on Inspector)         | Application                                                                                               Tutorial forthcoming        |
+| Build 3D                  |       [![][i-build3d]][i-build3d]       | Build3D is a visual 3D editor for the persisted scene graph (based on Inspector)         | Application                                                                                               [Tutorial][t-build3d]        |
 | Callbacks                 |                                         | A handler in a program to receive an ARENA Event.                                        | Concept                                                                                                   [Tutorial][t-callbacks]     |
 | Camera                    |        [![][i-camera]][i-camera]        | Camera is the pose and component data representing a user avatar                         | [Object:][obj3]            [Schema][s-camera]        [Message][m-camera]        [Python][p-camera]                                    |
 | Capsule                   |       [![][i-capsule]][i-capsule]       | Capsule Geometry                                                                         | [Object:][obj3]            [Schema][s-capsule]                                  [Python][p-capsule]                                   |
@@ -643,6 +643,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [t-audio]: /content/interface/user-presence#user-audio
 [t-box]: /content/overview/dev-guide#create-a-box-and-observe
 [t-build]: /content/overview/build
+[t-build3d]: /content/interface/debug#build-3d
 [t-callbacks]: /content/overview/dev-guide#clients-and-scene-callbacks
 [t-chat]: /content/overview/user-guide#chat-find-people-and-places
 [t-displayname]: /content/interface/user-presence#user-display-name
@@ -650,7 +651,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [t-filestore]: /content/interface/filestore
 [t-gltf-lod]: /content/3d-content/gltf-files#gltf-model-lod-level-of-detail
 [t-gltf]: /content/overview/build#add-new-objects
-[t-inspector]: /content/overview/debug#debug-your-scene-with-a-frame-scene-inspector
+[t-inspector]: /content/interface/debug#a-frame-scene-inspector
 [t-landmark]: /content/overview/build#add-landmarks
 [t-landmark]: /content/overview/user-guide#chat-find-people-and-places
 [t-localization]: /content/overview/localization

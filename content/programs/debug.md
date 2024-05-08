@@ -74,4 +74,4 @@ Exiting...
 
 You can also interact with it from [`/programs`](https://arenaxr.org/programs):
 
-![](/assets/img/programs/cli-interpreter.png)
+<img src="/assets/img/programs/cli-interpreter.png" width="50%" />
