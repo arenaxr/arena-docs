@@ -51,7 +51,7 @@ A-Frame Inspector and Build 3D are similar, but operate critically differently. 
 
 ## Unity Editor
 
-There is a [Unity 3D scene editing tutorial](/content/unity/editor) for ARENA scenes. This is for editing persisted scene objects and configuration in 3D just as they would be on the 3D browser view. **NOTE: See links above for which .**
+There is a [Unity 3D scene editing tutorial](/content/unity/editor) for ARENA scenes. This is for editing persisted scene objects and configuration in 3D in a Unity rendering window.
 
 <img src="/assets/img/unity/unity-desktop.png" width="50%" />
 
