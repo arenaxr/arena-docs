@@ -16,7 +16,7 @@ When running programs in Python or Unity, you have a plethora of debug tools at 
 | [Build 3D](#build-3d)                                 | 3D     | <span style="color:green">All</span>               | <span style="color:green">All</span>               |
 | [A-Frame Inspector](#a-frame-inspector)               | 3D     | <span style="color:green">All</span>               | <span style="color:red">None</span>                |
 | [Unity Editor](#unity-editor)                         | 3D     | <span style="color:orange">Most</span><sup>1</sup> | <span style="color:green">All</span>               |
-| [WebXR API Emulator](#webxr-api-emulator)             | 3D     | <span style="color:orange">Camera/Hands</span>     | <span style="color:orange">Camera/Hands</span>     |
+| [WebXR API Emulators](#webxr-api-emulators)           | 3D     | <span style="color:orange">Camera/Hands</span>     | <span style="color:orange">Camera/Hands</span>     |
 | [AR Builder](#ar-builder)                             | 3D     | <span style="color:green">All</span>               | <span style="color:orange">Primitives/GLTFs</span> |
 
 <sup>1</sup> The `arena-unity` library is still in development. Objects currently rendered are all Primitives, GLTFs, Lights, Lines, Text, Images. Others [still to be rendered](/content/schemas/render-support#rendering-support) are: PCD, Threejs, URDF, UI Panels, Gaussian Splat.<br/>
@@ -55,11 +55,16 @@ There is a [Unity 3D scene editing tutorial](/content/unity/editor) for ARENA sc
 
 <img src="/assets/img/unity/unity-desktop.png" width="50%" />
 
-## WebXR API Emulator
+## WebXR API Emulators
 
-Since ARENA's web view runs on WebXR, we can use the WebXR API Emulator to test Immersive VR (headset) features without a headset.
+Since ARENA's web view runs on WebXR, we can use one of the WebXR API Emulators to test Immersive VR (headset) features without a headset.
 
-1. Go to the addon stores to install ([Firefox](https://addons.mozilla.org/firefox/addon/webxr-api-emulator), [Chrome](https://chrome.google.com/webstore/detail/webxr-api-emulator/mjddjgeghkdijejnciaefnkjmkafnnje))
+- **WebXR API Emulator** by Mozilla Mixed Reality for [Firefox](https://addons.mozilla.org/firefox/addon/webxr-api-emulator) and [Chrome](https://chromewebstore.google.com/detail/webxr-api-emulator/mjddjgeghkdijejnciaefnkjmkafnnje). Emulates Quest, Go, Gear VR, Vive, Cardboard devices.
+- **Immersive Web Emulator** by Meta for [Chrome](https://chromewebstore.google.com/detail/immersive-web-emulator/cgffilbpcibhmcfbgggfhfolhkfbhmik). Emulates Quest, Rift devices.
+
+Usage:
+
+1. Go to the one of the above browser addon stores to install.
 1. Open your ARENA scene web view and the ARENA detects that you have a XR device (emulated) and it will let you enter the immersive (VR、AR) mode.
 1. Open the `WebXR` tab in the browser developer tool ([Firefox](https://developer.mozilla.org/en-US/docs/Tools), [Chrome](https://developers.google.com/web/tools/chrome-devtools/)) to control the emulated devices. You can move the headset and controllers, and trigger the controller buttons.
 
