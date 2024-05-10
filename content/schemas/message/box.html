@@ -1,0 +1,950 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Box - ARENA Documentation</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+
+  
+
+  
+    <script type="text/javascript" src="/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Box | ARENA Documentation</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Box" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tutorials and Reference for the ARENA project." />
+<meta property="og:description" content="Tutorials and Reference for the ARENA project." />
+<link rel="canonical" href="https://docs.arenaxr.org/content/schemas/message/box.html" />
+<meta property="og:url" content="https://docs.arenaxr.org/content/schemas/message/box.html" />
+<meta property="og:site_name" content="ARENA Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Box" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Tutorials and Reference for the ARENA project.","headline":"Box","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://docs.arenaxr.org/xr-logo.png"}},"url":"https://docs.arenaxr.org/content/schemas/message/box.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <div>
+</div>
+
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="svg-link" viewBox="0 0 24 24">
+      <title>Link</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+      </svg>
+    </symbol>
+    <symbol id="svg-search" viewBox="0 0 24 24">
+      <title>Search</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-menu" viewBox="0 0 24 24">
+      <title>Menu</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+      <title>Expand</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </symbol>
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+      <title>Document</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+      </svg>
+    </symbol>
+  </svg>
+
+  <div class="side-bar">
+    <div class="site-header">
+      <a href="https://docs.arenaxr.org/" class="site-title lh-tight">
+  <div class="site-logo"></div>
+
+</a>
+      <a href="#" id="menu-button" class="site-button">
+        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+      </a>
+    </div>
+    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      
+        <ul class="nav-list"><li class="nav-list-item"><a href="https://docs.arenaxr.org/" class="nav-list-link">The ARENA</a></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/xr/" class="nav-list-link">XR Experiences</a><ul class="nav-list "><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/xr/requirements.html" class="nav-list-link">Platforms</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/xr/optical-markers.html" class="nav-list-link">Optical Markers</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/xr/spotar.html" class="nav-list-link">Spot AR</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/xr/uwb.html" class="nav-list-link">UWB</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/xr/optitrack.html" class="nav-list-link">OptiTrack</a></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/overview/" class="nav-list-link">Tutorial</a><ul class="nav-list "><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/user-guide.html" class="nav-list-link">First Time in the ARENA</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/clone.html" class="nav-list-link">Quick Meetings</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/xr.html" class="nav-list-link">miXed Reality</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/photogrammetry.html" class="nav-list-link">Photogrammetry</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/3d-modeling.html" class="nav-list-link">3D Modeling</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/animation-morph.html" class="nav-list-link">Animations and Morph Targets</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/build.html" class="nav-list-link">Build Scenes</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/dev-guide.html" class="nav-list-link">Python Programs</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/localization.html" class="nav-list-link">XR Localization</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/digital-twin.html" class="nav-list-link">Digital Twins</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/panoramic.html" class="nav-list-link">Panoramic Rooms</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/atmosphere.html" class="nav-list-link">Atmosphere</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/debug.html" class="nav-list-link">Debug Visually</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/overview/next.html" class="nav-list-link">Next Steps</a></li></ul></li><li class="nav-list-item"><a href="https://docs.arenaxr.org/content/examples.html" class="nav-list-link">Examples Index</a></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/interface/" class="nav-list-link">Web Interface</a><ul class="nav-list "><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/interface/user-account.html" class="nav-list-link">User Account</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/interface/user-presence.html" class="nav-list-link">User Presence</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/interface/filestore.html" class="nav-list-link">File Store</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/interface/screenshare.html" class="nav-list-link">Screenshare</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/interface/params.html" class="nav-list-link">URL Parameters</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/interface/debug.html" class="nav-list-link">Debug A-Frame</a></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/3d-content/" class="nav-list-link">3D Content</a><ul class="nav-list "><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/scan-tools.html" class="nav-list-link">3D Scanner Tools</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/animated-faces.html" class="nav-list-link">Animated Faces</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/animated-models.html" class="nav-list-link">Animated Models</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/blender-addon.html" class="nav-list-link">Blender Add-on</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/blender-animation.html" class="nav-list-link">Blender Animation</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/downscaling.html" class="nav-list-link">Downscaling Models</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/gltf-files.html" class="nav-list-link">GLTF Files</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/matterport.html" class="nav-list-link">Matterport Large Scans</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/mesh-nav.html" class="nav-list-link">Navigation Meshes</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/scaniverse.html" class="nav-list-link">Scaniverse Small Scans</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/dimension.html" class="nav-list-link">SketchUp Conversion</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/ui.html" class="nav-list-link">UI Elements</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/3d-content/unity.html" class="nav-list-link">Unity Export</a></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/programs/" class="nav-list-link">ARENA Programs</a><ul class="nav-list "><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/programs/programs.html" class="nav-list-link">Add Programs Example</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/programs/debug.html" class="nav-list-link">Debugging Programs</a></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python/" class="nav-list-link">Python Library</a><ul class="nav-list "><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python/tutorial/" class="nav-list-link">Python Tutorial</a><ul class="nav-list"><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python/tutorial/beginner.html" class="nav-list-link">Beginner Example</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python/tutorial/novice.html" class="nav-list-link">Novice Example</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python/tutorial/intermediate.html" class="nav-list-link">Intermediate Example</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python/tutorial/advanced.html" class="nav-list-link">Advanced Example</a>
+                  </li></ul></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/python/scenes.html" class="nav-list-link">Scenes</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/python/objects.html" class="nav-list-link">Objects</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/python/attributes.html" class="nav-list-link">Attributes</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/python/events.html" class="nav-list-link">Events</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/python/tasks.html" class="nav-list-link">Tasks</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/python/callbacks.html" class="nav-list-link">Scene Callbacks</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/python/animations.html" class="nav-list-link">Animations and Morphs</a></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/arena.html" class="nav-list-link">Python API</a><ul class="nav-list "><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/arena_mqtt.html" class="nav-list-link">arena.arena_mqtt</a><ul class="nav-list"></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/attributes.html" class="nav-list-link">arena.attributes</a><ul class="nav-list"><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/animation.html" class="nav-list-link">arena.attributes.animation</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/animation_mixer.html" class="nav-list-link">arena.attributes.animation_mixer</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/armarker.html" class="nav-list-link">arena.attributes.armarker</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/attribute.html" class="nav-list-link">arena.attributes.attribute</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/attribution.html" class="nav-list-link">arena.attributes.attribution</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/blip.html" class="nav-list-link">arena.attributes.blip</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/box_collision_listener.html" class="nav-list-link">arena.attributes.box_collision_listener</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/click_listener.html" class="nav-list-link">arena.attributes.click_listener</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/color.html" class="nav-list-link">arena.attributes.color</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/data.html" class="nav-list-link">arena.attributes.data</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/dynamic_body.html" class="nav-list-link">arena.attributes.dynamic_body</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/gltf_model_lod.html" class="nav-list-link">arena.attributes.gltf_model_lod</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/gltf_morph.html" class="nav-list-link">arena.attributes.gltf_morph</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/goto_landmark.html" class="nav-list-link">arena.attributes.goto_landmark</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/goto_url.html" class="nav-list-link">arena.attributes.goto_url</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/impulse.html" class="nav-list-link">arena.attributes.impulse</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/jitsi_video.html" class="nav-list-link">arena.attributes.jitsi_video</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/landmark.html" class="nav-list-link">arena.attributes.landmark</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/material.html" class="nav-list-link">arena.attributes.material</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/material_extras.html" class="nav-list-link">arena.attributes.material_extras</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/model_update.html" class="nav-list-link">arena.attributes.model_update</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/multisrc.html" class="nav-list-link">arena.attributes.multisrc</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/position.html" class="nav-list-link">arena.attributes.position</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/remote_render.html" class="nav-list-link">arena.attributes.remote_render</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/rotation.html" class="nav-list-link">arena.attributes.rotation</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/scale.html" class="nav-list-link">arena.attributes.scale</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/shadow.html" class="nav-list-link">arena.attributes.shadow</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/sound.html" class="nav-list-link">arena.attributes.sound</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/spe_particles.html" class="nav-list-link">arena.attributes.spe_particles</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/static_body.html" class="nav-list-link">arena.attributes.static_body</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/textinput.html" class="nav-list-link">arena.attributes.textinput</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/translate.html" class="nav-list-link">arena.attributes.translate</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/attributes/video_control.html" class="nav-list-link">arena.attributes.video_control</a>
+                  </li></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/auth.html" class="nav-list-link">arena.auth</a><ul class="nav-list"></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/base_object.html" class="nav-list-link">arena.base_object</a><ul class="nav-list"></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/device.html" class="nav-list-link">arena.device</a><ul class="nav-list"></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/env.html" class="nav-list-link">arena.env</a><ul class="nav-list"></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/event_loop.html" class="nav-list-link">arena.event_loop</a><ul class="nav-list"><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/event_loop/async_worker.html" class="nav-list-link">arena.event_loop.async_worker</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/event_loop/asyncio_mqtt.html" class="nav-list-link">arena.event_loop.asyncio_mqtt</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/event_loop/event_loop.html" class="nav-list-link">arena.event_loop.event_loop</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/event_loop/lazy_worker.html" class="nav-list-link">arena.event_loop.lazy_worker</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/event_loop/persistent_worker.html" class="nav-list-link">arena.event_loop.persistent_worker</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/event_loop/single_worker.html" class="nav-list-link">arena.event_loop.single_worker</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/event_loop/worker.html" class="nav-list-link">arena.event_loop.worker</a>
+                  </li></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/events.html" class="nav-list-link">arena.events</a><ul class="nav-list"><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/events/event.html" class="nav-list-link">arena.events.event</a>
+                  </li></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/objects.html" class="nav-list-link">arena.objects</a><ul class="nav-list"><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/arena_object.html" class="nav-list-link">arena.objects.arena_object</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/arenaui_button_panel.html" class="nav-list-link">arena.objects.arenaui_button_panel</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/arenaui_card.html" class="nav-list-link">arena.objects.arenaui_card</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/arenaui_prompt.html" class="nav-list-link">arena.objects.arenaui_prompt</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/box.html" class="nav-list-link">arena.objects.box</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/camera.html" class="nav-list-link">arena.objects.camera</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/capsule.html" class="nav-list-link">arena.objects.capsule</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/circle.html" class="nav-list-link">arena.objects.circle</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/cone.html" class="nav-list-link">arena.objects.cone</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/cylinder.html" class="nav-list-link">arena.objects.cylinder</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/dodecahedron.html" class="nav-list-link">arena.objects.dodecahedron</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/entity.html" class="nav-list-link">arena.objects.entity</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/gaussian_splatting.html" class="nav-list-link">arena.objects.gaussian_splatting</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/gltf_model.html" class="nav-list-link">arena.objects.gltf_model</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/hand_left.html" class="nav-list-link">arena.objects.hand_left</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/hand_right.html" class="nav-list-link">arena.objects.hand_right</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/icosahedron.html" class="nav-list-link">arena.objects.icosahedron</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/image.html" class="nav-list-link">arena.objects.image</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/light.html" class="nav-list-link">arena.objects.light</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/line.html" class="nav-list-link">arena.objects.line</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/ocean.html" class="nav-list-link">arena.objects.ocean</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/octahedron.html" class="nav-list-link">arena.objects.octahedron</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/pcd_model.html" class="nav-list-link">arena.objects.pcd_model</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/plane.html" class="nav-list-link">arena.objects.plane</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/program.html" class="nav-list-link">arena.objects.program</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/ring.html" class="nav-list-link">arena.objects.ring</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/roundedbox.html" class="nav-list-link">arena.objects.roundedbox</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/sphere.html" class="nav-list-link">arena.objects.sphere</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/tetrahedron.html" class="nav-list-link">arena.objects.tetrahedron</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/text.html" class="nav-list-link">arena.objects.text</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/thickline.html" class="nav-list-link">arena.objects.thickline</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/threejs_scene.html" class="nav-list-link">arena.objects.threejs_scene</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/torus.html" class="nav-list-link">arena.objects.torus</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/torus_knot.html" class="nav-list-link">arena.objects.torus_knot</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/triangle.html" class="nav-list-link">arena.objects.triangle</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/urdf_model.html" class="nav-list-link">arena.objects.urdf_model</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/objects/videosphere.html" class="nav-list-link">arena.objects.videosphere</a>
+                  </li></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/scene.html" class="nav-list-link">arena.scene</a><ul class="nav-list"></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/scripts.html" class="nav-list-link">arena.scripts</a><ul class="nav-list"><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/scripts/arena_py_permissions.html" class="nav-list-link">arena.scripts.arena_py_permissions</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/scripts/arena_py_pub.html" class="nav-list-link">arena.scripts.arena_py_pub</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/scripts/arena_py_signout.html" class="nav-list-link">arena.scripts.arena_py_signout</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/scripts/arena_py_sub.html" class="nav-list-link">arena.scripts.arena_py_sub</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/scripts/arena_py_token.html" class="nav-list-link">arena.scripts.arena_py_token</a>
+                  </li></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/utils.html" class="nav-list-link">arena.utils</a><ul class="nav-list"><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/utils/arena_telemetry.html" class="nav-list-link">arena.utils.arena_telemetry</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/utils/cmd_interpreter.html" class="nav-list-link">arena.utils.cmd_interpreter</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/utils/program_info.html" class="nav-list-link">arena.utils.program_info</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/python-api/utils/utils.html" class="nav-list-link">arena.utils.utils</a>
+                  </li></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/python-api/version.html" class="nav-list-link">arena.version</a><ul class="nav-list"></ul></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/unity/" class="nav-list-link">Unity Library</a><ul class="nav-list "><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/unity/editor.html" class="nav-list-link">Editor</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/unity/models.html" class="nav-list-link">Models</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/unity/runtime.html" class="nav-list-link">Runtime</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/unity/build.html" class="nav-list-link">Build</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/unity/objects.html" class="nav-list-link">Objects</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/unity/cli.html" class="nav-list-link">Headless CLI</a></li></ul></li><li class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/schemas/" class="nav-list-link">ARENA Objects</a><ul class="nav-list "><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/schemas/definitions.html" class="nav-list-link">Object Definitions Reference</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/schemas/arena-aframe-systems.html" class="nav-list-link">ARENA A-Frame Systems</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/schemas/arena-aframe-components.html" class="nav-list-link">ARENA A-Frame Components</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/schemas/message-examples.html" class="nav-list-link">PubSub Messages</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/schemas/render-support.html" class="nav-list-link">Rendering Support</a></li><li class="nav-list-item  active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/schemas/message/" class="nav-list-link">Objects Schema</a><ul class="nav-list"><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/gaussian_splatting.html" class="nav-list-link">3D Gaussian Splat</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/arenaui-button-panel.html" class="nav-list-link">ARENAUI Button Panel</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/arenaui-card.html" class="nav-list-link">ARENAUI Card Panel</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/arenaui-prompt.html" class="nav-list-link">ARENAUI Prompt</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/armarker.html" class="nav-list-link">ARMarker</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/animation.html" class="nav-list-link">Animation</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/animation-mixer.html" class="nav-list-link">Animation Mixer</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/attribution.html" class="nav-list-link">Attribution</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/blip.html" class="nav-list-link">Blip Effect</a>
+                  </li><li class="nav-list-item  active">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/box.html" class="nav-list-link active">Box</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/box-collision-listener.html" class="nav-list-link">Box Collision Listener</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/camera.html" class="nav-list-link">Camera</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/camera-override.html" class="nav-list-link">Camera Override</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/capsule.html" class="nav-list-link">Capsule</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/circle.html" class="nav-list-link">Circle</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/click-listener.html" class="nav-list-link">Click Listener</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/cone.html" class="nav-list-link">Cone</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/cube.html" class="nav-list-link">Cube (deprecated; don't use)</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/cylinder.html" class="nav-list-link">Cylinder</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/dodecahedron.html" class="nav-list-link">Dodecahedron</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/entity.html" class="nav-list-link">Entity (generic object)</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/env-presets.html" class="nav-list-link">Environment Presets</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/event.html" class="nav-list-link">Event</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/gltf-model.html" class="nav-list-link">GLTF Model</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/gltf-model-lod.html" class="nav-list-link">GLTF Model Level of Detail</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/modelUpdate.html" class="nav-list-link">GLTF Model Update</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/gltf-morph.html" class="nav-list-link">GLTF Morph</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/geometry.html" class="nav-list-link">Geometry</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/goto-landmark.html" class="nav-list-link">Goto Landmark</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/goto-url.html" class="nav-list-link">Goto URL</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/hand.html" class="nav-list-link">Hand</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/icosahedron.html" class="nav-list-link">Icosahedron</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/image.html" class="nav-list-link">Image</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/impulse.html" class="nav-list-link">Impulse</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/jitsi-video.html" class="nav-list-link">Jitsi Video</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/landmark.html" class="nav-list-link">Landmark</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/light.html" class="nav-list-link">Light</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/line.html" class="nav-list-link">Line</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/material.html" class="nav-list-link">Material</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/material-extras.html" class="nav-list-link">Material extras</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/multisrc.html" class="nav-list-link">Multi Source</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/ocean.html" class="nav-list-link">Ocean</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/octahedron.html" class="nav-list-link">Octahedron</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/pcd-model.html" class="nav-list-link">PCD Model</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/dynamic-body.html" class="nav-list-link">Physics Dynamic Body</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/static-body.html" class="nav-list-link">Physics Static Body</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/plane.html" class="nav-list-link">Plane</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/position.html" class="nav-list-link">Position</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/post-processing.html" class="nav-list-link">Post-Processing Effects</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/arena-program.html" class="nav-list-link">Program</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/program.html" class="nav-list-link">Program Data</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/remote-render.html" class="nav-list-link">Remote Render</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/renderer-settings.html" class="nav-list-link">Renderer Settings</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/ring.html" class="nav-list-link">Ring</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/rotation.html" class="nav-list-link">Rotation</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/roundedbox.html" class="nav-list-link">Rounded Box</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/spe-particles.html" class="nav-list-link">SPE Particles</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/scale.html" class="nav-list-link">Scale</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/arena-scene-options.html" class="nav-list-link">Scene Config</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/scene-options.html" class="nav-list-link">Scene Options</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/shadow.html" class="nav-list-link">Shadow</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/sound.html" class="nav-list-link">Sound</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/sphere.html" class="nav-list-link">Sphere</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/tetrahedron.html" class="nav-list-link">Tetrahedron</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/text.html" class="nav-list-link">Text</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/textinput.html" class="nav-list-link">Text Input</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/thickline.html" class="nav-list-link">Thickline</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/threejs-scene.html" class="nav-list-link">Three.js Scene</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/torus.html" class="nav-list-link">Torus</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/torusKnot.html" class="nav-list-link">Torus Knot</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/triangle.html" class="nav-list-link">Triangle</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/panel.html" class="nav-list-link">UI Panel</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/urdf-model.html" class="nav-list-link">URDF Model</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/arena-user.html" class="nav-list-link">User Avatar</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/vector2.html" class="nav-list-link">Vector2</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/vector3.html" class="nav-list-link">Vector3</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/video-control.html" class="nav-list-link">Video</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://docs.arenaxr.org/content/schemas/message/videosphere.html" class="nav-list-link">Videosphere</a>
+                  </li></ul></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/architecture/" class="nav-list-link">Architecture</a><ul class="nav-list "><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/architecture/scenes.html" class="nav-list-link">ARENA Scenes</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/architecture/platforms.html" class="nav-list-link">Cross Platform Support</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/architecture/anchoring.html" class="nav-list-link">ATLAS and Anchoring to Reality</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/architecture/pubsubac.html" class="nav-list-link">Access Control</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/architecture/persistence.html" class="nav-list-link">Persistence DB</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/architecture/security.html" class="nav-list-link">Security</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/architecture/runtime.html" class="nav-list-link">ARENA Runtime</a></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://docs.arenaxr.org/content/tools/" class="nav-list-link">Tools</a><ul class="nav-list "><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/tools/authoring.html" class="nav-list-link">Authoring Program</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/tools/import-export.html" class="nav-list-link">Import/Export Scenes</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/tools/network-monitor.html" class="nav-list-link">Connectivity Graph</a></li><li class="nav-list-item "><a href="https://docs.arenaxr.org/content/tools/poster-session.html" class="nav-list-link">Poster Sessions</a></li></ul></li><li class="nav-list-item"><a href="https://docs.arenaxr.org/content/source.html" class="nav-list-link">Source and Links</a></li><li class="nav-list-item"><a href="https://docs.arenaxr.org/content/contributing.html" class="nav-list-link">Contributing</a></li><li class="nav-list-item"><a href="https://docs.arenaxr.org/content/troubleshooting.html" class="nav-list-link">Troubleshooting</a></li></ul>
+
+      
+    </nav>
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  </div>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      
+        <div class="search">
+          <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search ARENA Documentation" aria-label="Search ARENA Documentation" autocomplete="off">
+            <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+      
+      <div>
+</div>
+
+      
+        <nav aria-label="Auxiliary" class="aux-nav">
+          <ul class="aux-nav-list">
+            
+              <li class="aux-nav-list-item">
+                <a href="https://arenaxr.org" class="site-button"
+                  
+                >
+                  The ARENA
+                </a>
+              </li>
+            
+              <li class="aux-nav-list-item">
+                <a href="https://wise.ece.cmu.edu" class="site-button"
+                  
+                >
+                  CMU
+                </a>
+              </li>
+            
+              <li class="aux-nav-list-item">
+                <a href="mailto:arenaxr@andrew.cmu.edu" class="site-button"
+                  
+                >
+                  Contact
+                </a>
+              </li>
+            
+              <li class="aux-nav-list-item">
+                <a href="https://join.slack.com/t/arena-conix/shared_invite/zt-oq8fmgdc-QWZ414mJdfOaWfb_p2lPRg" class="site-button"
+                  
+                >
+                  Slack
+                </a>
+              </li>
+            
+              <li class="aux-nav-list-item">
+                <a href="https://github.com/arenaxr" class="site-button"
+                  
+                >
+                  GitHub
+                </a>
+              </li>
+            
+          </ul>
+        </nav>
+      
+    </div>
+    <div id="main-content-wrap" class="main-content-wrap">
+      
+        <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-nav-list">
+              
+                <li class="breadcrumb-nav-list-item"><a href="https://docs.arenaxr.org/content/schemas/">ARENA Objects</a></li>
+                <li class="breadcrumb-nav-list-item"><a href="https://docs.arenaxr.org/content/schemas/message/">Objects Schema</a></li>
+              
+              <li class="breadcrumb-nav-list-item"><span>Box</span></li>
+            </ol>
+          </nav>
+        
+      
+      <div id="main-content" class="main-content" role="main">
+        
+          <!--CAUTION: This file is autogenerated from https://github.com/arenaxr/arena-schemas. Changes made here may be overwritten.-->
+      <h1 id="box">
+        
+        
+          <a href="#box" class="anchor-heading" aria-labelledby="box"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Box
+        
+        
+      </h1>
+    
+
+<p>Box Geometry.</p>
+
+<p>All wire objects have a set of basic attributes <code class="language-plaintext highlighter-rouge">{object_id, action, type, persist, data}</code>. The <code class="language-plaintext highlighter-rouge">data</code> attribute defines the object-specific attributes</p>
+      <h2 id="box-attributes">
+        
+        
+          <a href="#box-attributes" class="anchor-heading" aria-labelledby="box-attributes"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Box Attributes
+        
+        
+      </h2>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Attribute</th>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Default</th>
+      <th style="text-align: left">Description</th>
+      <th style="text-align: left">Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">object_id</td>
+      <td style="text-align: left">string</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">A uuid or otherwise unique identifier for this object.</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">persist</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">True</code></td>
+      <td style="text-align: left">Persist this object in the database.</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">type</td>
+      <td style="text-align: left">string; Must be: <code class="language-plaintext highlighter-rouge">object</code></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">'object'</code></td>
+      <td style="text-align: left">AFrame 3D Object</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">action</td>
+      <td style="text-align: left">string; One of: <code class="language-plaintext highlighter-rouge">['create', 'delete', 'update']</code></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">'create'</code></td>
+      <td style="text-align: left">Message action create, update, delete.</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ttl</td>
+      <td style="text-align: left">integer</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">data</td>
+      <td style="text-align: left">Box data</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Box Data</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+  </tbody>
+</table></div>
+      <h3 id="box-data-attributes">
+        
+        
+          <a href="#box-data-attributes" class="anchor-heading" aria-labelledby="box-data-attributes"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Box Data Attributes
+        
+        
+      </h3>
+    
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Attribute</th>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Default</th>
+      <th style="text-align: left">Description</th>
+      <th style="text-align: left">Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">object_type</td>
+      <td style="text-align: left">string; Must be: <code class="language-plaintext highlighter-rouge">box</code></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">box</code></td>
+      <td style="text-align: left">3D object type.</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">depth</td>
+      <td style="text-align: left">number</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td style="text-align: left">depth</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">height</td>
+      <td style="text-align: left">number</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td style="text-align: left">height</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">segmentsDepth</td>
+      <td style="text-align: left">integer</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td style="text-align: left">segments depth</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">segmentsHeight</td>
+      <td style="text-align: left">integer</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td style="text-align: left">segments height</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">segmentsWidth</td>
+      <td style="text-align: left">integer</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td style="text-align: left">segments width</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">width</td>
+      <td style="text-align: left">number</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td style="text-align: left">width</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">parent</td>
+      <td style="text-align: left">string</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Parent’s object_id. Child objects inherit attributes of their parent, for example scale and translation.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">position</td>
+      <td style="text-align: left"><a href="position">position</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">3D object position.</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">rotation</td>
+      <td style="text-align: left"><a href="rotation">rotation</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">scale</td>
+      <td style="text-align: left"><a href="scale">scale</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">3D object scale.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">animation</td>
+      <td style="text-align: left"><a href="animation">animation</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Animate and tween values.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">armarker</td>
+      <td style="text-align: left"><a href="armarker">armarker</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">click-listener</td>
+      <td style="text-align: left"><a href="click-listener">click-listener</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Object will listen for mouse events like clicks.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">box-collision-listener</td>
+      <td style="text-align: left"><a href="box-collision-listener">box-collision-listener</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">collision-listener</td>
+      <td style="text-align: left">string</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Name of the collision-listener, default can be empty string. Collisions trigger click events.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">blip</td>
+      <td style="text-align: left"><a href="blip">blip</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">When the object is created or deleted, it will animate in/out of the scene instead of appearing/disappearing instantly. Must have a geometric mesh.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">static-body</td>
+      <td style="text-align: left"><a href="static-body">static-body</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">dynamic-body</td>
+      <td style="text-align: left"><a href="dynamic-body">dynamic-body</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">A freely-moving object. Dynamic bodies have mass, collide with other objects, bounce or slow during collisions, and fall if gravity is enabled.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">goto-landmark</td>
+      <td style="text-align: left"><a href="goto-landmark">goto-landmark</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Teleports user to the landmark with the given name. Requires click-listener.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">goto-url</td>
+      <td style="text-align: left"><a href="goto-url">goto-url</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Load new URL when object is clicked. Requires click-listener.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">hide-on-enter-ar</td>
+      <td style="text-align: left">boolean; Must be: <code class="language-plaintext highlighter-rouge">True</code></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">True</code></td>
+      <td style="text-align: left">Hide object when entering AR. Remove component to <em>not</em> hide.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">hide-on-enter-vr</td>
+      <td style="text-align: left">boolean; Must be: <code class="language-plaintext highlighter-rouge">True</code></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">True</code></td>
+      <td style="text-align: left">Hide object when entering VR. Remove component to <em>not</em> hide.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">show-on-enter-ar</td>
+      <td style="text-align: left">boolean; Must be: <code class="language-plaintext highlighter-rouge">True</code></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">True</code></td>
+      <td style="text-align: left">Show object when entering AR. Hidden otherwise.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">show-on-enter-vr</td>
+      <td style="text-align: left">boolean; Must be: <code class="language-plaintext highlighter-rouge">True</code></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">True</code></td>
+      <td style="text-align: left">Show object when entering VR. Hidden otherwise.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">impulse</td>
+      <td style="text-align: left"><a href="impulse">impulse</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires click-listener and physics.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">landmark</td>
+      <td style="text-align: left"><a href="landmark">landmark</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists).</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">material-extras</td>
+      <td style="text-align: left"><a href="material-extras">material-extras</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Define extra material properties, namely texture encoding, whether to render the material’s color and render order.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">shadow</td>
+      <td style="text-align: left"><a href="shadow">shadow</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">The shadow component enables shadows for an entity and its children. Adding the shadow component alone is not enough to display shadows in your scene. We must have at least one light with castShadow: true enabled.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">sound</td>
+      <td style="text-align: left"><a href="sound">sound</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">The sound component defines the entity as a source of sound or audio. The sound component can be positional and is thus affected by the component’s position.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">textinput</td>
+      <td style="text-align: left"><a href="textinput">textinput</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">url</td>
+      <td style="text-align: left">string</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Use File Store paths under ‘store/users/username’, see CDN and other storage options in the description above.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">remote-render</td>
+      <td style="text-align: left"><a href="remote-render">remote-render</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Whether or not an object should be remote rendered [Experimental].</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">video-control</td>
+      <td style="text-align: left"><a href="video-control">video-control</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Adds a video to an entity and controls its playback.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">attribution</td>
+      <td style="text-align: left"><a href="attribution">attribution</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Attribution Component. Saves attribution data in any entity.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">spe-particles</td>
+      <td style="text-align: left"><a href="spe-particles">spe-particles</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">GPU based particle systems in A-Frame.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">look-at</td>
+      <td style="text-align: left">string</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">The look-at component defines the behavior for an entity to dynamically rotate or face towards another entity or position. Use ‘#my-camera’ to face the user camera, otherwise can take either a vec3 position or a query selector to another entity.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">buffer</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">True</code></td>
+      <td style="text-align: left">Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate (geometries only: box, circle, cone, …).</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">jitsi-video</td>
+      <td style="text-align: left"><a href="jitsi-video">jitsi-video</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Apply a jitsi video source to the geometry.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">material</td>
+      <td style="text-align: left"><a href="material">material</a></td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">{'color': '#7f7f7f'}</code></td>
+      <td style="text-align: left">The material properties of the object’s surface.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">multisrc</td>
+      <td style="text-align: left"><a href="multisrc">multisrc</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Define multiple visual sources applied to an object.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">screenshareable</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">True</code></td>
+      <td style="text-align: left">Whether or not a user can screenshare on an object.</td>
+      <td style="text-align: left">No</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">skipCache</td>
+      <td style="text-align: left">boolean</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">False</code></td>
+      <td style="text-align: left">Disable retrieving the shared geometry object from the cache. (geometries only: box, circle, cone, …).</td>
+      <td style="text-align: left">No</td>
+    </tr>
+  </tbody>
+</table></div>
+
+        
+
+        
+
+        
+        
+          <hr>
+          <footer>
+            
+
+            <p class="text-small text-grey-dk-100 mb-0">Copyright &copy; 2020-2024, <a href='https://wise.ece.cmu.edu'>Carnegie Mellon University</a>. A project of the <a href='https://conix.io'>CONIX Research Center</a>.</p>
+
+            
+          </footer>
+        
+
+      </div>
+    </div>
+
+    
+      
+
+      <div class="search-overlay"></div>
+    
+  </div>
+</body>
+</html>
+
