@@ -16,10 +16,9 @@ parent: Unity Library
     - `Always Included Shaders` to include:
         - `Standard`
         - `Unlit/Color`
-        - `GLTFUtility/Standard (Metallic)`
-        - `GLTFUtility/Standard Transparent (Metallic)`
-        - `GLTFUtility/Standard (Specular)`
-        - `GLTFUtility/Standard Transparent (Specular)`
+        - `glTF/PbrMetallicRoughness`
+        - `glTF/PbrSpecularGlossiness`
+        - `glTF/Unlit`
 
 
 ## Mobile Platforms Debug Notes
