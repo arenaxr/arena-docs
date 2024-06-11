@@ -24,6 +24,91 @@ using UnityEngine.UI;
 
 public class ArenaTestButton : MonoBehaviour
 {
+    public Button toggle, beginner, advanced;
+    bool lastConnectState = false;
+
+    void Start()
+    {
+        Debug.Log("ArenaTestButton started...");
+    }
+
+    private void OnEnable()
+    {
+        toggle.onClick.AddListener(() => StartCoroutine(ButtonCallback(toggle)));
+        beginner.onClick.AddListener(() => StartCoroutine(ButtonCallback(beginner)));
+        advanced.onClick.AddListener(() => StartCoroutine(ButtonCallback(advanced)));
+    }
+
+    private void Update()
+    {
+        ArenaClientScene scene = ArenaClientScene.Instance;
+        if (scene && toggle)
+        {
+            if (scene.mqttClientConnected != lastConnectState)
+            {
+                Debug.Log($"mqttClientConnected changed = {scene.mqttClientConnected}");
+                if (scene.mqttClientConnected)
+                {
+                    ColorBlock cb = toggle.colors;
+                    cb.normalColor = Color.green;
+                    cb.highlightedColor = Color.green;
+                    toggle.colors = cb;
+                }
+                else
+                {
+                    ColorBlock cb = toggle.colors;
+                    cb.normalColor = Color.white;
+                    cb.highlightedColor = Color.white;
+                    toggle.colors = cb;
+                }
+            }
+            lastConnectState = scene.mqttClientConnected;
+        }
+    }
+
+    /// <summary>
+    /// Example callback for demo button clicks.
+    /// </summary>
+    /// <param name="button"></param>
+    /// <returns></returns>
+    IEnumerator ButtonCallback(Button button)
+    {
+        Debug.Log($"Clicked {button.name}...");
+        ArenaClientScene scene = ArenaClientScene.Instance;
+        scene.authType = ArenaMqttClient.Auth.Anonymous;
+        scene.hostAddress = "arenaxr.org";
+        scene.namespaceName = "public";
+        scene.sceneName = "example";
+
+        if (!scene) yield break;
+
+        if (button == toggle)
+        {
+            if (scene.mqttClientConnected)
+            {
+                scene.DisconnectArena();
+                yield return new WaitUntil(() => !scene.mqttClientConnected);
+                Debug.Log("toggle now disconnected...");
+            }
+            else
+            {
+                StartCoroutine(scene.ConnectArena());
+                yield return new WaitUntil(() => scene.mqttClientConnected);
+                Debug.Log("toggle now connected...");
+            }
+        }
+        else if (button == beginner)
+        {
+            Debug.Log("ArenaUnityBeginnerDemo started...");
+            StartCoroutine(ArenaUnityBeginnerDemo());
+        }
+        else if (button == advanced)
+        {
+            Debug.Log("ArenaUnityAdvancedDemo started...");
+            StartCoroutine(ArenaUnityAdvancedDemo());
+        }
+    }
+
     /// <summary>
     /// Demonstrate basic usage of the ArenaUnity package.
     /// </summary>
@@ -31,13 +116,13 @@ public class ArenaTestButton : MonoBehaviour
     {
         // Only one singleton connection instance allowed per application.
         ArenaClientScene scene = ArenaClientScene.Instance;
-
         scene.authType = ArenaMqttClient.Auth.Anonymous;
 
         // Set the ARENA webserver main host address, default: "arenaxr.org".
         scene.hostAddress = "arenaxr.org";
 
         // Set the namespace name for the scene, default: [your ARENA username].
+        // For google authentication, this is set automatically on login and unnecessary when using your own username.
         scene.namespaceName = "public";
 
         // Set the scene name for the scene, default: "example".
@@ -59,7 +144,7 @@ public class ArenaTestButton : MonoBehaviour
         cube.transform.rotation = UnityEngine.Random.rotation;
 
         // Publish a custom event under this client's "camera" object
-        scene.PublishEvent(scene.camid, "my-custom-event-type", "{\"my-attribute\": \"my-custom-attribute\"}");
+        scene.PublishEvent(arenaObject.name, "my-custom-event-type", scene.camid, "{\"my-attribute\": \"my-custom-attribute\"}");
 
         // Publish a fully formed json object update message
         const string payload = "{\"object_id\":\"scene-options\",\"persist\":true,\"type\":\"scene-options\",\"action\":\"update\",\"data\":{\"env-presets\":{\"ground\":\"none\"}}}";
