@@ -152,14 +152,17 @@ public class ArenaTestButton : MonoBehaviour
 
         // Instantiate the callback for all messages.
         scene.OnMessageCallback = MessageCallback;
+
+        // Manually ingest a message, not received from MQTT subscriber
+        scene.ProcessMessage(payload);
     }
 
     /// <summary>
     /// A delegate method used as a callback to go some special handling on incoming messages.
     /// </summary>
-    public static void MessageCallback(string topic, byte[] message)
+    public static void MessageCallback(string message)
     {
-        Debug.LogFormat("Message received on topic {0}: {1}", topic, System.Text.Encoding.UTF8.GetString(message));
+        Debug.LogFormat("Message received: {0}", message);
     }
 
     /// <summary>
@@ -195,7 +198,7 @@ public class ArenaTestButton : MonoBehaviour
         client.Publish("my/custom/topic/channel/device-888", System.Text.Encoding.UTF8.GetBytes("some payload"));
 
         // MQTT disconnect
-        client.DisconnectArena();
+        client.Disconnect();
     }
 
     public class MyArenaClient : ArenaMqttClient
