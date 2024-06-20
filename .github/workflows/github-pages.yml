@@ -22,7 +22,7 @@ jobs:
           ruby-version: '3.5'
           bundler-cache: true
       - uses: actions/configure-pages@v5
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+      - run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
       - uses: actions/upload-pages-artifact@v3
 
   deploy:
@@ -38,5 +38,4 @@ jobs:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Check html
-      run: make check
+    - run: make check
