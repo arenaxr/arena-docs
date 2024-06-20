@@ -681,7 +681,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [t-username]: /content/overview/user-guide#arena-username
 [t-video]: /content/interface/user-presence#user-video
 [t-videosphere]: /content/overview/panoramic
-[t-webxr-api]: /content/overview/debug#webxr-api-emulator
+[t-webxr-api]: /content/overview/debug#webxr-api-emulators
 [t-profile]: /content/interface/user-account
 [t-null]: /content/schemas/definitions#actions
 [t-remote-render]: https://github.com/arenaxr/arena-renderfusion#arena-renderfusion

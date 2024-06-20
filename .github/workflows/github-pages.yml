@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - gh-pages
   workflow_dispatch:
 
 permissions:
@@ -45,8 +44,9 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-  # html-link-check:
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - run: make check
+  html-link-check:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check html Links
+        run: make check

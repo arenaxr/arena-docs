@@ -10,12 +10,13 @@ all: install serve
 
 check:
 	$(JEKYLL) doctor
-	$(HTMLPROOF) --check-html \
-		--http-status-ignore 999,403,429,301 \
-		--assume-extension \
-		--allow-hash-href \
-		--check-favicon \
-		--empty-alt-ignore \
+	$(HTMLPROOF) \
+		--ignore-status-codes "0,301,307,403,429,999" \
+		--ignore-missing-alt \
+		--ignore-empty-alt \
+		--allow-missing-href \
+ 		--no-check-external-hash \
+ 		--no-enforce-https \
 		_site
 
 install: $(PROJECT_DEPS)
