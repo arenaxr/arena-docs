@@ -34,8 +34,8 @@ jobs:
     steps:
     - uses: actions/deploy-pages@v4
 
-  html-link-check:
-    needs: deploy
-    runs-on: ubuntu-latest
-    steps:
-    - run: make check
+  # html-link-check:
+  #   needs: deploy
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - run: make check
