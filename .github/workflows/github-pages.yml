@@ -22,7 +22,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.4
+          ruby-version: 3.3
           bundler-cache: true
       - name: Setup Pages
         id: pages
@@ -46,7 +46,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
   # html-link-check:
-  #   needs: deploy
+  #   needs: build
   #   runs-on: ubuntu-latest
   #   steps:
   #   - run: make check
