@@ -154,15 +154,15 @@ public class ArenaTestButton : MonoBehaviour
         scene.OnMessageCallback = MessageCallback;
 
         // Manually ingest a message, not received from MQTT subscriber
-        scene.ProcessMessage(payload);
+        scene.ProcessMessage("realm/s/public/example/scene-options", payload);
     }
 
     /// <summary>
     /// A delegate method used as a callback to go some special handling on incoming messages.
     /// </summary>
-    public static void MessageCallback(string message)
+    public static void MessageCallback(string topic, string message)
     {
-        Debug.LogFormat("Message received: {0}", message);
+        Debug.LogFormat("Message received on topic {0}: {1}", topic, message);
     }
 
     /// <summary>
