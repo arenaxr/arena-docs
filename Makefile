@@ -15,8 +15,8 @@ check:
 		--ignore-missing-alt \
 		--ignore-empty-alt \
 		--allow-missing-href \
- 		--no-check-external-hash \
- 		--no-enforce-https \
+		--no-check-external-hash \
+		--no-enforce-https \
 		_site
 
 install: $(PROJECT_DEPS)

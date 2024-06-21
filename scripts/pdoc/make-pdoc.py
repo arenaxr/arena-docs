@@ -12,16 +12,17 @@ here = Path(__file__).parent
 out = here / Path("../../content")
 os.environ["PDOC-ARENA-PI-VERSION"] = version('arena-py')
 
+# https://pdoc.dev/docs/pdoc/render.html#configure
 render.configure(
     docformat='restructuredtext',
-    include_undocumented=True,
-    edit_url_map=None,
-    favicon=None,
-    footer_text='',
-    logo=None,
-    logo_link=None,
-    math=False,
-    mermaid=False,
+    # include_undocumented=True,
+    # edit_url_map={lib: f"https://github.com/arenaxr/arena-py/tree/v{version('arena-py')}/arena/"}, # TODO(mwfarb): fix clickable region
+    # favicon=None,
+    # footer_text=f"arena-py API v{version('arena-py')}",
+    # logo=None,
+    # logo_link=None,
+    # math=False,
+    # mermaid=False,
     search=False,
     show_source=False,
     template_directory=here / "pdoc-template"
