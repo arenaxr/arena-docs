@@ -8,7 +8,7 @@ grand_parent: Python API
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../../arena.html">arena</a><wbr>.<a href="./../utils.html">utils</a><wbr>.arena_telemetry    </h1>
+<a href="./../arena.html">arena</a><wbr>.<a href="./../utils.html">utils</a><wbr>.arena_telemetry    </h1>
 
                         <div class="docstring"><p>The ArenaTelemetry generates traces, metrics, and logs using OpenTelemetry (OTEL).
 It can export using OTEL's protocol (OTLP), send JSON OTEL spans to MQTT, or to the console. </p>

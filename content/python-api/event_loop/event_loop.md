@@ -8,7 +8,7 @@ grand_parent: Python API
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../../arena.html">arena</a><wbr>.<a href="./../event_loop.html">event_loop</a><wbr>.event_loop    </h1>
+<a href="./../arena.html">arena</a><wbr>.<a href="./../event_loop.html">event_loop</a><wbr>.event_loop    </h1>
 
                 
                 

@@ -8,7 +8,7 @@ grand_parent: Python API
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../../arena.html">arena</a><wbr>.<a href="./../scripts.html">scripts</a><wbr>.arena_py_pub    </h1>
+<a href="./../arena.html">arena</a><wbr>.<a href="./../scripts.html">scripts</a><wbr>.arena_py_pub    </h1>
 
                         <div class="docstring"><p>arena-py-pub: Helper script for ARENA MQTT CLI publish</p>
 </div>

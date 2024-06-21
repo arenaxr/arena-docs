@@ -8,7 +8,7 @@ has_children: true
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../arena.html">arena</a><wbr>.scripts    </h1>
+<a href="./arena.html">arena</a><wbr>.scripts    </h1>
 
                 
                 

@@ -8,7 +8,7 @@ has_children: true
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../arena.html">arena</a><wbr>.auth    </h1>
+<a href="./arena.html">arena</a><wbr>.auth    </h1>
 
                         <div class="docstring"><p>auth.py - Authentication methods for accessing the ARENA.</p>
 </div>

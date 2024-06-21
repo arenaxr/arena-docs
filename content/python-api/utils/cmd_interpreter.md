@@ -8,7 +8,7 @@ grand_parent: Python API
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../../arena.html">arena</a><wbr>.<a href="./../utils.html">utils</a><wbr>.cmd_interpreter    </h1>
+<a href="./../arena.html">arena</a><wbr>.<a href="./../utils.html">utils</a><wbr>.cmd_interpreter    </h1>
 
                         <div class="docstring"><p>The ArenaCmdInterpreter is a simple line-oriented command interpreter that
 allows to inspect library/program state. It looks at :envvar:<code>ENABLE_INTERPRETER</code> 

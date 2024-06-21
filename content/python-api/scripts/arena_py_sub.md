@@ -8,7 +8,7 @@ grand_parent: Python API
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../../arena.html">arena</a><wbr>.<a href="./../scripts.html">scripts</a><wbr>.arena_py_sub    </h1>
+<a href="./../arena.html">arena</a><wbr>.<a href="./../scripts.html">scripts</a><wbr>.arena_py_sub    </h1>
 
                         <div class="docstring"><p>arena-py-sub: Helper script for ARENA MQTT CLI subscribe</p>
 </div>

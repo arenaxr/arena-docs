@@ -1,10 +1,23 @@
 #!/usr/bin/env python3
+import fnmatch
 import os
 import shutil
 from importlib.metadata import version
 from pathlib import Path
 
 from pdoc import pdoc, render
+
+
+def grep_all_files(root_dir, str_find, str_replace, file_pattern):
+    for path, _, files in os.walk(os.path.abspath(root_dir)):
+        for filename in fnmatch.filter(files, file_pattern):
+            filepath = os.path.join(path, filename)
+            with open(filepath, "r", encoding="utf-8") as f:
+                s = f.read()
+            s = s.replace(str_find, str_replace)
+            with open(filepath, "w", encoding="utf-8") as f:
+                f.write(s)
+
 
 lib = "arena"
 dest_dir = "python-api"
@@ -30,7 +43,9 @@ render.configure(
 pdoc(lib, output_directory=out)
 shutil.rmtree(out / dest_dir)
 
-# next index files in api folder
+grep_all_files(out, "/../arena.html", "/arena.html", "*.html")
+
+# nest index files in api folder
 shutil.move(out / "index.html", out / lib / "index.html")
 shutil.move(out / f"{lib}.html", out / lib / f"{lib}.html")
 
