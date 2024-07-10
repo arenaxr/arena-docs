@@ -32,6 +32,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `image`                | 1.0.0  | 0.1.12 | 0.0.7  | Display an image on a plane                                   |
 | `light`                | 1.0.0  | 0.1.12 | 0.0.5  | A light                                                       |
 | `line`                 | 1.0.0  | 0.1.12 | 0.9.0  | Draw a line                                                   |
+| `obj-model`            | 1.28.0 | 0.10.1 | -      | Load a OBJ model                                              |
 | `ocean`                | 1.18.0 | 0.9.0  | -      | Oceans, water                                                 |
 | `octahedron`           | 1.0.0  | 0.1.12 | 0.0.11 | Octahedron geometry                                           |
 | `pcd-model`            | 1.0.0  | 0.9.0  | -      | Load a PCD model                                              |
@@ -50,6 +51,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `torus`                | 1.0.0  | 0.1.12 | 0.0.11 | Torus geometry                                                |
 | `torusKnot`            | 1.0.0  | 0.1.12 | 0.10.2 | Torus Knot geometry                                           |
 | `triangle`             | 1.0.0  | 0.1.12 | 0.0.12 | Triangle geometry                                             |
+| `urdf-model`           | 1.27.0 | 0.10.0 | -      | Load a URDF model                                             |
 | `videosphere`          | 1.10.0 | 0.9.0  | N/A    | Videosphere 360 video                                         |
 
 | ARENA Component          | Web    | Python | Unity  | Description                                                                                        |
@@ -97,4 +99,4 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `spe-particles`          | 1.18.0 | 0.7.0  | -      | GPU based particle systems in A-Frame: supports single textures and spritesheets.                  |
 | `textinput`              | 1.0.0  | 0.1.24 | -      | Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.  |
 | `video-control`          | 1.0.0  | 0.3.0  | -      | Adds a video to an entity and controls its playback.                                               |
-| `visible`                | 1.0.0  | 0.1.12 | 0.10.1 | Whether or not an object should rendered visible.                                                  |
+| `visible`                | 1.0.0  | 1.0.0  | 0.10.1 | Whether or not an object should rendered visible.                                                  |
