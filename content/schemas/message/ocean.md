@@ -46,3 +46,4 @@ Ocean Attributes
 |position|[position](position)||3D object position.|Yes|
 |rotation|[rotation](rotation)|```{'w': -0.70711, 'x': 0.70711, 'y': 0, 'z': 0}```|3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
 |scale|[scale](scale)||3D object scale.|No|
+|visible|boolean|```True```|Whether object is visible. Property is inherited.|No|

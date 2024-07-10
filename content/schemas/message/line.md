@@ -37,7 +37,7 @@ Line Attributes
 |end|[vector3](vector3)|```{'x': -0.5, 'y': -0.5, 'z': 0}```|End coordinate.|Yes|
 |opacity|number|```1```|Line opacity.|No|
 |start|[vector3](vector3)|```{'x': 0, 'y': 0.5, 'z': 0}```|Start point coordinate.|Yes|
-|visible|boolean|```True```|Whether the material is visible.|No|
+|visible|boolean|```True```|Whether object is visible. Property is inherited.|No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)||3D object position.|No|
 |rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|

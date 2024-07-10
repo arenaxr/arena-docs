@@ -44,6 +44,7 @@ Videosphere Attributes
 |position|[position](position)||3D object position.|Yes|
 |rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|Yes|
 |scale|[scale](scale)||3D object scale.|No|
+|visible|boolean|```True```|Whether object is visible. Property is inherited.|No|
 |buffer|boolean|```True```|Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate (geometries only: box, circle, cone, ...).|No|
 |jitsi-video|[jitsi-video](jitsi-video)||Apply a jitsi video source to the geometry.|No|
 |material|[material](material)||The material properties of the object's surface.|No|

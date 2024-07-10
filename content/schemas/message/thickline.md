@@ -41,3 +41,4 @@ Thickline Attributes
 |position|[position](position)||3D object position.|No|
 |rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
 |scale|[scale](scale)||3D object scale.|No|
+|visible|boolean|```True```|Whether object is visible. Property is inherited.|No|

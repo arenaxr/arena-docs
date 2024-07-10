@@ -36,11 +36,13 @@ URDF Model Attributes
 | :--- | :--- | :--- | :--- | :--- |
 |object_type|string; Must be: ```urdf-model```|```urdf-model```|3D object type.|Yes|
 |url|string||Use File Store paths under 'store/users/username', see CDN and other storage options in the description above.|Yes|
+|urlBase|string||Base path for xacro/urdf package includes. This must be an absolute path with no trailing slash, e.g. '/store/users/username/robot'|Yes|
 |joints|string||Set joint values (in degrees) in the form 'JointName1: ValueInDegrees1, JointName2: ValueInDegrees2, ...'. |No|
 |parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |position|[position](position)||3D object position.|No|
 |rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
 |scale|[scale](scale)||3D object scale.|No|
+|visible|boolean|```True```|Whether object is visible. Property is inherited.|No|
 |animation|[animation](animation)||Animate and tween values.|No|
 |armarker|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|
 |click-listener|[click-listener](click-listener)||Object will listen for mouse events like clicks.|No|

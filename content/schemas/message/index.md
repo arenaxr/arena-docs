@@ -29,6 +29,7 @@ has_toc: false
 |[Icosahedron](icosahedron)|Icosahedron Geometry.|
 |[Light](light)|A light.|
 |[Line](line)|Draw a line.|
+|[OBJ Model](obj-model)|Load an OBJ model|
 |[Ocean](ocean)|Draw a wave-form plane.|
 |[Octahedron](octahedron)|Octahedron Geometry.|
 |[PCD Model](pcd-model)|Load a PCD model.|
