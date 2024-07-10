@@ -44,3 +44,11 @@ While in the Build 3D or A-Frame Inspector views, press the `H` key to pull up a
 "%}
 
 <img src="/assets/img/overview/inspector-help.png" width="50%" />
+
+## A-Frame and THREE.js
+
+If you are building or debugging an A-Frame Component for ARENA that uses [THREE.js](https://threejs.org/) directly here are some useful tips and tools to help.
+
+- [A-Frame Development with THREE](https://aframe.io/docs/1.6.0/introduction/developing-with-threejs.html)
+- [THREE Playground](https://threejs.org/playground/)
+- [THREE Editor](https://threejs.org/editor/)
