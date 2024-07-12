@@ -45,7 +45,6 @@ jobs:
         uses: actions/deploy-pages@v4
 
   html-link-check:
-    needs: [github-pages]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
