@@ -32,8 +32,6 @@ jobs:
           JEKYLL_ENV: production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-      - name: Check html Links
-        run: make check
 
   deploy:
     environment:
@@ -45,3 +43,20 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  html-link-check:
+    needs: [github-pages]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.3
+    - name: Install any new ruby packages
+      run: make install
+    - name: Dependencies
+      run: make update
+    - name: Build site
+      run: make build
+    - name: Check html
+      run: make check
