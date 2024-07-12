@@ -46,6 +46,7 @@ jobs:
 
   html-link-check:
     runs-on: ubuntu-latest
+    needs: deploy
     steps:
     - uses: actions/checkout@v3
     - uses: ruby/setup-ruby@v1
