@@ -69,22 +69,6 @@ We include the [aframe-spe-particles-component](https://github.com/harlyq/aframe
 
 <img src="/assets/img/overview/atmosphere/particles.png" width="50%"/>
 
-{% include alert type="warning" content="
-The `spe-particles` component does not interact well with the scene `fog` component. Many [`env-presets`](#environment--presets) enable `fog < 0`, so you many have to manually set `fog = 0`, or your particle effects may not run:
-"%}
-
-```json
-{
-  "object_id": "scene-options",
-  "type": "scene-options",
-  "data": {
-    "env-presets": {
-      "fog": 0
-    }
-  }
-}
-```
-
 Some examples of rain, snow, dust, water, and ambient sounds can be experienced in our [weather demo scene](https://arenaxr.org/public/weather).
 
 ### Rain
