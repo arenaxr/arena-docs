@@ -15,16 +15,17 @@ Additionally, and to prototype the needs for future browser platforms, we are al
 
 The following table summarizes the browsers, platforms and support for ARENA's capabilities. Where available, the **details/settings** link provides more details about the specific Browser and platforms.
 
-| Browser                                                                     | XR Experiences (WebXR support)                  | ARENA CV (Optical Markers)<sup>1</sup>                                        |
-| --------------------------------------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------------- |
-| XR Browser ([details/settings](#xr-browser-ios)) <sup>ios</sup>             | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>                                    |
-| Mozilla WebXR Viewer ([details/settings](#webxr-viewer-ios))                | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>                                    |
-| Chrome ([details/settings](#chrome-android-and-more)) <sup>android</sup>    | Mobile/Tablet (Android) and desktop             | <span style="color:green">Supported</span>                                    |
-| Mozilla Firefox                                                             | Mobile/Tablet (Android) and desktop<sup>2</sup> | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
-| Microsoft Edge ([details/settings](#edge))                                  | Mobile/Tablet, desktop and HoloLens             | <span style="color:green">Supported</span>                                    |
-| Safari ([details/settings](#safari--visionos))                              | Mobile/Tablet, Desktop and AVP<sup>2</sup>      | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
-| Oculus Browser ([details/settings](#oculus-browser-quest-quest-2-and-more)) | Oculus headsets (e.g. Quest, Quest 2)           | <span style="color:red">Not supported</span>                                  |
-| Helio ([details/settings](#oculus-browser-quest-quest-2-and-more))          | Magic Leap                                      | <span style="color:green">Supported</span>                                    |
+| Browser                                                                  | XR Experiences (WebXR support)                  | ARENA CV (Optical Markers)<sup>1</sup>                                        |
+| ------------------------------------------------------------------------ | ----------------------------------------------- | ----------------------------------------------------------------------------- |
+| XR Browser ([details/settings](#xr-browser-ios)) <sup>ios</sup>          | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>                                    |
+| Mozilla WebXR Viewer ([details/settings](#webxr-viewer-ios))             | Mobile/Tablet (iOS)                             | <span style="color:green">Supported</span>                                    |
+| Chrome ([details/settings](#chrome-android-and-more)) <sup>android</sup> | Mobile/Tablet (Android) and desktop             | <span style="color:green">Supported</span>                                    |
+| Mozilla Firefox                                                          | Mobile/Tablet (Android) and desktop<sup>2</sup> | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
+| Microsoft Edge ([details/settings](#edge))                               | Mobile/Tablet, desktop and HoloLens             | <span style="color:green">Supported</span>                                    |
+| Safari ([details/settings](#safari--visionos))                           | Mobile/Tablet, Desktop and AVP<sup>2</sup>      | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
+| Oculus Browser ([details/settings](#oculusvive-browser))                 | Oculus headsets (Quest, Quest 2, Quest 3)       | <span style="color:red">Not supported</span>                                  |
+| VIVE Browser ([details/settings](#oculusvive-browser))                   | VIVE XR Elite                                   | <span style="color:red">Not supported</span>                                  |
+| Helio ([details/settings](#oculus-browser-quest-quest-2-and-more))       | Magic Leap                                      | <span style="color:green">Supported</span>                                    |
 
 <sup>1</sup> ARENA Computer Vision pipeline support is required for optical markers, and it will, by default, process the default camera facing the environment in each different device (the back camera in phones/tablets and the front camera facing the environment on headsets).<br/>
 <sup>2</sup> Not enabled by default.<br/>
@@ -60,7 +61,7 @@ Recent versions of [Microsoft Edge adopted the Chromium open source project on t
 
 These are some quick instructions to start using ARENA on HoloLens' Edge Browser:
 
-### Oculus Browser (Quest, Quest 2 and more)
+### Oculus/VIVE Browser
 
 To try ARENA in VR, you can use the Oculus Browser (_tested on the Quest 2_) and enter the scene URL. Be patient while the scene loads and the:
 
