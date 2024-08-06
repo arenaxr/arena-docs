@@ -23,9 +23,9 @@ The following table summarizes the browsers, platforms and support for ARENA's c
 | Mozilla Firefox                                                          | Mobile/Tablet (Android) and desktop<sup>2</sup> | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
 | Microsoft Edge ([details/settings](#edge))                               | Mobile/Tablet, desktop and HoloLens             | <span style="color:green">Supported</span>                                    |
 | Safari ([details/settings](#safari--visionos))                           | Mobile/Tablet, Desktop and AVP<sup>2</sup>      | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
-| Oculus Browser ([details/settings](#oculusvive-browser))                 | Oculus headsets (Quest, Quest 2, Quest 3)       | <span style="color:red">Not supported</span>                                  |
-| VIVE Browser ([details/settings](#oculusvive-browser))                   | VIVE XR Elite                                   | <span style="color:red">Not supported</span>                                  |
-| Helio ([details/settings](#oculus-browser-quest-quest-2-and-more))       | Magic Leap                                      | <span style="color:green">Supported</span>                                    |
+| Oculus Browser ([details/settings](#oculusvivehelio-browser))            | Oculus headsets (Quest, Quest 2, Quest 3)       | <span style="color:red">Not supported</span>                                  |
+| VIVE Browser ([details/settings](#oculusvivehelio-browser))              | VIVE XR Elite                                   | <span style="color:red">Not supported</span>                                  |
+| Helio ([details/settings](#oculusvivehelio-browsers))                    | Magic Leap                                      | <span style="color:green">Supported</span>                                    |
 
 <sup>1</sup> ARENA Computer Vision pipeline support is required for optical markers, and it will, by default, process the default camera facing the environment in each different device (the back camera in phones/tablets and the front camera facing the environment on headsets).<br/>
 <sup>2</sup> Not enabled by default.<br/>
@@ -61,7 +61,7 @@ Recent versions of [Microsoft Edge adopted the Chromium open source project on t
 
 These are some quick instructions to start using ARENA on HoloLens' Edge Browser:
 
-### Oculus/VIVE Browser
+### Oculus/Vive/Helio Browsers
 
 To try ARENA in VR, you can use the Oculus Browser (_tested on the Quest 2_) and enter the scene URL. Be patient while the scene loads and the:
 
