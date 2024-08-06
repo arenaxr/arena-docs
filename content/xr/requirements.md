@@ -23,8 +23,8 @@ The following table summarizes the browsers, platforms and support for ARENA's c
 | Mozilla Firefox                                                                    | Mobile/Tablet (Android) and desktop<sup>2</sup> | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
 | Microsoft Edge ([details/settings](#edge))                                         | Mobile/Tablet, desktop and HoloLens             | <span style="color:green">Supported</span>                                    |
 | Safari ([details/settings](#safari--visionos))                                     | Mobile/Tablet, Desktop and AVP<sup>2</sup>      | <span style="color:orange">Supported via</span> [Spot AR](/content/xr/spotar) |
-| Oculus Browser ([details/settings](#oculusvivehelio-browser))                      | Oculus headsets (Quest, Quest 2, Quest 3)       | <span style="color:red">Not supported</span>                                  |
-| VIVE Browser ([details/settings](#oculusvivehelio-browser))                        | VIVE XR Elite                                   | <span style="color:red">Not supported</span>                                  |
+| Oculus Browser ([details/settings](#oculusvivehelio-browsers))                      | Oculus headsets (Quest, Quest 2, Quest 3)       | <span style="color:red">Not supported</span>                                  |
+| VIVE Browser ([details/settings](#oculusvivehelio-browsers))                        | VIVE XR Elite                                   | <span style="color:red">Not supported</span>                                  |
 | Helio [Browser](#helio-magic-leap) ([details/settings](#oculusvivehelio-browsers)) | Magic Leap                                      | <span style="color:green">Supported</span>                                    |
 
 <sup>1</sup> ARENA Computer Vision pipeline support is required for optical markers, and it will, by default, process the default camera facing the environment in each different device (the back camera in phones/tablets and the front camera facing the environment on headsets).<br/>
