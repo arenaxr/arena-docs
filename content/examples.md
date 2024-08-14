@@ -94,6 +94,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Navigation Keys           |      [![][i-nav-keys]][i-nav-keys]      | Using the VR Desktop keyboard keys to move around a scene.                               | [User:][user]                                                                                             [Tutorial][t-navigation]                      |
 | Network Graph             |       [![][i-network]][i-network]       | A web interface of MQTT message traffic                                                  | [Application][a-network]                                                                                  [Tutorial][t-network]                         |
 | Null                      |                                         | Any JSON attribute may be removed by setting it equal to `null`                          | [Graph:][grph]                                                                  [Python][p-null]          [Tutorial][t-null]                            |
+| OBJ Model                 |          [![][i-obj]][i-obj]            | OBJ Models use Wavefront (.OBJ) files                                                    | [Object:][obj3]            [Schema][s-obj]                                      [Python][p-obj]                                                        |
 | Object ID                 |                                         | The scene graph name ID for the entity, must be unique in the scene.                     | [Graph:][grph]                                                                                                                                          |
 | Ocean                     |         [![][i-ocean]][i-ocean]         | Ocean                                                                                    | [Object:][obj3]            [Schema][s-ocean]                                    [Python][p-ocean]                                                       |
 | Octahedron                |    [![][i-octahedron]][i-octahedron]    | Octahedron Geometry                                                                      | [Object:][obj3]            [Schema][s-octahedron]                               [Python][p-octahedron]                                                  |
@@ -217,6 +218,8 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [i-gltf]: /assets/img/examples/objects/gltf.png
 {:width="100px"}
 [i-urdf]: /assets/img/examples/objects/urdf.png
+{:width="100px"}
+[i-obj]: /
 {:width="100px"}
 [i-hand]: /assets/img/xr/quest-2.png
 {:width="100px"}
@@ -470,6 +473,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-material]: /content/schemas/message/material
 [s-modelUpdate]: /content/schemas/message/modelUpdate
 [s-multisrc]: /content/schemas/message/multisrc
+[s-obj]: /content/schemas/message/obj-model
 [s-ocean]: /content/schemas/message/ocean
 [s-octahedron]: /content/schemas/message/octahedron
 [s-parent]: /content/schemas/message/entity#entity-generic-object-data-attributes
@@ -603,6 +607,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [p-modelUpdate]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/modelUpdate.py
 [p-multisrc]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/multisrc.py
 [p-null]: /content/python/objects#removing-object-attributes
+[p-obj]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/obj_model.py
 [p-ocean]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ocean.py
 [p-octahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/octahedron.py
 [p-parent]: https://github.com/arenaxr/arena-py/blob/master/examples/simple/earth-moon.py

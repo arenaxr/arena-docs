@@ -230,6 +230,12 @@ Create a thin [line]:
 Line(start, end, color, ...)
 ```
 
+## [OBJ](/content/python-api/objects/obj_model)
+Create a [OBJ][obj] 3D model:
+```python
+ObjModel(url, joints, ...)
+```
+
 ## [Ocean](/content/python-api/objects/ocean)
 Create an animated [ocean] plane:
 ```python
@@ -296,12 +302,12 @@ Object(object_type, ...)
 [dodecahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/dodecahedron.py
 [entity]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/entity.py
 [gltf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/gltf.py
-[urdf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/urdf.py
 [hands]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/hands.py
 [icosahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/icosahedron.py
 [image]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/image.py
 [light]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/light.py
 [line]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/line.py
+[obj]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/obj_model.py
 [ocean]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ocean.py
 [octahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/octahedron.py
 [parent]: https://github.com/arenaxr/arena-py/blob/master/examples/simple/earth-moon.py
@@ -315,7 +321,8 @@ Object(object_type, ...)
 [text]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/text.py
 [thick-line]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/thickline.py
 [three-js]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/threejs_scene.py
-[torus]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus.py
 [torus-knot]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus_knot.py
+[torus]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus.py
 [triangle]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/triangle.py
+[urdf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/urdf.py
 [videosphere]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/videosphere.py
