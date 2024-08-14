@@ -3,7 +3,7 @@ title: arena.objects.urdf_model
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.10.0/arena">v0.10.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.10.2/arena">v0.10.2</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -32,6 +32,7 @@ grand_parent: Python API
 <ul>
 <li><strong>str joints: Set joint values (in degrees) in the form 'JointName1: ValueInDegrees1, JointName2</strong>:  ValueInDegrees2, ...'.  (optional)</li>
 <li><strong>str url</strong>:  Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
+<li><strong>str urlBase</strong>:  Base path for xacro/urdf package includes. This must be an absolute path with no trailing slash, e.g. '/store/users/username/robot' (optional)</li>
 </ul>
 </div>
 

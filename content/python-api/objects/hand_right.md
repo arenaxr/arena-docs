@@ -3,7 +3,7 @@ title: arena.objects.hand_right
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.10.0/arena">v0.10.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.10.2/arena">v0.10.2</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">

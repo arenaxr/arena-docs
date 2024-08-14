@@ -1,5 +1,5 @@
 ---
-title: arena.objects.roundedbox
+title: arena.objects.obj_model
 parent: arena.objects
 grand_parent: Python API
 ---
@@ -8,57 +8,54 @@ grand_parent: Python API
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../arena.html">arena</a><wbr>.<a href="./../objects.html">objects</a><wbr>.roundedbox    </h1>
+<a href="./../arena.html">arena</a><wbr>.<a href="./../objects.html">objects</a><wbr>.obj_model    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="Roundedbox">
+                <section id="ObjModel">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Roundedbox</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
+    <span class="name">ObjModel</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
 
         
     </div>
-    <a class="headerlink" href="#Roundedbox"></a>
+    <a class="headerlink" href="#ObjModel"></a>
     
-            <div class="docstring"><p>Roundedbox object class to manage its properties in the ARENA: Rounded Box Geometry.</p>
+            <div class="docstring"><p>ObjModel object class to manage its properties in the ARENA: Loads a 3D model and material using a Wavefront (.OBJ) file and a .MTL file. See guidance to store paths under <a href="https://docs.arenaxr.org/content/interface/filestore.html">https://docs.arenaxr.org/content/interface/filestore.html</a> ARENA File Store, CDN, or DropBox.</p>
 
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>float depth</strong>:  depth Defaults to '1' (optional)</li>
-<li><strong>float height</strong>:  height Defaults to '1' (optional)</li>
-<li><strong>float radius</strong>:  radius of edge Defaults to '0.15' (optional)</li>
-<li><strong>int radiusSegments</strong>:  segments radius Defaults to '10' (optional)</li>
-<li><strong>float width</strong>:  width Defaults to '1' (optional)</li>
+<li><strong>str mtl</strong>:  Url pointing to a .MTL file. Optional if you wish to use the material component instead. (optional)</li>
+<li><strong>str obj</strong>:  Url pointing to a .OBJ file. Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
 </ul>
 </div>
 
 
-                            <div id="Roundedbox.__init__" class="classattr">
+                            <div id="ObjModel.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">Roundedbox</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">ObjModel</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
-    <a class="headerlink" href="#Roundedbox.__init__"></a>
+    <a class="headerlink" href="#ObjModel.__init__"></a>
     
     
 
                             </div>
-                            <div id="Roundedbox.object_type" class="classattr">
+                            <div id="ObjModel.object_type" class="classattr">
                                 <div class="attr variable">
             <span class="name">object_type</span>        =
-<span class="default_value">&#39;roundedbox&#39;</span>
+<span class="default_value">&#39;obj-model&#39;</span>
 
         
     </div>
-    <a class="headerlink" href="#Roundedbox.object_type"></a>
+    <a class="headerlink" href="#ObjModel.object_type"></a>
     
     
 
@@ -67,28 +64,28 @@ grand_parent: Python API
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
-                                <dd id="Roundedbox.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
-                <dd id="Roundedbox.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
-                <dd id="Roundedbox.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
-                <dd id="Roundedbox.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
-                <dd id="Roundedbox.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
-                <dd id="Roundedbox.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
-                <dd id="Roundedbox.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
-                <dd id="Roundedbox.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
-                <dd id="Roundedbox.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
-                <dd id="Roundedbox.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
-                <dd id="Roundedbox.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
-                <dd id="Roundedbox.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
-                <dd id="Roundedbox.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
-                <dd id="Roundedbox.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
-                <dd id="Roundedbox.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
-                <dd id="Roundedbox.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
-                <dd id="Roundedbox.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
-                <dd id="Roundedbox.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
+                                <dd id="ObjModel.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
+                <dd id="ObjModel.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
+                <dd id="ObjModel.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
+                <dd id="ObjModel.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
+                <dd id="ObjModel.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
+                <dd id="ObjModel.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
+                <dd id="ObjModel.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
+                <dd id="ObjModel.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
+                <dd id="ObjModel.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
+                <dd id="ObjModel.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
+                <dd id="ObjModel.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
+                <dd id="ObjModel.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
+                <dd id="ObjModel.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
+                <dd id="ObjModel.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
+                <dd id="ObjModel.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
+                <dd id="ObjModel.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
+                <dd id="ObjModel.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
+                <dd id="ObjModel.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
 
             </div>
             <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="Roundedbox.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                                <dd id="ObjModel.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
 
             </div>
                                 </dl>

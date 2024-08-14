@@ -3,7 +3,7 @@ title: arena.utils.arena_telemetry
 parent: arena.utils
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.10.0/arena">v0.10.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.10.2/arena">v0.10.2</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -188,7 +188,7 @@ According to :envvar:<code>ARENA_TELEMETRY</code>, exports using OTLP, send JSON
                             <div id="ArenaTelemetry.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">ArenaTelemetry</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">name</span><span class="o">=</span><span class="s1">&#39;./scripts/pdoc/make-pdoc.py&#39;</span>, </span><span class="param"><span class="nb">id</span><span class="o">=</span><span class="kc">None</span></span>)</span>
+        <span class="name">ArenaTelemetry</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">name</span><span class="o">=</span><span class="s1">&#39;scripts/pdoc/make-pdoc.py&#39;</span>, </span><span class="param"><span class="nb">id</span><span class="o">=</span><span class="kc">None</span></span>)</span>
 
         
     </div>
@@ -244,7 +244,7 @@ Provides utility calls that wrap open telemetry functionality to start spans, lo
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">exit</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">error_msg</span><span class="o">=</span><span class="kc">None</span></span><span class="return-annotation">):</span></span>
+        <span class="name">exit</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">error_msg</span><span class="o">=</span><span class="kc">None</span>, </span><span class="param"><span class="n">print_msg</span><span class="o">=</span><span class="kc">True</span></span><span class="return-annotation">):</span></span>
 
         
     </div>

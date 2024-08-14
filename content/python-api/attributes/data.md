@@ -3,7 +3,7 @@ title: arena.attributes.data
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.10.0/arena">v0.10.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.10.2/arena">v0.10.2</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -71,6 +71,7 @@ Usage: <code>data=Data(...)</code></p>
 <li><strong>dict textinput</strong>:  Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener. (optional)</li>
 <li><strong>str url</strong>:  Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
 <li><strong>dict video_control</strong>:  Adds a video to an entity and controls its playback. (optional)</li>
+<li><strong>bool visible</strong>:  Whether object is visible. Property is inherited. Defaults to 'True' (optional)</li>
 </ul>
 </div>
 
