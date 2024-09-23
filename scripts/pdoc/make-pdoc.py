@@ -5,7 +5,7 @@ import shutil
 from importlib.metadata import version
 from pathlib import Path
 
-from pdoc import pdoc, render
+import pdoc
 
 
 def grep_all_files(root_dir, str_find, str_replace, file_pattern):
@@ -23,11 +23,11 @@ lib = "arena"
 dest_dir = "python-api"
 here = Path(__file__).parent
 out = here / Path("../../content")
-os.environ["PDOC-ARENA-PI-VERSION"] = version('arena-py')
+os.environ["PDOC-ARENA-PI-VERSION"] = version("arena-py")
 
 # https://pdoc.dev/docs/pdoc/render.html#configure
-render.configure(
-    docformat='restructuredtext',
+pdoc.render.configure(
+    docformat="restructuredtext",
     # include_undocumented=True,
     # edit_url_map={lib: f"https://github.com/arenaxr/arena-py/tree/v{version('arena-py')}/arena/"}, # TODO(mwfarb): fix clickable region
     # favicon=None,
@@ -38,9 +38,9 @@ render.configure(
     # mermaid=False,
     search=False,
     show_source=False,
-    template_directory=here / "pdoc-template"
+    template_directory=here / "pdoc-template",
 )
-pdoc(lib, output_directory=out)
+pdoc.pdoc(lib, output_directory=out)
 shutil.rmtree(out / dest_dir)
 
 grep_all_files(out, "/../arena.html", "/arena.html", "*.html")
@@ -54,4 +54,4 @@ for f in out.glob("**/*.html"):
     f.rename(f.with_suffix(".md"))
 
 # rename api folder
-shutil.move(out / lib,  out / dest_dir)
+shutil.move(out / lib, out / dest_dir)
