@@ -19,7 +19,7 @@ Scene Options Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|clickableOnlyEvents|boolean|```True```|True = publish only mouse events for objects with click-listeners; False = all objects publish mouse events.|Yes|
+|clickableOnlyEvents|boolean|```True```|True = publish only mouse events for objects with click-listeners; False = all objects publish mouse events.|No|
 |distanceModel|string; One of: ```['exponential', 'inverse', 'linear']```|```'inverse'```|Algorithm to use to reduce the volume of the audio source as it moves away from the listener.|No|
 |sceneHeadModels|array|```[]```|Define the default head model(s) for the scene in a list. Users may still choose from the ARENA default list of head models as well.|No|
 |jitsiHost|string|```'jitsi0.andrew.cmu.edu:8443'```|Jitsi host used for this scene.|No|
@@ -30,9 +30,9 @@ Scene Options Attributes
 |refDistance|number|```1```|Distance at which the volume reduction starts taking effect.|No|
 |rolloffFactor|number|```1```|How quickly the volume is reduced as the source moves away from the listener.|No|
 |screenshare|string|```'screenshare'```|Name of the 3D object used when sharing desktop.|No|
-|videoFrustumCulling|boolean|```True```|If false, will disable video frustum culling (video frustum culling stops video from users outside of view).|Yes|
-|videoDistanceConstraints|boolean|```True```|If false, will disable video distance constraints (video resolution decreases with distance from users in view).|Yes|
-|videoDefaultResolutionConstraint|number|```180```|Sets the default max resolution for all users. Ignored when videoDistanceConstraints = true.|Yes|
+|videoFrustumCulling|boolean|```True```|If false, will disable video frustum culling (video frustum culling stops video from users outside of view).|No|
+|videoDistanceConstraints|boolean|```True```|If false, will disable video distance constraints (video resolution decreases with distance from users in view).|No|
+|videoDefaultResolutionConstraint|number|```180```|Sets the default max resolution for all users. Ignored when videoDistanceConstraints = true.|No|
 |volume|number|```1```|Volume for users in a scene.|No|
 |physics|boolean|```False```|If true, will load the aframe-physics-system. Required for the following: `dynamic-body`, `impulse`, `collision-listener`.|Yes|
 |ar-hit-test|object||A-Frame AR Hit Test Settings.
