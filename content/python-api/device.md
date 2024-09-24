@@ -3,7 +3,7 @@ title: arena.device
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.11.0/arena">v0.11.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.11.1/arena">v0.11.1</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -35,6 +35,10 @@ Can create and execute various user-defined functions/tasks.</p>
 <li><strong>str realm</strong>:  Reserved topic fork for future use (optional).</li>
 <li><strong>str namespace</strong>:  Username of authenticated user or other namespace (automatic).</li>
 <li><strong>str device</strong>:  The name of the device, without namespace (required).</li>
+<li><strong>int network_latency_interval</strong>:  Interval (in ms) to run network graph latency update. Default value is 10000 (10 secs). Ignore this parameter.</li>
+<li><strong>func on_msg_callback</strong>:  Called on all MQTT messages received. Default = None.</li>
+<li><strong>func end_program_callback</strong>:  Called on MQTT disconnect. Default = None.</li>
+<li><strong>bool debug</strong>:  If true, print a log of all publish messages from this client. Default = False.</li>
 </ul>
 </div>
 

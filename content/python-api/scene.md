@@ -3,7 +3,7 @@ title: arena.scene
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.11.0/arena">v0.11.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.11.1/arena">v0.11.1</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -35,6 +35,17 @@ Can create and execute various user-defined functions/tasks.</p>
 <li><strong>str realm</strong>:  Reserved topic fork for future use (optional).</li>
 <li><strong>str namespace</strong>:  Username of authenticated user or other namespace (automatic).</li>
 <li><strong>str scene</strong>:  The name of the scene, without namespace (required).</li>
+<li><strong>int network_latency_interval</strong>:  Interval (in ms) to run network graph latency update. Default value is 10000 (10 secs). Ignore this parameter.</li>
+<li><strong>func on_msg_callback</strong>:  Called on all MQTT messages received. Default = None.</li>
+<li><strong>func new_obj_callback</strong>:  Called on object 'create' MQTT messages received. Default = None.</li>
+<li><strong>func user_join_callback</strong>:  Called on user id 'new' MQTT messages received. Default = None.</li>
+<li><strong>func user_left_callback</strong>:  Called on user id 'delete' MQTT messages received. Default = None.</li>
+<li><strong>func delete_obj_callback</strong>:  Called on object 'delete' MQTT messages received. Default = None.</li>
+<li><strong>func end_program_callback</strong>:  Called on MQTT disconnect. Default = None.</li>
+<li><strong>bool video</strong>:  If true, request permissions for video conference. Default = False.</li>
+<li><strong>bool debug</strong>:  If true, print a log of all publish messages from this client. Default = False.</li>
+<li><strong>bool cli_args</strong>:  If true, require CLI standardized parameters. Default = False.</li>
+<li><strong>bool headless</strong>:  If true, force limited input device auth flow. Default = False.</li>
 </ul>
 </div>
 
