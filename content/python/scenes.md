@@ -27,15 +27,15 @@ scene = Scene(host="arenaxr.org", scene="example")
 
 See [Scene API Spec](/content/python-api/scene).
 
-- `host`: Base ARENA URL.
-- `realm`: ARENA realm name.
-- `scene`: ARENA scene name.
-- `namespace`: ARENA namespace. Default value is ARENA username.
+- `host`: Hostname of the ARENA webserver (required).
+- `realm`: Reserved topic fork for future use (optional).
+- `namespace`: Username of authenticated user or other namespace (automatic).
+- `scene`: The name of the scene, without namespace (required).
+- `network_latency_interval`: Interval (in ms) to run network graph latency update. Default value is 10000 (10 secs). Ignore this parameter.
 - `video`: If true, request permissions for video conference. Default = False.
 - `debug`: If true, print a log of all publish messages from this client. Default = False.
-- `cli_args`: If true, several [standardized parameters](#command-line-args) are available. Default = False.
-- `debug`: If True, print authentication debug information and every published message. Ignore this parameter.
-- `network_latency_interval`: Interval (in ms) to run network graph latency update. Default value is 10000 (10 secs). Ignore this parameter.
+- `cli_args`: If true, require CLI standardized parameters. Default = False.
+- `headless`: If true, force limited input device auth flow. Default = False.
 
 ### Scene Object Callbacks
 
