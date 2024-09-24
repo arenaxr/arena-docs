@@ -34,7 +34,7 @@ See [Scene API Spec](/content/python-api/scene).
 - `network_latency_interval`: Interval (in ms) to run network graph latency update. Default value is 10000 (10 secs). Ignore this parameter.
 - `video`: If true, request permissions for video conference. Default = False.
 - `debug`: If true, print a log of all publish messages from this client. Default = False.
-- `cli_args`: If true, require CLI standardized parameters. Default = False.
+- `cli_args`: If true, require CLI [standardized parameters](#command-line-args). Default = False.
 - `headless`: If true, force limited input device auth flow. Default = False.
 
 ### Scene Object Callbacks
