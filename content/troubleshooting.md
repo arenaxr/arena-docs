@@ -38,7 +38,7 @@ This means the socket connection to the ARENA MQTT broker has ended. Some possib
 - Your program main thread is blocking MQTT keep-alive messages, commonly from using infinite loops like `while True:` in the main thread. Considering spawning a new thread to run your `while True:` code.
 
 ### Python: Unable to get local issuer certificate
-It seems some distributions of Python may not have any certificate roots installed for SSL. To resolve, some useful troubleshooting can be found online:
+It seems some distributions of Python may not have any certificate roots installed for SSL, especially Mac OS. To resolve, some useful troubleshooting can be found online:
 - [https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to-get-local-issuer-certificate](https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to-get-local-issuer-certificate)
 
 ## Web Browser Scene Errors
