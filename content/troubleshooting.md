@@ -32,6 +32,11 @@ If your internet connection uses a VPN or other firewall that may block port **8
 - Switch to another VPN, WiFi access point, or network connection that allows port 8883.
 - Use a SSH terminal connection to another server you operate that allows port 8883.
 
+### Python: Disconnected! Result code=1.
+This means the socket connection to the ARENA MQTT broker has ended. Some possible reasons for this:
+- Your network connection has ended for a variety of reasons: power dip, signal loss, or other network events. Is the server still reachable using `ping arenaxr.org`?
+- Your program main thread is blocking MQTT keep-alive messages, commonly from using infinite loops like `while True:` in the main thread. Considering spawning a new thread to run your `while True:` code.
+
 ### Python: Unable to get local issuer certificate
 It seems some distributions of Python may not have any certificate roots installed for SSL. To resolve, some useful troubleshooting can be found online:
 - [https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to-get-local-issuer-certificate](https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to-get-local-issuer-certificate)
