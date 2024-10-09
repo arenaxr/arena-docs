@@ -154,7 +154,7 @@ public class ArenaTestButton : MonoBehaviour
         scene.OnMessageCallback = MessageCallback;
 
         // Manually ingest a message, not received from MQTT subscriber
-        scene.ProcessMessage("realm/s/public/example/scene-options", payload);
+        scene.ProcessMessage("realm/s/public/example/o/scene-options", payload);
     }
 
     /// <summary>

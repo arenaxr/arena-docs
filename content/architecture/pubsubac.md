@@ -17,19 +17,13 @@ A few example topics are included below for context, as well as a list of topic 
 ## Example Topics
 
 General 3D Object
-: `realm/s/er1k/test-scene/box_1`
+: `realm/s/er1k/test-scene/o/box_1`
 
 User 3D Object
-: `realm/s/er1k/test-scene/camera_1234567890_er1k`
+: `realm/s/er1k/test-scene/u/1234567890_er1k`
 
 Chat Message
-: `realm/c/er1k/p/1234567890_er1k/MTIzNDU2Nzg5MF9lcjFr`
-
-AprilTag Detection
-: `realm/g/a/camera_1234567890_er1k`
-
-VIO Update
-: `realm/vio/er1k/test-scene/vio-12`
+: `realm/s/er1k/test-scene/c/1234567890_er1k`
 
 Runtime Stdout
 : `realm/proc/debug/stdout/e5f4439e-5a02-4e5d-9d72-704d171d8949`
@@ -56,9 +50,6 @@ Runtime Stdout
 
 `proc`
 : Storage area for runtime **process** and module data
-
-`vio`
-: Storage area for **VIO camera** pose updates
 
 `$NETWORK`
 : Storage area for **network performance** metrics

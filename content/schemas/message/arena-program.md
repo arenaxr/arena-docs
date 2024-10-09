@@ -40,5 +40,5 @@ Program Attributes
 |parent|string; Must be: ```arena-rt1```|```'arena-rt1'```|Request the orchestrator to deploy to this runtime (can be a runtime name or UUID); Temporarily must be arena-rt1.|Yes|
 |args|array||Command-line arguments (passed in argv). Supports variables: ${scene}, ${mqtth}, ${cameraid}, ${username}, ${runtimeid}, ${moduleid}, ${query-string-key}.|No|
 |env|array|```['MID=${moduleid}', 'SCENE=${scene}', 'NAMESPACE=${namespace}', 'MQTTH=${mqtth}', 'REALM=realm']```|Environment variables. Supports variables: ${scene}, ${namespace}, ${mqtth}, ${cameraid}, ${username}, ${runtimeid}, ${moduleid}, ${query-string-key}.|Yes|
-|channels|array|```[{'path': '/ch/${scene}', 'type': 'pubsub', 'mode': 'rw', 'params': {'topic': 'realm/s/${scene}'}}]```|Channels describe files representing access to IO from pubsub and client sockets (possibly more in the future; currently only supported for WASM programs).|No|
+|channels|array|```[{'path': '/ch/${scene}', 'type': 'pubsub', 'mode': 'rw', 'params': {'topic': 'realm/s/${scene}/${namespace}'}}]```|Channels describe files representing access to IO from pubsub and client sockets (possibly more in the future; currently only supported for WASM programs).|No|
 |run_info|object||Program execution info, added at runtime.|No|
