@@ -19,6 +19,6 @@ Position Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|x|number|```0```|x|Yes|
-|y|number|```0```|y|Yes|
-|z|number|```0```|z|Yes|
+|**x**|number|```0```|x|Yes|
+|**y**|number|```0```|y|Yes|
+|**z**|number|```0```|z|Yes|

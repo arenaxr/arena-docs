@@ -19,7 +19,7 @@ GLTF Model Update Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|^[A-Za-z][A-Za-z0-9_-]*$|object||One of this model's named child components.|No|
+|**^[A-Za-z][A-Za-z0-9_-]*$**|object||One of this model's named child components.|No|
 
 
 GLTF Model Update Example

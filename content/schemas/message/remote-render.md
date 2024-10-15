@@ -19,4 +19,4 @@ Remote Render Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|enabled|boolean|```True```|Remote Render this object.|No|
+|**enabled**|boolean|```True```|Remote Render this object.|No|

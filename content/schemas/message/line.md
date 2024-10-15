@@ -21,24 +21,26 @@ Line Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_id|string||A uuid or otherwise unique identifier for this object.|Yes|
-|persist|boolean|```True```|Persist this object in the database.|Yes|
-|type|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
-|action|string; One of: ```['create', 'delete', 'update']```|```'create'```|Message action create, update, delete.|Yes|
-|ttl|integer||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
-|data|Line data||Line Data|Yes|
+|**object_id**|string||A uuid or otherwise unique identifier for this object.|Yes|
+|**persist**|boolean|```True```|Persist this object in the database.|Yes|
+|**type**|string; Must be: ```object```|```'object'```|AFrame 3D Object|Yes|
+|**action**|string; One of: ```['create', 'delete', 'update']```|```'create'```|Message action create, update, delete.|Yes|
+|**ttl**|number||When applied to an entity, the entity will remove itself from DOM after the specified number of seconds. Update is allowed, which will reset the timer to start from that moment.|No|
+|**private**|boolean|```False```|If true, interactions with this object should not be broadcasted to other clients, but rather sent on private topics|No|
+|**program_id**|string||The program_id on private program topics that interactions to be directed to, if the private flag is set true. Ignored if private flag is false.|No|
+|**data**|Line data||Line Data|Yes|
 
 ### Line Data Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_type|string; Must be: ```line```|```line```|3D object type.|Yes|
-|color|string|```'#74BEC1'```|Line color.|Yes|
-|end|[vector3](vector3)|```{'x': -0.5, 'y': -0.5, 'z': 0}```|End coordinate.|Yes|
-|opacity|number|```1```|Line opacity.|No|
-|start|[vector3](vector3)|```{'x': 0, 'y': 0.5, 'z': 0}```|Start point coordinate.|Yes|
-|visible|boolean|```True```|Whether object is visible. Property is inherited.|No|
-|parent|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
-|position|[position](position)||3D object position.|No|
-|rotation|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
-|scale|[scale](scale)||3D object scale.|No|
+|**object_type**|string; Must be: ```line```|```line```|3D object type.|Yes|
+|**color**|string|```'#74BEC1'```|Line color.|Yes|
+|**end**|[vector3](vector3)|```{'x': -0.5, 'y': -0.5, 'z': 0}```|End coordinate.|Yes|
+|**opacity**|number|```1```|Line opacity.|No|
+|**start**|[vector3](vector3)|```{'x': 0, 'y': 0.5, 'z': 0}```|Start point coordinate.|Yes|
+|**visible**|boolean|```True```|Whether object is visible. Property is inherited.|No|
+|**parent**|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
+|**position**|[position](position)||3D object position.|No|
+|**rotation**|[rotation](rotation)||3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.|No|
+|**scale**|[scale](scale)||3D object scale.|No|
