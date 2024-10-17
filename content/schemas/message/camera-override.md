@@ -21,10 +21,10 @@ Camera Override Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_id|string||Object identifier; Must be a valid camera ID.|Yes|
-|action|string; One of: ```['create', 'delete', 'update']```|```'update'```|Message action create, update, delete.|Yes|
-|persist|boolean|```False```|Persist this object in the database.|Yes|
-|type|string; Must be: ```camera-override```|```'camera-override'```|ARENA camera override data|Yes|
-|data|[camera-override](camera-override)||Object data payload; Camera Override config data.|Yes|
+|**object_id**|string||Object identifier; Must be a valid camera ID.|Yes|
+|**action**|string; One of: ```['create', 'delete', 'update']```|```'update'```|Message action create, update, delete.|Yes|
+|**persist**|boolean|```False```|Persist this object in the database.|Yes|
+|**type**|string; Must be: ```camera-override```|```'camera-override'```|ARENA camera override data|Yes|
+|**data**|[camera-override](camera-override)||Object data payload; Camera Override config data.|Yes|
 
 ### Camera Override Data Attributes

@@ -19,6 +19,6 @@ Impulse Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|force|[vector3](vector3)|```{'x': 1, 'y': 1, 'z': 1}```|Impulse vector.|No|
-|on|string; One of: ```['mousedown', 'mouseup']```|```'mousedown'```|Event to listen 'on'.|No|
-|position|[vector3](vector3)|```{'x': 1, 'y': 1, 'z': 1}```|World position.|No|
+|**force**|[vector3](vector3)|```{'x': 1, 'y': 1, 'z': 1}```|Impulse vector.|No|
+|**on**|string; One of: ```['mousedown', 'mouseup']```|```'mousedown'```|Event to listen 'on'.|No|
+|**position**|[vector3](vector3)|```{'x': 1, 'y': 1, 'z': 1}```|World position.|No|

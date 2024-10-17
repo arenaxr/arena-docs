@@ -21,37 +21,37 @@ Material Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|alphaTest|number|```0```|Alpha test threshold for transparency.|No|
-|anisotropy|number|```0```|The anisotropic filtering sample rate to use for the textures. A value of 0 means the default value will be used, see renderer.|No|
-|blending|string; One of: ```['none', 'normal', 'additive', 'subtractive', 'multiply']```|```'normal'```|The blending mode for the material's RGB and Alpha sent to the WebGLRenderer.|No|
-|color|string|```'#ffffff'```|Base diffuse color.|No|
-|combine|string; One of: ```['mix', 'add', 'multiply']```|```'mix'```|How the environment map mixes with the material. Requires shader: phong.|No|
-|depthTest|boolean|```True```|Whether depth testing is enabled when rendering the material.|No|
-|depthWrite|boolean|```True```|Render when depth test succeeds.|No|
-|dithering|boolean|```True```|Whether material is dithered with noise. Removes banding from gradients like ones produced by lighting.|No|
-|emissive|string|```'#000000'```|The color of the emissive lighting component. Used to make objects produce light even without other lighting in the scene. Requires shader: standard or phong|No|
-|emissiveIntensity|number|```1```|Intensity of the emissive lighting component. Requires shader: standard or phong|No|
-|flatShading|boolean|```False```|Use THREE.FlatShading rather than THREE.StandardShading.|No|
-|fog|boolean|```True```|Whether or not material is affected by fog.|No|
-|height|integer|```256```|Height of video (in pixels), if defining a video texture. Requires shader: standard or flat.|No|
-|metalness|number|```0```|How metallic the material is from 0 to 1. Requires shader: standard.|No|
-|npot|boolean|```False```|Use settings for non-power-of-two (NPOT) texture.|No|
-|offset|object|```{'x': 0, 'y': 0}```|Texture offset to be used.|No|
-|opacity|number|```1```|Extent of transparency. If the transparent property is not true, then the material will remain opaque and opacity will only affect color.|No|
-|reflectivity|number|```0.9```|How much the environment map affects the surface. Requires shader: phong.|No|
-|refract|boolean|```False```|Whether the defined envMap should refract. Requires shader: phong.|No|
-|refractionRatio|number|```0.98```|1/refractive index of the material. Requires shader: phong.|No|
-|repeat|object|```{'x': 1, 'y': 1}```|How many times a texture (defined by src) repeats in the X and Y direction.|No|
-|roughness|number|```0```|How rough the material is from 0 to 1. A rougher material will scatter reflected light in more directions than a smooth material. Requires shader: standard.|No|
-|shader|string; One of: ```['flat', 'standard', 'phong']```|```'standard'```|Which material to use. Defaults to the standard material. Can be set to the flat material or to a registered custom shader material.|No|
-|shininess|number|```30```|How shiny the specular highlight is; a higher value gives a sharper highlight. Requires shader: phong.|No|
-|side|string; One of: ```['front', 'back', 'double']```|```'front'```|Which sides of the mesh to render.|No|
-|specular|string|```'#111111'```|This defines how shiny the material is and the color of its shine. Requires shader: phong.|No|
-|src|string||URI, relative or full path of an image/video file. e.g. 'store/users/wiselab/images/360falls.mp4'.|No|
-|toneMapped|boolean|```True```|Whether to ignore toneMapping, set to false you are using renderer.toneMapping and an element should appear to emit light. Requires shader: flat.|No|
-|transparent|boolean|```False```|Whether material is transparent. Transparent entities are rendered after non-transparent entities.|No|
-|vertexColorsEnabled|boolean|```False```|Whether to use vertex or face colors to shade the material.|No|
-|visible|boolean|```True```|Whether material is visible. Raycasters will ignore invisible materials.|No|
-|width|integer|```512```|Width of video (in pixels), if defining a video texture. Requires shader: standard or flat.|No|
-|wireframe|boolean|```False```|Whether to render just the geometry edges.|No|
-|wireframeLinewidth|integer|```2```|Width in px of the rendered line.|No|
+|**alphaTest**|number|```0```|Alpha test threshold for transparency.|No|
+|**anisotropy**|number|```0```|The anisotropic filtering sample rate to use for the textures. A value of 0 means the default value will be used, see renderer.|No|
+|**blending**|string; One of: ```['none', 'normal', 'additive', 'subtractive', 'multiply']```|```'normal'```|The blending mode for the material's RGB and Alpha sent to the WebGLRenderer.|No|
+|**color**|string|```'#ffffff'```|Base diffuse color.|No|
+|**combine**|string; One of: ```['mix', 'add', 'multiply']```|```'mix'```|How the environment map mixes with the material. Requires shader: phong.|No|
+|**depthTest**|boolean|```True```|Whether depth testing is enabled when rendering the material.|No|
+|**depthWrite**|boolean|```True```|Render when depth test succeeds.|No|
+|**dithering**|boolean|```True```|Whether material is dithered with noise. Removes banding from gradients like ones produced by lighting.|No|
+|**emissive**|string|```'#000000'```|The color of the emissive lighting component. Used to make objects produce light even without other lighting in the scene. Requires shader: standard or phong|No|
+|**emissiveIntensity**|number|```1```|Intensity of the emissive lighting component. Requires shader: standard or phong|No|
+|**flatShading**|boolean|```False```|Use THREE.FlatShading rather than THREE.StandardShading.|No|
+|**fog**|boolean|```True```|Whether or not material is affected by fog.|No|
+|**height**|integer|```256```|Height of video (in pixels), if defining a video texture. Requires shader: standard or flat.|No|
+|**metalness**|number|```0```|How metallic the material is from 0 to 1. Requires shader: standard.|No|
+|**npot**|boolean|```False```|Use settings for non-power-of-two (NPOT) texture.|No|
+|**offset**|object|```{'x': 0, 'y': 0}```|Texture offset to be used.|No|
+|**opacity**|number|```1```|Extent of transparency. If the transparent property is not true, then the material will remain opaque and opacity will only affect color.|No|
+|**reflectivity**|number|```0.9```|How much the environment map affects the surface. Requires shader: phong.|No|
+|**refract**|boolean|```False```|Whether the defined envMap should refract. Requires shader: phong.|No|
+|**refractionRatio**|number|```0.98```|1/refractive index of the material. Requires shader: phong.|No|
+|**repeat**|object|```{'x': 1, 'y': 1}```|How many times a texture (defined by src) repeats in the X and Y direction.|No|
+|**roughness**|number|```0```|How rough the material is from 0 to 1. A rougher material will scatter reflected light in more directions than a smooth material. Requires shader: standard.|No|
+|**shader**|string; One of: ```['flat', 'standard', 'phong']```|```'standard'```|Which material to use. Defaults to the standard material. Can be set to the flat material or to a registered custom shader material.|No|
+|**shininess**|number|```30```|How shiny the specular highlight is; a higher value gives a sharper highlight. Requires shader: phong.|No|
+|**side**|string; One of: ```['front', 'back', 'double']```|```'front'```|Which sides of the mesh to render.|No|
+|**specular**|string|```'#111111'```|This defines how shiny the material is and the color of its shine. Requires shader: phong.|No|
+|**src**|string||URI, relative or full path of an image/video file. e.g. 'store/users/wiselab/images/360falls.mp4'.|No|
+|**toneMapped**|boolean|```True```|Whether to ignore toneMapping, set to false you are using renderer.toneMapping and an element should appear to emit light. Requires shader: flat.|No|
+|**transparent**|boolean|```False```|Whether material is transparent. Transparent entities are rendered after non-transparent entities.|No|
+|**vertexColorsEnabled**|boolean|```False```|Whether to use vertex or face colors to shade the material.|No|
+|**visible**|boolean|```True```|Whether material is visible. Raycasters will ignore invisible materials.|No|
+|**width**|integer|```512```|Width of video (in pixels), if defining a video texture. Requires shader: standard or flat.|No|
+|**wireframe**|boolean|```False```|Whether to render just the geometry edges.|No|
+|**wireframeLinewidth**|integer|```2```|Width in px of the rendered line.|No|
