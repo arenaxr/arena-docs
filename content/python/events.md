@@ -25,9 +25,9 @@ def click_handler(scene, evt, msg):
     evt.type # == "buttonClick", "mousedown", "mouseup", "mouseenter", "mouseleave", etc.
 
     ## Get Event data
-    evt.data.clickPos
-    evt.data.position
-    evt.data.source
+    evt.data.originPosition
+    evt.data.targetPosition
+    evt.data.target
     evt.data.buttonName
     evt.data.buttonIndex
     # etc.
@@ -50,7 +50,7 @@ scene.generate_click_event(
     obj,
     type="mouseup"
 )
-# arena-py will "click" obj with mouseup. In JSON, "source" will be defined as "arena_lib_[some random ID here]".
+# arena-py will "click" obj with mouseup. In JSON, "target" will be defined as "arena_lib_[some random ID here]".
 ```
 
 ### Camera Manipulation Events
@@ -76,7 +76,7 @@ scene.look_at(
 If there is an event that does not exist yet, you can use this to have more freedom in the event type:
 ```python
 # define custom event
-evt = Event(type="my_custom_event", position=(3,4,5), target=sphere)
+evt = Event(type="my_custom_event", targetPosition=(3,4,5), target=sphere)
 # generate custom event with arena-py client
 scene.generate_custom_event(evt, action="clientEvent")
 ```
