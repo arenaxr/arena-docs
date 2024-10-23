@@ -144,7 +144,7 @@ public class ArenaTestButton : MonoBehaviour
         cube.transform.rotation = UnityEngine.Random.rotation;
 
         // Publish a custom event under this client's "camera" object
-        scene.PublishEvent(arenaObject.name, "my-custom-event-type", scene.camid, "{\"my-attribute\": \"my-custom-attribute\"}");
+        scene.PublishEvent("my-custom-event-type", scene.camid, "{\"my-attribute\": \"my-custom-attribute\"}");
 
         // Publish a fully formed json object update message
         const string payload = "{\"object_id\":\"scene-options\",\"persist\":true,\"type\":\"scene-options\",\"action\":\"update\",\"data\":{\"env-presets\":{\"ground\":\"none\"}}}";
