@@ -24,8 +24,25 @@ Here are some common situations which can help when programming and collaboratin
 - Does the scene name in the URL match the scene name/topic where the object was created? e.g. URL is `https://arenaxr.org/[your username]/example` and MQTT topic published to is `realm/s/[your username]/example/o/some_object_1`.
 - Does the object appear in the left column of the [A-Frame Scene Inspector](https://aframe.io/docs/1.5.0/introduction/visual-inspector-and-dev-tools.html)?
 
+## Unity Library `arena-unity` Errors
+While using the ARENA **Unity library**, You may encounter an error condition. Some of these are detailed below with some troubleshooting steps.
+
+### Unity: HTTP Error 426 Upgrade Required
+The ARENA web site will be updated from time to time, and some updates may require older versions of the `arena-unity` Unity client to be updated to communicate.
+- Use the Unity app menu `Window > Package Manager` and `+ > Add package from git URL...`, use this link for the latest:
+    ```
+    https://github.com/arenaxr/arena-unity.git
+    ```
+
 ## Python Library `arena-py` Errors
-While using the ARENA **Python library**, You may encounter an error condition due to your network configuration. Some of these are detailed below with some troubleshooting steps.
+While using the ARENA **Python library**, You may encounter an error condition. Some of these are detailed below with some troubleshooting steps.
+
+### Python: HTTP Error 426 Upgrade Required
+The ARENA web site will be updated from time to time, and some updates may require older versions of the `arena-py` Python client to be updated to communicate.
+- Use the `pip` Python package manager package manager to upgrade:
+    ```bash
+    pip install arena-py --upgrade
+    ```
 
 ### Python: MQTT connect error to arenaxr.org, port=8883
 If your internet connection uses a VPN or other firewall that may block port **8883**, then the secure, encrypted TLS connection for ARENA MQTT will be prevented. To resolve:
@@ -42,7 +59,7 @@ It seems some distributions of Python may not have any certificate roots install
 - [https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to-get-local-issuer-certificate](https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to-get-local-issuer-certificate)
 
 ## Web Browser Scene Errors
-While visiting an ARENA scene in a **web browser**, you may encounter an error condition due to limited hardware, memory, or network capacity. Some of these are detailed below with some troubleshooting steps.
+While visiting an ARENA scene in a **web browser**, you may encounter an error condition. Some of these are detailed below with some troubleshooting steps.
 
 ### Error: Network speed is too slow
 Some elements of the scene may not have loaded if at all. You may see this error if the network speed of your current connection is too slow for the ARENA to operate. Most fixes involve switching to another network connection which may have improved bandwidth or latency. Steps to try:
