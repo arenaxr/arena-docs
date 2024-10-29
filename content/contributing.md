@@ -1,6 +1,6 @@
 ---
 title: Contributing
-nav_order: 98
+nav_order: 80
 layout: default
 ---
 
