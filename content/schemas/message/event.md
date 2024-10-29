@@ -21,16 +21,19 @@ Event Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|object_id|string||A uuid or otherwise unique identifier for this object.|Yes|
-|persist|boolean|```False```|Persist this object in the database.|No|
-|type|string; One of: ```['mousedown', 'mouseup', 'mouseenter', 'mouseleave', 'triggerdown', 'triggerup', 'gripdown', 'gripup', 'menudown', 'menuup', 'systemdown', 'systemup', 'trackpaddown', 'trackpadup', 'soundplay', 'soundpause', 'soundstop']```||One of the client event action types like 'mousedown'.|Yes|
-|action|string; Must be: ```clientEvent```|```'clientEvent'```|Message action client event.|Yes|
-|data|Event data||Event Data|Yes|
+|**object_id**|string||A uuid or otherwise unique identifier for this object.|Yes|
+|**persist**|boolean|```False```|Persist this object in the database.|No|
+|**type**|string; One of: ```['mousedown', 'mouseup', 'mouseenter', 'mouseleave', 'triggerdown', 'triggerup', 'gripdown', 'gripup', 'menudown', 'menuup', 'systemdown', 'systemup', 'trackpaddown', 'trackpadup', 'soundplay', 'soundpause', 'soundstop']```||One of the client event action types like 'mousedown'.|Yes|
+|**action**|string; Must be: ```clientEvent```|```'clientEvent'```|Message action client event.|Yes|
+|**data**|Event data||Event Data|Yes|
 
 ### Event Data Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
-|source|string||The `object_id` of event origination. e.g camera or client program connection id.|Yes|
-|position|[vector3](vector3)||The event destination position in 3D.|Yes|
-|clickPos|[vector3](vector3)|```{'x': 0, 'y': 1.6, 'z': 0}```|The event origination position in 3D.|No|
+|**target**|string||The `object_id` of event destination.|Yes|
+|**targetPosition**|[vector3](vector3)||The event destination position in 3D.|Yes|
+|**originPosition**|[vector3](vector3)|```{'x': 0, 'y': 1.6, 'z': 0}```|The event origination position in 3D.|No|
+|~~**source**~~|~~string~~||~~DEPRECATED: data.source is deprecated for clientEvent, use data.target instead.~~|~~No~~|
+|~~**position**~~|~~object~~||~~DEPRECATED: data.position is deprecated for clientEvent, use data.targetPosition instead.~~|~~No~~|
+|~~**clickPos**~~|~~object~~||~~DEPRECATED: data.clickPos is deprecated for clientEvent, use data.originPosition instead.~~|~~No~~|

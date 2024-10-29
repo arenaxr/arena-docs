@@ -20,7 +20,7 @@ initially loaded objects upon entering any scene.
 If an `update` message contains an explicit `persist: false`, then the `data` therein will not be saved in persistence.
 
 ## TTL
-Adding a `ttl` (int seconds) to the top level MQTT message for any `create` action with `persist:true` signals that the object
+Adding a `ttl` (float seconds) to the top level MQTT message for any `create` action with `persist:true` signals that the object
 will be automatically deleted from persistence after set duration, as well as a corresponding `delete` action message
 sent over pubsub.
 

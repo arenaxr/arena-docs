@@ -934,7 +934,7 @@ Click events are generated as part of the laser-controls A-Frame entity; you get
 
 * `triggerdown` / `triggerup` for left and right hand controllers
 
-The MQTT topic name for viewing these events can be the standard prefix (e.g. realm/s/<username>/example/<object_id>) ending with a string made up of object ID that generated the event. An example event MQTT:
+The MQTT topic name for viewing these events can be the standard prefix (e.g. `realm/s/[your username]/example/o/[object id]`) ending with a string made up of object ID that generated the event. An example event MQTT:
 
 ```json
 {
