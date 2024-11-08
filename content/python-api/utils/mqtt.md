@@ -1,6 +1,6 @@
 ---
-title: arena.attributes.attribute
-parent: arena.attributes
+title: arena.utils.mqtt
+parent: arena.utils
 grand_parent: Python API
 ---
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.1/arena">v1.0.1</a></small>
@@ -8,39 +8,83 @@ grand_parent: Python API
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../arena.html">arena</a><wbr>.<a href="./../attributes.html">attributes</a><wbr>.attribute    </h1>
+<a href="./../arena.html">arena</a><wbr>.<a href="./../utils.html">utils</a><wbr>.mqtt    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="Attribute">
+                <section id="MQTTMatcher">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Attribute</span><wbr>(<span class="base"><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></span>):
+    <span class="name">MQTTMatcher</span>:
 
         
     </div>
-    <a class="headerlink" href="#Attribute"></a>
+    <a class="headerlink" href="#MQTTMatcher"></a>
     
-            <div class="docstring"><p>Attribute class. Defines a generic attribute (ie position, rotation, impulse, etc) in the ARENA.</p>
+            <div class="docstring"><p>Intended to manage topic filters including wildcards.</p>
+
+<p>Internally, MQTTMatcher use a prefix tree (trie) to store
+values associated with filters, and has an iter_match()
+method to iterate efficiently over all filters that match
+some topic name.</p>
 </div>
 
 
-                            <div class="inherited">
-                                <h5>Inherited Members</h5>
-                                <dl>
-                                    <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="Attribute.__init__" class="function"><a href="../base_object.html#BaseObject.__init__">BaseObject</a></dd>
-                <dd id="Attribute.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
-                <dd id="Attribute.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
-                <dd id="Attribute.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
+                            <div id="MQTTMatcher.iter_match" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">iter_match</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">topic</span></span><span class="return-annotation">):</span></span>
 
-            </div>
-                                </dl>
+        
+    </div>
+    <a class="headerlink" href="#MQTTMatcher.iter_match"></a>
+    
+            <div class="docstring"><p>Return an iterator on all values associated with filters
+that match the :topic</p>
+</div>
+
+
                             </div>
+                </section>
+                <section id="MQTTMatcher.Node">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">MQTTMatcher.Node</span>:
+
+        
+    </div>
+    <a class="headerlink" href="#MQTTMatcher.Node"></a>
+    
+    
+
+                </section>
+                <section id="topic_matches_sub">
+                    <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">topic_matches_sub</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">sub</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">topic</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="nb">bool</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#topic_matches_sub"></a>
+    
+            <div class="docstring"><p>Check whether a topic matches a subscription.</p>
+
+<p>For example:</p>
+
+<ul>
+<li>Topic "foo/bar" would match the subscription "foo/#" or "+/bar"</li>
+<li>Topic "non/matching" would not match the subscription "non/+/+"</li>
+</ul>
+</div>
+
+
                 </section>
     </main>
 

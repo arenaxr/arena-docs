@@ -3,7 +3,7 @@ title: arena.attributes.rotation
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.11.1/arena">v0.11.1</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.1/arena">v1.0.1</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -25,7 +25,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Rotation"></a>
     
-            <div class="docstring"><p>Rotation attribute class to manage its properties in the ARENA: 3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format.
+            <div class="docstring"><p>Rotation attribute class to manage its properties in the ARENA: 3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are <strong>deprecated</strong> in wire message format.
 Usage: <code>rotation=Rotation(...)</code> or <code>rotation=Rotation(x,y,z,w)</code> or <code>rotation=Rotation(x,y,z)</code> or <code>rotation=(x,y,z,w)</code> or <code>rotation=(x,y,z)</code></p>
 
 <h6 id="parameters">Parameters</h6>
@@ -91,6 +91,32 @@ Usage: <code>rotation=Rotation(...)</code> or <code>rotation=Rotation(x,y,z,w)</
         
     </div>
     <a class="headerlink" href="#Rotation.array"></a>
+    
+    
+
+                            </div>
+                            <div id="Rotation.check_euler" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">check_euler</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">x</span>, </span><span class="param"><span class="n">y</span>, </span><span class="param"><span class="n">z</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Rotation.check_euler"></a>
+    
+    
+
+                            </div>
+                            <div id="Rotation.check_quaternion" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">check_quaternion</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">x</span>, </span><span class="param"><span class="n">y</span>, </span><span class="param"><span class="n">z</span>, </span><span class="param"><span class="n">w</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Rotation.check_quaternion"></a>
     
     
 

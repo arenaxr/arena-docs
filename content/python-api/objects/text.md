@@ -3,7 +3,7 @@ title: arena.objects.text
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.11.1/arena">v0.11.1</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.1/arena">v1.0.1</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -44,6 +44,7 @@ grand_parent: Python API
 <li><strong>str shader</strong>:  Shader used to render text. Allows [portal, flat, standard, sdf, msdf, ios10hls, skyshader, gradientshader] Defaults to 'sdf' (optional)</li>
 <li><strong>str side</strong>:  Side to render. Allows [front, back, double] Defaults to 'double' (optional)</li>
 <li><strong>float tabSize</strong>:  Tab size in spaces. Defaults to '4' (optional)</li>
+<li><strong>str text: <em></strong>DEPRECATED<strong>: data.text is *</em>deprecated<em>* for object_type</strong>:  text, use data.value instead.</em> (deprecated)</li>
 <li><strong>bool transparent</strong>:  Whether text is transparent. Defaults to 'True' (optional)</li>
 <li><strong>str value</strong>:  The actual content of the text. Line breaks and tabs are supported with <code>\n</code> and <code>\t</code>. (optional)</li>
 <li><strong>str whiteSpace</strong>:  How whitespace should be handled. Allows [normal, pre, nowrap] Defaults to 'normal' (optional)</li>
@@ -76,6 +77,17 @@ grand_parent: Python API
         
     </div>
     <a class="headerlink" href="#Text.object_type"></a>
+    
+    
+
+                            </div>
+                            <div id="Text.text" class="classattr">
+                                <div class="attr variable">
+            <span class="name">text</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Text.text"></a>
     
     
 
