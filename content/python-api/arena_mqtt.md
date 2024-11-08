@@ -3,7 +3,7 @@ title: arena.arena_mqtt
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.11.1/arena">v0.11.1</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.1/arena">v1.0.1</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -154,13 +154,13 @@ has_children: true
     
 
                             </div>
-                            <div id="ArenaMQTT.subscribe_topic" class="classattr">
+                            <div id="ArenaMQTT.topicParams" class="classattr">
                                 <div class="attr variable">
-            <span class="name">subscribe_topic</span>
+            <span class="name">topicParams</span>
 
         
     </div>
-    <a class="headerlink" href="#ArenaMQTT.subscribe_topic"></a>
+    <a class="headerlink" href="#ArenaMQTT.topicParams"></a>
     
     
 
@@ -187,6 +187,17 @@ has_children: true
     
 
                             </div>
+                            <div id="ArenaMQTT.can_publish_obj" class="classattr">
+                                <div class="attr variable">
+            <span class="name">can_publish_obj</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ArenaMQTT.can_publish_obj"></a>
+    
+    
+
+                            </div>
                             <div id="ArenaMQTT.mqttc" class="classattr">
                                 <div class="attr variable">
             <span class="name">mqttc</span>
@@ -194,17 +205,6 @@ has_children: true
         
     </div>
     <a class="headerlink" href="#ArenaMQTT.mqttc"></a>
-    
-    
-
-                            </div>
-                            <div id="ArenaMQTT.can_publish" class="classattr">
-                                <div class="attr variable">
-            <span class="name">can_publish</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ArenaMQTT.can_publish"></a>
     
     
 
@@ -249,6 +249,17 @@ has_children: true
         
     </div>
     <a class="headerlink" href="#ArenaMQTT.mqtt_connect_evt"></a>
+    
+    
+
+                            </div>
+                            <div id="ArenaMQTT.subscriptions" class="classattr">
+                                <div class="attr variable">
+            <span class="name">subscriptions</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ArenaMQTT.subscriptions"></a>
     
     
 
@@ -414,6 +425,19 @@ has_children: true
 
 
                             </div>
+                            <div id="ArenaMQTT.do_subscribe" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">do_subscribe</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">topic</span>, </span><span class="param"><span class="n">callback</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ArenaMQTT.do_subscribe"></a>
+    
+    
+
+                            </div>
                             <div id="ArenaMQTT.on_message" class="classattr">
                                 <div class="attr function">
             
@@ -427,6 +451,19 @@ has_children: true
     
 
                             </div>
+                            <div id="ArenaMQTT.on_message_private" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">on_message_private</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">msg</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ArenaMQTT.on_message_private"></a>
+    
+    
+
+                            </div>
                             <div id="ArenaMQTT.process_message" class="classattr">
                                 <div class="attr function">
             
@@ -436,6 +473,19 @@ has_children: true
         
     </div>
     <a class="headerlink" href="#ArenaMQTT.process_message"></a>
+    
+    
+
+                            </div>
+                            <div id="ArenaMQTT.on_subscribe" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">on_subscribe</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">mid</span>, </span><span class="param"><span class="n">granted_qos</span>, </span><span class="param"><span class="n">properties</span><span class="o">=</span><span class="kc">None</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ArenaMQTT.on_subscribe"></a>
     
     
 

@@ -3,7 +3,7 @@ title: arena.attributes.scale
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.11.1/arena">v0.11.1</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.1/arena">v1.0.1</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -57,6 +57,19 @@ Usage: <code>scale=Scale(...)</code> or <code>scale=Scale(x,y,z)</code> or <code
         
     </div>
     <a class="headerlink" href="#Scale.array"></a>
+    
+    
+
+                            </div>
+                            <div id="Scale.check_scale" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">check_scale</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">x</span>, </span><span class="param"><span class="n">y</span>, </span><span class="param"><span class="n">z</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scale.check_scale"></a>
     
     
 

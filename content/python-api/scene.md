@@ -3,7 +3,7 @@ title: arena.scene
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.11.1/arena">v0.11.1</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.1/arena">v1.0.1</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -39,7 +39,7 @@ Can create and execute various user-defined functions/tasks.</p>
 <li><strong>func on_msg_callback</strong>:  Called on all MQTT messages received. Default = None.</li>
 <li><strong>func new_obj_callback</strong>:  Called on object 'create' MQTT messages received. Default = None.</li>
 <li><strong>func user_join_callback</strong>:  Called on user id 'new' MQTT messages received. Default = None.</li>
-<li><strong>func user_left_callback</strong>:  Called on user id 'delete' MQTT messages received. Default = None.</li>
+<li><strong>func user_left_callback</strong>:  Called on user id 'leave' MQTT messages received. Default = None.</li>
 <li><strong>func delete_obj_callback</strong>:  Called on object 'delete' MQTT messages received. Default = None.</li>
 <li><strong>func end_program_callback</strong>:  Called on MQTT disconnect. Default = None.</li>
 <li><strong>bool video</strong>:  If true, request permissions for video conference. Default = False.</li>
@@ -149,6 +149,19 @@ Can create and execute various user-defined functions/tasks.</p>
         
     </div>
     <a class="headerlink" href="#Scene.on_message"></a>
+    
+    
+
+                            </div>
+                            <div id="Scene.on_message_private" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">on_message_private</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">msg</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scene.on_message_private"></a>
     
     
 
@@ -542,15 +555,16 @@ Returns: list of scenes.</p>
                 <dd id="Scene.config_url" class="variable"><a href="arena_mqtt.html#ArenaMQTT.config_url">config_url</a></dd>
                 <dd id="Scene.config_data" class="variable"><a href="arena_mqtt.html#ArenaMQTT.config_data">config_data</a></dd>
                 <dd id="Scene.mqtt_host" class="variable"><a href="arena_mqtt.html#ArenaMQTT.mqtt_host">mqtt_host</a></dd>
-                <dd id="Scene.subscribe_topic" class="variable"><a href="arena_mqtt.html#ArenaMQTT.subscribe_topic">subscribe_topic</a></dd>
+                <dd id="Scene.topicParams" class="variable"><a href="arena_mqtt.html#ArenaMQTT.topicParams">topicParams</a></dd>
                 <dd id="Scene.latency_topic" class="variable"><a href="arena_mqtt.html#ArenaMQTT.latency_topic">latency_topic</a></dd>
                 <dd id="Scene.ignore_topic" class="variable"><a href="arena_mqtt.html#ArenaMQTT.ignore_topic">ignore_topic</a></dd>
+                <dd id="Scene.can_publish_obj" class="variable"><a href="arena_mqtt.html#ArenaMQTT.can_publish_obj">can_publish_obj</a></dd>
                 <dd id="Scene.mqttc" class="variable"><a href="arena_mqtt.html#ArenaMQTT.mqttc">mqttc</a></dd>
-                <dd id="Scene.can_publish" class="variable"><a href="arena_mqtt.html#ArenaMQTT.can_publish">can_publish</a></dd>
                 <dd id="Scene.on_msg_callback" class="variable"><a href="arena_mqtt.html#ArenaMQTT.on_msg_callback">on_msg_callback</a></dd>
                 <dd id="Scene.end_program_callback" class="variable"><a href="arena_mqtt.html#ArenaMQTT.end_program_callback">end_program_callback</a></dd>
                 <dd id="Scene.event_loop" class="variable"><a href="arena_mqtt.html#ArenaMQTT.event_loop">event_loop</a></dd>
                 <dd id="Scene.mqtt_connect_evt" class="variable"><a href="arena_mqtt.html#ArenaMQTT.mqtt_connect_evt">mqtt_connect_evt</a></dd>
+                <dd id="Scene.subscriptions" class="variable"><a href="arena_mqtt.html#ArenaMQTT.subscriptions">subscriptions</a></dd>
                 <dd id="Scene.msg_queue" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_queue">msg_queue</a></dd>
                 <dd id="Scene.generate_client_id" class="function"><a href="arena_mqtt.html#ArenaMQTT.generate_client_id">generate_client_id</a></dd>
                 <dd id="Scene.network_latency_update" class="function"><a href="arena_mqtt.html#ArenaMQTT.network_latency_update">network_latency_update</a></dd>
@@ -561,6 +575,8 @@ Returns: list of scenes.</p>
                 <dd id="Scene.run_tasks" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_tasks">run_tasks</a></dd>
                 <dd id="Scene.stop_tasks" class="function"><a href="arena_mqtt.html#ArenaMQTT.stop_tasks">stop_tasks</a></dd>
                 <dd id="Scene.sleep" class="function"><a href="arena_mqtt.html#ArenaMQTT.sleep">sleep</a></dd>
+                <dd id="Scene.do_subscribe" class="function"><a href="arena_mqtt.html#ArenaMQTT.do_subscribe">do_subscribe</a></dd>
+                <dd id="Scene.on_subscribe" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_subscribe">on_subscribe</a></dd>
                 <dd id="Scene.on_disconnect" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_disconnect">on_disconnect</a></dd>
                 <dd id="Scene.disconnect" class="function"><a href="arena_mqtt.html#ArenaMQTT.disconnect">disconnect</a></dd>
                 <dd id="Scene.message_callback_add" class="function"><a href="arena_mqtt.html#ArenaMQTT.message_callback_add">message_callback_add</a></dd>
@@ -599,6 +615,7 @@ Returns: list of scenes.</p>
                 <dd id="Arena.exit" class="function"><a href="#Scene.exit">exit</a></dd>
                 <dd id="Arena.on_connect" class="function"><a href="#Scene.on_connect">on_connect</a></dd>
                 <dd id="Arena.on_message" class="function"><a href="#Scene.on_message">on_message</a></dd>
+                <dd id="Arena.on_message_private" class="function"><a href="#Scene.on_message_private">on_message_private</a></dd>
                 <dd id="Arena.on_publish" class="function"><a href="#Scene.on_publish">on_publish</a></dd>
                 <dd id="Arena.process_message" class="function"><a href="#Scene.process_message">process_message</a></dd>
                 <dd id="Arena.callback_wrapper" class="function"><a href="#Scene.callback_wrapper">callback_wrapper</a></dd>
@@ -636,15 +653,16 @@ Returns: list of scenes.</p>
                 <dd id="Arena.config_url" class="variable"><a href="arena_mqtt.html#ArenaMQTT.config_url">config_url</a></dd>
                 <dd id="Arena.config_data" class="variable"><a href="arena_mqtt.html#ArenaMQTT.config_data">config_data</a></dd>
                 <dd id="Arena.mqtt_host" class="variable"><a href="arena_mqtt.html#ArenaMQTT.mqtt_host">mqtt_host</a></dd>
-                <dd id="Arena.subscribe_topic" class="variable"><a href="arena_mqtt.html#ArenaMQTT.subscribe_topic">subscribe_topic</a></dd>
+                <dd id="Arena.topicParams" class="variable"><a href="arena_mqtt.html#ArenaMQTT.topicParams">topicParams</a></dd>
                 <dd id="Arena.latency_topic" class="variable"><a href="arena_mqtt.html#ArenaMQTT.latency_topic">latency_topic</a></dd>
                 <dd id="Arena.ignore_topic" class="variable"><a href="arena_mqtt.html#ArenaMQTT.ignore_topic">ignore_topic</a></dd>
+                <dd id="Arena.can_publish_obj" class="variable"><a href="arena_mqtt.html#ArenaMQTT.can_publish_obj">can_publish_obj</a></dd>
                 <dd id="Arena.mqttc" class="variable"><a href="arena_mqtt.html#ArenaMQTT.mqttc">mqttc</a></dd>
-                <dd id="Arena.can_publish" class="variable"><a href="arena_mqtt.html#ArenaMQTT.can_publish">can_publish</a></dd>
                 <dd id="Arena.on_msg_callback" class="variable"><a href="arena_mqtt.html#ArenaMQTT.on_msg_callback">on_msg_callback</a></dd>
                 <dd id="Arena.end_program_callback" class="variable"><a href="arena_mqtt.html#ArenaMQTT.end_program_callback">end_program_callback</a></dd>
                 <dd id="Arena.event_loop" class="variable"><a href="arena_mqtt.html#ArenaMQTT.event_loop">event_loop</a></dd>
                 <dd id="Arena.mqtt_connect_evt" class="variable"><a href="arena_mqtt.html#ArenaMQTT.mqtt_connect_evt">mqtt_connect_evt</a></dd>
+                <dd id="Arena.subscriptions" class="variable"><a href="arena_mqtt.html#ArenaMQTT.subscriptions">subscriptions</a></dd>
                 <dd id="Arena.msg_queue" class="variable"><a href="arena_mqtt.html#ArenaMQTT.msg_queue">msg_queue</a></dd>
                 <dd id="Arena.generate_client_id" class="function"><a href="arena_mqtt.html#ArenaMQTT.generate_client_id">generate_client_id</a></dd>
                 <dd id="Arena.network_latency_update" class="function"><a href="arena_mqtt.html#ArenaMQTT.network_latency_update">network_latency_update</a></dd>
@@ -655,6 +673,8 @@ Returns: list of scenes.</p>
                 <dd id="Arena.run_tasks" class="function"><a href="arena_mqtt.html#ArenaMQTT.run_tasks">run_tasks</a></dd>
                 <dd id="Arena.stop_tasks" class="function"><a href="arena_mqtt.html#ArenaMQTT.stop_tasks">stop_tasks</a></dd>
                 <dd id="Arena.sleep" class="function"><a href="arena_mqtt.html#ArenaMQTT.sleep">sleep</a></dd>
+                <dd id="Arena.do_subscribe" class="function"><a href="arena_mqtt.html#ArenaMQTT.do_subscribe">do_subscribe</a></dd>
+                <dd id="Arena.on_subscribe" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_subscribe">on_subscribe</a></dd>
                 <dd id="Arena.on_disconnect" class="function"><a href="arena_mqtt.html#ArenaMQTT.on_disconnect">on_disconnect</a></dd>
                 <dd id="Arena.disconnect" class="function"><a href="arena_mqtt.html#ArenaMQTT.disconnect">disconnect</a></dd>
                 <dd id="Arena.message_callback_add" class="function"><a href="arena_mqtt.html#ArenaMQTT.message_callback_add">message_callback_add</a></dd>

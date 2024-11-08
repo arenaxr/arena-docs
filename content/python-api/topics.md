@@ -1,46 +1,95 @@
 ---
-title: arena.attributes.attribute
-parent: arena.attributes
-grand_parent: Python API
+title: arena.topics
+parent: Python API
+has_children: true
 ---
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.1/arena">v1.0.1</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../arena.html">arena</a><wbr>.<a href="./../attributes.html">attributes</a><wbr>.attribute    </h1>
+<a href="./arena.html">arena</a><wbr>.topics    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="Attribute">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">Attribute</span><wbr>(<span class="base"><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></span>):
+                <section id="TOPIC_TYPES">
+                    <div class="attr variable">
+            <span class="name">TOPIC_TYPES</span>        =
+<span class="default_value">namespace(SCENE=&#39;s&#39;, PROC=&#39;p&#39;, DEVICE=&#39;d&#39;)</span>
 
         
     </div>
-    <a class="headerlink" href="#Attribute"></a>
+    <a class="headerlink" href="#TOPIC_TYPES"></a>
     
-            <div class="docstring"><p>Attribute class. Defines a generic attribute (ie position, rotation, impulse, etc) in the ARENA.</p>
-</div>
+    
 
+                </section>
+                <section id="DEVICE_TOPIC_TOKENS">
+                    <div class="attr variable">
+            <span class="name">DEVICE_TOPIC_TOKENS</span>        =
+<span class="default_value">namespace(REALM=0, TYPE=1, DEVICE_NAME=2, UUID=3)</span>
 
-                            <div class="inherited">
-                                <h5>Inherited Members</h5>
-                                <dl>
-                                    <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="Attribute.__init__" class="function"><a href="../base_object.html#BaseObject.__init__">BaseObject</a></dd>
-                <dd id="Attribute.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
-                <dd id="Attribute.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
-                <dd id="Attribute.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
+        
+    </div>
+    <a class="headerlink" href="#DEVICE_TOPIC_TOKENS"></a>
+    
+    
 
-            </div>
-                                </dl>
-                            </div>
+                </section>
+                <section id="TOPIC_TOKENS">
+                    <div class="attr variable">
+            <span class="name">TOPIC_TOKENS</span>        =
+<input id="TOPIC_TOKENS-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="TOPIC_TOKENS-view-value"></label><span class="default_value">namespace(REALM=0, TYPE=1, NAMESPACE=2, SCENENAME=3, SCENE_MSGTYPE=4, USER_CLIENT=5, UUID=6, TO_UID=7)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TOPIC_TOKENS"></a>
+    
+    
+
+                </section>
+                <section id="SCENE_MSGTYPES">
+                    <div class="attr variable">
+            <span class="name">SCENE_MSGTYPES</span>        =
+<input id="SCENE_MSGTYPES-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="SCENE_MSGTYPES-view-value"></label><span class="default_value">namespace(PRESENCE=&#39;x&#39;, CHAT=&#39;c&#39;, USER=&#39;u&#39;, OBJECTS=&#39;o&#39;, RENDER=&#39;r&#39;, ENV=&#39;e&#39;, PROGRAM=&#39;p&#39;, DEBUG=&#39;d&#39;)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SCENE_MSGTYPES"></a>
+    
+    
+
+                </section>
+                <section id="SUBSCRIBE_TOPICS">
+                    <div class="attr variable">
+            <span class="name">SUBSCRIBE_TOPICS</span>        =
+<input id="SUBSCRIBE_TOPICS-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="SUBSCRIBE_TOPICS-view-value"></label><span class="default_value">namespace(NETWORK=&#39;$NETWORK&#39;, DEVICE=&lt;string.Template object&gt;, PROC_REG=&lt;string.Template object&gt;, PROC_CTL=&lt;string.Template object&gt;, PROC_DBG=&lt;string.Template object&gt;, SCENE_PUBLIC=&lt;string.Template object&gt;, SCENE_PRIVATE=&lt;string.Template object&gt;)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SUBSCRIBE_TOPICS"></a>
+    
+    
+
+                </section>
+                <section id="PUBLISH_TOPICS">
+                    <div class="attr variable">
+            <span class="name">PUBLISH_TOPICS</span>        =
+<input id="PUBLISH_TOPICS-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="PUBLISH_TOPICS-view-value"></label><span class="default_value">namespace(NETWORK_LATENCY=&#39;$NETWORK/latency&#39;, DEVICE=&lt;string.Template object&gt;, PROC_REG=&lt;string.Template object&gt;, PROC_CTL=&lt;string.Template object&gt;, PROC_DBG=&lt;string.Template object&gt;, SCENE_PRESENCE=&lt;string.Template object&gt;, SCENE_PRESENCE_PRIVATE=&lt;string.Template object&gt;, SCENE_CHAT=&lt;string.Template object&gt;, SCENE_CHAT_PRIVATE=&lt;string.Template object&gt;, SCENE_USER=&lt;string.Template object&gt;, SCENE_USER_PRIVATE=&lt;string.Template object&gt;, SCENE_OBJECTS=&lt;string.Template object&gt;, SCENE_OBJECTS_PRIVATE=&lt;string.Template object&gt;, SCENE_RENDER=&lt;string.Template object&gt;, SCENE_RENDER_PRIVATE=&lt;string.Template object&gt;, SCENE_ENV=&lt;string.Template object&gt;, SCENE_ENV_PRIVATE=&lt;string.Template object&gt;, SCENE_PROGRAM=&lt;string.Template object&gt;, SCENE_PROGRAM_PRIVATE=&lt;string.Template object&gt;, SCENE_DEBUG=&lt;string.Template object&gt;)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PUBLISH_TOPICS"></a>
+    
+    
+
                 </section>
     </main>
 

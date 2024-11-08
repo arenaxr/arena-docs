@@ -1,5 +1,5 @@
 ---
-title: arena.attributes.attribute
+title: arena.attributes.data_event
 parent: arena.attributes
 grand_parent: Python API
 ---
@@ -8,35 +8,93 @@ grand_parent: Python API
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../arena.html">arena</a><wbr>.<a href="./../attributes.html">attributes</a><wbr>.attribute    </h1>
+<a href="./../arena.html">arena</a><wbr>.<a href="./../attributes.html">attributes</a><wbr>.data_event    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="Attribute">
+                <section id="DataEvent">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Attribute</span><wbr>(<span class="base"><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></span>):
+    <span class="name">DataEvent</span><wbr>(<span class="base"><a href="attribute.html#Attribute">arena.attributes.attribute.Attribute</a></span>):
 
         
     </div>
-    <a class="headerlink" href="#Attribute"></a>
+    <a class="headerlink" href="#DataEvent"></a>
     
             <div class="docstring"><p>Attribute class. Defines a generic attribute (ie position, rotation, impulse, etc) in the ARENA.</p>
 </div>
 
 
+                            <div id="DataEvent.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">DataEvent</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#DataEvent.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="DataEvent.update_data" class="classattr">
+                                <div class="attr function">
+                    <div class="decorator">@classmethod</div>
+
+        <span class="def">def</span>
+        <span class="name">update_data</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">cls</span>, </span><span class="param"><span class="n">data</span>, </span><span class="param"><span class="n">new_data</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#DataEvent.update_data"></a>
+    
+    
+
+                            </div>
+                            <div id="DataEvent.source" class="classattr">
+                                <div class="attr variable">
+            <span class="name">source</span>
+
+        
+    </div>
+    <a class="headerlink" href="#DataEvent.source"></a>
+    
+    
+
+                            </div>
+                            <div id="DataEvent.clickPos" class="classattr">
+                                <div class="attr variable">
+            <span class="name">clickPos</span>
+
+        
+    </div>
+    <a class="headerlink" href="#DataEvent.clickPos"></a>
+    
+    
+
+                            </div>
+                            <div id="DataEvent.position" class="classattr">
+                                <div class="attr variable">
+            <span class="name">position</span>
+
+        
+    </div>
+    <a class="headerlink" href="#DataEvent.position"></a>
+    
+    
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="Attribute.__init__" class="function"><a href="../base_object.html#BaseObject.__init__">BaseObject</a></dd>
-                <dd id="Attribute.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
-                <dd id="Attribute.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
-                <dd id="Attribute.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
+                                <dd id="DataEvent.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
+                <dd id="DataEvent.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                <dd id="DataEvent.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
 
             </div>
                                 </dl>

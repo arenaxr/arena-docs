@@ -3,7 +3,7 @@ title: arena.attributes.data
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.11.1/arena">v0.11.1</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.1/arena">v1.0.1</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -40,6 +40,7 @@ Usage: <code>data=Data(...)</code></p>
 <li><strong>bool buffer: Transform geometry into a BufferGeometry to reduce memory usage at the cost of being harder to manipulate (geometries only</strong>:  box, circle, cone, ...). Defaults to 'True' (optional)</li>
 <li><strong>dict click_listener</strong>:  Object will listen for mouse events like clicks. (optional)</li>
 <li><strong>str collision_listener</strong>:  Name of the collision-listener, default can be empty string. Collisions trigger click events. (optional)</li>
+<li><strong>str color: <em></strong>DEPRECATED<strong></em><em>:  data.color is *</em>deprecated</strong> for primitive geometry, use data.material.color instead.* (deprecated)</li>
 <li><strong>dict dynamic_body: A freely-moving object. Dynamic bodies have mass, collide with other objects, bounce or slow during collisions, and fall if gravity is enabled. More properties at <https</strong>: //github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md> A-Frame Physics System. (optional)</li>
 <li><strong>dict gltf_model_lod</strong>:  Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance (optional)</li>
 <li><strong>dict gltf_morph: Allows you to target and control a gltf model's morphTargets created in Blender. More properties at <https</strong>: //github.com/elbobo/aframe-gltf-morph-component> A-Frame GLTF Morph component. (optional)</li>
@@ -58,7 +59,7 @@ Usage: <code>data=Data(...)</code></p>
 <li><strong>str parent</strong>:  Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation. (optional)</li>
 <li><strong>dict position</strong>:  3D object position. (optional)</li>
 <li><strong>dict remote_render</strong>:  Whether or not an object should be remote rendered [Experimental]. (optional)</li>
-<li><strong>dict rotation</strong>:  3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are deprecated in wire message format. (optional)</li>
+<li><strong>dict rotation</strong>:  3D object rotation in quaternion representation; Right-handed coordinate system. Euler degrees are <strong>deprecated</strong> in wire message format. (optional)</li>
 <li><strong>dict scale</strong>:  3D object scale. (optional)</li>
 <li><strong>bool screenshareable</strong>:  Whether or not a user can screenshare on an object. Defaults to 'True' (optional)</li>
 <li><strong>dict shadow: The shadow component enables shadows for an entity and its children. Adding the shadow component alone is not enough to display shadows in your scene. We must have at least one light with castShadow</strong>:  true enabled. (optional)</li>
@@ -68,6 +69,7 @@ Usage: <code>data=Data(...)</code></p>
 <li><strong>dict sound: The sound component defines the entity as a source of sound or audio. The sound component can be positional and is thus affected by the component's position. More properties at <https</strong>: //aframe.io/docs/1.5.0/components/sound.html> A-Frame Sound. (optional)</li>
 <li><strong>dict spe_particles: GPU based particle systems in A-Frame. More properties at <https</strong>: //github.com/harlyq/aframe-spe-particles-component> A-Frame SPE Particles component. (optional)</li>
 <li><strong>dict static_body: A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. More properties at <https</strong>: //github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md> A-Frame Physics System. (optional)</li>
+<li><strong>str submodel_parent</strong>:  When this object is parented to a hierarchical model, attaches to a named subcomponent of that model instead of the root position Defaults to '' (optional)</li>
 <li><strong>dict textinput</strong>:  Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener. (optional)</li>
 <li><strong>str url</strong>:  Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
 <li><strong>dict video_control</strong>:  Adds a video to an entity and controls its playback. (optional)</li>

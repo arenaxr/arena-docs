@@ -3,7 +3,7 @@ title: arena.attributes.animation_mixer
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v0.11.1/arena">v0.11.1</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.1/arena">v1.0.1</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
