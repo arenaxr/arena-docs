@@ -19,6 +19,8 @@ The example code below contains both synchronous and asynchronous APIs, so pleas
 ```csharp
 using System.Collections;
 using ArenaUnity;
+using ArenaUnity.Schemas;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -136,6 +138,9 @@ public class ArenaTestButton : MonoBehaviour
         // Display the web browser GUI client URL, set after MQTT connection flow completes.
         Debug.Log($"Scene URL: {scene.sceneUrl}");
 
+        // Instantiate the callback for all messages.
+        scene.OnMessageCallback = MessageCallback;
+
         // Create GameObject, and add ArenaObject script to manage updates, it will automatically send an MQTT create message
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         ArenaObject arenaObject = cube.AddComponent(typeof(ArenaObject)) as ArenaObject;
@@ -146,15 +151,54 @@ public class ArenaTestButton : MonoBehaviour
         // Publish a custom event under this client's "camera" object
         scene.PublishEvent("my-custom-event-type", scene.camid, "{\"my-attribute\": \"my-custom-attribute\"}");
 
-        // Publish a fully formed json object update message
-        const string payload = "{\"object_id\":\"scene-options\",\"persist\":true,\"type\":\"scene-options\",\"action\":\"update\",\"data\":{\"env-presets\":{\"ground\":\"none\"}}}";
-        scene.PublishObject("scene-options", payload);
+        // Find other arena users in the scene
+        string firstUserId = null;
+        ArenaObject[] objlist = FindObjectsOfType<ArenaObject>();
+        ArenaCamera[] camlist = FindObjectsOfType<ArenaCamera>();
+        string localUserId = null;
+        if (camlist.Length > 0)
+            localUserId = camlist[0].userid;
+        foreach (ArenaObject obj in objlist)
+        {
+            if (obj.object_type == "camera" && obj.name != localUserId)
+            {
+                firstUserId = obj.name;
+                break;
+            }
+        }
 
-        // Instantiate the callback for all messages.
-        scene.OnMessageCallback = MessageCallback;
+        // Publish a private object update message for first user found in scene
+        ArenaObjectJson msgpriv = new ArenaObjectJson
+        {
+            object_id = "cone-private",
+            action = "create",
+            type = "object",
+            persist = false,
+            data = new ArenaDataJson
+            {
+                object_type = "cone"
+            }
+        };
+        string payloadpriv = JsonConvert.SerializeObject(msgpriv);
+        scene.PublishObject(msgpriv.object_id, payloadpriv, firstUserId);
+
+        // Publish a public object update message
+        ArenaObjectJson msgpub = new ArenaObjectJson
+        {
+            object_id = "box-public",
+            action = "create",
+            type = "object",
+            persist = true,
+            data = new ArenaDataJson
+            {
+                object_type = "box"
+            }
+        };
+        string payloadpub = JsonConvert.SerializeObject(msgpub);
+        scene.PublishObject(msgpub.object_id, payloadpub);
 
         // Manually ingest a message, not received from MQTT subscriber
-        scene.ProcessMessage("realm/s/public/example/o/scene-options", payload);
+        scene.ProcessMessage("realm/s/public/example/o/scene-options", payloadpub);
     }
 
     /// <summary>
@@ -191,8 +235,7 @@ public class ArenaTestButton : MonoBehaviour
         Debug.Log($"Permissions: {client.permissions}");
 
         // Custom MQTT pub/sub
-        string[] topics = new string[] { "my/custom/topic/#" };
-        client.Subscribe(topics);
+        client.Subscribe("my/custom/topic/#");
 
         yield return new WaitForSeconds(2);
         client.Publish("my/custom/topic/channel/device-888", System.Text.Encoding.UTF8.GetBytes("some payload"));
