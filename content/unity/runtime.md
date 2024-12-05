@@ -206,7 +206,18 @@ public class ArenaTestButton : MonoBehaviour
     /// </summary>
     public static void MessageCallback(string topic, string message)
     {
-        Debug.LogFormat("Message received on topic {0}: {1}", topic, message);
+        ArenaObjectJson m = JsonConvert.DeserializeObject<ArenaObjectJson>(message);
+        if (m.action == "clientEvent")
+        {
+            // parse some event data and log it
+            ArenaEventJson evt = JsonConvert.DeserializeObject<ArenaEventJson>(m.data.ToString());
+            Debug.LogFormat($"Received event '{m.type}' from {m.object_id}, target={evt.Target}");
+
+            // log any users who use the hand controller to pull the trigger
+            if ( m.type != "gripdown") {
+                Debug.LogFormat($"{m.object_id} pulled the trigger!");
+            }
+        }
     }
 
     /// <summary>
