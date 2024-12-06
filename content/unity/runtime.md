@@ -191,14 +191,16 @@ public class ArenaTestButton : MonoBehaviour
             persist = true,
             data = new ArenaDataJson
             {
-                object_type = "box"
+                object_type = "box",
+                // make the box interact with mouse-equivalent events
+                ClickListener = new ArenaClickListenerJson { Enabled = true }
             }
         };
         string payloadpub = JsonConvert.SerializeObject(msgpub);
         scene.PublishObject(msgpub.object_id, payloadpub);
 
         // Manually ingest a message, not received from MQTT subscriber
-        scene.ProcessMessage("realm/s/public/example/o/scene-options", payloadpub);
+        scene.ProcessMessage($"realm/s/public/example/o/{msgpub.object_id}", payloadpub);
     }
 
     /// <summary>
