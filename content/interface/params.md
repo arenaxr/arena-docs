@@ -49,6 +49,7 @@ The following URL parameters are accepted, beginner or **advanced**. The **advan
 | noname | bool | beginner | Handles display of user name on the screen. False: (default) display the user name. True: Do not display the user name. |
 | noreticle | bool | beginner | In AR, change the reticle ring to transparent when true, gray when false (default). |
 | objectId | string | **advanced** | Used with `build3d` param to focus Inspector on the named object-id. |
+| orbit | string | beginner | User camera should orbit a named target object-id (e.g. `orbit=Box123ObjectName`). |
 | realm | string | **advanced** | Override realm name (e.g. `realm=MyRealm`) |
 | reprojectMovement | bool | **advanced** | Do translation warping for remote rendering. |
 | scene | string | **advanced** | Override scene name (e.g. `scene=AScene`) |
