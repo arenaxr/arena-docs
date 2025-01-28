@@ -3,7 +3,7 @@ title: arena.topics
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.1/arena">v1.0.1</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -69,7 +69,7 @@ has_children: true
                     <div class="attr variable">
             <span class="name">SUBSCRIBE_TOPICS</span>        =
 <input id="SUBSCRIBE_TOPICS-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-            <label class="view-value-button pdoc-button" for="SUBSCRIBE_TOPICS-view-value"></label><span class="default_value">namespace(NETWORK=&#39;$NETWORK&#39;, DEVICE=&lt;string.Template object&gt;, PROC_REG=&lt;string.Template object&gt;, PROC_CTL=&lt;string.Template object&gt;, PROC_DBG=&lt;string.Template object&gt;, SCENE_PUBLIC=&lt;string.Template object&gt;, SCENE_PRIVATE=&lt;string.Template object&gt;)</span>
+            <label class="view-value-button pdoc-button" for="SUBSCRIBE_TOPICS-view-value"></label><span class="default_value">namespace(NETWORK=&#39;$NETWORK&#39;, DEVICE=&lt;string.Template object&gt;, PROC_REG=&lt;string.Template object&gt;, PROC_CTL=&lt;string.Template object&gt;, PROC_DBG=&lt;string.Template object&gt;, SCENE_PUBLIC=&lt;string.Template object&gt;, SCENE_PUBLIC_SELF=&lt;string.Template object&gt;, SCENE_PRIVATE=&lt;string.Template object&gt;)</span>
 
         
     </div>
