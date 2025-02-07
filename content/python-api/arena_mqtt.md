@@ -3,7 +3,7 @@ title: arena.arena_mqtt
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -32,7 +32,7 @@ has_children: true
                             <div id="ArenaMQTT.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">ArenaMQTT</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">web_host</span><span class="o">=</span><span class="s1">&#39;arenaxr.org&#39;</span>,</span><span class="param">	<span class="n">realm</span><span class="o">=</span><span class="s1">&#39;realm&#39;</span>,</span><span class="param">	<span class="n">network_latency_interval</span><span class="o">=</span><span class="mi">10000</span>,</span><span class="param">	<span class="n">on_msg_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">end_program_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">video</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">debug</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">headless</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">ArenaMQTT</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">web_host</span><span class="o">=</span><span class="s1">&#39;arenaxr.org&#39;</span>,</span><span class="param">	<span class="n">realm</span><span class="o">=</span><span class="s1">&#39;realm&#39;</span>,</span><span class="param">	<span class="n">network_latency_interval</span><span class="o">=</span><span class="mi">10000</span>,</span><span class="param">	<span class="n">on_msg_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">end_program_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">video</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">debug</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">headless</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">environment</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
@@ -285,7 +285,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.generate_client_id"></a>
     
-            <div class="docstring"><p>Returns a random 6 digit id</p>
+            <div class="docstring"><p>Returns a random 6 digit id.</p>
 </div>
 
 
@@ -300,7 +300,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.network_latency_update"></a>
     
-            <div class="docstring"><p>Update client latency in $NETWORK/latency</p>
+            <div class="docstring"><p>Update client latency in $NETWORK/latency.</p>
 </div>
 
 
@@ -315,7 +315,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.run_once"></a>
     
-            <div class="docstring"><p>Runs a user-defined function on startup</p>
+            <div class="docstring"><p>Runs a user-defined function on startup.</p>
 </div>
 
 
@@ -330,7 +330,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.run_after_interval"></a>
     
-            <div class="docstring"><p>Runs a user-defined function after a interval_ms milliseconds</p>
+            <div class="docstring"><p>Runs a user-defined function after a interval_ms milliseconds.</p>
 </div>
 
 
@@ -345,7 +345,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.run_async"></a>
     
-            <div class="docstring"><p>Runs a user defined aynscio function</p>
+            <div class="docstring"><p>Runs a user defined aynscio function.</p>
 </div>
 
 
@@ -360,7 +360,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.run_forever"></a>
     
-            <div class="docstring"><p>Runs a function every interval_ms milliseconds</p>
+            <div class="docstring"><p>Runs a function every interval_ms milliseconds.</p>
 </div>
 
 
@@ -375,7 +375,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.run_tasks"></a>
     
-            <div class="docstring"><p>Run event loop</p>
+            <div class="docstring"><p>Run event loop.</p>
 </div>
 
 
@@ -390,7 +390,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.stop_tasks"></a>
     
-            <div class="docstring"><p>Stop event loop</p>
+            <div class="docstring"><p>Stop event loop.</p>
 </div>
 
 
@@ -405,7 +405,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.sleep"></a>
     
-            <div class="docstring"><p>Public function for sleeping in async functions</p>
+            <div class="docstring"><p>Public function for sleeping in async functions.</p>
 </div>
 
 
@@ -420,7 +420,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.on_connect"></a>
     
-            <div class="docstring"><p>Paho MQTT client on_connect callback</p>
+            <div class="docstring"><p>Paho MQTT client on_connect callback.</p>
 </div>
 
 
@@ -500,7 +500,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.on_disconnect"></a>
     
-            <div class="docstring"><p>Paho MQTT client on_disconnect callback</p>
+            <div class="docstring"><p>Paho MQTT client on_disconnect callback.</p>
 </div>
 
 
@@ -515,7 +515,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.disconnect"></a>
     
-            <div class="docstring"><p>Disconnects Paho MQTT client</p>
+            <div class="docstring"><p>Disconnects Paho MQTT client.</p>
 </div>
 
 
@@ -530,7 +530,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.message_callback_add"></a>
     
-            <div class="docstring"><p>Subscribes to new topic and adds callback</p>
+            <div class="docstring"><p>Subscribes to new topic and adds callback.</p>
 </div>
 
 
@@ -545,7 +545,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.message_callback_remove"></a>
     
-            <div class="docstring"><p>Unsubscribes to topic and removes callback</p>
+            <div class="docstring"><p>Unsubscribes to topic and removes callback.</p>
 </div>
 
 
@@ -560,7 +560,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.rcv_queue_len"></a>
     
-            <div class="docstring"><p>Return receive queue length</p>
+            <div class="docstring"><p>Return receive queue length.</p>
 </div>
 
 
@@ -575,7 +575,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.pub_queue_len"></a>
     
-            <div class="docstring"><p>Return publish queue length</p>
+            <div class="docstring"><p>Return publish queue length.</p>
 </div>
 
 
@@ -590,7 +590,7 @@ has_children: true
     </div>
     <a class="headerlink" href="#ArenaMQTT.client_id"></a>
     
-            <div class="docstring"><p>Return client id</p>
+            <div class="docstring"><p>Return client id.</p>
 </div>
 
 

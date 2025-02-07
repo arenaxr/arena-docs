@@ -3,7 +3,7 @@ title: arena.auth
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -61,7 +61,7 @@ needed, getting username and state from ARENA server.</p>
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">authenticate_scene</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">web_host</span>, </span><span class="param"><span class="n">realm</span>, </span><span class="param"><span class="n">scene</span>, </span><span class="param"><span class="n">username</span>, </span><span class="param"><span class="n">video</span><span class="o">=</span><span class="kc">False</span></span><span class="return-annotation">):</span></span>
+        <span class="name">authenticate_scene</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">web_host</span>, </span><span class="param"><span class="n">realm</span>, </span><span class="param"><span class="n">scene</span>, </span><span class="param"><span class="n">username</span>, </span><span class="param"><span class="n">video</span><span class="o">=</span><span class="kc">False</span>, </span><span class="param"><span class="n">env</span><span class="o">=</span><span class="kc">False</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
@@ -176,6 +176,36 @@ or admin, for now, get a fresh mqtt_token each time.</p>
 
 
                             </div>
+                            <div id="ArenaAuth.upload_store_file" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">upload_store_file</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">web_host</span>, </span><span class="param"><span class="n">scenename</span>, </span><span class="param"><span class="n">src_file_path</span>, </span><span class="param"><span class="n">dest_file_path</span><span class="o">=</span><span class="kc">None</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ArenaAuth.upload_store_file"></a>
+    
+            <div class="docstring"><p>Upload a source file to the user's file store space. Google authentication is required.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>str web_host</strong>:  The hostname of the ARENA webserver.</li>
+<li><strong>str scenename</strong>:  The scene name/id.</li>
+<li><strong>str src_file_path</strong>:  Local path to the file to upload (required).</li>
+<li><strong>str dest_file_path</strong>:  Destination file path, can include dirs. Defaults to filename from src_file_path (optional).</li>
+</ul>
+
+<h6 id="returns">Returns</h6>
+
+<blockquote>
+  <p>Url address of successful file upload location, or None if failed.</p>
+</blockquote>
+</div>
+
+
+                            </div>
                             <div id="ArenaAuth.verify" class="classattr">
                                 <div class="attr function">
             
@@ -215,7 +245,7 @@ or admin, for now, get a fresh mqtt_token each time.</p>
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">urlopen</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">url</span>, </span><span class="param"><span class="n">data</span><span class="o">=</span><span class="kc">None</span>, </span><span class="param"><span class="n">creds</span><span class="o">=</span><span class="kc">False</span>, </span><span class="param"><span class="n">csrf</span><span class="o">=</span><span class="kc">None</span></span><span class="return-annotation">):</span></span>
+        <span class="name">urlopen</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">url</span>, </span><span class="param"><span class="n">data</span><span class="o">=</span><span class="kc">None</span>, </span><span class="param"><span class="n">headers</span><span class="o">=</span><span class="kc">None</span>, </span><span class="param"><span class="n">creds</span><span class="o">=</span><span class="kc">False</span>, </span><span class="param"><span class="n">csrf</span><span class="o">=</span><span class="kc">None</span></span><span class="return-annotation">):</span></span>
 
         
     </div>

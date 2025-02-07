@@ -3,7 +3,7 @@ title: arena.events.event
 parent: arena.events
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -41,13 +41,25 @@ grand_parent: Python API
     
 
                             </div>
+                            <div id="Event.json" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">json</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Event.json"></a>
+    
+    
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
                                     <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
                                 <dd id="Event.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
                 <dd id="Event.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
-                <dd id="Event.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
 
             </div>
                                 </dl>

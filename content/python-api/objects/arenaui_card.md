@@ -3,7 +3,7 @@ title: arena.objects.arenaui_card
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -78,6 +78,7 @@ grand_parent: Python API
                                     <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
                                 <dd id="ArenauiCard.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
                 <dd id="ArenauiCard.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
+                <dd id="ArenauiCard.private_objects" class="variable"><a href="arena_object.html#Object.private_objects">private_objects</a></dd>
                 <dd id="ArenauiCard.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
                 <dd id="ArenauiCard.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
                 <dd id="ArenauiCard.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
@@ -92,6 +93,7 @@ grand_parent: Python API
                 <dd id="ArenauiCard.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
                 <dd id="ArenauiCard.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
                 <dd id="ArenauiCard.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
+                <dd id="ArenauiCard.add_private" class="function"><a href="arena_object.html#Object.add_private">add_private</a></dd>
                 <dd id="ArenauiCard.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
                 <dd id="ArenauiCard.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
 
@@ -128,6 +130,7 @@ grand_parent: Python API
             <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
                                 <dd id="Card.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
                 <dd id="Card.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
+                <dd id="Card.private_objects" class="variable"><a href="arena_object.html#Object.private_objects">private_objects</a></dd>
                 <dd id="Card.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
                 <dd id="Card.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
                 <dd id="Card.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
@@ -142,6 +145,7 @@ grand_parent: Python API
                 <dd id="Card.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
                 <dd id="Card.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
                 <dd id="Card.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
+                <dd id="Card.add_private" class="function"><a href="arena_object.html#Object.add_private">add_private</a></dd>
                 <dd id="Card.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
                 <dd id="Card.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
 

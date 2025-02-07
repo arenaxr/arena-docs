@@ -3,7 +3,7 @@ title: arena.objects.dodecahedron
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -66,6 +66,7 @@ grand_parent: Python API
                                     <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
                                 <dd id="Dodecahedron.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
                 <dd id="Dodecahedron.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
+                <dd id="Dodecahedron.private_objects" class="variable"><a href="arena_object.html#Object.private_objects">private_objects</a></dd>
                 <dd id="Dodecahedron.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
                 <dd id="Dodecahedron.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
                 <dd id="Dodecahedron.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
@@ -80,6 +81,7 @@ grand_parent: Python API
                 <dd id="Dodecahedron.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
                 <dd id="Dodecahedron.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
                 <dd id="Dodecahedron.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
+                <dd id="Dodecahedron.add_private" class="function"><a href="arena_object.html#Object.add_private">add_private</a></dd>
                 <dd id="Dodecahedron.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
                 <dd id="Dodecahedron.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
 

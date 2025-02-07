@@ -3,7 +3,7 @@ title: arena.utils.mqtt
 parent: arena.utils
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -45,7 +45,7 @@ some topic name.</p>
     <a class="headerlink" href="#MQTTMatcher.iter_match"></a>
     
             <div class="docstring"><p>Return an iterator on all values associated with filters
-that match the :topic</p>
+that match the :topic.</p>
 </div>
 
 

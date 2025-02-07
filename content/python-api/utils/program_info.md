@@ -3,14 +3,14 @@ title: arena.utils.program_info
 parent: arena.utils
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
 <a href="./../arena.html">arena</a><wbr>.<a href="./../utils.html">utils</a><wbr>.program_info    </h1>
 
-                        <div class="docstring"><p>Collect information about the program execution, such as 
+                        <div class="docstring"><p>Collect information about the program execution, such as
 activity times and number of messages sent/received.</p>
 </div>
 
@@ -40,7 +40,7 @@ activity times and number of messages sent/received.</p>
     </div>
     <a class="headerlink" href="#GetPublicAttrsMixin.get_attrs"></a>
     
-            <div class="docstring"><p>Return object public members only</p>
+            <div class="docstring"><p>Return object public members only.</p>
 </div>
 
 
@@ -123,15 +123,18 @@ activity times and number of messages sent/received.</p>
     </div>
     <a class="headerlink" href="#ProgramRunInfo.__init__"></a>
     
-            <div class="docstring"><p>Returns a <code><a href="#ProgramRunInfo">ProgramRunInfo</a></code>. If an event loop is passed, will setup a periodic task to 
-update execution stats and perform a callback to notify of this update</p>
+            <div class="docstring"><p>Returns a <code><a href="#ProgramRunInfo">ProgramRunInfo</a></code>. If an event loop is passed, will setup a periodic task to
+update execution stats and perform a callback to notify of this update.</p>
 
-<p>Args:
-    evt_loop: an event loop to which we add a periodic task to update program stats
-    queue_len_callable: callable that returns a queue stats object
-    update_callback: callback when stats are updated
-    update_interval_ms: interval of the periodic task to update program stats
-    kwargs: additional attributes to add to the program info, e.g. web host, scene, namespace</p>
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>object evt_loop</strong>:  an event loop to which we add a periodic task to update program stats (optional).</li>
+<li><strong>object queue_len_callable</strong>:  callable that returns a queue stats object (optional).</li>
+<li><strong>object update_callback</strong>:  callback when stats are updated (optional).</li>
+<li><strong>int update_interval_ms</strong>:  interval of the periodic task to update program stats (optional).</li>
+<li><strong>object kwargs</strong>:  additional attributes to add to the program info, e.g. web host, scene, namespace (optional).</li>
+</ul>
 </div>
 
 
@@ -279,7 +282,7 @@ update execution stats and perform a callback to notify of this update</p>
     </div>
     <a class="headerlink" href="#ProgramRunInfo.msg_rcv"></a>
     
-            <div class="docstring"><p>Update stats when a message is received</p>
+            <div class="docstring"><p>Update stats when a message is received.</p>
 </div>
 
 
@@ -294,7 +297,7 @@ update execution stats and perform a callback to notify of this update</p>
     </div>
     <a class="headerlink" href="#ProgramRunInfo.msg_publish"></a>
     
-            <div class="docstring"><p>Update stats when a message is published</p>
+            <div class="docstring"><p>Update stats when a message is published.</p>
 </div>
 
 
@@ -309,7 +312,7 @@ update execution stats and perform a callback to notify of this update</p>
     </div>
     <a class="headerlink" href="#ProgramRunInfo.add_program_info"></a>
     
-            <div class="docstring"><p>Add program info to another dictionary</p>
+            <div class="docstring"><p>Add program info to another dictionary.</p>
 </div>
 
 

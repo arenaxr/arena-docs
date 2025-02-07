@@ -3,7 +3,7 @@ title: arena.env
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -118,8 +118,8 @@ If undefined, will try to use local authentication information previously saved.
             <div class="docstring"><p>.. envvar:: MQTTH</p>
 
 <p>The :envvar:<code><a href="#MQTTH">MQTTH</a></code> defines the MQTT host used by the library.
-This variable allows to use a broker different from the host argument passed to the 
-scene constructor</p>
+This variable allows to use a broker different from the host argument passed to the
+scene constructor.</p>
 </div>
 
 
@@ -135,7 +135,7 @@ scene constructor</p>
     
             <div class="docstring"><p>.. envvar:: DEVICE</p>
 
-<p>The :envvar:<code><a href="#DEVICE">DEVICE</a></code> defines the name of a device, to publish and listen to. 
+<p>The :envvar:<code><a href="#DEVICE">DEVICE</a></code> defines the name of a device, to publish and listen to.
 After connecting, the library listens to device topic as follows:
 <code>{REALM}/d/{NAMESPACE}/{SCENE}</code>.</p>
 
@@ -173,7 +173,7 @@ This is passed by the runtime and used to identify the program object that repre
             <div class="docstring"><p>.. envvar:: ENABLE_INTERPRETER</p>
 
 <p>The :envvar:<code><a href="#ENABLE_INTERPRETER">ENABLE_INTERPRETER</a></code> enables the a simple command line interpreter that
-can be used to inspect library/program state. Set this variable with a value of 
+can be used to inspect library/program state. Set this variable with a value of
 <code>true</code>, <code>1</code> or <code>t</code> (case insensitive) to enable the interpreter.</p>
 
 <p>Default: 'false'</p>
@@ -192,8 +192,8 @@ can be used to inspect library/program state. Set this variable with a value of
     
             <div class="docstring"><p>.. envvar:: ARENA_TELEMETRY</p>
 
-<p>The :envvar:<code><a href="#ARENA_TELEMETRY">ARENA_TELEMETRY</a></code> environment variable enables the library's telemetry to generate 
-traces, metrics, and logs. Set this variable with a value of <code>otlp</code>, <code>mqtt</code> or <code>console</code> (case insensitive) 
+<p>The :envvar:<code><a href="#ARENA_TELEMETRY">ARENA_TELEMETRY</a></code> environment variable enables the library's telemetry to generate
+traces, metrics, and logs. Set this variable with a value of <code>otlp</code>, <code>mqtt</code> or <code>console</code> (case insensitive)
 to enable telemetry using OpenTelemetry (OTEL) and its Protocol (OTLP), send JSON OTEL spans to MQTT, or to the console.</p>
 </div>
 
@@ -210,7 +210,7 @@ to enable telemetry using OpenTelemetry (OTEL) and its Protocol (OTLP), send JSO
     
             <div class="docstring"><p>.. envvar:: OTLP_ENDPOINT</p>
 
-<p>The :envvar:<code><a href="#OTLP_ENDPOINT">OTLP_ENDPOINT</a></code> environment variable is used when OTLP telemetry is enabled (<code>ARENA_TELEMETRY=otlp</code>) to define 
+<p>The :envvar:<code><a href="#OTLP_ENDPOINT">OTLP_ENDPOINT</a></code> environment variable is used when OTLP telemetry is enabled (<code>ARENA_TELEMETRY=otlp</code>) to define
 the telemtry endpoint.</p>
 
 <p>Our implementation uses OpenTelemetry (OTEL) and its Protocol (OTLP) for encoding and transport.</p>
@@ -231,8 +231,8 @@ the telemtry endpoint.</p>
     
             <div class="docstring"><p>.. envvar:: OTEL_LOG_LEVEL</p>
 
-<p>The :envvar:<code><a href="#OTEL_LOG_LEVEL">OTEL_LOG_LEVEL</a></code> environment variable sets the log level used by the logger 
-implementation (ArenaTelemetry) using OpenTelemetry (OTEL). 
+<p>The :envvar:<code><a href="#OTEL_LOG_LEVEL">OTEL_LOG_LEVEL</a></code> environment variable sets the log level used by the logger
+implementation (ArenaTelemetry) using OpenTelemetry (OTEL).
 Default: "info".</p>
 </div>
 
@@ -250,7 +250,7 @@ Default: "info".</p>
             <div class="docstring"><p>.. envvar:: PROGRAM_STATS_UPDATE_INTERVAL_MS</p>
 
 <p>The :envvar:<code><a href="#PROGRAM_STATS_UPDATE_INTERVAL_MS">PROGRAM_STATS_UPDATE_INTERVAL_MS</a></code> environment variable defines how often program
-stats are published</p>
+stats are published.</p>
 
 <p>Default: 5000.</p>
 </div>

@@ -3,7 +3,7 @@ title: arena.utils.cmd_interpreter
 parent: arena.utils
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -11,17 +11,20 @@ grand_parent: Python API
 <a href="./../arena.html">arena</a><wbr>.<a href="./../utils.html">utils</a><wbr>.cmd_interpreter    </h1>
 
                         <div class="docstring"><p>The ArenaCmdInterpreter is a simple line-oriented command interpreter that
-allows to inspect library/program state. It looks at :envvar:<code>ENABLE_INTERPRETER</code> 
-to enable the interpreter. </p>
+allows to inspect library/program state. It looks at :envvar:<code>ENABLE_INTERPRETER</code>
+to enable the interpreter.</p>
 
 <p>The <code><a href="#ArenaCmdInterpreter">.ArenaCmdInterpreter</a></code> receives a <code>.Scene</code> instance and provides commands
 to inspect attributes and execute functions (callables) given to the constructor.</p>
 
-<p>The commands available are:
-  show: displays attributes
-  info: excutes scene functions that output information
-  help: displays the commands available
-  exit: terminates the program</p>
+<p>The commands available are:</p>
+
+<ul>
+<li>show: displays attributes</li>
+<li>info: executes scene functions that output information</li>
+<li>help: displays the commands available</li>
+<li>exit: terminates the program</li>
+</ul>
 </div>
 
                 

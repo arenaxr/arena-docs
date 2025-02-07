@@ -3,7 +3,7 @@ title: arena.utils.utils
 parent: arena.utils
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -38,7 +38,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Utils.tuple_to_string"></a>
     
-            <div class="docstring"><p>Turns a tuple into a string</p>
+            <div class="docstring"><p>Turns a tuple into a string.</p>
 </div>
 
 
@@ -54,7 +54,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Utils.agran"></a>
     
-            <div class="docstring"><p>Reduces floating point numbers to ARENA granularity</p>
+            <div class="docstring"><p>Reduces floating point numbers to ARENA granularity.</p>
 </div>
 
 
@@ -70,7 +70,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Utils.dict_key_replace"></a>
     
-            <div class="docstring"><p>Repalces a key,val with a new key,val</p>
+            <div class="docstring"><p>Replaces a key,val with a new key,val.</p>
 </div>
 
 

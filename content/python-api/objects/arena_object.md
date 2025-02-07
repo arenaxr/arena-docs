@@ -3,7 +3,7 @@ title: arena.objects.arena_object
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -73,6 +73,18 @@ grand_parent: Python API
         
     </div>
     <a class="headerlink" href="#Object.all_objects"></a>
+    
+    
+
+                            </div>
+                            <div id="Object.private_objects" class="classattr">
+                                <div class="attr variable">
+            <span class="name">private_objects</span>        =
+<span class="default_value">{}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Object.private_objects"></a>
     
     
 
@@ -247,6 +259,20 @@ grand_parent: Python API
         
     </div>
     <a class="headerlink" href="#Object.add"></a>
+    
+    
+
+                            </div>
+                            <div id="Object.add_private" class="classattr">
+                                <div class="attr function">
+                    <div class="decorator">@classmethod</div>
+
+        <span class="def">def</span>
+        <span class="name">add_private</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">cls</span>, </span><span class="param"><span class="n">obj</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Object.add_private"></a>
     
     
 

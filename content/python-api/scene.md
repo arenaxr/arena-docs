@@ -3,7 +3,7 @@ title: arena.scene
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -35,17 +35,17 @@ Can create and execute various user-defined functions/tasks.</p>
 <li><strong>str realm</strong>:  Reserved topic fork for future use (optional).</li>
 <li><strong>str namespace</strong>:  Username of authenticated user or other namespace (automatic).</li>
 <li><strong>str scene</strong>:  The name of the scene, without namespace (required).</li>
-<li><strong>int network_latency_interval</strong>:  Interval (in ms) to run network graph latency update. Default value is 10000 (10 secs). Ignore this parameter.</li>
-<li><strong>func on_msg_callback</strong>:  Called on all MQTT messages received. Default = None.</li>
-<li><strong>func new_obj_callback</strong>:  Called on object 'create' MQTT messages received. Default = None.</li>
-<li><strong>func user_join_callback</strong>:  Called on user id 'new' MQTT messages received. Default = None.</li>
-<li><strong>func user_left_callback</strong>:  Called on user id 'leave' MQTT messages received. Default = None.</li>
-<li><strong>func delete_obj_callback</strong>:  Called on object 'delete' MQTT messages received. Default = None.</li>
-<li><strong>func end_program_callback</strong>:  Called on MQTT disconnect. Default = None.</li>
-<li><strong>bool video</strong>:  If true, request permissions for video conference. Default = False.</li>
-<li><strong>bool debug</strong>:  If true, print a log of all publish messages from this client. Default = False.</li>
-<li><strong>bool cli_args</strong>:  If true, require CLI standardized parameters. Default = False.</li>
-<li><strong>bool headless</strong>:  If true, force limited input device auth flow. Default = False.</li>
+<li><strong>int network_latency_interval</strong>:  Interval (in ms) to run network graph latency update. Default value is 10000 (10 secs). Ignore this parameter (optional).</li>
+<li><strong>func on_msg_callback</strong>:  Called on all MQTT messages received (optional).</li>
+<li><strong>func new_obj_callback</strong>:  Called on object 'create' MQTT messages received (optional).</li>
+<li><strong>func user_join_callback</strong>:  Called on user id 'new' MQTT messages received (optional).</li>
+<li><strong>func user_left_callback</strong>:  Called on user id 'leave' MQTT messages received (optional).</li>
+<li><strong>func delete_obj_callback</strong>:  Called on object 'delete' MQTT messages received (optional).</li>
+<li><strong>func end_program_callback</strong>:  Called on MQTT disconnect (optional).</li>
+<li><strong>bool video</strong>:  If true, request permissions for video conference (optional).</li>
+<li><strong>bool debug</strong>:  If true, print a log of all publish messages from this client (optional).</li>
+<li><strong>bool cli_args</strong>:  If true, require CLI standardized parameters (optional).</li>
+<li><strong>bool headless</strong>:  If true, force limited input device auth flow (optional).</li>
 </ul>
 </div>
 
@@ -120,7 +120,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.exit"></a>
     
-            <div class="docstring"><p>Custom exit to push errors to telemetry</p>
+            <div class="docstring"><p>Custom exit to push errors to telemetry.</p>
 </div>
 
 
@@ -135,7 +135,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.on_connect"></a>
     
-            <div class="docstring"><p>Paho MQTT client on_connect callback</p>
+            <div class="docstring"><p>Paho MQTT client on_connect callback.</p>
 </div>
 
 
@@ -202,7 +202,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.callback_wrapper"></a>
     
-            <div class="docstring"><p>Checks for number of arguments for callback</p>
+            <div class="docstring"><p>Checks for number of arguments for callback.</p>
 </div>
 
 
@@ -217,7 +217,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.generate_custom_event"></a>
     
-            <div class="docstring"><p>Publishes an custom event. Could be user or library defined</p>
+            <div class="docstring"><p>Publishes an custom event. Could be user or library defined.</p>
 </div>
 
 
@@ -232,7 +232,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.generate_click_event"></a>
     
-            <div class="docstring"><p>Publishes an click event</p>
+            <div class="docstring"><p>Publishes an click event.</p>
 </div>
 
 
@@ -247,7 +247,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.manipulate_camera"></a>
     
-            <div class="docstring"><p>Publishes a camera manipulation event</p>
+            <div class="docstring"><p>Publishes a camera manipulation event.</p>
 </div>
 
 
@@ -262,7 +262,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.look_at"></a>
     
-            <div class="docstring"><p>Publishes a camera manipulation event</p>
+            <div class="docstring"><p>Publishes a camera manipulation event.</p>
 </div>
 
 
@@ -277,7 +277,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.teleport_to_landmark"></a>
     
-            <div class="docstring"><p>Publishes a camera manipulation event</p>
+            <div class="docstring"><p>Publishes a camera manipulation event.</p>
 </div>
 
 
@@ -290,7 +290,37 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.all_objects"></a>
     
-            <div class="docstring"><p>Returns all the objects in a scene</p>
+            <div class="docstring"><p>Returns all the objects in a scene.</p>
+</div>
+
+
+                            </div>
+                            <div id="Scene.get_private_objects" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">get_private_objects</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">userid</span><span class="o">=</span><span class="kc">None</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scene.get_private_objects"></a>
+    
+            <div class="docstring"><p>Returns all private user objects.</p>
+</div>
+
+
+                            </div>
+                            <div id="Scene.reset_private_objects" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">reset_private_objects</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">userid</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scene.reset_private_objects"></a>
+    
+            <div class="docstring"><p>Resets all private user objects.</p>
 </div>
 
 
@@ -305,7 +335,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.add_object"></a>
     
-            <div class="docstring"><p>Public function to create an object</p>
+            <div class="docstring"><p>Public function to create an object.</p>
 </div>
 
 
@@ -320,7 +350,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.add_objects"></a>
     
-            <div class="docstring"><p>Public function to create multiple objects in a list</p>
+            <div class="docstring"><p>Public function to create multiple objects in a list.</p>
 </div>
 
 
@@ -335,7 +365,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.update_object"></a>
     
-            <div class="docstring"><p>Public function to update an object</p>
+            <div class="docstring"><p>Public function to update an object.</p>
 </div>
 
 
@@ -350,7 +380,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.update_objects"></a>
     
-            <div class="docstring"><p>Public function to update multiple objects in a list</p>
+            <div class="docstring"><p>Public function to update multiple objects in a list.</p>
 </div>
 
 
@@ -365,9 +395,37 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.delete_object"></a>
     
-            <div class="docstring"><p>Public function to delete an object</p>
+            <div class="docstring"><p>Public function to delete an object.</p>
 </div>
 
+
+                            </div>
+                            <div id="Scene.delete_user_objects" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">delete_user_objects</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">userid</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scene.delete_user_objects"></a>
+    
+            <div class="docstring"><p>Deletes any private user objects.</p>
+</div>
+
+
+                            </div>
+                            <div id="Scene.delete_program" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">delete_program</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">obj</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scene.delete_program"></a>
+    
+    
 
                             </div>
                             <div id="Scene.delete_attributes" class="classattr">
@@ -380,7 +438,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.delete_attributes"></a>
     
-            <div class="docstring"><p>Public function to delete a list of 'attributes' as a string[], updating each to null</p>
+            <div class="docstring"><p>Public function to delete a list of 'attributes' as a string[], updating each to null.</p>
 </div>
 
 
@@ -395,7 +453,7 @@ Can create and execute various user-defined functions/tasks.</p>
     </div>
     <a class="headerlink" href="#Scene.run_animations"></a>
     
-            <div class="docstring"><p>Runs all dispatched animations</p>
+            <div class="docstring"><p>Runs all dispatched animations.</p>
 </div>
 
 
@@ -416,14 +474,14 @@ duration. Uses async sleep to avoid blocking.</p>
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>obj</strong>:  arena object to update</li>
-<li><strong>anim</strong>:  Animation to run</li>
+<li><strong>obj</strong>:  arena object to update.</li>
+<li><strong>anim</strong>:  Animation to run.</li>
 </ul>
 
 <h6 id="returns">Returns</h6>
 
 <blockquote>
-  <p>created async task</p>
+  <p>created async task.</p>
 </blockquote>
 </div>
 
@@ -441,7 +499,7 @@ duration. Uses async sleep to avoid blocking.</p>
     
             <div class="docstring"><p>Returns a dictionary for a persisted object.</p>
 
-<p>If object is known by arena-py, return local object, not persisted</p>
+<p>If object is known by arena-py, return local object, not persisted.</p>
 </div>
 
 
@@ -458,9 +516,9 @@ duration. Uses async sleep to avoid blocking.</p>
     
             <div class="docstring"><p>Returns a dictionary of persisted objects.</p>
 
-<p>If object is known by arena-py, return our local object, not persisted
-Silently fails/skip objects without object_id and object_type (except programs)
-Instantiates generic Object if object_type is given but unknown to arena-py</p>
+<p>If object is known by arena-py, return our local object, not persisted.
+Silently fails/skip objects without object_id and object_type (except programs).
+Instantiates generic Object if object_type is given but unknown to arena-py.</p>
 </div>
 
 
@@ -475,7 +533,7 @@ Instantiates generic Object if object_type is given but unknown to arena-py</p>
     </div>
     <a class="headerlink" href="#Scene.get_persisted_scene_option"></a>
     
-            <div class="docstring"><p>Returns a dictionary for scene-options. [TODO] wrap the output as a BaseObject</p>
+            <div class="docstring"><p>Returns a dictionary for scene-options.</p>
 </div>
 
 
@@ -490,8 +548,9 @@ Instantiates generic Object if object_type is given but unknown to arena-py</p>
     </div>
     <a class="headerlink" href="#Scene.get_writable_scenes"></a>
     
-            <div class="docstring"><p>Request list of scene names for logged in user account that user has publish permission for.
-Returns: list of scenes.</p>
+            <div class="docstring"><p>Request list of scene names for logged in user account that user has publish permission for.</p>
+
+<p>:returns list: list of scenes.</p>
 </div>
 
 
@@ -506,7 +565,7 @@ Returns: list of scenes.</p>
     </div>
     <a class="headerlink" href="#Scene.get_user_list"></a>
     
-            <div class="docstring"><p>Returns a list of users</p>
+            <div class="docstring"><p>Returns a list of users.</p>
 </div>
 
 
@@ -521,7 +580,7 @@ Returns: list of scenes.</p>
     </div>
     <a class="headerlink" href="#Scene.get_rcv_pub_queue_len"></a>
     
-            <div class="docstring"><p>Return QueueStats object with receive and publish queue length</p>
+            <div class="docstring"><p>Return QueueStats object with receive and publish queue length.</p>
 </div>
 
 
@@ -536,7 +595,35 @@ Returns: list of scenes.</p>
     </div>
     <a class="headerlink" href="#Scene.run_info_update"></a>
     
-            <div class="docstring"><p>Callback when program stats are updated; publish program object update</p>
+            <div class="docstring"><p>Callback when program stats are updated; publish program object update.</p>
+</div>
+
+
+                            </div>
+                            <div id="Scene.upload_store_file" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">upload_store_file</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">src_file_path</span>, </span><span class="param"><span class="n">dest_file_path</span><span class="o">=</span><span class="kc">None</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Scene.upload_store_file"></a>
+    
+            <div class="docstring"><p>Upload a file to the filestore using the user's Google account.</p>
+
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>str src_file_path</strong>:  Local path to the file to upload (required).</li>
+<li><strong>str dest_file_path</strong>:  Destination file path, can include dirs. Defaults to filename from src_file_path (optional).</li>
+</ul>
+
+<h6 id="returns">Returns</h6>
+
+<blockquote>
+  <p>Url address of successful file upload location, or None if failed.</p>
+</blockquote>
 </div>
 
 
@@ -625,11 +712,15 @@ Returns: list of scenes.</p>
                 <dd id="Arena.look_at" class="function"><a href="#Scene.look_at">look_at</a></dd>
                 <dd id="Arena.teleport_to_landmark" class="function"><a href="#Scene.teleport_to_landmark">teleport_to_landmark</a></dd>
                 <dd id="Arena.all_objects" class="variable"><a href="#Scene.all_objects">all_objects</a></dd>
+                <dd id="Arena.get_private_objects" class="function"><a href="#Scene.get_private_objects">get_private_objects</a></dd>
+                <dd id="Arena.reset_private_objects" class="function"><a href="#Scene.reset_private_objects">reset_private_objects</a></dd>
                 <dd id="Arena.add_object" class="function"><a href="#Scene.add_object">add_object</a></dd>
                 <dd id="Arena.add_objects" class="function"><a href="#Scene.add_objects">add_objects</a></dd>
                 <dd id="Arena.update_object" class="function"><a href="#Scene.update_object">update_object</a></dd>
                 <dd id="Arena.update_objects" class="function"><a href="#Scene.update_objects">update_objects</a></dd>
                 <dd id="Arena.delete_object" class="function"><a href="#Scene.delete_object">delete_object</a></dd>
+                <dd id="Arena.delete_user_objects" class="function"><a href="#Scene.delete_user_objects">delete_user_objects</a></dd>
+                <dd id="Arena.delete_program" class="function"><a href="#Scene.delete_program">delete_program</a></dd>
                 <dd id="Arena.delete_attributes" class="function"><a href="#Scene.delete_attributes">delete_attributes</a></dd>
                 <dd id="Arena.run_animations" class="function"><a href="#Scene.run_animations">run_animations</a></dd>
                 <dd id="Arena.create_delayed_task" class="function"><a href="#Scene.create_delayed_task">create_delayed_task</a></dd>
@@ -640,6 +731,7 @@ Returns: list of scenes.</p>
                 <dd id="Arena.get_user_list" class="function"><a href="#Scene.get_user_list">get_user_list</a></dd>
                 <dd id="Arena.get_rcv_pub_queue_len" class="function"><a href="#Scene.get_rcv_pub_queue_len">get_rcv_pub_queue_len</a></dd>
                 <dd id="Arena.run_info_update" class="function"><a href="#Scene.run_info_update">run_info_update</a></dd>
+                <dd id="Arena.upload_store_file" class="function"><a href="#Scene.upload_store_file">upload_store_file</a></dd>
 
             </div>
             <div><dt><a href="arena_mqtt.html#ArenaMQTT">arena.arena_mqtt.ArenaMQTT</a></dt>

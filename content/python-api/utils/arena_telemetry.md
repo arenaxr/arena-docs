@@ -3,7 +3,7 @@ title: arena.utils.arena_telemetry
 parent: arena.utils
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -11,7 +11,7 @@ grand_parent: Python API
 <a href="./../arena.html">arena</a><wbr>.<a href="./../utils.html">utils</a><wbr>.arena_telemetry    </h1>
 
                         <div class="docstring"><p>The ArenaTelemetry generates traces, metrics, and logs using OpenTelemetry (OTEL).
-It can export using OTEL's protocol (OTLP), send JSON OTEL spans to MQTT, or to the console. </p>
+It can export using OTEL's protocol (OTLP), send JSON OTEL spans to MQTT, or to the console.</p>
 
 <p>The :envvar:<code>ARENA_TELEMETRY</code> environment variable enables the telemetry.
 The :envvar:<code>OTLP_ENDPOINT</code> environment variable defines the OTLP endpoint when OTLP is used.</p>
@@ -43,7 +43,7 @@ The :envvar:<code>OTLP_ENDPOINT</code> environment variable defines the OTLP end
     </div>
     <a class="headerlink" href="#MQTTSpanExporter"></a>
     
-            <div class="docstring"><p>Implementation of <code>SpanExporter</code> that sends spans to MQTT</p>
+            <div class="docstring"><p>Implementation of <code>SpanExporter</code> that sends spans to MQTT.</p>
 </div>
 
 
@@ -180,7 +180,7 @@ before returning from this method.</p>
     </div>
     <a class="headerlink" href="#ArenaTelemetry"></a>
     
-            <div class="docstring"><p>Implementation of ARENA telemetry. 
+            <div class="docstring"><p>Implementation of ARENA telemetry.
 According to :envvar:<code>ARENA_TELEMETRY</code>, exports using OTLP, send JSON OTEL spans to MQTT, or to the console.</p>
 </div>
 
@@ -194,14 +194,17 @@ According to :envvar:<code>ARENA_TELEMETRY</code>, exports using OTLP, send JSON
     </div>
     <a class="headerlink" href="#ArenaTelemetry.__init__"></a>
     
-            <div class="docstring"><p>Return an <code><a href="#ArenaTelemetry">ArenaTelemetry</a></code> using given service name and id
+            <div class="docstring"><p>Return an <code><a href="#ArenaTelemetry">ArenaTelemetry</a></code> using given service name and id.
 Provides utility calls that wrap open telemetry functionality to start spans, log events, and other.</p>
 
 <p>Creates a parent span for all the spans related to the program.</p>
 
-<p>Args:
-    name: name of the service used with the telemetry backend
-    id: additional id used with the telemetry backend</p>
+<h6 id="parameters">Parameters</h6>
+
+<ul>
+<li><strong>str name</strong>:  name of the service used with the telemetry backend (required).</li>
+<li><strong>str id</strong>:  additional id used with the telemetry backend (optional).</li>
+</ul>
 </div>
 
 
@@ -250,7 +253,7 @@ Provides utility calls that wrap open telemetry functionality to start spans, lo
     </div>
     <a class="headerlink" href="#ArenaTelemetry.exit"></a>
     
-            <div class="docstring"><p>Record exit status on error</p>
+            <div class="docstring"><p>Record exit status on error.</p>
 </div>
 
 
@@ -265,7 +268,7 @@ Provides utility calls that wrap open telemetry functionality to start spans, lo
     </div>
     <a class="headerlink" href="#ArenaTelemetry.start_span"></a>
     
-            <div class="docstring"><p>Wrapper to otel start_as_current_span; force context to be parent span</p>
+            <div class="docstring"><p>Wrapper to otel start_as_current_span; force context to be parent span.</p>
 </div>
 
 
@@ -280,7 +283,7 @@ Provides utility calls that wrap open telemetry functionality to start spans, lo
     </div>
     <a class="headerlink" href="#ArenaTelemetry.start_process_msg_span"></a>
     
-            <div class="docstring"><p>Wrapper to otel start_as_current_span to start a process message span; force context to be parent span</p>
+            <div class="docstring"><p>Wrapper to otel start_as_current_span to start a process message span; force context to be parent span.</p>
 </div>
 
 
@@ -295,7 +298,7 @@ Provides utility calls that wrap open telemetry functionality to start spans, lo
     </div>
     <a class="headerlink" href="#ArenaTelemetry.start_publish_span"></a>
     
-            <div class="docstring"><p>Wrapper to otel start_as_current_span to start a process message span; force context to be parent span</p>
+            <div class="docstring"><p>Wrapper to otel start_as_current_span to start a process message span; force context to be parent span.</p>
 </div>
 
 
@@ -310,7 +313,7 @@ Provides utility calls that wrap open telemetry functionality to start spans, lo
     </div>
     <a class="headerlink" href="#ArenaTelemetry.add_event"></a>
     
-            <div class="docstring"><p>Add event to given or current span</p>
+            <div class="docstring"><p>Add event to given or current span.</p>
 </div>
 
 
@@ -325,7 +328,7 @@ Provides utility calls that wrap open telemetry functionality to start spans, lo
     </div>
     <a class="headerlink" href="#ArenaTelemetry.set_error"></a>
     
-            <div class="docstring"><p>Set error on given or current span</p>
+            <div class="docstring"><p>Set error on given or current span.</p>
 </div>
 
 

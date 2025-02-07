@@ -3,7 +3,7 @@ title: arena.objects.gltf_model
 parent: arena.objects
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.0.2/arena">v1.0.2</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -141,6 +141,7 @@ grand_parent: Python API
                                     <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
                                 <dd id="GltfModel.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
                 <dd id="GltfModel.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
+                <dd id="GltfModel.private_objects" class="variable"><a href="arena_object.html#Object.private_objects">private_objects</a></dd>
                 <dd id="GltfModel.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
                 <dd id="GltfModel.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
                 <dd id="GltfModel.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
@@ -153,6 +154,7 @@ grand_parent: Python API
                 <dd id="GltfModel.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
                 <dd id="GltfModel.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
                 <dd id="GltfModel.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
+                <dd id="GltfModel.add_private" class="function"><a href="arena_object.html#Object.add_private">add_private</a></dd>
                 <dd id="GltfModel.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
                 <dd id="GltfModel.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
 
@@ -195,6 +197,7 @@ grand_parent: Python API
             <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
                                 <dd id="GLTF.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
                 <dd id="GLTF.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
+                <dd id="GLTF.private_objects" class="variable"><a href="arena_object.html#Object.private_objects">private_objects</a></dd>
                 <dd id="GLTF.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
                 <dd id="GLTF.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
                 <dd id="GLTF.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
@@ -207,6 +210,7 @@ grand_parent: Python API
                 <dd id="GLTF.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
                 <dd id="GLTF.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
                 <dd id="GLTF.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
+                <dd id="GLTF.add_private" class="function"><a href="arena_object.html#Object.add_private">add_private</a></dd>
                 <dd id="GLTF.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
                 <dd id="GLTF.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
 
@@ -249,6 +253,7 @@ grand_parent: Python API
             <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
                                 <dd id="Model.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
                 <dd id="Model.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
+                <dd id="Model.private_objects" class="variable"><a href="arena_object.html#Object.private_objects">private_objects</a></dd>
                 <dd id="Model.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
                 <dd id="Model.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
                 <dd id="Model.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
@@ -261,6 +266,7 @@ grand_parent: Python API
                 <dd id="Model.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
                 <dd id="Model.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
                 <dd id="Model.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
+                <dd id="Model.add_private" class="function"><a href="arena_object.html#Object.add_private">add_private</a></dd>
                 <dd id="Model.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
                 <dd id="Model.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
 
