@@ -2,6 +2,7 @@
 title: Objects
 nav_order: 1.2
 layout: default
+has_children: true
 parent: Python Library
 ---
 

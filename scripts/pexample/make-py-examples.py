@@ -20,26 +20,21 @@ def create_python_markdown(folder, add_api=False):
                     wfile = open(filename, "w", encoding="utf8")
                     wfile.write("---\n")
                     wfile.write(f"title: {pascalcase(path.stem)}\n")
+                    wfile.write("layout: default\n")
                     wfile.write(f"parent: {pascalcase(folder)}\n")
                     wfile.write("grand_parent: Python Library\n")
                     wfile.write("---\n\n")
-                    python_started = False
-                    module_docstring = False
+                    module_docstring = True
                     for line in rfile:
                         if line.startswith("'''") or line.startswith('"""'):
-                            if not module_docstring:
+                            if module_docstring:
                                 wfile.write(f"# {line[3:]}")
-                                module_docstring = True
-                            else:
                                 module_docstring = False
-                                python_started = True
-                        else:
-                            if not python_started:
+                            else:
                                 if add_api:
                                     wfile.write(f"\n`arena-py` API Reference for [{pascalcase(path.stem)}](/content/python-api/{folder}/{path.stem}).\n")
                                 wfile.write("\n```python")
-                                python_started = False
-
+                        else:
                             wfile.write(line)
                     wfile.write("```\n")
                     wfile.close()
@@ -50,6 +45,7 @@ def create_python_markdown(folder, add_api=False):
         wfile = open(filename, "w", encoding="utf8")
         wfile.write("---\n")
         wfile.write(f"title: {pascalcase(folder)}\n")
+        wfile.write("layout: default\n")
         wfile.write("has_children: true\n")
         wfile.write("parent: Python Library\n")
         wfile.write("---\n\n")
