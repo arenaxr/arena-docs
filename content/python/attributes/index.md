@@ -1,6 +1,6 @@
 ---
 title: Attributes
-nav_order: 3
+nav_order: 1.3
 layout: default
 parent: Python Library
 ---
