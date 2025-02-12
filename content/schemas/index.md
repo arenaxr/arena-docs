@@ -11,7 +11,7 @@ ARENA Scenes are a collection of Entities to which Components can be attached, f
 
 <img src="/assets/img/schemas/build-box-object-simple.png" width="100%"/>
 
-All ARENA objects have similar well-defined schemas, and these are the basis for the over-the-wire message format shown below. This is the message format transmitted over the PubSub to create/update/delete objects.
+All ARENA objects have similar well-defined JSON schemas, and these are the basis for the over-the-wire JSON message format shown below. This is the message format transmitted over the PubSub to create/update/delete objects.
 
 ```json
 {
@@ -49,5 +49,5 @@ Looking up [A-Frame's documentation](https://aframe.io/docs/1.5.0/introduction/)
 
 We also extended A-Frame by building ARENA-specific components and systems for, e.g. AR markers, programs, networked events, and options.
 
-- **[ARENA-specific components](/content/schemas/arena-aframe-components)**
-- **[ARENA-specific systems](/content/schemas/arena-aframe-systems)**
+- **[ARENA-specific components](https://github.com/arenaxr/arena-web-core/tree/master/src/components)**
+- **[ARENA-specific systems](https://github.com/arenaxr/arena-web-core/tree/master/src/systems)**

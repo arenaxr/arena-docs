@@ -8,8 +8,15 @@ add_api = True
 
 
 def create_python_markdown(folder, add_api=False):
-    read_dir = f"../arena-py/examples/{folder}"
+    # clear for updated markdown
     write_dir = f"./content/python/{folder}"
+    for subdir, dirs, files in os.walk(write_dir):
+        for file in files:
+            if file.endswith(".md") and file != "index.md":
+                os.remove(f"{write_dir}/{file}")
+
+    # read python and then write updated markdown
+    read_dir = f"../arena-py/examples/{folder}"
     for subdir, dirs, files in os.walk(read_dir):
         for file in files:
             if file.endswith((".py")):
@@ -32,7 +39,9 @@ def create_python_markdown(folder, add_api=False):
                                 module_docstring = False
                             else:
                                 if add_api:
-                                    wfile.write(f"\n`arena-py` API Reference for [{pascalcase(path.stem)}](/content/python-api/{folder}/{path.stem}).\n")
+                                    wfile.write(
+                                        f"\n`arena-py` API Reference for [{pascalcase(path.stem)}](/content/python-api/{folder}/{path.stem}).\n"
+                                    )
                                 wfile.write("\n```python")
                         else:
                             wfile.write(line)
