@@ -1,6 +1,6 @@
 ---
-title: arena.objects.threejs_scene
-parent: arena.objects
+title: arena.chat.chat
+parent: arena.chat
 grand_parent: Python API
 ---
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.2.0/arena">v1.2.0</a></small>
@@ -8,85 +8,35 @@ grand_parent: Python API
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../arena.html">arena</a><wbr>.<a href="./../objects.html">objects</a><wbr>.threejs_scene    </h1>
+<a href="./../arena.html">arena</a><wbr>.<a href="./../chat.html">chat</a><wbr>.chat    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="ThreejsScene">
+                <section id="Chat">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">ThreejsScene</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
+    <span class="name">Chat</span><wbr>(<span class="base"><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></span>):
 
         
     </div>
-    <a class="headerlink" href="#ThreejsScene"></a>
+    <a class="headerlink" href="#Chat"></a>
     
-            <div class="docstring"><p>ThreejsScene object class to manage its properties in the ARENA: Load a Three.js Scene. Could be THREE.js version-specific; you can see the THREE.js version in the JS console once you open ARENA; using glTF is preferred. Format: <a href="https://threejs.org/docs/#api/en/scenes/Scene">https://threejs.org/docs/#api/en/scenes/Scene</a> THREE.js Scene. See guidance to store paths under <a href="https://docs.arenaxr.org/content/interface/filestore.html">https://docs.arenaxr.org/content/interface/filestore.html</a> ARENA File Store, CDN, or DropBox.</p>
-
-<h6 id="parameters">Parameters</h6>
-
-<ul>
-<li><strong>str url</strong>:  Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
-</ul>
+            <div class="docstring"><p>Chat message class. Wrapper around JSON for chat messages.</p>
 </div>
 
 
-                            <div id="ThreejsScene.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">ThreejsScene</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ThreejsScene.__init__"></a>
-    
-    
-
-                            </div>
-                            <div id="ThreejsScene.object_type" class="classattr">
-                                <div class="attr variable">
-            <span class="name">object_type</span>        =
-<span class="default_value">&#39;threejs-scene&#39;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ThreejsScene.object_type"></a>
-    
-    
-
-                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
-                                    <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
-                                <dd id="ThreejsScene.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
-                <dd id="ThreejsScene.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
-                <dd id="ThreejsScene.private_objects" class="variable"><a href="arena_object.html#Object.private_objects">private_objects</a></dd>
-                <dd id="ThreejsScene.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
-                <dd id="ThreejsScene.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
-                <dd id="ThreejsScene.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
-                <dd id="ThreejsScene.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
-                <dd id="ThreejsScene.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
-                <dd id="ThreejsScene.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
-                <dd id="ThreejsScene.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
-                <dd id="ThreejsScene.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
-                <dd id="ThreejsScene.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
-                <dd id="ThreejsScene.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
-                <dd id="ThreejsScene.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
-                <dd id="ThreejsScene.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
-                <dd id="ThreejsScene.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
-                <dd id="ThreejsScene.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
-                <dd id="ThreejsScene.add_private" class="function"><a href="arena_object.html#Object.add_private">add_private</a></dd>
-                <dd id="ThreejsScene.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
-                <dd id="ThreejsScene.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
-
-            </div>
-            <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="ThreejsScene.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                                    <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
+                                <dd id="Chat.__init__" class="function"><a href="../base_object.html#BaseObject.__init__">BaseObject</a></dd>
+                <dd id="Chat.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
+                <dd id="Chat.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                <dd id="Chat.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
 
             </div>
                                 </dl>

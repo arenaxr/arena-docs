@@ -1,97 +1,20 @@
 ---
-title: arena.objects.threejs_scene
-parent: arena.objects
-grand_parent: Python API
+title: arena.chat
+parent: Python API
+has_children: true
 ---
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.2.0/arena">v1.2.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../arena.html">arena</a><wbr>.<a href="./../objects.html">objects</a><wbr>.threejs_scene    </h1>
+<a href="./arena.html">arena</a><wbr>.chat    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="ThreejsScene">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">ThreejsScene</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
-
-        
-    </div>
-    <a class="headerlink" href="#ThreejsScene"></a>
-    
-            <div class="docstring"><p>ThreejsScene object class to manage its properties in the ARENA: Load a Three.js Scene. Could be THREE.js version-specific; you can see the THREE.js version in the JS console once you open ARENA; using glTF is preferred. Format: <a href="https://threejs.org/docs/#api/en/scenes/Scene">https://threejs.org/docs/#api/en/scenes/Scene</a> THREE.js Scene. See guidance to store paths under <a href="https://docs.arenaxr.org/content/interface/filestore.html">https://docs.arenaxr.org/content/interface/filestore.html</a> ARENA File Store, CDN, or DropBox.</p>
-
-<h6 id="parameters">Parameters</h6>
-
-<ul>
-<li><strong>str url</strong>:  Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
-</ul>
-</div>
-
-
-                            <div id="ThreejsScene.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">ThreejsScene</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ThreejsScene.__init__"></a>
-    
-    
-
-                            </div>
-                            <div id="ThreejsScene.object_type" class="classattr">
-                                <div class="attr variable">
-            <span class="name">object_type</span>        =
-<span class="default_value">&#39;threejs-scene&#39;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ThreejsScene.object_type"></a>
-    
-    
-
-                            </div>
-                            <div class="inherited">
-                                <h5>Inherited Members</h5>
-                                <dl>
-                                    <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
-                                <dd id="ThreejsScene.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
-                <dd id="ThreejsScene.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
-                <dd id="ThreejsScene.private_objects" class="variable"><a href="arena_object.html#Object.private_objects">private_objects</a></dd>
-                <dd id="ThreejsScene.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
-                <dd id="ThreejsScene.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
-                <dd id="ThreejsScene.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
-                <dd id="ThreejsScene.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
-                <dd id="ThreejsScene.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
-                <dd id="ThreejsScene.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
-                <dd id="ThreejsScene.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
-                <dd id="ThreejsScene.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
-                <dd id="ThreejsScene.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
-                <dd id="ThreejsScene.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
-                <dd id="ThreejsScene.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
-                <dd id="ThreejsScene.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
-                <dd id="ThreejsScene.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
-                <dd id="ThreejsScene.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
-                <dd id="ThreejsScene.add_private" class="function"><a href="arena_object.html#Object.add_private">add_private</a></dd>
-                <dd id="ThreejsScene.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
-                <dd id="ThreejsScene.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
-
-            </div>
-            <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="ThreejsScene.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
-
-            </div>
-                                </dl>
-                            </div>
-                </section>
     </main>
 
 <style>pre{line-height:125%;}span.linenos{color:inherit; background-color:transparent; padding-left:5px; padding-right:20px;}.pdoc-code .hll{background-color:#ffffcc}.pdoc-code{background:#f8f8f8;}.pdoc-code .c{color:#3D7B7B; font-style:italic}.pdoc-code .err{border:1px solid #FF0000}.pdoc-code .k{color:#008000; font-weight:bold}.pdoc-code .o{color:#666666}.pdoc-code .ch{color:#3D7B7B; font-style:italic}.pdoc-code .cm{color:#3D7B7B; font-style:italic}.pdoc-code .cp{color:#9C6500}.pdoc-code .cpf{color:#3D7B7B; font-style:italic}.pdoc-code .c1{color:#3D7B7B; font-style:italic}.pdoc-code .cs{color:#3D7B7B; font-style:italic}.pdoc-code .gd{color:#A00000}.pdoc-code .ge{font-style:italic}.pdoc-code .gr{color:#E40000}.pdoc-code .gh{color:#000080; font-weight:bold}.pdoc-code .gi{color:#008400}.pdoc-code .go{color:#717171}.pdoc-code .gp{color:#000080; font-weight:bold}.pdoc-code .gs{font-weight:bold}.pdoc-code .gu{color:#800080; font-weight:bold}.pdoc-code .gt{color:#0044DD}.pdoc-code .kc{color:#008000; font-weight:bold}.pdoc-code .kd{color:#008000; font-weight:bold}.pdoc-code .kn{color:#008000; font-weight:bold}.pdoc-code .kp{color:#008000}.pdoc-code .kr{color:#008000; font-weight:bold}.pdoc-code .kt{color:#B00040}.pdoc-code .m{color:#666666}.pdoc-code .s{color:#BA2121}.pdoc-code .na{color:#687822}.pdoc-code .nb{color:#008000}.pdoc-code .nc{color:#0000FF; font-weight:bold}.pdoc-code .no{color:#880000}.pdoc-code .nd{color:#AA22FF}.pdoc-code .ni{color:#717171; font-weight:bold}.pdoc-code .ne{color:#CB3F38; font-weight:bold}.pdoc-code .nf{color:#0000FF}.pdoc-code .nl{color:#767600}.pdoc-code .nn{color:#0000FF; font-weight:bold}.pdoc-code .nt{color:#008000; font-weight:bold}.pdoc-code .nv{color:#19177C}.pdoc-code .ow{color:#AA22FF; font-weight:bold}.pdoc-code .w{color:#bbbbbb}.pdoc-code .mb{color:#666666}.pdoc-code .mf{color:#666666}.pdoc-code .mh{color:#666666}.pdoc-code .mi{color:#666666}.pdoc-code .mo{color:#666666}.pdoc-code .sa{color:#BA2121}.pdoc-code .sb{color:#BA2121}.pdoc-code .sc{color:#BA2121}.pdoc-code .dl{color:#BA2121}.pdoc-code .sd{color:#BA2121; font-style:italic}.pdoc-code .s2{color:#BA2121}.pdoc-code .se{color:#AA5D1F; font-weight:bold}.pdoc-code .sh{color:#BA2121}.pdoc-code .si{color:#A45A77; font-weight:bold}.pdoc-code .sx{color:#008000}.pdoc-code .sr{color:#A45A77}.pdoc-code .s1{color:#BA2121}.pdoc-code .ss{color:#19177C}.pdoc-code .bp{color:#008000}.pdoc-code .fm{color:#0000FF}.pdoc-code .vc{color:#19177C}.pdoc-code .vg{color:#19177C}.pdoc-code .vi{color:#19177C}.pdoc-code .vm{color:#19177C}.pdoc-code .il{color:#666666}</style>

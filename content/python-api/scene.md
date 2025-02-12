@@ -3,7 +3,7 @@ title: arena.scene
 parent: Python API
 has_children: true
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.2.0/arena">v1.2.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -42,6 +42,7 @@ Can create and execute various user-defined functions/tasks.</p>
 <li><strong>func user_left_callback</strong>:  Called on user id 'leave' MQTT messages received (optional).</li>
 <li><strong>func delete_obj_callback</strong>:  Called on object 'delete' MQTT messages received (optional).</li>
 <li><strong>func end_program_callback</strong>:  Called on MQTT disconnect (optional).</li>
+<li><strong>func on_chat_callback</strong>:  Called on chat messages received (optional).</li>
 <li><strong>bool video</strong>:  If true, request permissions for video conference (optional).</li>
 <li><strong>bool debug</strong>:  If true, print a log of all publish messages from this client (optional).</li>
 <li><strong>bool cli_args</strong>:  If true, require CLI standardized parameters (optional).</li>
@@ -53,7 +54,7 @@ Can create and execute various user-defined functions/tasks.</p>
                             <div id="Scene.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">Scene</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">host</span><span class="o">=</span><span class="s1">&#39;arenaxr.org&#39;</span>,</span><span class="param">	<span class="n">realm</span><span class="o">=</span><span class="s1">&#39;realm&#39;</span>,</span><span class="param">	<span class="n">network_latency_interval</span><span class="o">=</span><span class="mi">10000</span>,</span><span class="param">	<span class="n">on_msg_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">new_obj_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">user_join_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">user_left_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">delete_obj_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">end_program_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">video</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">debug</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">cli_args</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">headless</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">Scene</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">host</span><span class="o">=</span><span class="s1">&#39;arenaxr.org&#39;</span>,</span><span class="param">	<span class="n">realm</span><span class="o">=</span><span class="s1">&#39;realm&#39;</span>,</span><span class="param">	<span class="n">network_latency_interval</span><span class="o">=</span><span class="mi">10000</span>,</span><span class="param">	<span class="n">on_msg_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">new_obj_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">user_join_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">user_left_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">delete_obj_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">end_program_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">on_chat_callback</span><span class="o">=</span><span class="kc">None</span>,</span><span class="param">	<span class="n">video</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">debug</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">cli_args</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="n">headless</span><span class="o">=</span><span class="kc">False</span>,</span><span class="param">	<span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
