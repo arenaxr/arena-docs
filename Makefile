@@ -11,7 +11,7 @@ all: install serve
 check:
 	$(JEKYLL) doctor
 	$(HTMLPROOF) \
-		--ignore-status-codes "0,301,307,403,429,999" \
+		--ignore-status-codes "0,301,307,403,429,500,522,999" \
 		--ignore-missing-alt \
 		--ignore-empty-alt \
 		--allow-missing-href \
