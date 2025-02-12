@@ -16,7 +16,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_cylinder():
     my_cylinder = Cylinder(
@@ -26,7 +25,6 @@ def make_cylinder():
         material=Material(color=(255, 100, 16)),
     )
     scene.add_object(my_cylinder)
-
 
 scene.run_tasks()
 ```

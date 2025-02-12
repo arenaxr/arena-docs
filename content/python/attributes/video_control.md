@@ -24,7 +24,6 @@ video_control = VideoControl(
     video_loop=False,
 )
 
-
 @scene.run_once
 def make_video_box():
     my_box = Box(
@@ -35,7 +34,6 @@ def make_video_box():
         video_control=video_control,
     )
     scene.add_object(my_box)
-
 
 scene.run_tasks()
 ```

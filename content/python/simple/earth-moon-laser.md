@@ -12,7 +12,6 @@ Simple program to animate the earth and moon with a laser pointer.
 ```python
 from arena import *
 
-
 def click_pointer(scene, evt, msg):
     """Emit a 1-second laser line and target for each user click"""
     if evt.type == "mousedown":

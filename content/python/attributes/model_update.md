@@ -29,7 +29,6 @@ modelUpdate = {
     },
 }
 
-
 @scene.run_once
 def make_model_update():
     model_update = GLTF(
@@ -39,7 +38,6 @@ def make_model_update():
         modelUpdate=modelUpdate,
     )
     scene.add_object(model_update)
-
 
 scene.run_tasks()
 ```

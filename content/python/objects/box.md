@@ -18,7 +18,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_box():
     my_box = Box(
@@ -28,7 +27,6 @@ def make_box():
         material=Material(color=(50, 60, 200)),
     )
     scene.add_object(my_box)
-
 
 scene.run_tasks()
 ```

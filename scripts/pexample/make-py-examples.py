@@ -32,6 +32,7 @@ def create_python_markdown(folder, add_api=False):
                     wfile.write("grand_parent: Python Library\n")
                     wfile.write("---\n\n")
                     module_docstring = True
+                    last_line = None
                     for line in rfile:
                         if line.startswith("'''") or line.startswith('"""'):
                             if module_docstring:
@@ -43,8 +44,9 @@ def create_python_markdown(folder, add_api=False):
                                         f"\n`arena-py` API Reference for [{pascalcase(path.stem)}](/content/python-api/{folder}/{path.stem}).\n"
                                     )
                                 wfile.write("\n```python")
-                        else:
+                        elif line != last_line:
                             wfile.write(line)
+                        last_line = line
                     wfile.write("```\n")
                     wfile.close()
 

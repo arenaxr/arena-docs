@@ -23,7 +23,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_im():
     image_floor = Image(
@@ -39,7 +38,6 @@ def make_im():
         image_floor,
         material=Material(src="store/users/wiselab/images/abstract/downtown.png"),
     )
-
 
 scene.run_tasks()
 ```

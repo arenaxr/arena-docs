@@ -23,12 +23,10 @@ textinput = TextInput(
     placeholder="Favorite food here",
 )
 
-
 def evt_handler(scene, evt, msg):
     if evt.type == "textinput":
         display_name = scene.all_objects[evt.data.writer].displayName
         print(f"{display_name}'s favorite food is: {evt.data.text}!")
-
 
 @scene.run_once
 def make_tex_input_iso():
@@ -41,7 +39,6 @@ def make_tex_input_iso():
         textinput=textinput,
     )
     scene.add_object(my_iso)
-
 
 scene.run_tasks()
 ```

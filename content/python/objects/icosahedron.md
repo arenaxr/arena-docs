@@ -16,7 +16,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_iso():
     iso = Icosahedron(
@@ -26,7 +25,6 @@ def make_iso():
         material=Material(color=(10, 60, 255)),
     )
     scene.add_object(iso)
-
 
 scene.run_tasks()
 ```

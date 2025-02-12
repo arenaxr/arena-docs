@@ -16,7 +16,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_box():
     my_box = Roundedbox(
@@ -27,7 +26,6 @@ def make_box():
         radius=0.25,
     )
     scene.add_object(my_box)
-
 
 scene.run_tasks()
 ```

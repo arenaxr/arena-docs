@@ -24,7 +24,6 @@ blip = Blip(
     duration=500,
 )
 
-
 @scene.run_once
 def make_blip_robot():
     blip_robot = GLTF(
@@ -36,7 +35,6 @@ def make_blip_robot():
         blip=blip,
     )
     scene.add_object(blip_robot)
-
 
 scene.run_tasks()
 ```

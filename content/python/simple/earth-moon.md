@@ -12,20 +12,17 @@ Example of setting up and activating interactive animation.
 
 ```pythonfrom arena import *
 
-
 def end_program_callback(scene: Scene):
     global sceneParent, earth, moon
     scene.delete_object(moon)
     scene.delete_object(earth)
     scene.delete_object(sceneParent)
 
-
 # command line options
 scene = Scene(cli_args=True, end_program_callback=end_program_callback)
 app_position = scene.args["position"]
 app_rotation = scene.args["rotation"]
 app_scale = scene.args["scale"]
-
 
 @scene.run_once
 def main():
@@ -91,7 +88,6 @@ def main():
                          position=(-0.09, 1.30, -3.66), parent=sceneParent.object_id))
     scene.add_object(Box(object_id="box4", color=Color(100, 200, 50), scale=(0.2, 0.2, 0.2),
                          position=(3.31, 2.00, -0.97), parent=sceneParent.object_id))
-
 
 scene.run_tasks()
 ```

@@ -24,7 +24,6 @@ gltf_model_lod = GltfModelLod(
     retainCache=False,
 )
 
-
 @scene.run_once
 def make_lod_gltf():
     lod_gltf = GLTF(
@@ -34,7 +33,6 @@ def make_lod_gltf():
         gltf_model_lod=gltf_model_lod,
     )
     scene.add_object(lod_gltf)
-
 
 scene.run_tasks()
 ```

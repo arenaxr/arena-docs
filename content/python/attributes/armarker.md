@@ -24,7 +24,6 @@ armarker = Armarker(
     dynamic=True,
 )
 
-
 @scene.run_once
 def make_dynamic_box():
     dynamic_box = Box(
@@ -37,7 +36,6 @@ def make_dynamic_box():
         armarker=armarker,
     )
     scene.add_object(dynamic_box)
-
 
 scene.run_tasks()
 ```

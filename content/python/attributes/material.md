@@ -38,7 +38,6 @@ material = Material(
     transparent=True,
 )
 
-
 @scene.run_once
 def make_transparent_plane():
     my_plane = Plane(
@@ -48,7 +47,6 @@ def make_transparent_plane():
         material=material,
     )
     scene.add_object(my_plane)
-
 
 scene.run_tasks()
 ```

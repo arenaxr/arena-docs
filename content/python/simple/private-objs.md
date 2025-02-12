@@ -23,7 +23,6 @@ import random
 
 from arena import *
 
-
 def user_leave_callback(scene, cam, msg):
     print("left:", cam.object_id)
     print("Private Objects:", scene.get_private_objects())

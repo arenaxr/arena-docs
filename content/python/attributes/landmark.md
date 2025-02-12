@@ -25,7 +25,6 @@ landmark = Landmark(
     lookAtLandmark=True,
 )
 
-
 @scene.run_once
 def make_box():
     scene.add_object(
@@ -35,7 +34,6 @@ def make_box():
             landmark=landmark,
         )
     )
-
 
 scene.run_tasks()
 ```

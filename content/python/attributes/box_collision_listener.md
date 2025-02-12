@@ -21,7 +21,6 @@ box_collision_listener = BoxCollisionListener(
     enabled=True,
 )
 
-
 def box_event(scene, evt, msg):
     print(f"Event {evt.type} received on object {evt.object_id}!")
     if evt.type == "collision-start":
@@ -33,7 +32,6 @@ def box_event(scene, evt, msg):
         add_temp_ball(scene, evt["data"]["position"], "#ff0000")
         add_temp_ball(scene, evt["data"]["targetPosition"], "#777777")
 
-
 def add_temp_ball(scene, position, color):
     scene.add_object(
         Sphere(
@@ -43,7 +41,6 @@ def add_temp_ball(scene, position, color):
             material=Material(color=Color(color)),
         )
     )
-
 
 @scene.run_once
 def make_box_collision():
@@ -59,7 +56,6 @@ def make_box_collision():
         box_collision_listener=box_collision_listener,
     )
     scene.add_object(box_collision)
-
 
 scene.run_tasks()
 ```

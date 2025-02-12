@@ -18,7 +18,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_bunny_pcd():
     bunny_pcd = PcdModel(
@@ -30,7 +29,6 @@ def make_bunny_pcd():
         url="/store/users/wiselab/pcd-models/bunny.pcd",
     )
     scene.add_object(bunny_pcd)
-
 
 scene.run_tasks()
 ```

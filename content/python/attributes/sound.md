@@ -25,7 +25,6 @@ sound = Sound(
     on="mousedown",
 )
 
-
 @scene.run_once
 def make_music_box():
     my_box = Box(
@@ -37,7 +36,6 @@ def make_music_box():
         sound=sound,
     )
     scene.add_object(my_box)
-
 
 scene.run_tasks()
 ```

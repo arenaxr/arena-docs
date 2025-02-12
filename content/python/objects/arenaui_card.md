@@ -19,7 +19,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def setup_scene():
     # Add a simple info card with text and image
@@ -50,7 +49,6 @@ def setup_scene():
         look_at="#my-camera",
     )
     scene.add_object(hello_card)
-
 
 scene.run_tasks()
 ```

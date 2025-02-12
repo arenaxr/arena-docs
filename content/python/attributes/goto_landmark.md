@@ -23,7 +23,6 @@ goto_landmark = GotoLandmark(
     on="mousedown",
 )
 
-
 @scene.run_once
 def make_landmark_teleport():
     landmark_sky = Object(
@@ -41,7 +40,6 @@ def make_landmark_teleport():
         goto_landmark=goto_landmark,
     )
     scene.add_object(landmark_teleport)
-
 
 scene.run_tasks()
 ```

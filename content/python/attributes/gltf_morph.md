@@ -48,7 +48,6 @@ xr_logo = GLTF(
     persist=True,
 )
 
-
 @scene.run_forever(interval_ms=1000)
 def close_xr_eyes():
     global t
@@ -64,7 +63,6 @@ def close_xr_eyes():
         print("Morph Target Open Eye")
 
     t += 1
-
 
 scene.run_tasks()
 ```

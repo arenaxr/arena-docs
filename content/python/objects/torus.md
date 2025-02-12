@@ -16,7 +16,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_torus():
     my_torus = Torus(
@@ -26,7 +25,6 @@ def make_torus():
         material=Material(color=(100, 70, 40)),
     )
     scene.add_object(my_torus)
-
 
 scene.run_tasks()
 ```

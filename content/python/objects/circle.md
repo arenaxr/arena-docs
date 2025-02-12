@@ -16,7 +16,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_circle():
     my_circle = Circle(
@@ -27,7 +26,6 @@ def make_circle():
         material=Material(color=(70, 0, 100)),
     )
     scene.add_object(my_circle)
-
 
 scene.run_tasks()
 ```

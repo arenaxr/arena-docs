@@ -16,7 +16,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_dod():
     dod = Dodecahedron(
@@ -26,7 +25,6 @@ def make_dod():
         material=Material(color=(30, 255, 80)),
     )
     scene.add_object(dod)
-
 
 scene.run_tasks()
 ```

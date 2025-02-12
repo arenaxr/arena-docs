@@ -55,13 +55,11 @@ sametab = Box(
     goto_url=goto_sametab,
 )
 
-
 @scene.run_once
 def make_urls():
     scene.add_object(popup)
     scene.add_object(newtab)
     scene.add_object(sametab)
-
 
 scene.run_tasks()
 ```

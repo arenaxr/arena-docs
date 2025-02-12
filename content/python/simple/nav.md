@@ -70,8 +70,6 @@ def click_handler(scene,evt,msg):
         waypoints.append((5.6,0.1,-13.5))
         drawpath( waypoints,-1, False)
 
-
-
 #@scene.run_forever(interval_ms=500)
 @scene.run_once
 def draw_waypoints():

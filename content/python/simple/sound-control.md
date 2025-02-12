@@ -14,7 +14,6 @@ from arena import *
 
 scene = Scene(cli_args=True)
 
-
 def click_handler(scene, evt, msg):
     global earth, button_play, button_pause, button_stop
     if evt.type == "mousedown":
@@ -103,7 +102,6 @@ def main():
         color=(0, 0, 0),
     )
     scene.add_object(button_stop_text)
-
 
 scene.run_tasks()
 ```

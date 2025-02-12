@@ -18,7 +18,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_seal_splat():
     seal_splat = GaussianSplatting(
@@ -27,7 +26,6 @@ def make_seal_splat():
         src="/store/splats/luma-seal.splat",
     )
     scene.add_object(seal_splat)
-
 
 scene.run_tasks()
 ```

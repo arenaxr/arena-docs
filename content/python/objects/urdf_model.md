@@ -32,12 +32,10 @@ athlete_model = UrdfModel(
     url="store/users/npereira/urdf/T12/urdf/T12_flipped.URDF",
 )
 
-
 @scene.run_once
 def main():
     # add the model
     scene.add_object(athlete_model)
-
 
 @scene.run_forever(interval_ms=100)
 def bend_joints():
@@ -56,7 +54,6 @@ def bend_joints():
     # update joints
     athlete_model.update_attributes(joints=", ".join(joints))
     scene.update_object(athlete_model)
-
 
 # start tasks
 scene.run_tasks()

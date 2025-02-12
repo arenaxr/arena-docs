@@ -13,11 +13,9 @@ Example of setting up and activating interactive animation.
 ```python
 from arena import *
 
-
 def end_program_callback(scene):
     global sceneParent
     scene.delete_object(sceneParent)
-
 
 # command line options
 arena = Scene(cli_args=True, end_program_callback=end_program_callback)
@@ -34,7 +32,6 @@ button_scale = (.3, .3, .3)
 statue_position = (0, .6, 0)
 statue_hide_position = (0, -10, 0)
 statue_hide_scale = (.0001, .0001, .0001)
-
 
 def start_click(scene, evt, msg):
     global statue, started_rotate
@@ -70,7 +67,6 @@ def start_click(scene, evt, msg):
 
         scene.update_object(statue, clickable=True, evt_handler=start_rotate)
 
-
 def start_rotate(scene, evt, msg):
     global started_rotate, statue
 
@@ -89,7 +85,6 @@ def start_rotate(scene, evt, msg):
             scale=statue_scale
         )
         started_rotate = True
-
 
 @arena.run_once
 def main():
@@ -134,7 +129,6 @@ def main():
         parent=sceneParent.object_id,
     )
     arena.add_object(statue)
-
 
 arena.run_tasks()
 ```

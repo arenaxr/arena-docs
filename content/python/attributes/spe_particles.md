@@ -24,7 +24,6 @@ scene = Scene(host="arenaxr.org", scene="example")
 
 position = Position(0, 0, -3)
 
-
 @scene.run_once
 def make_fire():
     sparks = Object(
@@ -83,7 +82,6 @@ def make_fire():
         )
     )
     scene.add_object(flames)
-
 
 scene.run_tasks()
 ```

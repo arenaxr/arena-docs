@@ -18,7 +18,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def setup_scene():
     # Add a popup prompt with single button
@@ -37,7 +36,6 @@ def setup_scene():
         evt_handler=prompt_handler,
     )
     scene.add_object(prompt)
-
 
 scene.run_tasks()
 ```

@@ -26,7 +26,6 @@ dynamic_body = DynamicBody(
     type="dynamic",
 )
 
-
 @scene.run_once
 def make_drop_box():
     obj = Sphere(
@@ -35,7 +34,6 @@ def make_drop_box():
         dynamic_body=dynamic_body,
     )
     scene.add_object(obj)
-
 
 scene.run_tasks()
 ```

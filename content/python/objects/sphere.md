@@ -16,7 +16,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_sphere():
     my_sphere = Sphere(
@@ -26,7 +25,6 @@ def make_sphere():
         material=Material(color=(0, 255, 255)),
     )
     scene.add_object(my_sphere)
-
 
 scene.run_tasks()
 ```

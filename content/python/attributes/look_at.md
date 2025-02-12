@@ -25,7 +25,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_rotating_image():
     rotating_image = Image(
@@ -35,7 +34,6 @@ def make_rotating_image():
         look_at="#my-camera",
     )
     scene.add_object(rotating_image)
-
 
 scene.run_tasks()
 ```

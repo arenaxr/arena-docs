@@ -22,7 +22,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_light():
     light = Light(
@@ -34,7 +33,6 @@ def make_light():
         color=(255, 0, 0),
     )
     scene.add_object(light)
-
 
 scene.run_tasks()
 ```

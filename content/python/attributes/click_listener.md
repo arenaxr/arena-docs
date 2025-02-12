@@ -20,13 +20,11 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 def click(scene, evt, msg):
     if evt.type == "mouseup":
         print("mouseup!")
     elif evt.type == "mousedown":
         print("mousedown!")
-
 
 @scene.run_once
 def main():
@@ -37,7 +35,6 @@ def main():
         evt_handler=click,
     )
     scene.add_object(my_tet)
-
 
 scene.run_tasks()
 ```

@@ -18,7 +18,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_vr_controller_vive():
     vr_controller_vive = ObjModel(
@@ -29,7 +28,6 @@ def make_vr_controller_vive():
         mtl="store/models/vr_controller_vive.mtl",
     )
     scene.add_object(vr_controller_vive)
-
 
 scene.run_tasks()
 ```

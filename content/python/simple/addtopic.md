@@ -15,16 +15,13 @@ import json
 
 from arena import *
 
-
 def objects_callback(_scene, _obj, msg):
     print("Object message: "+str(msg))
-
 
 def secondary_callback(_scene, _obj, msg):
     print("-----")
     print(f"Secondary message:\nTopic: {str(msg.topic)}\nPayload: {json.loads(msg.payload)}")
     print("-----")
-
 
 # subscribe to objects
 scene = Scene(host="arenaxr.org", scene="example", on_msg_callback=objects_callback)

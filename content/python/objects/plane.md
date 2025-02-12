@@ -16,7 +16,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_plane():
     my_plane = Plane(
@@ -26,7 +25,6 @@ def make_plane():
         material=Material(color=(200, 200, 40)),
     )
     scene.add_object(my_plane)
-
 
 scene.run_tasks()
 ```

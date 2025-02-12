@@ -26,7 +26,6 @@ impulse = Impulse(
     force=(1, 50, 1),
 )
 
-
 @scene.run_once
 def make_bouncy_ball():
     obj = Sphere(
@@ -38,7 +37,6 @@ def make_bouncy_ball():
         impulse=impulse,
     )
     scene.add_object(obj)
-
 
 scene.run_tasks()
 ```

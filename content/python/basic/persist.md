@@ -14,7 +14,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_persisted_sphere():
     my_ball = Sphere(
@@ -23,7 +22,6 @@ def make_persisted_sphere():
         persist=True,
     )
     scene.add_object(my_ball)
-
 
 scene.run_tasks()
 ```

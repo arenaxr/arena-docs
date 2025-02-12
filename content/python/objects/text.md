@@ -22,7 +22,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_text():
     my_text = Text(
@@ -35,7 +34,6 @@ def make_text():
         color=(100, 255, 255),
     )
     scene.add_object(my_text)
-
 
 scene.run_tasks()
 ```

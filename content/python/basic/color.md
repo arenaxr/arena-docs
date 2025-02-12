@@ -16,7 +16,6 @@ scene = Scene(host="arenaxr.org", scene="example")
 
 color = (100, 200, 100)  # Color(100,200,100) works too
 
-
 @scene.run_once
 def make_colored_iso():
     my_iso = Icosahedron(
@@ -25,7 +24,6 @@ def make_colored_iso():
         material=Material(color=color),
     )
     scene.add_object(my_iso)
-
 
 scene.run_tasks()
 ```

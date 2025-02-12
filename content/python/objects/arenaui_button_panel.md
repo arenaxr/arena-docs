@@ -18,7 +18,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def setup_scene():
     # Add a button panel, with two sets of buttons
@@ -46,7 +45,6 @@ def setup_scene():
         evt_handler=button_handler,
     )
     scene.add_object(button_panel)
-
 
 scene.run_tasks()
 ```

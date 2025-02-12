@@ -18,7 +18,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_torusknot():
     my_torusknot = TorusKnot(
@@ -28,7 +27,6 @@ def make_torusknot():
         material=Material(color=(0, 100, 40)),
     )
     scene.add_object(my_torusknot)
-
 
 scene.run_tasks()
 ```

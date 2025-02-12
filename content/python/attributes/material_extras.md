@@ -31,7 +31,6 @@ material_extras = MaterialExtras(
     transparentOccluder=True,
 )
 
-
 @scene.run_once
 def make_robot():
     robot = GLTF(
@@ -42,7 +41,6 @@ def make_robot():
         material_extras=material_extras,
     )
     scene.add_object(robot)
-
 
 scene.run_tasks()
 ```

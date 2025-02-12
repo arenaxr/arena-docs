@@ -16,7 +16,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_oct():
     my_oct = Octahedron(
@@ -26,7 +25,6 @@ def make_oct():
         material=Material(color=(30, 100, 40)),
     )
     scene.add_object(my_oct)
-
 
 scene.run_tasks()
 ```

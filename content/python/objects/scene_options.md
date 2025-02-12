@@ -18,7 +18,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def update_environment():
     opt_obj = Object(
@@ -29,7 +28,6 @@ def update_environment():
     opt_obj.data["env-presets"] = {"preset": "arches"}
     del opt_obj.data.object_type
     scene.add_object(opt_obj)
-
 
 scene.run_tasks()
 ```

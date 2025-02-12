@@ -16,7 +16,6 @@ scene = Scene(host="arenaxr.org", scene="example")
 
 prompt = None
 
-
 @scene.run_once
 def setup_scene():
     # Add a simple info card with text and image
@@ -92,7 +91,6 @@ def setup_scene():
         evt_handler=button_handler,
     )
     scene.add_object(button_panel)
-
 
 scene.run_tasks()
 ```

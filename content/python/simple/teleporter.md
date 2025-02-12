@@ -18,10 +18,8 @@ USER_HEIGHT = 1.6
 UPDATE_INTERVAL = 100
 TELEPORT_THRES = 1.0
 
-
 def rando():
     return float(random.randint(-100000, 100000)) / 3000
-
 
 class Teleporter(Object):
     def __init__(self, scene, pos_src: Position, pos_dest: Position):
@@ -55,7 +53,6 @@ class Teleporter(Object):
         self.scene.add_object(self.teleporter_dest)
         self.scene.add_object(self.src_text)
         self.scene.add_object(self.dest_text)
-
 
 scene = Scene(host="arenaxr.org", scene="example")
 

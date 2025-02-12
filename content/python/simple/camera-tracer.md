@@ -23,7 +23,6 @@ class CameraState(Object):
         self.prev_pos = None
         self.line_color = Color(
                 random.randint(0,255),
-                random.randint(0,255),
                 random.randint(0,255)
             )
 

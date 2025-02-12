@@ -18,7 +18,6 @@ scene = Scene(host="arenaxr.org", scene="example")
 
 scale = (1, 2, 1)  # Scale(1,2,1) works too
 
-
 @scene.run_once
 def make_box():
     my_box = Box(
@@ -27,7 +26,6 @@ def make_box():
         scale=scale,
     )
     scene.add_object(my_box)
-
 
 scene.run_tasks()
 ```

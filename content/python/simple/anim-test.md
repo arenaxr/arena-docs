@@ -26,7 +26,6 @@ def make_xr_logo():
     )
     scene.add_object(xr_logo)
 
-
 @scene.run_forever(interval_ms=2500)
 def periodic():
     global x
@@ -96,7 +95,6 @@ def periodic():
         print( "Morph Target Open Eye")
 
     x=x+1
-
 
 scene.run_tasks()
 ```

@@ -29,7 +29,6 @@ SOCK_THREAD_NAME = "unsecured publisher"
 scene = Scene(host="arenaxr.org", scene="test")
 print("opened secured mqtt socket.")
 
-
 def background_task():
     print("opening unsecured generic socket...")
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -44,7 +43,6 @@ def background_task():
         # block a bit
         time.sleep(0.01)
 
-
 def publish_unauthenticated_json(data):
     print(f"received unauthenticated {data}")
     payload = json.loads(data)
@@ -53,7 +51,6 @@ def publish_unauthenticated_json(data):
     print("publishing on secured mqtt socket...")
     scene.mqttc.publish(topic, json.dumps(payload), qos=0)
 
-
 @scene.run_once
 def load_thread():
     # create and start the daemon thread
@@ -61,7 +58,6 @@ def load_thread():
     daemon = threading.Thread(target=background_task, daemon=True, name=SOCK_THREAD_NAME)
     daemon.start()
     print("main thread is free.")
-
 
 scene.run_tasks()
 ```

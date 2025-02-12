@@ -18,7 +18,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_test_scene():
     test_scene = ThreejsScene(
@@ -27,7 +26,6 @@ def make_test_scene():
         url="/store/users/wiselab/threejs-scenes/simple_scene.json",
     )
     scene.add_object(test_scene)
-
 
 scene.run_tasks()
 ```

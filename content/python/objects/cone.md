@@ -16,7 +16,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_cone():
     my_cone = Cone(
@@ -26,7 +25,6 @@ def make_cone():
         material=Material(color=(60, 200, 104)),
     )
     scene.add_object(my_cone)
-
 
 scene.run_tasks()
 ```

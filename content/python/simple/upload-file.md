@@ -14,7 +14,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def upload():
     url_glb = scene.upload_store_file("/Users/username/Desktop/abox.glb")
@@ -28,7 +27,6 @@ def upload():
     url_mp4 = scene.upload_store_file("/Users/username/Desktop/qqd.mp4")
     if url_mp4:
         scene.add_object(Plane(persist=True, position=Position(0, 2, -4), material=Material(src=url_mp4)))
-
 
 scene.run_tasks()
 ```

@@ -20,7 +20,6 @@ jitsi_video = JitsiVideo(
     displayName="my-name",
 )
 
-
 @scene.run_once
 def make_video_stream():
     video_stream = Box(
@@ -30,7 +29,6 @@ def make_video_stream():
         jitsi_video=jitsi_video,
     )
     scene.add_object(video_stream)
-
 
 scene.run_tasks()
 ```

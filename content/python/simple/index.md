@@ -7,4 +7,5 @@ parent: Python Library
 
 # Simple Python Program Examples
 
-This section and the table oof contents below includes multiple examples of ARENA Python programs to demonsrate simple tasks
+This section and the table of contents below includes multiple examples of ARENA Python programs.
+These are intended to be demonstrations of simple programmatic control and interoperability.

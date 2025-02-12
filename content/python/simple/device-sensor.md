@@ -16,7 +16,6 @@ from arena.device import Device
 device = Device(host="arenaxr.org", device="robot1")
 CUSTOM_TOPIC = f"{device.realm}/d/{device.namespace}/{device.device}/rtc1"
 
-
 def on_recv_message(client, userdata, msg):
     try:
         payload_str = msg.payload.decode("utf-8", "ignore")
@@ -25,9 +24,7 @@ def on_recv_message(client, userdata, msg):
     except:
         pass
 
-
 device.message_callback_add(CUSTOM_TOPIC, on_recv_message)
-
 
 @device.run_forever(interval_ms=1000)
 def on_second_publ_message():
@@ -36,7 +33,6 @@ def on_second_publ_message():
     payload["timestamp"] = d
     payload = json.dumps(payload)
     device.publish(CUSTOM_TOPIC, payload)
-
 
 device.run_tasks()
 ```

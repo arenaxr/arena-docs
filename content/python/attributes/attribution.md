@@ -26,7 +26,6 @@ attribution = Attribution(
     title="Mammuthus primigenius",
 )
 
-
 @scene.run_once
 def make_gltf_model_blumbach():
     gltf_model_blumbach = GLTF(
@@ -37,7 +36,6 @@ def make_gltf_model_blumbach():
         attribution=attribution,
     )
     scene.add_object(gltf_model_blumbach)
-
 
 scene.run_tasks()
 ```

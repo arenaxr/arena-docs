@@ -20,7 +20,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_thickline():
     thickline = Thickline(
@@ -38,7 +37,6 @@ def make_thickline():
             "path": "0 0 0, 0 0 1",
         },
     )
-
 
 scene.run_tasks()
 ```

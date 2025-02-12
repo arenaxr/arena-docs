@@ -43,7 +43,6 @@ xr_logo = GLTF(
     persist=True,
 )
 
-
 @scene.run_forever(interval_ms=2000)
 def wave_or_rotate():
     global t
@@ -59,7 +58,6 @@ def wave_or_rotate():
         print("rotate")
 
     t += 1
-
 
 scene.run_tasks()
 ```

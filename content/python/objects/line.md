@@ -18,7 +18,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_line():
     line = Line(
@@ -36,7 +35,6 @@ def make_line():
             "color": "#00FF00",
         },
     )
-
 
 scene.run_tasks()
 ```

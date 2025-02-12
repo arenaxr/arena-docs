@@ -24,7 +24,6 @@ shadow = Shadow(
     receive=True,
 )
 
-
 @scene.run_once
 def make_shadow_model():
     shadow_model = GLTF(
@@ -51,7 +50,6 @@ def make_shadow_model():
         type="point",
     )
     scene.add_object(shadow_light)
-
 
 scene.run_tasks()
 ```

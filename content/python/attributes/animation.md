@@ -43,7 +43,6 @@ my_torus3 = Torus(
     persist=True,
 )
 
-
 @scene.run_once
 def move_torus1():
     my_torus1.dispatch_animation(
@@ -67,7 +66,6 @@ def move_torus1():
     )
     scene.update_object(my_torus1)
 
-
 @scene.run_once
 def move_torus2():
     my_torus2.dispatch_animation(
@@ -80,7 +78,6 @@ def move_torus2():
         )
     )
     scene.update_object(my_torus2)
-
 
 @scene.run_once
 def move_torus3():
@@ -95,16 +92,13 @@ def move_torus3():
     )
     scene.update_object(my_torus3)
 
-
 def cancel_torus1_move():
     print("Cancelling animation and jumping torus1 to new location")
     scene.update_object(my_torus1, position=Position(-8, 2, -5))  # Move to new spot
 
-
 def change_torus2_color():
     print("Changing torus2 color (should not affect animation")
     scene.update_object(my_torus2, material=Material(color=Color(255, 0, 0)))  # Change color to red
-
 
 def change_torus3_animation():
     print(
@@ -122,7 +116,6 @@ def change_torus3_animation():
         )
     )
     scene.update_object(my_torus3)
-
 
 scene.add_object(my_torus1)
 scene.add_object(my_torus2)

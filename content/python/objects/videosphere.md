@@ -16,7 +16,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_videosphere():
     my_videosphere = Videosphere(
@@ -26,7 +25,6 @@ def make_videosphere():
         src="store/users/wiselab/images/360falls.mp4",
     )
     scene.add_object(my_videosphere)
-
 
 scene.run_tasks()
 ```

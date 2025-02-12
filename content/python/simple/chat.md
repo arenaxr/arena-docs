@@ -16,7 +16,6 @@ probably be stripped.
 ```python
 import arena
 
-
 def chat_handler(_scene, chatmsg, _rawmsg):
     print(f"Chat message from {chatmsg.dn} ({chatmsg.object_id}): {chatmsg.text.strip()}")
 

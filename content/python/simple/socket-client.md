@@ -18,13 +18,11 @@ from arena import Box, Material
 SOCK_SERVER_HOST = "localhost"
 SOCK_SERVER_PORT = 8888
 
-
 def randcolor():
     x = random.randint(0, 255)
     y = random.randint(0, 255)
     z = random.randint(0, 255)
     return (x, y, z)
-
 
 def main():
     # open socket connection to server
@@ -41,7 +39,6 @@ def main():
     # close socket connection to server
     sock.close()
     print("closed unsecured generic socket.")
-
 
 if __name__ == "__main__":
     main()

@@ -25,7 +25,6 @@ multisrc = Multisrc(
     srcs="side1.png,side2.png,side3.png,side4.png,side5.png,side6.png",
 )
 
-
 @scene.run_once
 def make_die1():
     die1 = Box(
@@ -35,7 +34,6 @@ def make_die1():
         multisrc=multisrc,
     )
     scene.add_object(die1)
-
 
 scene.run_tasks()
 ```

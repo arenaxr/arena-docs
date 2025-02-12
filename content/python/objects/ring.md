@@ -16,7 +16,6 @@ from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
-
 @scene.run_once
 def make_ring():
     my_ring = Ring(
@@ -26,7 +25,6 @@ def make_ring():
         material=Material(color=(255, 0, 255)),
     )
     scene.add_object(my_ring)
-
 
 scene.run_tasks()
 ```
