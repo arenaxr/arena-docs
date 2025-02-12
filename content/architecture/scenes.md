@@ -11,7 +11,7 @@ ARENA scenes include 3D content, configuration parameters, applications with sha
 
 ## Scene Objects
 
-ARENA scenes are a collection of <i>Entities</i> to which <i>Components</i> can be attached, following [A-Frame’s Entity-Component-System (ECS) architecture](https://aframe.io/docs/1.5.0/introduction/entity-component-system.html). We support the majority of A-Frames’s primitives (e.g., geometries like boxes, circles, spheres) and components (attributes that can be attached to objects, such as position, rotation, material, sound). We also added ARENA-specific components for AR markers, programs, networked events, and options. All ARENA objects have well-defined schemas, which are the basis for the over-the-wire message format shown below (Figure 2) and are transmitted over the PubSub.
+ARENA scenes are a collection of <i>Entities</i> to which <i>Components</i> can be attached, following [A-Frame’s Entity-Component-System (ECS) architecture](https://aframe.io/docs/1.5.0/introduction/entity-component-system.html). We support the majority of A-Frames’s primitives (e.g., geometries like boxes, circles, spheres) and components (attributes that can be attached to objects, such as position, rotation, material, sound). We also added ARENA-specific components for AR markers, programs, networked events, and options. All ARENA objects have well-defined JSON schemas, which are the basis for the over-the-wire JSON message format shown below (Figure 2) and are transmitted over the PubSub.
 
 ```json
 {

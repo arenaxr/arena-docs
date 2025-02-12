@@ -3,7 +3,7 @@ title: arena.attributes.rotation
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.1.0/arena">v1.1.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.2.0/arena">v1.2.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -148,7 +148,7 @@ Usage: <code>rotation=Rotation(...)</code> or <code>rotation=Rotation(x,y,z,w)</
     </div>
     <a class="headerlink" href="#Rotation.e2q"></a>
     
-            <div class="docstring"><p>euler (degrees) to quaternions</p>
+            <div class="docstring"><p>euler (degrees) to quaternions per THREE.js Quaternion.setFromEuler, XYZ order</p>
 </div>
 
 

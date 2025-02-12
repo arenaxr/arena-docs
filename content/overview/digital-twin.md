@@ -76,8 +76,8 @@ All this so far helps you Twin your physical space in 3D, but now, let us add so
     - System components which are hidden for aesthetics, but difficult to find for maintenance.
 - **Text I/O**: There are multiple ways to **render text, data,** and allow **user input**. Try these strategies:
     - [ARENA UI Panels](/content/3d-content/ui)
-    - [Text Display](/content/python/objects#text)
-    - [Text Input](/content/python/attributes#text-input)
+    - [Text Display](/content/python/objects/text)
+    - [Text Input](/content/python/attributes/textinput)
     - [Object Click Events](/content/python/events#click-events)
 - **Text Color**: Pay attention to the overall colors of your room model, you want any text you display to be **well contrasted**. ARENA UI Panels have **light or dark themes**, and text in general can be **any color**.
 - **Portal/Videosphere**: [Videospheres and Portals](/content/overview/panoramic) are a nice to have for hybrid interaction and can align well to a 3D model twin, but consider your goal. Do you want to host a hybrid meeting, or provide an XR interaction of your valuable data?
