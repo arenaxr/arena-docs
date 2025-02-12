@@ -39,14 +39,14 @@ See [Scene API Spec](/content/python-api/scene).
 
 ### Scene Object Callbacks
 
-See [Scene Callbacks](callbacks.md).
+See [Scene Callbacks](callbacks/).
 
-- `on_msg_callback`: See [Scene Callbacks](callbacks#on_msg_callback)
-- `new_obj_callback`: See [Scene Callbacks](callbacks#new_obj_callback)
-- `user_join_callback`: See [Scene Callbacks](callbacks#user_join_callback)
-- `user_left_callback`: See [Scene Callbacks](callbacks#user_left_callback)
-- `delete_obj_callback`: See [Scene Callbacks](callbacks#delete_obj_callback)
-- `end_program_callback`: See [Scene Callbacks](callbacks#end_program_callback)
+- `on_msg_callback`: See [Scene Callbacks](callbacks/msg_callbacks)
+- `new_obj_callback`: See [Scene Callbacks](callbacks/object_callbacks)
+- `user_join_callback`: See [Scene Callbacks](callbacks/user_callbacks)
+- `user_left_callback`: See [Scene Callbacks](callbacks/user_callbacks)
+- `delete_obj_callback`: See [Scene Callbacks](callbacks/object_callbacks)
+- `end_program_callback`: See [Scene Callbacks](callbacks/program_callbacks)
 
 ## Environment Variable Args
 

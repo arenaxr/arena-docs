@@ -593,7 +593,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [p-gltf]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/gltf_model.py
 [p-goto-landmark]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_landmark.py
 [p-goto-url]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_url.py
-[p-hands]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/hands.py
+[p-hands]: https://github.com/arenaxr/arena-py/blob/master/examples/simple/hands.py
 [p-icosahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/icosahedron.py
 [p-image]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/image.py
 [p-impulse]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/impulse.py
