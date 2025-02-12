@@ -1,11 +1,11 @@
 ---
-title: Chat
+title: ChatCallbacks
 layout: default
-parent: Simple
+parent: Callbacks
 grand_parent: Python Library
 ---
 
-# Chat
+# Chat Callback
 
 Extremely basic example of setting a chat message handler to echo
 chat messages typed in the scene.

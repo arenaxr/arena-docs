@@ -64,6 +64,7 @@ def create_python_markdown(folder, add_api=False):
 
 
 create_python_markdown("basic")
+create_python_markdown("callbacks")
 create_python_markdown("objects", add_api)
 create_python_markdown("attributes", add_api)
 create_python_markdown("simple")
