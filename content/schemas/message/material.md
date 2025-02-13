@@ -36,12 +36,12 @@ Material Attributes
 |**height**|integer|```256```|Height of video (in pixels), if defining a video texture. Requires shader: standard or flat.|No|
 |**metalness**|number|```0```|How metallic the material is from 0 to 1. Requires shader: standard.|No|
 |**npot**|boolean|```False```|Use settings for non-power-of-two (NPOT) texture.|No|
-|**offset**|object|```{'x': 0, 'y': 0}```|Texture offset to be used.|No|
+|**offset**|[vector2](vector2)|```{'x': 0, 'y': 0}```|Texture offset to be used.|No|
 |**opacity**|number|```1```|Extent of transparency. If the transparent property is not true, then the material will remain opaque and opacity will only affect color.|No|
 |**reflectivity**|number|```0.9```|How much the environment map affects the surface. Requires shader: phong.|No|
 |**refract**|boolean|```False```|Whether the defined envMap should refract. Requires shader: phong.|No|
 |**refractionRatio**|number|```0.98```|1/refractive index of the material. Requires shader: phong.|No|
-|**repeat**|object|```{'x': 1, 'y': 1}```|How many times a texture (defined by src) repeats in the X and Y direction.|No|
+|**repeat**|[vector2](vector2)|```{'x': 1, 'y': 1}```|How many times a texture (defined by src) repeats in the X and Y direction.|No|
 |**roughness**|number|```0```|How rough the material is from 0 to 1. A rougher material will scatter reflected light in more directions than a smooth material. Requires shader: standard.|No|
 |**shader**|string; One of: ```['flat', 'standard', 'phong']```|```'standard'```|Which material to use. Defaults to the standard material. Can be set to the flat material or to a registered custom shader material.|No|
 |**shininess**|number|```30```|How shiny the specular highlight is; a higher value gives a sharper highlight. Requires shader: phong.|No|

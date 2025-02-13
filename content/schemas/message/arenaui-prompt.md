@@ -64,6 +64,7 @@ ARENAUI Prompt Attributes
 |**impulse**|[impulse](impulse)||Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires click-listener and physics.|No|
 |**landmark**|[landmark](landmark)||Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists).|No|
 |**material-extras**|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order.|No|
+|**model-container**|[model-container](model-container)||Overrides absolute size for a 3D model. The model can be a glTF, glb, obj, or any other supported format. The model will be rescaled to fit to the sizes specified for each axes.|No|
 |**shadow**|[shadow](shadow)||The shadow component enables shadows for an entity and its children. Adding the shadow component alone is not enough to display shadows in your scene. We must have at least one light with castShadow: true enabled.|No|
 |**sound**|[sound](sound)||The sound component defines the entity as a source of sound or audio. The sound component can be positional and is thus affected by the component's position.|No|
 |**submodel-parent**|string|```''```|When this object is parented to a hierarchical model, attaches to a named subcomponent of that model instead of the root position|No|
