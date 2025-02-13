@@ -1,6 +1,6 @@
 ---
-title: arena.objects.hand_left
-parent: arena.objects
+title: arena.attributes.model_container
+parent: arena.attributes
 grand_parent: Python API
 ---
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
@@ -8,65 +8,45 @@ grand_parent: Python API
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../arena.html">arena</a><wbr>.<a href="./../objects.html">objects</a><wbr>.hand_left    </h1>
+<a href="./../arena.html">arena</a><wbr>.<a href="./../attributes.html">attributes</a><wbr>.model_container    </h1>
 
                 
                 
                 
                 
             </section>
-                <section id="HandLeft">
+                <section id="ModelContainer">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">HandLeft</span><wbr>(<span class="base"><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></span>):
+    <span class="name">ModelContainer</span><wbr>(<span class="base"><a href="attribute.html#Attribute">arena.attributes.attribute.Attribute</a></span>):
 
         
     </div>
-    <a class="headerlink" href="#HandLeft"></a>
+    <a class="headerlink" href="#ModelContainer"></a>
     
-            <div class="docstring"><p>HandLeft object class to manage its properties in the ARENA: Hand is the (left or right) hand metadata pose and controller type of the user avatar.</p>
+            <div class="docstring"><p>ModelContainer attribute class to manage its properties in the ARENA: Overrides absolute size for a 3D model. The model can be a glTF, glb, obj, or any other supported format. The model will be rescaled to fit to the sizes specified for each axes.
+Usage: <code>model_container=ModelContainer(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>str dep</strong>:  Camera object_id this hand belongs to. Defaults to '' (optional)</li>
-<li><strong>str url</strong>:  Path to user avatar hand model. Defaults to 'static/models/hands/valve_index_left.gltf' (optional)</li>
+<li><strong>bool uniform</strong>:  Whether to scale the model uniformly. Defaults to 'True' (optional)</li>
+<li><strong>float x</strong>:  Size of the model in the x-axis. Defaults to '1' (optional)</li>
+<li><strong>float y</strong>:  Size of the model in the y-axis. Defaults to '1' (optional)</li>
+<li><strong>float z</strong>:  Size of the model in the z-axis. Defaults to '1' (optional)</li>
 </ul>
 </div>
 
 
-                            <div id="HandLeft.__init__" class="classattr">
+                            <div id="ModelContainer.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">HandLeft</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">ModelContainer</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
-    <a class="headerlink" href="#HandLeft.__init__"></a>
-    
-    
-
-                            </div>
-                            <div id="HandLeft.object_type" class="classattr">
-                                <div class="attr variable">
-            <span class="name">object_type</span>        =
-<span class="default_value">&#39;handLeft&#39;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#HandLeft.object_type"></a>
-    
-    
-
-                            </div>
-                            <div id="HandLeft.camera" class="classattr">
-                                <div class="attr variable">
-            <span class="name">camera</span>
-
-        
-    </div>
-    <a class="headerlink" href="#HandLeft.camera"></a>
+    <a class="headerlink" href="#ModelContainer.__init__"></a>
     
     
 
@@ -74,31 +54,10 @@ grand_parent: Python API
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
-                                    <div><dt><a href="arena_object.html#Object">arena.objects.arena_object.Object</a></dt>
-                                <dd id="HandLeft.type" class="variable"><a href="arena_object.html#Object.type">type</a></dd>
-                <dd id="HandLeft.all_objects" class="variable"><a href="arena_object.html#Object.all_objects">all_objects</a></dd>
-                <dd id="HandLeft.private_objects" class="variable"><a href="arena_object.html#Object.private_objects">private_objects</a></dd>
-                <dd id="HandLeft.evt_handler" class="variable"><a href="arena_object.html#Object.evt_handler">evt_handler</a></dd>
-                <dd id="HandLeft.update_handler" class="variable"><a href="arena_object.html#Object.update_handler">update_handler</a></dd>
-                <dd id="HandLeft.animations" class="variable"><a href="arena_object.html#Object.animations">animations</a></dd>
-                <dd id="HandLeft.delayed_prop_tasks" class="variable"><a href="arena_object.html#Object.delayed_prop_tasks">delayed_prop_tasks</a></dd>
-                <dd id="HandLeft.update_attributes" class="function"><a href="arena_object.html#Object.update_attributes">update_attributes</a></dd>
-                <dd id="HandLeft.dispatch_animation" class="function"><a href="arena_object.html#Object.dispatch_animation">dispatch_animation</a></dd>
-                <dd id="HandLeft.remove_animation_at_index" class="function"><a href="arena_object.html#Object.remove_animation_at_index">remove_animation_at_index</a></dd>
-                <dd id="HandLeft.clear_animations" class="function"><a href="arena_object.html#Object.clear_animations">clear_animations</a></dd>
-                <dd id="HandLeft.clickable" class="variable"><a href="arena_object.html#Object.clickable">clickable</a></dd>
-                <dd id="HandLeft.json_preprocess" class="function"><a href="arena_object.html#Object.json_preprocess">json_preprocess</a></dd>
-                <dd id="HandLeft.json_postprocess" class="function"><a href="arena_object.html#Object.json_postprocess">json_postprocess</a></dd>
-                <dd id="HandLeft.json" class="function"><a href="arena_object.html#Object.json">json</a></dd>
-                <dd id="HandLeft.get" class="function"><a href="arena_object.html#Object.get">get</a></dd>
-                <dd id="HandLeft.add" class="function"><a href="arena_object.html#Object.add">add</a></dd>
-                <dd id="HandLeft.add_private" class="function"><a href="arena_object.html#Object.add_private">add_private</a></dd>
-                <dd id="HandLeft.remove" class="function"><a href="arena_object.html#Object.remove">remove</a></dd>
-                <dd id="HandLeft.exists" class="function"><a href="arena_object.html#Object.exists">exists</a></dd>
-
-            </div>
-            <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
-                                <dd id="HandLeft.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                                    <div><dt><a href="../base_object.html#BaseObject">arena.base_object.BaseObject</a></dt>
+                                <dd id="ModelContainer.add" class="function"><a href="../base_object.html#BaseObject.add">add</a></dd>
+                <dd id="ModelContainer.json_encode" class="function"><a href="../base_object.html#BaseObject.json_encode">json_encode</a></dd>
+                <dd id="ModelContainer.json" class="function"><a href="../base_object.html#BaseObject.json">json</a></dd>
 
             </div>
                                 </dl>

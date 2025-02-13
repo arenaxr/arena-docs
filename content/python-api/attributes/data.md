@@ -3,7 +3,7 @@ title: arena.attributes.data
 parent: arena.attributes
 grand_parent: Python API
 ---
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.2.0/arena">v1.2.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -54,6 +54,7 @@ Usage: <code>data=Data(...)</code></p>
 <li><strong>str look_at</strong>:  The look-at component defines the behavior for an entity to dynamically rotate or face towards another entity or position. Use '#my-camera' to face the user camera, otherwise can take either a vec3 position or a query selector to another entity. (optional)</li>
 <li><strong>dict material: The material properties of the object's surface. More properties at <https</strong>: //aframe.io/docs/1.5.0/components/material.html> A-Frame Material. (optional)</li>
 <li><strong>dict material_extras: Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component.  More properties at <https</strong>: //threejs.org/docs/#api/en/materials/Material> THREE.js Material. (optional)</li>
+<li><strong>dict model_container</strong>:  Overrides absolute size for a 3D model. The model can be a glTF, glb, obj, or any other supported format. The model will be rescaled to fit to the sizes specified for each axes. (optional)</li>
 <li><strong>dict modelUpdate</strong>:  The GLTF-specific <code>modelUpdate</code> attribute is an object with child component names as keys. The top-level keys are the names of the child components to be updated. The values of each are nested <code>position</code> and <code>rotation</code> attributes to set as new values, respectively. Either <code>position</code> or <code>rotation</code> can be omitted if unchanged. (optional)</li>
 <li><strong>dict multisrc</strong>:  Define multiple visual sources applied to an object. (optional)</li>
 <li><strong>str parent</strong>:  Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation. (optional)</li>
