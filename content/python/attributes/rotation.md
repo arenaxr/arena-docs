@@ -17,7 +17,7 @@ The quaternion (native) representation of rotation is a bit more tricky. The 4 p
 - `0, 0.7, 0, 0.7`: rotate 90 degrees around Y axis
 - `0, 0, -0.7, 0.7`: rotate -90 degrees around Z axis
 
-`arena-py` API Reference for [Rotation](/content/python-api/attributes/rotation).
+Additional Python properties are available in the [Rotation API Reference](/content/python-api/attributes/rotation).
 
 ```python
 import math

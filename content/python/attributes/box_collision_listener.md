@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps.
 
-`arena-py` API Reference for [BoxCollisionListener](/content/python-api/attributes/box_collision_listener).
+Additional Python properties are available in the [BoxCollisionListener API Reference](/content/python-api/attributes/box_collision_listener).
 
 ```python
 from arena import *

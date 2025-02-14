@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 3D object scale.
 
-`arena-py` API Reference for [Scale](/content/python-api/attributes/scale).
+Additional Python properties are available in the [Scale API Reference](/content/python-api/attributes/scale).
 
 ```python
 from arena import *

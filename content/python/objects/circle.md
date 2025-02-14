@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Circle primitive mesh geometry.
 
-`arena-py` API Reference for [Circle](/content/python-api/objects/circle).
+Additional Python properties are available in the [Circle API Reference](/content/python-api/objects/circle).
 
 ```python
 from arena import *

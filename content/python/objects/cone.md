@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Cone primitive mesh geometry. Cone is a tube shape with one flat end and one joined (point) end.
 
-`arena-py` API Reference for [Cone](/content/python-api/objects/cone).
+Additional Python properties are available in the [Cone API Reference](/content/python-api/objects/cone).
 
 ```python
 from arena import *

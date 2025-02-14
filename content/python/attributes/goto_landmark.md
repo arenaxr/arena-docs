@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Teleports user to the landmark with the given name. Requires click-listener.
 
-`arena-py` API Reference for [GotoLandmark](/content/python-api/attributes/goto_landmark).
+Additional Python properties are available in the [GotoLandmark API Reference](/content/python-api/attributes/goto_landmark).
 
 ```python
 from arena import *

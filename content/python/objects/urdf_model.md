@@ -11,7 +11,7 @@ Load a URDF model.
 
 See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.
 
-`arena-py` API Reference for [UrdfModel](/content/python-api/objects/urdf_model).
+Additional Python properties are available in the [UrdfModel API Reference](/content/python-api/objects/urdf_model).
 
 ```python
 import math

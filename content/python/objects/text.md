@@ -15,7 +15,7 @@ Add some red text that says "Hello World".
 
 Change text color properties [A-Frame Text](https://aframe.io/docs/1.5.0/components/text.html#properties).
 
-`arena-py` API Reference for [Text](/content/python-api/objects/text).
+Additional Python properties are available in the [Text API Reference](/content/python-api/objects/text).
 
 ```python
 from arena import *

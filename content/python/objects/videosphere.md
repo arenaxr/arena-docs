@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a sphere geometry, set the texture src to be an equirectangular video, on the 'back' (inside).
 
-`arena-py` API Reference for [Videosphere](/content/python-api/objects/videosphere).
+Additional Python properties are available in the [Videosphere API Reference](/content/python-api/objects/videosphere).
 
 ```python
 from arena import *

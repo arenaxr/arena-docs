@@ -11,7 +11,7 @@ Draw a Box primitive mesh geometry. Box is 6-sided polyhedron shape.
 
 Instantiate a box and set all of it's basic parameters.
 
-`arena-py` API Reference for [Box](/content/python-api/objects/box).
+Additional Python properties are available in the [Box API Reference](/content/python-api/objects/box).
 
 ```python
 from arena import *

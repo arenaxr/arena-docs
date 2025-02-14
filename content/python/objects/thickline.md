@@ -13,7 +13,7 @@ A "thickline" (to improve openpose skeleton rendering visibility) - works like a
 
 You might be wondering, why can't normal lines just use the scale value to specify thickness? But this one goes to eleven! Really though, normal lines perform faster. To update a `thickline` takes a special syntax because thicklines are really `meshline`s.
 
-`arena-py` API Reference for [Thickline](/content/python-api/objects/thickline).
+Additional Python properties are available in the [Thickline API Reference](/content/python-api/objects/thickline).
 
 ```python
 from arena import *

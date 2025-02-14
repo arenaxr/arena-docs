@@ -11,7 +11,7 @@ A button panel is a horizontal or vertical panel that contains buttons. Each but
 text or image label. When a button is clicked, a message is sent over pubsub with
 the `buttonName` and `buttonIndex`.
 
-`arena-py` API Reference for [ArenauiButtonPanel](/content/python-api/objects/arenaui_button_panel).
+Additional Python properties are available in the [ArenauiButtonPanel API Reference](/content/python-api/objects/arenaui_button_panel).
 
 ```python
 from arena import *

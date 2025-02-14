@@ -11,7 +11,7 @@ Loads a 3D model and material using a Wavefront (.OBJ) file and a .MTL file.
 
 See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.
 
-`arena-py` API Reference for [ObjModel](/content/python-api/objects/obj_model).
+Additional Python properties are available in the [ObjModel API Reference](/content/python-api/objects/obj_model).
 
 ```python
 from arena import *

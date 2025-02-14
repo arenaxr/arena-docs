@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Torus primitive mesh geometry. Torus is a tube shaped into a circle.
 
-`arena-py` API Reference for [Torus](/content/python-api/objects/torus).
+Additional Python properties are available in the [Torus API Reference](/content/python-api/objects/torus).
 
 ```python
 from arena import *

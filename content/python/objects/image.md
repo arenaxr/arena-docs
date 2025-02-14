@@ -16,7 +16,7 @@ Create an image on the floor.
 URLs work in the URL parameter slot. Instead of `images/2.png` it would be e.g. `url(http://arenaxr.org/images/foo.jpg)`.
 To update the image of a named image already in the scene, use this syntax.
 
-`arena-py` API Reference for [Image](/content/python-api/objects/image).
+Additional Python properties are available in the [Image API Reference](/content/python-api/objects/image).
 
 ```python
 from arena import *

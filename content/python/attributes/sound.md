@@ -13,7 +13,7 @@ The sound component defines the entity as a source of sound or audio. The sound 
 
 More properties at <a href='https://aframe.io/docs/1.5.0/components/sound.html'>A-Frame Sound</a>.
 
-`arena-py` API Reference for [Sound](/content/python-api/attributes/sound).
+Additional Python properties are available in the [Sound API Reference](/content/python-api/attributes/sound).
 
 ```python
 from arena import *

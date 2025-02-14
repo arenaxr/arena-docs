@@ -41,7 +41,7 @@ def create_python_markdown(folder, add_api=False):
                             else:
                                 if add_api:
                                     wfile.write(
-                                        f"\n`arena-py` API Reference for [{pascalcase(path.stem)}](/content/python-api/{folder}/{path.stem}).\n"
+                                        f"\nAdditional Python properties are available in the [{pascalcase(path.stem)} API Reference](/content/python-api/{folder}/{path.stem}).\n"
                                     )
                                 wfile.write("\n```python")
                         elif line != last_line:

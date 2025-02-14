@@ -11,7 +11,7 @@ ARENA Scene Options.
 
 Adds one of many predefined backgrounds ( one of: **none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris**) to the scene.
 
-`arena-py` API Reference for [SceneOptions](/content/python-api/objects/scene_options).
+Additional Python properties are available in the [SceneOptions API Reference](/content/python-api/objects/scene_options).
 
 ```python
 from arena import *

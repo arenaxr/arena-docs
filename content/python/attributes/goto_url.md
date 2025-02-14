@@ -11,7 +11,7 @@ Creates three clickable URL boxes targeted to different windows.
 
 Navigates to entirely new page into browser when clicked, or other event (requires `click-listener`).
 
-`arena-py` API Reference for [GotoUrl](/content/python-api/attributes/goto_url).
+Additional Python properties are available in the [GotoUrl API Reference](/content/python-api/attributes/goto_url).
 
 ```python
 from arena import *

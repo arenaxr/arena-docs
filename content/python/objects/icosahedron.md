@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Icosahedron primitive mesh geometry. Icosahedron is 20-sided polyhedron shape.
 
-`arena-py` API Reference for [Icosahedron](/content/python-api/objects/icosahedron).
+Additional Python properties are available in the [Icosahedron API Reference](/content/python-api/objects/icosahedron).
 
 ```python
 from arena import *

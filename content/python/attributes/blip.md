@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 When the object is created or deleted, it will animate in/out of the scene instead of appearing/disappearing instantly. Must have a geometric mesh.
 
-`arena-py` API Reference for [Blip](/content/python-api/attributes/blip).
+Additional Python properties are available in the [Blip API Reference](/content/python-api/attributes/blip).
 
 ```python
 from arena import *

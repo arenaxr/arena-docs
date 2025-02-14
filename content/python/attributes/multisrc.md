@@ -13,7 +13,7 @@ Define multiple visual sources applied to an object.
 
 Use the `multisrc` A-Frame Component to specify different bitmaps for sides of a box or other primitive shape.
 
-`arena-py` API Reference for [Multisrc](/content/python-api/attributes/multisrc).
+Additional Python properties are available in the [Multisrc API Reference](/content/python-api/attributes/multisrc).
 
 ```python
 from arena import *

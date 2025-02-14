@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.
 
-`arena-py` API Reference for [Textinput](/content/python-api/attributes/textinput).
+Additional Python properties are available in the [Textinput API Reference](/content/python-api/attributes/textinput).
 
 ```python
 from arena import *

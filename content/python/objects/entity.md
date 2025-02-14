@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Entities are the base of all objects in the scene. Entities are containers into which components can be attached.
 
-`arena-py` API Reference for [Entity](/content/python-api/objects/entity).
+Additional Python properties are available in the [Entity API Reference](/content/python-api/objects/entity).
 
 ```python
 from arena import *

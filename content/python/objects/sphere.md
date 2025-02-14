@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Sphere primitive mesh geometry. Sphere is completely round shape.
 
-`arena-py` API Reference for [Sphere](/content/python-api/objects/sphere).
+Additional Python properties are available in the [Sphere API Reference](/content/python-api/objects/sphere).
 
 ```python
 from arena import *

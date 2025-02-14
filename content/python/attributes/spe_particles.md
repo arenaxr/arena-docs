@@ -15,7 +15,7 @@ For now, it's not directly supported, but rather by passing JSON inside the `dat
 
 Particles are very complicated and take a lot of parameters. It would not make sense to translate all of them into explicit ARENA types, thus this flexible 'raw JSON' format is used.
 
-`arena-py` API Reference for [SpeParticles](/content/python-api/attributes/spe_particles).
+Additional Python properties are available in the [SpeParticles API Reference](/content/python-api/attributes/spe_particles).
 
 ```python
 from arena import *

@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Adds a video to an entity and controls its playback.
 
-`arena-py` API Reference for [VideoControl](/content/python-api/attributes/video_control).
+Additional Python properties are available in the [VideoControl API Reference](/content/python-api/attributes/video_control).
 
 ```python
 from arena import *

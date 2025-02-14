@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Tetrahedron primitive mesh geometry. Tetrahedron is 4-sided polyhedron shape.
 
-`arena-py` API Reference for [Tetrahedron](/content/python-api/objects/tetrahedron).
+Additional Python properties are available in the [Tetrahedron API Reference](/content/python-api/objects/tetrahedron).
 
 ```python
 from arena import *

@@ -19,7 +19,7 @@ More properties at <a href='https://threejs.org/docs/#api/en/materials/Material'
 
 Material-extras can traverse objects, so can be applied to a GLTF, e.g:
 
-`arena-py` API Reference for [MaterialExtras](/content/python-api/attributes/material_extras).
+Additional Python properties are available in the [MaterialExtras API Reference](/content/python-api/attributes/material_extras).
 
 ```python
 from arena import *

@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw an Ocean primitive. Ocean is flat shape with 4 edges, in which the inner triangles are animated to mimic ocean waves.
 
-`arena-py` API Reference for [Ocean](/content/python-api/objects/ocean).
+Additional Python properties are available in the [Ocean API Reference](/content/python-api/objects/ocean).
 
 ```python
 from arena import *

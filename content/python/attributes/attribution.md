@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Attribution Component. Saves attribution data in any entity.
 
-`arena-py` API Reference for [Attribution](/content/python-api/attributes/attribution).
+Additional Python properties are available in the [Attribution API Reference](/content/python-api/attributes/attribution).
 
 ```python
 from arena import *

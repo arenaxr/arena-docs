@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Cylinder primitive mesh geometry. Cylinder is a tube shape with flat ends.
 
-`arena-py` API Reference for [Cylinder](/content/python-api/objects/cylinder).
+Additional Python properties are available in the [Cylinder API Reference](/content/python-api/objects/cylinder).
 
 ```python
 from arena import *

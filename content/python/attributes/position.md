@@ -11,7 +11,7 @@ grand_parent: Python Library
 
 Move the position of an octahedron.
 
-`arena-py` API Reference for [Position](/content/python-api/attributes/position).
+Additional Python properties are available in the [Position API Reference](/content/python-api/attributes/position).
 
 ```python
 from arena import *

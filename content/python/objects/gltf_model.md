@@ -13,7 +13,7 @@ See guidance to store paths under <a href='https://docs.arenaxr.org/content/inte
 
 Instantiate a glTF v2.0 binary model (file extension .glb) from a URL.
 
-`arena-py` API Reference for [GltfModel](/content/python-api/objects/gltf_model).
+Additional Python properties are available in the [GltfModel API Reference](/content/python-api/objects/gltf_model).
 
 ```python
 from arena import *

@@ -13,7 +13,7 @@ A freely-moving object. Dynamic bodies have mass, collide with other objects, bo
 
 More properties at <a href='https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md'>A-Frame Physics System</a>.
 
-`arena-py` API Reference for [DynamicBody](/content/python-api/attributes/dynamic_body).
+Additional Python properties are available in the [DynamicBody API Reference](/content/python-api/attributes/dynamic_body).
 
 ```python
 import random

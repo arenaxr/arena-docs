@@ -11,7 +11,7 @@ Draw a purple line from (2, 2, 2) to (3, 3, 3).
 
 Extend the line with a new segment, colored green.
 
-`arena-py` API Reference for [Line](/content/python-api/objects/line).
+Additional Python properties are available in the [Line API Reference](/content/python-api/objects/line).
 
 ```python
 from arena import *

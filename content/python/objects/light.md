@@ -15,7 +15,7 @@ Create a red light in the scene.
 
 Default is ambient light. To change type, or other light [A-Frame Light](https://aframe.io/docs/0.9.0/components/light.html) parameters, example: change to **directional**. Options: **ambient, directional, hemisphere, point, spot**.
 
-`arena-py` API Reference for [Light](/content/python-api/objects/light).
+Additional Python properties are available in the [Light API Reference](/content/python-api/objects/light).
 
 ```python
 from arena import *

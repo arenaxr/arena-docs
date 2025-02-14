@@ -26,7 +26,7 @@ The material properties of the object's surface.
 More properties at <a href='https://aframe.io/docs/1.5.0/components/material.html'>A-Frame Material</a>.
 
 
-`arena-py` API Reference for [Material](/content/python-api/attributes/material).
+Additional Python properties are available in the [Material API Reference](/content/python-api/attributes/material).
 
 ```python
 from arena import *

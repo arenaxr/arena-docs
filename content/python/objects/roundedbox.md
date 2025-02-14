@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Rounded Box primitive mesh geometry. Rounded Box is 6-sided polyhedron shape with rounded edges.
 
-`arena-py` API Reference for [Roundedbox](/content/python-api/objects/roundedbox).
+Additional Python properties are available in the [Roundedbox API Reference](/content/python-api/objects/roundedbox).
 
 ```python
 from arena import *

@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Dodecahedron primitive mesh geometry. Dodecahedron is 12-sided polyhedron shape.
 
-`arena-py` API Reference for [Dodecahedron](/content/python-api/objects/dodecahedron).
+Additional Python properties are available in the [Dodecahedron API Reference](/content/python-api/objects/dodecahedron).
 
 ```python
 from arena import *

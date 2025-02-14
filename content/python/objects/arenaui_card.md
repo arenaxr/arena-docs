@@ -12,7 +12,7 @@ information or act as a sign. Its layout will dynamic adjust according to the op
 that are provided: for instance, if no image is provided, then only text will be displayed. If only
 a title is provided, it will serve more as a label or sign. An optional close button may also added.
 
-`arena-py` API Reference for [ArenauiCard](/content/python-api/objects/arenaui_card).
+Additional Python properties are available in the [ArenauiCard API Reference](/content/python-api/objects/arenaui_card).
 
 ```python
 from arena import *

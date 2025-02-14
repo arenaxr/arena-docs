@@ -10,7 +10,7 @@ grand_parent: Python Library
 Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance.
 
 
-`arena-py` API Reference for [GltfModelLod](/content/python-api/attributes/gltf_model_lod).
+Additional Python properties are available in the [GltfModelLod API Reference](/content/python-api/attributes/gltf_model_lod).
 
 ```python
 from arena import *

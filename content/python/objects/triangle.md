@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Triangle primitive mesh geometry. Triangle is flat shape with 3 edges.
 
-`arena-py` API Reference for [Triangle](/content/python-api/objects/triangle).
+Additional Python properties are available in the [Triangle API Reference](/content/python-api/objects/triangle).
 
 ```python
 from arena import *

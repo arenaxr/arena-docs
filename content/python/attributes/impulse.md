@@ -11,7 +11,7 @@ Apply an impulse to an object to set it in motion. This happens in conjunction w
 
 One physics feature is applying an impulse to an object to set it in motion. This happens in conjunction with an event. As an example, here are messages setting objects fallBox and fallBox2 to respond to `mouseup` and `mousedown` messages with an impulse with a certain force and position.
 
-`arena-py` API Reference for [Impulse](/content/python-api/attributes/impulse).
+Additional Python properties are available in the [Impulse API Reference](/content/python-api/attributes/impulse).
 
 ```python
 import random

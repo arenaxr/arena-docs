@@ -11,7 +11,7 @@ Creates a landmark that can be teleported to from the UI list, or is one of the 
 
 Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists).
 
-`arena-py` API Reference for [Landmark](/content/python-api/attributes/landmark).
+Additional Python properties are available in the [Landmark API Reference](/content/python-api/attributes/landmark).
 
 ```python
 from arena import *

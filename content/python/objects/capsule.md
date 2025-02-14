@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Capsule primitive mesh geometry. Capsule is a tube shape with rounded ends.
 
-`arena-py` API Reference for [Capsule](/content/python-api/objects/capsule).
+Additional Python properties are available in the [Capsule API Reference](/content/python-api/objects/capsule).
 
 ```python
 from arena import *

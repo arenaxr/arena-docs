@@ -18,7 +18,7 @@ or make object `look-at` at a position
 look_at="0 0 0"
 ```
 
-`arena-py` API Reference for [LookAt](/content/python-api/attributes/look_at).
+Additional Python properties are available in the [LookAt API Reference](/content/python-api/attributes/look_at).
 
 ```python
 from arena import *

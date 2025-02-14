@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Example to stream video from Jitsi onto a geometry. Change the user display name to `my-name`, reload the scene page, and click the camera on button.
 
-`arena-py` API Reference for [JitsiVideo](/content/python-api/attributes/jitsi_video).
+Additional Python properties are available in the [JitsiVideo API Reference](/content/python-api/attributes/jitsi_video).
 
 ```python
 from arena import *

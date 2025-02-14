@@ -15,7 +15,7 @@ To animate a GLTF model (see [GLTF Files](/content/3d-content/gltf-files) for ho
 
 The `clip` asterisk means "play all animations", and works better in some situations, where other times the name of a specific animation in the GLTF file works (or maybe several in sequence).
 
-`arena-py` API Reference for [AnimationMixer](/content/python-api/attributes/animation_mixer).
+Additional Python properties are available in the [AnimationMixer API Reference](/content/python-api/attributes/animation_mixer).
 
 ```python
 from arena import *

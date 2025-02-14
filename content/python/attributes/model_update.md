@@ -11,7 +11,7 @@ Besides applying standard rotation and position attributes to the center-point o
 
 The GLTF-specific `modelUpdate` attribute is an object with child component names as keys. The top-level keys are the names of the child components to be updated. The values of each are nested `position` and `rotation` attributes to set as new values, respectively. Either `position` or `rotation` can be omitted if unchanged.
 
-`arena-py` API Reference for [ModelUpdate](/content/python-api/attributes/model_update).
+Additional Python properties are available in the [ModelUpdate API Reference](/content/python-api/attributes/model_update).
 
 ```python
 from arena import *

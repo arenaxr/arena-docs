@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.
 
-`arena-py` API Reference for [Armarker](/content/python-api/attributes/armarker).
+Additional Python properties are available in the [Armarker API Reference](/content/python-api/attributes/armarker).
 
 ```python
 from arena import *

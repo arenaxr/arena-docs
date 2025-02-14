@@ -11,7 +11,7 @@ Allows you to target and control a gltf model's morphTargets created in Blender.
 
 More properties at <a href='https://github.com/elbobo/aframe-gltf-morph-component'>A-Frame GLTF Morph</a> component.
 
-`arena-py` API Reference for [GltfMorph](/content/python-api/attributes/gltf_morph).
+Additional Python properties are available in the [GltfMorph API Reference](/content/python-api/attributes/gltf_morph).
 
 ```python
 from arena import *

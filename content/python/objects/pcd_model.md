@@ -11,7 +11,7 @@ Load a PCD model.
 
 Format: <a href='https://pointclouds.org/documentation/tutorials/index.html'>Point Clouds</a>. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.
 
-`arena-py` API Reference for [PcdModel](/content/python-api/objects/pcd_model).
+Additional Python properties are available in the [PcdModel API Reference](/content/python-api/objects/pcd_model).
 
 ```python
 from arena import *

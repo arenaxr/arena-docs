@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Plane primitive mesh geometry. Plane is flat shape with 4 edges.
 
-`arena-py` API Reference for [Plane](/content/python-api/objects/plane).
+Additional Python properties are available in the [Plane API Reference](/content/python-api/objects/plane).
 
 ```python
 from arena import *

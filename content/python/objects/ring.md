@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Ring primitive mesh geometry. Ring is flat rounded shape with 2 edges, inner and outer.
 
-`arena-py` API Reference for [Ring](/content/python-api/objects/ring).
+Additional Python properties are available in the [Ring API Reference](/content/python-api/objects/ring).
 
 ```python
 from arena import *

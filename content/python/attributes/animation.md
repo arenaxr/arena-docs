@@ -15,7 +15,7 @@ Animate rotation of three torii.
 
 Other animations are available that resemble the `"data": {"animation": { "property": ... }}` blob above: see [A-Frame Animation](https://aframe.io/docs/1.5.0/components/animation.html) documentation for more examples.
 
-`arena-py` API Reference for [Animation](/content/python-api/attributes/animation).
+Additional Python properties are available in the [Animation API Reference](/content/python-api/attributes/animation).
 
 ```python
 from arena import *

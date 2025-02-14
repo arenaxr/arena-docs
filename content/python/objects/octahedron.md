@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Draw a Octahedron primitive mesh geometry. Octahedron is 8-sided polyhedron shape.
 
-`arena-py` API Reference for [Octahedron](/content/python-api/objects/octahedron).
+Additional Python properties are available in the [Octahedron API Reference](/content/python-api/objects/octahedron).
 
 ```python
 from arena import *

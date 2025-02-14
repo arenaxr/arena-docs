@@ -11,7 +11,7 @@ Similar to a button panel, this prompt is intended to be used a quick confirmati
 Its buttons may be customized and an additional text description can be included, similar
 to what one may see in traditional 2D web interfaces.
 
-`arena-py` API Reference for [ArenauiPrompt](/content/python-api/objects/arenaui_prompt).
+Additional Python properties are available in the [ArenauiPrompt API Reference](/content/python-api/objects/arenaui_prompt).
 
 ```python
 from arena import *

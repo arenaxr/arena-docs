@@ -11,7 +11,7 @@ Overrides absolute size for a 3D model. The model can be a glTF, glb, obj, or an
 
 This example scales the Duck model into a 10 x 10 x 10 box.
 
-`arena-py` API Reference for [ModelContainer](/content/python-api/attributes/model_container).
+Additional Python properties are available in the [ModelContainer API Reference](/content/python-api/attributes/model_container).
 
 ```python
 from arena import *
