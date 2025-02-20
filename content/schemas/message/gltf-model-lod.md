@@ -12,7 +12,7 @@ GLTF Model Level of Detail
 ==========================
 
 
-Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance
+Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance. Requires `object_type: gltf-model`.
 
 GLTF Model Level of Detail Attributes
 --------------------------------------

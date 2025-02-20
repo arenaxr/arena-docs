@@ -24,9 +24,9 @@ sensors to track relative motion of viewing devices.
 <img src="/assets/img/overview/localization/media/image8.jpg"
 style="width:6in;height:3.375in" />
 
-*(Google’s AR framework
+*(Google's AR framework
 [ARCore](https://developers.google.com/ar) runs on devices with
-Android version 7.0 API level 24 or above, and Apple’s AR framework
+Android version 7.0 API level 24 or above, and Apple's AR framework
 [ARKit](https://developer.apple.com/augmented-reality/arkit/)
 runs on devices running iOS version 11.0 or higher.)*
 
@@ -81,7 +81,7 @@ style="width:3.11995in;height:3.11995in" />
 
 Now, using ARENA on a mobile Android or iOS device in AR mode, look at
 the marker so that it is in full view of the camera, and watch as the 3D
-digital content’s origin anchors itself correctly to the AprilTag
+digital content's origin anchors itself correctly to the AprilTag
 marker.
 
 <img src="/assets/img/overview/localization/media/image16.png"
@@ -158,7 +158,7 @@ be visible.
 <img src="/assets/img/overview/localization/media/image3.jpg"
 style="width:6in;height:3.75in" />
 
-Use the VR controller to repeatedly click on the gizmo’s eight buttons
+Use the VR controller to repeatedly click on the gizmo's eight buttons
 
 **(move x+, move x-, move y+, move y-, move z+, move z-, rotate y+, rotate
 y-)**

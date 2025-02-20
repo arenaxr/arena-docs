@@ -12,7 +12,7 @@ Text Input
 ==========
 
 
-Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.
+Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires `click-listener` attribute.
 
 Text Input Attributes
 ----------------------

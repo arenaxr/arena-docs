@@ -34,7 +34,7 @@ Scene Options Attributes
 |**videoDistanceConstraints**|boolean|```True```|If false, will disable video distance constraints (video resolution decreases with distance from users in view).|No|
 |**videoDefaultResolutionConstraint**|number|```180```|Sets the default max resolution for all users. Ignored when videoDistanceConstraints = true.|No|
 |**volume**|number|```1```|Volume for users in a scene.|No|
-|**physics**|boolean|```False```|If true, will load the aframe-physics-system. Required for the following: `dynamic-body`, `impulse`, `collision-listener`.|Yes|
+|**physics**|boolean|```False```|If true, will load the aframe-physics-system. Required for the following: `dynamic-body`, `static-body`, `impulse`, `collision-listener`.|Yes|
 |**ar-hit-test**|object||A-Frame AR Hit Test Settings.
 
 More properties at <a href='https://aframe.io/docs/1.5.0/components/ar-hit-test.html'>AR Hit Test</a> component.|No|

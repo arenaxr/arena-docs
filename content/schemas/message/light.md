@@ -37,29 +37,29 @@ Light Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |**object_type**|string; Must be: ```light```|```light```|3D object type.|Yes|
-|**angle**|number|```60```|Maximum extent of spot light from its direction (in degrees). Requires type:spot.|No|
+|**angle**|number|```60```|Maximum extent of spot light from its direction (in degrees). Requires `type: spot`.|No|
 |**castShadow**|boolean|```False```|Whether this light casts shadows on the scene.|No|
 |**color**|string|```'#ffffff'```|Light color. For 'hemisphere', light color from above.|Yes|
-|**decay**|number|```1```|Amount the light dims along the distance of the light. Requires type:point or type:spot.|No|
-|**distance**|number|```0```|Distance where intensity becomes 0. If distance is 0, then the point light does not decay with distance. Requires type:point or type:spot.|No|
+|**decay**|number|```1```|Amount the light dims along the distance of the light. Requires `type: point` or `spot`.|No|
+|**distance**|number|```0```|Distance where intensity becomes 0. If distance is 0, then the point light does not decay with distance. Requires `type: point` or `spot`.|No|
 |**envMap**|string|```'None'```|Cube Map to load.|No|
-|**groundColor**|string|```'#ffffff'```|Light color from below. Requires type:hemisphere.|No|
+|**groundColor**|string|```'#ffffff'```|Light color from below. Requires `type: hemisphere`.|No|
 |**intensity**|number|```1```|Amount of light provided.|Yes|
 |~~**light**~~|~~object~~||~~DEPRECATED: data.light.[property] is deprecated, use object_type: light and data.[property] instead.~~|~~No~~|
-|**penumbra**|number|```0```|Percent of the spotlight cone that is attenuated due to penumbra. Requires type:spot.|No|
+|**penumbra**|number|```0```|Percent of the spotlight cone that is attenuated due to penumbra. Requires `type: spot`.|No|
 |**shadowBias**|number|```0```|Offset depth when deciding whether a surface is in shadow. Tiny adjustments here (in the order of +/-0.0001) may reduce artifacts in shadows.|No|
-|**shadowCameraBottom**|number|```-5```|Bottom plane of shadow camera frustum. Requires type:directional.|No|
+|**shadowCameraBottom**|number|```-5```|Bottom plane of shadow camera frustum. Requires `type: directional`.|No|
 |**shadowCameraFar**|number|```500```|Far plane of shadow camera frustum.|No|
-|**shadowCameraFov**|number|```50```|Shadow camera's FOV. Requires type:point or spot.|No|
-|**shadowCameraLeft**|number|```-5```|Left plane of shadow camera frustum. Requires type:directional.|No|
+|**shadowCameraFov**|number|```50```|Shadow camera's FOV. Requires `type: point` or `spot`.|No|
+|**shadowCameraLeft**|number|```-5```|Left plane of shadow camera frustum. Requires `type: directional`.|No|
 |**shadowCameraNear**|number|```0.5```|Near plane of shadow camera frustum.|No|
-|**shadowCameraRight**|number|```5```|Right plane of shadow camera frustum. Requires type:directional.|No|
-|**shadowCameraTop**|number|```5```|Top plane of shadow camera frustum. Requires type:directional.|No|
+|**shadowCameraRight**|number|```5```|Right plane of shadow camera frustum. Requires `type: directional`.|No|
+|**shadowCameraTop**|number|```5```|Top plane of shadow camera frustum. Requires `type: directional`.|No|
 |**shadowCameraVisible**|boolean|```False```|Displays a visual aid showing the shadow camera's position and frustum. This is the light's view of the scene, used to project shadows.|No|
 |**shadowMapHeight**|number|```512```|Shadow map's vertical resolution. Larger shadow maps display more crisp shadows, at the cost of performance.|No|
 |**shadowMapWidth**|number|```512```|Shadow map's horizontal resolution.|No|
 |**shadowRadius**|number|```1```||No|
-|**target**|string|```'None'```|Id of element the spot should point to. Set to null to transform spotlight by orientation, pointing to it's -Z axis. Requires type:spot.|No|
+|**target**|string|```'None'```|Id of element the spot should point to. Set to null to transform spotlight by orientation, pointing to it's -Z axis. Requires `type: spot`.|No|
 |**type**|string; One of: ```['ambient', 'directional', 'hemisphere', 'point', 'spot']```|```'directional'```|The type of light, or what shape the light should take.|Yes|
 |**parent**|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
 |**position**|[position](position)||3D object position.|Yes|
@@ -70,24 +70,24 @@ Light Attributes
 |**armarker**|[armarker](armarker)||A location marker (such as an AprilTag, a lightAnchor, or an UWB tag), used to anchor scenes, or scene objects, in the real world.|No|
 |**click-listener**|[click-listener](click-listener)||Object will listen for mouse events like clicks.|No|
 |**box-collision-listener**|[box-collision-listener](box-collision-listener)||Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps.|No|
-|**collision-listener**|string||Name of the collision-listener, default can be empty string. Collisions trigger click events.|No|
+|**collision-listener**|string||Name of the collision-listener, default can be empty string. Collisions trigger click events. Requires `scene-options: physics`.|No|
 |**blip**|[blip](blip)||When the object is created or deleted, it will animate in/out of the scene instead of appearing/disappearing instantly. Must have a geometric mesh.|No|
-|**static-body**|[static-body](static-body)||A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions.|No|
-|**dynamic-body**|[dynamic-body](dynamic-body)||A freely-moving object. Dynamic bodies have mass, collide with other objects, bounce or slow during collisions, and fall if gravity is enabled.|No|
-|**goto-landmark**|[goto-landmark](goto-landmark)||Teleports user to the landmark with the given name. Requires click-listener.|No|
-|**goto-url**|[goto-url](goto-url)||Load new URL when object is clicked. Requires click-listener.|No|
+|**static-body**|[static-body](static-body)||A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. Requires `scene-options: physics`.|No|
+|**dynamic-body**|[dynamic-body](dynamic-body)||A freely-moving object. Dynamic bodies have mass, collide with other objects, bounce or slow during collisions, and fall if gravity is enabled. Requires `scene-options: physics`.|No|
+|**goto-landmark**|[goto-landmark](goto-landmark)||Teleports user to the landmark with the given name. Requires `click-listener` attribute.|No|
+|**goto-url**|[goto-url](goto-url)||Load new URL when object is clicked. Requires `click-listener` attribute.|No|
 |**hide-on-enter-ar**|boolean; Must be: ```True```|```True```|Hide object when entering AR. Remove component to *not* hide.|No|
 |**hide-on-enter-vr**|boolean; Must be: ```True```|```True```|Hide object when entering VR. Remove component to *not* hide.|No|
 |**show-on-enter-ar**|boolean; Must be: ```True```|```True```|Show object when entering AR. Hidden otherwise.|No|
 |**show-on-enter-vr**|boolean; Must be: ```True```|```True```|Show object when entering VR. Hidden otherwise.|No|
-|**impulse**|[impulse](impulse)||Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires click-listener and physics.|No|
+|**impulse**|[impulse](impulse)||Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires `click-listener` attribute and `scene-options: physics`.|No|
 |**landmark**|[landmark](landmark)||Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists).|No|
-|**material-extras**|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order.|No|
+|**material-extras**|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order. Requires `material` attribute.|No|
 |**model-container**|[model-container](model-container)||Overrides absolute size for a 3D model. The model can be a glTF, glb, obj, or any other supported format. The model will be rescaled to fit to the sizes specified for each axes.|No|
 |**shadow**|[shadow](shadow)||The shadow component enables shadows for an entity and its children. Adding the shadow component alone is not enough to display shadows in your scene. We must have at least one light with castShadow: true enabled.|No|
 |**sound**|[sound](sound)||The sound component defines the entity as a source of sound or audio. The sound component can be positional and is thus affected by the component's position.|No|
-|**submodel-parent**|string|```''```|When this object is parented to a hierarchical model, attaches to a named subcomponent of that model instead of the root position|No|
-|**textinput**|[textinput](textinput)||Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.|No|
+|**submodel-parent**|string|```''```|When this object is parented to a hierarchical model, it attaches to a named sub-component of that model instead of the root position. Requires `parent` attribute.|No|
+|**textinput**|[textinput](textinput)||Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires `click-listener` attribute.|No|
 |**url**|string||Use File Store paths under 'store/users/username', see CDN and other storage options in the description above.|No|
 |**remote-render**|[remote-render](remote-render)||Whether or not an object should be remote rendered [Experimental].|No|
 |**video-control**|[video-control](video-control)||Adds a video to an entity and controls its playback.|No|

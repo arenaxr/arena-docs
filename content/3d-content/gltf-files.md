@@ -17,11 +17,11 @@ scene.bin  scene.gltf  textures
 
 ## SketchUp
 Getting from [SketchUp](https://www.sketchup.com/) to GLTF is a bit of an adventure:
-- The online converters don’t generate valid GLTFs.
+- The online converters don't generate valid GLTFs.
 - The SketchUp GLTF export plugin was written for SketchUp 2016 and seems to hang SketchUp 2020 — these models were created in SketchUp 2017, so the 2016 version refuses to open them.
 - What worked was installing Adobe Dimension, opening the SketchUp file there, and exporting it.
 
-Dimension doesn’t seem to edit these models well, so if you want to patch up some textures, it's recommended to do that in SketchUp first, then saving a copy, using Dimension to convert to GLTF.
+Dimension doesn't seem to edit these models well, so if you want to patch up some textures, it's recommended to do that in SketchUp first, then saving a copy, using Dimension to convert to GLTF.
 
 ## Adobe Dimension
 For [Adobe Dimension](https://www.adobe.com/products/dimension.html), the general conversion steps are:

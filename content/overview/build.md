@@ -42,7 +42,7 @@ with some objects copied from the ***public/default*** scene. It is a
 good idea to do this, so leave it checked.
 
 Once you are done, press the **\[Add Scene\]** button, which will prompt
-a ‘Create Object create published’ popup message in the corner. The
+a ‘Create Object create published' popup message in the corner. The
 popup will disappear in a second. Let us take this time to have a look
 at a few other sections of the build page shown below:
 
@@ -61,7 +61,7 @@ of the page:
 2.  **Scene Objects:** See a list of the objects currently persisted in
     the scene. At the bottom of the list there are buttons to delete,
     copy and select objects. To select a single object, click on its
-    name (the line will become darker). You can press the object’s edit
+    name (the line will become darker). You can press the object's edit
     button (highlighted with a circle in the figure above) to edit its
     properties.This area also has a search bar that lets you filter the
     objects in the object list. Click on the list to toggle show/hide of

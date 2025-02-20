@@ -12,7 +12,7 @@ Physics Static Body
 ===================
 
 
-A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions.
+A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. Requires `scene-options: physics`.
 
 More properties at <a href='https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md'>A-Frame Physics System</a>.
 
@@ -22,6 +22,6 @@ Physics Static Body Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |**shape**|string; One of: ```['auto', 'box', 'cylinder', 'sphere', 'hull', 'none']```|```'auto'```|Body components will attempt to find an appropriate CANNON.js shape to fit your model. When defining an object you may choose a shape or leave the default, auto. Select a shape carefully, as there are performance implications with different choices.|No|
-|**cylinderAxis**|string; One of: ```['x', 'y', 'z']```|```'y'```|Override default axis of bounding cylinder. Requires shape:cylinder.|No|
-|**sphereRadius**|number||Override default radius of bounding sphere. Requires shape:sphere. NaN by default.|No|
+|**cylinderAxis**|string; One of: ```['x', 'y', 'z']```|```'y'```|Override default axis of bounding cylinder. Requires `shape: cylinder`.|No|
+|**sphereRadius**|number||Override default radius of bounding sphere. Requires `shape: sphere`. NaN by default.|No|
 |**type**|string; One of: ```['dynamic', 'static']```|```'static'```|Define the result of collisions. Dynamic can be moved, Static cannot be moved.|No|

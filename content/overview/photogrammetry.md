@@ -46,13 +46,13 @@ style="width:6in;height:3.05556in" />
 
 Now, click start to generate your first 3D model. This will take several
 minutes or more depending on the compute power of your machine. After
-it’s finished, you should see sparse 3D point cloud shown in the 3D
+it's finished, you should see sparse 3D point cloud shown in the 3D
 viewer panel:
 
 <img src="/assets/img/overview/photogrammetry/media/image5.png"
 style="width:6in;height:3.05556in" />
 
-If you look closely at the Scene section in 3D Viewer, you’ll find this
+If you look closely at the Scene section in 3D Viewer, you'll find this
 is actually showing sparse point cloud and estimated camera position
 generated from *Structure From Motion* step (one of the blocks in Graph
 Editor), we can toggle the *eye icon* to show/hide this view.
@@ -66,15 +66,15 @@ step.
 style="width:6in;height:0.56944in" />
 
 To access the final output files, right click on the Texturing node and
-select Open Folder. You’ll find one OBJ file that contains the 3D model,
+select Open Folder. You'll find one OBJ file that contains the 3D model,
 two EXR files that represent texture maps, and one MTL file that
 describes how the model and texture files link to each other.
 
 ## **Capture your own model**
 
-Now that you have reconstructed a model from the dataset, it’s time to
+Now that you have reconstructed a model from the dataset, it's time to
 collect your own data to build a model. All you need is to take images
-from multiple views (make sure there’s enough overlapping view between
+from multiple views (make sure there's enough overlapping view between
 images) and re-execute the same workflow. Try to scan a real world
 object that has some animate-able features, as you will be adding
 animations to this scan later on.

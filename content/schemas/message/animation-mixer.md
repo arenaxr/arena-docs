@@ -12,7 +12,7 @@ Animation Mixer
 ===============
 
 
-A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'.
+A list of available animations can usually be found by inspecting the model file or its documentation. All animations will play by default. To play only a specific set of animations, use wildcards: animation-mixer='clip: run_*'. Requires `object_type: gltf-model`.
 
 More properties at <a href='https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation'>A-Frame Extras Animation</a>.
 

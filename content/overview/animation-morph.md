@@ -55,7 +55,7 @@ style="width:6in;height:3.81944in" />
 Select a couple vertices of your model that you want to manipulate for
 your animation. You can also select edges by typing “2”, or faces by
 typing “3”. Return to editing vertices by typing “1”. We will select the
-upper two vertices of our model’s eye.
+upper two vertices of our model's eye.
 
 <img src="/assets/img/overview/animation-morph/media/image25.png"
 style="width:6in;height:3.81944in" />
@@ -136,7 +136,7 @@ edited model!
 <img src="/assets/img/overview/animation-morph/media/image26.png"
 style="width:6in;height:3.81944in" />
 
-Now, you have created an animation in Blender. Let’s export our model
+Now, you have created an animation in Blender. Let's export our model
 for the web! Select File -&gt; Export -&gt; glTF 2.0 (.glb/.gltf) and
 save your model as a .glb. GLTF is a 3D model file format that is
 web-friendly, and GLB is a binary version of GLTF!

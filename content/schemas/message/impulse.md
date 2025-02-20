@@ -12,7 +12,7 @@ Impulse
 =======
 
 
-Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires click-listener and physics.
+Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires `click-listener` attribute and `scene-options: physics`.
 
 Impulse Attributes
 -------------------

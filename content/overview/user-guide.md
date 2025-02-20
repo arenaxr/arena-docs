@@ -13,9 +13,9 @@ This walkthrough of the ARENA interface will show the main features of the ARENA
 
 For the best ARENA performance, you need a couple of things:
 
-- **Chrome or Edge Web Browser** (FireFox also works, but sometimes FireFox doesn’t send video)
+- **Chrome or Edge Web Browser** (FireFox also works, but sometimes FireFox doesn't send video)
 - No ad blockers (some blockers are okay, others cause issues)
-- **Headphones highly recommended**. They provide directional sound and stop echo. Please stay on mute when not speaking if you don’t have headphones.
+- **Headphones highly recommended**. They provide directional sound and stop echo. Please stay on mute when not speaking if you don't have headphones.
 - A fast machine to handle all the processing and 3D graphics is also recommended
 
 ## Opening a Scene
@@ -58,7 +58,7 @@ Once inside the ARENA, you should see the lobby scene. You might have to wait fo
 
 ![](/assets/img/overview/userguide/a4.png)
 
-To move, use the arrow keys. More advanced movement can be done by a combination of ‘W’, ‘A’, ‘S’, ‘D’ (to go forward/back and stride) and the mouse (to look around/change direction). You can also mix and match any combination of these motions. Definitely try clicking and dragging with the mouse.
+To move, use the arrow keys. More advanced movement can be done by a combination of ‘W', ‘A', ‘S', ‘D' (to go forward/back and stride) and the mouse (to look around/change direction). You can also mix and match any combination of these motions. Definitely try clicking and dragging with the mouse.
 
 ![](/assets/img/overview/userguide/m1.png)
 

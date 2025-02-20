@@ -16,7 +16,7 @@ There are a few hints to help you establish objects to screenshare on.
 - If you choose the name/ID of an already existing object in a scene, it will set the texture of that existing object to be your screen.
 - If you choose an object that does not exist in a scene, it will spawn a new screen sharing plane with your chosen `object_id`. This object is not sent through the MQTT bus but is still created for all clients.
 - Once you have selected your object name, it will open a new tab that allows you to choose which screen you want to share, and ARENA will automatically place that screen onto the object with an `object_id` you specified.
-- You can do whatever you want the object you’re screen sharing on as if it were a normal arena object (change size, shape, attach children, etc). This also applies to the object `screenshare`; it's just a standard ARENA object with `object_id`: `screenshare`!
+- You can do whatever you want the object you're screen sharing on as if it were a normal arena object (change size, shape, attach children, etc). This also applies to the object `screenshare`; it's just a standard ARENA object with `object_id`: `screenshare`!
 - When an object is dynamically created with the screen share button, it won't go away after you stop screen sharing. It will only go away if you refresh the page.
 - You can no longer screenshare to every and any object. only objects with attribute `screenshareable=True` can be screen-shared on.
 - Screen share button now gives a list of objects with `screenshareable=True` and lets you select from them. you are allowed to select multiple.
