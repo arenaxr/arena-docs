@@ -99,6 +99,7 @@ The ARENA MQTT and Persistance system of communication and storage support the f
 | `sound`                  | 1.0.0  | 0.1.12 | -      | The sound component defines the entity as a source of sound or audio.                              |
 | `spe-particles`          | 1.18.0 | 0.7.0  | -      | GPU based particle systems in A-Frame: supports single textures and spritesheets.                  |
 | `static-body`            | 1.0.0  | 0.1.12 | -      | Physics static type attached to the object.                                                        |
+| `submodel-parent`        | 2.0.0  | 1.0.1  | -      | Attach to submodel components of model, requires `parent`.                                                            |
 | `textinput`              | 1.0.0  | 0.1.24 | -      | Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.  |
 | `video-control`          | 1.0.0  | 0.3.0  | -      | Adds a video to an entity and controls its playback.                                               |
 | `visible`                | 1.0.0  | 0.1.12 | 0.10.1 | Whether or not an object should rendered visible.                                                  |
