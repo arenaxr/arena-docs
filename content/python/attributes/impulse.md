@@ -13,6 +13,8 @@ One physics feature is applying an impulse to an object to set it in motion. Thi
 
 Additional Python properties are available in the [Impulse API Reference](/content/python-api/attributes/impulse).
 
+The following source code was mirrored from the `arena-py` [impulse.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/impulse.py) example.
+
 ```python
 import random
 
@@ -27,9 +29,9 @@ impulse = Impulse(
 )
 
 @scene.run_once
-def make_bouncy_ball():
+def make_click_impulse_ball():
     obj = Sphere(
-        object_id="fallBox",
+        object_id="fallBall",
         clickable=True,
         dynamic_body=DynamicBody(type="dynamic"),
         position=(0, 4, -4),

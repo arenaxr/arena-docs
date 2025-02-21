@@ -13,6 +13,8 @@ More properties at <a href='https://github.com/elbobo/aframe-gltf-morph-componen
 
 Additional Python properties are available in the [GltfMorph API Reference](/content/python-api/attributes/gltf_morph).
 
+The following source code was mirrored from the `arena-py` [gltf_morph.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/gltf_morph.py) example.
+
 ```python
 from arena import *
 

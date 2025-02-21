@@ -9,6 +9,8 @@ grand_parent: Python Library
 
 Camera tracing program. Draws a path that follows the user.
 
+The following source code was mirrored from the `arena-py` [camera-tracer.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/camera-tracer.py) example.
+
 ```python
 import random
 

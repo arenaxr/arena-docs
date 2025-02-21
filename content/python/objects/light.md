@@ -17,6 +17,8 @@ Default is ambient light. To change type, or other light [A-Frame Light](https:/
 
 Additional Python properties are available in the [Light API Reference](/content/python-api/objects/light).
 
+The following source code was mirrored from the `arena-py` [light.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/light.py) example.
+
 ```python
 from arena import *
 

@@ -13,6 +13,8 @@ Define entities as a landmark; Landmarks appears in the landmark list and you ca
 
 Additional Python properties are available in the [Landmark API Reference](/content/python-api/attributes/landmark).
 
+The following source code was mirrored from the `arena-py` [landmark.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/landmark.py) example.
+
 ```python
 from arena import *
 
@@ -26,7 +28,7 @@ landmark = Landmark(
 )
 
 @scene.run_once
-def make_box():
+def make_box_landmark():
     scene.add_object(
         Box(
             object_id="box_1",

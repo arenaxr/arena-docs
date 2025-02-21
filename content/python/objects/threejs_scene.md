@@ -13,13 +13,15 @@ Could be THREE.js version-specific; you can see the THREE.js version in the JS c
 
 Additional Python properties are available in the [ThreejsScene API Reference](/content/python-api/objects/threejs_scene).
 
+The following source code was mirrored from the `arena-py` [threejs_scene.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/threejs_scene.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def make_test_scene():
+def make_threejs_scene():
     test_scene = ThreejsScene(
         object_id="test-scene",
         position=(0, 1, -3),

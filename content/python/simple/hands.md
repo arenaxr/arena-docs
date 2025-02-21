@@ -9,6 +9,8 @@ grand_parent: Python Library
 
 Hand is the (left or right) hand metadata pose and controller type of the user avatar.
 
+The following source code was mirrored from the `arena-py` [hands.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/hands.py) example.
+
 ```python
 from arena import *
 

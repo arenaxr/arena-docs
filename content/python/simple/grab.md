@@ -7,6 +7,8 @@ grand_parent: Python Library
 
 # Grab Simple
 
+The following source code was mirrored from the `arena-py` [grab.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/grab.py) example.
+
 ```python
 from arena import *
 
@@ -49,7 +51,7 @@ my_box = Box(
 )
 
 @scene.run_once
-def main():
+def make_grabbable_simple():
     scene.add_object(my_box)
 
 scene.run_tasks()

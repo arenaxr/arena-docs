@@ -11,13 +11,15 @@ Draw a Octahedron primitive mesh geometry. Octahedron is 8-sided polyhedron shap
 
 Additional Python properties are available in the [Octahedron API Reference](/content/python-api/objects/octahedron).
 
+The following source code was mirrored from the `arena-py` [octahedron.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/octahedron.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def make_oct():
+def make_octahedron():
     my_oct = Octahedron(
         object_id="my_oct",
         position=(0, 2, -3),

@@ -15,6 +15,8 @@ Use the `multisrc` A-Frame Component to specify different bitmaps for sides of a
 
 Additional Python properties are available in the [Multisrc API Reference](/content/python-api/attributes/multisrc).
 
+The following source code was mirrored from the `arena-py` [multisrc.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/multisrc.py) example.
+
 ```python
 from arena import *
 

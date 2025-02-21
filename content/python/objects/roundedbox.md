@@ -11,13 +11,15 @@ Draw a Rounded Box primitive mesh geometry. Rounded Box is 6-sided polyhedron sh
 
 Additional Python properties are available in the [Roundedbox API Reference](/content/python-api/objects/roundedbox).
 
+The following source code was mirrored from the `arena-py` [roundedbox.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/roundedbox.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def make_box():
+def make_rounded_box():
     my_box = Roundedbox(
         object_id="my_box",
         position=(0, 2, -3),

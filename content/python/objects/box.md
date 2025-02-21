@@ -13,6 +13,8 @@ Instantiate a box and set all of it's basic parameters.
 
 Additional Python properties are available in the [Box API Reference](/content/python-api/objects/box).
 
+The following source code was mirrored from the `arena-py` [box.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/box.py) example.
+
 ```python
 from arena import *
 

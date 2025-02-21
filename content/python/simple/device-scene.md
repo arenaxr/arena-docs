@@ -9,6 +9,8 @@ grand_parent: Python Library
 
 Demonstrate starting two connections, for a scene and a device, and communicating between them.
 
+The following source code was mirrored from the `arena-py` [device-scene.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/device-scene.py) example.
+
 ```python
 import json
 from datetime import datetime

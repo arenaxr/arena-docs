@@ -9,13 +9,15 @@ grand_parent: Python Library
 
 Upload some sample files to the ARENA filestore under the user's store folder and create objects to render them.
 
+The following source code was mirrored from the `arena-py` [upload-file.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/upload-file.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def upload():
+def upload_files():
     url_glb = scene.upload_store_file("/Users/username/Desktop/abox.glb")
     if url_glb:
         scene.add_object(GltfModel(persist=True, position=Position(0, 1, -3), url=url_glb))

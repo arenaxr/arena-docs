@@ -11,13 +11,15 @@ Draw a Dodecahedron primitive mesh geometry. Dodecahedron is 12-sided polyhedron
 
 Additional Python properties are available in the [Dodecahedron API Reference](/content/python-api/objects/dodecahedron).
 
+The following source code was mirrored from the `arena-py` [dodecahedron.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/dodecahedron.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def make_dod():
+def make_dodecahedron():
     dod = Dodecahedron(
         object_id="dod",
         position=(0, 2, -3),

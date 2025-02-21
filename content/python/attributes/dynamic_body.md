@@ -15,6 +15,8 @@ More properties at <a href='https://github.com/c-frame/aframe-physics-system/blo
 
 Additional Python properties are available in the [DynamicBody API Reference](/content/python-api/attributes/dynamic_body).
 
+The following source code was mirrored from the `arena-py` [dynamic_body.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/dynamic_body.py) example.
+
 ```python
 from arena import *
 

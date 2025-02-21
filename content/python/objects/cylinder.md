@@ -11,6 +11,8 @@ Draw a Cylinder primitive mesh geometry. Cylinder is a tube shape with flat ends
 
 Additional Python properties are available in the [Cylinder API Reference](/content/python-api/objects/cylinder).
 
+The following source code was mirrored from the `arena-py` [cylinder.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/cylinder.py) example.
+
 ```python
 from arena import *
 

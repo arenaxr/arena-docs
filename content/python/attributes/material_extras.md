@@ -21,6 +21,8 @@ Material-extras can traverse objects, so can be applied to a GLTF, e.g:
 
 Additional Python properties are available in the [MaterialExtras API Reference](/content/python-api/attributes/material_extras).
 
+The following source code was mirrored from the `arena-py` [material_extras.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/material_extras.py) example.
+
 ```python
 from arena import *
 
@@ -32,7 +34,7 @@ material_extras = MaterialExtras(
 )
 
 @scene.run_once
-def make_robot():
+def make_occluded_robot():
     robot = GLTF(
         object_id="arobothead",
         url="/store/models/robobit.glb",

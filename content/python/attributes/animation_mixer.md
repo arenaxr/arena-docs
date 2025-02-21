@@ -17,6 +17,8 @@ The `clip` asterisk means "play all animations", and works better in some situat
 
 Additional Python properties are available in the [AnimationMixer API Reference](/content/python-api/attributes/animation_mixer).
 
+The following source code was mirrored from the `arena-py` [animation_mixer.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation_mixer.py) example.
+
 ```python
 from arena import *
 

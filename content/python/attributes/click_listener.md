@@ -13,6 +13,8 @@ Add the "click-listener" event to a scene object; click-listener is a Component 
 
 Additional Python properties are available in the [ClickListener API Reference](/content/python-api/attributes/click_listener).
 
+The following source code was mirrored from the `arena-py` [click_listener.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/click_listener.py) example.
+
 ```python
 import random
 
@@ -27,7 +29,7 @@ def click(scene, evt, msg):
         print("mousedown!")
 
 @scene.run_once
-def main():
+def make_click_listener():
     my_tet = Tetrahedron(
         object_id="my_tet",
         position=(-1, 2, -5),

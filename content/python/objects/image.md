@@ -18,13 +18,15 @@ To update the image of a named image already in the scene, use this syntax.
 
 Additional Python properties are available in the [Image API Reference](/content/python-api/objects/image).
 
+The following source code was mirrored from the `arena-py` [image.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/image.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def make_im():
+def make_image():
     image_floor = Image(
         object_id="image_floor",
         position=(0, 0, 0.4),

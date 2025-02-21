@@ -13,6 +13,8 @@ This example scales the Duck model into a 10 x 10 x 10 box.
 
 Additional Python properties are available in the [ModelContainer API Reference](/content/python-api/attributes/model_container).
 
+The following source code was mirrored from the `arena-py` [model_container.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/model_container.py) example.
+
 ```python
 from arena import *
 

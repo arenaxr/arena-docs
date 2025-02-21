@@ -11,6 +11,8 @@ Draw a Triangle primitive mesh geometry. Triangle is flat shape with 3 edges.
 
 Additional Python properties are available in the [Triangle API Reference](/content/python-api/objects/triangle).
 
+The following source code was mirrored from the `arena-py` [triangle.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/triangle.py) example.
+
 ```python
 from arena import *
 

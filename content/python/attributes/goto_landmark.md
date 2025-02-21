@@ -11,6 +11,8 @@ Teleports user to the landmark with the given name. Requires click-listener.
 
 Additional Python properties are available in the [GotoLandmark API Reference](/content/python-api/attributes/goto_landmark).
 
+The following source code was mirrored from the `arena-py` [goto_landmark.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_landmark.py) example.
+
 ```python
 from arena import *
 

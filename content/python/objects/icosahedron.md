@@ -11,13 +11,15 @@ Draw a Icosahedron primitive mesh geometry. Icosahedron is 20-sided polyhedron s
 
 Additional Python properties are available in the [Icosahedron API Reference](/content/python-api/objects/icosahedron).
 
+The following source code was mirrored from the `arena-py` [icosahedron.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/icosahedron.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def make_iso():
+def make_icosahedron():
     iso = Icosahedron(
         object_id="iso",
         position=(0, 2, -3),

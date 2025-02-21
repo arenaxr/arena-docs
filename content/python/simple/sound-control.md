@@ -9,6 +9,8 @@ grand_parent: Python Library
 
 Demonstrate controlling the sound file play/pause/stop events of an object (earth model, playing Earth, Wind, & Fire).
 
+The following source code was mirrored from the `arena-py` [sound-control.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/sound-control.py) example.
+
 ```python
 from arena import *
 
@@ -33,7 +35,7 @@ def click_handler(scene, evt, msg):
         scene.generate_custom_event(evt, action="clientEvent")
 
 @scene.run_once
-def main():
+def make_sound_controls():
     global earth, button_play, button_pause, button_stop
     # Create models
     earth = GLTF(

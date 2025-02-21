@@ -11,6 +11,8 @@ Attribution Component. Saves attribution data in any entity.
 
 Additional Python properties are available in the [Attribution API Reference](/content/python-api/attributes/attribution).
 
+The following source code was mirrored from the `arena-py` [attribution.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/attribution.py) example.
+
 ```python
 from arena import *
 
@@ -27,7 +29,7 @@ attribution = Attribution(
 )
 
 @scene.run_once
-def make_gltf_model_blumbach():
+def make_gltf_attribution():
     gltf_model_blumbach = GLTF(
         object_id="gltf-model-blumbach",
         url="store/users/wiselab/build/blumbach.glb",

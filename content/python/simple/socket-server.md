@@ -14,6 +14,8 @@ WARNING: This example subverts ARENA MQTT security by adding a new socket server
 secure yourself.
 !!!!!!!
 
+The following source code was mirrored from the `arena-py` [socket-server.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/socket-server.py) example.
+
 ```python
 import json
 import socket

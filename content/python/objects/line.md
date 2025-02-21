@@ -13,13 +13,15 @@ Extend the line with a new segment, colored green.
 
 Additional Python properties are available in the [Line API Reference](/content/python-api/objects/line).
 
+The following source code was mirrored from the `arena-py` [line.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/line.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def make_line():
+def make_simple_line():
     line = Line(
         object_id="line_1",
         start=(2, 2, 2),

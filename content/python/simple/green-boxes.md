@@ -7,6 +7,8 @@ grand_parent: Python Library
 
 # Green Boxes
 
+The following source code was mirrored from the `arena-py` [green-boxes.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/green-boxes.py) example.
+
 ```python
 import random
 import sys

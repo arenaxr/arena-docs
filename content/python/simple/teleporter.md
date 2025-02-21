@@ -9,6 +9,8 @@ grand_parent: Python Library
 
 Creates a teleporter.
 
+The following source code was mirrored from the `arena-py` [teleporter.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/teleporter.py) example.
+
 ```python
 import random
 

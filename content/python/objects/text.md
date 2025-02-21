@@ -17,6 +17,8 @@ Change text color properties [A-Frame Text](https://aframe.io/docs/1.5.0/compone
 
 Additional Python properties are available in the [Text API Reference](/content/python-api/objects/text).
 
+The following source code was mirrored from the `arena-py` [text.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/text.py) example.
+
 ```python
 from arena import *
 

@@ -12,6 +12,8 @@ Simple switch between the default gltf-model and a detailed one when a user came
 
 Additional Python properties are available in the [GltfModelLod API Reference](/content/python-api/attributes/gltf_model_lod).
 
+The following source code was mirrored from the `arena-py` [gltf_model_lod.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/gltf_model_lod.py) example.
+
 ```python
 from arena import *
 

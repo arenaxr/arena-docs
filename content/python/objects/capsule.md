@@ -11,13 +11,15 @@ Draw a Capsule primitive mesh geometry. Capsule is a tube shape with rounded end
 
 Additional Python properties are available in the [Capsule API Reference](/content/python-api/objects/capsule).
 
+The following source code was mirrored from the `arena-py` [capsule.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/capsule.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def make_box():
+def make_capsule():
     my_cap = Capsule(
         object_id="my_cap",
         position=(0, 2, -3),

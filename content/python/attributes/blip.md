@@ -11,6 +11,8 @@ When the object is created or deleted, it will animate in/out of the scene inste
 
 Additional Python properties are available in the [Blip API Reference](/content/python-api/attributes/blip).
 
+The following source code was mirrored from the `arena-py` [blip.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/blip.py) example.
+
 ```python
 from arena import *
 

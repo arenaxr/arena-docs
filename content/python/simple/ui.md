@@ -9,6 +9,8 @@ grand_parent: Python Library
 
 Demonstrate a multi-path set of UI panels for a user to interact with.
 
+The following source code was mirrored from the `arena-py` [ui.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/ui.py) example.
+
 ```python
 from arena import *
 
@@ -17,7 +19,7 @@ scene = Scene(host="arenaxr.org", scene="example")
 prompt = None
 
 @scene.run_once
-def setup_scene():
+def setup_ui_scene():
     # Add a simple info card with text and image
     intro_card = ArenauiCard(
         object_id="intro-card",

@@ -11,6 +11,8 @@ Draw a Torus primitive mesh geometry. Torus is a tube shaped into a circle.
 
 Additional Python properties are available in the [Torus API Reference](/content/python-api/objects/torus).
 
+The following source code was mirrored from the `arena-py` [torus.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/torus.py) example.
+
 ```python
 from arena import *
 

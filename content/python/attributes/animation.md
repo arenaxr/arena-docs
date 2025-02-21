@@ -17,6 +17,8 @@ Other animations are available that resemble the `"data": {"animation": { "prope
 
 Additional Python properties are available in the [Animation API Reference](/content/python-api/attributes/animation).
 
+The following source code was mirrored from the `arena-py` [animation.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation.py) example.
+
 ```python
 from arena import *
 

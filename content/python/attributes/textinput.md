@@ -11,6 +11,8 @@ Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Require
 
 Additional Python properties are available in the [Textinput API Reference](/content/python-api/attributes/textinput).
 
+The following source code was mirrored from the `arena-py` [textinput.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/textinput.py) example.
+
 ```python
 from arena import *
 
@@ -29,7 +31,7 @@ def evt_handler(scene, evt, msg):
         print(f"{display_name}'s favorite food is: {evt.data.text}!")
 
 @scene.run_once
-def make_tex_input_iso():
+def make_text_input_icosahedron():
     my_iso = Icosahedron(
         object_id="my_iso",
         position=(0, 2, -5),

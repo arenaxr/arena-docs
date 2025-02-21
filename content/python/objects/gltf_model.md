@@ -15,6 +15,8 @@ Instantiate a glTF v2.0 binary model (file extension .glb) from a URL.
 
 Additional Python properties are available in the [GltfModel API Reference](/content/python-api/objects/gltf_model).
 
+The following source code was mirrored from the `arena-py` [gltf_model.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/gltf_model.py) example.
+
 ```python
 from arena import *
 

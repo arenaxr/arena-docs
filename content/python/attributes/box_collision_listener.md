@@ -11,6 +11,8 @@ Listen for bounding-box collisions with user camera and hands. Must be applied t
 
 Additional Python properties are available in the [BoxCollisionListener API Reference](/content/python-api/attributes/box_collision_listener).
 
+The following source code was mirrored from the `arena-py` [box_collision_listener.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/box_collision_listener.py) example.
+
 ```python
 from arena import *
 
@@ -43,7 +45,7 @@ def add_temp_ball(scene, position, color):
     )
 
 @scene.run_once
-def make_box_collision():
+def make_box_collider():
     box_collision = Box(
         object_id="box1",
         depth=1,

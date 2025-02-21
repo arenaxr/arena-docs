@@ -13,13 +13,15 @@ See guidance to store paths under <a href='https://docs.arenaxr.org/content/inte
 
 Additional Python properties are available in the [ObjModel API Reference](/content/python-api/objects/obj_model).
 
+The following source code was mirrored from the `arena-py` [obj_model.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/obj_model.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def make_vr_controller_vive():
+def make_obj_model():
     vr_controller_vive = ObjModel(
         object_id="vr_controller_vive",
         position=(0, 2, -3),

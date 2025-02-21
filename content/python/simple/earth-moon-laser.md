@@ -9,6 +9,8 @@ grand_parent: Python Library
 
 Simple program to animate the earth and moon with a laser pointer.
 
+The following source code was mirrored from the `arena-py` [earth-moon-laser.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/earth-moon-laser.py) example.
+
 ```python
 from arena import *
 

@@ -12,6 +12,8 @@ Note: this is not necessarily called when a user "joins" a scene, rather, it is 
 
 `scene.user_left_callback` is called whenever a user leaves a scene/sends a delete message.
 
+The following source code was mirrored from the `arena-py` [user_callbacks.py](https://github.com/arenaxr/arena-py/blob/master/examples/callbacks/user_callbacks.py) example.
+
 ```python
 from arena import *
 

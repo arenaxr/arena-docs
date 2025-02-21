@@ -19,6 +19,8 @@ The quaternion (native) representation of rotation is a bit more tricky. The 4 p
 
 Additional Python properties are available in the [Rotation API Reference](/content/python-api/attributes/rotation).
 
+The following source code was mirrored from the `arena-py` [rotation.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/rotation.py) example.
+
 ```python
 import math
 
@@ -42,7 +44,7 @@ my_box2 = Box(
 )
 
 @scene.run_once
-def make_box():
+def make_rotatable_box():
     scene.add_object(my_box1)
     scene.add_object(my_box2)
 

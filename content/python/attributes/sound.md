@@ -15,6 +15,8 @@ More properties at <a href='https://aframe.io/docs/1.5.0/components/sound.html'>
 
 Additional Python properties are available in the [Sound API Reference](/content/python-api/attributes/sound).
 
+The following source code was mirrored from the `arena-py` [sound.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/sound.py) example.
+
 ```python
 from arena import *
 

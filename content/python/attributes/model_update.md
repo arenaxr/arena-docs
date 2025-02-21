@@ -13,6 +13,8 @@ The GLTF-specific `modelUpdate` attribute is an object with child component name
 
 Additional Python properties are available in the [ModelUpdate API Reference](/content/python-api/attributes/model_update).
 
+The following source code was mirrored from the `arena-py` [model_update.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/model_update.py) example.
+
 ```python
 from arena import *
 

@@ -18,6 +18,8 @@ to this program via private MQTT topics as well.
 We also print the global private objects dict to show how it is cleaned up when
 a user leaves the scene.
 
+The following source code was mirrored from the `arena-py` [private-objs.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/private-objs.py) example.
+
 ```python
 import random
 

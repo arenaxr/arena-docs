@@ -16,6 +16,8 @@ arena-py will look for all "action" = "delete" messages and call this callback.
 Use this to delete references and to be notified when an object is removed by
 another user or program.
 
+The following source code was mirrored from the `arena-py` [object_callbacks.py](https://github.com/arenaxr/arena-py/blob/master/examples/callbacks/object_callbacks.py) example.
+
 ```python
 from arena import *
 

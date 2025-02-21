@@ -11,6 +11,8 @@ Draw a Cone primitive mesh geometry. Cone is a tube shape with one flat end and 
 
 Additional Python properties are available in the [Cone API Reference](/content/python-api/objects/cone).
 
+The following source code was mirrored from the `arena-py` [cone.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/cone.py) example.
+
 ```python
 from arena import *
 

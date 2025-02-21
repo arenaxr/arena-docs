@@ -14,13 +14,15 @@ a title is provided, it will serve more as a label or sign. An optional close bu
 
 Additional Python properties are available in the [ArenauiCard API Reference](/content/python-api/objects/arenaui_card).
 
+The following source code was mirrored from the `arena-py` [arenaui_card.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/arenaui_card.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def setup_scene():
+def make_ui_card():
     # Add a simple info card with text and image
     intro_card = ArenauiCard(
         object_id="intro-card",

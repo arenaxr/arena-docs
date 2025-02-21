@@ -13,13 +13,15 @@ to what one may see in traditional 2D web interfaces.
 
 Additional Python properties are available in the [ArenauiPrompt API Reference](/content/python-api/objects/arenaui_prompt).
 
+The following source code was mirrored from the `arena-py` [arenaui_prompt.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/arenaui_prompt.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def setup_scene():
+def make_ui_prompt():
     # Add a popup prompt with single button
     def prompt_handler(_scene, evt, _msg):
         if evt.type == "buttonClick":

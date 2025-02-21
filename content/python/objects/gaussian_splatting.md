@@ -13,6 +13,8 @@ More information: <a href='https://github.com/quadjr/aframe-gaussian-splatting'>
 
 Additional Python properties are available in the [GaussianSplatting API Reference](/content/python-api/objects/gaussian_splatting).
 
+The following source code was mirrored from the `arena-py` [gaussian_splatting.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/gaussian_splatting.py) example.
+
 ```python
 from arena import *
 

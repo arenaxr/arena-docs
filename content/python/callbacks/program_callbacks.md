@@ -11,6 +11,8 @@ grand_parent: Python Library
 Use this to cleanup resources you don't want in the scene when the program ends.
 This is especially useful for persisted objects use created that you want to be removed.
 
+The following source code was mirrored from the `arena-py` [program_callbacks.py](https://github.com/arenaxr/arena-py/blob/master/examples/callbacks/program_callbacks.py) example.
+
 ```python
 from arena import *
 

@@ -13,13 +13,15 @@ This program loads a URDF model of a robot arm, and then attaches a see-though g
 
 Additional Python properties are available in the [SubmodelParent API Reference](/content/python-api/attributes/submodel_parent).
 
+The following source code was mirrored from the `arena-py` [submodel_parent.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/submodel_parent.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def make_model_container():
+def make_robot_arm_attachment():
 robot_arm = UrdfModel(
     object_id="robot_arm",
     position=(0, 0, -3),

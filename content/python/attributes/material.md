@@ -28,6 +28,8 @@ More properties at <a href='https://aframe.io/docs/1.5.0/components/material.htm
 
 Additional Python properties are available in the [Material API Reference](/content/python-api/attributes/material).
 
+The following source code was mirrored from the `arena-py` [material.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/material.py) example.
+
 ```python
 from arena import *
 

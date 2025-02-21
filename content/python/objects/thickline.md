@@ -15,13 +15,15 @@ You might be wondering, why can't normal lines just use the scale value to speci
 
 Additional Python properties are available in the [Thickline API Reference](/content/python-api/objects/thickline).
 
+The following source code was mirrored from the `arena-py` [thickline.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/thickline.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def make_thickline():
+def make_thick_line():
     thickline = Thickline(
         object_id="thickline_8",
         lineWidth=11,

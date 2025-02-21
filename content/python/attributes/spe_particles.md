@@ -17,6 +17,8 @@ Particles are very complicated and take a lot of parameters. It would not make s
 
 Additional Python properties are available in the [SpeParticles API Reference](/content/python-api/attributes/spe_particles).
 
+The following source code was mirrored from the `arena-py` [spe_particles.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/spe_particles.py) example.
+
 ```python
 from arena import *
 

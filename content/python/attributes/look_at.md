@@ -20,6 +20,8 @@ look_at="0 0 0"
 
 Additional Python properties are available in the [LookAt API Reference](/content/python-api/attributes/look_at).
 
+The following source code was mirrored from the `arena-py` [look_at.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/look_at.py) example.
+
 ```python
 from arena import *
 

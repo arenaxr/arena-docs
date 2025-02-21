@@ -11,6 +11,8 @@ Adds a video to an entity and controls its playback.
 
 Additional Python properties are available in the [VideoControl API Reference](/content/python-api/attributes/video_control).
 
+The following source code was mirrored from the `arena-py` [video_control.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/video_control.py) example.
+
 ```python
 from arena import *
 

@@ -11,6 +11,8 @@ Example to stream video from Jitsi onto a geometry. Change the user display name
 
 Additional Python properties are available in the [JitsiVideo API Reference](/content/python-api/attributes/jitsi_video).
 
+The following source code was mirrored from the `arena-py` [jitsi_video.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/jitsi_video.py) example.
+
 ```python
 from arena import *
 

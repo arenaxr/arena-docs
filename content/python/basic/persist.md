@@ -9,6 +9,8 @@ grand_parent: Python Library
 
 If we want our objects to return to the scene when we next open or reload our browser, we can commit them on creation to the ARENA Persistence DB by setting `"persist": true`.
 
+The following source code was mirrored from the `arena-py` [persist.py](https://github.com/arenaxr/arena-py/blob/master/examples/basic/persist.py) example.
+
 ```python
 from arena import *
 

@@ -7,6 +7,8 @@ grand_parent: Python Library
 
 # Path Navigation
 
+The following source code was mirrored from the `arena-py` [nav.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/nav.py) example.
+
 ```python
 import math
 import random

@@ -10,6 +10,8 @@ grand_parent: Python Library
 Sample scene: Toggle button with 3d model.
 Example of setting up and activating interactive animation.
 
+The following source code was mirrored from the `arena-py` [statue.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/statue.py) example.
+
 ```python
 from arena import *
 

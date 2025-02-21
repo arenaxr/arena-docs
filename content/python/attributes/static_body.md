@@ -15,6 +15,8 @@ More properties at <a href='https://github.com/c-frame/aframe-physics-system/blo
 
 Additional Python properties are available in the [StaticBody API Reference](/content/python-api/attributes/static_body).
 
+The following source code was mirrored from the `arena-py` [static_body.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/static_body.py) example.
+
 ```python
 from arena import *
 
@@ -25,7 +27,7 @@ static_body = StaticBody(
 )
 
 @scene.run_once
-def make_drop_box():
+def make_drop_plane():
     # First, enable physics in the scene.
     opt_obj = Object(
         object_id="scene-options",

@@ -7,6 +7,8 @@ grand_parent: Python Library
 
 # Grab Advanced
 
+The following source code was mirrored from the `arena-py` [grab2.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/grab2.py) example.
+
 ```python
 import numpy as np
 
@@ -110,7 +112,7 @@ def move_box():
         scene.update_object(my_box)
 
 @scene.run_once
-def main():
+def make_grabbable_matrix():
     scene.add_object(my_box)
 
 scene.run_tasks()

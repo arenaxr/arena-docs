@@ -11,6 +11,8 @@ Draw a Sphere primitive mesh geometry. Sphere is completely round shape.
 
 Additional Python properties are available in the [Sphere API Reference](/content/python-api/objects/sphere).
 
+The following source code was mirrored from the `arena-py` [sphere.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/sphere.py) example.
+
 ```python
 from arena import *
 

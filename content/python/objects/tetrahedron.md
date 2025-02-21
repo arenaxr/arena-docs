@@ -11,13 +11,15 @@ Draw a Tetrahedron primitive mesh geometry. Tetrahedron is 4-sided polyhedron sh
 
 Additional Python properties are available in the [Tetrahedron API Reference](/content/python-api/objects/tetrahedron).
 
+The following source code was mirrored from the `arena-py` [tetrahedron.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/tetrahedron.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def make_tet():
+def make_tetrahedron():
     my_tet = Tetrahedron(
         object_id="my_tet",
         position=(0, 2, -3),

@@ -11,6 +11,8 @@ Draw a Circle primitive mesh geometry.
 
 Additional Python properties are available in the [Circle API Reference](/content/python-api/objects/circle).
 
+The following source code was mirrored from the `arena-py` [circle.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/circle.py) example.
+
 ```python
 from arena import *
 

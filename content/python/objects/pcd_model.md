@@ -13,6 +13,8 @@ Format: <a href='https://pointclouds.org/documentation/tutorials/index.html'>Poi
 
 Additional Python properties are available in the [PcdModel API Reference](/content/python-api/objects/pcd_model).
 
+The following source code was mirrored from the `arena-py` [pcd_model.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/pcd_model.py) example.
+
 ```python
 from arena import *
 

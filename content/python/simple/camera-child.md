@@ -9,6 +9,8 @@ grand_parent: Python Library
 
 Demonstrate setting an object to be a child of a camera.
 
+The following source code was mirrored from the `arena-py` [camera-child.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/camera-child.py) example.
+
 ```pythonfrom arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")

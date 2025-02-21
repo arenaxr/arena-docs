@@ -7,6 +7,8 @@ grand_parent: Python Library
 
 # Device Sensor
 
+The following source code was mirrored from the `arena-py` [device-sensor.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/device-sensor.py) example.
+
 ```python
 import json
 from datetime import datetime

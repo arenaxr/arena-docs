@@ -9,6 +9,8 @@ grand_parent: Python Library
 
 Simple program to animate the earth and moon.
 
+The following source code was mirrored from the `arena-py` [earth-moon-simple.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/earth-moon-simple.py) example.
+
 ```python
 from arena import *
 

@@ -13,13 +13,15 @@ the `buttonName` and `buttonIndex`.
 
 Additional Python properties are available in the [ArenauiButtonPanel API Reference](/content/python-api/objects/arenaui_button_panel).
 
+The following source code was mirrored from the `arena-py` [arenaui_button_panel.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/arenaui_button_panel.py) example.
+
 ```python
 from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 
 @scene.run_once
-def setup_scene():
+def make_ui_button_panel():
     # Add a button panel, with two sets of buttons
     first_buttonset = [Button(name="Prompt A"), Button(name="Option B"), Button("More")]
     second_buttonset = [Button("D"), Button("E"), Button("F"), Button("Back")]

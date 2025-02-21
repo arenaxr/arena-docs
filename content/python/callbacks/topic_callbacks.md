@@ -10,6 +10,8 @@ grand_parent: Python Library
 Demonstrate subscribing to a secondary topic on the same broker and monitor
 messages from the secondary topic within the same program.
 
+The following source code was mirrored from the `arena-py` [topic_callbacks.py](https://github.com/arenaxr/arena-py/blob/master/examples/callbacks/topic_callbacks.py) example.
+
 ```python
 import json
 

@@ -13,6 +13,8 @@ See guidance to store paths under <a href='https://docs.arenaxr.org/content/inte
 
 Additional Python properties are available in the [UrdfModel API Reference](/content/python-api/objects/urdf_model).
 
+The following source code was mirrored from the `arena-py` [urdf_model.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/urdf_model.py) example.
+
 ```python
 import math
 import time
@@ -33,7 +35,7 @@ athlete_model = UrdfModel(
 )
 
 @scene.run_once
-def main():
+def make_urdf_model():
     # add the model
     scene.add_object(athlete_model)
 

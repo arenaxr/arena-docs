@@ -11,6 +11,8 @@ Draw a Ring primitive mesh geometry. Ring is flat rounded shape with 2 edges, in
 
 Additional Python properties are available in the [Ring API Reference](/content/python-api/objects/ring).
 
+The following source code was mirrored from the `arena-py` [ring.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/ring.py) example.
+
 ```python
 from arena import *
 

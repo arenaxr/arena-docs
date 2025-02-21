@@ -13,6 +13,8 @@ Navigates to entirely new page into browser when clicked, or other event (requir
 
 Additional Python properties are available in the [GotoUrl API Reference](/content/python-api/attributes/goto_url).
 
+The following source code was mirrored from the `arena-py` [goto_url.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/goto_url.py) example.
+
 ```python
 from arena import *
 

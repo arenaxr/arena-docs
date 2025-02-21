@@ -11,6 +11,8 @@ Draw a sphere geometry, set the texture src to be an equirectangular video, on t
 
 Additional Python properties are available in the [Videosphere API Reference](/content/python-api/objects/videosphere).
 
+The following source code was mirrored from the `arena-py` [videosphere.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/videosphere.py) example.
+
 ```python
 from arena import *
 

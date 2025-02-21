@@ -9,6 +9,8 @@ grand_parent: Python Library
 
 It's desirable to have objects that don't last forever and pile up. For that there is the 'ttl' parameter that gives objects a lifetime, in seconds. This is an example usage for a sphere that disappears after 5 seconds.
 
+The following source code was mirrored from the `arena-py` [ttl.py](https://github.com/arenaxr/arena-py/blob/master/examples/basic/ttl.py) example.
+
 ```python
 from arena import *
 

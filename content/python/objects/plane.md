@@ -11,6 +11,8 @@ Draw a Plane primitive mesh geometry. Plane is flat shape with 4 edges.
 
 Additional Python properties are available in the [Plane API Reference](/content/python-api/objects/plane).
 
+The following source code was mirrored from the `arena-py` [plane.py](https://github.com/arenaxr/arena-py/blob/master/examples/objects/plane.py) example.
+
 ```python
 from arena import *
 

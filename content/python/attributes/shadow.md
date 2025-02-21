@@ -14,6 +14,8 @@ Additionally, the light's shadow camera (used for depth projection) usually must
 
 Additional Python properties are available in the [Shadow API Reference](/content/python-api/attributes/shadow).
 
+The following source code was mirrored from the `arena-py` [shadow.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/shadow.py) example.
+
 ```python
 from arena import *
 
