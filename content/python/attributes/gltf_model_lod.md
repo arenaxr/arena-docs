@@ -5,6 +5,8 @@ parent: Attributes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # GLTF Model Level of Detail
 
 Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance.

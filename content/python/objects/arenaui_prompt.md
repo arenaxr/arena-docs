@@ -5,6 +5,8 @@ parent: Objects
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # ARENAUI Prompt
 
 Similar to a button panel, this prompt is intended to be used a quick confirmation popup.

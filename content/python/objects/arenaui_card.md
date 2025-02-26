@@ -5,6 +5,8 @@ parent: Objects
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # ARENAUI Card Panel
 
 A card is a rectangular panel that can contain text and/or an image. It can be used to display

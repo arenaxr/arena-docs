@@ -5,6 +5,8 @@ parent: Attributes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Sound
 
 Play toy piano sound from a URL when you click a box. Sets click-listener Component, waveform URL, and sound attribute.

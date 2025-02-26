@@ -5,6 +5,8 @@ parent: Objects
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Cone
 
 Draw a Cone primitive mesh geometry. Cone is a tube shape with one flat end and one joined (point) end.

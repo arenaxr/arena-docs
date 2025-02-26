@@ -5,6 +5,8 @@ parent: Objects
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Sphere
 
 Draw a Sphere primitive mesh geometry. Sphere is completely round shape.

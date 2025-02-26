@@ -5,6 +5,8 @@ parent: Callbacks
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Add/Remove Topic
 
 Demonstrate subscribing to a secondary topic on the same broker and monitor

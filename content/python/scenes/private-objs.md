@@ -5,6 +5,8 @@ parent: Scenes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Private Objects
 
 This example demonstrates how to create private objects that only one user can see

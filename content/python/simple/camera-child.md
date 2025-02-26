@@ -5,13 +5,16 @@ parent: Simple
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Camera Child
 
 Demonstrate setting an object to be a child of a camera.
 
 The following source code was mirrored from the `arena-py` [camera-child.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/camera-child.py) example.
 
-```pythonfrom arena import *
+```python
+from arena import *
 
 scene = Scene(host="arenaxr.org", scene="example")
 

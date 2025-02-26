@@ -5,6 +5,8 @@ parent: Attributes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Dynamic-Body Physics
 
 You can enable physics (gravity) for a scene object by adding the dynamic-body component.

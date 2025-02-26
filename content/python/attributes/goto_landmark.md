@@ -5,6 +5,8 @@ parent: Attributes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Goto Landmark
 
 Teleports user to the landmark with the given name. Requires click-listener.

@@ -5,6 +5,8 @@ parent: Simple
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Earth Moon Laser
 
 Simple program to animate the earth and moon with a laser pointer.

@@ -5,6 +5,8 @@ parent: Callbacks
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # User Callbacks
 
 `scene.user_join_callback` is called whenever the library detects/finds a new user that it hasn't seen before in a scene.

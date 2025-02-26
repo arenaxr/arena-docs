@@ -5,6 +5,8 @@ parent: Attributes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Look At
 
 The look-at component defines the behavior for an entity to dynamically rotate or face towards another entity or position. Use `#my-camera` to face the user camera, otherwise can take either a vec3 position or a query selector to another entity.

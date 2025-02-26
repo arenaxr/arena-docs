@@ -5,6 +5,8 @@ parent: Simple
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Socket Server
 Accept incoming socket json and publish to ARENA.  An example of using non-blocking threads to
 allow ARENA-enabled applications to execute infinite `while True` loops.

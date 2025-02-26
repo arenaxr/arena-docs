@@ -5,6 +5,8 @@ parent: Attributes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # GLTF Model Update
 
 Besides applying standard rotation and position attributes to the center-point of the GLTF model, the individual child components can also be manually manipulated.

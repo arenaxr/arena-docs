@@ -5,6 +5,8 @@ parent: Objects
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Torus Knot
 
 Draw a Torus Knot primitive mesh geometry. Torus Knot is tube shaped into a knot shape.

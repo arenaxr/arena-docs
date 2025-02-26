@@ -5,6 +5,8 @@ parent: Simple
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # ARENA UI Panels
 
 Demonstrate a multi-path set of UI panels for a user to interact with.

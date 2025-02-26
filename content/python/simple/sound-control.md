@@ -5,6 +5,8 @@ parent: Simple
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Sound Control
 
 Demonstrate controlling the sound file play/pause/stop events of an object (earth model, playing Earth, Wind, & Fire).

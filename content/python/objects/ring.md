@@ -5,6 +5,8 @@ parent: Objects
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Ring
 
 Draw a Ring primitive mesh geometry. Ring is flat rounded shape with 2 edges, inner and outer.

@@ -5,6 +5,8 @@ parent: Scenes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Animation Test
 
 The following source code was mirrored from the `arena-py` [anim-test.py](https://github.com/arenaxr/arena-py/blob/master/examples/scenes/anim-test.py) example.

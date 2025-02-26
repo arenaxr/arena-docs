@@ -5,6 +5,8 @@ parent: Simple
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Camera Tracer
 
 Camera tracing program. Draws a path that follows the user.

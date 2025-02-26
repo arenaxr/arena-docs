@@ -5,6 +5,8 @@ parent: Scenes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Device Scene
 
 Demonstrate starting two connections, for a scene and a device, and communicating between them.

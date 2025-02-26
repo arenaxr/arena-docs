@@ -5,6 +5,8 @@ parent: Callbacks
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Chat Callback
 
 Extremely basic example of setting a chat message handler to echo

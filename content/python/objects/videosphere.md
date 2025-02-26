@@ -5,6 +5,8 @@ parent: Objects
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Videosphere
 
 Draw a sphere geometry, set the texture src to be an equirectangular video, on the 'back' (inside).

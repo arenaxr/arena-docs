@@ -5,6 +5,8 @@ parent: Objects
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Octahedron
 
 Draw a Octahedron primitive mesh geometry. Octahedron is 8-sided polyhedron shape.

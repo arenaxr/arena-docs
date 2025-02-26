@@ -5,6 +5,8 @@ parent: Objects
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # OBJ Model
 
 Loads a 3D model and material using a Wavefront (.OBJ) file and a .MTL file.

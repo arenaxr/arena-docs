@@ -5,6 +5,8 @@ parent: Attributes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Landmark
 
 Creates a landmark that can be teleported to from the UI list, or is one of the random starting positions for the scene.

@@ -5,6 +5,8 @@ parent: Objects
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Entity (generic object)
 
 Entities are the base of all objects in the scene. Entities are containers into which components can be attached.

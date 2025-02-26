@@ -5,6 +5,8 @@ parent: Objects
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # 3D Gaussian Splat
 
 Load a 3D Gaussian Splat for Real-Time Radiance Field Rendering.

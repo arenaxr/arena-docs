@@ -5,6 +5,8 @@ parent: Objects
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # ARENAUI Button Panel
 
 A button panel is a horizontal or vertical panel that contains buttons. Each button can have a

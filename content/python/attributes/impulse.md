@@ -5,6 +5,8 @@ parent: Attributes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Impulse
 
 Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires click-listener and physics.

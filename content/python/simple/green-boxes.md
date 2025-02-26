@@ -5,6 +5,8 @@ parent: Simple
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Green Boxes
 
 The following source code was mirrored from the `arena-py` [green-boxes.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/green-boxes.py) example.

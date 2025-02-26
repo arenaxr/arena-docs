@@ -5,6 +5,8 @@ parent: Simple
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Grab Simple
 
 The following source code was mirrored from the `arena-py` [grab.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/grab.py) example.

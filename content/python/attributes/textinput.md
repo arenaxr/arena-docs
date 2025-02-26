@@ -5,6 +5,8 @@ parent: Attributes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Text Input
 
 Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.

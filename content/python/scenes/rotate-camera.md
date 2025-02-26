@@ -5,6 +5,8 @@ parent: Scenes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Rotate Camera
 
 Rotate cameras around the origin.

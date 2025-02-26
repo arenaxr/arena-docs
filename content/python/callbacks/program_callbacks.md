@@ -5,6 +5,8 @@ parent: Callbacks
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Program Callbacks
 
 `scene.end_program_callback` is called whenever the program is ending from the SIGINT, Crtl-C, or other kill process.

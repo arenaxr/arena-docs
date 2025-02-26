@@ -5,6 +5,8 @@ parent: Simple
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Earth Moon
 
 Sample scene: Earth and Moon with Markers.
@@ -12,7 +14,8 @@ Example of setting up and activating interactive animation.
 
 The following source code was mirrored from the `arena-py` [earth-moon.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/earth-moon.py) example.
 
-```pythonfrom arena import *
+```python
+from arena import *
 
 def end_program_callback(scene: Scene):
     global sceneParent, earth, moon

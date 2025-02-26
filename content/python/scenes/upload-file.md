@@ -5,6 +5,8 @@ parent: Scenes
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # Uploading Files
 
 Upload some sample files to the ARENA filestore under the user's store folder and create objects to render them.

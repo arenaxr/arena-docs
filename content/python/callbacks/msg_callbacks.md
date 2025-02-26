@@ -5,6 +5,8 @@ parent: Callbacks
 grand_parent: Python Library
 ---
 
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+
 # All Messages Callback
 
 `scene.on_msg_callback` is called whenever there is a new message sent to the client. Use this whenever you want to sniff out **all** incoming messages.

@@ -31,6 +31,7 @@ def create_python_markdown(folder, add_api=False):
                     wfile.write(f"parent: {pascalcase(folder)}\n")
                     wfile.write("grand_parent: Python Library\n")
                     wfile.write("---\n\n")
+                    wfile.write("<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->\n\n")
                     module_docstring = True
                     last_line = None
                     for line in rfile:
