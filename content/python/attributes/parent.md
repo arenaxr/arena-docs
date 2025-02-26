@@ -1,7 +1,7 @@
 ---
 title: Parent
 layout: default
-parent: Basic
+parent: Attributes
 grand_parent: Python Library
 ---
 
@@ -11,7 +11,9 @@ Child objects inherit attributes of their parent, for example scale. Scale the p
 
 There is support to attach a child to an already-existing parent scene objects. When creating a child object, set the `"parent": "parent_object_id"` value in the JSON data. For example if parent object is gltf-model_Earth and child object is gltf-model_Moon, the commands would look like:
 
-The following source code was mirrored from the `arena-py` [parent.py](https://github.com/arenaxr/arena-py/blob/master/examples/basic/parent.py) example.
+Additional Python properties are available in the [Parent API Reference](/content/python-api/attributes/parent).
+
+The following source code was mirrored from the `arena-py` [parent.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/parent.py) example.
 
 ```python
 from arena import *

@@ -1,13 +1,13 @@
 ---
 title: AnimTest
 layout: default
-parent: Simple
+parent: Scenes
 grand_parent: Python Library
 ---
 
 # Animation Test
 
-The following source code was mirrored from the `arena-py` [anim-test.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/anim-test.py) example.
+The following source code was mirrored from the `arena-py` [anim-test.py](https://github.com/arenaxr/arena-py/blob/master/examples/scenes/anim-test.py) example.
 
 ```python
 from arena import *

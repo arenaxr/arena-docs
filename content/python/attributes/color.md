@@ -1,7 +1,7 @@
 ---
 title: Color
 layout: default
-parent: Basic
+parent: Attributes
 grand_parent: Python Library
 ---
 
@@ -9,7 +9,9 @@ grand_parent: Python Library
 
 Change only the color of the already-drawn box.
 
-The following source code was mirrored from the `arena-py` [color.py](https://github.com/arenaxr/arena-py/blob/master/examples/basic/color.py) example.
+Additional Python properties are available in the [Color API Reference](/content/python-api/attributes/color).
+
+The following source code was mirrored from the `arena-py` [color.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/color.py) example.
 
 ```python
 from arena import *

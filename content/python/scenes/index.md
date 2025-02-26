@@ -1,7 +1,8 @@
 ---
 title: Scenes
-nav_order: 1
+nav_order: 1.1
 layout: default
+has_children: true
 parent: Python Library
 ---
 
@@ -90,19 +91,19 @@ This is a list of the most common options available in this mode, (`python3 prog
 ```
 -h, --help            show this help message and exit
 -mh HOST, --host HOST
-                        ARENA webserver main host to connect to
+                    ARENA webserver main host to connect to
 -n NAMESPACE, --namespace NAMESPACE
-                        Namespace of scene
+                    Namespace of scene
 -s SCENE, --scene SCENE
-                        Scene to publish and listen to
+                    Scene to publish and listen to
 -d DEVICE, --device DEVICE
-                        Device to publish and listen to
+                    Device to publish and listen to
 -p POSITION POSITION POSITION, --position POSITION POSITION POSITION
-                        App position as cartesian.x cartesian.y cartesian.z
+                    App position as 'x y z'
 -r ROTATION ROTATION ROTATION, --rotation ROTATION ROTATION ROTATION
-                        App rotation as euler.x euler.y euler.z
+                    App rotation as 'x y z'
 -c SCALE SCALE SCALE, --scale SCALE SCALE SCALE
-                        App scale as cartesian.x cartesian.y cartesian.z
+                    App scale as 'x y z'
 -D, --debug           Debug mode.
 ```
 

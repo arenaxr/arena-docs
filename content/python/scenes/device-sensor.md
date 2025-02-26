@@ -1,13 +1,13 @@
 ---
 title: DeviceSensor
 layout: default
-parent: Simple
+parent: Scenes
 grand_parent: Python Library
 ---
 
 # Device Sensor
 
-The following source code was mirrored from the `arena-py` [device-sensor.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/device-sensor.py) example.
+The following source code was mirrored from the `arena-py` [device-sensor.py](https://github.com/arenaxr/arena-py/blob/master/examples/scenes/device-sensor.py) example.
 
 ```python
 import json

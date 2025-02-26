@@ -7,7 +7,7 @@ grand_parent: Python Library
 
 # Socket Client
 
-Generate ARENA object json and send it to socket-server.py.
+Generate ARENA object json and send it to `socket-server.py`.
 
 The following source code was mirrored from the `arena-py` [socket-client.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/socket-client.py) example.
 

@@ -1,7 +1,7 @@
 ---
 title: UploadFile
 layout: default
-parent: Simple
+parent: Scenes
 grand_parent: Python Library
 ---
 
@@ -9,7 +9,7 @@ grand_parent: Python Library
 
 Upload some sample files to the ARENA filestore under the user's store folder and create objects to render them.
 
-The following source code was mirrored from the `arena-py` [upload-file.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/upload-file.py) example.
+The following source code was mirrored from the `arena-py` [upload-file.py](https://github.com/arenaxr/arena-py/blob/master/examples/scenes/upload-file.py) example.
 
 ```python
 from arena import *

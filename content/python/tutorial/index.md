@@ -1,6 +1,6 @@
 ---
 title: Python Tutorial
-nav_order: 0
+nav_order: 1.0
 layout: default
 has_children: true
 parent: Python Library
