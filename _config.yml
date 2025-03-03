@@ -30,7 +30,7 @@ aux_links:
     - "https://join.slack.com/t/arena-conix/shared_invite/zt-oq8fmgdc-QWZ414mJdfOaWfb_p2lPRg"
   "GitHub":
     - "https://github.com/arenaxr"
-footer_content: "Copyright &copy; 2020-2024, <a href='https://wise.ece.cmu.edu'>Carnegie Mellon University</a>. A project of the <a href='https://conix.io'>CONIX Research Center</a>."
+footer_content: "Copyright &copy; 2020-2025, <a href='https://wise.ece.cmu.edu'>Carnegie Mellon University</a>. A project of the <a href='https://conix.io'>CONIX Research Center</a>."
 
 # Build settings
 markdown: kramdown
