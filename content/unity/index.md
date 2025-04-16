@@ -12,7 +12,7 @@ Unity C# library for editing scenes and creating applications for the ARENA.
 <img alt="" src="/assets/img/unity/arena-unity-demo.gif">
 
 ## Library Usage:
-1. Open a new or existing Unity project. **Unity 2030.3+ supported.**
+1. Open a new or existing Unity project. **Unity 2022.3+ supported.**
 1. `Edit > Project Settings > Player > PC, Mac & Linux Standalone > Other Settings > Script Compilation`:
     - `Scripted Define Symbols` to include:
         - `SSL`
@@ -25,7 +25,7 @@ Unity C# library for editing scenes and creating applications for the ARENA.
     ```
     or this for a specific version:
     ```
-    https://github.com/arenaxr/arena-unity.git#v0.10.1
+    https://github.com/arenaxr/arena-unity.git#v1.12.2
     ```
 1. Create an empty GameObject to use as ARENA client root, rename it to something meaningful, like: `ARENA`.
 1. Select the `ARENA` GameObject and press `Add Component` to add the `ArenaClientScene` script.
