@@ -49,7 +49,7 @@ The image above shows the default ARMarker component attributes. A few more attr
 
 ## Coordinate System
 
-In ARENA's world coordinate system (shown as i. in the figure below), positive in the x-axis is to the right, positive y-axis is up, and positive z-axis is out of the screen. The origin at 0, 0, 0 (x, y, z) is the center of the world.
+In ARENA's world coordinate system (shown as i. in the figure below), positive in the x-axis is to the right, positive y-axis is up, and positive z-axis is out of the screen. The origin at 0, 0, 0 (x, y, z) is the center of the world. Also see the [Coordinate System Map](/content/3d-content/coordinates).
 
 <img src="/assets/img/xr/coordinate-sys.png" width="500"/>
 
