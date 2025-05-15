@@ -3,6 +3,9 @@ title: arena.attributes.model_container
 parent: arena.attributes
 grand_parent: Python API
 ---
+
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
+
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
 <div>
     <main class="pdoc">

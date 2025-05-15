@@ -3,6 +3,9 @@ title: arena.attributes.goto_url
 parent: arena.attributes
 grand_parent: Python API
 ---
+
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
+
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
 <div>
     <main class="pdoc">
@@ -25,7 +28,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#GotoUrl"></a>
     
-            <div class="docstring"><p>GotoUrl attribute class to manage its properties in the ARENA: Load new URL when object is clicked. Requires click-listener.
+            <div class="docstring"><p>GotoUrl attribute class to manage its properties in the ARENA: Load new URL when object is clicked. Requires <code>click-listener</code> attribute.
 Usage: <code>goto_url=GotoUrl(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>

@@ -3,6 +3,9 @@ title: arena.attributes.material
 parent: arena.attributes
 grand_parent: Python API
 ---
+
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
+
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
 <div>
     <main class="pdoc">
@@ -35,34 +38,34 @@ Usage: <code>material=Material(...)</code></p>
 <li><strong>float anisotropy</strong>:  The anisotropic filtering sample rate to use for the textures. A value of 0 means the default value will be used, see renderer. Defaults to '0' (optional)</li>
 <li><strong>str blending</strong>:  The blending mode for the material's RGB and Alpha sent to the WebGLRenderer. Allows [none, normal, additive, subtractive, multiply] Defaults to 'normal' (optional)</li>
 <li><strong>str color</strong>:  Base diffuse color. Defaults to '#ffffff' (optional)</li>
-<li><strong>str combine: How the environment map mixes with the material. Requires shader</strong>:  phong. Allows [mix, add, multiply] Defaults to 'mix' (optional)</li>
+<li>**str combine: How the environment map mixes with the material. Requires <code>shader**:  phong</code>. Allows [mix, add, multiply] Defaults to 'mix' (optional)</li>
 <li><strong>bool depthTest</strong>:  Whether depth testing is enabled when rendering the material. Defaults to 'True' (optional)</li>
 <li><strong>bool depthWrite</strong>:  Render when depth test succeeds. Defaults to 'True' (optional)</li>
 <li><strong>bool dithering</strong>:  Whether material is dithered with noise. Removes banding from gradients like ones produced by lighting. Defaults to 'True' (optional)</li>
-<li><strong>str emissive: The color of the emissive lighting component. Used to make objects produce light even without other lighting in the scene. Requires shader</strong>:  standard or phong Defaults to '#000000' (optional)</li>
-<li><strong>float emissiveIntensity: Intensity of the emissive lighting component. Requires shader</strong>:  standard or phong Defaults to '1' (optional)</li>
+<li>**str emissive: The color of the emissive lighting component. Used to make objects produce light even without other lighting in the scene. Requires <code>shader**:  standard</code> or <code>phong</code>. Defaults to '#000000' (optional)</li>
+<li>**float emissiveIntensity: Intensity of the emissive lighting component. Requires <code>shader**:  standard</code> or <code>phong</code>. Defaults to '1' (optional)</li>
 <li><strong>bool flatShading</strong>:  Use THREE.FlatShading rather than THREE.StandardShading. Defaults to 'False' (optional)</li>
 <li><strong>bool fog</strong>:  Whether or not material is affected by fog. Defaults to 'True' (optional)</li>
-<li><strong>int height: Height of video (in pixels), if defining a video texture. Requires shader</strong>:  standard or flat. Defaults to '256' (optional)</li>
-<li><strong>float metalness: How metallic the material is from 0 to 1. Requires shader</strong>:  standard. Defaults to '0' (optional)</li>
+<li>**int height: Height of video (in pixels), if defining a video texture. Requires <code>shader**:  standard</code> or <code>flat</code>. Defaults to '256' (optional)</li>
+<li>**float metalness: How metallic the material is from 0 to 1. Requires <code>shader**:  standard</code>. Defaults to '0' (optional)</li>
 <li><strong>bool npot</strong>:  Use settings for non-power-of-two (NPOT) texture. Defaults to 'False' (optional)</li>
 <li><strong>dict offset: Texture offset to be used. Defaults to '{'x': 0, 'y'</strong>:  0}' (optional)</li>
 <li><strong>float opacity</strong>:  Extent of transparency. If the transparent property is not true, then the material will remain opaque and opacity will only affect color. Defaults to '1' (optional)</li>
-<li><strong>float reflectivity: How much the environment map affects the surface. Requires shader</strong>:  phong. Defaults to '0.9' (optional)</li>
-<li><strong>bool refract: Whether the defined envMap should refract. Requires shader</strong>:  phong. Defaults to 'False' (optional)</li>
-<li><strong>float refractionRatio: 1/refractive index of the material. Requires shader</strong>:  phong. Defaults to '0.98' (optional)</li>
+<li>**float reflectivity: How much the environment map affects the surface. Requires <code>shader**:  phong</code>. Defaults to '0.9' (optional)</li>
+<li>**bool refract: Whether the defined envMap should refract. Requires <code>shader**:  phong</code>. Defaults to 'False' (optional)</li>
+<li><strong>float refractionRatio</strong>:  refractionRatio Defaults to '0.98' (optional)</li>
 <li><strong>dict repeat: How many times a texture (defined by src) repeats in the X and Y direction. Defaults to '{'x': 1, 'y'</strong>:  1}' (optional)</li>
-<li><strong>float roughness: How rough the material is from 0 to 1. A rougher material will scatter reflected light in more directions than a smooth material. Requires shader</strong>:  standard. Defaults to '0' (optional)</li>
+<li>**float roughness: How rough the material is from 0 to 1. A rougher material will scatter reflected light in more directions than a smooth material. Requires <code>shader**:  standard</code>. Defaults to '0' (optional)</li>
 <li><strong>str shader</strong>:  Which material to use. Defaults to the standard material. Can be set to the flat material or to a registered custom shader material. Allows [flat, standard, phong] Defaults to 'standard' (optional)</li>
-<li><strong>float shininess: How shiny the specular highlight is; a higher value gives a sharper highlight. Requires shader</strong>:  phong. Defaults to '30' (optional)</li>
+<li>**float shininess: How shiny the specular highlight is; a higher value gives a sharper highlight. Requires <code>shader**:  phong</code>. Defaults to '30' (optional)</li>
 <li><strong>str side</strong>:  Which sides of the mesh to render. Allows [front, back, double] Defaults to 'front' (optional)</li>
-<li><strong>str specular: This defines how shiny the material is and the color of its shine. Requires shader</strong>:  phong. Defaults to '#111111' (optional)</li>
+<li>**str specular: This defines how shiny the material is and the color of its shine. Requires <code>shader**:  phong</code>. Defaults to '#111111' (optional)</li>
 <li><strong>str src</strong>:  URI, relative or full path of an image/video file. e.g. 'store/users/wiselab/images/360falls.mp4'. (optional)</li>
-<li><strong>bool toneMapped: Whether to ignore toneMapping, set to false you are using renderer.toneMapping and an element should appear to emit light. Requires shader</strong>:  flat. Defaults to 'True' (optional)</li>
+<li>**bool toneMapped: Whether to ignore toneMapping, set to false you are using renderer.toneMapping and an element should appear to emit light. Requires <code>shader**:  flat</code>. Defaults to 'True' (optional)</li>
 <li><strong>bool transparent</strong>:  Whether material is transparent. Transparent entities are rendered after non-transparent entities. Defaults to 'False' (optional)</li>
 <li><strong>bool vertexColorsEnabled</strong>:  Whether to use vertex or face colors to shade the material. Defaults to 'False' (optional)</li>
 <li><strong>bool visible</strong>:  Whether material is visible. Raycasters will ignore invisible materials. Defaults to 'True' (optional)</li>
-<li><strong>int width: Width of video (in pixels), if defining a video texture. Requires shader</strong>:  standard or flat. Defaults to '512' (optional)</li>
+<li>**int width: Width of video (in pixels), if defining a video texture. Requires <code>shader**:  standard</code> or <code>flat</code>. Defaults to '512' (optional)</li>
 <li><strong>bool wireframe</strong>:  Whether to render just the geometry edges. Defaults to 'False' (optional)</li>
 <li><strong>int wireframeLinewidth</strong>:  Width in px of the rendered line. Defaults to '2' (optional)</li>
 </ul>

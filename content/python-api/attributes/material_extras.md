@@ -3,6 +3,9 @@ title: arena.attributes.material_extras
 parent: arena.attributes
 grand_parent: Python API
 ---
+
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
+
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
 <div>
     <main class="pdoc">
@@ -25,7 +28,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#MaterialExtras"></a>
     
-            <div class="docstring"><p>MaterialExtras attribute class to manage its properties in the ARENA: Define extra material properties, namely texture encoding, whether to render the material's color and render order. The properties set here access directly Three.js material component.  More properties at <a href="https://threejs.org/docs/#api/en/materials/Material">https://threejs.org/docs/#api/en/materials/Material</a> THREE.js Material.
+            <div class="docstring"><p>MaterialExtras attribute class to manage its properties in the ARENA: Define extra material properties, namely texture encoding, whether to render the material's color and render order. Requires <code>material</code> attribute. More properties at <a href="https://threejs.org/docs/#api/en/materials/Material">https://threejs.org/docs/#api/en/materials/Material</a> THREE.js Material.
 Usage: <code>material_extras=MaterialExtras(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>

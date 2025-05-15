@@ -3,6 +3,9 @@ title: arena.objects.camera
 parent: arena.objects
 grand_parent: Python API
 ---
+
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
+
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
 <div>
     <main class="pdoc">
@@ -103,13 +106,13 @@ grand_parent: Python API
     
 
                             </div>
-                            <div id="Camera.jistsiId" class="classattr">
+                            <div id="Camera.jitsiId" class="classattr">
                                 <div class="attr variable">
-            <span class="name">jistsiId</span>
+            <span class="name">jitsiId</span>
 
         
     </div>
-    <a class="headerlink" href="#Camera.jistsiId"></a>
+    <a class="headerlink" href="#Camera.jitsiId"></a>
     
     
 

@@ -20,6 +20,9 @@ Text Input Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |**on**|string; One of: ```['mousedown', 'mouseup', 'mouseenter', 'mouseleave', 'triggerdown', 'triggerup', 'gripdown', 'gripup', 'menudown', 'menuup', 'systemdown', 'systemup', 'trackpaddown', 'trackpadup']```|```'mousedown'```|A case-sensitive string representing the event type to listen for. See <a href='https://developer.mozilla.org/en-US/docs/Web/Events'>Web Events</a>|Yes|
-|**title**|string|```'Text Input'```|The prompt title.|Yes|
-|**label**|string|```'Input text below (max is 140 characters).'```|Text prompt label|Yes|
-|**placeholder**|string|```'Type here'```|Text input place holder.|Yes|
+|**title**|string|```''```|The prompt title (optional).|Yes|
+|**label**|string|```''```|Label for input (max 140 characters, optional).|No|
+|**placeholder**|string|```''```|Text input placeholder (optional).|No|
+|**inputType**|string; One of: ```['text', 'email', 'password', 'number', 'tel', 'range', 'textarea', 'url', 'select', 'radio', 'checkbox', 'date', 'datetime-local', 'time', 'week', 'month']```|```'text'```|Type of HTML form input|No|
+|**inputValue**|string|```''```|Input field initial value. Select type will be selected value, for checkbox will be checked state|No|
+|**inputOptions**|array|```[]```|Array of options for select or radio input types|No|

@@ -3,6 +3,9 @@ title: arena.attributes.static_body
 parent: arena.attributes
 grand_parent: Python API
 ---
+
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
+
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
 <div>
     <main class="pdoc">
@@ -25,17 +28,8 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#StaticBody"></a>
     
-            <div class="docstring"><p>StaticBody attribute class to manage its properties in the ARENA: A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. More properties at <a href="https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md">https://github.com/c-frame/aframe-physics-system/blob/master/CannonDriver.md</a> A-Frame Physics System.
+            <div class="docstring"><p>StaticBody attribute class to manage its properties in the ARENA: <strong><em>DEPRECATED</strong>: data.static-body is <strong>deprecated</strong>, use data.physx-body instead.</em>
 Usage: <code>static_body=StaticBody(...)</code></p>
-
-<h6 id="parameters">Parameters</h6>
-
-<ul>
-<li><strong>str cylinderAxis: Override default axis of bounding cylinder. Requires shape</strong>: cylinder. Allows [x, y, z] Defaults to 'y' (optional)</li>
-<li><strong>str shape</strong>:  Body components will attempt to find an appropriate CANNON.js shape to fit your model. When defining an object you may choose a shape or leave the default, auto. Select a shape carefully, as there are performance implications with different choices. Allows [auto, box, cylinder, sphere, hull, none] Defaults to 'auto' (optional)</li>
-<li><strong>float sphereRadius: Override default radius of bounding sphere. Requires shape</strong>: sphere. NaN by default. (optional)</li>
-<li><strong>str type</strong>:  Define the result of collisions. Dynamic can be moved, Static cannot be moved. Allows [dynamic, static] Defaults to 'static' (optional)</li>
-</ul>
 </div>
 
 

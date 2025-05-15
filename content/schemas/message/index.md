@@ -24,7 +24,7 @@ has_toc: false
 |[Dodecahedron](dodecahedron)|Dodecahedron Geometry.|
 |[Entity (generic object)](entity)|Entities are the base of all objects in the scene. Entities are containers into which components can be attached.|
 |[GLTF Model](gltf-model)|Load a GLTF model.|
-|[3D Gaussian Splat](gaussian_splatting)|Load 3D Gaussian Splat.|
+|[Gaussian Splat](gaussian_splatting)|Load 3D Gaussian Splat.|
 |[Image](image)|Display an image on a plane.|
 |[Icosahedron](icosahedron)|Icosahedron Geometry.|
 |[Light](light)|A light.|

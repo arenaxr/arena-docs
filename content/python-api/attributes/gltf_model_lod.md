@@ -3,6 +3,9 @@ title: arena.attributes.gltf_model_lod
 parent: arena.attributes
 grand_parent: Python API
 ---
+
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
+
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
 <div>
     <main class="pdoc">
@@ -25,7 +28,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#GltfModelLod"></a>
     
-            <div class="docstring"><p>GltfModelLod attribute class to manage its properties in the ARENA: Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance
+            <div class="docstring"><p>GltfModelLod attribute class to manage its properties in the ARENA: Simple switch between the default gltf-model and a detailed one when a user camera is within specified distance. Requires <code>object_type: gltf-model</code>.
 Usage: <code>gltf_model_lod=GltfModelLod(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>

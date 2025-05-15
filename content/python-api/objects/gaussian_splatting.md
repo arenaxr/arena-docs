@@ -3,6 +3,9 @@ title: arena.objects.gaussian_splatting
 parent: arena.objects
 grand_parent: Python API
 ---
+
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
+
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
 <div>
     <main class="pdoc">
@@ -32,7 +35,7 @@ grand_parent: Python API
 <ul>
 <li><strong>str cutoutEntity</strong>:  Selector to a box primitive that uses scale and position to define the bounds of splat points to render. Defaults to '' (optional)</li>
 <li><strong>float pixelRatio</strong>:  Pixel ratio for rendering. Reducing the value decreases the resolution and improves performance. If a negative value is set, the device's native value will be applied. Defaults to '1.0' (optional)</li>
-<li><strong>str src</strong>:  Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
+<li><strong>str src</strong>:  Url of the .ply or .splat file. Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. (optional)</li>
 <li><strong>float xrPixelRatio</strong>:  Same as pixelRatio. Applied to XR devices. Defaults to '0.5' (optional)</li>
 </ul>
 </div>

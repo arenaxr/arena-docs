@@ -3,6 +3,9 @@ title: arena.objects.light
 parent: arena.objects
 grand_parent: Python API
 ---
+
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
+
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
 <div>
     <main class="pdoc">
@@ -30,29 +33,29 @@ grand_parent: Python API
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>float angle: Maximum extent of spot light from its direction (in degrees). Requires type</strong>: spot. Defaults to '60' (optional)</li>
+<li>**float angle: Maximum extent of spot light from its direction (in degrees). Requires <code>type**:  spot</code>. Defaults to '60' (optional)</li>
 <li><strong>bool castShadow</strong>:  Whether this light casts shadows on the scene. Defaults to 'False' (optional)</li>
 <li><strong>str color</strong>:  Light color. For 'hemisphere', light color from above. Defaults to '#ffffff' (optional)</li>
-<li><strong>float decay: Amount the light dims along the distance of the light. Requires type:point or type</strong>: spot. Defaults to '1' (optional)</li>
-<li><strong>float distance: Distance where intensity becomes 0. If distance is 0, then the point light does not decay with distance. Requires type:point or type</strong>: spot. Defaults to '0' (optional)</li>
+<li>**float decay: Amount the light dims along the distance of the light. Requires <code>type**:  point</code> or <code>spot</code>. Defaults to '1' (optional)</li>
+<li>**float distance: Distance where intensity becomes 0. If distance is 0, then the point light does not decay with distance. Requires <code>type**:  point</code> or <code>spot</code>. Defaults to '0' (optional)</li>
 <li><strong>str envMap</strong>:  Cube Map to load. Defaults to 'None' (optional)</li>
-<li><strong>str groundColor: Light color from below. Requires type</strong>: hemisphere. Defaults to '#ffffff' (optional)</li>
+<li>**str groundColor: Light color from below. Requires <code>type**:  hemisphere</code>. Defaults to '#ffffff' (optional)</li>
 <li><strong>float intensity</strong>:  Amount of light provided. Defaults to '1' (optional)</li>
 <li><strong>dict light: <em></strong>DEPRECATED<strong>: data.light.[property] is *</em>deprecated<em>*, use object_type</strong>:  light and data.[property] instead.</em> (deprecated)</li>
-<li><strong>float penumbra: Percent of the spotlight cone that is attenuated due to penumbra. Requires type</strong>: spot. Defaults to '0' (optional)</li>
+<li>**float penumbra: Percent of the spotlight cone that is attenuated due to penumbra. Requires <code>type**:  spot</code>. Defaults to '0' (optional)</li>
 <li><strong>float shadowBias</strong>:  Offset depth when deciding whether a surface is in shadow. Tiny adjustments here (in the order of +/-0.0001) may reduce artifacts in shadows. Defaults to '0' (optional)</li>
-<li><strong>float shadowCameraBottom: Bottom plane of shadow camera frustum. Requires type</strong>: directional. Defaults to '-5' (optional)</li>
+<li>**float shadowCameraBottom: Bottom plane of shadow camera frustum. Requires <code>type**:  directional</code>. Defaults to '-5' (optional)</li>
 <li><strong>float shadowCameraFar</strong>:  Far plane of shadow camera frustum. Defaults to '500' (optional)</li>
-<li><strong>float shadowCameraFov: Shadow camera's FOV. Requires type</strong>: point or spot. Defaults to '50' (optional)</li>
-<li><strong>float shadowCameraLeft: Left plane of shadow camera frustum. Requires type</strong>: directional. Defaults to '-5' (optional)</li>
+<li>**float shadowCameraFov: Shadow camera's FOV. Requires <code>type**:  point</code> or <code>spot</code>. Defaults to '50' (optional)</li>
+<li>**float shadowCameraLeft: Left plane of shadow camera frustum. Requires <code>type**:  directional</code>. Defaults to '-5' (optional)</li>
 <li><strong>float shadowCameraNear</strong>:  Near plane of shadow camera frustum. Defaults to '0.5' (optional)</li>
-<li><strong>float shadowCameraRight: Right plane of shadow camera frustum. Requires type</strong>: directional. Defaults to '5' (optional)</li>
-<li><strong>float shadowCameraTop: Top plane of shadow camera frustum. Requires type</strong>: directional. Defaults to '5' (optional)</li>
+<li>**float shadowCameraRight: Right plane of shadow camera frustum. Requires <code>type**:  directional</code>. Defaults to '5' (optional)</li>
+<li>**float shadowCameraTop: Top plane of shadow camera frustum. Requires <code>type**:  directional</code>. Defaults to '5' (optional)</li>
 <li><strong>bool shadowCameraVisible</strong>:  Displays a visual aid showing the shadow camera's position and frustum. This is the light's view of the scene, used to project shadows. Defaults to 'False' (optional)</li>
 <li><strong>float shadowMapHeight</strong>:  Shadow map's vertical resolution. Larger shadow maps display more crisp shadows, at the cost of performance. Defaults to '512' (optional)</li>
 <li><strong>float shadowMapWidth</strong>:  Shadow map's horizontal resolution. Defaults to '512' (optional)</li>
 <li><strong>float shadowRadius</strong>:  shadowRadius (castShadow=true) Defaults to '1' (optional)</li>
-<li><strong>str target: Id of element the spot should point to. Set to null to transform spotlight by orientation, pointing to it's -Z axis. Requires type</strong>: spot. Defaults to 'None' (optional)</li>
+<li>**str target: Id of element the spot should point to. Set to null to transform spotlight by orientation, pointing to it's -Z axis. Requires <code>type**:  spot</code>. Defaults to 'None' (optional)</li>
 <li><strong>str type</strong>:  The type of light, or what shape the light should take. Allows [ambient, directional, hemisphere, point, spot] Defaults to 'directional' (optional)</li>
 </ul>
 </div>

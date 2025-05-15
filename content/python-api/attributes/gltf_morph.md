@@ -3,6 +3,9 @@ title: arena.attributes.gltf_morph
 parent: arena.attributes
 grand_parent: Python API
 ---
+
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
+
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
 <div>
     <main class="pdoc">
@@ -25,7 +28,7 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#GltfMorph"></a>
     
-            <div class="docstring"><p>GltfMorph attribute class to manage its properties in the ARENA: Allows you to target and control a gltf model's morphTargets created in Blender. More properties at <a href="https://github.com/elbobo/aframe-gltf-morph-component">https://github.com/elbobo/aframe-gltf-morph-component</a> A-Frame GLTF Morph component.
+            <div class="docstring"><p>GltfMorph attribute class to manage its properties in the ARENA: Allows you to target and control a gltf model's morphTargets created in Blender. Requires <code>object_type: gltf-model</code>. More properties at <a href="https://github.com/elbobo/aframe-gltf-morph-component">https://github.com/elbobo/aframe-gltf-morph-component</a> A-Frame GLTF Morph component.
 Usage: <code>gltf_morph=GltfMorph(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>

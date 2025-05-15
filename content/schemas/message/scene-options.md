@@ -19,6 +19,7 @@ Scene Options Attributes
 
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
+|**originMarker**|boolean|```True```|Include a default 15cm x 15cm AprilTag marker 0 at the origin of the scene.|Yes|
 |**clickableOnlyEvents**|boolean|```True```|True = publish only mouse events for objects with click-listeners; False = all objects publish mouse events.|No|
 |**distanceModel**|string; One of: ```['exponential', 'inverse', 'linear']```|```'inverse'```|Algorithm to use to reduce the volume of the audio source as it moves away from the listener.|No|
 |**sceneHeadModels**|array|```[]```|Define the default head model(s) for the scene in a list. Users may still choose from the ARENA default list of head models as well.|No|
@@ -34,7 +35,7 @@ Scene Options Attributes
 |**videoDistanceConstraints**|boolean|```True```|If false, will disable video distance constraints (video resolution decreases with distance from users in view).|No|
 |**videoDefaultResolutionConstraint**|number|```180```|Sets the default max resolution for all users. Ignored when videoDistanceConstraints = true.|No|
 |**volume**|number|```1```|Volume for users in a scene.|No|
-|**physics**|boolean|```False```|If true, will load the aframe-physics-system. Required for the following: `dynamic-body`, `static-body`, `impulse`, `collision-listener`.|Yes|
+|**physics**|object||Clientside PhysX-based physics system. Required for all physx-* components|Yes|
 |**ar-hit-test**|object||A-Frame AR Hit Test Settings.
 
 More properties at <a href='https://aframe.io/docs/1.5.0/components/ar-hit-test.html'>AR Hit Test</a> component.|No|

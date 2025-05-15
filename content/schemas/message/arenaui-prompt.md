@@ -53,15 +53,22 @@ ARENAUI Prompt Attributes
 |**box-collision-listener**|[box-collision-listener](box-collision-listener)||Listen for bounding-box collisions with user camera and hands. Must be applied to an object or model with geometric mesh. Collisions are determined by course bounding-box overlaps.|No|
 |**collision-listener**|string||Name of the collision-listener, default can be empty string. Collisions trigger click events. Requires `scene-options: physics`.|No|
 |**blip**|[blip](blip)||When the object is created or deleted, it will animate in/out of the scene instead of appearing/disappearing instantly. Must have a geometric mesh.|No|
-|**static-body**|[static-body](static-body)||A fixed-position or animated object. Other objects may collide with static bodies, but static bodies themselves are unaffected by gravity and collisions. Requires `scene-options: physics`.|No|
-|**dynamic-body**|[dynamic-body](dynamic-body)||A freely-moving object. Dynamic bodies have mass, collide with other objects, bounce or slow during collisions, and fall if gravity is enabled. Requires `scene-options: physics`.|No|
+|~~**dynamic-body**~~|~~object~~||~~DEPRECATED: data.dynamic-body is deprecated, use data.physx-body instead.~~|~~No~~|
+|~~**static-body**~~|~~object~~||~~DEPRECATED: data.static-body is deprecated, use data.physx-body instead.~~|~~No~~|
+|**physx-body**|[physx-body](physx-body)||Turns an entity into a PhysX rigid body. This is the main component for creating physics objects. There are 3 types of rigid bodies: dynamic objects that have physics simulated on them, static objects that cannot move, and kinematic objects that can be moved programmatically but not by simulation. Requires `scene-options: physics`.|No|
+|**physx-material**|[physx-material](physx-material)||Controls physics properties for individual shapes or rigid bodies. Can be set on an entity with physx-body or on shapes contained within it. Requires `scene-options: physics`.|No|
+|**physx-joint**|[physx-joint](physx-joint)||Creates a PhysX joint between an ancestor rigid body and a target rigid body. Position and rotation of the entity will be used to create the corresponding joint. Requires `scene-options: physics`.|No|
+|**physx-joint-constraint**|[physx-joint-constraint](physx-joint-constraint)||Adds a constraint to a physx-joint. Supported joints are D6, Revolute and Prismatic. Can only be used on an entity with the physx-joint component. Requires `scene-options: physics`.|No|
+|**physx-joint-driver**|[physx-joint-driver](physx-joint-driver)||Creates a driver which exerts force to return the joint to the initial position with the given velocity characteristics. Can only be used on an entity with a physx-joint component. Currently only supports D6 joint type. Requires `scene-options: physics`.|No|
+|**physx-force-pushable**|[physx-force-pushable](physx-force-pushable)||Makes a physx-body object pushable by the user. Requires `click-listener` attribute. Requires `scene-options: physics`.|No|
+|**physx-grabbable**|boolean|```True```|Makes a physx-body object grabbable by the user's hands. Requires `scene-options: physics`.|No|
 |**goto-landmark**|[goto-landmark](goto-landmark)||Teleports user to the landmark with the given name. Requires `click-listener` attribute.|No|
 |**goto-url**|[goto-url](goto-url)||Load new URL when object is clicked. Requires `click-listener` attribute.|No|
 |**hide-on-enter-ar**|boolean; Must be: ```True```|```True```|Hide object when entering AR. Remove component to *not* hide.|No|
 |**hide-on-enter-vr**|boolean; Must be: ```True```|```True```|Hide object when entering VR. Remove component to *not* hide.|No|
 |**show-on-enter-ar**|boolean; Must be: ```True```|```True```|Show object when entering AR. Hidden otherwise.|No|
 |**show-on-enter-vr**|boolean; Must be: ```True```|```True```|Show object when entering VR. Hidden otherwise.|No|
-|**impulse**|[impulse](impulse)||Apply an impulse to an object to set it in motion. This happens in conjunction with an event. Requires `click-listener` attribute and `scene-options: physics`.|No|
+|~~**impulse**~~|~~object~~||~~DEPRECATED: data.impulse is deprecated, use data.physx-force-pushable instead.~~|~~No~~|
 |**landmark**|[landmark](landmark)||Define entities as a landmark; Landmarks appears in the landmark list and you can move (teleport) to them; You can define the behavior of the teleport: if you will be at a fixed or random distance, looking at the landmark, fixed offset or if it is constrained by a navmesh (when it exists).|No|
 |**material-extras**|[material-extras](material-extras)||Define extra material properties, namely texture encoding, whether to render the material's color and render order. Requires `material` attribute.|No|
 |**model-container**|[model-container](model-container)||Overrides absolute size for a 3D model. The model can be a glTF, glb, obj, or any other supported format. The model will be rescaled to fit to the sizes specified for each axes.|No|

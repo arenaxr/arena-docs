@@ -3,6 +3,9 @@ title: arena.attributes.textinput
 parent: arena.attributes
 grand_parent: Python API
 ---
+
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
+
 <small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
 <div>
     <main class="pdoc">
@@ -25,16 +28,19 @@ grand_parent: Python API
     </div>
     <a class="headerlink" href="#Textinput"></a>
     
-            <div class="docstring"><p>Textinput attribute class to manage its properties in the ARENA: Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires click-listener.
+            <div class="docstring"><p>Textinput attribute class to manage its properties in the ARENA: Opens an HTML prompt when clicked. Sends text input as an event on MQTT. Requires <code>click-listener</code> attribute.
 Usage: <code>textinput=Textinput(...)</code></p>
 
 <h6 id="parameters">Parameters</h6>
 
 <ul>
-<li><strong>str label</strong>:  Text prompt label Defaults to 'Input text below (max is 140 characters).' (optional)</li>
+<li><strong>list[str] inputOptions</strong>:  Array of options for select or radio input types Defaults to '[]' (optional)</li>
+<li><strong>str inputType</strong>:  Type of HTML form input Allows [text, email, password, number, tel, range, textarea, url, select, radio, checkbox, date, datetime-local, time, week, month] Defaults to 'text' (optional)</li>
+<li><strong>str inputValue</strong>:  Input field initial value. Select type will be selected value, for checkbox will be checked state Defaults to '' (optional)</li>
+<li><strong>str label</strong>:  Label for input (max 140 characters, optional). Defaults to '' (optional)</li>
 <li><strong>str on: A case-sensitive string representing the event type to listen for. See <https</strong>: //developer.mozilla.org/en-US/docs/Web/Events> Web Events Allows [mousedown, mouseup, mouseenter, mouseleave, triggerdown, triggerup, gripdown, gripup, menudown, menuup, systemdown, systemup, trackpaddown, trackpadup] Defaults to 'mousedown' (optional)</li>
-<li><strong>str placeholder</strong>:  Text input place holder. Defaults to 'Type here' (optional)</li>
-<li><strong>str title</strong>:  The prompt title. Defaults to 'Text Input' (optional)</li>
+<li><strong>str placeholder</strong>:  Text input placeholder (optional). Defaults to '' (optional)</li>
+<li><strong>str title</strong>:  The prompt title (optional). Defaults to '' (optional)</li>
 </ul>
 </div>
 
