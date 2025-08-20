@@ -101,7 +101,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Origin Marker              |                                                           | Origin Tag                                                                               | Concept, [Tutorial][t-origin]                                                                        |
 | Overwrite                  |                                                           | The scene graph directive to erase and overwrite this entity's data, not merge           | [Graph][grph]                                                                                        |
 | Parent                     |                 [![][i-parent]][i-parent]                 | Parent's object_id. Child objects inherit scale and translation (`parent`)               | [Attribute][obja], [Schema][s-parent], [Python][p-parent]                                            |
-| Particles (SPE)            |          [![][i-spe-particles]][i-spe-particles]          | GPU based particle systems in A-Frame.                                                   | [Attribute][obja], [Schema][s-spe-particles][Python][p-spe-particles], [Tutorial][t-particles]       |
+| Particles (SPE)            |          [![][i-spe-particles]][i-spe-particles]          | GPU based particle systems in A-Frame.                                                   | [Attribute][obja], [Schema][s-spe-particles], [Python][p-spe-particles], [Tutorial][t-particles]     |
 | PCD Model                  |                    [![][i-pcd]][i-pcd]                    | Load a Point-Cloud data (PCD) model                                                      | [Object][obj3], [Schema][s-pcd], [Python][p-pcd]                                                     |
 | Persist                    |                                                           | The scene graph directive to store the entity in the persistence database.               | [Graph][grph], [Tutorial][t-persist]                                                                 |
 | Physics (Body)             |             [![][i-physx-body]][i-physx-body]             | Turns an entity into a PhysX rigid body (deprecates: `dynamic-body`, `static-body`).     | [Attribute][obja], [Schema][s-physx-body], [Python][p-physx-force-pushable]                          |
@@ -430,6 +430,8 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 {:height="32px" width="32px" style="background-color:#262626"}
 [i-siggood]: /assets/img/icons/signal-good.png
 {:height="32px" width="32px" style="background-color:#262626"}
+[i-model-container]: /
+{:width="100px"}
 [i-physx-body]: /
 {:width="100px"}
 [i-physx-joint]: /
@@ -483,6 +485,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-material-ext]: /content/schemas/message/material-extras
 [s-material]: /content/schemas/message/material
 [s-modelUpdate]: /content/schemas/message/modelUpdate
+[s-model-container]: /content/schemas/message/model-container
 [s-multisrc]: /content/schemas/message/multisrc
 [s-obj]: /content/schemas/message/obj-model
 [s-ocean]: /content/schemas/message/ocean
