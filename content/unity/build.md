@@ -37,9 +37,6 @@ Tested on Android 10 (API 29).
     - `Install Location` to: `Automatic` or `Force Internal`.
     - `Internet Access` to: `Require`.
     - `Write Permission` to: `Internal`.
-1. `Edit > Project Settings > Player > Android > Other Settings > Script Compilation`:
-    - `Scripted Define Symbols` to include:
-        - `SSL`
 1. Switch platform to `Android` and `Build and Run` the app to generate the proper Android app data files folder.
 1. **[Daily Temporary]**: Switch platform to `PC, Mac & Linux Standalone`.
 1. **[Daily Temporary]**: Click the `Play` button to update the MQTT Token for the desktop.
@@ -61,9 +58,6 @@ Tested on iOS 15. **NOTE: iOS builds are currently non-functional at runtime due
     - `Camera Usage Description`: something like `Using iOS camera for ARENA AR`.
     - `Target minimum iOS Version`: to `11.0`.
     - `Requires ARKit support`: to Yes.
-1. `Edit > Project Settings > Player > iOS > Other Settings > Script Compilation`:
-    - `Scripted Define Symbols` to include:
-        - `SSL`
 1. Switch platform to `iOS` and `Build and Run` the app to generate the proper iOS app data files folder.
 1. **[Daily Temporary]**: Switch platform to `PC, Mac & Linux Standalone`.
 1. **[Daily Temporary]**: Click the `Play` button to update the MQTT Token for the desktop.
