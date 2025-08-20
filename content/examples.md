@@ -27,129 +27,134 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
      - The "Links" column can be expanded/reduced with formatting by exchanging " period" with " pipe period".
 -->
 
-| Example                   |                Thumbnail                | Description                                                                              | Type: Links                |
-| :------------------------ | :-------------------------------------: | :--------------------------------------------------------------------------------------- | :------------------------- | --------------------------- | ---------------------------- | --------------------------- | ----------------------------- | ----------------------------- |
-| Action (Message)          |                                         | The scene graph action: create, update (merge), delete.                                  | [Graph:][grph]                                                                                            [Tutorial][t-action]                          |
-| Animation                 |     [![][i-animation]][i-animation]     | Animate and tween values.                                                                | [Attribute:][obja]         [Schema][s-animation]     [Message][m-animation]     [Python][p-animation]     [Tutorial][t-animation]                       |
-| Animation Mixer           | [![][i-animation-mix]][i-animation-mix] | Control playing animations stored in a GLTF model.                                       | [Attribute:][obja]         [Schema][s-animation-mix] [Message][m-animation-mix] [Python][p-animation-mix] [Tutorial][t-animation-mix]                   |
-| AR Hide/Show              |   [![][i-ar-hideshow]][i-ar-hideshow]   | Hide/Show object (`hide-on-enter-ar`) when entering AR.                                  | [Attribute:][obja]         [Schema][s-ar-hideshow]                                                                                                      |
-| AR Marker                 |      [![][i-armarker]][i-armarker]      | A location marker used to anchor scenes/objects, in the real world                       | [Attribute:][obja]         [Schema][s-armarker]                                 [Python][p-armarker]      [Tutorial][t-armarker]                        |
-| ARTS                      |          [![][i-arts]][i-arts]          | ARTS, a runtime supervisor for programs                                                  | [Application][a-arts]                                                                                                                                   |
-| ATLAS                     |         [![][i-atlas]][i-atlas]         | ATLAS, a geolocation index of AR scenes.                                                 | Application                                                                                                                                             |
-| Attribution               |   [![][i-attribution]][i-attribution]   | Attribution Component. Saves attribution data in any entity                              | [Attribute:][obja]         [Schema][s-attribution]                              [Python][p-attribution]   [Tutorial][t-attribution]                     |
-| Audio                     |      [![][i-audio-on]][i-audio-on]      | User's Microphone On/Off state (requires microphone permission)                          | [User:][user]                                                                                             [Tutorial][t-audio]                           |
-| Blip                      |          [![][i-blip]][i-blip]          | When the object is created or deleted, it will animate in/out                            | [Attribute:][obja]         [Schema][s-blip]                                     [Python][p-blip]                                                        |
-| Box                       |           [![][i-box]][i-box]           | Box Geometry (Unity Cube)                                                                | [Object:][obj3]            [Schema][s-box]           [Message][m-box]           [Python][p-box]           [Tutorial][t-box]                             |
-| Box Collision             | [![][i-box-collision]][i-box-collision] | Listen for bounding-box collisions with user camera and hands (`box-collision-listener`) | [Attribute:][obja]         [Schema][s-box-collision]                            [Python][p-box-collision]                                               |
-| Buffer Geometry           |        [![][i-buffer]][i-buffer]        | Reduce geometry memory usage while being harder to manipulate (`buffer`)                 | [Attribute:][obja]         [Schema][s-buffer]                                                                                                           |
-| Build                     |         [![][i-build]][i-build]         | Build is a JSON editor for the persisted scene graph.                                    | [Application][a-build]                                                                                    [Tutorial][t-build]                           |
-| Build 3D                  |       [![][i-build3d]][i-build3d]       | Build3D is a visual 3D editor for the persisted scene graph (based on Inspector)         | Application                                                                                               [Tutorial][t-build3d]                         |
-| Callbacks                 |                                         | A handler in a program to receive an ARENA Event.                                        | Concept                                                                                                   [Tutorial][t-callbacks]                       |
-| Camera                    |        [![][i-camera]][i-camera]        | Camera is the pose and component data representing a user avatar                         | [Object:][obj3]            [Schema][s-camera]        [Message][m-camera]        [Python][p-camera]                                                      |
-| Capsule                   |       [![][i-capsule]][i-capsule]       | Capsule Geometry                                                                         | [Object:][obj3]            [Schema][s-capsule]                                  [Python][p-capsule]                                                     |
-| Chat                      |       [![][i-message]][i-message]       | A messaging tool for other users in the ARENA                                            | [User:][user]                                                                                             [Tutorial][t-chat]                            |
-| Child                     |                                         | See Parent.                                                                              | Concept                                                                                                                                                 |
-| Circle                    |        [![][i-circle]][i-circle]        | Circle Geometry                                                                          | [Object:][obj3]            [Schema][s-circle]                                   [Python][p-circle]                                                      |
-| Click                     |         [![][i-click]][i-click]         | Object will listen for clicks (`click-listener`)                                         | [Attribute:][obja]         [Schema][s-click]         [Message][m-click]         [Python][p-clickable]                                                   |
-| Collision                 |     [![][i-collision]][i-collision]     | Collisions trigger click events (`collision-listener`)                                   | [Attribute:][obja]         [Schema][s-collision]                                                                                                        |
-| Color                     |      [![][i-material]][i-material]      | Color of the material (as hex code), supported in the `material.color` attribute.        | [Attribute:][obja]         [Schema][s-material]      [Message][m-color]         [Python][p-color]                                                       |
-| Cone                      |          [![][i-cone]][i-cone]          | Cone Geometry                                                                            | [Object:][obj3]            [Schema][s-cone]                                     [Python][p-cone]                                                        |
-| Conference                |                                         | Using the ARENA scene as a 3D zoom room, video conference, meeting.                      | Concept                                                                                                   [Tutorial][t-meeting]                         |
-| Cube                      |          [![][i-cube]][i-cube]          | Cube Geometry (**deprecated**, see Box)                                                  | [Object:][obj3]                                                                                                                                         |
-| Cylinder                  |      [![][i-cylinder]][i-cylinder]      | Cylinder Geometry                                                                        | [Object:][obj3]            [Schema][s-cylinder]                                 [Python][p-cylinder]                                                    |
-| Data Block                |                                         | The scene graph data Attributes, storing component details.                              | [Graph:][grph]                                                                                                                                          |
-| Display Name              |   [![][i-displayname]][i-displayname]   | The user-editable display name, derived from the Google account byu default              | [User:][user]                                                                                             [Tutorial][t-displayname]                     |
-| Dodecahedron              |  [![][i-dodecahedron]][i-dodecahedron]  | Dodecahedron Geometry                                                                    | [Object:][obj3]            [Schema][s-dodecahedron]                             [Python][p-dodecahedron]                                                |
-| Entity                    |        [![][i-entity]][i-entity]        | Entities are containers into which components can be attached                            | [Object:][obj3]            [Schema][s-entity]                                   [Python][p-entity]                                                      |
-| Event                     |         [![][i-event]][i-event]         | Events are ephemeral messages used for events like controller actions                    | [Object:][obj3]            [Schema][s-event]         [Message][m-event]         [Python][p-event]                                                       |
-| Facial Recognition Avatar |     [![][i-avatar-on]][i-avatar-on]     | Recognizes your facial feature points from your camera and animates a 3d head            | [User:][user]                                                                                             [Tutorial][t-face]                            |
-| File Store                |     [![][i-filestore]][i-filestore]     | The filestore interface for user file editing and uploading.                             | [Application][a-filestore]                                                                                [Tutorial][t-filestore]                       |
-| Flight/Fly                |     [![][i-flying-on]][i-flying-on]     | The user state to navigate on a 2D ground plane or 3D flight.                            | [User:][user]                                                                                             [Tutorial][t-usercrtl]                        |
-| Gaussian Splat            |         [![][i-splat]][i-splat]         | Load 3D Gaussian Splat                                                                   | [Object:][obj3]            [Schema][s-splat]                                    [Python][p-splat]                                                       |
-| Geometry                  |                                         | Geometry (Mesh) is the ordered collection of vertices to make a 3D primitive.            | Concept                                                                                                                                                 |
-| GLTF LOD                  |      [![][i-gltf-lod]][i-gltf-lod]      | Switch between default and detailed GLTF models                                          | [Attribute:][obja]         [Schema][s-gltf-lod]                                                           [Tutorial][t-gltf-lod]                        |
-| GLTF Model                |          [![][i-gltf]][i-gltf]          | GLTF Models afford consistent cross-platform rendering of 3D assets                      | [Object:][obj3]            [Schema][s-gltf]          [Message][m-gltf]          [Python][p-gltf]          [Tutorial][t-gltf]          [Unity][u-gltf]   |
-| GLTF Model Update         |   [![][i-modelUpdate]][i-modelUpdate]   | Allows translation of named GLTF model sub-components.                                   | [Attribute:][obja]         [Schema][s-modelUpdate]   [Message][m-modelUpdate]   [Python][p-modelUpdate]                                                 |
-| GLTF Morph                |    [![][i-gltf-morph]][i-gltf-morph]    | Target and control a GLTF model morphTargets created in Blender                          | [Attribute:][obja]         [Schema][s-gltf-morph]                               [Python][p-gltf-morph]                                                  |
-| Go to Landmark            | [![][i-goto-landmark]][i-goto-landmark] | Teleports user to the landmark with the given name                                       | [Attribute:][obja]         [Schema][s-goto-landmark]                            [Python][p-goto-landmark]                                               |
-| Go to URL                 |      [![][i-goto-url]][i-goto-url]      | Goto given URL                                                                           | [Attribute:][obja]         [Schema][s-goto-url]      [Message][m-goto-url]      [Python][p-goto-url]                                                    |
-| Hand Left                 |          [![][i-hand]][i-hand]          | Hand Left is the metadata pose and controller type of the user avatar                    | [Object:][obj3]            [Schema][s-hand]                                     [Python][p-hands]                                                       |
-| Hand Right                |          [![][i-hand]][i-hand]          | Hand Right is the metadata pose and controller type of the user avatar                   | [Object:][obj3]            [Schema][s-hand]                                     [Python][p-hands]                                                       |
-| Health Check              |   [![][i-health-warn]][i-health-warn]   | A clickable warning/error icon when critical errors happen in a scene                    | [User:][user]                                                                                             [Tutorial][t-health]                          |
-| Icosahedron               |   [![][i-icosahedron]][i-icosahedron]   | Icosahedron Geometry                                                                     | [Object:][obj3]            [Schema][s-icosahedron]                              [Python][p-icosahedron]                                                 |
-| Image                     |         [![][i-image]][i-image]         | Display an image on a plane                                                              | [Object:][obj3]            [Schema][s-image]         [Message][m-image]         [Python][p-image]                                                       |
-| Impulse                   |       [![][i-impulse]][i-impulse]       | The force applied using physics.                                                         | [Attribute:][obja]         [Schema][s-impulse]       [Message][m-dynamic-body]  [Python][p-impulse]                                                     |
-| Inspector                 |     [![][i-inspector]][i-inspector]     | The A-Frame Inspector, a visual 3D scene graph debugger                                  | Application                                                                                               [Tutorial][t-inspector]                       |
-| Jitsi Video               |   [![][i-jitsi-video]][i-jitsi-video]   | Apply Jitsi video source to the geometry                                                 | [Attribute:][obja]         [Schema][s-jitsi-video]                              [Python][p-jitsi-video]                                                 |
-| Landmark                  |      [![][i-landmark]][i-landmark]      | Landmarks allow you to jump to certain places of interest in a scene                     | [Attribute:][obja]         [Schema][s-landmark]      [Message][m-landmark]      [Python][p-landmark]      [Tutorial][t-landmark]                        |
-| Light                     |         [![][i-light]][i-light]         | A light                                                                                  | [Object:][obj3]            [Schema][s-light]         [Message][m-light]         [Python][p-light]                                                       |
-| Line                      |          [![][i-line]][i-line]          | Draw a line                                                                              | [Object:][obj3]            [Schema][s-line]          [Message][m-line]          [Python][p-line]                                                        |
-| Look At                   |       [![][i-look-at]][i-look-at]       | Dynamically rotate or face towards another entity or position (`look-at`)                | [Attribute:][obja]         [Schema][s-look-at]       [Message][m-look-at]       [Python][p-look-at]                                                     |
-| Material                  |      [![][i-material]][i-material]      | The material properties of the object's surface.                                         | [Attribute:][obja]         [Schema][s-material]      [Message][m-color]         [Python][p-material]                                                    |
-| Material Extras           |  [![][i-material-ext]][i-material-ext]  | Define extra material properties: texture encoding, render order                         | [Attribute:][obja]         [Schema][s-material-ext]                             [Python][p-material-ext]                                                |
-| Multi-Src                 |      [![][i-multisrc]][i-multisrc]      | Define multiple visual sources applied to an object.                                     | [Attribute:][obja]         [Schema][s-multisrc]      [Message][m-multisrc]      [Python][p-multisrc]                                                    |
-| Namespace                 |                                         | Your ARENA account namespace (same as User Name)                                         | Concept                                                                                                   [Tutorial][t-username]                        |
-| Nav Mesh                  |      [![][i-nav-mesh]][i-nav-mesh]      | Invisible 3D model surface for users to move upon.                                       | [Scene:][sopt]                                                                                            [Tutorial][t-navmesh]                         |
-| Navigation Controller     |   [![][i-nav-control]][i-nav-control]   | Using the VR Helmet Controller to hop around a scene.                                    | [User:][user]                                                                                             [Tutorial][t-usercrtl]                        |
-| Navigation Keys           |      [![][i-nav-keys]][i-nav-keys]      | Using the VR Desktop keyboard keys to move around a scene.                               | [User:][user]                                                                                             [Tutorial][t-navigation]                      |
-| Network Graph             |       [![][i-network]][i-network]       | A web interface of MQTT message traffic                                                  | [Application][a-network]                                                                                  [Tutorial][t-network]                         |
-| Null                      |                                         | Any JSON attribute may be removed by setting it equal to `null`                          | [Graph:][grph]                                                                  [Python][p-null]          [Tutorial][t-null]                            |
-| OBJ Model                 |          [![][i-obj]][i-obj]            | OBJ Models use Wavefront (.OBJ) files                                                    | [Object:][obj3]            [Schema][s-obj]                                      [Python][p-obj]                                                        |
-| Object ID                 |                                         | The scene graph name ID for the entity, must be unique in the scene.                     | [Graph:][grph]                                                                                                                                          |
-| Ocean                     |         [![][i-ocean]][i-ocean]         | Ocean                                                                                    | [Object:][obj3]            [Schema][s-ocean]                                    [Python][p-ocean]                                                       |
-| Octahedron                |    [![][i-octahedron]][i-octahedron]    | Octahedron Geometry                                                                      | [Object:][obj3]            [Schema][s-octahedron]                               [Python][p-octahedron]                                                  |
-| Origin Marker             |                                         | Origin Tag                                                                               | Concept                                                                                                   [Tutorial][t-origin]                          |
-| Overwrite                 |                                         | The scene graph directive to erase and overwrite this entity's data, not merge           | [Graph:][grph]                                                                                                                                          |
-| Parent                    |        [![][i-parent]][i-parent]        | Parent's object_id. Child objects inherit scale and translation (`parent`)               | [Attribute:][obja]         [Schema][s-parent]        [Message][m-parent]        [Python][p-parent]                                                      |
-| Particles (SPE)           | [![][i-spe-particles]][i-spe-particles] | GPU based particle systems in A-Frame.                                                   | [Attribute:][obja]         [Schema][s-spe-particles] [Message][m-spe-particles] [Python][p-spe-particles] [Tutorial][t-particles]                       |
-| PCD Model                 |           [![][i-pcd]][i-pcd]           | Load a Point-Cloud data (PCD) model                                                      | [Object:][obj3]            [Schema][s-pcd]                                      [Python][p-pcd]                                                         |
-| Persist                   |                                         | The scene graph directive to store the entity in the persistence database.               | [Graph:][grph]                                                                                            [Tutorial][t-persist]                         |
-| Physics (Dynamic)         |  [![][i-dynamic-body]][i-dynamic-body]  | Physics type attached to the object (`dynamic-body`).                                    | [Attribute:][obja]         [Schema][s-dynamic-body]  [Message][m-dynamic-body]  [Python][p-dynamic-body]                                                |
-| Physics (Static)          |   [![][i-static-body]][i-static-body]   | Physics type attached to the object (`static-body`).                                     | [Attribute:][obja]         [Schema][s-static-body]   [Message][m-static-body]   [Python][p-static-body]                                                 |
-| Plane                     |         [![][i-plane]][i-plane]         | Plane Geometry (Unity Quad/Plane)                                                        | [Object:][obj3]            [Schema][s-plane]                                    [Python][p-plane]                                                       |
-| Position                  |      [![][i-position]][i-position]      | 3D object position                                                                       | [Attribute:][obja]         [Schema][s-position]      [Message][m-position]      [Python][p-position]                                                    |
-| Program                   |       [![][i-program]][i-program]       | ARENA program data                                                                       | [Program:][prog]                                     [Message][m-program]                                 [Tutorial][t-program]                         |
-| Remote Render             | [![][i-remote-render]][i-remote-render] | Whether or not an object should be remote rendered [Experimental]                        | [Attribute:][obja]         [Schema][s-remote-render]                                                      [Tutorial][t-remote-render]                   |
-| Ring                      |          [![][i-ring]][i-ring]          | Ring Geometry                                                                            | [Object:][obj3]            [Schema][s-ring]                                     [Python][p-ring]                                                        |
-| Rotation                  |      [![][i-rotation]][i-rotation]      | 3D object rotation in quaternions; Right-handed coordinates                              | [Attribute:][obja]         [Schema][s-rotation]      [Message][m-rotation]      [Python][p-rotation]                                                    |
-| Rounded Box               |    [![][i-roundedbox]][i-roundedbox]    | Rounded Box Geometry                                                                     | [Object:][obj3]            [Schema][s-roundedbox]                               [Python][p-roundedbox]                                                  |
-| Scale                     |         [![][i-scale]][i-scale]         | 3D object scale                                                                          | [Attribute:][obja]         [Schema][s-scale]         [Message][m-scale]         [Python][p-scale]                                                       |
-| Scene                     |         [![][i-scene]][i-scene]         | The main 3D rendered scene web interface                                                 | [Application][a-scene]                                                                                    [Tutorial][t-scene]                           |
-| Scenes List               |     [![][i-scenelist]][i-scenelist]     | A list of scenes to browse and scene entry URL options.                                  | [Application][a-scenelist]                                                                                [Tutorial][t-scenelist]                       |
-| Screenshareable           |   [![][i-screenshare]][i-screenshare]   | Whether or not a user can screen share on an object (`screenshareable`)                  | [Attribute:][obja]         [Schema][s-screenshare]                                                        [Tutorial][t-screenshare]                     |
-| Segment                   |                                         | Segments are the rows of triangles used to render a Mesh Geometry Primitive              | Concept                                                                                                                                                 |
-| Shadow                    |        [![][i-shadow]][i-shadow]        | Defines how objects cast and receive shadow                                              | [Attribute:][obja]         [Schema][s-shadow]                                   [Python][p-shadow]                                                      |
-| Sign In                   |                                         | Signin, login                                                                            | [User:][user]                                                                                             [Tutorial][t-signin]                          |
-| Sign Out                  |                                         | Signout, logout                                                                          | [User:][user]                                                                                             [Tutorial][t-usercrtl]                        |
-| Skip Cache                |     [![][i-skipCache]][i-skipCache]     | Disable retrieving the shared geometry object from the cache (`skipCache`)               | [Attribute:][obja]         [Schema][s-skipCache]                                                                                                        |
-| Sound                     |         [![][i-sound]][i-sound]         | Positional sound is thus affected by the component's position                            | [Attribute:][obja]         [Schema][s-sound]         [Message][m-sound]         [Python][p-sound]                                                       |
-| Speed                     |    [![][i-speed-fast]][i-speed-fast]    | The user setting defining how fast to move when using Navigation Keys                    | [User:][user]                                                                                             [Tutorial][t-usercrtl]                        |
-| Sphere                    |        [![][i-sphere]][i-sphere]        | Sphere Geometry                                                                          | [Object:][obj3]            [Schema][s-sphere]                                   [Python][p-sphere]                                                      |
-| Spot AR                   |       [![][i-spot-ar]][i-spot-ar]       | SpotAR is a mode for viewing AR-tagged content in restricted browsers (Safari)           | Application                                                                                               [Tutorial][t-spotar]                          |
-| Start/Spawn Position      |                                         | The scene options to control the variance of position to enter the scene                 | [Scene:][sopt]                                                                                            [Tutorial][t-spawn]                           |
-| Tetrahedron               |   [![][i-tetrahedron]][i-tetrahedron]   | Tetrahedron Geometry                                                                     | [Object:][obj3]            [Schema][s-tetrahedron]                              [Python][p-tetrahedron]                                                 |
-| Text                      |          [![][i-text]][i-text]          | Display text                                                                             | [Object:][obj3]            [Schema][s-text]          [Message][m-text]          [Python][p-text]                                                        |
-| Text Input                |     [![][i-textinput]][i-textinput]     | Opens an HTML prompt when clicked. Sends text xas an event on MQTT                       | [Attribute:][obja]         [Schema][s-textinput]                                [Python][p-textinput]                                                   |
-| Thickline                 |     [![][i-thickline]][i-thickline]     | Draw a thick line that can have a custom width                                           | [Object:][obj3]            [Schema][s-thickline]     [Message][m-thickline]     [Python][p-thickline]                                                   |
-| Three.js Scene            |       [![][i-threejs]][i-threejs]       | Load a Three.js Scene                                                                    | [Object:][obj3]            [Schema][s-threejs]                                  [Python][p-threejs]                                                     |
-| Torus                     |         [![][i-torus]][i-torus]         | Torus Geometry                                                                           | [Object:][obj3]            [Schema][s-torus]                                    [Python][p-torus]                                                       |
-| Torus Knot                |     [![][i-torusKnot]][i-torusKnot]     | Torus Knot Geometry                                                                      | [Object:][obj3]            [Schema][s-torusKnot]     [Message][m-torusKnot]     [Python][p-torusKnot]                                                   |
-| Triangle                  |      [![][i-triangle]][i-triangle]      | Triangle Geometry                                                                        | [Object:][obj3]            [Schema][s-triangle]                                 [Python][p-triangle]                                                    |
-| TTL                       |                                         | The scene graph directive Time-To-Live specifying auto-delete time                       | [Graph:][grph]                                       [Message][m-ttl]                                                                                   |
-| UI Button Panel           |    [![][i-ui-buttons]][i-ui-buttons]    | ARENAUI Button Panel                                                                     | [Object:][obj3]            [Schema][s-ui-buttons]                               [Python][p-ui-buttons]    [Tutorial][t-ui-buttons]                      |
-| UI Card                   |       [![][i-ui-card]][i-ui-card]       | ARENAUI Card                                                                             | [Object:][obj3]            [Schema][s-ui-card]                                  [Python][p-ui-card]       [Tutorial][t-ui-card]                         |
-| UI Prompt                 |     [![][i-ui-prompt]][i-ui-prompt]     | ARENAUI Prompt                                                                           | [Object:][obj3]            [Schema][s-ui-prompt]                                [Python][p-ui-prompt]     [Tutorial][t-ui-prompt]                       |
-| URDF Model                |          [![][i-urdf]][i-urdf]          | URDF Models are used to express robotic shapes and joint parameters                      | [Object:][obj3]            [Schema][s-urdf]                                     [Python][p-urdf]                                                        |
-| User Account              |       [![][i-profile]][i-profile]       | The User's account profile and scene permissions.                                        | [Application][a-profile]                                                                                  [Tutorial][t-profile]                         |
-| User List                 |         [![][i-users]][i-users]         | A scene tool to list connect users and their Jitsi (video conference) state              | [User:][user]                                                                                             [Tutorial][t-userlist]                        |
-| User Name                 |                                         | Your ARENA account username (same as Namespace)                                          | Concept                                                                                                   [Tutorial][t-username]                        |
-| Video                     |      [![][i-video-on]][i-video-on]      | User's Camera On/Off state (requires camera permission)                                  | [User:][user]                                                                                             [Tutorial][t-video]                           |
-| Video Control             | [![][i-video-control]][i-video-control] | Video Control                                                                            | [Attribute:][obja]         [Schema][s-video-control]                            [Python][p-video-control]                                               |
-| Video Quality             |       [![][i-sigpoor]][i-sigpoor]       | An indicator above a user when Jitsi video quality is poor                               | [User:][user]                                                                                             [Tutorial][t-usercrtl]                        |
-| Videosphere               |   [![][i-videosphere]][i-videosphere]   | Video sphere 360 video bubble                                                            | [Object:][obj3]            [Schema][s-videosphere]   [Message][m-videosphere]   [Python][p-videosphere]   [Tutorial][t-videosphere]                     |
-| Visible                   |       [![][i-visible]][i-visible]       | To enable/disable rendering                                                              | [Attribute:][obja]         [Schema][s-visible]                                                                                                          |
-| VR Hide/Show              |   [![][i-vr-hideshow]][i-vr-hideshow]   | Hide/Show object (`hide-on-enter-vr`) when entering VR.                                  | [Attribute:][obja]         [Schema][s-vr-hideshow]                                                                                                      |
-| WebXR                     |     [![][i-webxr-api]][i-webxr-api]     | WebXR is an API for building web-accessible XR scenes.                                   | Application                                                                                               [Tutorial][t-webxr-api]                       |
+| Example                    |                         Thumbnail                         | Description                                                                              | Type: Links                                                                                        |
+| :------------------------- | :-------------------------------------------------------: | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- |
+| Action (Message)           |                                                           | The scene graph action: create, update (merge), delete.                                  | [Graph:][grph] [Tutorial][t-action]                                                                |
+| Animation                  |              [![][i-animation]][i-animation]              | Animate and tween values.                                                                | [Attribute:][obja] [Schema][s-animation] [Python][p-animation] [Tutorial][t-animation]             |
+| Animation Mixer            |          [![][i-animation-mix]][i-animation-mix]          | Control playing animations stored in a GLTF model.                                       | [Attribute:][obja] [Schema][s-animation-mix] [Python][p-animation-mix] [Tutorial][t-animation-mix] |
+| AR Hide/Show               |            [![][i-ar-hideshow]][i-ar-hideshow]            | Hide/Show object (`hide-on-enter-ar`) when entering AR.                                  | [Attribute:][obja] [Schema][s-ar-hideshow]                                                         |
+| AR Marker                  |               [![][i-armarker]][i-armarker]               | A location marker used to anchor scenes/objects, in the real world                       | [Attribute:][obja] [Schema][s-armarker] [Python][p-armarker] [Tutorial][t-armarker]                |
+| ARTS                       |                   [![][i-arts]][i-arts]                   | ARTS, a runtime supervisor for programs                                                  | [Application][a-arts]                                                                              |
+| ATLAS                      |                  [![][i-atlas]][i-atlas]                  | ATLAS, a geolocation index of AR scenes.                                                 | Application                                                                                        |
+| Attribution                |            [![][i-attribution]][i-attribution]            | Attribution Component. Saves attribution data in any entity                              | [Attribute:][obja] [Schema][s-attribution] [Python][p-attribution] [Tutorial][t-attribution]       |
+| Audio                      |               [![][i-audio-on]][i-audio-on]               | User's Microphone On/Off state (requires microphone permission)                          | [User:][user] [Tutorial][t-audio]                                                                  |
+| Blip                       |                   [![][i-blip]][i-blip]                   | When the object is created or deleted, it will animate in/out                            | [Attribute:][obja] [Schema][s-blip] [Python][p-blip]                                               |
+| Box                        |                    [![][i-box]][i-box]                    | Box Geometry (Unity Cube)                                                                | [Object:][obj3] [Schema][s-box] [Python][p-box] [Tutorial][t-box]                                  |
+| Box Collision              |          [![][i-box-collision]][i-box-collision]          | Listen for bounding-box collisions with user camera and hands (`box-collision-listener`) | [Attribute:][obja] [Schema][s-box-collision] [Python][p-box-collision]                             |
+| Buffer Geometry            |                 [![][i-buffer]][i-buffer]                 | Reduce geometry memory usage while being harder to manipulate (`buffer`)                 | [Attribute:][obja] [Schema][s-buffer]                                                              |
+| Build                      |                  [![][i-build]][i-build]                  | Build is a JSON editor for the persisted scene graph.                                    | [Application][a-build] [Tutorial][t-build]                                                         |
+| Build 3D                   |                [![][i-build3d]][i-build3d]                | Build3D is a visual 3D editor for the persisted scene graph (based on Inspector)         | Application [Tutorial][t-build3d]                                                                  |
+| Callbacks                  |                                                           | A handler in a program to receive an ARENA Event.                                        | Concept [Tutorial][t-callbacks]                                                                    |
+| Camera                     |                 [![][i-camera]][i-camera]                 | Camera is the pose and component data representing a user avatar                         | [Object:][obj3] [Schema][s-camera] [Python][p-camera]                                              |
+| Capsule                    |                [![][i-capsule]][i-capsule]                | Capsule Geometry                                                                         | [Object:][obj3] [Schema][s-capsule] [Python][p-capsule]                                            |
+| Chat                       |                [![][i-message]][i-message]                | A messaging tool for other users in the ARENA                                            | [User:][user] [Tutorial][t-chat]                                                                   |
+| Child                      |                                                           | See Parent.                                                                              | Concept                                                                                            |
+| Circle                     |                 [![][i-circle]][i-circle]                 | Circle Geometry                                                                          | [Object:][obj3] [Schema][s-circle] [Python][p-circle]                                              |
+| Click                      |                  [![][i-click]][i-click]                  | Object will listen for clicks (`click-listener`)                                         | [Attribute:][obja] [Schema][s-click] [Python][p-clickable]                                         |
+| Collision                  |              [![][i-collision]][i-collision]              | Collisions trigger click events (`collision-listener`)                                   | [Attribute:][obja] [Schema][s-collision]                                                           |
+| Color                      |               [![][i-material]][i-material]               | Color of the material (as hex code), supported in the `material.color` attribute.        | [Attribute:][obja] [Schema][s-material] [Python][p-color]                                          |
+| Cone                       |                   [![][i-cone]][i-cone]                   | Cone Geometry                                                                            | [Object:][obj3] [Schema][s-cone] [Python][p-cone]                                                  |
+| Conference                 |                                                           | Using the ARENA scene as a 3D zoom room, video conference, meeting.                      | Concept [Tutorial][t-meeting]                                                                      |
+| Cube                       |                   [![][i-cube]][i-cube]                   | Cube Geometry (**deprecated**, see Box)                                                  | [Object:][obj3]                                                                                    |
+| Cylinder                   |               [![][i-cylinder]][i-cylinder]               | Cylinder Geometry                                                                        | [Object:][obj3] [Schema][s-cylinder] [Python][p-cylinder]                                          |
+| Data Block                 |                                                           | The scene graph data Attributes, storing component details.                              | [Graph:][grph]                                                                                     |
+| Display Name               |            [![][i-displayname]][i-displayname]            | The user-editable display name, derived from the Google account byu default              | [User:][user] [Tutorial][t-displayname]                                                            |
+| Dodecahedron               |           [![][i-dodecahedron]][i-dodecahedron]           | Dodecahedron Geometry                                                                    | [Object:][obj3] [Schema][s-dodecahedron] [Python][p-dodecahedron]                                  |
+| Entity                     |                 [![][i-entity]][i-entity]                 | Entities are containers into which components can be attached                            | [Object:][obj3] [Schema][s-entity] [Python][p-entity]                                              |
+| Event                      |                  [![][i-event]][i-event]                  | Events are ephemeral messages used for events like controller actions                    | [Object:][obj3] [Schema][s-event] [Python][p-event]                                                |
+| Facial Recognition Avatar  |              [![][i-avatar-on]][i-avatar-on]              | Recognizes your facial feature points from your camera and animates a 3d head            | [User:][user] [Tutorial][t-face]                                                                   |
+| File Store                 |              [![][i-filestore]][i-filestore]              | The filestore interface for user file editing and uploading.                             | [Application][a-filestore] [Tutorial][t-filestore]                                                 |
+| Flight/Fly                 |              [![][i-flying-on]][i-flying-on]              | The user state to navigate on a 2D ground plane or 3D flight.                            | [User:][user] [Tutorial][t-usercrtl]                                                               |
+| Gaussian Splat             |                  [![][i-splat]][i-splat]                  | Load 3D Gaussian Splat                                                                   | [Object:][obj3] [Schema][s-splat] [Python][p-splat]                                                |
+| Geometry                   |                                                           | Geometry (Mesh) is the ordered collection of vertices to make a 3D primitive.            | Concept                                                                                            |
+| GLTF LOD                   |               [![][i-gltf-lod]][i-gltf-lod]               | Switch between default and detailed GLTF models                                          | [Attribute:][obja] [Schema][s-gltf-lod] [Tutorial][t-gltf-lod]                                     |
+| GLTF Model                 |                   [![][i-gltf]][i-gltf]                   | GLTF Models afford consistent cross-platform rendering of 3D assets                      | [Object:][obj3] [Schema][s-gltf] [Python][p-gltf] [Tutorial][t-gltf] [Unity][u-gltf]               |
+| GLTF Model Update          |            [![][i-modelUpdate]][i-modelUpdate]            | Allows translation of named GLTF model sub-components.                                   | [Attribute:][obja] [Schema][s-modelUpdate] [Python][p-modelUpdate]                                 |
+| GLTF Morph                 |             [![][i-gltf-morph]][i-gltf-morph]             | Target and control a GLTF model morphTargets created in Blender                          | [Attribute:][obja] [Schema][s-gltf-morph] [Python][p-gltf-morph]                                   |
+| Go to Landmark             |          [![][i-goto-landmark]][i-goto-landmark]          | Teleports user to the landmark with the given name                                       | [Attribute:][obja] [Schema][s-goto-landmark] [Python][p-goto-landmark]                             |
+| Go to URL                  |               [![][i-goto-url]][i-goto-url]               | Goto given URL                                                                           | [Attribute:][obja] [Schema][s-goto-url] [Python][p-goto-url]                                       |
+| Hand Left                  |                   [![][i-hand]][i-hand]                   | Hand Left is the metadata pose and controller type of the user avatar                    | [Object:][obj3] [Schema][s-hand] [Python][p-hands]                                                 |
+| Hand Right                 |                   [![][i-hand]][i-hand]                   | Hand Right is the metadata pose and controller type of the user avatar                   | [Object:][obj3] [Schema][s-hand] [Python][p-hands]                                                 |
+| Health Check               |            [![][i-health-warn]][i-health-warn]            | A clickable warning/error icon when critical errors happen in a scene                    | [User:][user] [Tutorial][t-health]                                                                 |
+| Icosahedron                |            [![][i-icosahedron]][i-icosahedron]            | Icosahedron Geometry                                                                     | [Object:][obj3] [Schema][s-icosahedron] [Python][p-icosahedron]                                    |
+| Image                      |                  [![][i-image]][i-image]                  | Display an image on a plane                                                              | [Object:][obj3] [Schema][s-image] [Python][p-image]                                                |
+| Inspector                  |              [![][i-inspector]][i-inspector]              | The A-Frame Inspector, a visual 3D scene graph debugger                                  | Application [Tutorial][t-inspector]                                                                |
+| Jitsi Video                |            [![][i-jitsi-video]][i-jitsi-video]            | Apply Jitsi video source to the geometry                                                 | [Attribute:][obja] [Schema][s-jitsi-video] [Python][p-jitsi-video]                                 |
+| Landmark                   |               [![][i-landmark]][i-landmark]               | Landmarks allow you to jump to certain places of interest in a scene                     | [Attribute:][obja] [Schema][s-landmark] [Python][p-landmark] [Tutorial][t-landmark]                |
+| Light                      |                  [![][i-light]][i-light]                  | A light                                                                                  | [Object:][obj3] [Schema][s-light] [Python][p-light]                                                |
+| Line                       |                   [![][i-line]][i-line]                   | Draw a line                                                                              | [Object:][obj3] [Schema][s-line] [Python][p-line]                                                  |
+| Look At                    |                [![][i-look-at]][i-look-at]                | Dynamically rotate or face towards another entity or position (`look-at`)                | [Attribute:][obja] [Schema][s-look-at] [Python][p-look-at]                                         |
+| Material                   |               [![][i-material]][i-material]               | The material properties of the object's surface.                                         | [Attribute:][obja] [Schema][s-material] [Python][p-material]                                       |
+| Material Extras            |           [![][i-material-ext]][i-material-ext]           | Define extra material properties: texture encoding, render order                         | [Attribute:][obja] [Schema][s-material-ext] [Python][p-material-ext]                               |
+| Model Container            |        [![][i-model-container]][i-model-container]        | Overrides absolute size for a 3D model (glTF, glb, obj, etc...).                         | [Object:][obj3] [Schema][s-model-container] [Python][p-model-container]                            |
+| Multi-Src                  |               [![][i-multisrc]][i-multisrc]               | Define multiple visual sources applied to an object.                                     | [Attribute:][obja] [Schema][s-multisrc] [Python][p-multisrc]                                       |
+| Namespace                  |                                                           | Your ARENA account namespace (same as User Name)                                         | Concept [Tutorial][t-username]                                                                     |
+| Nav Mesh                   |               [![][i-nav-mesh]][i-nav-mesh]               | Invisible 3D model surface for users to move upon.                                       | [Scene:][sopt] [Tutorial][t-navmesh]                                                               |
+| Navigation Controller      |            [![][i-nav-control]][i-nav-control]            | Using the VR Helmet Controller to hop around a scene.                                    | [User:][user] [Tutorial][t-usercrtl]                                                               |
+| Navigation Keys            |               [![][i-nav-keys]][i-nav-keys]               | Using the VR Desktop keyboard keys to move around a scene.                               | [User:][user] [Tutorial][t-navigation]                                                             |
+| Network Graph              |                [![][i-network]][i-network]                | A web interface of MQTT message traffic                                                  | [Application][a-network] [Tutorial][t-network]                                                     |
+| Null                       |                                                           | Any JSON attribute may be removed by setting it equal to `null`                          | [Graph:][grph] [Python][p-null] [Tutorial][t-null]                                                 |
+| OBJ Model                  |                    [![][i-obj]][i-obj]                    | OBJ Models use Wavefront (.OBJ) files                                                    | [Object:][obj3] [Schema][s-obj] [Python][p-obj]                                                    |
+| Object ID                  |                                                           | The scene graph name ID for the entity, must be unique in the scene.                     | [Graph:][grph]                                                                                     |
+| Ocean                      |                  [![][i-ocean]][i-ocean]                  | Ocean                                                                                    | [Object:][obj3] [Schema][s-ocean] [Python][p-ocean]                                                |
+| Octahedron                 |             [![][i-octahedron]][i-octahedron]             | Octahedron Geometry                                                                      | [Object:][obj3] [Schema][s-octahedron] [Python][p-octahedron]                                      |
+| Origin Marker              |                                                           | Origin Tag                                                                               | Concept [Tutorial][t-origin]                                                                       |
+| Overwrite                  |                                                           | The scene graph directive to erase and overwrite this entity's data, not merge           | [Graph:][grph]                                                                                     |
+| Parent                     |                 [![][i-parent]][i-parent]                 | Parent's object_id. Child objects inherit scale and translation (`parent`)               | [Attribute:][obja] [Schema][s-parent] [Python][p-parent]                                           |
+| Particles (SPE)            |          [![][i-spe-particles]][i-spe-particles]          | GPU based particle systems in A-Frame.                                                   | [Attribute:][obja] [Schema][s-spe-particles][Python][p-spe-particles] [Tutorial][t-particles]      |
+| PCD Model                  |                    [![][i-pcd]][i-pcd]                    | Load a Point-Cloud data (PCD) model                                                      | [Object:][obj3] [Schema][s-pcd] [Python][p-pcd]                                                    |
+| Persist                    |                                                           | The scene graph directive to store the entity in the persistence database.               | [Graph:][grph] [Tutorial][t-persist]                                                               |
+| Physics (Body)             |             [![][i-physx-body]][i-physx-body]             | Turns an entity into a PhysX rigid body (deprecates: `dynamic-body`, `static-body`).     | [Attribute:][obja] [Schema][s-physx-body] [Python][p-physx-force-pushable]                         |
+| Physics (Force Pushable)   |   [![][i-physx-force-pushable]][i-physx-force-pushable]   | Makes a physx-body object pushable by the user (deprecates: `impulse`).                  | [Attribute:][obja] [Schema][s-physx-force-pushable] [Python][p-physx-force-pushable]               |
+| Physics (Grabbable)        |        [![][i-physx-grabbable]][i-physx-grabbable]        | Physics type attached to the object (`physx-grabbable`).                                 | [Attribute:][obja] [Schema][s-physx-grabbable] [Python][p-physx-grabbable]                         |
+| Physics (Joint Constraint) | [![][i-physx-joint-constraint]][i-physx-joint-constraint] | Adds a constraint to a physx-joint.                                                      | [Attribute:][obja] [Schema][s-physx-joint-constraint]                                              |
+| Physics (Joint Driver)     |     [![][i-physx-joint-driver]][i-physx-joint-driver]     | Creates a driver which exerts force to return the joint to the initial position.         | [Attribute:][obja] [Schema][s-physx-joint-driver]                                                  |
+| Physics (Joint)            |            [![][i-physx-joint]][i-physx-joint]            | Creates a PhysX joint between an ancestor rigid body and a target rigid body.            | [Attribute:][obja] [Schema][s-physx-joint]                                                         |
+| Physics (Material)         |         [![][i-physx-material]][i-physx-material]         | Controls physics properties for individual shapes or rigid bodies.                       | [Attribute:][obja] [Schema][s-physx-material] [Python][p-physx-force-pushable]                     |
+| Plane                      |                  [![][i-plane]][i-plane]                  | Plane Geometry (Unity Quad/Plane)                                                        | [Object:][obj3] [Schema][s-plane] [Python][p-plane]                                                |
+| Position                   |               [![][i-position]][i-position]               | 3D object position                                                                       | [Attribute:][obja] [Schema][s-position] [Python][p-position]                                       |
+| Program                    |                [![][i-program]][i-program]                | ARENA program data                                                                       | [Program:][prog] [Tutorial][t-program]                                                             |
+| Remote Render              |          [![][i-remote-render]][i-remote-render]          | Whether or not an object should be remote rendered [Experimental]                        | [Attribute:][obja] [Schema][s-remote-render] [Tutorial][t-remote-render]                           |
+| Ring                       |                   [![][i-ring]][i-ring]                   | Ring Geometry                                                                            | [Object:][obj3] [Schema][s-ring] [Python][p-ring]                                                  |
+| Rotation                   |               [![][i-rotation]][i-rotation]               | 3D object rotation in quaternions; Right-handed coordinates                              | [Attribute:][obja] [Schema][s-rotation] [Python][p-rotation]                                       |
+| Rounded Box                |             [![][i-roundedbox]][i-roundedbox]             | Rounded Box Geometry                                                                     | [Object:][obj3] [Schema][s-roundedbox] [Python][p-roundedbox]                                      |
+| Scale                      |                  [![][i-scale]][i-scale]                  | 3D object scale                                                                          | [Attribute:][obja] [Schema][s-scale] [Python][p-scale]                                             |
+| Scene                      |                  [![][i-scene]][i-scene]                  | The main 3D rendered scene web interface                                                 | [Application][a-scene] [Tutorial][t-scene]                                                         |
+| Scenes List                |              [![][i-scenelist]][i-scenelist]              | A list of scenes to browse and scene entry URL options.                                  | [Application][a-scenelist] [Tutorial][t-scenelist]                                                 |
+| Screenshareable            |            [![][i-screenshare]][i-screenshare]            | Whether or not a user can screen share on an object (`screenshareable`)                  | [Attribute:][obja] [Schema][s-screenshare] [Tutorial][t-screenshare]                               |
+| Segment                    |                                                           | Segments are the rows of triangles used to render a Mesh Geometry Primitive              | Concept                                                                                            |
+| Shadow                     |                 [![][i-shadow]][i-shadow]                 | Defines how objects cast and receive shadow                                              | [Attribute:][obja] [Schema][s-shadow] [Python][p-shadow]                                           |
+| Sign In                    |                                                           | Signin, login                                                                            | [User:][user] [Tutorial][t-signin]                                                                 |
+| Sign Out                   |                                                           | Signout, logout                                                                          | [User:][user] [Tutorial][t-usercrtl]                                                               |
+| Skip Cache                 |              [![][i-skipCache]][i-skipCache]              | Disable retrieving the shared geometry object from the cache (`skipCache`)               | [Attribute:][obja] [Schema][s-skipCache]                                                           |
+| Sound                      |                  [![][i-sound]][i-sound]                  | Positional sound is thus affected by the component's position                            | [Attribute:][obja] [Schema][s-sound] [Python][p-sound]                                             |
+| Speed                      |             [![][i-speed-fast]][i-speed-fast]             | The user setting defining how fast to move when using Navigation Keys                    | [User:][user] [Tutorial][t-usercrtl]                                                               |
+| Sphere                     |                 [![][i-sphere]][i-sphere]                 | Sphere Geometry                                                                          | [Object:][obj3] [Schema][s-sphere] [Python][p-sphere]                                              |
+| Spot AR                    |                [![][i-spot-ar]][i-spot-ar]                | SpotAR is a mode for viewing AR-tagged content in restricted browsers (Safari)           | Application [Tutorial][t-spotar]                                                                   |
+| Start/Spawn Position       |                                                           | The scene options to control the variance of position to enter the scene                 | [Scene:][sopt] [Tutorial][t-spawn]                                                                 |
+| Tetrahedron                |            [![][i-tetrahedron]][i-tetrahedron]            | Tetrahedron Geometry                                                                     | [Object:][obj3] [Schema][s-tetrahedron] [Python][p-tetrahedron]                                    |
+| Text                       |                   [![][i-text]][i-text]                   | Display text                                                                             | [Object:][obj3] [Schema][s-text] [Python][p-text]                                                  |
+| Text Input                 |              [![][i-textinput]][i-textinput]              | Opens an HTML prompt when clicked. Sends text xas an event on MQTT                       | [Attribute:][obja] [Schema][s-textinput] [Python][p-textinput]                                     |
+| Thickline                  |              [![][i-thickline]][i-thickline]              | Draw a thick line that can have a custom width                                           | [Object:][obj3] [Schema][s-thickline] [Python][p-thickline]                                        |
+| Three.js Scene             |                [![][i-threejs]][i-threejs]                | Load a Three.js Scene                                                                    | [Object:][obj3] [Schema][s-threejs] [Python][p-threejs]                                            |
+| Torus                      |                  [![][i-torus]][i-torus]                  | Torus Geometry                                                                           | [Object:][obj3] [Schema][s-torus] [Python][p-torus]                                                |
+| Torus Knot                 |              [![][i-torusKnot]][i-torusKnot]              | Torus Knot Geometry                                                                      | [Object:][obj3] [Schema][s-torusKnot] [Python][p-torusKnot]                                        |
+| Triangle                   |               [![][i-triangle]][i-triangle]               | Triangle Geometry                                                                        | [Object:][obj3] [Schema][s-triangle] [Python][p-triangle]                                          |
+| TTL                        |                                                           | The scene graph directive Time-To-Live specifying auto-delete time                       | [Graph:][grph]                                                                                     |
+| UI Button Panel            |             [![][i-ui-buttons]][i-ui-buttons]             | ARENAUI Button Panel                                                                     | [Object:][obj3] [Schema][s-ui-buttons] [Python][p-ui-buttons] [Tutorial][t-ui-buttons]             |
+| UI Card                    |                [![][i-ui-card]][i-ui-card]                | ARENAUI Card                                                                             | [Object:][obj3] [Schema][s-ui-card] [Python][p-ui-card] [Tutorial][t-ui-card]                      |
+| UI Prompt                  |              [![][i-ui-prompt]][i-ui-prompt]              | ARENAUI Prompt                                                                           | [Object:][obj3] [Schema][s-ui-prompt] [Python][p-ui-prompt] [Tutorial][t-ui-prompt]                |
+| URDF Model                 |                   [![][i-urdf]][i-urdf]                   | URDF Models are used to express robotic shapes and joint parameters                      | [Object:][obj3] [Schema][s-urdf] [Python][p-urdf]                                                  |
+| User Account               |                [![][i-profile]][i-profile]                | The User's account profile and scene permissions.                                        | [Application][a-profile] [Tutorial][t-profile]                                                     |
+| User List                  |                  [![][i-users]][i-users]                  | A scene tool to list connect users and their Jitsi (video conference) state              | [User:][user] [Tutorial][t-userlist]                                                               |
+| User Name                  |                                                           | Your ARENA account username (same as Namespace)                                          | Concept [Tutorial][t-username]                                                                     |
+| Video                      |               [![][i-video-on]][i-video-on]               | User's Camera On/Off state (requires camera permission)                                  | [User:][user] [Tutorial][t-video]                                                                  |
+| Video Control              |          [![][i-video-control]][i-video-control]          | Video Control                                                                            | [Attribute:][obja] [Schema][s-video-control] [Python][p-video-control]                             |
+| Video Quality              |                [![][i-sigpoor]][i-sigpoor]                | An indicator above a user when Jitsi video quality is poor                               | [User:][user] [Tutorial][t-usercrtl]                                                               |
+| Videosphere                |            [![][i-videosphere]][i-videosphere]            | Video sphere 360 video bubble                                                            | [Object:][obj3] [Schema][s-videosphere] [Python][p-videosphere] [Tutorial][t-videosphere]          |
+| Visible                    |                [![][i-visible]][i-visible]                | To enable/disable rendering                                                              | [Attribute:][obja] [Schema][s-visible]                                                             |
+| VR Hide/Show               |            [![][i-vr-hideshow]][i-vr-hideshow]            | Hide/Show object (`hide-on-enter-vr`) when entering VR.                                  | [Attribute:][obja] [Schema][s-vr-hideshow]                                                         |
+| WebXR                      |              [![][i-webxr-api]][i-webxr-api]              | WebXR is an API for building web-accessible XR scenes.                                   | Application [Tutorial][t-webxr-api]                                                                |
 
 ## Wire Format Types
 
@@ -194,6 +199,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 <!-- Temporarily,  use "/" for links without images,  if we want a tag,  and not have the unlinked code tag rendered. -->
 
 [i-box]: /assets/img/examples/objects/box.png
+
 {:width="100px"}
 [i-camera]: /assets/img/overview/userguide/a6.png
 {:width="100px"}
@@ -233,7 +239,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 {:width="100px"}
 [i-line]: /
 {:width="100px"}
-[i-ocean]:  /assets/img/overview/atmosphere/ocean.png
+[i-ocean]: /assets/img/overview/atmosphere/ocean.png
 {:width="100px"}
 [i-octahedron]: /assets/img/examples/objects/octahedron.png
 {:width="100px"}
@@ -291,10 +297,6 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 {:width="100px"}
 [i-collision]: /
 {:width="100px"}
-[i-dynamic-body]: /
-{:width="100px"}
-[i-static-body]: /
-{:width="100px"}
 [i-gltf-lod]: /
 {:width="100px"}
 [i-gltf-morph]: /
@@ -302,8 +304,6 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [i-goto-landmark]: /
 {:width="100px"}
 [i-goto-url]: /
-{:width="100px"}
-[i-impulse]: /
 {:width="100px"}
 [i-jitsi-video]: /
 {:width="100px"}
@@ -431,6 +431,18 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 {:height="32px" width="32px" style="background-color:#262626"}
 [i-siggood]: /assets/img/icons/signal-good.png
 {:height="32px" width="32px" style="background-color:#262626"}
+[i-physx-body]: /
+{:width="100px"}
+[i-physx-joint]: /
+{:width="100px"}
+[i-physx-joint-driver]: /
+{:width="100px"}
+[i-physx-material]: /
+{:width="100px"}
+[i-physx-grabbable]: /
+{:width="100px"}
+[i-physx-force-pushable]: /
+{:width="100px"}
 
 <!-- json schema links-->
 
@@ -451,7 +463,6 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-cone]: /content/schemas/message/cone
 [s-cylinder]: /content/schemas/message/cylinder
 [s-dodecahedron]: /content/schemas/message/dodecahedron
-[s-dynamic-body]: /content/schemas/message/dynamic-body
 [s-entity]: /content/schemas/message/entity
 [s-event]: /content/schemas/message/event
 [s-gltf-lod]: /content/schemas/message/gltf-model-lod
@@ -463,7 +474,6 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-hand]: /content/schemas/message/hand
 [s-icosahedron]: /content/schemas/message/icosahedron
 [s-image]: /content/schemas/message/image
-[s-impulse]: /content/schemas/message/impulse
 [s-jitsi-video]: /content/schemas/message/jitsi-video
 [s-landmark]: /content/schemas/message/landmark
 [s-light]: /content/schemas/message/light
@@ -478,6 +488,12 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-octahedron]: /content/schemas/message/octahedron
 [s-parent]: /content/schemas/message/entity#entity-generic-object-data-attributes
 [s-pcd]: /content/schemas/message/pcd-model
+[s-physx-body]: /content/schemas/message/physx-body
+[s-physx-joint]: /content/schemas/message/physx-joint
+[s-physx-joint-driver]: /content/schemas/message/physx-joint-driver
+[s-physx-material]: /content/schemas/message/physx-material
+[s-physx-grabbable]: /content/schemas/message/physx-grabbable
+[s-physx-force-pushable]: /content/schemas/message/physx-force-push
 [s-plane]: /content/schemas/message/plane
 [s-position]: /content/schemas/message/position
 [s-remote-render]: /content/schemas/message/remote-render
@@ -524,49 +540,6 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [m-null]: /content/schemas/message-examples#messaging-format-reference
 [m-null]: /content/schemas/message-examples#formatting-pubsub-messages
 
-<!-- full message example links-->
-
-[m-animation-mix]: /content/schemas/message-examples#animating-gltf-models
-[m-animation]: /content/schemas/message-examples#animate
-[m-box]: /content/schemas/message-examples#draw-a-cube
-[m-camera]: /content/schemas/message-examples#relocalize-camera-rig
-[m-click]: /content/schemas/message-examples#events
-[m-color]: /content/schemas/message-examples#color
-[m-delete]: /content/schemas/message-examples#remove
-[m-dynamic-body]: /content/schemas/message-examples#physics
-[m-environemnt]: /content/schemas/message-examples#background-themes
-[m-event]: /content/schemas/definitions#event-message
-[m-event]: /content/schemas/message-examples#events-1
-[m-gltf]: /content/schemas/message-examples#models
-[m-goto-url]: /content/schemas/message-examples#goto-url
-[m-image]: /content/schemas/message-examples#images
-[m-landmark]: /content/schemas/message-examples#landmark
-[m-light]: /content/schemas/message-examples#lights
-[m-line]: /content/schemas/message-examples#lines
-[m-Look-at]: /content/schemas/message-examples#camera-look-at
-[m-modelUpdate]: /content/schemas/message/modelUpdate#gltf-model-update-example
-[m-multisrc]: /content/schemas/message-examples#images-on-objects
-[m-object]: /content/schemas/definitions#object-message
-[m-occlusion]: /content/schemas/message-examples#transparent-occlusion
-[m-parent]: /content/schemas/message-examples#parentchild-linking
-[m-persist]: /content/schemas/message-examples#persisted-objects
-[m-position]: /content/schemas/message-examples#move
-[m-program]: /content/schemas/definitions#program-message
-[m-rotation]: /content/schemas/message-examples#rotate
-[m-scale]: /content/schemas/message-examples#images
-[m-scene]: /content/schemas/definitions#scene-options-message
-[m-sound]: /content/schemas/message-examples#sound
-[m-spe-particles]: /content/schemas/message-examples#particles
-[m-static-body]: /content/schemas/message-examples#physics
-[m-stats]: /content/schemas/message-examples#scene-settings
-[m-text]: /content/schemas/message-examples#text
-[m-thickline]: /content/schemas/message-examples#thicklines
-[m-torusKnot]: /content/schemas/message-examples#other-primitives-torusknot
-[m-transparency]: /content/schemas/message-examples#transparency
-[m-ttl]: /content/schemas/message-examples#temporary-objects-ttl
-[m-user]: /content/schemas/message-examples#move-camera
-[m-videosphere]: /content/schemas/message-examples#360-video
-
 <!-- python links-->
 
 [p-animation-mix]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/animation_mixer.py
@@ -581,11 +554,10 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [p-circle]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/circle.py
 [p-clickable]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/click_listener.py
 [p-collision]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/collision.py
-[p-color]: https://github.com/arenaxr/arena-py/blob/master/examples/basic/color.py
+[p-color]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/color.py
 [p-cone]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/cone.py
 [p-cylinder]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/cylinder.py
 [p-dodecahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/dodecahedron.py
-[p-dynamic-body]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/dynamic_body.py
 [p-entity]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/entity.py
 [p-event]: /content/python/events#generating-events-with-arena-py-scenes
 [p-gltf-lod]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/gltf_model_lod.py
@@ -596,7 +568,6 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [p-hands]: https://github.com/arenaxr/arena-py/blob/master/examples/simple/hands.py
 [p-icosahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/icosahedron.py
 [p-image]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/image.py
-[p-impulse]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/impulse.py
 [p-jitsi-video]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/jitsi_video.py
 [p-landmark]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/landmark.py
 [p-light]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/light.py
@@ -605,13 +576,16 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [p-material-ext]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/material_extras.py
 [p-material]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/material.py
 [p-modelUpdate]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/model_update.py
+[p-model-container]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/model_container.py
 [p-multisrc]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/multisrc.py
 [p-null]: /content/python/objects#removing-object-attributes
 [p-obj]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/obj_model.py
 [p-ocean]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ocean.py
 [p-octahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/octahedron.py
-[p-parent]: https://github.com/arenaxr/arena-py/blob/master/examples/basic/parent.py
+[p-parent]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/parent.py
 [p-pcd]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/pcd_model.py
+[p-physx-grabbable]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physx_grabbable.py
+[p-physx-force-pushable]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physx_force_push.py
 [p-plane]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/plane.py
 [p-position]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/position.py
 [p-ring]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ring.py
@@ -624,7 +598,6 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [p-spe-particles]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/spe_particles.py
 [p-sphere]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/sphere.py
 [p-splat]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/gaussian_splatting.py
-[p-static-body]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/static_body.py
 [p-tetrahedron]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/tetrahedron.py
 [p-text]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/text.py
 [p-textinput]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/textinput.py
