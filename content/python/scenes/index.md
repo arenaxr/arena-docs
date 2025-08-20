@@ -40,7 +40,7 @@ See [Scene API Spec](/content/python-api/scene).
 
 ### Scene Object Callbacks
 
-See [Scene Callbacks](callbacks/).
+See [Scene Callbacks](/content/python/callbacks/).
 
 - `on_msg_callback`: See [Message Callbacks](/content/python/callbacks/msg_callbacks)
 - `new_obj_callback`: See [Object Callbacks](/content/python/callbacks/object_callbacks)
