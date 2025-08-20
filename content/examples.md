@@ -106,7 +106,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Persist                    |                                                           | The scene graph directive to store the entity in the persistence database.               | [Graph:][grph] [Tutorial][t-persist]                                                               |
 | Physics (Body)             |             [![][i-physx-body]][i-physx-body]             | Turns an entity into a PhysX rigid body (deprecates: `dynamic-body`, `static-body`).     | [Attribute:][obja] [Schema][s-physx-body] [Python][p-physx-force-pushable]                         |
 | Physics (Force Pushable)   |   [![][i-physx-force-pushable]][i-physx-force-pushable]   | Makes a physx-body object pushable by the user (deprecates: `impulse`).                  | [Attribute:][obja] [Schema][s-physx-force-pushable] [Python][p-physx-force-pushable]               |
-| Physics (Grabbable)        |        [![][i-physx-grabbable]][i-physx-grabbable]        | Physics type attached to the object (`physx-grabbable`).                                 | [Attribute:][obja] [Schema][s-physx-grabbable] [Python][p-physx-grabbable]                         |
+| Physics (Grabbable)        |        [![][i-physx-grabbable]][i-physx-grabbable]        | Allows user hands to grab/pickup physx-body objects.                                     | [Attribute:][obja] [Schema][s-physx-grabbable] [Python][p-physx-grabbable]                         |
 | Physics (Joint Constraint) | [![][i-physx-joint-constraint]][i-physx-joint-constraint] | Adds a constraint to a physx-joint.                                                      | [Attribute:][obja] [Schema][s-physx-joint-constraint]                                              |
 | Physics (Joint Driver)     |     [![][i-physx-joint-driver]][i-physx-joint-driver]     | Creates a driver which exerts force to return the joint to the initial position.         | [Attribute:][obja] [Schema][s-physx-joint-driver]                                                  |
 | Physics (Joint)            |            [![][i-physx-joint]][i-physx-joint]            | Creates a PhysX joint between an ancestor rigid body and a target rigid body.            | [Attribute:][obja] [Schema][s-physx-joint]                                                         |
@@ -199,7 +199,6 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 <!-- Temporarily,  use "/" for links without images,  if we want a tag,  and not have the unlinked code tag rendered. -->
 
 [i-box]: /assets/img/examples/objects/box.png
-
 {:width="100px"}
 [i-camera]: /assets/img/overview/userguide/a6.png
 {:width="100px"}
@@ -435,6 +434,8 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 {:width="100px"}
 [i-physx-joint]: /
 {:width="100px"}
+[i-physx-joint-constraint]: /
+{:width="100px"}
 [i-physx-joint-driver]: /
 {:width="100px"}
 [i-physx-material]: /
@@ -490,10 +491,11 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-pcd]: /content/schemas/message/pcd-model
 [s-physx-body]: /content/schemas/message/physx-body
 [s-physx-joint]: /content/schemas/message/physx-joint
+[s-physx-joint-constraint]: /content/schemas/message/physx-joint-constraint
 [s-physx-joint-driver]: /content/schemas/message/physx-joint-driver
 [s-physx-material]: /content/schemas/message/physx-material
-[s-physx-grabbable]: /content/schemas/message/physx-grabbable
-[s-physx-force-pushable]: /content/schemas/message/physx-force-push
+[s-physx-grabbable]: /content/schemas/message/entity#entity-generic-object-data-attributes
+[s-physx-force-pushable]: /content/schemas/message/physx-force-pushable
 [s-plane]: /content/schemas/message/plane
 [s-position]: /content/schemas/message/position
 [s-remote-render]: /content/schemas/message/remote-render
@@ -585,7 +587,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [p-parent]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/parent.py
 [p-pcd]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/pcd_model.py
 [p-physx-grabbable]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physx_grabbable.py
-[p-physx-force-pushable]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physx_force_push.py
+[p-physx-force-pushable]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physx_force_pushable.py
 [p-plane]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/plane.py
 [p-position]: https://github.com/arenaxr/arena-py/blob/master/examples/attributes/position.py
 [p-ring]: https://github.com/arenaxr/arena-py/blob/master/examples/objects/ring.py
