@@ -6,7 +6,7 @@ grand_parent: Python API
 
 <!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
 
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.4.0/arena">v1.4.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -67,6 +67,35 @@ Usage: <code>color=Color(red,green,blue)</code> or <code>color=(red,green,blue)<
             </div>
                                 </dl>
                             </div>
+                </section>
+                <section id="COLOR_NAMES">
+                    <div class="attr variable">
+            <span class="name">COLOR_NAMES</span>        =
+<input id="COLOR_NAMES-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="COLOR_NAMES-view-value"></label><span class="default_value">{&#39;aliceblue&#39;: (240, 248, 255), &#39;antiquewhite&#39;: (250, 235, 215), &#39;aqua&#39;: (0, 255, 255), &#39;aquamarine&#39;: (127, 255, 212), &#39;azure&#39;: (240, 255, 255), &#39;beige&#39;: (245, 245, 220), &#39;bisque&#39;: (255, 228, 196), &#39;black&#39;: (0, 0, 0), &#39;blanchedalmond&#39;: (255, 235, 205), &#39;blue&#39;: (0, 0, 255), &#39;blueviolet&#39;: (138, 43, 226), &#39;brown&#39;: (165, 42, 42), &#39;burlywood&#39;: (222, 184, 135), &#39;cadetblue&#39;: (95, 158, 160), &#39;chartreuse&#39;: (127, 255, 0), &#39;chocolate&#39;: (210, 105, 30), &#39;coral&#39;: (255, 127, 80), &#39;cornflowerblue&#39;: (100, 149, 237), &#39;cornsilk&#39;: (255, 248, 220), &#39;crimson&#39;: (220, 20, 60), &#39;cyan&#39;: (0, 255, 255), &#39;darkblue&#39;: (0, 0, 139), &#39;darkcyan&#39;: (0, 139, 139), &#39;darkgoldenrod&#39;: (184, 134, 11), &#39;darkgray&#39;: (169, 169, 169), &#39;darkgreen&#39;: (0, 100, 0), &#39;darkkhaki&#39;: (189, 183, 107), &#39;darkmagenta&#39;: (139, 0, 139), &#39;darkolivegreen&#39;: (85, 107, 47), &#39;darkorange&#39;: (255, 140, 0), &#39;darkorchid&#39;: (153, 50, 204), &#39;darkred&#39;: (139, 0, 0), &#39;darksalmon&#39;: (233, 150, 122), &#39;darkseagreen&#39;: (143, 188, 143), &#39;darkslateblue&#39;: (72, 61, 139), &#39;darkslategray&#39;: (47, 79, 79), &#39;darkturquoise&#39;: (0, 206, 209), &#39;darkviolet&#39;: (148, 0, 211), &#39;deeppink&#39;: (255, 20, 147), &#39;deepskyblue&#39;: (0, 191, 255), &#39;dimgray&#39;: (105, 105, 105), &#39;dodgerblue&#39;: (30, 144, 255), &#39;firebrick&#39;: (178, 34, 34), &#39;floralwhite&#39;: (255, 250, 240), &#39;forestgreen&#39;: (34, 139, 34), &#39;fuchsia&#39;: (255, 0, 255), &#39;gainsboro&#39;: (220, 220, 220), &#39;ghostwhite&#39;: (248, 248, 255), &#39;gold&#39;: (255, 215, 0), &#39;goldenrod&#39;: (218, 165, 32), &#39;gray&#39;: (128, 128, 128), &#39;green&#39;: (0, 128, 0), &#39;greenyellow&#39;: (173, 255, 47), &#39;honeydew&#39;: (240, 255, 240), &#39;hotpink&#39;: (255, 105, 180), &#39;indianred&#39;: (205, 92, 92), &#39;indigo&#39;: (75, 0, 130), &#39;ivory&#39;: (255, 255, 240), &#39;khaki&#39;: (240, 230, 140), &#39;lavender&#39;: (230, 230, 250), &#39;lavenderblush&#39;: (255, 240, 245), &#39;lawngreen&#39;: (124, 252, 0), &#39;lemonchiffon&#39;: (255, 250, 205), &#39;lightblue&#39;: (173, 216, 230), &#39;lightcoral&#39;: (240, 128, 128), &#39;lightcyan&#39;: (224, 255, 255), &#39;lightgoldenrodyellow&#39;: (250, 250, 210), &#39;lightgray&#39;: (211, 211, 211), &#39;lightgreen&#39;: (144, 238, 144), &#39;lightpink&#39;: (255, 182, 193), &#39;lightsalmon&#39;: (255, 160, 122), &#39;lightseagreen&#39;: (32, 178, 170), &#39;lightskyblue&#39;: (135, 206, 250), &#39;lightslategray&#39;: (119, 136, 153), &#39;lightsteelblue&#39;: (176, 196, 222), &#39;lightyellow&#39;: (255, 255, 224), &#39;lime&#39;: (0, 255, 0), &#39;limegreen&#39;: (50, 205, 50), &#39;linen&#39;: (250, 240, 230), &#39;magenta&#39;: (255, 0, 255), &#39;maroon&#39;: (128, 0, 0), &#39;mediumaquamarine&#39;: (102, 205, 170), &#39;mediumblue&#39;: (0, 0, 205), &#39;mediumorchid&#39;: (186, 85, 211), &#39;mediumpurple&#39;: (147, 112, 219), &#39;mediumseagreen&#39;: (60, 179, 113), &#39;mediumslateblue&#39;: (123, 104, 238), &#39;mediumspringgreen&#39;: (0, 250, 154), &#39;mediumturquoise&#39;: (72, 209, 204), &#39;mediumvioletred&#39;: (199, 21, 133), &#39;midnightblue&#39;: (25, 25, 112), &#39;mintcream&#39;: (245, 255, 250), &#39;mistyrose&#39;: (255, 228, 225), &#39;moccasin&#39;: (255, 228, 181), &#39;navajowhite&#39;: (255, 222, 173), &#39;navy&#39;: (0, 0, 128), &#39;oldlace&#39;: (253, 245, 230), &#39;olive&#39;: (128, 128, 0), &#39;olivedrab&#39;: (107, 142, 35), &#39;orange&#39;: (255, 165, 0), &#39;orangered&#39;: (255, 69, 0), &#39;orchid&#39;: (218, 112, 214), &#39;palegoldenrod&#39;: (238, 232, 170), &#39;palegreen&#39;: (152, 251, 152), &#39;paleturquoise&#39;: (175, 238, 238), &#39;palevioletred&#39;: (219, 112, 147), &#39;papayawhip&#39;: (255, 239, 213), &#39;peachpuff&#39;: (255, 218, 185), &#39;peru&#39;: (205, 133, 63), &#39;pink&#39;: (255, 192, 203), &#39;plum&#39;: (221, 160, 221), &#39;powderblue&#39;: (176, 224, 230), &#39;purple&#39;: (128, 0, 128), &#39;red&#39;: (255, 0, 0), &#39;rosybrown&#39;: (188, 143, 143), &#39;royalblue&#39;: (65, 105, 225), &#39;saddlebrown&#39;: (139, 69, 19), &#39;salmon&#39;: (250, 128, 114), &#39;sandybrown&#39;: (244, 164, 96), &#39;seagreen&#39;: (46, 139, 87), &#39;seashell&#39;: (255, 245, 238), &#39;sienna&#39;: (160, 82, 45), &#39;silver&#39;: (192, 192, 192), &#39;skyblue&#39;: (135, 206, 235), &#39;slateblue&#39;: (106, 90, 205), &#39;slategray&#39;: (112, 128, 144), &#39;snow&#39;: (255, 250, 250), &#39;springgreen&#39;: (0, 255, 127), &#39;steelblue&#39;: (70, 130, 180), &#39;tan&#39;: (210, 180, 140), &#39;teal&#39;: (0, 128, 128), &#39;thistle&#39;: (216, 191, 216), &#39;tomato&#39;: (255, 99, 71), &#39;turquoise&#39;: (64, 224, 208), &#39;violet&#39;: (238, 130, 238), &#39;wheat&#39;: (245, 222, 179), &#39;white&#39;: (255, 255, 255), &#39;whitesmoke&#39;: (245, 245, 245), &#39;yellow&#39;: (255, 255, 0), &#39;yellowgreen&#39;: (154, 205, 50)}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#COLOR_NAMES"></a>
+    
+    
+
+                </section>
+                <section id="name_to_rgb">
+                    <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">name_to_rgb</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">color_name</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#name_to_rgb"></a>
+    
+            <div class="docstring"><p>Convert color name to RGB tuple.
+Returns RGB tuple or None if color not found.</p>
+</div>
+
+
                 </section>
     </main>
 

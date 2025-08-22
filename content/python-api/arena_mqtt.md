@@ -6,7 +6,7 @@ has_children: true
 
 <!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
 
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.4.0/arena">v1.4.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -417,7 +417,7 @@ has_children: true
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">on_connect</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">flags</span>, </span><span class="param"><span class="n">rc</span></span><span class="return-annotation">):</span></span>
+        <span class="name">on_connect</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">flags</span>, </span><span class="param"><span class="n">rc</span>, </span><span class="param"><span class="n">properties</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
@@ -484,7 +484,7 @@ has_children: true
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">on_subscribe</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">mid</span>, </span><span class="param"><span class="n">granted_qos</span>, </span><span class="param"><span class="n">properties</span><span class="o">=</span><span class="kc">None</span></span><span class="return-annotation">):</span></span>
+        <span class="name">on_subscribe</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">mid</span>, </span><span class="param"><span class="n">rc_list</span>, </span><span class="param"><span class="n">properties</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
@@ -497,7 +497,7 @@ has_children: true
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">on_disconnect</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">rc</span></span><span class="return-annotation">):</span></span>
+        <span class="name">on_disconnect</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">client</span>, </span><span class="param"><span class="n">userdata</span>, </span><span class="param"><span class="n">rc</span>, </span><span class="param"><span class="n">properties</span></span><span class="return-annotation">):</span></span>
 
         
     </div>

@@ -6,7 +6,7 @@ has_children: true
 
 <!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
 
-<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.3.0/arena">v1.3.0</a></small>
+<small>arena-py API <a href="https://github.com/arenaxr/arena-py/blob/v1.4.0/arena">v1.4.0</a></small>
 <div>
     <main class="pdoc">
             <section class="module-info">
@@ -294,6 +294,211 @@ or admin, for now, get a fresh mqtt_token each time.</p>
     
     
 
+                </section>
+                <section id="OAuthCallbackHandler">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">OAuthCallbackHandler</span><wbr>(<span class="base">http.server.BaseHTTPRequestHandler</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#OAuthCallbackHandler"></a>
+    
+            <div class="docstring"><p>HTTP request handler base class.</p>
+
+<p>The following explanation of HTTP serves to guide you through the
+code as well as to expose any misunderstandings I may have about
+HTTP (so you don't need to read the code to figure out I'm wrong
+:-).</p>
+
+<p>HTTP (HyperText Transfer Protocol) is an extensible protocol on
+top of a reliable stream transport (e.g. TCP/IP).  The protocol
+recognizes three parts to a request:</p>
+
+<ol>
+<li>One line identifying the request type and path</li>
+<li>An optional set of RFC-822-style headers</li>
+<li>An optional data part</li>
+</ol>
+
+<p>The headers and data are separated by a blank line.</p>
+
+<p>The first line of the request has the form</p>
+
+<p><command> <path> <version></p>
+
+<p>where <command> is a (case-sensitive) keyword such as GET or POST,
+<path> is a string containing path information for the request,
+and <version> should be the string "HTTP/1.0" or "HTTP/1.1".
+<path> is encoded using the URL encoding scheme (using %xx to signify
+the ASCII character with hex code xx).</p>
+
+<p>The specification specifies that lines are separated by CRLF but
+for compatibility with the widest range of clients recommends
+servers also handle LF.  Similarly, whitespace in the request line
+is treated sensibly (allowing multiple spaces between components
+and allowing trailing whitespace).</p>
+
+<p>Similarly, for output, lines ought to be separated by CRLF pairs
+but most clients grok LF characters just fine.</p>
+
+<p>If the first line of the request has the form</p>
+
+<p><command> <path></p>
+
+<p>(i.e. <version> is left out) then this is assumed to be an HTTP
+0.9 request; this form has no optional headers and data part and
+the reply consists of just the data.</p>
+
+<p>The reply form of the HTTP 1.x protocol again has three parts:</p>
+
+<ol>
+<li>One line giving the response code</li>
+<li>An optional set of RFC-822-style headers</li>
+<li>The data</li>
+</ol>
+
+<p>Again, the headers and data are separated by a blank line.</p>
+
+<p>The response code line has the form</p>
+
+<p><version> <responsecode> <responsestring></p>
+
+<p>where <version> is the protocol version ("HTTP/1.0" or "HTTP/1.1"),
+<responsecode> is a 3-digit response code indicating success or
+failure of the request, and <responsestring> is an optional
+human-readable string explaining what the response code means.</p>
+
+<p>This server parses the request and the headers, and then calls a
+function specific to the request type (<command>).  Specifically,
+a request SPAM will be handled by a method do_SPAM().  If no
+such method exists the server sends an error response to the
+client.  If it exists, it is called with no arguments:</p>
+
+<p>do_SPAM()</p>
+
+<p>Note that the request name is case sensitive (i.e. SPAM and spam
+are different requests).</p>
+
+<p>The various request details are stored in instance variables:</p>
+
+<ul>
+<li><p>client_address is the client IP address in the form (host,
+port);</p></li>
+<li><p>command, path and version are the broken-down request line;</p></li>
+<li><p>headers is an instance of email.message.Message (or a derived
+class) containing the header information;</p></li>
+<li><p>rfile is a file object open for reading positioned at the
+start of the optional input data part;</p></li>
+<li><p>wfile is a file object open for writing.</p></li>
+</ul>
+
+<p>IT IS IMPORTANT TO ADHERE TO THE PROTOCOL FOR WRITING!</p>
+
+<p>The first thing to be written must be the response line.  Then
+follow 0 or more header lines, then a blank line, and then the
+actual data (if any).  The meaning of the header lines depends on
+the command executed by the server; in most cases, when data is
+returned, there should be at least one header line of the form</p>
+
+<p>Content-type: <type>/<subtype></p>
+
+<p>where <type> and <subtype> should be registered MIME types,
+e.g. "text/html" or "text/plain".</p>
+</div>
+
+
+                            <div id="OAuthCallbackHandler.log_message" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">log_message</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="nb">format</span>, </span><span class="param"><span class="o">*</span><span class="n">args</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#OAuthCallbackHandler.log_message"></a>
+    
+            <div class="docstring"><p>Log an arbitrary message.</p>
+
+<p>This is used by all other logging functions.  Override
+it if you have specific logging wishes.</p>
+
+<p>The first argument, FORMAT, is a format string for the
+message to be logged.  If the format string contains
+any % escapes requiring parameters, they should be
+specified as subsequent arguments (it's just like
+printf!).</p>
+
+<p>The client ip and current date/time are prefixed to
+every message.</p>
+</div>
+
+
+                            </div>
+                            <div id="OAuthCallbackHandler.do_GET" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">do_GET</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#OAuthCallbackHandler.do_GET"></a>
+    
+    
+
+                            </div>
+                            <div class="inherited">
+                                <h5>Inherited Members</h5>
+                                <dl>
+                                    <div><dt>socketserver.BaseRequestHandler</dt>
+                                <dd id="OAuthCallbackHandler.__init__" class="function">BaseRequestHandler</dd>
+                <dd id="OAuthCallbackHandler.request" class="variable">request</dd>
+                <dd id="OAuthCallbackHandler.client_address" class="variable">client_address</dd>
+                <dd id="OAuthCallbackHandler.server" class="variable">server</dd>
+
+            </div>
+            <div><dt>http.server.BaseHTTPRequestHandler</dt>
+                                <dd id="OAuthCallbackHandler.sys_version" class="variable">sys_version</dd>
+                <dd id="OAuthCallbackHandler.server_version" class="variable">server_version</dd>
+                <dd id="OAuthCallbackHandler.error_message_format" class="variable">error_message_format</dd>
+                <dd id="OAuthCallbackHandler.error_content_type" class="variable">error_content_type</dd>
+                <dd id="OAuthCallbackHandler.default_request_version" class="variable">default_request_version</dd>
+                <dd id="OAuthCallbackHandler.parse_request" class="function">parse_request</dd>
+                <dd id="OAuthCallbackHandler.handle_expect_100" class="function">handle_expect_100</dd>
+                <dd id="OAuthCallbackHandler.handle_one_request" class="function">handle_one_request</dd>
+                <dd id="OAuthCallbackHandler.handle" class="function">handle</dd>
+                <dd id="OAuthCallbackHandler.send_error" class="function">send_error</dd>
+                <dd id="OAuthCallbackHandler.send_response" class="function">send_response</dd>
+                <dd id="OAuthCallbackHandler.send_response_only" class="function">send_response_only</dd>
+                <dd id="OAuthCallbackHandler.send_header" class="function">send_header</dd>
+                <dd id="OAuthCallbackHandler.end_headers" class="function">end_headers</dd>
+                <dd id="OAuthCallbackHandler.flush_headers" class="function">flush_headers</dd>
+                <dd id="OAuthCallbackHandler.log_request" class="function">log_request</dd>
+                <dd id="OAuthCallbackHandler.log_error" class="function">log_error</dd>
+                <dd id="OAuthCallbackHandler.version_string" class="function">version_string</dd>
+                <dd id="OAuthCallbackHandler.date_time_string" class="function">date_time_string</dd>
+                <dd id="OAuthCallbackHandler.log_date_time_string" class="function">log_date_time_string</dd>
+                <dd id="OAuthCallbackHandler.weekdayname" class="variable">weekdayname</dd>
+                <dd id="OAuthCallbackHandler.monthname" class="variable">monthname</dd>
+                <dd id="OAuthCallbackHandler.address_string" class="function">address_string</dd>
+                <dd id="OAuthCallbackHandler.protocol_version" class="variable">protocol_version</dd>
+                <dd id="OAuthCallbackHandler.MessageClass" class="variable">MessageClass</dd>
+                <dd id="OAuthCallbackHandler.responses" class="variable">responses</dd>
+
+            </div>
+            <div><dt>socketserver.StreamRequestHandler</dt>
+                                <dd id="OAuthCallbackHandler.rbufsize" class="variable">rbufsize</dd>
+                <dd id="OAuthCallbackHandler.wbufsize" class="variable">wbufsize</dd>
+                <dd id="OAuthCallbackHandler.timeout" class="variable">timeout</dd>
+                <dd id="OAuthCallbackHandler.disable_nagle_algorithm" class="variable">disable_nagle_algorithm</dd>
+                <dd id="OAuthCallbackHandler.setup" class="function">setup</dd>
+                <dd id="OAuthCallbackHandler.finish" class="function">finish</dd>
+
+            </div>
+                                </dl>
+                            </div>
                 </section>
     </main>
 
