@@ -1,5 +1,5 @@
 ---
-title: `physx-joint`
+title: physx-joint
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

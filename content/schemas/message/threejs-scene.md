@@ -1,5 +1,5 @@
 ---
-title: `threejs-scene`
+title: threejs-scene
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

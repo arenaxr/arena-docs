@@ -1,5 +1,5 @@
 ---
-title: `obj-model`
+title: obj-model
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

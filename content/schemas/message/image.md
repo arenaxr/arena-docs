@@ -1,5 +1,5 @@
 ---
-title: `image`
+title: image
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

@@ -1,5 +1,5 @@
 ---
-title: `camera-override`
+title: camera-override
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

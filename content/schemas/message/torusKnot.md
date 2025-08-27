@@ -1,5 +1,5 @@
 ---
-title: `torusKnot`
+title: torusKnot
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

@@ -1,5 +1,5 @@
 ---
-title: `cone`
+title: cone
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

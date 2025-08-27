@@ -1,5 +1,5 @@
 ---
-title: `program`
+title: program
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

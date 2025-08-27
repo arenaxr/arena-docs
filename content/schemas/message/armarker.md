@@ -1,5 +1,5 @@
 ---
-title: `armarker`
+title: armarker
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

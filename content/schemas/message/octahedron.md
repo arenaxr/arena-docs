@@ -1,5 +1,5 @@
 ---
-title: `octahedron`
+title: octahedron
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

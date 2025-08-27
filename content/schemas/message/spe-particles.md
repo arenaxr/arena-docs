@@ -1,5 +1,5 @@
 ---
-title: `spe-particles`
+title: spe-particles
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

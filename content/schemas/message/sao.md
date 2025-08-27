@@ -1,5 +1,5 @@
 ---
-title: `sao`
+title: sao
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

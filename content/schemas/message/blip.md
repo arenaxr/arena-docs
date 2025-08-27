@@ -1,5 +1,5 @@
 ---
-title: `blip`
+title: blip
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

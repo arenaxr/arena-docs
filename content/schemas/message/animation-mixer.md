@@ -1,5 +1,5 @@
 ---
-title: `animation-mixer`
+title: animation-mixer
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

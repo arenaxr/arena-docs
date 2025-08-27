@@ -1,5 +1,5 @@
 ---
-title: `gltf-morph`
+title: gltf-morph
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

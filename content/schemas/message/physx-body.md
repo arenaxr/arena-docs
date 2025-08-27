@@ -1,5 +1,5 @@
 ---
-title: `physx-body`
+title: physx-body
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

@@ -1,5 +1,5 @@
 ---
-title: `pixel`
+title: pixel
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

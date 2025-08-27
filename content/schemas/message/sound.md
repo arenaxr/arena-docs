@@ -1,5 +1,5 @@
 ---
-title: `sound`
+title: sound
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

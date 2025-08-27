@@ -1,5 +1,5 @@
 ---
-title: `arenaui-button-panel`
+title: arenaui-button-panel
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

@@ -1,5 +1,5 @@
 ---
-title: `arenaui-card`
+title: arenaui-card
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

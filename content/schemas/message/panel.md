@@ -1,5 +1,5 @@
 ---
-title: `panel`
+title: panel
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

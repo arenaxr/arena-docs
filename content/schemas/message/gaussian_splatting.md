@@ -1,5 +1,5 @@
 ---
-title: `gaussian_splatting`
+title: gaussian_splatting
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

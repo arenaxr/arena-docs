@@ -1,5 +1,5 @@
 ---
-title: `fxaa`
+title: fxaa
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

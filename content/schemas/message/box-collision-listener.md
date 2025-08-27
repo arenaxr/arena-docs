@@ -1,5 +1,5 @@
 ---
-title: `box-collision-listener`
+title: box-collision-listener
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

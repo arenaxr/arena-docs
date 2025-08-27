@@ -1,5 +1,5 @@
 ---
-title: `material`
+title: material
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

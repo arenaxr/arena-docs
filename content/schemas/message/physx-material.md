@@ -1,5 +1,5 @@
 ---
-title: `physx-material`
+title: physx-material
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

@@ -1,5 +1,5 @@
 ---
-title: `post-processing`
+title: post-processing
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

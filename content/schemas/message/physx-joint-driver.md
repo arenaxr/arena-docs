@@ -1,5 +1,5 @@
 ---
-title: `physx-joint-driver`
+title: physx-joint-driver
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

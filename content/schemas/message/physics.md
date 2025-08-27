@@ -1,5 +1,5 @@
 ---
-title: `physics`
+title: physics
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

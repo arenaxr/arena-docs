@@ -1,5 +1,5 @@
 ---
-title: `run_info`
+title: run_info
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

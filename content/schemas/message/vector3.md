@@ -1,5 +1,5 @@
 ---
-title: `vector3`
+title: vector3
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

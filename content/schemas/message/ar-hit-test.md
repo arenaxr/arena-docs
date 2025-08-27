@@ -1,5 +1,5 @@
 ---
-title: `ar-hit-test`
+title: ar-hit-test
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

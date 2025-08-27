@@ -1,5 +1,5 @@
 ---
-title: `plane`
+title: plane
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

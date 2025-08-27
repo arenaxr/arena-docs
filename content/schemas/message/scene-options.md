@@ -1,5 +1,5 @@
 ---
-title: `scene-options`
+title: scene-options
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

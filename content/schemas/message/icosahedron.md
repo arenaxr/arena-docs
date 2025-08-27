@@ -1,5 +1,5 @@
 ---
-title: `icosahedron`
+title: icosahedron
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

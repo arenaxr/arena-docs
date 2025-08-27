@@ -1,5 +1,5 @@
 ---
-title: `video-control`
+title: video-control
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

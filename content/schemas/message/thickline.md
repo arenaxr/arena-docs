@@ -1,5 +1,5 @@
 ---
-title: `thickline`
+title: thickline
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

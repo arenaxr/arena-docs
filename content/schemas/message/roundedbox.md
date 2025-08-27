@@ -1,5 +1,5 @@
 ---
-title: `roundedbox`
+title: roundedbox
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

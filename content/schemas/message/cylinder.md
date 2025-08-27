@@ -1,5 +1,5 @@
 ---
-title: `cylinder`
+title: cylinder
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

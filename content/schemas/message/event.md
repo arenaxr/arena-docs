@@ -1,5 +1,5 @@
 ---
-title: `event`
+title: event
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

@@ -1,5 +1,5 @@
 ---
-title: `material-extras`
+title: material-extras
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

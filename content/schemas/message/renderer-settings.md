@@ -1,5 +1,5 @@
 ---
-title: `renderer-settings`
+title: renderer-settings
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

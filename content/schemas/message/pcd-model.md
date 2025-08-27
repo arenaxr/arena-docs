@@ -1,5 +1,5 @@
 ---
-title: `pcd-model`
+title: pcd-model
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

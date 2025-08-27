@@ -1,5 +1,5 @@
 ---
-title: `urdf-model`
+title: urdf-model
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

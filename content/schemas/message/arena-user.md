@@ -1,5 +1,5 @@
 ---
-title: `arena-user`
+title: arena-user
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

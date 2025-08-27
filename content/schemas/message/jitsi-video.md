@@ -1,5 +1,5 @@
 ---
-title: `jitsi-video`
+title: jitsi-video
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

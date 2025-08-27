@@ -1,5 +1,5 @@
 ---
-title: `goto-landmark`
+title: goto-landmark
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

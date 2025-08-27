@@ -1,5 +1,5 @@
 ---
-title: `position`
+title: position
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

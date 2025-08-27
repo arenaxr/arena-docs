@@ -1,5 +1,5 @@
 ---
-title: `arenaui-prompt`
+title: arenaui-prompt
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects

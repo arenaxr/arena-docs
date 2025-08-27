@@ -1,5 +1,5 @@
 ---
-title: `gltf-model`
+title: gltf-model
 layout: default
 parent: Objects Schema
 grand_parent: ARENA Objects
