@@ -8,6 +8,11 @@ parent: 3D Content
 
 To add Mixamo animations to GLB models, you typically need to first convert the animations from FBX format to a compatible format, or use Blender to merge the animations with your GLB model. Ensure that both the model and animations share the same rigging structure for the best results.
 
+## Software Options
+
+- [Mixamo](https://www.mixamo.com)
+- [Mesh2Motion](https://app.mesh2motion.org)
+
 ## Adding Mixamo Animations to GLB Models
 
 ### Overview of the Process
@@ -16,11 +21,13 @@ To add Mixamo animations to GLB models, you typically need to follow these steps
 
 1.  **Download the GLB Model**: Ensure your model is in GLB format and properly rigged.
 
-2.  **Obtain Mixamo Animations**: Download the desired animations from [Mixamo](https://www.mixamo.com) in FBX format.
+2.  **Obtain Mixamo Animations**: Download the desired animations from [Mixamo](https://www.mixamo.com) in FBX format. Export animations from Mixamo in FBX format, without skins.
 
 3.  **Use Blender for Integration**: Import both the GLB model and FBX animations into [Blender](https://www.blender.org).
 
 ### Step-by-Step Instructions
+
+Read in detail [Creating Animated GLTF Characters](https://www.donmccurdy.com/2017/11/06/creating-animated-gltf-characters-with-mixamo-and-blender/) by Don McCurdy.
 
 #### Importing Models and Animations
 
