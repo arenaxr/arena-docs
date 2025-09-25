@@ -94,36 +94,36 @@ This use case works best for a space where 1+ remote participants or observers n
 
 #### ARENA Scene
 
-- GLTF/Splat Model: Scanned space model matching Student Room (`hide-in-ar=true`)
-- Entity: Landmark for syncing Student Fixed View (`landmark`)
-- Plane: Screenshare view within Student Fixed View (`screenshareable=true, click-listener`)
-- Box: Invisible orbit box (optional) (`visible=false`)
-- Program: [laser-pointer.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/laser-pointer.py)
-- Others: Clickable models that are pertinent (`click-listener`)
+- *GLTF/Splat Model*: Scanned space model matching Student Room (`hide-in-ar=true`)
+- *Entity*: Landmark for syncing Student Fixed View (`landmark`)
+- *Plane*: Screenshare view within Student Fixed View (`screenshareable=true, click-listener`)
+- *Box*: Invisible orbit box (optional) (`visible=false`)
+- *Program*: [laser-pointer.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/laser-pointer.py)
+- *Others*: Clickable models that are pertinent (`click-listener`)
 
 #### Student Room
 
 - 4 calibrated cameras, PC running Reality Capture
 - Flat screen monitor, mounted webcam (landscape), laptop or Mac Mini acting as a Portal
-- **Student Screen Left Side:**
-  - Chrome: `https://arenaxr.org/[scene]?disableRenderFusion=1`
-  - Presence: Portal
-  - Mirrored 3D Scene: checked
-  - Display Name: Student Fixed View
-  - Camera: on
-  - Microphone: on
-- **Student Screen Right Side**:
-  - Chrome Incognito: `https://arenaxr.org/[scene]?reprojectMovement=1`
-  - Chrome Incognito (orbit option): `https://arenaxr.org/[scene]?reprojectMovement=1&orbit=orbit`
-  - Presence: Standard
-  - Display Name: Student Moving View
+- **Student Screen Left:**
+  - **Chrome**: `https://arenaxr.org/[scene]?disableRenderFusion=1`
+  - **Presence**: Portal
+  - **Mirrored 3D Scene**: checked
+  - **Display Name**: Student Fixed View
+  - *Camera*: on
+  - *Microphone*: on
+- **Student Screen Right**:
+  - **Chrome Incognito**: `https://arenaxr.org/[scene]?reprojectMovement=1`
+  - *Chrome Incognito (orbit option)*: `https://arenaxr.org/[scene]?reprojectMovement=1&orbit=orbit`
+  - **Presence**: Standard
+  - **Display Name**: Student Moving View
 
 #### Teacher Room
 
 - Flat screen monitor, laptop
 - **Teacher Screen** (mirror laptop view)
-  - Chrome: `https://arenaxr.org/[scene]?reprojectMovement=1`
-  - Presence: Standard
-  - Display Name: Teacher Moving View
-  - Camera: on
-  - Microphone: on
+  - **Chrome**: `https://arenaxr.org/[scene]?reprojectMovement=1`
+  - **Presence**: Standard
+  - **Display Name**: Teacher Moving View
+  - *Camera*: on
+  - *Microphone*: on
