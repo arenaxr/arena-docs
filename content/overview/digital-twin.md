@@ -113,7 +113,8 @@ This use case works best for a space where 1+ remote participants or observers n
   - Camera: on
   - Microphone: on
 - **Student Screen Right Side**:
-  - Chrome (Incognito): `https://arenaxr.org/[scene]?reprojectMovement=1`
+  - Chrome Incognito: `https://arenaxr.org/[scene]?reprojectMovement=1`
+  - Chrome Incognito (orbit option): `https://arenaxr.org/[scene]?reprojectMovement=1&orbit=orbit`
   - Presence: Standard
   - Display Name: Student Moving View
 
@@ -122,7 +123,6 @@ This use case works best for a space where 1+ remote participants or observers n
 - Flat screen monitor, laptop
 - **Teacher Screen** (mirror laptop view)
   - Chrome: `https://arenaxr.org/[scene]?reprojectMovement=1`
-  - Chrome (orbit option): `https://arenaxr.org/[scene]?reprojectMovement=1&orbit=orbit`
   - Presence: Standard
   - Display Name: Teacher Moving View
   - Camera: on
