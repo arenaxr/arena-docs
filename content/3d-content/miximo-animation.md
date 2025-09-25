@@ -57,6 +57,8 @@ Read in detail [Creating Animated GLTF Characters](https://www.donmccurdy.com/20
 
     - Copy the animation data to the GLB model's armature.
 
+    - https://docs.blender.org/manual/en/4.2/addons/import_export/scene_gltf2.html#animations
+
 3.  **Export as GLB**:
 
     - Once the animations are applied, go to `File > Export > glTF 2.0 (.glb/.gltf)`.
