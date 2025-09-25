@@ -90,15 +90,16 @@ but useful to show/hide/control in XR in proximity to the physical world.
 
 ### Remote Teacher and Physical Student Reality Capture
 
-This use case works best for a space where one or more remote participants or observers need to observe the physical space or ac tions of 1-2 people in a physical space from multiple angles. Some scenarios are Teacher/Student, Coach/Athlete.
+This use case works best for a space where 1+ remote participants or observers need to observe the physical space or actions of 1-2 people in a physical space from multiple angles. Some scenarios are: Teacher/Student, Coach/Athlete, Consultant/Mechanic, Expert/Operator.
 
 #### ARENA Scene
 
-- GLTF/Splat Model: Scanned space model matching Student Room (`hide-in-ar`)
-- Entity: Landmark for Student Fixed View
-- Box: Invisible orbit box (optional)
-- Program: Laser-pointer
-- Others: Clickable models that are pertinent
+- GLTF/Splat Model: Scanned space model matching Student Room (`hide-in-ar=true`)
+- Entity: Landmark for syncing Student Fixed View (`landmark`)
+- Plane: Screenshare view within Student Fixed View (`screenshareable=true, click-listener`)
+- Box: Invisible orbit box (optional) (`visible=false`)
+- Program: [laser-pointer.py](https://github.com/arenaxr/arena-py/blob/master/examples/simple/laser-pointer.py)
+- Others: Clickable models that are pertinent (`click-listener`)
 
 #### Student Room
 
@@ -106,15 +107,15 @@ This use case works best for a space where one or more remote participants or ob
 - Flat screen monitor, mounted webcam (landscape), laptop or Mac Mini acting as a Portal
 - **Student Screen Left Side:**
   - Chrome: `https://arenaxr.org/[scene]?disableRenderFusion=1`
-  - Display Name: Student Fixed View
   - Presence: Portal
   - Mirrored 3D Scene: checked
+  - Display Name: Student Fixed View
   - Camera: on
   - Microphone: on
 - **Student Screen Right Side**:
   - Chrome (Incognito): `https://arenaxr.org/[scene]?reprojectMovement=1`
-  - Display Name: Student Moving View
   - Presence: Standard
+  - Display Name: Student Moving View
 
 #### Teacher Room
 
@@ -123,7 +124,7 @@ This use case works best for a space where one or more remote participants or ob
 - **Teacher Screen** (mirror laptop view)
   - Chrome: `https://arenaxr.org/[scene]?reprojectMovement=1`
   - Chrome (orbit option): `https://arenaxr.org/[scene]?reprojectMovement=1&orbit=orbit`
-  - Display Name: Teacher Moving View
   - Presence: Standard
+  - Display Name: Teacher Moving View
   - Camera: on
   - Microphone: on
