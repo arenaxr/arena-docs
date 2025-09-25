@@ -37,6 +37,8 @@ The following URL parameters are accepted, beginner or **advanced**. The **advan
 | confstats | bool | **advanced** | Enable logging to MQTT of conference quality stats. |
 | debug | bool | **advanced** | Replace console log with our MQTT logging, same as `devInstance`. |
 | debugUI | bool | **advanced** | Creates an `arenaui-card` object for debugging. |
+| disableRenderFusion | bool | **advanced** | Explicitly disable RenderFusion. |
+| disableRenderFusionVR | bool | **advanced** | Auto-enter immersive, disable RenderFusion. |
 | demoMode | bool | beginner | Removal of screen settings and chat buttons overlay from scene. |
 | fixedCamera | string | **advanced** | Sets the camera name to the given value **and** enables VIO output to `realm/vio/scene-name/camera-name` ; `fixedCamera=iPhone` will set the camera name **exactly** to the given value (not add any prefix/suffix) |
 | hudstats | bool | **advanced** | Render a HUD of performance/memory stats. |
