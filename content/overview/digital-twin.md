@@ -119,7 +119,6 @@ This use case works best for a space where 1+ remote participants or observers n
 
 #### Teacher Room
 
-- 360 camera mounted on table/desk
 - Flat screen monitor, laptop
 - **Teacher Screen** (mirror laptop view)
   - Chrome: `https://arenaxr.org/[scene]?reprojectMovement=1`
