@@ -106,17 +106,20 @@ This use case works best for a space where 1+ remote participants or observers n
 - 4 calibrated cameras, PC running Reality Capture
 - Flat screen monitor, mounted webcam (landscape), laptop or Mac Mini acting as a Portal
 - **Student Screen Left:**
-  - **Chrome**: `https://arenaxr.org/[scene]?disableRenderFusion=1`
+  - **Chrome**: `https://arenaxr.org/[scene]?disableRenderFusion=1&demoMode=1&name=Student`
   - **Presence**: Portal
   - **Mirrored 3D Scene**: checked
   - **Display Name**: Student Fixed View
   - *Camera*: on
   - *Microphone*: on
 - **Student Screen Right**:
-  - **Chrome Incognito**: `https://arenaxr.org/[scene]?reprojectMovement=1`
-  - *Chrome Incognito (orbit option)*: `https://arenaxr.org/[scene]?reprojectMovement=1&orbit=orbit`
+  - **Chrome Incognito**: `https://arenaxr.org/[scene]?demoMode=1&name=Viewer`
+  - *Chrome Incognito (orbit option)*: `https://arenaxr.org/[scene]?demoMode=1&name=Viewer&orbit=orbit`
   - **Presence**: Standard
   - **Display Name**: Student Moving View
+  - **Chrome Tab**: Audio Muted
+- **Student Tablet**:
+  - **XRBrowser**: `https://arenaxr.org/[scene]?disableRenderFusion=1&armode=1&noav=1&auth=anonymous&name=Tablet`
 
 #### Teacher Room
 
