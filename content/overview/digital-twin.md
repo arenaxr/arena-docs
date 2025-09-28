@@ -105,6 +105,11 @@ This use case works best for a space where 1+ remote participants or observers n
 
 - 4 calibrated cameras, PC running Reality Capture
 - Flat screen monitor, mounted webcam (landscape), laptop or Mac Mini acting as a Portal
+- **Reality Capture PC:**
+  - Unity project with Reality Capture and arena-renderfusion
+  - Aligned cameras
+  - Aligned capture mesh with room scan model
+  - Render Fusion Max Skipped Heartbeats: >10000
 - **Student Screen Left:**
   - **Chrome**: `https://arenaxr.org/[scene]?disableRenderFusion=1&demoMode=1&name=Student`
   - **Presence**: Portal
