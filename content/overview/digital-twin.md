@@ -92,6 +92,8 @@ but useful to show/hide/control in XR in proximity to the physical world.
 
 This use case works best for a space where 1+ remote participants or observers need to observe the physical space or actions of 1-2 people in a physical space from multiple angles. Some scenarios are: Teacher/Student, Coach/Athlete, Consultant/Mechanic, Expert/Operator.
 
+<img src="/assets/img/overview/dt-student-teacher.png" width="500"/>
+
 #### ARENA Scene
 
 - *GLTF/Splat Model*: Scanned space model matching Student Room (`hide-in-ar=true`)
