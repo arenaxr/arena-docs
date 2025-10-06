@@ -78,7 +78,7 @@ Server components:
 - ARENA Runtime Supervisor: [SilverLineFramework/orchestrator/issues](https://github.com/SilverLineFramework/orchestrator/issues)
 - ARENA User Account DB: [arenaxr/arena-account/issues](https://github.com/arenaxr/arena-account/issues)
 - ARENA User Scene Persistence DB: [arenaxr/arena-persist/issues](https://github.com/arenaxr/arena-persist/issues)
-- ARENA User File Manager: [arenaxr/arena-store/issues](https://github.com/arenaxr/arena-store/issues)
+- ARENA User File Manager: [filebrowser/filebrowser/issues](https://github.com/filebrowser/filebrowser/issues)
 
 ## Code of Conduct
 
