@@ -16,7 +16,8 @@ To ensure the upload of the 360 video stream isn't diminished before other users
 - **Updated camera firmware**: Many of the above cameras have updates which prevent them from overheating and shutting down in the middle of your live video stream. Contact the camera manufacturer website for updates.
 - A **fast computer**. This is a little hard to measure, but slower computers will diminish the video upload. We've had good results with the **MacBook Pro M1** chip. Our Intel x86 MacBook Pros have struggled to have enough memory in the browser for the Javascript code to marshall high frame rates of 2K 360 video streams. Other Windows/Linux machines may work. **Laptops** are recommended for flexibility.
 - A **wired network connection** of at least 1 Gbps since we need to make sure our upload of the 360 video stream has as much bandwidth as possible and without the variable instability of wireless connections. Wifi connections will limit your resolution down to about 50 Mbps.
-- **Wired power**: Don't rely on the laptop battery, 3D web and 360 cameras will consume power quickly.
+- **Wired computer power**: Don't rely on the laptop battery, 3D web and 360 cameras will consume power quickly.
+- **Wired camera power**: Don't rely on the laptop/Mac-Mini power as they will suspend power when idle. Add a Powered USB Hub to keep the camera battery charged.
 - Optimally a **2K output stream** from the camera so detail renders well, higher outputs like 4K may work, but it's untested.
 - Google **Chrome** or Microsoft **Edge**. Firefox and other browsers have trouble ingesting the 2:1 video ratio required. Check the `A/V Setup` screen when entering the scene for strange visual artifacts.
 - ARENA Web Core [**version 1.11**](https://arenaxr.org/conf/versions.html) or higher.
