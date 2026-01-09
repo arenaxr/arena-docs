@@ -71,7 +71,7 @@ To try ARENA in VR, you can use the Oculus Browser (_tested on the Quest 2_) and
 
 ##### Moving around:
 
-A forward push on the left-hand rocker brings up the teleportation ring. Clicking the rocker left and right rotates.
+You can use the Quest Controller to navigate in VR. A forward push on the left-hand rocker/joystick brings up the teleportation ring. Clicking the rocker/joystick left and right rotates.
 
 <img src="/assets/img/xr/quest-2.png" width="500"/>
 

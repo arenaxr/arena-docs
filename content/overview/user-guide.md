@@ -62,9 +62,19 @@ To move, use the arrow keys. More advanced movement can be done by a combination
 
 ![](/assets/img/overview/userguide/m1.png)
 
+### Got a VR Headset?
+
+To try ARENA in VR, you can go to a WebXR enabled browser. For example, go to Oculus Browser on Quest 2 and enter the scene URL above. Be patient while the scene loads and click “Enter” on the normal AV dialog box. Unmute mic **BEFORE** entering VR. Click the VR button in the lower right to enter immersive mode. A forward push on the left hand rocker/joystick brings up the teleportation ring. Clicking the rocker/joystick left and right rotates.
+
+![](/assets/img/overview/userguide/quest2-controls.png)
+
 ## Buttons
 
-The buttons around the screen give access to several options, such as: your sound and video settings, you display name, chat, or find other people and places. **Note that everyone starts with audio and video off**.
+The buttons around the screen give access to several options, such as: your sound and video settings, you display name, chat, or find other people and places.
+
+{% include alert type="tip" content="
+On the upper right, you will see your audio/video control buttons. **Note that everyone starts with audio and video off**.
+"%}
 
 | Button                                                     | Action             | Description                                                                                                         |
 | ---------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |

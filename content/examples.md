@@ -90,8 +90,8 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Multi-Src                  |               [![][i-multisrc]][i-multisrc]               | Define multiple visual sources applied to an object.                                     | [Attribute][obja], [Schema][s-multisrc], [Python][p-multisrc]                                        |
 | Namespace                  |                                                           | Your ARENA account namespace (same as User Name)                                         | Concept, [Tutorial][t-username]                                                                      |
 | Nav Mesh                   |               [![][i-nav-mesh]][i-nav-mesh]               | Invisible 3D model surface for users to move upon.                                       | [Scene][sopt], [Tutorial][t-navmesh]                                                                 |
-| Navigation Controller      |            [![][i-nav-control]][i-nav-control]            | Using the VR Helmet Controller to hop around a scene.                                    | [User][user], [Tutorial][t-usercrtl]                                                                 |
-| Navigation Keys            |               [![][i-nav-keys]][i-nav-keys]               | Using the VR Desktop keyboard keys to move around a scene.                               | [User][user], [Tutorial][t-navigation]                                                               |
+| Navigation Controller      |            [![][i-nav-control]][i-nav-control]            | Using the VR Headset Controller rocker/joystick to hop around a scene.                   | [User][user], [Tutorial][t-nav-control]                                                              |
+| Navigation Keys            |               [![][i-nav-keys]][i-nav-keys]               | Using the VR Desktop keyboard keys to move around a scene.                               | [User][user], [Tutorial][t-nav-keys]                                                                 |
 | Network Graph              |                [![][i-network]][i-network]                | A web interface of MQTT message traffic                                                  | [Application][a-network], [Tutorial][t-network]                                                      |
 | Null                       |                                                           | Any JSON attribute may be removed by setting it equal to `null`                          | [Graph][grph], [Python][p-null], [Tutorial][t-null]                                                  |
 | OBJ Model                  |                    [![][i-obj]][i-obj]                    | OBJ Models use Wavefront (.OBJ) files                                                    | [Object][obj3], [Schema][s-obj], [Python][p-obj]                                                     |
@@ -644,8 +644,8 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [t-landmark]: /content/overview/user-guide#chat-find-people-and-places
 [t-localization]: /content/overview/localization
 [t-meeting]: /content/overview/clone#sharing-a-link-to-a-meeting-space
-[t-navigation]: /content/overview/user-guide#moving-around
-[t-navigation]: /content/xr/requirements#moving-around
+[t-nav-keys]: /content/overview/user-guide#moving-around
+[t-nav-control]: /content/overview/user-guide#got-a-vr-headset
 [t-navmesh]: /content/3d-content/mesh-nav#navigation-meshes
 [t-network]: /content/tools/network-monitor
 [t-null]: /content/schemas/definitions#actions
