@@ -14,7 +14,7 @@ grand_parent: ARENA Objects
 
 The material properties of the object's surface.
 
-More properties at <a href='https://aframe.io/docs/1.5.0/components/material.html'>A-Frame Material</a>.
+More properties at <a href='https://aframe.io/docs/1.7.0/components/material.html'>A-Frame Material</a>.
 
 This is the schema for Material, the properties of object `material`.
 
@@ -24,19 +24,39 @@ Material Attributes
 |Attribute|Type|Default|Description|Required|
 | :--- | :--- | :--- | :--- | :--- |
 |**alphaTest**|number|```0```|Alpha test threshold for transparency.|No|
+|**ambientOcclusionMap**|string||Ambient occlusion map. Requires `shader: standard` or `phong`.|No|
+|**ambientOcclusionMapIntensity**|number|```1```|Intensity of the ambient occlusion map. Requires `shader: standard` or `phong`.|No|
+|**ambientOcclusionTextureOffset**|[vector2](vector2)|```{'x': 0, 'y': 0}```|Texture offset for the ambient occlusion map.|No|
+|**ambientOcclusionTextureRepeat**|[vector2](vector2)|```{'x': 1, 'y': 1}```|Texture repeat for the ambient occlusion map.|No|
 |**anisotropy**|number|```0```|The anisotropic filtering sample rate to use for the textures. A value of 0 means the default value will be used, see renderer.|No|
 |**blending**|string; One of: ```['none', 'normal', 'additive', 'subtractive', 'multiply']```|```'normal'```|The blending mode for the material's RGB and Alpha sent to the WebGLRenderer.|No|
+|**bumpMap**|string||Bump map. Used to add the illusion of surface detail without geometry. Requires `shader: phong`.|No|
+|**bumpMapScale**|number|```1```|Scale of the bump map effect. Requires `shader: phong`.|No|
+|**bumpTextureOffset**|[vector2](vector2)|```{'x': 0, 'y': 0}```|Texture offset for the bump map. Requires `shader: phong`.|No|
+|**bumpTextureRepeat**|[vector2](vector2)|```{'x': 1, 'y': 1}```|Texture repeat for the bump map. Requires `shader: phong`.|No|
 |**color**|string|```'#ffffff'```|Base diffuse color.|No|
 |**combine**|string; One of: ```['mix', 'add', 'multiply']```|```'mix'```|How the environment map mixes with the material. Requires `shader: phong`.|No|
 |**depthTest**|boolean|```True```|Whether depth testing is enabled when rendering the material.|No|
 |**depthWrite**|boolean|```True```|Render when depth test succeeds.|No|
+|**displacementBias**|number|```0.5```|The zero point of the displacement map. Requires `shader: standard` or `phong`.|No|
+|**displacementMap**|string||Displacement map. Distorts a simpler model at a high resolution. Requires `shader: standard` or `phong`.|No|
+|**displacementScale**|number|```1```|Scale of the displacement map effect. Requires `shader: standard` or `phong`.|No|
+|**displacementTextureOffset**|[vector2](vector2)|```{'x': 0, 'y': 0}```|Texture offset for the displacement map.|No|
+|**displacementTextureRepeat**|[vector2](vector2)|```{'x': 1, 'y': 1}```|Texture repeat for the displacement map.|No|
 |**dithering**|boolean|```True```|Whether material is dithered with noise. Removes banding from gradients like ones produced by lighting.|No|
 |**emissive**|string|```'#000000'```|The color of the emissive lighting component. Used to make objects produce light even without other lighting in the scene. Requires `shader: standard` or `phong`.|No|
 |**emissiveIntensity**|number|```1```|Intensity of the emissive lighting component. Requires `shader: standard` or `phong`.|No|
+|**envMap**|string|```''```|Environment cubemap texture for reflections. Can be a selector or comma-separated list of URLs. Requires `shader: standard` or `phong`.|No|
 |**flatShading**|boolean|```False```|Use THREE.FlatShading rather than THREE.StandardShading.|No|
 |**fog**|boolean|```True```|Whether or not material is affected by fog.|No|
-|**height**|integer|```256```|Height of video (in pixels), if defining a video texture. Requires `shader: standard` or `flat`.|No|
 |**metalness**|number|```0```|How metallic the material is from 0 to 1. Requires `shader: standard`.|No|
+|**metalnessMap**|string||Metalness map. Requires `shader: standard`.|No|
+|**metalnessTextureOffset**|[vector2](vector2)|```{'x': 0, 'y': 0}```|Texture offset for the metalness map.|No|
+|**metalnessTextureRepeat**|[vector2](vector2)|```{'x': 1, 'y': 1}```|Texture repeat for the metalness map.|No|
+|**normalMap**|string||Normal map. Defines the angle of the surface at each point. Requires `shader: standard` or `phong`.|No|
+|**normalScale**|[vector2](vector2)|```{'x': 1, 'y': 1}```|Scale of the effect of the normal map in the X and Y directions.|No|
+|**normalTextureOffset**|[vector2](vector2)|```{'x': 0, 'y': 0}```|Texture offset for the normal map.|No|
+|**normalTextureRepeat**|[vector2](vector2)|```{'x': 1, 'y': 1}```|Texture repeat for the normal map.|No|
 |**npot**|boolean|```False```|Use settings for non-power-of-two (NPOT) texture.|No|
 |**offset**|[vector2](vector2)|```{'x': 0, 'y': 0}```|Texture offset to be used.|No|
 |**opacity**|number|```1```|Extent of transparency. If the transparent property is not true, then the material will remain opaque and opacity will only affect color.|No|
@@ -44,16 +64,19 @@ Material Attributes
 |**refract**|boolean|```False```|Whether the defined envMap should refract. Requires `shader: phong`.|No|
 |**refractionRatio**|number|```0.98```|refractionRatio|No|
 |**repeat**|[vector2](vector2)|```{'x': 1, 'y': 1}```|How many times a texture (defined by src) repeats in the X and Y direction.|No|
-|**roughness**|number|```0```|How rough the material is from 0 to 1. A rougher material will scatter reflected light in more directions than a smooth material. Requires `shader: standard`.|No|
+|**roughness**|number|```0.5```|How rough the material is from 0 to 1. A rougher material will scatter reflected light in more directions than a smooth material. Requires `shader: standard`.|No|
+|**roughnessMap**|string||Roughness map. Requires `shader: standard`.|No|
+|**roughnessTextureOffset**|[vector2](vector2)|```{'x': 0, 'y': 0}```|Texture offset for the roughness map.|No|
+|**roughnessTextureRepeat**|[vector2](vector2)|```{'x': 1, 'y': 1}```|Texture repeat for the roughness map.|No|
 |**shader**|string; One of: ```['flat', 'standard', 'phong']```|```'standard'```|Which material to use. Defaults to the standard material. Can be set to the flat material or to a registered custom shader material.|No|
 |**shininess**|number|```30```|How shiny the specular highlight is; a higher value gives a sharper highlight. Requires `shader: phong`.|No|
 |**side**|string; One of: ```['front', 'back', 'double']```|```'front'```|Which sides of the mesh to render.|No|
 |**specular**|string|```'#111111'```|This defines how shiny the material is and the color of its shine. Requires `shader: phong`.|No|
+|**sphericalEnvMap**|string||Environment spherical texture for reflections. Requires `shader: standard` or `phong`.|No|
 |**src**|string||URI, relative or full path of an image/video file. e.g. 'store/users/wiselab/images/360falls.mp4'.|No|
 |**toneMapped**|boolean|```True```|Whether to ignore toneMapping, set to false you are using renderer.toneMapping and an element should appear to emit light. Requires `shader: flat`.|No|
 |**transparent**|boolean|```False```|Whether material is transparent. Transparent entities are rendered after non-transparent entities.|No|
 |**vertexColorsEnabled**|boolean|```False```|Whether to use vertex or face colors to shade the material.|No|
 |**visible**|boolean|```True```|Whether material is visible. Raycasters will ignore invisible materials.|No|
-|**width**|integer|```512```|Width of video (in pixels), if defining a video texture. Requires `shader: standard` or `flat`.|No|
 |**wireframe**|boolean|```False```|Whether to render just the geometry edges.|No|
 |**wireframeLinewidth**|integer|```2```|Width in px of the rendered line.|No|

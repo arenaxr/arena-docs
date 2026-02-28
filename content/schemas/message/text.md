@@ -45,10 +45,7 @@ Text Attributes
 |**baseline**|string; One of: ```['top', 'center', 'bottom']```|```'center'```|Vertical positioning.|No|
 |**color**|string|```'#000000'```|Text color.|Yes|
 |**font**|string; One of: ```['aileronsemibold', 'dejavu', 'exo2bold', 'exo2semibold', 'kelsonsans', 'monoid', 'mozillavr', 'roboto', 'sourcecodepro']```|```'roboto'```|Font to render text, either the name of one of A-Frame's stock fonts or a URL to a font file.|Yes|
-|**fontImage**|string||Font image texture path to render text. Defaults to the font's name with extension replaced to .png. Don't need to specify if using a stock font. (derived from font name).|No|
-|**height**|number||Height of text block. (derived from text size).|No|
 |**letterSpacing**|number|```0```|Letter spacing in pixels.|No|
-|**lineHeight**|number||Line height in pixels. (derived from font file).|No|
 |**opacity**|number|```1```|Opacity, on a scale from 0 to 1, where 0 means fully transparent and 1 means fully opaque.|No|
 |**shader**|string; One of: ```['portal', 'flat', 'standard', 'sdf', 'msdf', 'ios10hls', 'skyshader', 'gradientshader']```|```'sdf'```|Shader used to render text.|No|
 |**side**|string; One of: ```['front', 'back', 'double']```|```'double'```|Side to render.|Yes|
@@ -57,9 +54,7 @@ Text Attributes
 |**transparent**|boolean|```True```|Whether text is transparent.|No|
 |**value**|string||The actual content of the text. Line breaks and tabs are supported with `\n` and `\t`.|Yes|
 |**whiteSpace**|string; One of: ```['normal', 'pre', 'nowrap']```|```'normal'```|How whitespace should be handled.|No|
-|**width**|number|```5```|Width in meters. (derived from geometry if exists).|No|
 |**wrapCount**|number|```40```|Number of characters before wrapping text (more or less).|No|
-|**wrapPixels**|number||Number of pixels before wrapping text. (derived from wrapCount).|No|
 |**xOffset**|number|```0```|X-offset to apply to add padding.|No|
 |**zOffset**|number|```0.001```|Z-offset to apply to avoid Z-fighting if using with a geometry as a background.|No|
 |**parent**|string||Parent's object_id. Child objects inherit attributes of their parent, for example scale and translation.|No|
