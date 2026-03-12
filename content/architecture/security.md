@@ -1,7 +1,7 @@
 ---
 title: Security
 nav_order: 6
-layout: default
+layout: tutorial
 parent: Architecture
 ---
 

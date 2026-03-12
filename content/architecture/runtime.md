@@ -1,7 +1,7 @@
 ---
 title: ARENA Runtime
 nav_order: 6
-layout: default
+layout: tutorial
 parent: Architecture
 ---
 

@@ -1,13 +1,14 @@
 ---
-title: Access Control
-nav_order: 4
+title: (Archive V1) Access Control
+nav_order: 5
 layout: tutorial
-parent: Architecture
+parent: Access Control
+grand_parent: Architecture
 ---
 
-# ARENA PubSub Message Bus
+# (Archive V1) ARENA PubSub Message Bus
 
-> **Versioning Note:** This document describes the **V2** `arena-services-docker` MQTT topic permissions, requiring compatible V2+ server environments and ARENA `py`/`unity` clients V1+. For legacy environments, see the [V1 Access Control Archive](/content/architecture/pubsubac-v1).
+> **Versioning Deprecated Note:** This document describes the **deprecated V1** `arena-services-docker` MQTT topic permissions. See [PubSub Access Control](/content/architecture/pubsubac) for the current V2+ topic permissions.
 
 The ARENA message bus is currently supported by a MQTT Mosquitto broker, modified to keep track of connected clients and data flows. This information is organized into a graph that is available to users and, more importantly, to the [runtime supervisor - Silverline](/content/programs/). The broker is also configured with a [JWT](https://jwt.io/) plugin that implements the PubSub ACL on the topic structure (more details below), and we use Mosquitto's bridging to create clusters of brokers.
 
@@ -20,45 +21,39 @@ A few example topics are included below for context, as well as a list of topic 
 ## Example Topics
 
 General 3D Object
-: `realm/s/er1k/test-scene/o/camera_client_id/box_1`
+: `realm/s/er1k/test-scene/o/box_1`
 
 User 3D Object
-: `realm/s/er1k/test-scene/u/camera_client_id/1234567890_er1k`
+: `realm/s/er1k/test-scene/u/1234567890_er1k`
 
 Chat Message
-: `realm/s/er1k/test-scene/c/camera_client_id/1234567890_er1k`
+: `realm/s/er1k/test-scene/c/1234567890_er1k`
 
 Runtime Stdout
-: `realm/s/er1k/test-scene/p/camera_client_id/1234567890_er1k/-/stdout`
+: `realm/proc/debug/stdout/e5f4439e-5a02-4e5d-9d72-704d171d8949`
 
 ## Topic Elements
 
 `a`
 : Storage area for **AprilTag detection** data
 
-`x`
-: Storage area for user **presence** topics
-
 `c`
 : Storage area for user text **chat messages**
 
-`u`
-: Storage area for **user** payload topics
+`g`
+: Storage area for **general use**
 
 `o`
-: Storage area for general **objects**
+: Storage area for public or **open user** payload topics
 
-`r`
-: Storage area for **render** fusion updates
-
-`e`
-: Storage area for **environment** capture updates
+`s`
+: Storage area for **scene graphic objects**
 
 `p`
-: Storage area for **program** runtime module data
+: Storage area for **private user to user** payload topics
 
-`d`
-: Storage area for **debug** logs
+`proc`
+: Storage area for runtime **process** and module data
 
 `$NETWORK`
 : Storage area for **network performance** metrics
@@ -66,17 +61,14 @@ Runtime Stdout
 `{namespace}`
 : Namespace for a particular user within the scene
 
-`{msgType}`
-: Message Type: one of the single letter characters `x, c, u, o, r, e, p, d` above
-
-`{userClient}`
-: Client identifier
-
-`{objectId}`
+`{object-id}`
 : A-Frame object name; object topic should receive mostly A-Frame content
 
 `{realm}`
 : Future use; a namespace we expect to be useful for peer MQTT brokers; probably geographic-based
+
+`{process-id}`
+: Namespace for a particular application within the scene
 
 `{session-id}`
 : A server-generated ID to establish a unique user connection
@@ -94,27 +86,31 @@ Runtime Stdout
 
 ## Scene Allowed
 
-### `{realm}/s/+/+/+/+/+`
+### `{realm}/s/#`
 
 - All scenes: Staff/Admin have rights to all scene objects.
-- **Subscribe**: Staff `+/+/+`
-- **Publish**: Staff `+/+/+`
+- **Subscribe**: Staff
+- **Publish**: Staff
 
-### `{realm}/s/{username}/+/+/+/+`
+### `{realm}/s/{username}/#`
 
 - Scene namespaces: scene owners have rights to their scene objects only.
-- **Subscribe**: specific user: `username` `+/+/+`
-- **Publish**: specific user: `username` `+/+/+`
+- **Subscribe**: specific user: `username`
+- **Publish**: specific user: `username`
 
-### `{realm}/s/{namespace}/{scene-id}/+/+/+`
+### `{realm}/s/{namespace}/{scene-id}/#`
 
 - Individual scenes: did the user set specific public read or public write?
-- **Subscribe**: `public_read`=True, or `namespace` user added `editor`/`viewer`
-- **Publish**: `public_write`=True, or `namespace` user added `editor` (`o/{userclient}/#`)
+- **Subscribe**: `public_read`=True, or `namespace` user added `editor`
+- **Publish**: `public_write`=True, or `namespace` user added `editor`
 
-### `{realm}/s/{namespace}/{scene-id}/u/{userclient}/{session-id}_{username}`
+### `{realm}/s/{namespace}/{scene-id}/camera_{session-id}_{username}/#`
 
-- User-presence objects: tracking avatar heads and hands.
+### `{realm}/s/{namespace}/{scene-id}/handRight_{session-id}_{username}/#`
+
+### `{realm}/s/{namespace}/{scene-id}/handLeft_{session-id}_{username}/#`
+
+- User-presence objects: scene owners have rights to their scene objects only.
 - **Subscribe**: `public_read`=True
 - **Publish**: specific Anonymous/User, issued ID and username from authentication service.
 
@@ -128,34 +124,42 @@ Runtime Stdout
 - **Subscribe**: Staff, User, Anonymous
 - **Publish**: Staff, User, Anonymous
 
+### `{realm}/vio/{namespace}/{scene-id}/#`
+
+- VIO or test cameras for student experiments
+- **Publish**: Staff
+
 ## Chat Allowed
 
 A user handle is appended to control the origin of the chat messages in the topic and payload to prevent spoofing. Where `userhandle = b64encode({session-id}\_{username})`.
 
-### `{realm}/s/{namespace}/{scene-id}/+/+/+/{session-id}_{username}/#`
+### `{realm}/c/{namespace}/p/{session-id}_{username}/#`
 
 - Receive private messages: Read
 - **Subscribe**: Staff, User, Anonymous
 
-### `{realm}/s/{namespace}/{scene-id}/c/{userclient}/{session-id}_{username}`
+### `{realm}/c/{namespace}/o/#`
 
-- Send/Receive scene chat messages
-- **Subscribe**: `public_read`=True
+- Receive open messages to everyone and/or scene: Read
+- **Subscribe**: Staff, User, Anonymous
+
+### `{realm}/c/{namespace}/o/{userhandle}`
+
+- Send open messages (chat keep-alive, messages to all/scene: Write
+- **Publish**: Staff, User, Anonymous
+
+### `{realm}/c/{namespace}/p/+/{userhandle}`
+
+- Private messages to User: Write
 - **Publish**: Staff, User, Anonymous
 
 ## Runtime Manager Allowed
 
-### `{realm}/s/{namespace}/{scene-id}/p/+/+`
+### `{realm}/proc/#`
 
-- Open topic for controlling runtime processes inside scenes
-- **Subscribe**: Editors
-- **Publish**: Editors
-
-### `{realm}/g/{namespace}/p/+`
-
-- Global namespace-level topic for controlling runtime processes
-- **Subscribe**: Staff, User
-- **Publish**: Staff, User
+- Open topic for controlling runtime processes
+- **Subscribe**: Staff, User, Anonymous
+- **Publish**: Staff, User, Anonymous
 
 ## Network Metrics Allowed
 
