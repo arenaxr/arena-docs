@@ -22,7 +22,7 @@ Our demonstration sample server runs at [https://arenaxr.org](https://arenaxr.or
 - [ARENA Default Scene](https://arenaxr.org/public/lobby)
 - [ARENA Scene Builder](https://arenaxr.org/build/)
 - [ARENA Network Graph](https://arenaxr.org/network/)
-- [ARENA Runtime Supervisor - ARTS](https://arenaxr.org/programs/)
+- [ARENA Runtime Supervisor - Silverline](https://arenaxr.org/programs/)
 - [ARENA File Store](https://arenaxr.org/files/)
 - [ARENA Scene Locator - ATLAS]()<em> - COMING SOON</em><!--https://atlas.conix.io -->
 - [ARENA Scene list](https://arenaxr.org/scenes)

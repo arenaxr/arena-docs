@@ -34,7 +34,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | Animation Mixer            |          [![][i-animation-mix]][i-animation-mix]          | Control playing animations stored in a GLTF model.                                       | [Attribute][obja], [Schema][s-animation-mix], [Python][p-animation-mix], [Tutorial][t-animation-mix] |
 | AR Hide/Show               |            [![][i-ar-hideshow]][i-ar-hideshow]            | Hide/Show object (`hide-on-enter-ar`) when entering AR.                                  | [Attribute][obja], [Schema][s-ar-hideshow]                                                           |
 | AR Marker                  |               [![][i-armarker]][i-armarker]               | A location marker used to anchor scenes/objects, in the real world                       | [Attribute][obja], [Schema][s-armarker], [Python][p-armarker], [Tutorial][t-armarker]                |
-| ARTS                       |                   [![][i-arts]][i-arts]                   | ARTS, a runtime supervisor for programs                                                  | [Application][a-arts]                                                                                |
+| Silverline                 |                   [![][i-silverline]][i-silverline]       | Silverline, a runtime supervisor for programs                                            | [Application][a-silverline]                                                                          |
 | ATLAS                      |                  [![][i-atlas]][i-atlas]                  | ATLAS, a geolocation index of AR scenes.                                                 | Application                                                                                          |
 | Attribution                |            [![][i-attribution]][i-attribution]            | Attribution Component. Saves attribution data in any entity                              | [Attribute][obja], [Schema][s-attribution], [Python][p-attribution], [Tutorial][t-attribution]       |
 | Audio                      |               [![][i-audio-on]][i-audio-on]               | User's Microphone On/Off state (requires microphone permission)                          | [User][user], [Tutorial][t-audio]                                                                    |
@@ -358,7 +358,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 {:width="75px"}
 [i-spot-ar]: /assets/img/examples/spot-ar-qr.png
 {:width="100px"}
-[i-arts]: /assets/img/overview/arts.png
+[i-silverline]: /assets/img/overview/arts.png
 {:width="100px"}
 [i-atlas]: /assets/img/overview/atlas.png
 {:width="100px"}
@@ -677,7 +677,7 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 <!-- application links-->
 <!-- [a-atlas]: https://atlas.conix.io -->
 
-[a-arts]: https://arenaxr.org/programs
+[a-silverline]: https://arenaxr.org/programs
 [a-build]: https://arenaxr.org/build
 [a-filestore]: https://arenaxr.org/files
 [a-network]: https://arenaxr.org/network

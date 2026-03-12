@@ -49,7 +49,7 @@ That forms a layer, in turn, on top of [A-Frame](https://aframe.io/) and [THREE.
 Examples of arena-py programs can be found in our [Examples](https://github.com/arenaxr/arena-py/tree/master/examples) and [System Tests](https://github.com/arenaxr/arena-py/tree/master/system-tests).
 
 ## Running from the Command Line
-ARENA python applications can be sandboxed in the WASM runtime (currently with limited library support due to the still immature support for Python in WASM toolchains) and managed by ARTS, or ran standalone from you computer.
+ARENA python applications can be sandboxed in the WASM runtime (currently with limited library support due to the still immature support for Python in WASM toolchains) and managed by Silverline, or ran standalone from you computer.
 
 To run a python program from the command line in your computer, specify the target of which server, user and scene are set by the `Scene(host="...",scene="...",namespace="...",debug=False)` function call.  It is also possible to override these using environmental variables at the command line as shown below.  This allows a simple way to re-target applications for your own environment without having to change the parameters manually in the code.
 ```shell

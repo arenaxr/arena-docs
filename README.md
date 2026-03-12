@@ -57,7 +57,7 @@ Callout alerts are available. Use this syntax:
 - **arena-unity Unity library**
   - https://github.com/arenaxr/arena-unity
 
-- **ARENA Runtime Supervisor (ARTS)**
+- **ARENA Runtime Supervisor (Silverline)**
   - https://github.com/SilverLineFramework/orchestrator
 
 - **ATLAS**

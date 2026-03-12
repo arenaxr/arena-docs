@@ -64,6 +64,6 @@ Scenes and Realms can be registered and discovered with a geographic database sy
 
 It is worth noting that a Scene's address can be used to form a URL for virtual environments that have no physical location without the need for ATLAS.
 
-### Runtime Management (ARTS)
+### Runtime Management (Silverline)
 
-Execution of applications in a Scene is managed by a local resource manager (ARTS) that is also part of the Realm. ARTS is responsible for dispatching, monitoring and migrating for execution of programs to available runtimes.
+Execution of applications in a Scene is managed by a local resource manager (Silverline) that is also part of the Realm. Silverline is responsible for dispatching, monitoring and migrating for execution of programs to available runtimes.
