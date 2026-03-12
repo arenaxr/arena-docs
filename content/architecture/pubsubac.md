@@ -3,11 +3,14 @@ title: Access Control
 nav_order: 4
 layout: tutorial
 parent: Architecture
+has_children: true
 ---
 
 # ARENA PubSub Message Bus
 
 > **Versioning Note:** This document describes the **V2** `arena-services-docker` MQTT topic permissions, requiring compatible V2+ server environments and ARENA `py`/`unity` clients V1+. For legacy environments, see the [V1 Access Control Archive](/content/architecture/pubsubac-v1).
+
+This guide outlines the MQTT publish and subscribe permissions granted to users connecting to the ARENA message broker. Permissions are embedded in the JSON Web Token (JWT) provided by the `arena-account` service, which acts as the Access Control List (ACL) enforced by the Mosquitto broker.
 
 The ARENA message bus is currently supported by a MQTT Mosquitto broker, modified to keep track of connected clients and data flows. This information is organized into a graph that is available to users and, more importantly, to the [runtime supervisor - Silverline](/content/programs/). The broker is also configured with a [JWT](https://jwt.io/) plugin that implements the PubSub ACL on the topic structure (more details below), and we use Mosquitto's bridging to create clusters of brokers.
 
@@ -18,7 +21,6 @@ The root of trust for an ARENA Realm derives from the Access Control List (ACL) 
 A few example topics are included below for context, as well as a list of topic elements used, and which topics are added to the ARENA JWT based upon user and system defined access control list (ACL) settings.
 
 ## Example Topics
-
 General 3D Object
 : `realm/s/er1k/test-scene/o/camera_client_id/box_1`
 
@@ -32,7 +34,6 @@ Runtime Stdout
 : `realm/s/er1k/test-scene/p/camera_client_id/1234567890_er1k/-/stdout`
 
 ## Topic Elements
-
 `a`
 : Storage area for **AprilTag detection** data
 
@@ -92,79 +93,99 @@ Runtime Stdout
 
 \*Names in `{}` are dynamic
 
-## Scene Allowed
+## Overview
 
-### `{realm}/s/+/+/+/+/+`
+Permissions depend on a user's role (Staff, Authenticated User, Anonymous), the token type requested (Scene vs. Device), and the specific scene's settings.
 
-- All scenes: Staff/Admin have rights to all scene objects.
-- **Subscribe**: Staff `+/+/+`
-- **Publish**: Staff `+/+/+`
+---
 
-### `{realm}/s/{username}/+/+/+/+`
+## 1. Global Public Scope
 
-- Scene namespaces: scene owners have rights to their scene objects only.
-- **Subscribe**: specific user: `username` `+/+/+`
-- **Publish**: specific user: `username` `+/+/+`
+**All Users** (regardless of authentication, unless it is a specific device token limit) are granted read access to the global public scenes namespace.
+* **Subscribe:** `{realm}/s/public/+/+/+`
 
-### `{realm}/s/{namespace}/{scene-id}/+/+/+`
+---
 
-- Individual scenes: did the user set specific public read or public write?
-- **Subscribe**: `public_read`=True, or `namespace` user added `editor`/`viewer`
-- **Publish**: `public_write`=True, or `namespace` user added `editor` (`o/{userclient}/#`)
+## 2. Authenticated Users
 
-### `{realm}/s/{namespace}/{scene-id}/u/{userclient}/{session-id}_{username}`
+Authenticated users possess specific rights depending on their role.
 
-- User-presence objects: tracking avatar heads and hands.
-- **Subscribe**: `public_read`=True
-- **Publish**: specific Anonymous/User, issued ID and username from authentication service.
+### Administrators / Staff
+Staff users have full access to view and modify any object within any scene or device namespace.
+* **Subscribe:** `{realm}/s/+/+/+/+/+` (Read all scene data)
+* **Publish:** `{realm}/s/+/+/o/{userclient}/#` (Write objects to all scenes)
+* **Subscribe / Publish:** `{realm}/d/#` (All device objects)
 
-{% include alert type="note" title="Note" content="Since anonymous usernames are not authenticated, there is a risk of spoofing their user-presence, and as such, all users are issued a `session-id` for their camera objects to prevent this." %}
+### Standard Authenticated Users
+Regular users have full access over their own personal namespaces.
+* **Subscribe:** `{realm}/s/{username}/+/+/+/+` (Read user's scene data)
+* **Publish:** `{realm}/s/{username}/+/o/{userclient}/#` (Write objects to user's scenes)
+* **Subscribe / Publish:** `{realm}/d/{username}/#` (User's device objects)
 
-## Sensor Allowed
+Users can also be granted **Editor** or **Viewer** rights to specific namespaces and scenes.
+* **Subscribe:** `{realm}/s/{namespace}/{scene-id}/+/+/+` (For each scene the user has rights to)
+* **Publish:** `{realm}/s/{namespace}/{scene-id}/o/{userclient}/#` (For each scene the user is an editor of)
 
-### `{realm}/g/a/#`
+### Device Tokens
+If an authenticated user requests a specific device token (e.g., for headless devices under their account).
+* **Subscribe / Publish:** `{realm}/d/{namespace}/{device_id}/#` (Device payload objects)
 
-- All AprilTag sensors
-- **Subscribe**: Staff, User, Anonymous
-- **Publish**: Staff, User, Anonymous
+---
 
-## Chat Allowed
+## 3. Scene-Level Permissions
 
-A user handle is appended to control the origin of the chat messages in the topic and payload to prevent spoofing. Where `userhandle = b64encode({session-id}\_{username})`.
+When a user joins a specific scene, they are granted permissions based on the scene's settings (e.g., Public Read, Public Write, Anonymous Allowed).
 
-### `{realm}/s/{namespace}/{scene-id}/+/+/+/{session-id}_{username}/#`
+**Anonymous Access Restrictions:**
+If the user is not authenticated and the scene has `anonymous_users=False`, no permissions are granted (token generation is rejected).
 
-- Receive private messages: Read
-- **Subscribe**: Staff, User, Anonymous
+**Scene Read/Write Options:**
+Depending on whether the scene allows public read or write access:
+* **Read Scene Objects:** `{realm}/s/{namespace}/{scene-id}/+/+/+` (Subscribe)
+* **Modify Scene Objects:** `{realm}/s/{namespace}/{scene-id}/o/{userclient}/#` (Publish)
 
-### `{realm}/s/{namespace}/{scene-id}/c/{userclient}/{session-id}_{username}`
+**User Presence (Camera and Hands):**
+If the token request provides camera and controller IDs and the user is permitted in the scene, they are granted rights to update their own avatar's pose/object (`u/` msgType):
+* **Publish (Head/Camera):** `{realm}/s/{namespace}/{scene-id}/u/{userclient}/{camid}` and `.../{camid}/+`
+* **Publish (Left Hand):** `{realm}/s/{namespace}/{scene-id}/u/{userclient}/{handleftid}` and `.../{handleftid}/+`
+* **Publish (Right Hand):** `{realm}/s/{namespace}/{scene-id}/u/{userclient}/{handrightid}` and `.../{handrightid}/+`
 
-- Send/Receive scene chat messages
-- **Subscribe**: `public_read`=True
-- **Publish**: Staff, User, Anonymous
+---
 
-## Runtime Manager Allowed
+## 4. Chat and Messaging
 
-### `{realm}/s/{namespace}/{scene-id}/p/+/+`
+If a user is inside a scene and provides a `userid`, they can participate in the chat system or send presence updates. (`c` and `x` msgTypes).
 
-- Open topic for controlling runtime processes inside scenes
-- **Subscribe**: Editors
-- **Publish**: Editors
+* **Receive All Chat:** `{realm}/s/{namespace}/{scene-id}/+/+/+` (Handled by general scene read)
+* **Receive Private Messages:** `{realm}/s/{namespace}/{scene-id}/+/+/+/{userid}/#` (Subscribe)
+* **Send Open Messages:** `{realm}/s/{namespace}/{scene-id}/c/{userclient}/{userid}` (Publish)
+* **Send Private Messages:** `{realm}/s/{namespace}/{scene-id}/c/{userclient}/{userid}/{to_userid}` (Publish)
 
-### `{realm}/g/{namespace}/p/+`
+---
 
-- Global namespace-level topic for controlling runtime processes
-- **Subscribe**: Staff, User
-- **Publish**: Staff, User
+## 5. Sub-Systems and Components
 
-## Network Metrics Allowed
+User tokens additionally grant read and write scopes for subsystems running on the server:
 
-### `$NETWORK`
+### Render, Environment, and Debug
+These topics end with an exact dash `-` to block unauthorized users from subscribing to and sniffing pseudo-group render payloads:
+* **Publish (Render):** `{realm}/s/{namespace}/{scene-id}/r/{userclient}/{userid}/-`
+* **Publish (Environment):** `{realm}/s/{namespace}/{scene-id}/e/{userclient}/{userid}/-`
+* **Publish (Debug):** `{realm}/s/{namespace}/{scene-id}/d/{userclient}/{userid}/-`
 
-- Monitor topic for logging or visualizing metrics
-- **Subscribe**: Staff, User, Anonymous
+### AprilTags
+Users within a scene can publish and subscribe to AprilTag topics:
+* **Subscribe / Publish:** `{realm}/g/a/#`
 
-### `$NETWORK/latency`
+### Runtime Manager (Silverline)
+Global namespace-level topic for controlling runtime processes:
+* **Subscribe / Publish:** `{realm}/g/{namespace}/p/+`
 
-- Topic for writing network metrics
-- **Publish**: Staff, User, Anonymous
+Scene-level program topic:
+* **Publish:** `{realm}/s/{namespace}/{scene-id}/p/{userclient}/{userid}`
+* **Subscribe / Publish:** `{realm}/s/{namespace}/{scene-id}/p/+/#` (Editors)
+
+### Network Graph
+Topics used for visualizing and measuring network latencies and topologies:
+* **Subscribe:** `$NETWORK`
+* **Publish:** `$NETWORK/latency`

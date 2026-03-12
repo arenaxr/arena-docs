@@ -17,7 +17,7 @@ Here we are adding the `physx-grabbable` component to allow a user's hand-contro
 
 More properties at <a href='https://github.com/c-frame/physx'>C-Frame PhysX Physics System</a>.
 
-Additional Python properties are available in the [PhysxGrabbable API Reference](/content/python-api/attributes/physx_grabbable).
+
 
 The following source code was mirrored from the `arena-py` [physx_grabbable.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/physx_grabbable.py) example.
 

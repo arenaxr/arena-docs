@@ -13,7 +13,7 @@ When this object is parented to a hierarchical model, it attaches to a named sub
 
 This program loads a URDF model of a robot arm, and then attaches a see-though green ball at the tip of the armature at the sub-model component named `joint_6_t-flange` of the URDF model.
 
-Additional Python properties are available in the [SubmodelParent API Reference](/content/python-api/attributes/submodel_parent).
+
 
 The following source code was mirrored from the `arena-py` [submodel_parent.py](https://github.com/arenaxr/arena-py/blob/master/examples/attributes/submodel_parent.py) example.
 
