@@ -64,7 +64,9 @@ To move, use the arrow keys. More advanced movement can be done by a combination
 
 ### Got a VR Headset?
 
-To try ARENA in VR, you can go to a WebXR enabled browser. For example, go to Oculus Browser on Quest 2 and enter the scene URL above. Be patient while the scene loads and click “Enter” on the normal AV dialog box. Unmute mic **BEFORE** entering VR. Click the VR button in the lower right to enter immersive mode. A forward push on the left hand rocker/joystick brings up the teleportation ring. Clicking the rocker/joystick left and right rotates.
+To try ARENA in VR, you can go to a WebXR enabled browser. For example, go to Oculus Browser on Quest 2 and enter the scene URL above. Be patient while the scene loads and click “Enter” on the normal AV dialog box. Unmute mic **BEFORE** entering VR. Click the VR button in the lower right to enter immersive mode.
+- **Left Controller:** A forward push on the left hand rocker/joystick brings up the teleportation ring for moving along the ground. Clicking the left joystick left and right rotates.
+- **Right Controller:** Pushing the right hand rocker/joystick will allow you to fly freely through the scene without being constrained to the ground.
 
 ![](/assets/img/overview/userguide/quest2-controls.png)
 
