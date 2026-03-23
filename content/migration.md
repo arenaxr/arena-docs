@@ -34,6 +34,12 @@ The old impulse component forced you to calculate the force vectors manually. Th
 | `force` ({x,y,z}) | `force` (Number) | Simplified to a scalar multiplier. The push direction is automatically calculated from the user's camera ray and click intersection point. |
 | `position` ({x,y,z}) | (Removed) | The position of the impulse is now automatically determined by the 3D cursor's intersection point on the object. |
 
+### `collision-listener` (PhysX and Payload Update)
+The `collision-listener` component has been successfully migrated to use the new PhysX engine. To ensure it continues to work:
+- **Event Dependency**: It now listens for PhysX `contactbegin` instead of Ammo.js `collide`.
+- **Requirements**: Ensure the colliding bodies have `emitCollisionEvents: true` set on their `physx-body` component for the events to fire.
+- **Payload Changes**: It still publishes `collision` events to MQTT (to differentiate from `box-collision-listener`), but aligns its positional metadata output with the newer payload format. The MQTT payload now correctly registers the user as the `object_id` and the collided object as the `target`.
+
 ## Web 1.29.0 → 2.0.0 (MQTT Topics, Client Events)
 
 - **MQTT Topics**: We have refactored the MQTT topic structure which is now incompatible with older **Unity** and **Python** clients. The old authorization endpoints preceded with `arenaxr.org/user/...` are now required to connect to our `arena-web-core` v2 APIs at `arenaxr.org/user/v2/...`. You may see HTTP requests from **Unity** and **Python** fail with the HTTP status code **426: Upgrade Required**. To resolve, use the  [Python upgrade](troubleshooting#python-http-error-426-upgrade-required) or [Unity upgrade](troubleshooting#unity-http-error-426-upgrade-required) instructions.
