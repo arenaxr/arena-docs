@@ -39,7 +39,7 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | AR Marker                 |               [![][i-armarker]][i-armarker]               | A location marker used to anchor scenes/objects, in the real world                       | [Attribute][obja], [Schema][s-armarker], [Python][p-armarker], [Tutorial][t-armarker]                |
 | ARENA User                |                                                           | User avatar state, controller, and client configuration.                                 | [Object][obj3], [Schema][s-arena-user]                                                               |
 | ATLAS                     |                  [![][i-atlas]][i-atlas]                  | ATLAS, a geolocation index of AR scenes. Succeeded by OpenFLAME.                         | Application                                                                                          |
-| Attribution               |            [![][i-attribution]][i-attribution]            | Attribution Component. Saves attribution data in any entity                              | [Attribute][obja], [Schema][s-attribution], [Python][p-attribution], [Tutorial][t-attribution]       |
+| Attribution               |            [![][i-attribution]][i-attribution]            | Attribution Component. Saves attribution data in any entity                              | [Attribute][obja], [Python][p-attribution], [Tutorial][t-attribution]       |
 | Audio                     |               [![][i-audio-on]][i-audio-on]               | User's Microphone On/Off state (requires microphone permission)                          | [User][user], [Tutorial][t-audio]                                                                    |
 | Blender Add-on            |                                                           | ARENA Blender Add-on for 3D scene authoring and export.                                  | Concept, [Tutorial][t-blender-addon]                                                                 |
 | Blip                      |                   [![][i-blip]][i-blip]                   | When the object is created or deleted, it will animate in/out                            | [Attribute][obja], [Schema][s-blip], [Python][p-blip]                                                |
@@ -485,7 +485,6 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-arena-scene-options]: /content/schemas/message/scene-options
 [s-arena-user]: /content/schemas/message/arena-user
 [s-armarker]: /content/schemas/message/armarker
-[s-attribution]: /content/schemas/message/attribution
 [s-blip]: /content/schemas/message/blip
 [s-bloom]: /content/schemas/message/bloom
 [s-box-collision]: /content/schemas/message/box-collision-listener
