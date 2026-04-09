@@ -11,11 +11,8 @@ This is the ARENA Documentation website giving architecture, APIs, and step-by-s
 * Check html: `make check`
 * Preview site at [http://localhost:4000/](http://localhost:4000/).
 
-## Content
-
-ARENA Documentation pages are written in markdown and placed in the `content` directory, except for `./index.md`.
-
-Each `.md` file inside `content` must have [YAML Front Matter](https://jekyllrb.com/docs/front-matter) for navigation. The navigation details are determined by our theme. See the [just-the-docs](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation-structure.md) theme for more details about site navigation.
+## Documentation
+- [Contributing](CONTRIBUTING.md)
 
 ## Test
 
