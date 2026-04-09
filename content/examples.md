@@ -205,7 +205,7 @@ A component or effect which can be optionally added to an entity.
 
 ### Program
 
-ARENA remote runtime, Python or WebAssembly (WASM). For reference, a list of [all program attributes](/content/schemas/message/arena-program#program-data-attributes)
+ARENA remote runtime, Python or WebAssembly (WASM). For reference, a list of [all program attributes](/content/schemas/message/program#program-data-attributes)
 
 ### Scene Option
 
@@ -480,9 +480,9 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 
 [s-animation-mix]: /content/schemas/message/animation-mixer
 [s-animation]: /content/schemas/message/animation
-[s-ar-hideshow]: /content/schemas/message/entity#entity-generic-object-data-attributes
+[s-ar-hideshow]: /content/schemas/message/entity#entity-generic-object-properties
 [s-ar-hit-test]: /content/schemas/message/ar-hit-test
-[s-arena-scene-options]: /content/schemas/message/arena-scene-options
+[s-arena-scene-options]: /content/schemas/message/scene-options
 [s-arena-user]: /content/schemas/message/arena-user
 [s-armarker]: /content/schemas/message/armarker
 [s-attribution]: /content/schemas/message/attribution
@@ -490,13 +490,13 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-bloom]: /content/schemas/message/bloom
 [s-box-collision]: /content/schemas/message/box-collision-listener
 [s-box]: /content/schemas/message/box
-[s-buffer]: /content/schemas/message/entity#entity-generic-object-data-attributes
+[s-buffer]: /content/schemas/message/entity#entity-generic-object-properties
 [s-camera-override]: /content/schemas/message/camera-override
 [s-camera]: /content/schemas/message/camera
 [s-capsule]: /content/schemas/message/capsule
 [s-circle]: /content/schemas/message/circle
 [s-click]: /content/schemas/message/click-listener
-[s-collision]: /content/schemas/message/entity#entity-generic-object-data-attributes
+[s-collision]: /content/schemas/message/entity#entity-generic-object-properties
 [s-cone]: /content/schemas/message/cone
 [s-cylinder]: /content/schemas/message/cylinder
 [s-dodecahedron]: /content/schemas/message/dodecahedron
@@ -511,15 +511,14 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-gltf]: /content/schemas/message/gltf-model
 [s-goto-landmark]: /content/schemas/message/goto-landmark
 [s-goto-url]: /content/schemas/message/goto-url
-[s-hand]: /content/schemas/message/hand
-[s-hand]: /content/schemas/message/hand
+[s-hand]: /content/schemas/message/arena-user
 [s-icosahedron]: /content/schemas/message/icosahedron
 [s-image]: /content/schemas/message/image
 [s-jitsi-video]: /content/schemas/message/jitsi-video
 [s-landmark]: /content/schemas/message/landmark
 [s-light]: /content/schemas/message/light
 [s-line]: /content/schemas/message/line
-[s-look-at]: /content/schemas/message/entity#entity-generic-object-data-attributes
+[s-look-at]: /content/schemas/message/entity#entity-generic-object-properties
 [s-material-ext]: /content/schemas/message/material-extras
 [s-material]: /content/schemas/message/material
 [s-model-container]: /content/schemas/message/model-container
@@ -530,12 +529,12 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-octahedron]: /content/schemas/message/octahedron
 [s-openvps]: /content/schemas/message/openvps
 [s-panel]: /content/schemas/message/panel
-[s-parent]: /content/schemas/message/entity#entity-generic-object-data-attributes
+[s-parent]: /content/schemas/message/entity#entity-generic-object-properties
 [s-pcd]: /content/schemas/message/pcd-model
 [s-physics]: /content/schemas/message/physics
 [s-physx-body]: /content/schemas/message/physx-body
 [s-physx-force-pushable]: /content/schemas/message/physx-force-pushable
-[s-physx-grabbable]: /content/schemas/message/entity#entity-generic-object-data-attributes
+[s-physx-grabbable]: /content/schemas/message/entity#entity-generic-object-properties
 [s-physx-joint-constraint]: /content/schemas/message/physx-joint-constraint
 [s-physx-joint-driver]: /content/schemas/message/physx-joint-driver
 [s-physx-joint]: /content/schemas/message/physx-joint
@@ -550,9 +549,9 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-run_info]: /content/schemas/message/run_info
 [s-sao]: /content/schemas/message/sao
 [s-scale]: /content/schemas/message/scale
-[s-screenshare]: /content/schemas/message/entity#entity-generic-object-data-attributes
+[s-screenshare]: /content/schemas/message/entity#entity-generic-object-properties
 [s-shadow]: /content/schemas/message/shadow
-[s-skipCache]: /content/schemas/message/entity#entity-generic-object-data-attributes
+[s-skipCache]: /content/schemas/message/entity#entity-generic-object-properties
 [s-smaa]: /content/schemas/message/smaa
 [s-sound]: /content/schemas/message/sound
 [s-spe-particles]: /content/schemas/message/spe-particles
@@ -574,8 +573,8 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-urdf]: /content/schemas/message/urdf-model
 [s-video-control]: /content/schemas/message/video-control
 [s-videosphere]: /content/schemas/message/videosphere
-[s-visible]: /content/schemas/message/entity#entity-generic-object-data-attributes
-[s-vr-hideshow]: /content/schemas/message/entity#entity-generic-object-data-attributes
+[s-visible]: /content/schemas/message/entity#entity-generic-object-properties
+[s-vr-hideshow]: /content/schemas/message/entity#entity-generic-object-properties
 
 <!-- tutorial? links-->
 
