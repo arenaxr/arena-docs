@@ -73,7 +73,6 @@ All wire objects have a set of basic attributes `{object_id, action, type, persi
 | **url** | string |  | Use File Store paths under 'store/users/username', see CDN and other storage options in the description above. | Yes |
 | **remote-render** | [RemoteRender](remote-render) |  | Whether or not an object should be remote rendered [Experimental]. | No |
 | **video-control** | [VideoControl](video-control) |  | Adds a video to an entity and controls its playback. | No |
-| **attribution** | [Attribution](attribution) |  | Attribution Component. Saves attribution data in any entity. | No |
 | **spe-particles** | [SpeParticles](spe-particles) |  | GPU based particle systems in A-Frame. More properties at <a href='https://github.com/harlyq/aframe-spe-particles-component'>A-Frame SPE Particles</a> component. | No |
 | **look-at** | string |  | The look-at component defines the behavior for an entity to dynamically rotate or face towards another entity or position. Use '#my-camera' to face the user camera, otherwise can take either a vec3 position or a query selector to another entity. | No |
 

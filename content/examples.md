@@ -83,8 +83,8 @@ Thumbnail images can be clicked for a larger view. Multiple links are provided t
 | GLTF Morph                |             [![][i-gltf-morph]][i-gltf-morph]             | Target and control a GLTF model morphTargets created in Blender                          | [Attribute][obja], [Schema][s-gltf-morph], [Python][p-gltf-morph]                                    |
 | Go to Landmark            |          [![][i-goto-landmark]][i-goto-landmark]          | Teleports user to the landmark with the given name                                       | [Attribute][obja], [Schema][s-goto-landmark], [Python][p-goto-landmark]                              |
 | Go to URL                 |               [![][i-goto-url]][i-goto-url]               | Goto given URL                                                                           | [Attribute][obja], [Schema][s-goto-url], [Python][p-goto-url]                                        |
-| Hand Left                 |                   [![][i-hand]][i-hand]                   | Hand Left is the metadata pose and controller type of the user avatar                    | [Object][obj3], [Schema][s-hand], [Python][p-hands]                                                  |
-| Hand Right                |                   [![][i-hand]][i-hand]                   | Hand Right is the metadata pose and controller type of the user avatar                   | [Object][obj3], [Schema][s-hand], [Python][p-hands]                                                  |
+| Hand Left                 |                   [![][i-hand]][i-hand]                   | Hand Left is the metadata pose and controller type of the user avatar                    | [Object][obj3], [Schema][s-handLeft], [Python][p-hands]                                                  |
+| Hand Right                |                   [![][i-hand]][i-hand]                   | Hand Right is the metadata pose and controller type of the user avatar                   | [Object][obj3], [Schema][s-handRight], [Python][p-hands]                                                  |
 | Health Check              |            [![][i-health-warn]][i-health-warn]            | A clickable warning/error icon when critical errors happen in a scene                    | [User][user], [Tutorial][t-health]                                                                   |
 | Icosahedron               |            [![][i-icosahedron]][i-icosahedron]            | Icosahedron Geometry                                                                     | [Object][obj3], [Schema][s-icosahedron], [Python][p-icosahedron]                                     |
 | Image                     |                  [![][i-image]][i-image]                  | Display an image on a plane                                                              | [Object][obj3], [Schema][s-image], [Python][p-image]                                                 |
@@ -511,7 +511,8 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 [s-gltf]: /content/schemas/message/gltf-model
 [s-goto-landmark]: /content/schemas/message/goto-landmark
 [s-goto-url]: /content/schemas/message/goto-url
-[s-hand]: /content/schemas/message/arena-user
+[s-handLeft]: /content/schemas/message/handLeft
+[s-handRight]: /content/schemas/message/handRight
 [s-icosahedron]: /content/schemas/message/icosahedron
 [s-image]: /content/schemas/message/image
 [s-jitsi-video]: /content/schemas/message/jitsi-video
