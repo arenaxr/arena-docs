@@ -78,7 +78,7 @@ Detailed GLTF models and textures can often have significant resource and visual
 For a given object, you can use a lower fidelity version or stand-in until a user is within a specified distance, at which
 point the gltf source is swapped out for a more detailed version.
 
-To use this feature, assign the [gltf-model-lod](/content/schemas/message/gltf-model-lod) component to
+To use this feature, assign the [gltf-model-lod](/content/schemas/message/attr-gltf-model-lod) component to
 your object, with the `gltf-model` component parameter set to the lower fidelity model URL.
 
 <img src="/assets/img/3dcontent/gltf-model-lod.png" width="714"/>

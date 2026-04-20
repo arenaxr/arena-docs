@@ -17,7 +17,7 @@ a title is provided, it will serve more as a label or sign. An optional close bu
 
 ![img](/assets/img/3dcontent/ui-card.png)
 
-See the full [ARENAUI Card schema](/content/schemas/message/arenaui-card) for more details.
+See the full [ARENAUI Card schema](/content/schemas/message/obj-arenaui-card) for more details.
 
 ## ARENAUI Button Panel
 A button panel is a horizontal or vertical panel that contains buttons. Each button can have a
@@ -26,7 +26,7 @@ the `buttonName` and `buttonIndex`.
 
 ![img](/assets/img/3dcontent/ui-button-panel.png) 
 
-See the full [ARENAUI Button Panel schema](/content/schemas/message/arenaui-button-panel) for more details.
+See the full [ARENAUI Button Panel schema](/content/schemas/message/obj-arenaui-button-panel) for more details.
  
 ## ARENAUI Prompt
 Similar to a button panel, this prompt is intended to be used a quick confirmation popup.
@@ -35,4 +35,4 @@ to what one may see in traditional 2D web interfaces.
 
 ![img](/assets/img/3dcontent/ui-prompt.png)
 
-See the full [ARENAUI Prompt schema](/content/schemas/message/arenaui-prompt) for more details.
+See the full [ARENAUI Prompt schema](/content/schemas/message/obj-arenaui-prompt) for more details.
