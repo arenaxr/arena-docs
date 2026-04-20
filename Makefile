@@ -11,6 +11,7 @@ all: install serve
 check:
 	$(JEKYLL) doctor
 	$(HTMLPROOF) \
+		--swap-urls "^https?://docs.arenaxr.org:" \
 		--ignore-status-codes "0,301,307,403,429,500,522,999" \
 		--ignore-missing-alt \
 		--ignore-empty-alt \
