@@ -205,11 +205,11 @@ A component or effect which can be optionally added to an entity.
 
 ### Program
 
-ARENA remote runtime, Python or WebAssembly (WASM). For reference, a list of [all program attributes](/content/schemas/message/program#program-data-attributes)
+ARENA remote runtime, Python or WebAssembly (WASM). For reference, a list of [all program attributes](/content/schemas/message/attr-program#program-data-attributes)
 
 ### Scene Option
 
-ARENA Scene Options. For reference, a list of [all scene options](/content/schemas/message/scene-options#scene-options-attributes)
+ARENA Scene Options. For reference, a list of [all scene options](/content/schemas/message/attr-scene-options#scene-options-attributes)
 
 ### Environment Setting
 
@@ -217,11 +217,11 @@ A-Frame Environment presets. More properties at repo [supermedium/aframe-environ
 
 ### Renderer Setting
 
-These settings are fed into three.js WebGLRenderer properties. For reference, a list of [all renderer settings](/content/schemas/message/renderer-settings#renderer-settings-attributes)
+These settings are fed into three.js WebGLRenderer properties. For reference, a list of [all renderer settings](/content/schemas/message/attr-renderer-settings#renderer-settings-attributes)
 
 ### Post-Processing Effect
 
-These effects are enabled in desktop and XR views. For reference, a list of [all post-processing effects](/content/schemas/message/post-processing#post-processing-effects-attributes)
+These effects are enabled in desktop and XR views. For reference, a list of [all post-processing effects](/content/schemas/message/attr-post-processing#post-processing-effects-attributes)
 
 <!-- image links -->
 <!-- Ideally,  create new images and store them in /assets/img/examples/objects/,  /assets/img/examples/attributes/,  etc.|.. -->
@@ -478,103 +478,103 @@ These effects are enabled in desktop and XR views. For reference, a list of [all
 
 <!-- json schema links-->
 
-[s-animation-mix]: /content/schemas/message/animation-mixer
-[s-animation]: /content/schemas/message/animation
-[s-ar-hideshow]: /content/schemas/message/entity#entity-generic-object-properties
-[s-ar-hit-test]: /content/schemas/message/ar-hit-test
-[s-arena-scene-options]: /content/schemas/message/scene-options
-[s-arena-user]: /content/schemas/message/arena-user
-[s-armarker]: /content/schemas/message/armarker
-[s-blip]: /content/schemas/message/blip
-[s-bloom]: /content/schemas/message/bloom
-[s-box-collision]: /content/schemas/message/box-collision-listener
-[s-box]: /content/schemas/message/box
-[s-buffer]: /content/schemas/message/entity#entity-generic-object-properties
-[s-camera-override]: /content/schemas/message/camera-override
-[s-camera]: /content/schemas/message/camera
-[s-capsule]: /content/schemas/message/capsule
-[s-circle]: /content/schemas/message/circle
-[s-click]: /content/schemas/message/click-listener
-[s-collision]: /content/schemas/message/entity#entity-generic-object-properties
-[s-cone]: /content/schemas/message/cone
-[s-cylinder]: /content/schemas/message/cylinder
-[s-dodecahedron]: /content/schemas/message/dodecahedron
-[s-entity]: /content/schemas/message/entity
-[s-env-presets]: /content/schemas/message/env-presets
-[s-event]: /content/schemas/message/event
-[s-fxaa]: /content/schemas/message/fxaa
-[s-geometry]: /content/schemas/message/geometry
-[s-glitch]: /content/schemas/message/glitch
-[s-gltf-lod]: /content/schemas/message/gltf-model-lod
-[s-gltf-morph]: /content/schemas/message/gltf-morph
-[s-gltf]: /content/schemas/message/gltf-model
-[s-goto-landmark]: /content/schemas/message/goto-landmark
-[s-goto-url]: /content/schemas/message/goto-url
-[s-handLeft]: /content/schemas/message/handLeft
-[s-handRight]: /content/schemas/message/handRight
-[s-icosahedron]: /content/schemas/message/icosahedron
-[s-image]: /content/schemas/message/image
-[s-jitsi-video]: /content/schemas/message/jitsi-video
-[s-landmark]: /content/schemas/message/landmark
-[s-light]: /content/schemas/message/light
-[s-line]: /content/schemas/message/line
-[s-look-at]: /content/schemas/message/entity#entity-generic-object-properties
-[s-material-ext]: /content/schemas/message/material-extras
-[s-material]: /content/schemas/message/material
-[s-model-container]: /content/schemas/message/model-container
-[s-modelUpdate]: /content/schemas/message/modelUpdate
-[s-multisrc]: /content/schemas/message/multisrc
-[s-obj]: /content/schemas/message/obj-model
-[s-ocean]: /content/schemas/message/ocean
-[s-octahedron]: /content/schemas/message/octahedron
-[s-openvps]: /content/schemas/message/openvps
-[s-panel]: /content/schemas/message/panel
-[s-parent]: /content/schemas/message/entity#entity-generic-object-properties
-[s-pcd]: /content/schemas/message/pcd-model
-[s-physics]: /content/schemas/message/physics
-[s-physx-body]: /content/schemas/message/physx-body
-[s-physx-force-pushable]: /content/schemas/message/physx-force-pushable
-[s-physx-grabbable]: /content/schemas/message/entity#entity-generic-object-properties
-[s-physx-joint-constraint]: /content/schemas/message/physx-joint-constraint
-[s-physx-joint-driver]: /content/schemas/message/physx-joint-driver
-[s-physx-joint]: /content/schemas/message/physx-joint
-[s-physx-material]: /content/schemas/message/physx-material
-[s-pixel]: /content/schemas/message/pixel
-[s-plane]: /content/schemas/message/plane
-[s-position]: /content/schemas/message/position
-[s-remote-render]: /content/schemas/message/remote-render
-[s-ring]: /content/schemas/message/ring
-[s-rotation]: /content/schemas/message/rotation
-[s-roundedbox]: /content/schemas/message/roundedbox
-[s-run_info]: /content/schemas/message/run_info
-[s-sao]: /content/schemas/message/sao
-[s-scale]: /content/schemas/message/scale
-[s-screenshare]: /content/schemas/message/entity#entity-generic-object-properties
-[s-shadow]: /content/schemas/message/shadow
-[s-skipCache]: /content/schemas/message/entity#entity-generic-object-properties
-[s-smaa]: /content/schemas/message/smaa
-[s-sound]: /content/schemas/message/sound
-[s-spe-particles]: /content/schemas/message/spe-particles
-[s-sphere]: /content/schemas/message/sphere
-[s-splat]: /content/schemas/message/gaussian_splatting
-[s-ssao]: /content/schemas/message/ssao
-[s-static-body]: /content/schemas/message/static-body
-[s-tetrahedron]: /content/schemas/message/tetrahedron
-[s-text]: /content/schemas/message/text
-[s-textinput]: /content/schemas/message/textinput
-[s-thickline]: /content/schemas/message/thickline
-[s-threejs]: /content/schemas/message/threejs-scene
-[s-torus]: /content/schemas/message/torus
-[s-torusKnot]: /content/schemas/message/torusKnot
-[s-triangle]: /content/schemas/message/triangle
-[s-ui-buttons]: /content/schemas/message/arenaui-button-panel
-[s-ui-card]: /content/schemas/message/arenaui-card
-[s-ui-prompt]: /content/schemas/message/arenaui-prompt
-[s-urdf]: /content/schemas/message/urdf-model
-[s-video-control]: /content/schemas/message/video-control
-[s-videosphere]: /content/schemas/message/videosphere
-[s-visible]: /content/schemas/message/entity#entity-generic-object-properties
-[s-vr-hideshow]: /content/schemas/message/entity#entity-generic-object-properties
+[s-animation-mix]: /content/schemas/message/attr-animation-mixer
+[s-animation]: /content/schemas/message/attr-animation
+[s-ar-hideshow]: /content/schemas/message/obj-entity#entity-generic-object-properties
+[s-ar-hit-test]: /content/schemas/message/attr-ar-hit-test
+[s-arena-scene-options]: /content/schemas/message/attr-scene-options
+[s-arena-user]: /content/schemas/message/attr-arena-user
+[s-armarker]: /content/schemas/message/attr-armarker
+[s-blip]: /content/schemas/message/attr-blip
+[s-bloom]: /content/schemas/message/attr-bloom
+[s-box-collision]: /content/schemas/message/attr-box-collision-listener
+[s-box]: /content/schemas/message/obj-box
+[s-buffer]: /content/schemas/message/obj-entity#entity-generic-object-properties
+[s-camera-override]: /content/schemas/message/attr-camera-override
+[s-camera]: /content/schemas/message/obj-camera
+[s-capsule]: /content/schemas/message/obj-capsule
+[s-circle]: /content/schemas/message/obj-circle
+[s-click]: /content/schemas/message/attr-click-listener
+[s-collision]: /content/schemas/message/obj-entity#entity-generic-object-properties
+[s-cone]: /content/schemas/message/obj-cone
+[s-cylinder]: /content/schemas/message/obj-cylinder
+[s-dodecahedron]: /content/schemas/message/obj-dodecahedron
+[s-entity]: /content/schemas/message/obj-entity
+[s-env-presets]: /content/schemas/message/attr-env-presets
+[s-event]: /content/schemas/message/obj-event
+[s-fxaa]: /content/schemas/message/attr-fxaa
+[s-geometry]: /content/schemas/message/attr-geometry
+[s-glitch]: /content/schemas/message/attr-glitch
+[s-gltf-lod]: /content/schemas/message/attr-gltf-model-lod
+[s-gltf-morph]: /content/schemas/message/attr-gltf-morph
+[s-gltf]: /content/schemas/message/obj-gltf-model
+[s-goto-landmark]: /content/schemas/message/attr-goto-landmark
+[s-goto-url]: /content/schemas/message/attr-goto-url
+[s-handLeft]: /content/schemas/message/obj-handLeft
+[s-handRight]: /content/schemas/message/obj-handRight
+[s-icosahedron]: /content/schemas/message/obj-icosahedron
+[s-image]: /content/schemas/message/obj-image
+[s-jitsi-video]: /content/schemas/message/attr-jitsi-video
+[s-landmark]: /content/schemas/message/attr-landmark
+[s-light]: /content/schemas/message/obj-light
+[s-line]: /content/schemas/message/obj-line
+[s-look-at]: /content/schemas/message/obj-entity#entity-generic-object-properties
+[s-material-ext]: /content/schemas/message/attr-material-extras
+[s-material]: /content/schemas/message/attr-material
+[s-model-container]: /content/schemas/message/attr-model-container
+[s-modelUpdate]: /content/schemas/message/attr-modelUpdate
+[s-multisrc]: /content/schemas/message/attr-multisrc
+[s-obj]: /content/schemas/message/obj-obj-model
+[s-ocean]: /content/schemas/message/obj-ocean
+[s-octahedron]: /content/schemas/message/obj-octahedron
+[s-openvps]: /content/schemas/message/attr-openvps
+[s-panel]: /content/schemas/message/attr-panel
+[s-parent]: /content/schemas/message/obj-entity#entity-generic-object-properties
+[s-pcd]: /content/schemas/message/obj-pcd-model
+[s-physics]: /content/schemas/message/attr-physics
+[s-physx-body]: /content/schemas/message/attr-physx-body
+[s-physx-force-pushable]: /content/schemas/message/attr-physx-force-pushable
+[s-physx-grabbable]: /content/schemas/message/obj-entity#entity-generic-object-properties
+[s-physx-joint-constraint]: /content/schemas/message/attr-physx-joint-constraint
+[s-physx-joint-driver]: /content/schemas/message/attr-physx-joint-driver
+[s-physx-joint]: /content/schemas/message/attr-physx-joint
+[s-physx-material]: /content/schemas/message/attr-physx-material
+[s-pixel]: /content/schemas/message/attr-pixel
+[s-plane]: /content/schemas/message/obj-plane
+[s-position]: /content/schemas/message/attr-position
+[s-remote-render]: /content/schemas/message/attr-remote-render
+[s-ring]: /content/schemas/message/obj-ring
+[s-rotation]: /content/schemas/message/attr-rotation
+[s-roundedbox]: /content/schemas/message/obj-roundedbox
+[s-run_info]: /content/schemas/message/attr-run_info
+[s-sao]: /content/schemas/message/attr-sao
+[s-scale]: /content/schemas/message/attr-scale
+[s-screenshare]: /content/schemas/message/obj-entity#entity-generic-object-properties
+[s-shadow]: /content/schemas/message/attr-shadow
+[s-skipCache]: /content/schemas/message/obj-entity#entity-generic-object-properties
+[s-smaa]: /content/schemas/message/attr-smaa
+[s-sound]: /content/schemas/message/attr-sound
+[s-spe-particles]: /content/schemas/message/attr-spe-particles
+[s-sphere]: /content/schemas/message/obj-sphere
+[s-splat]: /content/schemas/message/obj-gaussian_splatting
+[s-ssao]: /content/schemas/message/attr-ssao
+[s-static-body]: /content/schemas/message/attr-static-body
+[s-tetrahedron]: /content/schemas/message/obj-tetrahedron
+[s-text]: /content/schemas/message/obj-text
+[s-textinput]: /content/schemas/message/attr-textinput
+[s-thickline]: /content/schemas/message/obj-thickline
+[s-threejs]: /content/schemas/message/obj-threejs-scene
+[s-torus]: /content/schemas/message/obj-torus
+[s-torusKnot]: /content/schemas/message/obj-torusKnot
+[s-triangle]: /content/schemas/message/obj-triangle
+[s-ui-buttons]: /content/schemas/message/obj-arenaui-button-panel
+[s-ui-card]: /content/schemas/message/obj-arenaui-card
+[s-ui-prompt]: /content/schemas/message/obj-arenaui-prompt
+[s-urdf]: /content/schemas/message/obj-urdf-model
+[s-video-control]: /content/schemas/message/attr-video-control
+[s-videosphere]: /content/schemas/message/obj-videosphere
+[s-visible]: /content/schemas/message/obj-entity#entity-generic-object-properties
+[s-vr-hideshow]: /content/schemas/message/obj-entity#entity-generic-object-properties
 
 <!-- tutorial? links-->
 

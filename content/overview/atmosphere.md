@@ -40,7 +40,7 @@ ARENA provides the [aframe-environment-component](https://github.com/supermedium
 
 ## Sky, Ground, Fog
 
-Many of these parameters can be individually adjusted to your needs, see the [env-presets](/content/schemas/message/env-presets) section of our `scene-options` schema.
+Many of these parameters can be individually adjusted to your needs, see the [env-presets](/content/schemas/message/attr-env-presets) section of our `scene-options` schema.
 
 <img src="/assets/img/overview/atmosphere/mushroom.png" width="50%"/>
 

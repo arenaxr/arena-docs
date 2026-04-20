@@ -208,7 +208,7 @@ Let us add a landmark to the Mammuthus primigenius (Blumbach) model. This way, w
 Update the object by pressing the **\[+ Add/Update Object\]** button.
 
 Under the **GLTF Model Data** section, click on the **\[Properties\]** button, and check/add
-the [`Landmark` property](/content/schemas/message/landmark). Add the `label` "Mammuthus primigenius (Blumbach)".
+the [`Landmark` property](/content/schemas/message/attr-landmark). Add the `label` "Mammuthus primigenius (Blumbach)".
 
 ![](/assets/img/overview/build/landmarks-obj.png)
 

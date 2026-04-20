@@ -12,45 +12,45 @@ has_toc: false
 
 |Object Message|Description|
 | :--- | :--- |
-|[ARENAUI Button Panel](arenaui-button-panel)|ARENAUI element which displays a vertical or horizontal panel of buttons.|
-|[ARENAUI Card Panel](arenaui-card)|ARENAUI element which displays text and optionally an image.|
-|[ARENAUI Prompt](arenaui-prompt)|ARENAUI element which displays prompt with button actions.|
-|[Box](box)|Box Geometry.|
-|[Camera Override](camera)||
-|[Capsule](capsule)|Capsule Geometry.|
-|[Circle](circle)|Circle Geometry.|
-|[Cone](cone)|Cone Geometry.|
-|[Cube (deprecated; don't use)](cube)|Cube (=Box) Geometry (deprecated); Supported for Legacy reasons; Please use Box in new scenes|
-|[Cylinder](cylinder)|Cylinder Geometry.|
-|[Dodecahedron](dodecahedron)|Dodecahedron Geometry.|
-|[Entity (generic object)](entity)|Entities are the base of all objects in the scene. Entities are containers into which components can be attached.|
-|[Event](event)|Generate an event message for an object.|
-|[Gaussian Splat](gaussian_splatting)|Load a 3D Gaussian Splat for Real-Time Radiance Field Rendering. More information: <a href='https://github.com/quadjr/aframe-gaussian-splatting'>A-Frame Gaussian Splatting</a>. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
-|[GLTF Model](gltf-model)|Load a GLTF model. Besides applying standard rotation and position attributes to the center-point of the GLTF model, the individual child components can also be manually manipulated. See format details in the `modelUpdate` data attribute. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
-|[Hand](handLeft)|Hand is the (left or right) hand metadata pose and controller type of the user avatar.|
-|[Hand](handRight)|Hand is the (left or right) hand metadata pose and controller type of the user avatar.|
-|[Icosahedron](icosahedron)|Icosahedron Geometry.|
-|[Image](image)|Display an image on a plane. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
-|[Light](light)|A light. More properties at <a href='https://aframe.io/docs/1.5.0/components/light.html'>A-Frame Light</a>.|
-|[Line](line)|Draw a line.|
-|[Camera Override](look-at)||
-|[OBJ Model](obj-model)|Loads a 3D model and material using a Wavefront (.OBJ) file and a .MTL file. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
-|[Ocean](ocean)|Flat-shaded ocean primitive.|
-|[Octahedron](octahedron)|Octahedron Geometry.|
-|[PCD Model](pcd-model)|Load a PCD model. Format: <a href='https://pointclouds.org/documentation/tutorials/index.html'>Point Clouds</a>. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
-|[Plane](plane)|Plane Geometry.|
-|[Program](program)||
-|[Ring](ring)|Ring Geometry.|
-|[Rounded Box](roundedbox)|Rounded Box Geometry.|
-|[Scene Config](scene-options)||
-|[Sphere](sphere)|Sphere Geometry.|
-|[Camera Override](teleport-to-landmark)||
-|[Tetrahedron](tetrahedron)|Tetrahedron Geometry.|
-|[Text](text)|Display text. More properties at <a href='https://aframe.io/docs/1.5.0/components/text.html'>A-Frame Text</a>.|
-|[Thickline](thickline)|Draw a line that can have a custom width.|
-|[Three.js Scene](threejs-scene)|Load a Three.js Scene. Could be THREE.js version-specific; you can see the THREE.js version in the JS console once you open ARENA; using glTF is preferred. Format: <a href='https://threejs.org/docs/#api/en/scenes/Scene'>THREE.js Scene</a>. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
-|[Torus](torus)|Torus Geometry.|
-|[Torus Knot](torusKnot)|Torus Knot Geometry.|
-|[Triangle](triangle)|Triangle Geometry.|
-|[URDF Model](urdf-model)|Load a URDF model. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
-|[Videosphere](videosphere)|Videosphere Geometry.|
+|[ARENAUI Button Panel](obj-arenaui-button-panel)|ARENAUI element which displays a vertical or horizontal panel of buttons.|
+|[ARENAUI Card Panel](obj-arenaui-card)|ARENAUI element which displays text and optionally an image.|
+|[ARENAUI Prompt](obj-arenaui-prompt)|ARENAUI element which displays prompt with button actions.|
+|[Box](obj-box)|Box Geometry.|
+|[Camera Override](obj-camera)|Camera Override|
+|[Capsule](obj-capsule)|Capsule Geometry.|
+|[Circle](obj-circle)|Circle Geometry.|
+|[Cone](obj-cone)|Cone Geometry.|
+|[Cube (deprecated; don't use)](obj-cube)|Cube (=Box) Geometry (deprecated); Supported for Legacy reasons; Please use Box in new scenes|
+|[Cylinder](obj-cylinder)|Cylinder Geometry.|
+|[Dodecahedron](obj-dodecahedron)|Dodecahedron Geometry.|
+|[Entity (generic object)](obj-entity)|Entities are the base of all objects in the scene. Entities are containers into which components can be attached.|
+|[Event](obj-event)|Generate an event message for an object.|
+|[Gaussian Splat](obj-gaussian_splatting)|Load a 3D Gaussian Splat for Real-Time Radiance Field Rendering. More information: <a href='https://github.com/quadjr/aframe-gaussian-splatting'>A-Frame Gaussian Splatting</a>. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
+|[GLTF Model](obj-gltf-model)|Load a GLTF model. Besides applying standard rotation and position attributes to the center-point of the GLTF model, the individual child components can also be manually manipulated. See format details in the `modelUpdate` data attribute. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
+|[Hand](obj-handLeft)|Hand is the (left or right) hand metadata pose and controller type of the user avatar.|
+|[Hand](obj-handRight)|Hand is the (left or right) hand metadata pose and controller type of the user avatar.|
+|[Icosahedron](obj-icosahedron)|Icosahedron Geometry.|
+|[Image](obj-image)|Display an image on a plane. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
+|[Light](obj-light)|A light. More properties at <a href='https://aframe.io/docs/1.5.0/components/light.html'>A-Frame Light</a>.|
+|[Line](obj-line)|Draw a line.|
+|[Camera Override](obj-look-at)|Camera Override|
+|[OBJ Model](obj-obj-model)|Loads a 3D model and material using a Wavefront (.OBJ) file and a .MTL file. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
+|[Ocean](obj-ocean)|Flat-shaded ocean primitive.|
+|[Octahedron](obj-octahedron)|Octahedron Geometry.|
+|[PCD Model](obj-pcd-model)|Load a PCD model. Format: <a href='https://pointclouds.org/documentation/tutorials/index.html'>Point Clouds</a>. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
+|[Plane](obj-plane)|Plane Geometry.|
+|[Program](obj-program)|Program|
+|[Ring](obj-ring)|Ring Geometry.|
+|[Rounded Box](obj-roundedbox)|Rounded Box Geometry.|
+|[Scene Config](obj-scene-options)|Scene Config|
+|[Sphere](obj-sphere)|Sphere Geometry.|
+|[Camera Override](obj-teleport-to-landmark)|Camera Override|
+|[Tetrahedron](obj-tetrahedron)|Tetrahedron Geometry.|
+|[Text](obj-text)|Display text. More properties at <a href='https://aframe.io/docs/1.5.0/components/text.html'>A-Frame Text</a>.|
+|[Thickline](obj-thickline)|Draw a line that can have a custom width.|
+|[Three.js Scene](obj-threejs-scene)|Load a Three.js Scene. Could be THREE.js version-specific; you can see the THREE.js version in the JS console once you open ARENA; using glTF is preferred. Format: <a href='https://threejs.org/docs/#api/en/scenes/Scene'>THREE.js Scene</a>. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
+|[Torus](obj-torus)|Torus Geometry.|
+|[Torus Knot](obj-torusKnot)|Torus Knot Geometry.|
+|[Triangle](obj-triangle)|Triangle Geometry.|
+|[URDF Model](obj-urdf-model)|Load a URDF model. See guidance to store paths under <a href='https://docs.arenaxr.org/content/interface/filestore.html'>ARENA File Store, CDN, or DropBox</a>.|
+|[Videosphere](obj-videosphere)|Videosphere Geometry.|
