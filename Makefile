@@ -20,7 +20,20 @@ check:
 		_site
 
 install: $(PROJECT_DEPS)
-	$(BUNDLE) install --path _vendor/bundle
+	@if [ -f .ruby-version ]; then \
+		expected=$$(cat .ruby-version | tr -d '[:space:]'); \
+		actual=$$(ruby -e 'puts RUBY_VERSION'); \
+		major_expected=$$(echo $$expected | cut -d. -f1,2); \
+		major_actual=$$(echo $$actual | cut -d. -f1,2); \
+		if [ "$$major_expected" != "$$major_actual" ]; then \
+			echo "WARNING: Ruby $$actual does not match .ruby-version ($$expected)."; \
+			echo "  Install Ruby $$expected via rbenv: rbenv install $$expected"; \
+			echo "  Then prepend to PATH: export PATH=\"$$HOME/.rbenv/versions/$$expected/bin:$$PATH\""; \
+			exit 1; \
+		fi; \
+	fi
+	$(BUNDLE) config set --local path '_vendor/bundle'
+	$(BUNDLE) install
 
 update: $(PROJECT_DEPS)
 	$(BUNDLE) update
