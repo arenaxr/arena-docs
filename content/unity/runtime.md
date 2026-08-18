@@ -77,9 +77,8 @@ public class ArenaTestButton : MonoBehaviour
     {
         Debug.Log($"Clicked {button.name}...");
         ArenaClientScene scene = ArenaClientScene.Instance;
-        scene.authType = ArenaMqttClient.Auth.Anonymous;
+        scene.authType = ArenaMqttClient.Auth.Google;
         scene.hostAddress = "arenaxr.org";
-        scene.namespaceName = "public";
         scene.sceneName = "example";
 
         if (!scene) yield break;
@@ -118,14 +117,14 @@ public class ArenaTestButton : MonoBehaviour
     {
         // Only one singleton connection instance allowed per application.
         ArenaClientScene scene = ArenaClientScene.Instance;
-        scene.authType = ArenaMqttClient.Auth.Anonymous;
+        scene.authType = ArenaMqttClient.Auth.Google;
 
         // Set the ARENA webserver main host address, default: "arenaxr.org".
         scene.hostAddress = "arenaxr.org";
 
         // Set the namespace name for the scene, default: [your ARENA username].
         // For google authentication, this is set automatically on login and unnecessary when using your own username.
-        scene.namespaceName = "public";
+        //scene.namespaceName = "public";
 
         // Set the scene name for the scene, default: "example".
         scene.sceneName = "example";
@@ -233,7 +232,7 @@ public class ArenaTestButton : MonoBehaviour
 
         // Setup a connection using a custom namespace and anonymous authentication.
         client.hostAddress = "arenaxr.org";
-        client.authType = ArenaMqttClient.Auth.Anonymous;
+        client.authType = ArenaMqttClient.Auth.Google;
 
         // Alternate, Manual auth: Store any local jwt tokens here, before auth starts.
         // Derive the local path from the next line.
