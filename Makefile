@@ -15,7 +15,7 @@ check:
 		--ignore-missing-alt \
 		--ignore-empty-alt \
 		--allow-missing-href \
-		--url-ignore '^https?://(?!(?:github\.com/(?:arenaxr|conix-center|[Ss]ilver[Ll]ine[Ff]ramework)(?:[/?#]|$)|(?:[^/]+\.)*conix\.io(?:[/?#]|$)|(?:[^/]+\.)*arenaxr\.org(?:[/?#]|$))).*' \
+		--ignore-urls '/^https?:\/\/(?!(?:github\.com\/(?:arenaxr|conix-center|[Ss]ilver[Ll]ine[Ff]ramework)(?:[\/?#]|$)|(?:[^\/]+\.)*conix\.io(?:[\/?#]|$)|(?:[^\/]+\.)*arenaxr\.org(?:[\/?#]|$))).*$/' \
 		--no-check-external-hash \
 		--no-enforce-https \
 		_site
