@@ -34,6 +34,14 @@ make check
 
 This checks internal links plus external links under the `arenaxr`, `conix-center`, and `silverlineframework` GitHub organizations and the `conix.io` and `arenaxr.org` domains.
 
+Note that **no checks run on pull requests** — the build and this link check are triggered only by push to `master`, i.e. after your change is merged. `make build` (a one-shot build, unlike `make serve`) and `make check` locally are the only checks a change gets beforehand.
+
+`make check` requires a UTF-8 locale. If `LANG`/`LC_ALL` are unset, HTMLProofer aborts with `Encoding::InvalidByteSequenceError: "\xE2" on US-ASCII`; run it as:
+
+```shell
+LC_ALL=C.UTF-8 make check
+```
+
 ## Alerts/Callouts
 Callout alerts are available. Use this syntax:
 ```markdown
