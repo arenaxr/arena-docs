@@ -22,10 +22,11 @@ Each `.md` file inside `content` must have [YAML Front Matter](https://jekyllrb.
 
 ### Generated Pages — Do Not Hand-Edit
 
-The pages under `content/python/` and `content/python-api/` are **generated from `arena-py`** by the scripts in [`scripts/`](scripts/README.md) — from its `examples/` sources and its library docstrings respectively. An edit made directly to one of these files is silently lost the next time a maintainer regenerates them, so fix the example or docstring in `arena-py` instead and ask for a regeneration. Generated files are marked near the top:
+The pages under `content/python/` and `content/python-api/` are **generated from `arena-py`** by the scripts in [`scripts/`](scripts/README.md) — from its `examples/` sources and its library docstrings respectively. An edit made directly to one of these files is silently lost the next time a maintainer regenerates them, so fix the example or docstring in `arena-py` instead and ask for a regeneration. Generated files carry one of these markers near the top, naming the script that produced them — `pexample` under `content/python/`, `pdoc` under `content/python-api/`:
 
 ```markdown
 <!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
 ```
 
 The hand-written exceptions in these directories are the `index.md` navigation pages, the `content/python/tutorial/` pages, and `content/python/animations.md`, `content/python/events.md` and `content/python/tasks.md`.
@@ -39,7 +40,7 @@ To develop `arena-docs` locally:
 
 ## Checks Before You Open a Pull Request
 
-**Nothing runs on pull requests in this repository.** The [Pages workflow](.github/workflows/github-pages.yml) is triggered only by `push` to `master`, so the Jekyll build and the HTMLProofer link check run *after* your change is merged and live. Running them yourself is the only pre-merge signal:
+**Nothing runs on pull requests in this repository.** The [Pages workflow](.github/workflows/github-pages.yml) is triggered only by a `push` to `master` (or a manual `workflow_dispatch`), so the Jekyll build and the HTMLProofer link check run *after* your change is merged and live. Running them yourself is the only pre-merge signal:
 
 ```bash
 # Full site build — the same `jekyll build` CI runs after merge (takes a few minutes)

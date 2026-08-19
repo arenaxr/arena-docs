@@ -7,6 +7,7 @@ This is the ARENA Documentation website giving architecture, APIs, and step-by-s
 * Install any new ruby packages: `make install`
 * Dependencies: `make update`
 * Build and test: `make serve`
+* One-shot build, no server: `make build`
 * Clean build: `make clean`
 * Check html: `make check`
 * Preview site at [http://localhost:4000/](http://localhost:4000/).
@@ -34,7 +35,7 @@ make check
 
 This checks internal links plus external links under the `arenaxr`, `conix-center`, and `silverlineframework` GitHub organizations and the `conix.io` and `arenaxr.org` domains.
 
-Note that **no checks run on pull requests** — the build and this link check are triggered only by push to `master`, i.e. after your change is merged. `make build` (a one-shot build, unlike `make serve`) and `make check` locally are the only checks a change gets beforehand.
+Note that **no checks run on pull requests** — the build and this link check are triggered only by a push to `master` (or a manual `workflow_dispatch`), i.e. after your change is merged. Running `make build` and `make check` locally is the only check a change gets beforehand.
 
 `make check` requires a UTF-8 locale. If `LANG`/`LC_ALL` are unset, HTMLProofer aborts with `Encoding::InvalidByteSequenceError: "\xE2" on US-ASCII`; run it as:
 
