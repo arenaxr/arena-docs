@@ -24,6 +24,9 @@ def click_handler(scene, evt, msg):
     ## Get Event type
     evt.type # == "buttonClick", "mousedown", "mouseup", "mouseenter", "mouseleave", etc.
 
+    ## Get the Object the Event fired on
+    evt.object # the arena-py Object itself, already looked up for you
+
     ## Get Event data
     evt.data.originPosition
     evt.data.targetPosition
@@ -36,6 +39,33 @@ box = Box(..., evt_handler=click_handler) # note the use of "evt_handler=click_h
 # could also do box.evt_handler = click_handler
 # or box.update_attributes(evt_handler=click_handler)
 ```
+
+### The Object an event fired on
+
+`evt.object` is the arena-py `Object` the event fired on, so a handler does not have to look
+its own target up. Use it instead of indexing `scene.all_objects` with `evt.data.target`, or
+instead of closing over the variable you created the object with:
+
+```python
+def click_handler(scene, evt, msg):
+    if evt.type == "mousedown":
+        evt.object.data.position.x += 0.5
+        scene.update_object(evt.object)
+```
+
+`evt.object` can be `None`, so check it before using it if your handler may see either case.
+It is `None` in two cases:
+
+- The event arrived without a `data.target`, or with a `data.target` that is not in
+  `scene.all_objects` — there was no object for arena-py to resolve.
+- The event was built by your own program rather than received from the scene, as with
+  `scene.generate_click_event` and `scene.generate_custom_event`. Those events have no target
+  to resolve.
+
+`evt.object` is local to your program only. It is never serialized, so it does not appear in
+the JSON message on the wire, it is not part of the
+[`clientEvent` message schema](/content/schemas/message/event), and a remote sender cannot
+populate it.
 
 ## Generating events with arena-py Scenes
 ### Click Events
