@@ -32,6 +32,8 @@ Look for broken links and correct HTML using [html-proofer](https://github.com/g
 make check
 ```
 
+This checks internal links plus external links under the `arenaxr`, `conix-center`, and `silverlineframework` GitHub organizations and the `conix.io` and `arenaxr.org` domains.
+
 ## Alerts/Callouts
 Callout alerts are available. Use this syntax:
 ```markdown
