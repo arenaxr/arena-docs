@@ -11,10 +11,11 @@ all: install serve
 check:
 	$(JEKYLL) doctor
 	$(HTMLPROOF) \
-		--ignore-status-codes "0,301,307,403,429,500,522,999" \
+		--ignore-status-codes "0,301,307,403,429,999" \
 		--ignore-missing-alt \
 		--ignore-empty-alt \
 		--allow-missing-href \
+		--ignore-urls '/^https?:\/\/(?!(?:github\.com\/(?:arenaxr|conix-center|[Ss]ilver[Ll]ine[Ff]ramework)(?:[\/?#]|$)|(?:[^\/]+\.)*conix\.io(?:[\/?#]|$)|(?:[^\/]+\.)*arenaxr\.org(?:[\/?#]|$))).*$/' \
 		--no-check-external-hash \
 		--no-enforce-https \
 		_site
