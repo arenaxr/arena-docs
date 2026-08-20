@@ -53,8 +53,8 @@ include:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-  - ./AGENTS.md
-  - ./CONTRIBUTING.md
+  - AGENTS.md
+  - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
   - node_modules
