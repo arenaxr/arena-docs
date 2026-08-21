@@ -12,7 +12,7 @@ This script reads the `arena-py` examples in `arena-py/examples` and produces Ma
 `arena-docs/content/python`, mimicking library folders.
 
 1. Git pull latest `arena-py`, or git checkout by release tag.
-1. Run `python3 ./scripts/pexamples/make-py_examples.py`
+1. Run `python3 ./scripts/pexample/make-py-examples.py`
 1. Git commit updated files in `arena-docs/content/python`.
 
 ## Python API from Docstrings
