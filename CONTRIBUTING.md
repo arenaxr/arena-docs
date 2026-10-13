@@ -41,8 +41,10 @@ The `arena-docs` uses [Release Please](https://github.com/googleapis/release-ple
 > Only use `#NN` notation in commit messages, PR titles, and PR descriptions if they correspond to actual GitHub issues or pull requests. Do **not** use `#NN` notation for internal enumerations of planning docs or triage items (e.g., use `Task NN` or plain text instead), as this creates erroneous links and may result in unintended automatic actions.
 
 > [!IMPORTANT]
-> **No emoji in documentation, code comments, commit messages, or GitHub issue/PR titles and descriptions.**
-> Write plain text. Emoji render inconsistently across editors, terminals, diffs, and generated release notes, and add nothing a plain word does not. This applies to all contributors, including automated/agentic coding tools. Icons in the software's own user interface are fine, but they must follow the project's existing conventions for UI icons.
+> **No emoji in code comments, commit messages, or GitHub issue/PR titles and descriptions.**
+> Write plain text there. Emoji render inconsistently across editors, terminals, diffs, and generated release notes, and add nothing a plain word does not. This applies to all contributors, including automated/agentic coding tools.
+>
+> **Documentation pages under `content/` are the exception.** Small icons help a rendered page, so use them in this order of preference. First, the stored icons in `assets/img/icons/`, referenced as images (see the `[i-...]` reference definitions in `content/examples.md`), whenever a page shows an element of the ARENA interface. Second, for status and support matrices only, the small glyph set that survives the Markdown-to-HTML build and renders the same in every browser: the check mark, cross mark, and dash already used with a legend in `content/architecture/message-validation.md`. No decorative or novelty emoji anywhere: a glyph that depends on the reader's platform font does not translate.
 
 
 ## CI & Dependency Management Conventions
