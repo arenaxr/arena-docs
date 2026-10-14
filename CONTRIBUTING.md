@@ -40,6 +40,12 @@ The `arena-docs` uses [Release Please](https://github.com/googleapis/release-ple
 > **Issue and PR References in Commit & PR Messages:**
 > Only use `#NN` notation in commit messages, PR titles, and PR descriptions if they correspond to actual GitHub issues or pull requests. Do **not** use `#NN` notation for internal enumerations of planning docs or triage items (e.g., use `Task NN` or plain text instead), as this creates erroneous links and may result in unintended automatic actions.
 
+> [!IMPORTANT]
+> **No emoji in code comments, commit messages, or GitHub issue/PR titles and descriptions.**
+> Write plain text there. Emoji render inconsistently across editors, terminals, diffs, and generated release notes, and add nothing a plain word does not. This applies to all contributors, including automated/agentic coding tools.
+>
+> **Documentation pages under `content/` are the exception.** Small icons help a rendered page, so use them in this order of preference. First, the stored icons in `assets/img/icons/`, referenced as images (see the `[i-...]` reference definitions in `content/examples.md`), whenever a page shows an element of the ARENA interface. Second, for status and support matrices only, the small glyph set that survives the Markdown-to-HTML build and renders the same in every browser: the check mark, cross mark, and dash already used with a legend in `content/architecture/message-validation.md`. No decorative or novelty emoji anywhere: a glyph that depends on the reader's platform font does not translate.
+
 
 ## CI & Dependency Management Conventions
 - **GitHub Actions Tag SHA Pinning**: All GitHub Action references in `.github/workflows/` MUST be pinned to the exact commit SHA of the official release tag (e.g., `uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0`).
