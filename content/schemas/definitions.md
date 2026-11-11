@@ -44,12 +44,13 @@ ARENA object schemas are the basis for the over-the-wire message format. Below y
 
 ```json
 {
-  "object_id": "fallBox2",
+  "object_id": "er1k_1234567890",
   "action": "clientEvent",
   "type": "mousedown",
   "data": {
-    "position": { "x": -0.993, "y": 0.342, "z": -1.797 },
-    "source": "camera_8715_er"
+    "target": "fallBox2",
+    "targetPosition": { "x": -0.993, "y": 0.342, "z": -1.797 },
+    "originPosition": { "x": 0, "y": 1.6, "z": 0 }
   }
 }
 ```
