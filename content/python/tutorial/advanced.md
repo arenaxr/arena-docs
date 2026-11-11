@@ -12,7 +12,7 @@ grand_parent: Python Library
 An arena-py Scene keep tracks of all incoming and outgoing users. Users are stored as camera objects. Get a list of all users in a scene like so:
 ```python
 scene.get_user_list()
-# returns [Camera(object_id="camera_1234556789_Edward"), Camera(object_id="camera_987654321_Ed"), ...]
+# returns [Camera(object_id="Edward_1234567890"), Camera(object_id="Ed_9876543210"), ...]
 ```
 
 Scenes also have special user callbacks. user_join_callback is called whenever a user is found by the library:

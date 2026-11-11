@@ -22,16 +22,16 @@ A few example topics are included below for context, as well as a list of topic 
 
 ## Example Topics
 General 3D Object
-: `realm/s/er1k/test-scene/o/camera_client_id/box_1`
+: `realm/s/er1k/test-scene/o/er1k_1234567890_web/box_1`
 
 User 3D Object
-: `realm/s/er1k/test-scene/u/camera_client_id/1234567890_er1k`
+: `realm/s/er1k/test-scene/u/er1k_1234567890_web/er1k_1234567890`
 
 Chat Message
-: `realm/s/er1k/test-scene/c/camera_client_id/1234567890_er1k`
+: `realm/s/er1k/test-scene/c/er1k_1234567890_web/er1k_1234567890`
 
 Runtime Stdout
-: `realm/s/er1k/test-scene/p/camera_client_id/1234567890_er1k/-/stdout`
+: `realm/s/er1k/test-scene/p/er1k_1234567890_web/er1k_1234567890/-/stdout`
 
 ## Topic Elements
 `a`

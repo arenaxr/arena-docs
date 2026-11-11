@@ -38,9 +38,7 @@ The user database is consulted to generate the ARENA JSON Web Token (jwt1), then
 
 ARENA web visitors are uniquely identified by their camera `object-id`, which includes their username and a server-issued `session-id`.
 
-As all 3D objects in the ARENA are identified by names, camera IDs have 3 underscore separated components, e.g: `camera_1234567890_er1k`. The last part is your username, the middle part is a unique ID. To restrict user-spoofing, the user database service assigns a unique `session-id` at the time the ARENA JWT is issued.
-
-**Staff** users may override the random user ID to test experimental cameras and equipment. You can specify the scene address URL parameter e.g. `&fixedCamera=er1k` which will ignore the server assigned ID.
+As all 3D objects in the ARENA are identified by names, a camera ID is your username followed by an underscore and a unique ID, e.g: `er1k_1234567890`. Your MQTT client ID builds on it (`er1k_1234567890_web`), and your hand and face objects append it (`handLeft_er1k_1234567890`). To restrict user-spoofing, the user database service assigns the unique `session-id` at the time the ARENA JWT is issued; clients cannot choose it. Servers on the older v1 API named cameras `camera_1234567890_er1k` instead.
 
 ## Scene Permissions
 
