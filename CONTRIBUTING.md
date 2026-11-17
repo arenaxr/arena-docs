@@ -20,12 +20,37 @@ ARENA Documentation pages are written in markdown and placed in the `content` di
 
 Each `.md` file inside `content` must have [YAML Front Matter](https://jekyllrb.com/docs/front-matter) for navigation. The navigation details are determined by our theme. See the [just-the-docs](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation-structure.md) theme for more details about site navigation.
 
+### Generated Pages — Do Not Hand-Edit
+
+The pages under `content/python/` and `content/python-api/` are **generated from `arena-py`** by the scripts in [`scripts/`](scripts/README.md) — from its `examples/` sources and its library docstrings respectively. An edit made directly to one of these files is silently lost the next time a maintainer regenerates them, so fix the example or docstring in `arena-py` instead and ask for a regeneration. Generated files carry one of these markers near the top, naming the script that produced them — `pexample` under `content/python/`, `pdoc` under `content/python-api/`:
+
+```markdown
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pexample, changes here may be overwritten. -->
+<!-- This file is auto-generated from github.com/arena-docs/scripts/pdoc, changes here may be overwritten. -->
+```
+
+The hand-written exceptions in these directories are the `index.md` navigation pages, the `content/python/tutorial/` pages, and `content/python/animations.md`, `content/python/events.md` and `content/python/tasks.md`.
+
 ## Local Development
 
 To develop `arena-docs` locally:
-1. Ensure Ruby and `bundler` are installed.
-2. Run `bundle install` to install dependencies.
-3. Serve the site locally with `bundle exec jekyll serve --livereload`.
+1. Ensure Ruby (the version in `.ruby-version`) and `bundler` are installed.
+2. Run `make install` to install dependencies into `_vendor/bundle`.
+3. Run `make serve` and preview the site at [http://localhost:4000/](http://localhost:4000/).
+
+## Checks Before You Open a Pull Request
+
+**Nothing runs on pull requests in this repository.** The [Pages workflow](.github/workflows/github-pages.yml) is triggered only by a `push` to `master` (or a manual `workflow_dispatch`), so the Jekyll build and the HTMLProofer link check run *after* your change is merged and live. Running them yourself is the only pre-merge signal:
+
+```bash
+# Full site build — the same `jekyll build` CI runs after merge (takes a few minutes)
+make build
+
+# jekyll doctor plus the HTMLProofer link check
+LC_ALL=C.UTF-8 make check
+```
+
+`make check` requires a UTF-8 locale. With `LANG`/`LC_ALL` unset — common in containers and minimal shells — HTMLProofer aborts with `Encoding::InvalidByteSequenceError: "\xE2" on US-ASCII` as soon as it parses a page containing a smart quote or em dash. Setting `LC_ALL=C.UTF-8` for the command is enough.
 
 ## Code Style
 - Use standard Markdown formatting.
